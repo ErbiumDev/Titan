@@ -28,8 +28,9 @@ namespace Hooks {
 				LOG("Setup Player!");
 				Player::ShowSkin();
 				LOG("Set Skin!");
-				GameState->CurrentPlaylistData = (UFortPlaylistAthena*)UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_Playground.Playlist_Playground");
-				GameState->CurrentPlaylistId = 35;
+				UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_Playground.Playlist_Playground");
+				GameState->CurrentPlaylistData = Playlist;
+				GameState->CurrentPlaylistId = Playlist->PlaylistId;
 				GameState->OnRep_CurrentPlaylistData();
 				GameState->OnRep_CurrentPlaylistId();
 				LOG("Playlist Set!");
@@ -41,22 +42,25 @@ namespace Hooks {
 				LOG("Inventory Setup!");
 				GPlayerController->CheatManager->DestroyAll(AFortHLODSMActor::StaticClass());
 				LOG("Destroyed LODS!");
-				UTexture2D* MiniMap_Texture = UObject::FindObject<UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
-				GameState->MinimapBackgroundBrush.ResourceObject = MiniMap_Texture; //Only shows when moving? Otherwise the maps all white.
-				LOG("Minimap Set!");
 			}
+			
 			if (FuncName == "ServerLoadingScreenDropped" && bLSDropped == false) {
 				bLSDropped = true;
 				Player::GrantDefaultAbilities();
 				LOG("Granted Abilities!");
+				UTexture2D* MiniMap_Texture = UObject::FindObject<UTexture2D>("Texture2D MiniMapAthena.MiniMapAthena");
+				AAthena_GameState_C* GameState = (AAthena_GameState_C*)GEngine->GameViewport->World->GameState;
+				GameState->MinimapBackgroundBrush.ResourceObject = MiniMap_Texture;
+				GameState->MinimapSafeZoneBrush = GameState->MinimapCircleBrush = GameState->MinimapNextCircleBrush = GameState->FullMapCircleBrush = GameState->FullMapNextCircleBrush = GameState->MinimapSafeZoneBrush = {};
+				LOG("Minimap Set!");
 			}
 		}
 		ProcessEventO(Obj, Func, Params);
 	}
 
 	void Init() {
-		//uintptr_t ProcessEventAddr = (uintptr_t)__int64(GetModuleHandle(0) + Offsets::ProcessEvent);
-		auto ProcessEventAddr = UObject::GObjects->GetByIndex(1)->Vft[0x40];
+		uintptr_t ProcessEventAddr = (uintptr_t(GetModuleHandle(0)) + Offsets::ProcessEvent);
+		//auto ProcessEventAddr = UObject::GObjects->GetByIndex(1)->Vft[0x40];
 		ProcessEventO = decltype(ProcessEventO)(ProcessEventAddr);
 		DetourTransactionBegin();
 		DetourUpdateThread(GetCurrentThread());
