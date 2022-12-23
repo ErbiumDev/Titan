@@ -28,6 +28,7 @@ namespace Offsets
 	inline int32 ProcessEvent      = 0x01549DD0;
 	inline int32 FTextToString     = 0x0134C120;
 	inline int32 CreateDefaultObj  = 0x01433DD0;
+	inline int32 StaticLoadObject  = 0x01571640;
 }
 
 #include "PropertyFixup.hpp"

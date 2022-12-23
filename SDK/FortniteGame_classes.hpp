@@ -23073,7 +23073,7 @@ public:
 	uint8                                        Pad_1993[0x28];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortCharacterPartsRepMontageInfo     RepCharPartAnimMontageInfo;                        // 0x14F0(0x20)(Net, Transient, RepNotify, NativeAccessSpecifierPrivate)
 	uint8                                        Pad_1994[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TSubclassOf<class UAnimInstance>             AnimBPOverride;                                    // 0x1518(0x8)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UClass*								 AnimBPOverride;									// 0x1518(0x8)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TSubclassOf<class UAnimInstance>             OriginalAnimBP;                                    // 0x1520(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UFortFootstepAudioBank*                FootstepBankOverride;                              // 0x1528(0x8)(Net, ZeroConstructor, Transient, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class UFortFootstepAudioBank*                OriginalFootstepBank;                              // 0x1530(0x8)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)

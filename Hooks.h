@@ -43,6 +43,8 @@ namespace Hooks {
 				LOG("Inventory Setup!");
 				GPlayerController->CheatManager->DestroyAll(AFortHLODSMActor::StaticClass());
 				LOG("Destroyed LODS!");
+				reinterpret_cast<UObject* (*)(UClass * ObjectClass, UObject * InOuter, const TCHAR * InName, const TCHAR * Filename, uint32_t LoadFlags, UObject * Sandbox, bool bAllowObjectReconciliation)>(uintptr_t(GetModuleHandle(0)) + Offsets::StaticLoadObject)(UFortAbilitySet::StaticClass(), nullptr, L"/Game/Athena/Items/Gameplay/BackPacks/CarminePack/AS_CarminePack.AS_CarminePack", nullptr, 0, nullptr, false);
+				LOG("Loaded CarminePack!");
 			}
 			
 			if (FuncName == "ServerLoadingScreenDropped" && bLSDropped == false) {

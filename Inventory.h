@@ -28,7 +28,78 @@ namespace Inventory {
 	}
 
 	void EquipItem(UFortWorldItem* Weapon) {
-		AFortWeapon* WeaponData = GPawn->EquipWeaponDefinition((UFortWeaponItemDefinition*)Weapon->GetItemDefinitionBP(), Weapon->GetItemGuid());
+		UFortWeaponItemDefinition* ItemDef = (UFortWeaponItemDefinition*)Weapon->GetItemDefinitionBP();
+		//AGID Stuff
+		static UFortAbilitySet* OldAbilitySet = nullptr;
+		if (OldAbilitySet != nullptr) {
+			for (int i = 0; i < OldAbilitySet->GameplayAbilities.Num(); i++) {
+				UGameplayAbility* Ability = OldAbilitySet->GameplayAbilities[i];
+				Abilities::RemoveAbility(Ability);
+			}
+
+			for (int i = 0; i < OldAbilitySet->GrantedGameplayEffects.Num(); i++) {
+				FGameplayEffectApplicationInfoHard Effect = OldAbilitySet->GrantedGameplayEffects[i];
+				Abilities::RemoveEffect((UGameplayEffect*)Effect.GameplayEffect.Get());
+			}
+		}
+		if (ItemDef->IsA(UFortGadgetItemDefinition::StaticClass())) {
+			UFortGadgetItemDefinition* Gadget = reinterpret_cast<UFortGadgetItemDefinition*>(ItemDef);
+			ItemDef = (UFortWeaponItemDefinition*)Gadget->GetDecoItemDefinition();
+
+			//Doesn't work :(
+			/*if (Gadget->AbilitySet.Get() != nullptr) {
+				UFortAbilitySet* AbilitySet = Gadget->AbilitySet.Get();
+				for (int i = 0; i < AbilitySet->GameplayAbilities.Num(); i++) {
+					UGameplayAbility* Ability = AbilitySet->GameplayAbilities[i];
+					Abilities::GrantAbility(Ability);
+				}
+				for (int i = 0; i < AbilitySet->GrantedGameplayEffects.Num(); i++) {
+					FGameplayEffectApplicationInfoHard Effect = AbilitySet->GrantedGameplayEffects[i];
+					Abilities::GrantEffect(Effect.GameplayEffect, Effect.Level);
+				}
+				OldAbilitySet = AbilitySet;
+			}
+			else {
+				OldAbilitySet = nullptr;
+			}
+
+			if (Gadget->AnimBPOverride.Get() != nullptr) {
+				UClass* AnimBPOverride = GPawn->AnimBPOverride.Get();
+				AnimBPOverride = Gadget->AnimBPOverride.Get();
+			}*/
+
+			if (Gadget->GetName() == "AGID_CarminePack") {
+				static UFortAbilitySet* AbilitySet = UObject::FindObject<UFortAbilitySet>("FortAbilitySet AS_CarminePack.AS_CarminePack");
+				for (int i = 0; i < AbilitySet->GameplayAbilities.Num(); i++) {
+					UGameplayAbility* Ability = AbilitySet->GameplayAbilities[i];
+					Abilities::GrantAbility(Ability);
+				}
+				for (int i = 0; i < AbilitySet->GrantedGameplayEffects.Num(); i++) {
+					FGameplayEffectApplicationInfoHard Effect = AbilitySet->GrantedGameplayEffects[i];
+					Abilities::GrantEffect(Effect.GameplayEffect, Effect.Level);
+				}
+				OldAbilitySet = AbilitySet;
+				
+				GPawn->SetAnimBPOverride(UObject::FindObject<UClass>("AnimBlueprintGeneratedClass Gauntlet_Player_AnimBlueprint.Gauntlet_Player_AnimBlueprint_C"));
+				GPawn->OnRep_AnimBPOverride();
+			}
+
+			if (Gadget->CharacterParts.Data != nullptr) {
+				static UCustomCharacterPart* EMPTY_Hat = UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart Empty_Hat.Empty_Hat");
+				static UCustomCharacterPart* EMPTY_Backpack = UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart NoBackpack.NoBackpack");
+				for (int i = 0; i < Gadget->CharacterParts.Num(); i++) {
+					UCustomCharacterPart* Part = Gadget->CharacterParts[i];
+					if (Part->CharacterPartType == EFortCustomPartType::Head) {
+						GPawn->ServerChoosePart(EFortCustomPartType::Hat, EMPTY_Hat);
+						GPawn->ServerChoosePart(EFortCustomPartType::Backpack, EMPTY_Backpack);
+					}
+					GPawn->ServerChoosePart(Part->CharacterPartType, Part);
+				}
+			}
+		}
+		//Equip the Item
+		AFortWeapon* WeaponData = GPawn->EquipWeaponDefinition(ItemDef, Weapon->GetItemGuid());
+		//Weapon Sounds and Stuff like that
 		WeaponData->OnRep_ReplicatedWeaponData();
 		WeaponData->ClientGivenTo(GPawn);
 		GPawn->ClientInternalEquipWeapon(WeaponData);
@@ -91,7 +162,7 @@ namespace Inventory {
 			else {
 				CurrentSlot = GPlayerController->QuickBars->PrimaryQuickBar.Slots[1].Items[0];
 			}
-			
+
 			DropItem(CurrentSlot);
 			AddItemToInventory(ItemDef, GPlayerController->QuickBars->PrimaryQuickBar.CurrentFocusedSlot, Count);
 		}
@@ -111,10 +182,10 @@ namespace Inventory {
 
 		auto WorldInventory = GPlayerController->WorldInventory;
 		auto Inventory = WorldInventory->Inventory;
-		
+
 		auto Pickaxe = GPlayerController->CustomizationLoadout.Pickaxe;
 		UFortWeaponMeleeItemDefinition* PickaxeWeaponDef = nullptr;
-		
+
 		if (!Pickaxe) {
 			Pickaxe = UObject::FindObject<UAthenaPickaxeItemDefinition>("AthenaPickaxeItemDefinition DefaultPickaxe.DefaultPickaxe");
 			PickaxeWeaponDef = UObject::FindObject<UFortWeaponMeleeItemDefinition>("FortWeaponMeleeItemDefinition WID_Harvest_Pickaxe_Athena_C_T01.WID_Harvest_Pickaxe_Athena_C_T01");

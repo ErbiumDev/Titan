@@ -36,6 +36,9 @@
     <ClCompile Include="SDK\UMG_functions.cpp">
       <Filter>Header Files\SDK</Filter>
     </ClCompile>
+    <ClCompile Include="SDK\GameplayAbilities_functions.cpp">
+      <Filter>Header Files\SDK</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SDK.hpp">
