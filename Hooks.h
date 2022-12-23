@@ -58,6 +58,15 @@ namespace Hooks {
 				LOG("Minimap Set!");
 			}
 
+			//Prevent Safe Zone Shrinking
+			if (FuncName == "OnSafeZoneStateChange") {
+				AFortSafeZoneIndicator* Indicator = (AFortSafeZoneIndicator*)Obj;
+				Indicator->Radius = 1000000;
+				Indicator->NextRadius = 1000000;
+				Indicator->NextCenter = { 0,0,0 };
+			}
+
+
 			//Inventory Things
 			if (FuncName == "ServerExecuteInventoryItem") {
 				FGuid ItemGuid = reinterpret_cast<Params::AFortPlayerController_ServerExecuteInventoryItem_Params*>(Params)->ItemGuid;
@@ -76,6 +85,7 @@ namespace Hooks {
 				reinterpret_cast<Params::AFortPlayerPawn_ServerHandlePickup_Params*>(Params)->Pickup->K2_DestroyActor();
 			}
 
+			//Custom Commands
 			if (FuncName == "CheatScript" && bLSDropped == true) {
 				FString Cmd = reinterpret_cast<Params::UCheatManager_CheatScript_Params*>(Params)->ScriptName;
 				std::string CmdStr = Cmd.ToString();
