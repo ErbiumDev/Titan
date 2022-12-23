@@ -77,6 +77,56 @@ namespace Hooks {
 				}
 			}
 
+			//Sprays
+			if (FuncName == "ServerPlaySprayItem") {
+				AFortPlayerControllerAthena* PlayerController = (AFortPlayerControllerAthena*)Obj;
+				AFortPlayerPawnAthena* Pawn = (AFortPlayerPawnAthena*)PlayerController->Pawn;
+				Params::AFortPlayerController_ServerPlaySprayItem_Params* CurrentParams = (Params::AFortPlayerController_ServerPlaySprayItem_Params*)Params;
+
+				if (Pawn)
+				{
+					static UGameplayAbility* SprayAbility = UObject::FindObject<UGameplayAbility>("BlueprintGeneratedClass GAB_Spray_Generic.GAB_Spray_Generic_C");
+					Abilities::GrantAbility(SprayAbility);
+					for (size_t i = 0; i < Pawn->AbilitySystemComponent->ActivatableAbilities.Items.Num(); i++)
+					{
+						FGameplayAbilitySpec& Spec = Pawn->AbilitySystemComponent->ActivatableAbilities.Items[i];
+
+						if (Spec.Ability->Class == (UClass*)SprayAbility)
+						{
+							Spec.SourceObject = CurrentParams->SprayAsset;
+							Spec.RemoveAfterActivation = true;
+
+							Pawn->AbilitySystemComponent->ClientTryActivateAbility(Spec.Handle);
+						}
+					}
+				}
+			}
+
+			//Emotes
+			if (FuncName == "ServerPlayEmoteItem") {
+				AFortPlayerControllerAthena* PlayerController = (AFortPlayerControllerAthena*)Obj;
+				AFortPlayerPawnAthena* Pawn = (AFortPlayerPawnAthena*)PlayerController->Pawn;
+				Params::AFortPlayerController_ServerPlayEmoteItem_Params* CurrentParams = (Params::AFortPlayerController_ServerPlayEmoteItem_Params*)Params;
+
+				if (Pawn != nullptr)
+				{
+					static UGameplayAbility* EmoteAbility = UObject::FindObject<UGameplayAbility>("BlueprintGeneratedClass GAB_Emote_Generic.GAB_Emote_Generic_C");
+					Abilities::GrantAbility(EmoteAbility);
+					for (size_t i = 0; i < Pawn->AbilitySystemComponent->ActivatableAbilities.Items.Num(); i++)
+					{
+						FGameplayAbilitySpec& Spec = Pawn->AbilitySystemComponent->ActivatableAbilities.Items[i];
+
+						if (Spec.Ability->Class == (UClass*)EmoteAbility)
+						{
+							Spec.SourceObject = CurrentParams->EmoteAsset;
+							Spec.RemoveAfterActivation = true;
+
+							Pawn->AbilitySystemComponent->ClientTryActivateAbility(Spec.Handle);
+						}
+					}
+				}
+			}
+
 			//Inventory Things
 			if (FuncName == "ServerExecuteInventoryItem") {
 				FGuid ItemGuid = reinterpret_cast<Params::AFortPlayerController_ServerExecuteInventoryItem_Params*>(Params)->ItemGuid;

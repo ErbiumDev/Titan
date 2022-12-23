@@ -68,6 +68,19 @@ namespace Inventory {
 				AnimBPOverride = Gadget->AnimBPOverride.Get();
 			}*/
 
+			if (Gadget->CharacterParts.Data != nullptr) {
+				static UCustomCharacterPart* EMPTY_Hat = UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart Empty_Hat.Empty_Hat");
+				static UCustomCharacterPart* EMPTY_Backpack = UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart NoBackpack.NoBackpack");
+				for (int i = 0; i < Gadget->CharacterParts.Num(); i++) {
+					UCustomCharacterPart* Part = Gadget->CharacterParts[i];
+					if (Part->CharacterPartType == EFortCustomPartType::Head) {
+						GPawn->ServerChoosePart(EFortCustomPartType::Hat, EMPTY_Hat);
+						GPawn->ServerChoosePart(EFortCustomPartType::Backpack, EMPTY_Backpack);
+					}
+					GPawn->ServerChoosePart(Part->CharacterPartType, Part);
+				}
+			}
+
 			if (Gadget->GetName() == "AGID_CarminePack") {
 				static UFortAbilitySet* AbilitySet = UObject::FindObject<UFortAbilitySet>("FortAbilitySet AS_CarminePack.AS_CarminePack");
 				for (int i = 0; i < AbilitySet->GameplayAbilities.Num(); i++) {
@@ -81,20 +94,6 @@ namespace Inventory {
 				OldAbilitySet = AbilitySet;
 				
 				GPawn->SetAnimBPOverride(UObject::FindObject<UClass>("AnimBlueprintGeneratedClass Gauntlet_Player_AnimBlueprint.Gauntlet_Player_AnimBlueprint_C"));
-				GPawn->OnRep_AnimBPOverride();
-			}
-
-			if (Gadget->CharacterParts.Data != nullptr) {
-				static UCustomCharacterPart* EMPTY_Hat = UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart Empty_Hat.Empty_Hat");
-				static UCustomCharacterPart* EMPTY_Backpack = UObject::FindObject<UCustomCharacterPart>("CustomCharacterPart NoBackpack.NoBackpack");
-				for (int i = 0; i < Gadget->CharacterParts.Num(); i++) {
-					UCustomCharacterPart* Part = Gadget->CharacterParts[i];
-					if (Part->CharacterPartType == EFortCustomPartType::Head) {
-						GPawn->ServerChoosePart(EFortCustomPartType::Hat, EMPTY_Hat);
-						GPawn->ServerChoosePart(EFortCustomPartType::Backpack, EMPTY_Backpack);
-					}
-					GPawn->ServerChoosePart(Part->CharacterPartType, Part);
-				}
 			}
 		}
 		//Equip the Item
