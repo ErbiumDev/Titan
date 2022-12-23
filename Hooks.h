@@ -66,6 +66,16 @@ namespace Hooks {
 				Indicator->NextCenter = { 0,0,0 };
 			}
 
+			//Interaction
+			if (FuncName == "ServerAttemptInteract") {
+				Params::AFortPlayerController_ServerAttemptInteract_Params* params = reinterpret_cast<Params::AFortPlayerController_ServerAttemptInteract_Params*>(Params);
+				AActor* Actor = params->ReceivingActor;
+				if (Actor && Actor->IsA(ABuildingContainer::StaticClass())) {
+					ABuildingContainer* Container = (ABuildingContainer*)Actor;
+					Container->bAlreadySearched = true;
+					Container->OnRep_bAlreadySearched();
+				}
+			}
 
 			//Inventory Things
 			if (FuncName == "ServerExecuteInventoryItem") {
