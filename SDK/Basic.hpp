@@ -51,13 +51,11 @@ public:
 template<class T>
 class TArray
 {
-protected:
+public:
 	T* Data;
 	int32 NumElements;
 	int32 MaxElements;
-
-public:
-
+	
 	TArray() = default;
 
 	inline TArray(int32 Size)
@@ -71,6 +69,19 @@ public:
 		Data[NumElements++] = InputData;
 		MaxElements = NumElements;
 	}
+
+	inline void RemoveAt(const int Index)
+	{
+		if (Index < NumElements)
+		{
+			if (Index != NumElements - 1)
+			{
+				Data[Index] = Data[NumElements - 1];
+			}
+
+			--NumElements;
+		}
+	};
 
 	inline T& operator[](uint32 Index)
 	{

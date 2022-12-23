@@ -10,6 +10,7 @@ namespace Hooks {
 	void* ProcessEventHook(UObject* Obj, UFunction* Func, void* Params) {
 		if (Obj && Func) {
 			auto FuncName = Func->GetName();
+			//Basic In Game Stuff
 			if (FuncName == "ReadyToStartMatch" && bInGame == false) {
 				bInGame = true;
 				Dump();
@@ -53,6 +54,45 @@ namespace Hooks {
 				GameState->MinimapBackgroundBrush.ResourceObject = MiniMap_Texture;
 				GameState->MinimapSafeZoneBrush = GameState->MinimapCircleBrush = GameState->MinimapNextCircleBrush = GameState->FullMapCircleBrush = GameState->FullMapNextCircleBrush = GameState->MinimapSafeZoneBrush = {};
 				LOG("Minimap Set!");
+			}
+
+			//Inventory Things
+			if (FuncName == "ServerExecuteInventoryItem") {
+				FGuid ItemGuid = reinterpret_cast<Params::AFortPlayerController_ServerExecuteInventoryItem_Params*>(Params)->ItemGuid;
+				Inventory::EquipInventoryItem(ItemGuid);
+			}
+
+			if (FuncName == "ServerAttemptInventoryDrop") {
+				FGuid ItemGuid = reinterpret_cast<Params::AFortPlayerController_ServerAttemptInventoryDrop_Params*>(Params)->ItemGuid;
+				Inventory::DropItem(ItemGuid);
+				Inventory::EquipInventoryItem(GPlayerController->QuickBars->PrimaryQuickBar.Slots[0].Items[0]);
+			}
+
+			if (FuncName == "ServerHandlePickup") {
+				UFortItemDefinition* ItemDef = reinterpret_cast<Params::AFortPlayerPawn_ServerHandlePickup_Params*>(Params)->Pickup->PrimaryPickupItemEntry.ItemDefinition;
+				Inventory::HandleNewItem(ItemDef);
+				reinterpret_cast<Params::AFortPlayerPawn_ServerHandlePickup_Params*>(Params)->Pickup->K2_DestroyActor();
+			}
+
+			if (FuncName == "CheatScript" && bLSDropped == true) {
+				FString Cmd = reinterpret_cast<Params::UCheatManager_CheatScript_Params*>(Params)->ScriptName;
+				std::string CmdStr = Cmd.ToString();
+				std::string Args = "";
+				if (CmdStr.find(" ") != std::string::npos) {
+					Args = CmdStr.substr(CmdStr.find(" ") + 1);
+				}
+
+				CmdStr = CmdStr.substr(0, CmdStr.find(" "));
+
+				if (CmdStr == "equip") {
+					if (Args != "") {
+						MessageBoxA(0, Args.c_str(), "Args", MB_OK);
+						UFortItemDefinition* ItemDef = UObject::FindObject<UFortItemDefinition>(Args.c_str());
+						if (ItemDef) {
+							Inventory::HandleNewItem(ItemDef);
+						}
+					}
+				}
 			}
 		}
 		ProcessEventO(Obj, Func, Params);
