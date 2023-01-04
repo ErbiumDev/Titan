@@ -2,7 +2,7 @@
 A Local In Game Dll for 7.30
 
 ## Features
-Emotes & Sprays
+Emotes
 <br>
 Weapons & Inventory
 <br>
