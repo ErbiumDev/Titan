@@ -1,9 +1,13 @@
-# Titan (main)
-A Local In Game Dll for 4.1
+# Titan (7.30)
+A Local In Game Dll for 7.30
 
 ## Features
 Emotes & Sprays
 <br>
 Weapons & Inventory
 <br>
-Thanos Support
+AGID Support
+<br>
+Vehicle Support
+<br>
+Marshmello Event Support
