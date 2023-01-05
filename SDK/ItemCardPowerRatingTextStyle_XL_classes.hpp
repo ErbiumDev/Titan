@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass ItemCardPowerRatingTextStyle_XL.ItemCardPowerRatingTextStyle_XL_C
 class UItemCardPowerRatingTextStyle_XL_C : public UCommonTextStyle
 {

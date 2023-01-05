@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Base-S-B-LowOpacity.TextStyle-Base-S-B-LowOpacity_C
 class UTextStyle_Base_S_B_LowOpacity_C : public UTextStyle_Base_S_C
 {

@@ -31,7 +31,7 @@ public:
 class UClientPilotBlackboard : public UObject
 {
 public:
-	uint8                                        Pad_23D6[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_C4D[0x50];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

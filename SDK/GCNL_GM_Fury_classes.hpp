@@ -12,15 +12,15 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xB0 (0x4F0 - 0x440)
+// 0xB0 (0x4D8 - 0x428)
 // BlueprintGeneratedClass GCNL_GM_Fury.GCNL_GM_Fury_C
 class AGCNL_GM_Fury_C : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x440(0x8)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*              FuryPS;                                            // 0x448(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TMap<class FName, struct FLinearColor>       VectorParameters;                                  // 0x450(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	TMap<class FName, float>                     ScalarParameters;                                  // 0x4A0(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*              FuryPS;                                            // 0x430(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class FName, struct FLinearColor>       VectorParameters;                                  // 0x438(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	TMap<class FName, float>                     ScalarParameters;                                  // 0x488(0x50)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 	static class UClass* StaticClass()
 	{
@@ -29,7 +29,7 @@ public:
 	}
 
 	void DisableFuryPS(bool CallFunc_IsValid_ReturnValue);
-	bool OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AEnemyPawn_Parent_C* K2Node_DynamicCast_AsEnemy_Pawn_Parent, bool K2Node_DynamicCast_bSuccess, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam, TArray<struct FParticleSysParam>& K2Node_MakeArray_Array, class UParticleSystemComponent* CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference);
+	bool OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AEnemyPawn_Parent_C* K2Node_DynamicCast_AsEnemy_Pawn_Parent, bool K2Node_DynamicCast_bSuccess, const struct FParticleSysParam& K2Node_MakeStruct_ParticleSysParam, TArray<struct FParticleSysParam>& K2Node_MakeArray_Array);
 	void UserConstructionScript();
 	void BindOnDied(class AEnemyPawn_Parent_C* EnemyPawnParentReference);
 	void OnEnemyDeath(class AActor* DeadActor, float Damage, class AFortPawn* InstigatedBy, const struct FVector& HitLocation, class AActor* DamageCauser);

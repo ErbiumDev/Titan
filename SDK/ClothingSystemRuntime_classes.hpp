@@ -26,21 +26,21 @@ public:
 
 };
 
-// 0x120 (0x168 - 0x48)
+// 0x130 (0x178 - 0x48)
 // Class ClothingSystemRuntime.ClothingAsset
 class UClothingAsset : public UClothingAssetBase
 {
 public:
 	class UPhysicsAsset*                         PhysicsAsset;                                      // 0x48(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FClothConfig                          ClothConfig;                                       // 0x50(0xC4)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_25B5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FClothLODData>                 LODData;                                           // 0x118(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                LodMap;                                            // 0x128(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<class FName>                          UsedBoneNames;                                     // 0x138(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	TArray<int32>                                UsedBoneIndices;                                   // 0x148(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
-	int32                                        ReferenceBoneIndex;                                // 0x158(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_25B6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UClothingAssetCustomData*              CustomData;                                        // 0x160(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FClothConfig                          ClothConfig;                                       // 0x50(0xD4)(Edit, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2971[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<struct FClothLODData>                 LODData;                                           // 0x128(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                LodMap;                                            // 0x138(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<class FName>                          UsedBoneNames;                                     // 0x148(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
+	TArray<int32>                                UsedBoneIndices;                                   // 0x158(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
+	int32                                        ReferenceBoneIndex;                                // 0x168(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2972[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UClothingAssetCustomData*              CustomData;                                        // 0x170(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass()
 	{
@@ -69,7 +69,7 @@ public:
 class UClothingSimulationInteractorNv : public UClothingSimulationInteractor
 {
 public:
-	uint8                                        Pad_25B7[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2973[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

@@ -15,12 +15,40 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.On_BorderTouch_MouseButtonDown_0
+// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
+// struct FEventReply                 CallFunc_Unhandled_ReturnValue                                   ()
+// bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+
+struct FEventReply UAthenaBannerSelectModal_C::On_BorderTouch_MouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Unhandled_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, const struct FEventReply& CallFunc_Handled_ReturnValue)
+{
+	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "On_BorderTouch_MouseButtonDown_0");
+
+	Params::UAthenaBannerSelectModal_C_On_BorderTouch_MouseButtonDown_0_Params Parms;
+	Parms.MyGeometry = MyGeometry;
+	Parms.MouseEvent = MouseEvent;
+	Parms.CallFunc_Unhandled_ReturnValue = CallFunc_Unhandled_ReturnValue;
+	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
+	Parms.CallFunc_Handled_ReturnValue = CallFunc_Handled_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.HandleNextAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaBannerSelectModal_C::HandleNextAction(bool* Passthrough)
+void UAthenaBannerSelectModal_C::HandleNextAction(bool* PassThrough)
 {
 	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "HandleNextAction");
 
@@ -28,8 +56,8 @@ void UAthenaBannerSelectModal_C::HandleNextAction(bool* Passthrough)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -37,9 +65,9 @@ void UAthenaBannerSelectModal_C::HandleNextAction(bool* Passthrough)
 // Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.HandlePreviousAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaBannerSelectModal_C::HandlePreviousAction(bool* Passthrough)
+void UAthenaBannerSelectModal_C::HandlePreviousAction(bool* PassThrough)
 {
 	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "HandlePreviousAction");
 
@@ -47,8 +75,8 @@ void UAthenaBannerSelectModal_C::HandlePreviousAction(bool* Passthrough)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -58,16 +86,16 @@ void UAthenaBannerSelectModal_C::HandlePreviousAction(bool* Passthrough)
 // Parameters:
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
 
-void UAthenaBannerSelectModal_C::Setup_Input_Action_Handlers(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12)
+void UAthenaBannerSelectModal_C::Setup_Input_Action_Handlers(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2)
 {
 	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "Setup Input Action Handlers");
 
 	Params::UAthenaBannerSelectModal_C_Setup_Input_Action_Handlers_Params Parms;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -77,10 +105,10 @@ void UAthenaBannerSelectModal_C::Setup_Input_Action_Handlers(UDelegateProperty_ 
 // Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.HandleCloseAction
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaBannerSelectModal_C::HandleCloseAction(bool* Passthrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void UAthenaBannerSelectModal_C::HandleCloseAction(bool* PassThrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
 {
 	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "HandleCloseAction");
 
@@ -89,8 +117,8 @@ void UAthenaBannerSelectModal_C::HandleCloseAction(bool* Passthrough, class UFor
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -174,8 +202,23 @@ void UAthenaBannerSelectModal_C::OnActivated()
 }
 
 
+// Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.Close
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UAthenaBannerSelectModal_C::Close()
+{
+	static auto Func = Class->GetFunction("AthenaBannerSelectModal_C", "Close");
+
+	Params::UAthenaBannerSelectModal_C_Close_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function AthenaBannerSelectModal.AthenaBannerSelectModal_C.ExecuteUbergraph_AthenaBannerSelectModal
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_ComponentBoundEvent_IconId                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -87,29 +87,28 @@ struct AAnnounce_TutorialConversation_C_OnClientAnnouncementStop_Params
 public:
 };
 
-// 0x291 (0x291 - 0x0)
+// 0x289 (0x289 - 0x0)
 // Function Announce_TutorialConversation.Announce_TutorialConversation_C.ExecuteUbergraph_Announce_TutorialConversation
 struct AAnnounce_TutorialConversation_C_ExecuteUbergraph_Announce_TutorialConversation_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_PlayConversation_ReturnValue;             // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5210[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4F3D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortConversationSentence             K2Node_Event_FinishingSentence;                    // 0x8(0xC8)()
 	int32                                        K2Node_Event_FinishingSentenceSentenceIndex;       // 0xD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0xD4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFortConversationSentence             K2Node_Event_Sentence1;                            // 0xD8(0xC8)(ConstParm)
 	int32                                        K2Node_Event_SentenceIndex1;                       // 0x1A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5211[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FTutorialHighlightData                CallFunc_Array_Get_Item;                           // 0x1A8(0x10)(HasGetValueTypeHash)
-	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x1B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_NotEqual_NameName_ReturnValue;            // 0x1B9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x1BA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5212[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFortConversationSentence             K2Node_Event_Sentence;                             // 0x1C0(0xC8)(ConstParm)
-	int32                                        K2Node_Event_SentenceIndex;                        // 0x288(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x28C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_PlayConversationFromSentenceIndex_ReturnValue; // 0x290(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FTutorialHighlightData                CallFunc_Array_Get_Item;                           // 0x1A4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x1B4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_NotEqual_NameName_ReturnValue;            // 0x1B5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x1B6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_4F3E[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFortConversationSentence             K2Node_Event_Sentence;                             // 0x1B8(0xC8)(ConstParm)
+	int32                                        K2Node_Event_SentenceIndex;                        // 0x280(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x284(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_PlayConversationFromSentenceIndex_ReturnValue; // 0x288(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

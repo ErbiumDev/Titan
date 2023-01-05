@@ -12,13 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x150 (0x240 - 0xF0)
+// 0x100 (0x1F8 - 0xF8)
 // Class UACBase.UACNetworkComponent
 class UUACNetworkComponent : public UActorComponent
 {
 public:
-	int32                                        PlayerID;                                          // 0xF0(0x4)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_3A[0x14C];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	int32                                        PlayerID;                                          // 0xF8(0x4)(Net, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_11EA[0xFC];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -28,7 +28,7 @@ public:
 
 	void SendPacketToServer(uint8 Type, TArray<uint8>& Packet);
 	void SendPacketToClient(uint8 Type, TArray<uint8>& Packet);
-	void SendClientHello();
+	void SendClientHello(uint32 SessionKey);
 };
 
 }

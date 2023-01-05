@@ -77,27 +77,42 @@ void APlayerPawn_Generic_Parent_C::Player_Creates_a_Splash(struct FTransform& Ne
 }
 
 
+// Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.ReinitializeWeaponMaterials
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Generic_Parent_C::ReinitializeWeaponMaterials()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ReinitializeWeaponMaterials");
+
+	Params::APlayerPawn_Generic_Parent_C_ReinitializeWeaponMaterials_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function PlayerPawn_Generic_Parent.PlayerPawn_Generic_Parent_C.ExecuteUbergraph_PlayerPawn_Generic_Parent
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                  K2Node_CustomEvent_NewTransform                                  (ConstParm, IsPlainOldData, NoDestructor)
 // struct FTransform                  Temp_struct_Variable                                             (ConstParm, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UPostProcessComponent*       CallFunc_AddComponent_ReturnValue                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FTransform                  K2Node_CustomEvent_NewTransform                                  (ConstParm, IsPlainOldData, NoDestructor)
 
-void APlayerPawn_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Generic_Parent(int32 EntryPoint, const struct FTransform& K2Node_CustomEvent_NewTransform, const struct FTransform& Temp_struct_Variable, bool CallFunc_IsLocallyControlled_ReturnValue, class UPostProcessComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue)
+void APlayerPawn_Generic_Parent_C::ExecuteUbergraph_PlayerPawn_Generic_Parent(int32 EntryPoint, const struct FTransform& Temp_struct_Variable, bool CallFunc_IsLocallyControlled_ReturnValue, class UPostProcessComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, const struct FTransform& K2Node_CustomEvent_NewTransform)
 {
 	static auto Func = Class->GetFunction("PlayerPawn_Generic_Parent_C", "ExecuteUbergraph_PlayerPawn_Generic_Parent");
 
 	Params::APlayerPawn_Generic_Parent_C_ExecuteUbergraph_PlayerPawn_Generic_Parent_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_CustomEvent_NewTransform = K2Node_CustomEvent_NewTransform;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.CallFunc_IsLocallyControlled_ReturnValue = CallFunc_IsLocallyControlled_ReturnValue;
 	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
+	Parms.K2Node_CustomEvent_NewTransform = K2Node_CustomEvent_NewTransform;
 
 	UObject::ProcessEvent(Func, &Parms);
 

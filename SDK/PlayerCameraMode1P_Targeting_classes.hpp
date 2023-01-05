@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass PlayerCameraMode1P_Targeting.PlayerCameraMode1P_Targeting_C
 class UPlayerCameraMode1P_Targeting_C : public UPlayerCameraMode1P_C
 {

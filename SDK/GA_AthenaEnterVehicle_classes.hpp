@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0xAC8 - 0xAC0)
+// 0x8 (0x940 - 0x938)
 // BlueprintGeneratedClass GA_AthenaEnterVehicle.GA_AthenaEnterVehicle_C
 class UGA_AthenaEnterVehicle_C : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAC0(0x8)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x938(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass()
 	{

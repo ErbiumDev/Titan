@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GET_DirectCreatureDamage.GET_DirectCreatureDamage_C
 class UGET_DirectCreatureDamage_C : public UGET_DirectPhysicalDamage_C
 {

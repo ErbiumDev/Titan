@@ -12,18 +12,18 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x41 (0x8C1 - 0x880)
+// 0x41 (0xBE9 - 0xBA8)
 // WidgetBlueprintGeneratedClass ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C
 class UExpeditionSquadSlotButton_C : public UFortSquadSlotSelectorButton
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x880(0x8)(Transient, DuplicateTransient)
-	int32                                        SquadSlotIndex;                                    // 0x888(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                        Pad_256F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UMulticastDelegateProperty_                  OnSquadSlotSelected;                               // 0x890(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                  OnSquadSlotUpdated;                                // 0x8A0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	UMulticastDelegateProperty_                  OnSquadSlotOpened;                                 // 0x8B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
-	enum class EFortItemCardSize                 SlottedItemCardSize;                               // 0x8C0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xBA8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	int32                                        SquadSlotIndex;                                    // 0xBB0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	uint8                                        Pad_4966[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UMulticastDelegateProperty_                  OnSquadSlotSelected;                               // 0xBB8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                  OnSquadSlotUpdated;                                // 0xBC8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	UMulticastDelegateProperty_                  OnSquadSlotOpened;                                 // 0xBD8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	enum class EFortItemCardSize                 SlottedItemCardSize;                               // 0xBE8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{
@@ -35,12 +35,12 @@ public:
 	void PreConstruct(bool IsDesignTime);
 	void SquadSlotWidgetUpdated();
 	void HandlePostDifferentSquadSlotSetBP();
-	void OnSelected();
+	void BP_OnSelected();
 	void BndEvt__PopupMenuAnchor_K2Node_ComponentBoundEvent_3_OnMenuOpenChangedEvent__DelegateSignature(bool bIsOpen);
 	void Construct();
 	void Destruct();
 	void Open_Squad_Slot(int32 SquadSlotIndex);
-	void ExecuteUbergraph_ExpeditionSquadSlotButton(int32 EntryPoint, enum class EFortItemCardSize Temp_byte_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UClass* Temp_class_Variable12, class UClass* Temp_class_Variable123, class UClass* Temp_class_Variable1234, class UClass* Temp_class_Variable12345, class UClass* Temp_class_Variable123456, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable12, class UCommonInputContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool K2Node_Event_IsDesignTime, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue1, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue1, bool K2Node_ComponentBoundEvent_bIsOpen, class UClass* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, int32 K2Node_CustomEvent_SquadSlotIndex, bool CallFunc_IsSquadSlotLockedBP_ReturnValue);
+	void ExecuteUbergraph_ExpeditionSquadSlotButton(int32 EntryPoint, enum class EFortItemCardSize Temp_byte_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UClass* Temp_class_Variable2, class UClass* Temp_class_Variable3, class UClass* Temp_class_Variable4, class UClass* Temp_class_Variable5, class UClass* Temp_class_Variable6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable2, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool K2Node_Event_IsDesignTime, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue1, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue1, bool K2Node_ComponentBoundEvent_bIsOpen, class UClass* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, int32 K2Node_CustomEvent_SquadSlotIndex, bool CallFunc_IsSquadSlotLockedBP_ReturnValue);
 	void OnSquadSlotOpened__DelegateSignature();
 	void OnSquadSlotUpdated__DelegateSignature(class UFortItem* Item);
 	void OnSquadSlotSelected__DelegateSignature(int32 SquadSlotIndex);

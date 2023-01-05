@@ -52,8 +52,8 @@ public:
 };
 
 // 0x0 (0x0 - 0x0)
-// Function ItemCardWidget.ItemCardWidget_C.OnHovered
-struct UItemCardWidget_C_OnHovered_Params
+// Function ItemCardWidget.ItemCardWidget_C.BP_OnHovered
+struct UItemCardWidget_C_BP_OnHovered_Params
 {
 public:
 };
@@ -65,16 +65,18 @@ struct UItemCardWidget_C_Construct_Params
 public:
 };
 
-// 0x14 (0x14 - 0x0)
+// 0x20 (0x20 - 0x0)
 // Function ItemCardWidget.ItemCardWidget_C.ExecuteUbergraph_ItemCardWidget
 struct UItemCardWidget_C_ExecuteUbergraph_ItemCardWidget_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        K2Node_CustomEvent_Idx;                            // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_42E9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFocusEvent                           K2Node_Event_InFocusEvent;                         // 0xC(0x8)(NoDestructor)
+	uint8                                        Pad_38DA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        K2Node_CustomEvent_Idx;                            // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_38DB[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFocusEvent                           K2Node_Event_InFocusEvent;                         // 0x18(0x8)(NoDestructor)
 };
 
 // 0x28 (0x28 - 0x0)

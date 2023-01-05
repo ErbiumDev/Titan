@@ -15,90 +15,17 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_E019B8DC42D4A76813488292D50D4442
-// (BlueprintEvent)
+// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.BlueprintUpdateAnimation
+// (Event, Public, BlueprintEvent)
 // Parameters:
+// float                              DeltaTimeX                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_E019B8DC42D4A76813488292D50D4442()
+void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::BlueprintUpdateAnimation(float DeltaTimeX)
 {
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_E019B8DC42D4A76813488292D50D4442");
+	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "BlueprintUpdateAnimation");
 
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_E019B8DC42D4A76813488292D50D4442_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_53B6F76442E1E5367E83198574A7E337
-// (BlueprintEvent)
-// Parameters:
-
-void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_53B6F76442E1E5367E83198574A7E337()
-{
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_53B6F76442E1E5367E83198574A7E337");
-
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_53B6F76442E1E5367E83198574A7E337_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_AF49CEBA41A86A5239B445ACCA2A35D2
-// (BlueprintEvent)
-// Parameters:
-
-void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_AF49CEBA41A86A5239B445ACCA2A35D2()
-{
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_AF49CEBA41A86A5239B445ACCA2A35D2");
-
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_AF49CEBA41A86A5239B445ACCA2A35D2_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_3B49A128489AAE9305B9BEACDF5446C4
-// (BlueprintEvent)
-// Parameters:
-
-void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_3B49A128489AAE9305B9BEACDF5446C4()
-{
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_3B49A128489AAE9305B9BEACDF5446C4");
-
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_3B49A128489AAE9305B9BEACDF5446C4_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_5984D2B3487D5E3495C1419E61FA91AE
-// (BlueprintEvent)
-// Parameters:
-
-void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_5984D2B3487D5E3495C1419E61FA91AE()
-{
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_5984D2B3487D5E3495C1419E61FA91AE");
-
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_CopyPoseFromMesh_5984D2B3487D5E3495C1419E61FA91AE_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_01F0D350476ED069A3D9B380171159E1
-// (BlueprintEvent)
-// Parameters:
-
-void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_01F0D350476ED069A3D9B380171159E1()
-{
-	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_01F0D350476ED069A3D9B380171159E1");
-
-	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_EvaluateGraphExposedInputs_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_AnimGraphNode_AnimDynamics_01F0D350476ED069A3D9B380171159E1_Params Parms;
+	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_BlueprintUpdateAnimation_Params Parms;
+	Parms.DeltaTimeX = DeltaTimeX;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -121,18 +48,18 @@ void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::BlueprintInitializeAnimation()
 
 
 // Function SK_M_Med_Soldier_04_Skeleton_AnimBP.SK_M_Med_Soldier_04_Skeleton_AnimBP_C.ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USkeletalMeshComponent*      CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              K2Node_Event_DeltaTimeX                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP(int32 EntryPoint, class USkeletalMeshComponent* CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue)
+void USK_M_Med_Soldier_04_Skeleton_AnimBP_C::ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP(int32 EntryPoint, float K2Node_Event_DeltaTimeX)
 {
 	static auto Func = Class->GetFunction("SK_M_Med_Soldier_04_Skeleton_AnimBP_C", "ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP");
 
 	Params::USK_M_Med_Soldier_04_Skeleton_AnimBP_C_ExecuteUbergraph_SK_M_Med_Soldier_04_Skeleton_AnimBP_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue = CallFunc_GetOwnerSkeletalMeshComponent_ReturnValue;
+	Parms.K2Node_Event_DeltaTimeX = K2Node_Event_DeltaTimeX;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -12,13 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x20 (0xB10 - 0xAF0)
+// 0x20 (0x988 - 0x968)
 // BlueprintGeneratedClass GA_DefaultPlayer_Stunned.GA_DefaultPlayer_Stunned_C
 class UGA_DefaultPlayer_Stunned_C : public UGAB_GenericStunned_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAF0(0x8)(Transient, DuplicateTransient)
-	struct FFortFeedbackHandle                   StunFeedbackEvent;                                 // 0xAF8(0x18)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x968(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FFortFeedbackHandle                   StunFeedbackEvent;                                 // 0x970(0x18)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
 
 	static class UClass* StaticClass()
 	{

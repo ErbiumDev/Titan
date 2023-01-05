@@ -83,27 +83,31 @@ public:
 	bool                                         NewParam;                                          // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x3F (0x3F - 0x0)
+// 0x53 (0x53 - 0x0)
 // Function VaultCharacterLightingBP.VaultCharacterLightingBP_C.ExecuteUbergraph_VaultCharacterLightingBP
 struct AVaultCharacterLightingBP_C_ExecuteUbergraph_VaultCharacterLightingBP_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2B0E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x8(0x10)(ZeroConstructor, NoDestructor)
-	bool                                         CallFunc_IsMobilePlatform_ReturnValue;             // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2B0F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4B74[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                CallFunc_GetPlatformName_ReturnValue;              // 0x8(0x10)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsMobilePlatform_ReturnValue;             // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_4B75[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGameUserSettings*                     CallFunc_GetGameUserSettings_ReturnValue;          // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetShadowQuality_ReturnValue;             // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsMobilePlatform_ReturnValue1;            // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x2D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x2E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2B10[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4B76[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGameUserSettings*                     CallFunc_GetGameUserSettings_ReturnValue1;         // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetShadowQuality_ReturnValue1;            // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_BooleanOR_ReturnValue1;                   // 0x3D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_CustomEvent_NewParam;                       // 0x3E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_4B77[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x40(0x10)(ZeroConstructor, NoDestructor)
+	bool                                         CallFunc_BooleanOR_ReturnValue1;                   // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_BooleanOR_ReturnValue2;                   // 0x51(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_CustomEvent_NewParam;                       // 0x52(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

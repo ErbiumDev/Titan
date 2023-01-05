@@ -31,7 +31,7 @@ void UMultiFactorAuthWidget_C::Construct()
 
 
 // Function MultiFactorAuthWidget.MultiFactorAuthWidget_C.ExecuteUbergraph_MultiFactorAuthWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

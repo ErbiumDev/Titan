@@ -421,7 +421,7 @@ void UFortTwitchLogin_C::OnShowLoginError(class FText& ErrorTitle, class FText& 
 
 
 // Function FortTwitchLogin.FortTwitchLogin_C.ExecuteUbergraph_FortTwitchLogin
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortDialogResult       K2Node_CustomEvent_Result                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -439,14 +439,14 @@ void UFortTwitchLogin_C::OnShowLoginError(class FText& ErrorTitle, class FText& 
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
 // class UTwitchLoginModalWidget_C*   K2Node_DynamicCast_AsTwitch_Login_Modal_Widget1                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UCommonButton*               K2Node_ComponentBoundEvent_Button12345                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*               K2Node_ComponentBoundEvent_Button1234                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               K2Node_ComponentBoundEvent_Button5                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               K2Node_ComponentBoundEvent_Button4                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_GetLinkedTwitchAccountName_ReturnValue                  (ZeroConstructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_StrStr_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
 // bool                               CallFunc_IsVisible_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UCommonButton*               K2Node_ComponentBoundEvent_Button123                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*               K2Node_ComponentBoundEvent_Button12                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               K2Node_ComponentBoundEvent_Button3                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               K2Node_ComponentBoundEvent_Button2                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetEmptyText_ReturnValue                                ()
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -457,9 +457,9 @@ void UFortTwitchLogin_C::OnShowLoginError(class FText& ErrorTitle, class FText& 
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        K2Node_Select_Default                                            ()
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
 
-void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, bool K2Node_Event_bLoggedIn, const class FString& K2Node_Event_AccountName, bool CallFunc_IsLoggedIn_ReturnValue, class UFortTwitchLoginModalWidget* K2Node_Event_Modal1, class UTwitchLoginModalWidget_C* K2Node_DynamicCast_AsTwitch_Login_Modal_Widget, bool K2Node_DynamicCast_bSuccess, class UFortTwitchLoginModalWidget* K2Node_Event_Modal, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UTwitchLoginModalWidget_C* K2Node_DynamicCast_AsTwitch_Login_Modal_Widget1, bool K2Node_DynamicCast_bSuccess1, class UCommonButton* K2Node_ComponentBoundEvent_Button12345, class UCommonButton* K2Node_ComponentBoundEvent_Button1234, const class FString& CallFunc_GetLinkedTwitchAccountName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_IsVisible_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button123, class UCommonButton* K2Node_ComponentBoundEvent_Button12, class FText CallFunc_GetEmptyText_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class FText CallFunc_GetEmptyText_ReturnValue1, class FText K2Node_Event_ErrorTitle, class FText K2Node_Event_ErrorMessage, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, bool Temp_bool_Variable, class FText K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12)
+void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, bool K2Node_Event_bLoggedIn, const class FString& K2Node_Event_AccountName, bool CallFunc_IsLoggedIn_ReturnValue, class UFortTwitchLoginModalWidget* K2Node_Event_Modal1, class UTwitchLoginModalWidget_C* K2Node_DynamicCast_AsTwitch_Login_Modal_Widget, bool K2Node_DynamicCast_bSuccess, class UFortTwitchLoginModalWidget* K2Node_Event_Modal, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UTwitchLoginModalWidget_C* K2Node_DynamicCast_AsTwitch_Login_Modal_Widget1, bool K2Node_DynamicCast_bSuccess1, class UCommonButton* K2Node_ComponentBoundEvent_Button5, class UCommonButton* K2Node_ComponentBoundEvent_Button4, const class FString& CallFunc_GetLinkedTwitchAccountName_ReturnValue, bool CallFunc_EqualEqual_StrStr_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_IsVisible_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button3, class UCommonButton* K2Node_ComponentBoundEvent_Button2, class FText CallFunc_GetEmptyText_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UCommonButton* K2Node_ComponentBoundEvent_Button, class FText CallFunc_GetEmptyText_ReturnValue1, class FText K2Node_Event_ErrorTitle, class FText K2Node_Event_ErrorMessage, class UFortAsyncAction_ShowConfirmation_NUI* CallFunc_ShowSimpleConfirmationDialog_NUI_ReturnValue, bool Temp_bool_Variable, class FText K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2)
 {
 	static auto Func = Class->GetFunction("FortTwitchLogin_C", "ExecuteUbergraph_FortTwitchLogin");
 
@@ -480,14 +480,14 @@ void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint, enum
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
 	Parms.K2Node_DynamicCast_AsTwitch_Login_Modal_Widget1 = K2Node_DynamicCast_AsTwitch_Login_Modal_Widget1;
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
-	Parms.K2Node_ComponentBoundEvent_Button12345 = K2Node_ComponentBoundEvent_Button12345;
-	Parms.K2Node_ComponentBoundEvent_Button1234 = K2Node_ComponentBoundEvent_Button1234;
+	Parms.K2Node_ComponentBoundEvent_Button5 = K2Node_ComponentBoundEvent_Button5;
+	Parms.K2Node_ComponentBoundEvent_Button4 = K2Node_ComponentBoundEvent_Button4;
 	Parms.CallFunc_GetLinkedTwitchAccountName_ReturnValue = CallFunc_GetLinkedTwitchAccountName_ReturnValue;
 	Parms.CallFunc_EqualEqual_StrStr_ReturnValue = CallFunc_EqualEqual_StrStr_ReturnValue;
 	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
 	Parms.CallFunc_IsVisible_ReturnValue = CallFunc_IsVisible_ReturnValue;
-	Parms.K2Node_ComponentBoundEvent_Button123 = K2Node_ComponentBoundEvent_Button123;
-	Parms.K2Node_ComponentBoundEvent_Button12 = K2Node_ComponentBoundEvent_Button12;
+	Parms.K2Node_ComponentBoundEvent_Button3 = K2Node_ComponentBoundEvent_Button3;
+	Parms.K2Node_ComponentBoundEvent_Button2 = K2Node_ComponentBoundEvent_Button2;
 	Parms.CallFunc_GetEmptyText_ReturnValue = CallFunc_GetEmptyText_ReturnValue;
 	Parms.K2Node_ComponentBoundEvent_Button1 = K2Node_ComponentBoundEvent_Button1;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
@@ -498,7 +498,7 @@ void UFortTwitchLogin_C::ExecuteUbergraph_FortTwitchLogin(int32 EntryPoint, enum
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
 
 	UObject::ProcessEvent(Func, &Parms);
 

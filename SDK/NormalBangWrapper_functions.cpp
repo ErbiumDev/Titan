@@ -15,15 +15,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function NormalBangWrapper.NormalBangWrapper_C.SetShouldSuppressBang
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               ShouldSuppressBang                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UNormalBangWrapper_C::SetShouldSuppressBang(bool ShouldSuppressBang, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default)
+{
+	static auto Func = Class->GetFunction("NormalBangWrapper_C", "SetShouldSuppressBang");
+
+	Params::UNormalBangWrapper_C_SetShouldSuppressBang_Params Parms;
+	Parms.ShouldSuppressBang = ShouldSuppressBang;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function NormalBangWrapper.NormalBangWrapper_C.InitialReset
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// float                              CallFunc_GetEndTime_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetEndTime_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UNormalBangWrapper_C::InitialReset()
+void UNormalBangWrapper_C::InitialReset(float CallFunc_GetEndTime_ReturnValue, float CallFunc_GetEndTime_ReturnValue1, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("NormalBangWrapper_C", "InitialReset");
 
 	Params::UNormalBangWrapper_C_InitialReset_Params Parms;
+	Parms.CallFunc_GetEndTime_ReturnValue = CallFunc_GetEndTime_ReturnValue;
+	Parms.CallFunc_GetEndTime_ReturnValue1 = CallFunc_GetEndTime_ReturnValue1;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
+	Parms.CallFunc_PlayAnimation_ReturnValue1 = CallFunc_PlayAnimation_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -48,12 +81,16 @@ void UNormalBangWrapper_C::TriggerReset()
 // Function NormalBangWrapper.NormalBangWrapper_C.TriggerIntro
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UNormalBangWrapper_C::TriggerIntro()
+void UNormalBangWrapper_C::TriggerIntro(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("NormalBangWrapper_C", "TriggerIntro");
 
 	Params::UNormalBangWrapper_C_TriggerIntro_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
+	Parms.CallFunc_PlayAnimation_ReturnValue1 = CallFunc_PlayAnimation_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -63,7 +100,7 @@ void UNormalBangWrapper_C::TriggerIntro()
 // Function NormalBangWrapper.NormalBangWrapper_C.Adjust Bang Image Translation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                   Translation                                                      (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Translation                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D& Translation)
 {
@@ -84,15 +121,15 @@ void UNormalBangWrapper_C::Adjust_Bang_Image_Translation(const struct FVector2D&
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable1                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Variable12                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable123                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable2                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable3                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount, int32 Temp_int_Variable, int32 Temp_int_Variable1, bool Temp_bool_Variable, int32 Temp_int_Variable12, int32 Temp_int_Variable123, bool Temp_bool_Variable1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 K2Node_Select_Default, int32 K2Node_Select1_Default)
+void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount, int32 Temp_int_Variable, int32 Temp_int_Variable1, bool Temp_bool_Variable, int32 Temp_int_Variable2, int32 Temp_int_Variable3, bool Temp_bool_Variable1, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 K2Node_Select_Default, int32 K2Node_Select1_Default)
 {
 	static auto Func = Class->GetFunction("NormalBangWrapper_C", "Update Bang Icon Version");
 
@@ -101,8 +138,8 @@ void UNormalBangWrapper_C::Update_Bang_Icon_Version(int32 InCount, int32 Temp_in
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.Temp_int_Variable1 = Temp_int_Variable1;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_int_Variable12 = Temp_int_Variable12;
-	Parms.Temp_int_Variable123 = Temp_int_Variable123;
+	Parms.Temp_int_Variable2 = Temp_int_Variable2;
+	Parms.Temp_int_Variable3 = Temp_int_Variable3;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
 	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
@@ -131,25 +168,6 @@ void UNormalBangWrapper_C::SetTutorialBorderStyle(class UClass* BorderStyle)
 }
 
 
-// Function NormalBangWrapper.NormalBangWrapper_C.OnBangStateChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-// bool                               bEnabled                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Count                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count)
-{
-	static auto Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
-
-	Params::UNormalBangWrapper_C_OnBangStateChanged_Params Parms;
-	Parms.bEnabled = bEnabled;
-	Parms.Count = Count;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function NormalBangWrapper.NormalBangWrapper_C.OnStopCallout
 // (Event, Protected, BlueprintEvent)
 // Parameters:
@@ -168,12 +186,16 @@ void UNormalBangWrapper_C::OnStopCallout()
 // Function NormalBangWrapper.NormalBangWrapper_C.OnStartCallout
 // (Event, Protected, BlueprintEvent)
 // Parameters:
+// class FName                        TutorialObjectiveName                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ETutorialType           TutorialType                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UNormalBangWrapper_C::OnStartCallout()
+void UNormalBangWrapper_C::OnStartCallout(class FName TutorialObjectiveName, enum class ETutorialType TutorialType)
 {
 	static auto Func = Class->GetFunction("NormalBangWrapper_C", "OnStartCallout");
 
 	Params::UNormalBangWrapper_C_OnStartCallout_Params Parms;
+	Parms.TutorialObjectiveName = TutorialObjectiveName;
+	Parms.TutorialType = TutorialType;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -197,31 +219,56 @@ void UNormalBangWrapper_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function NormalBangWrapper.NormalBangWrapper_C.OnBangStateChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                               bEnabled                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Count                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UNormalBangWrapper_C::OnBangStateChanged(bool bEnabled, int32 Count)
+{
+	static auto Func = Class->GetFunction("NormalBangWrapper_C", "OnBangStateChanged");
+
+	Params::UNormalBangWrapper_C_OnBangStateChanged_Params Parms;
+	Parms.bEnabled = bEnabled;
+	Parms.Count = Count;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function NormalBangWrapper.NormalBangWrapper_C.ExecuteUbergraph_NormalBangWrapper
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_bEnabled                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              K2Node_Event_Count                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_bEnabled                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              K2Node_Event_Count                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        K2Node_Event_TutorialObjectiveName                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ETutorialType           K2Node_Event_TutorialType                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
 
-void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, bool K2Node_Event_bEnabled, int32 K2Node_Event_Count, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_IsDesignTime, class FText CallFunc_Conv_IntToText_ReturnValue)
+void UNormalBangWrapper_C::ExecuteUbergraph_NormalBangWrapper(int32 EntryPoint, bool K2Node_Event_bEnabled, int32 K2Node_Event_Count, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default, class FName K2Node_Event_TutorialObjectiveName, enum class ETutorialType K2Node_Event_TutorialType, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool K2Node_Event_IsDesignTime, class FText CallFunc_Conv_IntToText_ReturnValue)
 {
 	static auto Func = Class->GetFunction("NormalBangWrapper_C", "ExecuteUbergraph_NormalBangWrapper");
 
 	Params::UNormalBangWrapper_C_ExecuteUbergraph_NormalBangWrapper_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.K2Node_Event_bEnabled = K2Node_Event_bEnabled;
+	Parms.K2Node_Event_Count = K2Node_Event_Count;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.K2Node_Event_bEnabled = K2Node_Event_bEnabled;
-	Parms.K2Node_Event_Count = K2Node_Event_Count;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.K2Node_Event_TutorialObjectiveName = K2Node_Event_TutorialObjectiveName;
+	Parms.K2Node_Event_TutorialType = K2Node_Event_TutorialType;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 	Parms.CallFunc_Conv_IntToText_ReturnValue = CallFunc_Conv_IntToText_ReturnValue;
 

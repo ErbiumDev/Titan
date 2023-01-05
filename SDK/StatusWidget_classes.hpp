@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x238 - 0x238)
+// 0x0 (0x340 - 0x340)
 // WidgetBlueprintGeneratedClass StatusWidget.StatusWidget_C
 class UStatusWidget_C : public UFortLoginStatus
 {

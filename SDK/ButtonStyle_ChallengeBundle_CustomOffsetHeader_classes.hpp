@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle_ChallengeBundle_CustomOffsetHeader.ButtonStyle_ChallengeBundle_CustomOffsetHeader_C
 class UButtonStyle_ChallengeBundle_CustomOffsetHeader_C : public UCommonButtonStyle
 {

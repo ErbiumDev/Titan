@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Outline-Header-FadedWhite.ButtonStyle-Outline-Header-FadedWhite_C
 class UButtonStyle_Outline_Header_FadedWhite_C : public UCommonButtonStyle
 {

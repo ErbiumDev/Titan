@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x448 - 0x440)
+// 0x8 (0x430 - 0x428)
 // BlueprintGeneratedClass GC_Commando_MakeItRain.GC_Commando_MakeItRain_C
 class AGC_Commando_MakeItRain_C : public AFortGameplayCueNotify_Looping
 {
 public:
-	class UParticleSystemComponent*              Spawned_Looping;                                   // 0x440(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*              Spawned_Looping;                                   // 0x428(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

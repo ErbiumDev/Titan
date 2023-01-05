@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x478 - 0x478)
+// 0x0 (0x490 - 0x490)
 // BlueprintGeneratedClass RelevancyZoneIndicator.RelevancyZoneIndicator_C
 class ARelevancyZoneIndicator_C : public AFortRelevancyZoneIndicator
 {

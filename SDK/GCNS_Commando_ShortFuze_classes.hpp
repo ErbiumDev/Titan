@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCNS_Commando_ShortFuze.GCNS_Commando_ShortFuze_C
 class UGCNS_Commando_ShortFuze_C : public UFortGameplayCueNotify_Simple
 {

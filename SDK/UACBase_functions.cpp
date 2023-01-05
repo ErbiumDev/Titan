@@ -68,12 +68,14 @@ void UUACNetworkComponent::SendPacketToClient(uint8 Type, TArray<uint8>& Packet)
 // Function UACBase.UACNetworkComponent.SendClientHello
 // (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
+// uint32                             SessionKey                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UUACNetworkComponent::SendClientHello()
+void UUACNetworkComponent::SendClientHello(uint32 SessionKey)
 {
 	static auto Func = Class->GetFunction("UACNetworkComponent", "SendClientHello");
 
 	Params::UUACNetworkComponent_SendClientHello_Params Parms;
+	Parms.SessionKey = SessionKey;
 
 	auto Flags = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

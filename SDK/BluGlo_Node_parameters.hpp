@@ -39,7 +39,7 @@ struct ABluGlo_Node_C_BlueprintCanInteract_Params
 public:
 	class AFortPawn*                             InteractingPawn;                                   // 0x0(0x8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3433[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D66[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortPlayerPawn*                       K2Node_DynamicCast_AsFort_Player_Pawn;             // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -51,8 +51,8 @@ public:
 struct ABluGlo_Node_C_OnRep_DeActivateEffects_Params
 {
 public:
-	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3434[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x0(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2D67[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UParticleSystemComponent*              CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -104,11 +104,11 @@ public:
 struct ABluGlo_Node_C_HandleMissionEvent_LocateBluGlo_Params
 {
 public:
-	struct FGuid                                 InMissionGuid;                                     // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                 InMissionGuid;                                     // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 ObjectiveHandle;                                   // 0x10(0x20)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class UFortMissionEventParams*               Params;                                            // 0x30(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         DO_NOT_USE_THIS_OR_VARIABLES_BELOW;                // 0x38(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3435[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D68[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               EventFocus;                                        // 0x40(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDataAsset*                            EventContent;                                      // 0x48(0x8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                EventInstigator;                                   // 0x50(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -124,7 +124,7 @@ public:
 struct ABluGlo_Node_C_ShowSpawnTrail_Params
 {
 public:
-	struct FVector                               StartLocation;                                     // 0x0(0xC)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               StartLocation;                                     // 0x0(0xC)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        AnimDelay;                                         // 0xC(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -134,19 +134,19 @@ struct ABluGlo_Node_C_ExecuteUbergraph_BluGlo_Node_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3436[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D69[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortPawn*                             K2Node_Event_InteractingPawn;                      // 0x8(0x8)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AController*                           CallFunc_GetController_ReturnValue;                // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                 K2Node_DynamicCast_AsFort_Player_Controller;       // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3437[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D6A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortBluGloManager*                    CallFunc_GetBluGloManager_ReturnValue;             // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                 CallFunc_GetMissionGuid_ReturnValue;               // 0x30(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FGuid                                 K2Node_HandleMissionEvent_InMissionGuid;           // 0x40(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                 CallFunc_GetMissionGuid_ReturnValue;               // 0x30(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGuid                                 K2Node_HandleMissionEvent_InMissionGuid;           // 0x40(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTagContainer                 K2Node_HandleMissionEvent_ObjectiveHandle;         // 0x50(0x20)()
 	class UFortMissionEventParams*               K2Node_HandleMissionEvent_Params;                  // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW; // 0x78(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3438[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D6B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_HandleMissionEvent_EventFocus;              // 0x80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UDataAsset*                            K2Node_HandleMissionEvent_EventContent;            // 0x88(0x8)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                K2Node_HandleMissionEvent_EventInstigator;         // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -156,36 +156,36 @@ public:
 	struct FGameplayTagContainer                 K2Node_HandleMissionEvent_GameplayTags;            // 0xB8(0x20)()
 	struct FFortMissionEvent                     K2Node_HandleMissionEvent_MissionEvent;            // 0xD8(0x98)(ConstParm)
 	class AFortMission*                          CallFunc_GetMissionFromGuid_ReturnValue;           // 0x170(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               K2Node_CustomEvent_StartLocation;                  // 0x178(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               K2Node_CustomEvent_StartLocation;                  // 0x178(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        K2Node_CustomEvent_AnimDelay;                      // 0x184(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_HasAuthority_ReturnValue;                 // 0x188(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3439[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x18C(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_Subtract_VectorVector_ReturnValue;        // 0x198(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x1A4(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2D6C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x18C(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_Subtract_VectorVector_ReturnValue;        // 0x198(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x1A4(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakVector_X;                            // 0x1B0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakVector_Y;                            // 0x1B4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakVector_Z;                            // 0x1B8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_VLerp_ReturnValue;                        // 0x1BC(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_MakeVector_ReturnValue;                   // 0x1C8(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_VLerp_ReturnValue;                        // 0x1BC(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_MakeVector_ReturnValue;                   // 0x1C8(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakVector_X1;                           // 0x1D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakVector_Y1;                           // 0x1D8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_BreakVector_Z1;                           // 0x1DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_VSize_ReturnValue;                        // 0x1E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_343A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2D6D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UParticleSystemComponent*              CallFunc_SpawnEmitterAtLocation_ReturnValue;       // 0x1E8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x1F0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue1;         // 0x1F4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_MapRangeUnclamped_ReturnValue;            // 0x1F8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Add_FloatFloat_ReturnValue;               // 0x1FC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_FClamp_ReturnValue;                       // 0x200(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_MakeVector_ReturnValue1;                  // 0x204(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_MakeVector_ReturnValue1;                  // 0x204(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x210(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_MakeVector_ReturnValue12;                 // 0x214(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue12;    // 0x220(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_343B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FHitResult                            CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x230(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FHitResult                            CallFunc_K2_SetWorldLocation_SweepHitResult1;      // 0x2B8(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                               CallFunc_MakeVector_ReturnValue2;                  // 0x214(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue2;     // 0x220(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FHitResult                            CallFunc_K2_SetWorldLocation_SweepHitResult;       // 0x22C(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FHitResult                            CallFunc_K2_SetWorldLocation_SweepHitResult1;      // 0x2B4(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	uint8                                        Pad_2D6E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	UInterfaceProperty_                          CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput; // 0x340(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 

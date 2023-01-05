@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_BoostJump_IsUsingJetpack.GE_BoostJump_IsUsingJetpack_C
 class UGE_BoostJump_IsUsingJetpack_C : public UGameplayEffect
 {

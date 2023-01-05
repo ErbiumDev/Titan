@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GET_ModifyDamage.GET_ModifyDamage_C
 class UGET_ModifyDamage_C : public UGameplayEffect
 {

@@ -153,7 +153,7 @@ class USlateSettings : public UObject
 {
 public:
 	bool                                         bExplicitCanvasChildZOrder;                        // 0x28(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_F40[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2B83[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -178,12 +178,12 @@ public:
 
 };
 
-// 0x1E0 (0x210 - 0x30)
+// 0x268 (0x298 - 0x30)
 // Class Slate.TextBlockWidgetStyle
 class UTextBlockWidgetStyle : public USlateWidgetStyleContainerBase
 {
 public:
-	struct FTextBlockStyle                       TextBlockStyle;                                    // 0x30(0x1E0)(Edit, NativeAccessSpecifierPublic)
+	struct FTextBlockStyle                       TextBlockStyle;                                    // 0x30(0x268)(Edit, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass()
 	{

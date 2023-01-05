@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-M-Horizon-SeasonPass.TextStyle-Header-M-Horizon-SeasonPass_C
 class UTextStyle_Header_M_Horizon_SeasonPass_C : public UTextStyle_HeaderParent_C
 {

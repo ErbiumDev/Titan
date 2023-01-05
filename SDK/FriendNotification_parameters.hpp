@@ -16,6 +16,13 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x0 (0x0 - 0x0)
+// Function FriendNotification.FriendNotification_C.JoinPartyInvite
+struct UFriendNotification_C_JoinPartyInvite_Params
+{
+public:
+};
+
 // 0x10 (0x10 - 0x0)
 // Function FriendNotification.FriendNotification_C.ShowFriendInvites
 struct UFriendNotification_C_ShowFriendInvites_Params
@@ -34,30 +41,21 @@ public:
 	class UUserWidget*                           CallFunc_GetCachedWidget_ReturnValue;              // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UUIManager_C*                          K2Node_DynamicCast_AsUIManager;                    // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_44A1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonActivatablePanel*               K2Node_DynamicCast_AsCommon_Activatable_Panel;     // 0x20(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess1;                      // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_44A2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E5C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPartyFinder_C*                        K2Node_DynamicCast_AsParty_Finder;                 // 0x30(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess12;                     // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_DynamicCast_bSuccess2;                      // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function FriendNotification.FriendNotification_C.TakeAction
-struct UFriendNotification_C_TakeAction_Params
-{
-public:
-};
-
-// 0x6 (0x6 - 0x0)
+// 0x4 (0x4 - 0x0)
 // Function FriendNotification.FriendNotification_C.ExecuteUbergraph_FriendNotification
 struct UFriendNotification_C_ExecuteUbergraph_FriendNotification_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsTencentBuild_ReturnValue;               // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

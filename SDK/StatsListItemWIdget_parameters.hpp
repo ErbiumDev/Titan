@@ -16,6 +16,22 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x8 (0x8 - 0x0)
+// Function StatsListItemWIdget.StatsListItemWIdget_C.Initial Reset
+struct UStatsListItemWIdget_C_Initial_Reset_Params
+{
+public:
+	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function StatsListItemWIdget.StatsListItemWIdget_C.Populate-Update
+struct UStatsListItemWIdget_C_Populate_Update_Params
+{
+public:
+	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // 0x18 (0x18 - 0x0)
 // Function StatsListItemWIdget.StatsListItemWIdget_C.SetTextAndBorderHighlight
 struct UStatsListItemWIdget_C_SetTextAndBorderHighlight_Params
@@ -24,7 +40,7 @@ public:
 	bool                                         bHightlight;                                       // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable;                                // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         Temp_bool_Variable1;                               // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2BFC[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FC2[0x5];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                K2Node_Select_Default;                             // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                K2Node_Select1_Default;                            // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -35,13 +51,13 @@ struct UStatsListItemWIdget_C_GetListItemTooltipWidget_Params
 {
 public:
 	class UWidget*                               ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonInputContext*                   CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2BFD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FC3[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortDisplayAttribute                 CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x20(0x70)()
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2BFE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FC4[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UUserWidget*                           CallFunc_Create_Basic_Tooltip_Output;              // 0x98(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -62,29 +78,29 @@ public:
 	struct FFortDisplayAttribute                 LocalCurrentAttribute;                             // 0x70(0x70)(Edit, BlueprintVisible)
 	float                                        Temp_float_Variable;                               // 0xE0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        Temp_float_Variable1;                              // 0xE4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        Temp_float_Variable12;                             // 0xE8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        Temp_float_Variable2;                              // 0xE8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortClampState                   Temp_byte_Variable;                                // 0xEC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable1;                               // 0xED(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable12;                              // 0xEE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable123;                             // 0xEF(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EFortComparisonType               Temp_byte_Variable1234;                            // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2BFF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        Temp_float_Variable123;                            // 0xF4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        Temp_float_Variable1234;                           // 0xF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        Temp_float_Variable12345;                          // 0xFC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        Temp_float_Variable123456;                         // 0x100(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EFortComparisonType               Temp_byte_Variable12345;                           // 0x104(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C00[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	enum class ESlateVisibility                  Temp_byte_Variable2;                               // 0xEE(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable3;                               // 0xEF(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EFortComparisonType               Temp_byte_Variable4;                               // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FC5[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        Temp_float_Variable3;                              // 0xF4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        Temp_float_Variable4;                              // 0xF8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        Temp_float_Variable5;                              // 0xFC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        Temp_float_Variable6;                              // 0x100(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EFortComparisonType               Temp_byte_Variable5;                               // 0x104(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FC6[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        K2Node_Select_Default;                             // 0x108(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable123456;                          // 0x10C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable1234567;                         // 0x10D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable12345678;                        // 0x10E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable123456789;                       // 0x10F(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable6;                               // 0x10C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable7;                               // 0x10D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable8;                               // 0x10E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable9;                               // 0x10F(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  K2Node_Select1_Default;                            // 0x110(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  K2Node_Select12_Default;                           // 0x111(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EFortClampState                   Temp_byte_Variable12345678910;                     // 0x112(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C01[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        K2Node_Select123_Default;                          // 0x114(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  K2Node_Select2_Default;                            // 0x111(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EFortClampState                   Temp_byte_Variable10;                              // 0x112(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FC7[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        K2Node_Select3_Default;                            // 0x114(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x89 (0x89 - 0x0)
@@ -112,7 +128,7 @@ struct UStatsListItemWIdget_C_UpdateType_Params
 public:
 	struct FFortDisplayAttribute                 CurrentAttribute;                                  // 0x0(0x70)(BlueprintVisible, BlueprintReadOnly, Parm)
 	enum class EFortStatValueDisplayType         Temp_byte_Variable;                                // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C02[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FC8[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               K2Node_Select_Default;                             // 0x78(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -123,25 +139,25 @@ struct UStatsListItemWIdget_C_UpdateColors_Params
 public:
 	struct FFortDisplayAttribute                 CurrentAttribute;                                  // 0x0(0x70)(BlueprintVisible, BlueprintReadOnly, Parm)
 	struct FFortDisplayAttribute                 LocalCurrentAttribute;                             // 0x70(0x70)(Edit, BlueprintVisible)
-	struct FLinearColor                          BuffColor;                                         // 0xE0(0x10)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          BaseColor;                                         // 0xF0(0x10)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          BuffColor;                                         // 0xE0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          BaseColor;                                         // 0xF0(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                Temp_class_Variable;                               // 0x100(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UClass*                                Temp_class_Variable1;                              // 0x108(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UClass*                                Temp_class_Variable12;                             // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UClass*                                Temp_class_Variable2;                              // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBuffState                    Temp_byte_Variable;                                // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBuffState                    Temp_byte_Variable1;                               // 0x119(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C03[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FC9[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UClass*                                K2Node_Select_Default;                             // 0x120(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Get_Base___Buff_Colors_Base;              // 0x128(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Get_Base___Buff_Colors_Buff;              // 0x138(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EFortComparisonType               Temp_byte_Variable12;                              // 0x148(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Get_Base___Buff_Colors_Base;              // 0x128(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Get_Base___Buff_Colors_Buff;              // 0x138(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EFortComparisonType               Temp_byte_Variable2;                               // 0x148(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x149(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_NotEqual_TextText_ReturnValue;            // 0x14A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2C04[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          K2Node_Select1_Default;                            // 0x14C(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C05[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FCA[0x1];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          K2Node_Select1_Default;                            // 0x14C(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FCB[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateColor                           K2Node_MakeStruct_SlateColor;                      // 0x160(0x28)()
-	struct FLinearColor                          K2Node_Select12_Default;                           // 0x188(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          K2Node_Select2_Default;                            // 0x188(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0xE0 (0xE0 - 0x0)
@@ -196,7 +212,7 @@ struct UStatsListItemWIdget_C_ExecuteUbergraph_StatsListItemWIdget_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2C06[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_FCC[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortDisplayAttribute                 CallFunc_GetCurrentAttributeCopy_OutDisplayAttribute; // 0x8(0x70)()
 	float                                        K2Node_Event_Delta;                                // 0x78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

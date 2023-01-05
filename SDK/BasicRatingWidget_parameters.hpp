@@ -37,8 +37,8 @@ public:
 struct UBasicRatingWidget_C_Update_Border_Color_Params
 {
 public:
-	struct FLinearColor                          Color1;                                            // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Color2;                                            // 0x10(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color1;                                            // 0x0(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color2;                                            // 0x10(0x10)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*              CallFunc_GetDynamicMaterial_ReturnValue;           // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -78,20 +78,20 @@ struct UBasicRatingWidget_C_ExecuteUbergraph_BasicRatingWidget_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBrushSize                    Temp_byte_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2CB3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector2D                             Temp_struct_Variable;                              // 0x8(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             Temp_struct_Variable1;                             // 0x10(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             Temp_struct_Variable12;                            // 0x18(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             Temp_struct_Variable123;                           // 0x20(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             Temp_struct_Variable1234;                          // 0x28(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             Temp_struct_Variable12345;                         // 0x30(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4E44[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector2D                             Temp_struct_Variable;                              // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             Temp_struct_Variable1;                             // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             Temp_struct_Variable2;                             // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             Temp_struct_Variable3;                             // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             Temp_struct_Variable4;                             // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             Temp_struct_Variable5;                             // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable1;                               // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable12;                              // 0x3A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable2;                               // 0x3A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x3B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  CallFunc_GetBorderVisibility_Visibility;           // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2CB4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector2D                             K2Node_Select_Default;                             // 0x40(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4E45[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector2D                             K2Node_Select_Default;                             // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x48(0x88)()
 	enum class ESlateVisibility                  K2Node_Select1_Default;                            // 0xD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

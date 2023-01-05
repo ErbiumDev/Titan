@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Base-XS-B-BattlePoint.TextStyle-Base-XS-B-BattlePoint_C
 class UTextStyle_Base_XS_B_BattlePoint_C : public UTextStyle_Base_S_B_C
 {

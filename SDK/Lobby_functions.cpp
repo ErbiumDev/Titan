@@ -183,7 +183,7 @@ void ALobbyBeaconClient::ClientWasKicked(class FText& KickReason)
 // Function Lobby.LobbyBeaconClient.ClientSetInviteFlags
 // (Net, NetReliable, Native, Event, Public, NetClient)
 // Parameters:
-// struct FJoinabilitySettings        Settings                                                         (ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FJoinabilitySettings        Settings                                                         (ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALobbyBeaconClient::ClientSetInviteFlags(struct FJoinabilitySettings& Settings)
 {

@@ -12,24 +12,26 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x4C (0x48C - 0x440)
+// 0x70 (0x498 - 0x428)
 // BlueprintGeneratedClass GCN_Athena_DanceStun.GCN_Athena_DanceStun_C
 class AGCN_Athena_DanceStun_C : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x440(0x8)(Transient, DuplicateTransient)
-	class UStaticMeshComponent*                  StaticMesh;                                        // 0x448(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                       AnimPivot;                                         // 0x450(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                        OutroAnim_Scale_1822DA5D44681175D96B369D2350B5A1;  // 0x458(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                OutroAnim__Direction_1822DA5D44681175D96B369D2350B5A1; // 0x45C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45A1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    OutroAnim;                                         // 0x460(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        IntroAnim_BallScale_B22BD0D945C252484DAB94BD6D5DC469; // 0x468(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                IntroAnim__Direction_B22BD0D945C252484DAB94BD6D5DC469; // 0x46C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45A2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    IntroAnim;                                         // 0x470(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class AFortPlayerPawnAthena*                 PlayerPawn;                                        // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               BallOffset;                                        // 0x480(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UStaticMeshComponent*                  StaticMesh;                                        // 0x430(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                       AnimPivot;                                         // 0x438(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                        OutroAnim_Scale_1822DA5D44681175D96B369D2350B5A1;  // 0x440(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                OutroAnim__Direction_1822DA5D44681175D96B369D2350B5A1; // 0x444(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_418D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    OutroAnim;                                         // 0x448(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        IntroAnim_BallScale_B22BD0D945C252484DAB94BD6D5DC469; // 0x450(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                IntroAnim__Direction_B22BD0D945C252484DAB94BD6D5DC469; // 0x454(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_418E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    IntroAnim;                                         // 0x458(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class AFortPlayerPawnAthena*                 PlayerPawn;                                        // 0x460(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               BallOffset;                                        // 0x468(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        TimeRemaining;                                     // 0x474(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FScalableFloat                        Duration;                                          // 0x478(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass()
 	{
@@ -37,8 +39,8 @@ public:
 		return Clss;
 	}
 
-	bool OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess);
-	bool OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters);
+	bool OnRemove(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, bool CallFunc_IsValid_ReturnValue, class APlayerPawn_Athena_C* K2Node_DynamicCast_AsPlayer_Pawn_Athena, bool K2Node_DynamicCast_bSuccess);
+	bool OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, float CallFunc_GetValueAtLevel_ReturnValue);
 	void UserConstructionScript();
 	void IntroAnim__FinishedFunc();
 	void IntroAnim__UpdateFunc();
@@ -47,7 +49,7 @@ public:
 	void ReceiveTick(float DeltaSeconds);
 	void AnimateIn();
 	void AnimateOut();
-	void ExecuteUbergraph_GCN_Athena_DanceStun(int32 EntryPoint, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue1, float K2Node_Event_DeltaSeconds, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FHitResult& CallFunc_K2_AddLocalRotation_SweepHitResult);
+	void ExecuteUbergraph_GCN_Athena_DanceStun(int32 EntryPoint, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue, const struct FVector& CallFunc_Conv_FloatToVector_ReturnValue1, float K2Node_Event_DeltaSeconds, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FRotator& CallFunc_MakeRotator_ReturnValue, const struct FHitResult& CallFunc_K2_AddLocalRotation_SweepHitResult, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue1, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue1, float CallFunc_Subtract_FloatFloat_ReturnValue);
 };
 
 }

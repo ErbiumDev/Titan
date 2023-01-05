@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x60 - 0x60)
+// 0x0 (0x68 - 0x68)
 // BlueprintGeneratedClass HuskStrength06.HuskStrength06_C
 class UHuskStrength06_C : public UFortNavAreaAutomatic
 {

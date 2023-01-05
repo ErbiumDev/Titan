@@ -55,16 +55,16 @@ void UFrontEndRewards_CurrentReward_C::Reset_Reward_Icon_Translation_and_Scale()
 // enum class EFrontEndRewardType     Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123456                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234567                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345678                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFrontEndRewards_CurrentReward_C::Play_Open_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable123, class USoundBase* Temp_object_Variable1234, class USoundBase* Temp_object_Variable12345, class USoundBase* Temp_object_Variable123456, class USoundBase* Temp_object_Variable1234567, class USoundBase* Temp_object_Variable12345678, class USoundBase* K2Node_Select_Default)
+void UFrontEndRewards_CurrentReward_C::Play_Open_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable2, class USoundBase* Temp_object_Variable3, class USoundBase* Temp_object_Variable4, class USoundBase* Temp_object_Variable5, class USoundBase* Temp_object_Variable6, class USoundBase* Temp_object_Variable7, class USoundBase* Temp_object_Variable8, class USoundBase* K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "Play Open Animation Sound");
 
@@ -72,13 +72,13 @@ void UFrontEndRewards_CurrentReward_C::Play_Open_Animation_Sound(enum class EFro
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.Temp_object_Variable1234 = Temp_object_Variable1234;
-	Parms.Temp_object_Variable12345 = Temp_object_Variable12345;
-	Parms.Temp_object_Variable123456 = Temp_object_Variable123456;
-	Parms.Temp_object_Variable1234567 = Temp_object_Variable1234567;
-	Parms.Temp_object_Variable12345678 = Temp_object_Variable12345678;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
+	Parms.Temp_object_Variable4 = Temp_object_Variable4;
+	Parms.Temp_object_Variable5 = Temp_object_Variable5;
+	Parms.Temp_object_Variable6 = Temp_object_Variable6;
+	Parms.Temp_object_Variable7 = Temp_object_Variable7;
+	Parms.Temp_object_Variable8 = Temp_object_Variable8;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -92,16 +92,16 @@ void UFrontEndRewards_CurrentReward_C::Play_Open_Animation_Sound(enum class EFro
 // enum class EFrontEndRewardType     Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123456                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234567                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345678                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFrontEndRewards_CurrentReward_C::Play_Pop_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable123, class USoundBase* Temp_object_Variable1234, class USoundBase* Temp_object_Variable12345, class USoundBase* Temp_object_Variable123456, class USoundBase* Temp_object_Variable1234567, class USoundBase* Temp_object_Variable12345678, class USoundBase* K2Node_Select_Default)
+void UFrontEndRewards_CurrentReward_C::Play_Pop_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable2, class USoundBase* Temp_object_Variable3, class USoundBase* Temp_object_Variable4, class USoundBase* Temp_object_Variable5, class USoundBase* Temp_object_Variable6, class USoundBase* Temp_object_Variable7, class USoundBase* Temp_object_Variable8, class USoundBase* K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "Play Pop Animation Sound");
 
@@ -109,13 +109,13 @@ void UFrontEndRewards_CurrentReward_C::Play_Pop_Animation_Sound(enum class EFron
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.Temp_object_Variable1234 = Temp_object_Variable1234;
-	Parms.Temp_object_Variable12345 = Temp_object_Variable12345;
-	Parms.Temp_object_Variable123456 = Temp_object_Variable123456;
-	Parms.Temp_object_Variable1234567 = Temp_object_Variable1234567;
-	Parms.Temp_object_Variable12345678 = Temp_object_Variable12345678;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
+	Parms.Temp_object_Variable4 = Temp_object_Variable4;
+	Parms.Temp_object_Variable5 = Temp_object_Variable5;
+	Parms.Temp_object_Variable6 = Temp_object_Variable6;
+	Parms.Temp_object_Variable7 = Temp_object_Variable7;
+	Parms.Temp_object_Variable8 = Temp_object_Variable8;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -129,16 +129,16 @@ void UFrontEndRewards_CurrentReward_C::Play_Pop_Animation_Sound(enum class EFron
 // enum class EFrontEndRewardType     Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123456                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234567                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345678                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFrontEndRewards_CurrentReward_C::Play_Drop_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable123, class USoundBase* Temp_object_Variable1234, class USoundBase* Temp_object_Variable12345, class USoundBase* Temp_object_Variable123456, class USoundBase* Temp_object_Variable1234567, class USoundBase* Temp_object_Variable12345678, class USoundBase* K2Node_Select_Default)
+void UFrontEndRewards_CurrentReward_C::Play_Drop_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable2, class USoundBase* Temp_object_Variable3, class USoundBase* Temp_object_Variable4, class USoundBase* Temp_object_Variable5, class USoundBase* Temp_object_Variable6, class USoundBase* Temp_object_Variable7, class USoundBase* Temp_object_Variable8, class USoundBase* K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "Play Drop Animation Sound");
 
@@ -146,13 +146,13 @@ void UFrontEndRewards_CurrentReward_C::Play_Drop_Animation_Sound(enum class EFro
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.Temp_object_Variable1234 = Temp_object_Variable1234;
-	Parms.Temp_object_Variable12345 = Temp_object_Variable12345;
-	Parms.Temp_object_Variable123456 = Temp_object_Variable123456;
-	Parms.Temp_object_Variable1234567 = Temp_object_Variable1234567;
-	Parms.Temp_object_Variable12345678 = Temp_object_Variable12345678;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
+	Parms.Temp_object_Variable4 = Temp_object_Variable4;
+	Parms.Temp_object_Variable5 = Temp_object_Variable5;
+	Parms.Temp_object_Variable6 = Temp_object_Variable6;
+	Parms.Temp_object_Variable7 = Temp_object_Variable7;
+	Parms.Temp_object_Variable8 = Temp_object_Variable8;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -199,13 +199,15 @@ void UFrontEndRewards_CurrentReward_C::StopBounceAnimation(UDelegateProperty_ K2
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayFadeOutAnimation
 // (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnimationPlaying_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UFrontEndRewards_CurrentReward_C::PlayFadeOutAnimation(bool CallFunc_IsAnimationPlaying_ReturnValue)
+void UFrontEndRewards_CurrentReward_C::PlayFadeOutAnimation(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "PlayFadeOutAnimation");
 
 	Params::UFrontEndRewards_CurrentReward_C_PlayFadeOutAnimation_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_IsAnimationPlaying_ReturnValue = CallFunc_IsAnimationPlaying_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -214,9 +216,9 @@ void UFrontEndRewards_CurrentReward_C::PlayFadeOutAnimation(bool CallFunc_IsAnim
 
 
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.SkipOpenAnimation
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnimationPlaying_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UFrontEndRewards_CurrentReward_C::SkipOpenAnimation(const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool CallFunc_IsAnimationPlaying_ReturnValue)
@@ -279,12 +281,14 @@ void UFrontEndRewards_CurrentReward_C::HandleOpenAnimationFinished()
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.HandleDropAnimationFinished
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFrontEndRewards_CurrentReward_C::HandleDropAnimationFinished()
+void UFrontEndRewards_CurrentReward_C::HandleDropAnimationFinished(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "HandleDropAnimationFinished");
 
 	Params::UFrontEndRewards_CurrentReward_C_HandleDropAnimationFinished_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -294,12 +298,14 @@ void UFrontEndRewards_CurrentReward_C::HandleDropAnimationFinished()
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.HandlePopAnimationFinished
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFrontEndRewards_CurrentReward_C::HandlePopAnimationFinished()
+void UFrontEndRewards_CurrentReward_C::HandlePopAnimationFinished(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "HandlePopAnimationFinished");
 
 	Params::UFrontEndRewards_CurrentReward_C_HandlePopAnimationFinished_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -326,13 +332,15 @@ void UFrontEndRewards_CurrentReward_C::PlayOpenAnimation(bool CallFunc_IsAnimati
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayPopAnimation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnimationPlaying_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UFrontEndRewards_CurrentReward_C::PlayPopAnimation(bool CallFunc_IsAnimationPlaying_ReturnValue)
+void UFrontEndRewards_CurrentReward_C::PlayPopAnimation(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "PlayPopAnimation");
 
 	Params::UFrontEndRewards_CurrentReward_C_PlayPopAnimation_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_IsAnimationPlaying_ReturnValue = CallFunc_IsAnimationPlaying_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -343,13 +351,15 @@ void UFrontEndRewards_CurrentReward_C::PlayPopAnimation(bool CallFunc_IsAnimatio
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.PlayDropAnimation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnimationPlaying_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UFrontEndRewards_CurrentReward_C::PlayDropAnimation(bool CallFunc_IsAnimationPlaying_ReturnValue)
+void UFrontEndRewards_CurrentReward_C::PlayDropAnimation(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "PlayDropAnimation");
 
 	Params::UFrontEndRewards_CurrentReward_C_PlayDropAnimation_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_IsAnimationPlaying_ReturnValue = CallFunc_IsAnimationPlaying_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -387,29 +397,50 @@ void UFrontEndRewards_CurrentReward_C::FadeIconToWhite()
 }
 
 
+// Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UFrontEndRewards_CurrentReward_C::Destruct()
+{
+	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "Destruct");
+
+	Params::UFrontEndRewards_CurrentReward_C_Destruct_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function FrontEndRewards_CurrentReward.FrontEndRewards_CurrentReward_C.ExecuteUbergraph_FrontEndRewards_CurrentReward
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate123                          (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate3                            (ZeroConstructor, NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate4                            (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate5                            (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate6                            (ZeroConstructor, NoDestructor)
 
-void UFrontEndRewards_CurrentReward_C::ExecuteUbergraph_FrontEndRewards_CurrentReward(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate123, float CallFunc_GetGameTimeInSeconds_ReturnValue)
+void UFrontEndRewards_CurrentReward_C::ExecuteUbergraph_FrontEndRewards_CurrentReward(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, float CallFunc_GetGameTimeInSeconds_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate3, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate5, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate6)
 {
 	static auto Func = Class->GetFunction("FrontEndRewards_CurrentReward_C", "ExecuteUbergraph_FrontEndRewards_CurrentReward");
 
 	Params::UFrontEndRewards_CurrentReward_C_ExecuteUbergraph_FrontEndRewards_CurrentReward_Params Parms;
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
-	Parms.K2Node_CreateDelegate_OutputDelegate123 = K2Node_CreateDelegate_OutputDelegate123;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
 	Parms.CallFunc_GetGameTimeInSeconds_ReturnValue = CallFunc_GetGameTimeInSeconds_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate3 = K2Node_CreateDelegate_OutputDelegate3;
+	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate4 = K2Node_CreateDelegate_OutputDelegate4;
+	Parms.K2Node_CreateDelegate_OutputDelegate5 = K2Node_CreateDelegate_OutputDelegate5;
+	Parms.K2Node_CreateDelegate_OutputDelegate6 = K2Node_CreateDelegate_OutputDelegate6;
 
 	UObject::ProcessEvent(Func, &Parms);
 

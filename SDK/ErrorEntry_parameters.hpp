@@ -22,18 +22,18 @@ struct UErrorEntry_C_Center_on_Widget_Params
 {
 public:
 	bool                                         Did_Center;                                        // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_2E59[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2CD0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortUINavigationManager*              CallFunc_GetUINavigationManager_ReturnValue;       // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Len_ReturnValue;                          // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Greater_IntInt_ReturnValue;               // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x80 (0x80 - 0x0)
+// 0x70 (0x70 - 0x0)
 // Function ErrorEntry.ErrorEntry_C.SetErrorInfo
 struct UErrorEntry_C_SetErrorInfo_Params
 {
 public:
-	struct FFortErrorInfo                        ErrorInfo;                                         // 0x0(0x80)(BlueprintVisible, BlueprintReadOnly, Parm)
+	struct FFortErrorInfo                        ErrorInfo;                                         // 0x0(0x70)(BlueprintVisible, BlueprintReadOnly, Parm)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -65,7 +65,7 @@ struct UErrorEntry_C_ExecuteUbergraph_ErrorEntry_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2E5A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2CD1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FString                                CallFunc_Concat_StrStr_ReturnValue;                // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash)
 };

@@ -22,7 +22,7 @@ struct UFriendCodeEntry_C_SetupMIDs_Params
 {
 public:
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_374A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_579E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -41,8 +41,8 @@ public:
 };
 
 // 0x0 (0x0 - 0x0)
-// Function FriendCodeEntry.FriendCodeEntry_C.OnClicked
-struct UFriendCodeEntry_C_OnClicked_Params
+// Function FriendCodeEntry.FriendCodeEntry_C.BP_OnClicked
+struct UFriendCodeEntry_C_BP_OnClicked_Params
 {
 public:
 };

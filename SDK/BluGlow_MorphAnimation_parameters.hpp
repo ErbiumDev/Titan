@@ -51,7 +51,7 @@ struct ABluGlow_MorphAnimation_C_ReceiveBeginPlay_Params
 public:
 };
 
-// 0xDC (0xDC - 0x0)
+// 0xD8 (0xD8 - 0x0)
 // Function BluGlow_MorphAnimation.BluGlow_MorphAnimation_C.ExecuteUbergraph_BluGlow_MorphAnimation
 struct ABluGlow_MorphAnimation_C_ExecuteUbergraph_BluGlow_MorphAnimation_Params
 {
@@ -62,18 +62,17 @@ public:
 	float                                        CallFunc_Conv_IntToFloat_ReturnValue;              // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Add_FloatFloat_ReturnValue;               // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_Conv_FloatToVector_ReturnValue;           // 0x18(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_Conv_FloatToVector_ReturnValue;           // 0x18(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetGameTimeInSeconds_ReturnValue;         // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Add_FloatFloat_ReturnValue1;              // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Sin_ReturnValue;                          // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Cos_ReturnValue;                          // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_Add_FloatFloat_ReturnValue12;             // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Add_FloatFloat_ReturnValue2;              // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Sin_ReturnValue1;                         // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_Add_FloatFloat_ReturnValue123;            // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                              CallFunc_MakeRotator_ReturnValue;                  // 0x40(0xC)(IsPlainOldData, NoDestructor)
-	uint8                                        Pad_FAA[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FHitResult                            CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x50(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	int32                                        CallFunc_Percent_IntInt_ReturnValue;               // 0xD8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Add_FloatFloat_ReturnValue3;              // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                              CallFunc_MakeRotator_ReturnValue;                  // 0x40(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                            CallFunc_K2_AddLocalRotation_SweepHitResult;       // 0x4C(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	int32                                        CallFunc_Percent_IntInt_ReturnValue;               // 0xD4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

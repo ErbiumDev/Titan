@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Tab-Secondary.TextStyle-Tab-Secondary_C
 class UTextStyle_Tab_Secondary_C : public UCommonTextStyle
 {

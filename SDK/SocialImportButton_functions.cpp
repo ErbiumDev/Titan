@@ -33,7 +33,7 @@ void USocialImportButton_C::OnCaptionGenerated(class FText& Caption)
 
 
 // Function SocialImportButton.SocialImportButton_C.ExecuteUbergraph_SocialImportButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -47,9 +47,9 @@ void USocialImportButton_C::OnCaptionGenerated(class FText& Caption)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        K2Node_Select1_Default                                           ()
-// bool                               CallFunc_TextIsEmpty_ReturnValue12                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_TextIsEmpty_ReturnValue2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void USocialImportButton_C::ExecuteUbergraph_SocialImportButton(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, class FText K2Node_Event_Caption, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_GetDisplayText_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue1, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_Not_PreBool_ReturnValue, bool Temp_bool_Variable1, class FText K2Node_Select1_Default, bool CallFunc_TextIsEmpty_ReturnValue12)
+void USocialImportButton_C::ExecuteUbergraph_SocialImportButton(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, class FText K2Node_Event_Caption, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_GetDisplayText_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue1, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_Not_PreBool_ReturnValue, bool Temp_bool_Variable1, class FText K2Node_Select1_Default, bool CallFunc_TextIsEmpty_ReturnValue2)
 {
 	static auto Func = Class->GetFunction("SocialImportButton_C", "ExecuteUbergraph_SocialImportButton");
 
@@ -66,7 +66,7 @@ void USocialImportButton_C::ExecuteUbergraph_SocialImportButton(int32 EntryPoint
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
-	Parms.CallFunc_TextIsEmpty_ReturnValue12 = CallFunc_TextIsEmpty_ReturnValue12;
+	Parms.CallFunc_TextIsEmpty_ReturnValue2 = CallFunc_TextIsEmpty_ReturnValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 

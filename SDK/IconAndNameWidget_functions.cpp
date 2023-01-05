@@ -18,7 +18,7 @@ namespace SDK
 // Function IconAndNameWidget.IconAndNameWidget_C.Set Border Color
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                Value                                                            (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Value                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UIconAndNameWidget_C::Set_Border_Color(const struct FLinearColor& Value)
 {
@@ -100,7 +100,7 @@ void UIconAndNameWidget_C::PreConstruct(bool IsDesignTime)
 
 
 // Function IconAndNameWidget.IconAndNameWidget_C.ExecuteUbergraph_IconAndNameWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)

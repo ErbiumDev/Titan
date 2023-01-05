@@ -30,8 +30,8 @@ struct UMiniCraftingIngredientList_C_ExecuteUbergraph_MiniCraftingIngredientList
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FMargin                               K2Node_MakeStruct_Margin;                          // 0x4(0x10)(IsPlainOldData, NoDestructor)
-	uint8                                        Pad_307A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FMargin                               K2Node_MakeStruct_Margin;                          // 0x4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_36D4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortItemQuantityListEntryBase*        K2Node_Event_ListEntry;                            // 0x18(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWrapBoxSlot*                          CallFunc_AddChildWrapBox_ReturnValue;              // 0x20(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

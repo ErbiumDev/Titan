@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_HealthRegen_Delay_Damaged.GE_HealthRegen_Delay_Damaged_C
 class UGE_HealthRegen_Delay_Damaged_C : public UGameplayEffect
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-HomeBasePower-XS.TextStyle-Header-HomeBasePower-XS_C
 class UTextStyle_Header_HomeBasePower_XS_C : public UTextStyle_Header_L_C
 {

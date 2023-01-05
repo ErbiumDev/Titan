@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x400 - 0x3F8)
+// 0x8 (0x420 - 0x418)
 // BlueprintGeneratedClass B_PlayerHealthDamage_LensEffect_Direction.B_PlayerHealthDamage_LensEffect_Direction_C
 class AB_PlayerHealthDamage_LensEffect_Direction_C : public AFortEmitterCameraLensEffectDirectional
 {
 public:
-	uint8                                        Pad_2E64[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_4E4B[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

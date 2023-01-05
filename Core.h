@@ -7,7 +7,6 @@ namespace Core {
 		AllocConsole();
 		freopen_s(&K, "CONOUT$", "w", stdout);
 		InitGObjects();
-		CreateDefaultObject = decltype(CreateDefaultObject)(uintptr_t(GetModuleHandle(0)) + Offsets::CreateDefaultObj);
 		LOG("ImageBase: " + std::to_string(__int64(GetModuleHandle(0))));
 		Hooks::Init();
 		BaseTransform.Scale3D = { 1,1,1 };

@@ -21,9 +21,9 @@ namespace Params
 struct UColorLibrary_C_Get_HarvestWeakPoint_Color_Params
 {
 public:
-	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x190(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          StyleSheetOut;                                     // 0x198(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          StyleSheetOut;                                     // 0x198(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x218 (0x218 - 0x0)
@@ -33,21 +33,21 @@ struct UColorLibrary_C_Get_Base___Buff_Colors_Params
 public:
 	enum class EFortStatValueDisplayType         Display_Type;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBuffState                    Buff_State;                                        // 0x1(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41FA[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FColorStylesheet                      Stylesheet;                                        // 0x4(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	uint8                                        Pad_41FB[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3F80[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FColorStylesheet                      Stylesheet;                                        // 0x4(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3F81[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               __WorldContext;                                    // 0x198(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Base;                                              // 0x1A0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Buff;                                              // 0x1B0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Temp_struct_Variable;                              // 0x1C0(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Base;                                              // 0x1A0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Buff;                                              // 0x1B0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Temp_struct_Variable;                              // 0x1C0(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortStatValueDisplayType         Temp_byte_Variable;                                // 0x1D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41FC[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          Temp_struct_Variable1;                             // 0x1D4(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Temp_struct_Variable12;                            // 0x1E4(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3F82[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          Temp_struct_Variable1;                             // 0x1D4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Temp_struct_Variable2;                             // 0x1E4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortBuffState                    Temp_byte_Variable1;                               // 0x1F4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_41FD[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FLinearColor                          K2Node_Select_Default;                             // 0x1F8(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          K2Node_Select1_Default;                            // 0x208(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3F83[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FLinearColor                          K2Node_Select_Default;                             // 0x1F8(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          K2Node_Select1_Default;                            // 0x208(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1A8 (0x1A8 - 0x0)
@@ -55,9 +55,9 @@ public:
 struct UColorLibrary_C_Get_Bolt_Elemental_Color_Params
 {
 public:
-	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x190(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1A8 (0x1A8 - 0x0)
@@ -65,9 +65,9 @@ public:
 struct UColorLibrary_C_Get_Ice_Elemental_Color_Params
 {
 public:
-	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x190(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1A8 (0x1A8 - 0x0)
@@ -75,9 +75,9 @@ public:
 struct UColorLibrary_C_Get_Fire_Elemental_Color_Params
 {
 public:
-	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x190(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1A8 (0x1A8 - 0x0)
@@ -85,9 +85,9 @@ public:
 struct UColorLibrary_C_Get_Unique_Color_Params
 {
 public:
-	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x190(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1A8 (0x1A8 - 0x0)
@@ -95,9 +95,9 @@ public:
 struct UColorLibrary_C_Get_Debuff_Color_Params
 {
 public:
-	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x190(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1A8 (0x1A8 - 0x0)
@@ -105,9 +105,9 @@ public:
 struct UColorLibrary_C_Get_Buff_Color_Params
 {
 public:
-	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FColorStylesheet                      Stylesheet;                                        // 0x0(0x190)(BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UObject*                               __WorldContext;                                    // 0x190(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          Color;                                             // 0x198(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 }

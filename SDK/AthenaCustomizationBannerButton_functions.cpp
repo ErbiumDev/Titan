@@ -31,7 +31,7 @@ void UAthenaCustomizationBannerButton_C::Construct()
 
 
 // Function AthenaCustomizationBannerButton.AthenaCustomizationBannerButton_C.ExecuteUbergraph_AthenaCustomizationBannerButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

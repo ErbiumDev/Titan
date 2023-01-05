@@ -12,13 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xC (0x8C0 - 0x8B4)
+// 0x8 (0x820 - 0x818)
 // BlueprintGeneratedClass B_Prj_Athena_FragGrenade.B_Prj_Athena_FragGrenade_C
 class AB_Prj_Athena_FragGrenade_C : public AB_Prj_Athena_Grenade_Base_C
 {
 public:
-	uint8                                        Pad_43AE[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x8B8(0x8)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x818(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass()
 	{

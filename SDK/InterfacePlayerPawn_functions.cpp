@@ -48,7 +48,7 @@ void UInterfacePlayerPawn_C::FootStepLeft()
 // Function InterfacePlayerPawn.InterfacePlayerPawn_C.Melee_Effect_Color
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                     Melee_Color_Set                                                  (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     Melee_Color_Set                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UInterfacePlayerPawn_C::Melee_Effect_Color(struct FVector* Melee_Color_Set)
 {

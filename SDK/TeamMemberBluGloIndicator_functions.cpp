@@ -18,16 +18,16 @@ namespace SDK
 // Function TeamMemberBluGloIndicator.TeamMemberBluGloIndicator_C.OnPlayerAccumulatedItemsUpdated
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                              CallFunc_GetNumOfAccumulatedItem_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_GetNumOfAccumulatedBluGlo_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTeamMemberBluGloIndicator_C::OnPlayerAccumulatedItemsUpdated(int32 CallFunc_GetNumOfAccumulatedItem_ReturnValue, bool CallFunc_IsValid_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue)
+void UTeamMemberBluGloIndicator_C::OnPlayerAccumulatedItemsUpdated(int32 CallFunc_GetNumOfAccumulatedBluGlo_ReturnValue, bool CallFunc_IsValid_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue)
 {
 	static auto Func = Class->GetFunction("TeamMemberBluGloIndicator_C", "OnPlayerAccumulatedItemsUpdated");
 
 	Params::UTeamMemberBluGloIndicator_C_OnPlayerAccumulatedItemsUpdated_Params Parms;
-	Parms.CallFunc_GetNumOfAccumulatedItem_ReturnValue = CallFunc_GetNumOfAccumulatedItem_ReturnValue;
+	Parms.CallFunc_GetNumOfAccumulatedBluGlo_ReturnValue = CallFunc_GetNumOfAccumulatedBluGlo_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
 

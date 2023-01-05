@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xFD0 - 0xFD0)
+// 0x0 (0x1100 - 0x1100)
 // BlueprintGeneratedClass FeedbackAnnouncer.FeedbackAnnouncer_C
 class AFeedbackAnnouncer_C : public AFortPawn_FeedbackAnnouncer
 {

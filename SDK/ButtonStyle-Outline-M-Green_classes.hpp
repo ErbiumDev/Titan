@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Outline-M-Green.ButtonStyle-Outline-M-Green_C
 class UButtonStyle_Outline_M_Green_C : public UCommonButtonStyle
 {

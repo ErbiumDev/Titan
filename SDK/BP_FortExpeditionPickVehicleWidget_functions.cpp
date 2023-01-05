@@ -18,24 +18,20 @@ namespace SDK
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.Pre Select for Console
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     CallFunc_BP_GetSelectedItem_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                     CallFunc_GetItemAt_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_SetSelectedItem_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionPickVehicleWidget_C::Pre_Select_for_Console(class UCommonInputContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UObject* CallFunc_GetItemAt_ReturnValue, bool CallFunc_SetSelectedItem_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void UBP_FortExpeditionPickVehicleWidget_C::Pre_Select_for_Console(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class UObject* CallFunc_BP_GetSelectedItem_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionPickVehicleWidget_C", "Pre Select for Console");
 
 	Params::UBP_FortExpeditionPickVehicleWidget_C_Pre_Select_for_Console_Params Parms;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
+	Parms.CallFunc_BP_GetSelectedItem_ReturnValue = CallFunc_BP_GetSelectedItem_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
-	Parms.CallFunc_GetItemAt_ReturnValue = CallFunc_GetItemAt_ReturnValue;
-	Parms.CallFunc_SetSelectedItem_ReturnValue = CallFunc_SetSelectedItem_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -134,10 +130,10 @@ void UBP_FortExpeditionPickVehicleWidget_C::Setup_Input_Action_Handlers(UDelegat
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionPickVehicleWidget_C::HandleBack(bool* Passthrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void UBP_FortExpeditionPickVehicleWidget_C::HandleBack(bool* PassThrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionPickVehicleWidget_C", "HandleBack");
 
@@ -146,8 +142,8 @@ void UBP_FortExpeditionPickVehicleWidget_C::HandleBack(bool* Passthrough, class 
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -283,7 +279,7 @@ void UBP_FortExpeditionPickVehicleWidget_C::HandleVehcileButtonUnhovered(class U
 
 
 // Function BP_FortExpeditionPickVehicleWidget.BP_FortExpeditionPickVehicleWidget_C.ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                 K2Node_ComponentBoundEvent_Widget                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -301,12 +297,12 @@ void UBP_FortExpeditionPickVehicleWidget_C::HandleVehcileButtonUnhovered(class U
 // class UBP_FortExpeditionVehicleTileItemWidget_C*K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget1(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
 // class UCommonButton*               K2Node_CustomEvent_Button                                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate123                          (ZeroConstructor, NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate3                            (ZeroConstructor, NoDestructor)
 
-void UBP_FortExpeditionPickVehicleWidget_C::ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget(int32 EntryPoint, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UBP_FortExpeditionVehicleTileItemWidget_C* K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget, bool K2Node_DynamicCast_bSuccess, class FName K2Node_CustomEvent_SquadId, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_HandleBack_Passthrough, bool CallFunc_Greater_IntInt_ReturnValue, class UFortExpeditionItem* K2Node_Event_InItem, class UFortExpeditionItemDefinition* CallFunc_Get_Expedition_Item_Definition_AsFort_Expedition_Item_Definition, const struct FGameplayTagContainer& CallFunc_GetRequiredTags_ReturnValue, class UCommonButton* K2Node_CustomEvent_Button1, class UBP_FortExpeditionVehicleTileItemWidget_C* K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget1, bool K2Node_DynamicCast_bSuccess1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, class UCommonButton* K2Node_CustomEvent_Button, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate123)
+void UBP_FortExpeditionPickVehicleWidget_C::ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget(int32 EntryPoint, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UBP_FortExpeditionVehicleTileItemWidget_C* K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget, bool K2Node_DynamicCast_bSuccess, class FName K2Node_CustomEvent_SquadId, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_HandleBack_Passthrough, bool CallFunc_Greater_IntInt_ReturnValue, class UFortExpeditionItem* K2Node_Event_InItem, class UFortExpeditionItemDefinition* CallFunc_Get_Expedition_Item_Definition_AsFort_Expedition_Item_Definition, const struct FGameplayTagContainer& CallFunc_GetRequiredTags_ReturnValue, class UCommonButton* K2Node_CustomEvent_Button1, class UBP_FortExpeditionVehicleTileItemWidget_C* K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget1, bool K2Node_DynamicCast_bSuccess1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, class UCommonButton* K2Node_CustomEvent_Button, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate3)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionPickVehicleWidget_C", "ExecuteUbergraph_BP_FortExpeditionPickVehicleWidget");
 
@@ -327,10 +323,10 @@ void UBP_FortExpeditionPickVehicleWidget_C::ExecuteUbergraph_BP_FortExpeditionPi
 	Parms.K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget1 = K2Node_DynamicCast_AsBP_Fort_Expedition_Vehicle_Tile_Item_Widget1;
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
 	Parms.K2Node_CustomEvent_Button = K2Node_CustomEvent_Button;
 	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate123 = K2Node_CreateDelegate_OutputDelegate123;
+	Parms.K2Node_CreateDelegate_OutputDelegate3 = K2Node_CreateDelegate_OutputDelegate3;
 
 	UObject::ProcessEvent(Func, &Parms);
 

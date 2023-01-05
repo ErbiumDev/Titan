@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x318 - 0x318)
+// 0x0 (0x330 - 0x330)
 // BlueprintGeneratedClass B_FortGlobalAbilityTargetingActor.B_FortGlobalAbilityTargetingActor_C
 class AB_FortGlobalAbilityTargetingActor_C : public AFortGlobalAbilityTargetingActor
 {

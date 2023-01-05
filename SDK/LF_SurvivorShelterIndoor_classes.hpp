@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xF00 - 0xF00)
+// 0x0 (0xEC0 - 0xEC0)
 // BlueprintGeneratedClass LF_SurvivorShelterIndoor.LF_SurvivorShelterIndoor_C
 class ALF_SurvivorShelterIndoor_C : public ABuildingFoundation5x5
 {

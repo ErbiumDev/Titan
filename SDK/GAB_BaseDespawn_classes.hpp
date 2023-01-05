@@ -12,15 +12,15 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0xAD8 - 0xAC0)
+// 0x18 (0x950 - 0x938)
 // BlueprintGeneratedClass GAB_BaseDespawn.GAB_BaseDespawn_C
 class UGAB_BaseDespawn_C : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAC0(0x8)(Transient, DuplicateTransient)
-	struct FGameplayTag                          TC_GameplayEffectInstantDeathDespawn;              // 0xAC8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	float                                        DelayBeforeKill;                                   // 0xAD0(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	int32                                        RiftRandom;                                        // 0xAD4(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x938(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FGameplayTag                          TC_GameplayEffectInstantDeathDespawn;              // 0x940(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	float                                        DelayBeforeKill;                                   // 0x948(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	int32                                        RiftRandom;                                        // 0x94C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

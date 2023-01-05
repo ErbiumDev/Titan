@@ -15,6 +15,21 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function HelpPanel.HelpPanel_C.Setup Header
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UHelpPanel_C::Setup_Header()
+{
+	static auto Func = Class->GetFunction("HelpPanel_C", "Setup Header");
+
+	Params::UHelpPanel_C_Setup_Header_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function HelpPanel.HelpPanel_C.SetSelectedItemByID
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -125,32 +140,14 @@ void UHelpPanel_C::UpdateDetails(class UFortHelpItem* SelectedHelpItem, enum cla
 // Parameters:
 // TArray<class UFortHelpItem*>       InHelpItems                                                      (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm)
 // bool                               bExpandAll                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortHelpItem*               CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortHelpItem*               CallFunc_Array_Get_Item1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Array_Length_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UHelpPanel_C::HandleTopHelpListChanged(TArray<class UFortHelpItem*>& InHelpItems, bool bExpandAll, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, class UFortHelpItem* CallFunc_Array_Get_Item, class UFortHelpItem* CallFunc_Array_Get_Item1, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Array_Length_ReturnValue1, bool CallFunc_Greater_IntInt_ReturnValue)
+void UHelpPanel_C::HandleTopHelpListChanged(TArray<class UFortHelpItem*>& InHelpItems, bool bExpandAll)
 {
 	static auto Func = Class->GetFunction("HelpPanel_C", "HandleTopHelpListChanged");
 
 	Params::UHelpPanel_C_HandleTopHelpListChanged_Params Parms;
 	Parms.InHelpItems = InHelpItems;
 	Parms.bExpandAll = bExpandAll;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_Array_Get_Item1 = CallFunc_Array_Get_Item1;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.CallFunc_Array_Length_ReturnValue1 = CallFunc_Array_Length_ReturnValue1;
-	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -286,13 +283,11 @@ void UHelpPanel_C::OnContextHelpChanged()
 
 
 // Function HelpPanel.HelpPanel_C.ExecuteUbergraph_HelpPanel
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortHelpItem*>       CallFunc_GetTopLevelHelpItems_ActiveHelpEntries                  (ZeroConstructor, ReferenceParm)
-// class UObject*                     CallFunc_GetSelectedItem_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     CallFunc_BP_GetSelectedItem_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                 K2Node_ComponentBoundEvent_Widget                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     K2Node_ComponentBoundEvent_Item                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_ComponentBoundEvent_bIsSelected                           (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -300,17 +295,17 @@ void UHelpPanel_C::OnContextHelpChanged()
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUINavigationManager*    CallFunc_GetUINavigationManager_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UFortHelpItem*>       CallFunc_GetTopLevelHelpItems_ActiveHelpEntries                  (ZeroConstructor, ReferenceParm)
 
-void UHelpPanel_C::ExecuteUbergraph_HelpPanel(int32 EntryPoint, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, TArray<class UFortHelpItem*>& CallFunc_GetTopLevelHelpItems_ActiveHelpEntries, class UObject* CallFunc_GetSelectedItem_ReturnValue, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UObject* K2Node_ComponentBoundEvent_Item, bool K2Node_ComponentBoundEvent_bIsSelected, class UFortHelpItem* K2Node_DynamicCast_AsFort_Help_Item, bool K2Node_DynamicCast_bSuccess, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button)
+void UHelpPanel_C::ExecuteUbergraph_HelpPanel(int32 EntryPoint, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UObject* CallFunc_BP_GetSelectedItem_ReturnValue, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UObject* K2Node_ComponentBoundEvent_Item, bool K2Node_ComponentBoundEvent_bIsSelected, class UFortHelpItem* K2Node_DynamicCast_AsFort_Help_Item, bool K2Node_DynamicCast_bSuccess, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, TArray<class UFortHelpItem*>& CallFunc_GetTopLevelHelpItems_ActiveHelpEntries)
 {
 	static auto Func = Class->GetFunction("HelpPanel_C", "ExecuteUbergraph_HelpPanel");
 
 	Params::UHelpPanel_C_ExecuteUbergraph_HelpPanel_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
-	Parms.CallFunc_GetTopLevelHelpItems_ActiveHelpEntries = CallFunc_GetTopLevelHelpItems_ActiveHelpEntries;
-	Parms.CallFunc_GetSelectedItem_ReturnValue = CallFunc_GetSelectedItem_ReturnValue;
 	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
+	Parms.CallFunc_BP_GetSelectedItem_ReturnValue = CallFunc_BP_GetSelectedItem_ReturnValue;
 	Parms.K2Node_ComponentBoundEvent_Widget = K2Node_ComponentBoundEvent_Widget;
 	Parms.K2Node_ComponentBoundEvent_Item = K2Node_ComponentBoundEvent_Item;
 	Parms.K2Node_ComponentBoundEvent_bIsSelected = K2Node_ComponentBoundEvent_bIsSelected;
@@ -318,6 +313,8 @@ void UHelpPanel_C::ExecuteUbergraph_HelpPanel(int32 EntryPoint, class UFortGloba
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetUINavigationManager_ReturnValue = CallFunc_GetUINavigationManager_ReturnValue;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
+	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
+	Parms.CallFunc_GetTopLevelHelpItems_ActiveHelpEntries = CallFunc_GetTopLevelHelpItems_ActiveHelpEntries;
 
 	UObject::ProcessEvent(Func, &Parms);
 

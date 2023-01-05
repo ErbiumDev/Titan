@@ -18,10 +18,10 @@ namespace SDK
 // Function RecentMatchesStatScreen.RecentMatchesStatScreen_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URecentMatchesStatScreen_C::HandleBack(bool* Passthrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void URecentMatchesStatScreen_C::HandleBack(bool* PassThrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
 {
 	static auto Func = Class->GetFunction("RecentMatchesStatScreen_C", "HandleBack");
 
@@ -30,8 +30,8 @@ void URecentMatchesStatScreen_C::HandleBack(bool* Passthrough, class UFortUIMana
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -142,7 +142,7 @@ void URecentMatchesStatScreen_C::OnRecentMatcheChanged()
 
 
 // Function RecentMatchesStatScreen.RecentMatchesStatScreen_C.ExecuteUbergraph_RecentMatchesStatScreen
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UAthenaMatchStatView*>CallFunc_GetRecentMatches_ReturnValue                            (ZeroConstructor, ReferenceParm)

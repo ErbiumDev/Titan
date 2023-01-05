@@ -64,7 +64,7 @@ void UClothingSimulationInteractorNv::SetAnimDriveDamperStiffness(float InStiffn
 // Function ClothingSystemRuntime.ClothingSimulationInteractorNv.EnableGravityOverride
 // (Final, Native, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                     InVector                                                         (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     InVector                                                         (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void UClothingSimulationInteractorNv::EnableGravityOverride(struct FVector& InVector)
 {

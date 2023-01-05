@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x448 - 0x440)
+// 0x8 (0x430 - 0x428)
 // BlueprintGeneratedClass GCN_BluGloPylon_Health_Activate.GCN_BluGloPylon_Health_Activate_C
 class AGCN_BluGloPylon_Health_Activate_C : public AFortGameplayCueNotify_Looping
 {
 public:
-	class UTexture*                              IconTexture;                                       // 0x440(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UTexture*                              IconTexture;                                       // 0x428(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

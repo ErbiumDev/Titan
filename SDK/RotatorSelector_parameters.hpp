@@ -16,26 +16,38 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x5 (0x5 - 0x0)
+// Function RotatorSelector.RotatorSelector_C.Show Param Name
+struct URotatorSelector_C_Show_Param_Name_Params
+{
+public:
+	bool                                         Show;                                              // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         Temp_bool_Variable;                                // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable1;                               // 0x3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
 // 0x38 (0x38 - 0x0)
 // Function RotatorSelector.RotatorSelector_C.Update Size
 struct URotatorSelector_C_Update_Size_Params
 {
 public:
-	struct FVector2D                             LargeSize;                                         // 0x0(0x8)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             SmallSize;                                         // 0x8(0x8)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             LargeSize;                                         // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             SmallSize;                                         // 0x8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Variable;                                 // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Temp_bool_Variable;                                // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4C04[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	bool                                         CallFunc_IsMobileGame_ReturnValue;                 // 0x15(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsMobileGame_ReturnValue1;                // 0x16(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsMobileGame_ReturnValue2;                // 0x17(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	int32                                        Temp_int_Variable1;                                // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsBROnly_ReturnValue;                     // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         Temp_bool_Variable1;                               // 0x1D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsBROnly_ReturnValue1;                    // 0x1E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsBROnly_ReturnValue12;                   // 0x1F(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         Temp_bool_Variable1;                               // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5623[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        K2Node_Select_Default;                             // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Temp_bool_Variable12;                              // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4C05[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector2D                             K2Node_Select1_Default;                            // 0x28(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             K2Node_Select12_Default;                           // 0x30(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable2;                               // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5624[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector2D                             K2Node_Select1_Default;                            // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             K2Node_Select2_Default;                            // 0x30(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x1B0 (0x1B0 - 0x0)
@@ -132,20 +144,30 @@ public:
 	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x138 (0x138 - 0x0)
+// 0x1 (0x1 - 0x0)
+// Function RotatorSelector.RotatorSelector_C.PreConstruct
+struct URotatorSelector_C_PreConstruct_Params
+{
+public:
+	bool                                         IsDesignTime;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// 0x141 (0x141 - 0x0)
 // Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector
 struct URotatorSelector_C_ExecuteUbergraph_RotatorSelector_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4C06[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerEvent                         K2Node_Event_MouseEvent1;                          // 0x8(0x70)(ConstParm)
-	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x78(0x38)(IsPlainOldData, NoDestructor)
-	struct FPointerEvent                         K2Node_Event_MouseEvent;                           // 0xB0(0x70)(ConstParm)
-	int32                                        K2Node_ComponentBoundEvent_Value;                  // 0x120(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4C07[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button1;                // 0x128(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x130(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0x4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5625[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPointerEvent                         K2Node_Event_MouseEvent1;                          // 0x10(0x70)(ConstParm)
+	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x80(0x38)(IsPlainOldData, NoDestructor)
+	struct FPointerEvent                         K2Node_Event_MouseEvent;                           // 0xB8(0x70)(ConstParm)
+	int32                                        K2Node_ComponentBoundEvent_Value;                  // 0x128(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5626[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button1;                // 0x130(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x138(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_Event_IsDesignTime;                         // 0x140(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x4 (0x4 - 0x0)

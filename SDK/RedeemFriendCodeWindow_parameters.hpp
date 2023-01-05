@@ -24,12 +24,12 @@ public:
 	bool                                         Success;                                           // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ERedeemCodeFailureReason          FailureReason;                                     // 0x1(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ERedeemCodeFailureReason          Temp_byte_Variable;                                // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4868[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3643[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Temp_text_Variable;                                // 0x8(0x18)()
 	class FText                                  Temp_text_Variable1;                               // 0x20(0x18)()
-	class FText                                  Temp_text_Variable12;                              // 0x38(0x18)()
-	class FText                                  Temp_text_Variable123;                             // 0x50(0x18)()
-	class FText                                  Temp_text_Variable1234;                            // 0x68(0x18)()
+	class FText                                  Temp_text_Variable2;                               // 0x38(0x18)()
+	class FText                                  Temp_text_Variable3;                               // 0x50(0x18)()
+	class FText                                  Temp_text_Variable4;                               // 0x68(0x18)()
 	class UFortMcpContext*                       CallFunc_GetContext_ReturnValue;                   // 0x80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class FText                                  K2Node_Select_Default;                             // 0x88(0x18)()
 };
@@ -95,17 +95,17 @@ struct URedeemFriendCodeWindow_C_ExecuteUbergraph_RedeemFriendCodeWindow_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4869[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3644[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortUINavigationManager*              CallFunc_GetUINavigationManager_ReturnValue;       // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button1;                // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x18(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bSuccess;                             // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ERedeemCodeFailureReason          K2Node_Event_FailureReason;                        // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_486A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3645[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_GetText_ReturnValue;                      // 0x28(0x18)()
 	class FString                                CallFunc_Conv_TextToString_ReturnValue;            // 0x40(0x10)(ZeroConstructor, HasGetValueTypeHash)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_486B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_3646[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  K2Node_ComponentBoundEvent_Text;                   // 0x58(0x18)(ConstParm)
 	bool                                         CallFunc_IsVisible_ReturnValue;                    // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };

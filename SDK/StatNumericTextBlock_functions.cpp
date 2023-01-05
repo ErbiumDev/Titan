@@ -37,39 +37,39 @@ void UStatNumericTextBlock_C::SetComparisonState(enum class EFortBuffState Buff_
 // Parameters:
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EFortBuffState          Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable123                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EFortBuffState          Temp_byte_Variable1234                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortBuffState          Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable3                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortBuffState          Temp_byte_Variable4                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable12                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EFortBuffState          Temp_byte_Variable12345                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortBuffState          Temp_byte_Variable5                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Get_Base___Buff_Colors_Base                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Get_Base___Buff_Colors_Buff                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Select12_Default                                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Base___Buff_Colors_Base                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Base___Buff_Colors_Buff                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Select2_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
 
-void UStatNumericTextBlock_C::UpdateComparison(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class EFortBuffState Temp_byte_Variable12, enum class ESlateVisibility Temp_byte_Variable123, enum class EFortBuffState Temp_byte_Variable1234, enum class ESlateVisibility K2Node_Select_Default, float Temp_float_Variable, float Temp_float_Variable1, float Temp_float_Variable12, enum class EFortBuffState Temp_byte_Variable12345, float K2Node_Select1_Default, const struct FLinearColor& CallFunc_Get_Base___Buff_Colors_Base, const struct FLinearColor& CallFunc_Get_Base___Buff_Colors_Buff, const struct FLinearColor& K2Node_Select12_Default, const struct FSlateColor& K2Node_MakeStruct_SlateColor)
+void UStatNumericTextBlock_C::UpdateComparison(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class EFortBuffState Temp_byte_Variable2, enum class ESlateVisibility Temp_byte_Variable3, enum class EFortBuffState Temp_byte_Variable4, enum class ESlateVisibility K2Node_Select_Default, float Temp_float_Variable, float Temp_float_Variable1, float Temp_float_Variable2, enum class EFortBuffState Temp_byte_Variable5, float K2Node_Select1_Default, const struct FLinearColor& CallFunc_Get_Base___Buff_Colors_Base, const struct FLinearColor& CallFunc_Get_Base___Buff_Colors_Buff, const struct FLinearColor& K2Node_Select2_Default, const struct FSlateColor& K2Node_MakeStruct_SlateColor)
 {
 	static auto Func = Class->GetFunction("StatNumericTextBlock_C", "UpdateComparison");
 
 	Params::UStatNumericTextBlock_C_UpdateComparison_Params Parms;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
-	Parms.Temp_byte_Variable123 = Temp_byte_Variable123;
-	Parms.Temp_byte_Variable1234 = Temp_byte_Variable1234;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
+	Parms.Temp_byte_Variable3 = Temp_byte_Variable3;
+	Parms.Temp_byte_Variable4 = Temp_byte_Variable4;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.Temp_float_Variable = Temp_float_Variable;
 	Parms.Temp_float_Variable1 = Temp_float_Variable1;
-	Parms.Temp_float_Variable12 = Temp_float_Variable12;
-	Parms.Temp_byte_Variable12345 = Temp_byte_Variable12345;
+	Parms.Temp_float_Variable2 = Temp_float_Variable2;
+	Parms.Temp_byte_Variable5 = Temp_byte_Variable5;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
 	Parms.CallFunc_Get_Base___Buff_Colors_Base = CallFunc_Get_Base___Buff_Colors_Base;
 	Parms.CallFunc_Get_Base___Buff_Colors_Buff = CallFunc_Get_Base___Buff_Colors_Buff;
-	Parms.K2Node_Select12_Default = K2Node_Select12_Default;
+	Parms.K2Node_Select2_Default = K2Node_Select2_Default;
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -110,7 +110,7 @@ void UStatNumericTextBlock_C::PreConstruct(bool IsDesignTime)
 
 
 // Function StatNumericTextBlock.StatNumericTextBlock_C.ExecuteUbergraph_StatNumericTextBlock
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)

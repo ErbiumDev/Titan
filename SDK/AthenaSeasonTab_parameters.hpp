@@ -17,24 +17,28 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x0 (0x0 - 0x0)
-// Function AthenaSeasonTab.AthenaSeasonTab_C.OnMovieFinished
-struct UAthenaSeasonTab_C_OnMovieFinished_Params
+// Function AthenaSeasonTab.AthenaSeasonTab_C.UpdateSeasonPurchaseStateNoTransition
+struct UAthenaSeasonTab_C_UpdateSeasonPurchaseStateNoTransition_Params
 {
 public:
 };
 
-// 0x2B (0x2B - 0x0)
+// 0x8 (0x8 - 0x0)
+// Function AthenaSeasonTab.AthenaSeasonTab_C.GetWidgetForFramingViewedItem
+struct UAthenaSeasonTab_C_GetWidgetForFramingViewedItem_Params
+{
+public:
+	class UWidget*                               ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// 0x11 (0x11 - 0x0)
 // Function AthenaSeasonTab.AthenaSeasonTab_C.PlaySeasonCinematic
 struct UAthenaSeasonTab_C_PlaySeasonCinematic_Params
 {
 public:
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x0(0x10)(ZeroConstructor, NoDestructor)
-	class UActivatableMovieWidget_C*             CallFunc_Create_ReturnValue;                       // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortUIManagerWidget_NUI*              CallFunc_GetUIManagerWidget_ReturnValue;           // 0x18(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESubGame                          CallFunc_GetSubGame_ReturnValue;                   // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsMobileApp_ReturnValue;                  // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x2A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	class UFortUIManagerWidget_NUI*              CallFunc_GetUIManagerWidget_ReturnValue;           // 0x0(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UActivatableMovieWidget_C*             CallFunc_Create_ReturnValue;                       // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_LoadVideo_ReturnValue;                    // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -42,7 +46,7 @@ public:
 struct UAthenaSeasonTab_C_Handle_ReplayCinematic_Params
 {
 public:
-	bool                                         Passthrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         PassThrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x14 (0x14 - 0x0)
@@ -52,9 +56,9 @@ struct UAthenaSeasonTab_C_UpdateLevelPageWidgetSwitcherTranslation_Params
 public:
 	float                                        CallFunc_FClamp_ReturnValue;                       // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4878[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_593C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0xC(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             CallFunc_MakeVector2D_ReturnValue;                 // 0xC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -68,21 +72,23 @@ public:
 	bool                                         CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x48 (0x48 - 0x0)
+// 0x55 (0x55 - 0x0)
 // Function AthenaSeasonTab.AthenaSeasonTab_C.OpenPurchaseScreen
 struct UAthenaSeasonTab_C_OpenPurchaseScreen_Params
 {
 public:
-	bool                                         CallFunc_IsBROnly_ReturnValue;                     // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4879[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UAthenaAccountContext*                 CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaSeasonItemDefinition*           CallFunc_GetCurrentSeasonDefinition_ReturnValue;   // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<class FString>                        K2Node_MakeArray_Array;                            // 0x28(0x10)(ConstParm, ZeroConstructor, ReferenceParm)
-	class UBattlePassDirectAcquisitionScreen_C*  CallFunc_Create_ReturnValue;                       // 0x38(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue12;                 // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsMobileGame_ReturnValue;                 // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_593D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaAccountContext*                 CallFunc_GetContext_ReturnValue1;                  // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue2;                  // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaSeasonItemDefinition*           CallFunc_GetCurrentSeasonDefinition_ReturnValue;   // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UBattlePassDirectAcquisitionScreen_C*  CallFunc_Create_ReturnValue;                       // 0x30(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<class FString>                        K2Node_MakeArray_Array;                            // 0x38(0x10)(ConstParm, ZeroConstructor, ReferenceParm)
+	class UAthenaAccountContext*                 CallFunc_GetContext_ReturnValue3;                  // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetCurrentSeasonNumber_ReturnValue;       // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Greater_IntInt_ReturnValue;               // 0x54(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -90,121 +96,85 @@ public:
 struct UAthenaSeasonTab_C_Handle_GiftBattlePass_Params
 {
 public:
-	bool                                         Passthrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         PassThrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x21 (0x21 - 0x0)
-// Function AthenaSeasonTab.AthenaSeasonTab_C.Handle_ShowFAQ
-struct UAthenaSeasonTab_C_Handle_ShowFAQ_Params
+// 0x29 (0x29 - 0x0)
+// Function AthenaSeasonTab.AthenaSeasonTab_C.Handle_ShowAbout
+struct UAthenaSeasonTab_C_Handle_ShowAbout_Params
 {
 public:
-	bool                                         Passthrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_487A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortUIManagerWidget_NUI*              CallFunc_GetUIManagerWidget_ReturnValue;           // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UHelpPanel_C*                          CallFunc_Create_ReturnValue;                       // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUIManager_C*                          K2Node_DynamicCast_AsUIManager;                    // 0x18(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         PassThrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_593E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortUIManagerWidget_NUI*              CallFunc_GetUIManagerWidget_ReturnValue;           // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaSeasonAboutWidget_C*            CallFunc_Create_ReturnValue;                       // 0x18(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUIManager_C*                          K2Node_DynamicCast_AsUIManager;                    // 0x20(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x1B0 (0x1B0 - 0x0)
-// Function AthenaSeasonTab.AthenaSeasonTab_C.SetupViewedItemName
-struct UAthenaSeasonTab_C_SetupViewedItemName_Params
-{
-public:
-	class UFortItem*                             Item;                                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItemDefinition*                   CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetNumInStack_ReturnValue;                // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_487B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortTokenType*                        K2Node_DynamicCast_AsFort_Token_Type;              // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_487C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x28(0x40)(HasGetValueTypeHash)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1;             // 0x68(0x40)(HasGetValueTypeHash)
-	bool                                         CallFunc_Greater_IntInt_ReturnValue;               // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_487D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_GetDisplayName_ReturnValue;               // 0xB0(0x18)()
-	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0xC8(0x18)()
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData12;            // 0xE0(0x40)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x120(0x10)(ZeroConstructor, ReferenceParm)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData123;           // 0x130(0x40)(HasGetValueTypeHash)
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x170(0x18)()
-	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array1;                           // 0x188(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue1;                      // 0x198(0x18)()
-};
-
-// 0x50 (0x50 - 0x0)
+// 0x4E (0x4E - 0x0)
 // Function AthenaSeasonTab.AthenaSeasonTab_C.UpdatePageCount
 struct UAthenaSeasonTab_C_UpdatePageCount_Params
 {
 public:
-	int32                                        CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetNumWidgets_ReturnValue;                // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_487E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_Not_PreBool_ReturnValue1;                 // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_487F[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x18(0x18)()
-	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4880[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_Conv_IntToText_ReturnValue1;              // 0x38(0x18)()
+	int32                                        ActiveIndex;                                       // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_593F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0xC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5940[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_IntToText_ReturnValue;               // 0x10(0x18)()
+	int32                                        CallFunc_GetNumWidgets_ReturnValue;                // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5941[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_IntToText_ReturnValue1;              // 0x30(0x18)()
+	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue1;           // 0x4C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_Not_PreBool_ReturnValue1;                 // 0x4D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x125 (0x125 - 0x0)
+// 0xB4 (0xB4 - 0x0)
 // Function AthenaSeasonTab.AthenaSeasonTab_C.UpdateSeasonPurchaseState
 struct UAthenaSeasonTab_C_UpdateSeasonPurchaseState_Params
 {
 public:
-	class UFortRuntimeOptions*                   CallFunc_GetRuntimeOptions_ReturnValue;            // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsGiftingDisabledOnCurrentPlatform_ReturnValue; // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4881[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_GetName_ReturnValue;                      // 0x10(0x18)()
-	enum class EInputActionState                 Temp_byte_Variable;                                // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4882[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x30(0x40)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x70(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x80(0x18)()
-	enum class EInputActionState                 Temp_byte_Variable1;                               // 0x98(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4883[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue;           // 0x9C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Temp_bool_Variable;                                // 0xA0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4884[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0xA4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1;             // 0xA8(0x40)(HasGetValueTypeHash)
-	enum class EInputActionState                 K2Node_Select_Default;                             // 0xE8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4885[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array1;                           // 0xF0(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue1;                      // 0x100(0x18)()
-	class UFortSeasonPassLevelInfo*              CallFunc_GetLevelInfo_ReturnValue;                 // 0x118(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x120(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue1;                     // 0x121(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_OwnsSeasonPass_ReturnValue;               // 0x122(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x123(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x124(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FDateTime                             CallFunc_GetSeasonEndDate_ReturnValue;             // 0x0(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_PurchaseAvailible_ReturnValue;            // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5942[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue;           // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x10(0x10)(ZeroConstructor, ReferenceParm)
+	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5943[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x28(0x18)()
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x40(0x40)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array1;                           // 0x80(0x10)(ZeroConstructor, ReferenceParm)
+	class UFortSeasonPassLevelInfo*              CallFunc_GetLevelInfo_ReturnValue;                 // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                  CallFunc_Format_ReturnValue1;                      // 0x98(0x18)()
+	bool                                         CallFunc_IsValid_ReturnValue;                      // 0xB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_OwnsSeasonPass_ReturnValue;               // 0xB1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0xB2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0xB3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x110 (0x110 - 0x0)
+// 0x78 (0x78 - 0x0)
 // Function AthenaSeasonTab.AthenaSeasonTab_C.SetupViewedItemData
 struct UAthenaSeasonTab_C_SetupViewedItemData_Params
 {
 public:
 	class UFortItem*                             Item;                                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItemDefinition*                   CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4886[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_GetRichDescription_ReturnValue;           // 0x18(0x18)()
-	class FText                                  CallFunc_GetShortDescription_ReturnValue;          // 0x30(0x18)()
-	enum class EFortRarity                       CallFunc_GetRarity_ReturnValue;                    // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4887[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0x50(0x18)()
-	struct FFortRarityItemData                   CallFunc_BPGetRarityData_ReturnValue;              // 0x68(0x80)()
-	class FName                                  CallFunc_MakeLiteralName_ReturnValue;              // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_MakeLiteralName_ReturnValue1;             // 0xF0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                  CallFunc_MakeLiteralName_ReturnValue12;            // 0xF8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*              CallFunc_GetDynamicMaterial_ReturnValue;           // 0x100(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*              CallFunc_GetDynamicFontMaterial_ReturnValue;       // 0x108(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetNumInStack_ReturnValue;                // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5944[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortItemDefinition*                   CallFunc_GetItemDefinitionBP_ReturnValue;          // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FFortItemQuantityPair                 CallFunc_MakeItemQuantityPair_ReturnValue;         // 0x18(0x40)()
+	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_SetItemQuantityPairToRepresent_ReturnValue; // 0x59(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_HasValidItemDefinition_HasValidDescription; // 0x5A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5945[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetEndTime_ReturnValue;                   // 0x5C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x60(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ObjectObject_ReturnValue;      // 0x68(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5946[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue1;               // 0x70(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x30 (0x30 - 0x0)
@@ -216,14 +186,14 @@ public:
 	int32                                        Temp_int_Variable;                                 // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UWidget*                               CallFunc_GetChildAt_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetChildrenCount_ReturnValue;             // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4888[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5947[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class USeasonPassPageWidget*                 K2Node_DynamicCast_AsSeason_Pass_Page_Widget;      // 0x18(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4889[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5948[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_ContainsLevel_ReturnValue;                // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_LessEqual_IntInt_ReturnValue;             // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_488A[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5949[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -241,7 +211,7 @@ public:
 	class UAthenaSeasonPageWidget_C*             CallFunc_Create_ReturnValue;                       // 0x50(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsFull_Full;                              // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x59(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_488B[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_594A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UPanelSlot*                            CallFunc_AddChild_ReturnValue;                     // 0x60(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
@@ -272,28 +242,6 @@ struct UAthenaSeasonTab_C_OnNavigateToLevel_Params
 {
 public:
 	int32                                        Level;                                             // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaSeasonTab.AthenaSeasonTab_C.OnStartReadingOffers
-struct UAthenaSeasonTab_C_OnStartReadingOffers_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function AthenaSeasonTab.AthenaSeasonTab_C.OnOffersGenerated
-struct UAthenaSeasonTab_C_OnOffersGenerated_Params
-{
-public:
-};
-
-// 0x8 (0x8 - 0x0)
-// Function AthenaSeasonTab.AthenaSeasonTab_C.GenerateOfferWidget
-struct UAthenaSeasonTab_C_GenerateOfferWidget_Params
-{
-public:
-	class UFortDirectAcquisitionOfferInfo*       OfferData;                                         // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -366,13 +314,6 @@ public:
 };
 
 // 0x0 (0x0 - 0x0)
-// Function AthenaSeasonTab.AthenaSeasonTab_C.NoOffersAvailable
-struct UAthenaSeasonTab_C_NoOffersAvailable_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
 // Function AthenaSeasonTab.AthenaSeasonTab_C.ScrollPositive
 struct UAthenaSeasonTab_C_ScrollPositive_Params
 {
@@ -441,103 +382,154 @@ struct UAthenaSeasonTab_C_OnNoCurrentSeason_Params
 public:
 };
 
-// 0x290 (0x290 - 0x0)
+// 0x1 (0x1 - 0x0)
+// Function AthenaSeasonTab.AthenaSeasonTab_C.OnSetGiftability
+struct UAthenaSeasonTab_C_OnSetGiftability_Params
+{
+public:
+	bool                                         bIsGiftable;                                       // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// 0x0 (0x0 - 0x0)
+// Function AthenaSeasonTab.AthenaSeasonTab_C.Season Variant Preview Info Updated
+struct UAthenaSeasonTab_C_Season_Variant_Preview_Info_Updated_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function AthenaSeasonTab.AthenaSeasonTab_C.OnAddedToActivationStack
+struct UAthenaSeasonTab_C_OnAddedToActivationStack_Params
+{
+public:
+};
+
+// 0x412 (0x412 - 0x0)
 // Function AthenaSeasonTab.AthenaSeasonTab_C.ExecuteUbergraph_AthenaSeasonTab
 struct UAthenaSeasonTab_C_ExecuteUbergraph_AthenaSeasonTab_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_488C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortRuntimeOptions*                   CallFunc_GetRuntimeOptions_ReturnValue;            // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetShowReplayTrailerButton_Athena_ReturnValue; // 0x10(0x1)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_488D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortDirectAcquisitionOfferInfo*       K2Node_Event_OfferData;                            // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_488E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button123;              // 0x28(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x30(0x10)(ZeroConstructor, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue1;                     // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_488F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button12;               // 0x48(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button1;                // 0x50(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWidget*                               K2Node_ComponentBoundEvent_ActiveWidget;           // 0x58(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        K2Node_ComponentBoundEvent_ActiveWidgetIndex;      // 0x60(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4890[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UAthenaSeasonPageWidget_C*             K2Node_DynamicCast_AsAthena_Season_Page_Widget;    // 0x68(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4891[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue;           // 0x74(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetFirstLevel_FirstLevel;                 // 0x78(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        K2Node_Event_Level;                                // 0x7C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x80(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaAccountContext*                 CallFunc_GetContext_ReturnValue;                   // 0x88(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_GetCurrentSeasonName_ReturnValue;         // 0x98(0x18)()
-	class UAthenaSeasonLevelConfirmationScreen_C* CallFunc_Create_ReturnValue;                       // 0xB0(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0xB8(0x18)()
-	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue1;          // 0xD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue12;         // 0xD4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0xD8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4892[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue1;                  // 0xE0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortSeasonPassLevelInfo*              CallFunc_GetLevelInfo_ReturnValue;                 // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue12;                    // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4893[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDateTime                             CallFunc_GetSeasonStoreEndDate_ReturnValue;        // 0xF8(0x8)(NoDestructor, HasGetValueTypeHash)
-	TMap<int32, class UFortSeasonPassLevelInfo*> CallFunc_GetAllLevelInfos_ReturnValue;             // 0x100(0x50)(ConstParm, ZeroConstructor)
-	int32                                        CallFunc_GetSeasonPassLevelMax_ReturnValue;        // 0x150(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_Event_bShowNotification;                    // 0x154(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4894[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonInputContext*                   CallFunc_GetContext_ReturnValue12;                 // 0x158(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4895[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate1;             // 0x168(0x10)(ZeroConstructor, NoDestructor)
-	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue123;                // 0x178(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue1234;               // 0x180(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EFortUIFeature                    K2Node_CustomEvent_ChangedFeature;                 // 0x188(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EFortUIFeatureState               K2Node_CustomEvent_NewState;                       // 0x189(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class EFortUIFeatureStateReason         K2Node_CustomEvent_StateReason;                    // 0x18A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x18B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4896[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate12;            // 0x190(0x10)(ZeroConstructor, NoDestructor)
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate123;           // 0x1A0(0x10)(ZeroConstructor, NoDestructor)
-	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue12345;              // 0x1B0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaAccountContext*                 CallFunc_GetContext_ReturnValue123456;             // 0x1B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaSeasonItemDefinition*           CallFunc_GetCurrentSeasonDefinition_ReturnValue;   // 0x1C0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsActivated_ReturnValue;                  // 0x1C8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x1C9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4897[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UWidget*                               CallFunc_GetActiveWidget_ReturnValue;              // 0x1D0(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UAthenaSeasonPageWidget_C*             K2Node_DynamicCast_AsAthena_Season_Page_Widget1;   // 0x1D8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess1;                      // 0x1E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4898[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x1E4(0x38)(IsPlainOldData, NoDestructor)
-	float                                        K2Node_Event_InDeltaTime;                          // 0x21C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  Temp_byte_Variable1;                               // 0x220(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4899[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_Abs_ReturnValue;                          // 0x224(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Greater_FloatFloat_ReturnValue;           // 0x228(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         Temp_bool_Variable;                                // 0x229(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_489A[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue1234567;            // 0x230(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x238(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_489B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate1234;          // 0x240(0x10)(ZeroConstructor, NoDestructor)
-	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x250(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetSwipeInfo_OutIndex;                    // 0x254(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                             CallFunc_GetSwipeInfo_OutSwipePercentage;          // 0x258(0x8)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x260(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_BreakVector2D_X;                          // 0x264(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_BreakVector2D_Y;                          // 0x268(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_NotEqual_IntInt_ReturnValue;              // 0x26C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_NotEqual_IntInt_ReturnValue1;             // 0x26D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_489C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_GetNumWidgets_ReturnValue;                // 0x270(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetActiveWidgetIndex_ReturnValue1;        // 0x274(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0x278(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x27C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_489D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate12345;         // 0x280(0x10)(ZeroConstructor, NoDestructor)
+	int32                                        K2Node_Event_Level;                                // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x8(0x10)(ZeroConstructor, NoDestructor)
+	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue;                   // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button3;                // 0x20(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button2;                // 0x28(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_594B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button1;                // 0x38(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWidget*                               K2Node_ComponentBoundEvent_ActiveWidget;           // 0x40(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        K2Node_ComponentBoundEvent_ActiveWidgetIndex;      // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue;           // 0x4C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaSeasonPageWidget_C*             K2Node_DynamicCast_AsAthena_Season_Page_Widget;    // 0x50(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x59(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_594C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_GetFirstLevel_FirstLevel;                 // 0x5C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x60(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x68(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable1;                               // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_594D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UAthenaSeasonLevelConfirmationScreen_C* CallFunc_Create_ReturnValue;                       // 0x78(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable;                                // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_594E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue1;          // 0x84(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetSeasonPassLevel_ReturnValue2;          // 0x88(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0x8C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaAccountContext*                 CallFunc_GetContext_ReturnValue1;                  // 0x90(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortSeasonPassLevelInfo*              CallFunc_GetLevelInfo_ReturnValue;                 // 0x98(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                  CallFunc_GetCurrentSeasonName_ReturnValue;         // 0xA0(0x18)()
+	bool                                         CallFunc_IsValid_ReturnValue1;                     // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_594F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_TextToUpper_ReturnValue;                  // 0xC0(0x18)()
+	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue2;                  // 0xD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EInputActionState                 Temp_byte_Variable2;                               // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5950[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FUnlockableVariantPreviewInfo         CallFunc_GetSeasonTabVariantPreviewInfo_ReturnValue; // 0xE8(0x28)()
+	TMap<int32, class UFortSeasonPassLevelInfo*> CallFunc_GetAllLevelInfos_ReturnValue;             // 0x110(0x50)(ConstParm, ZeroConstructor)
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x160(0x40)(HasGetValueTypeHash)
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1;             // 0x1A0(0x40)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x1E0(0x10)(ZeroConstructor, ReferenceParm)
+	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x1F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5951[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x1F8(0x18)()
+	int32                                        CallFunc_GetSeasonPassLevelMax_ReturnValue;        // 0x210(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_Event_bShowNotification;                    // 0x214(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class EInputActionState                 Temp_byte_Variable3;                               // 0x215(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable1;                               // 0x216(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class EFortUIFeature                    K2Node_CustomEvent_ChangedFeature;                 // 0x217(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EFortUIFeatureState               K2Node_CustomEvent_NewState;                       // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EFortUIFeatureStateReason         K2Node_CustomEvent_StateReason;                    // 0x219(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x21A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5952[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate1;             // 0x21C(0x10)(ZeroConstructor, NoDestructor)
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate2;             // 0x22C(0x10)(ZeroConstructor, NoDestructor)
+	uint8                                        Pad_5953[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue3;                  // 0x240(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsActivated_ReturnValue;                  // 0x248(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x249(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5954[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate3;             // 0x24C(0x10)(ZeroConstructor, NoDestructor)
+	uint8                                        Pad_5955[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UWidget*                               CallFunc_GetActiveWidget_ReturnValue;              // 0x260(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x268(0x38)(IsPlainOldData, NoDestructor)
+	float                                        K2Node_Event_InDeltaTime;                          // 0x2A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5956[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UAthenaSeasonPageWidget_C*             K2Node_DynamicCast_AsAthena_Season_Page_Widget1;   // 0x2A8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_DynamicCast_bSuccess1;                      // 0x2B0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5957[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue4;                  // 0x2B8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Abs_ReturnValue;                          // 0x2C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Greater_FloatFloat_ReturnValue;           // 0x2C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5958[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue5;                  // 0x2C8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UAthenaAccountContext*                 CallFunc_GetContext_ReturnValue6;                  // 0x2D0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable4;                               // 0x2D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5959[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UAthenaSeasonItemDefinition*           CallFunc_GetCurrentSeasonDefinition_ReturnValue;   // 0x2E0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable5;                               // 0x2E8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_595A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate4;             // 0x2EC(0x10)(ZeroConstructor, NoDestructor)
+	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x2FC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetSwipeInfo_OutIndex;                    // 0x300(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             CallFunc_GetSwipeInfo_OutSwipePercentage;          // 0x304(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetActiveWidgetIndex_ReturnValue;         // 0x30C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_BreakVector2D_X;                          // 0x310(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_BreakVector2D_Y;                          // 0x314(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_NotEqual_IntInt_ReturnValue;              // 0x318(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_NotEqual_IntInt_ReturnValue1;             // 0x319(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_595B[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_GetNumWidgets_ReturnValue;                // 0x31C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetActiveWidgetIndex_ReturnValue1;        // 0x320(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Subtract_IntInt_ReturnValue;              // 0x324(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x328(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_595C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate5;             // 0x32C(0x10)(ZeroConstructor, NoDestructor)
+	uint8                                        Pad_595D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortRuntimeOptions*                   CallFunc_GetRuntimeOptions_ReturnValue;            // 0x340(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetShowReplayTrailerButton_Athena_ReturnValue; // 0x348(0x1)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_595E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FGeometry                             CallFunc_GetCachedGeometry_ReturnValue;            // 0x34C(0x38)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector2D                             CallFunc_GetLocalSize_ReturnValue;                 // 0x384(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FGeometry                             CallFunc_GetCachedGeometry_ReturnValue1;           // 0x38C(0x38)(ConstParm, IsPlainOldData, NoDestructor)
+	struct FVector2D                             CallFunc_LocalToAbsolute_ReturnValue;              // 0x3C4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             CallFunc_GetLocalSize_ReturnValue1;                // 0x3CC(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                             CallFunc_AbsoluteToLocal_ReturnValue;              // 0x3D4(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_BreakVector2D_X1;                         // 0x3DC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_BreakVector2D_Y1;                         // 0x3E0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_BreakVector2D_X2;                         // 0x3E4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_BreakVector2D_Y2;                         // 0x3E8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x3EC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_Event_bIsGiftable;                          // 0x3F0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class EInputActionState                 K2Node_Select1_Default;                            // 0x3F1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_595F[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate6;             // 0x3F4(0x10)(ZeroConstructor, NoDestructor)
+	bool                                         Temp_bool_Variable2;                               // 0x404(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ESlateVisibility                  K2Node_Select2_Default;                            // 0x405(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5960[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortFrontEndContext*                  CallFunc_GetContext_ReturnValue7;                  // 0x408(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_ShouldOpenAboutScreen_ReturnValue;        // 0x410(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_Handle_ShowAbout_Passthrough;             // 0x411(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

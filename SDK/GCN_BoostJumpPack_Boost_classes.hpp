@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCN_BoostJumpPack_Boost.GCN_BoostJumpPack_Boost_C
 class UGCN_BoostJumpPack_Boost_C : public UFortGameplayCueNotify_Simple
 {

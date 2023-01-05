@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_Generic_Character_Launch.GE_Generic_Character_Launch_C
 class UGE_Generic_Character_Launch_C : public UGameplayEffect
 {

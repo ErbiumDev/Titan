@@ -57,47 +57,34 @@ void UHelpListItem_C::InitializeItem(bool K2Node_SwitchEnum_CmpSuccess)
 }
 
 
-// Function HelpListItem.HelpListItem_C.ExpansionChanged
+// Function HelpListItem.HelpListItem_C.OnListItemObjectSet
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                               bExpanded                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHelpListItem_C::ExpansionChanged(bool bExpanded)
+void UHelpListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "ExpansionChanged");
+	static auto Func = Class->GetFunction("HelpListItem_C", "OnListItemObjectSet");
 
-	Params::UHelpListItem_C_ExpansionChanged_Params Parms;
-	Parms.bExpanded = bExpanded;
+	Params::UHelpListItem_C_OnListItemObjectSet_Params Parms;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function HelpListItem.HelpListItem_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UHelpListItem_C::Construct()
-{
-	static auto Func = Class->GetFunction("HelpListItem_C", "Construct");
-
-	Params::UHelpListItem_C_Construct_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function HelpListItem.HelpListItem_C.OnHelpItemSet
+// Function HelpListItem.HelpListItem_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
+// bool                               bIsExpanded                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UHelpListItem_C::OnHelpItemSet()
+void UHelpListItem_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("HelpListItem_C", "OnHelpItemSet");
+	static auto Func = Class->GetFunction("HelpListItem_C", "BP_OnItemExpansionChanged");
 
-	Params::UHelpListItem_C_OnHelpItemSet_Params Parms;
+	Params::UHelpListItem_C_BP_OnItemExpansionChanged_Params Parms;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -105,22 +92,22 @@ void UHelpListItem_C::OnHelpItemSet()
 
 
 // Function HelpListItem.HelpListItem_C.ExecuteUbergraph_HelpListItem
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_bExpanded                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsItemExpanded_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_Event_bIsExpanded                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsListItemExpanded_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHelpListItem_C::ExecuteUbergraph_HelpListItem(int32 EntryPoint, bool K2Node_Event_bExpanded, bool CallFunc_IsItemExpanded_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void UHelpListItem_C::ExecuteUbergraph_HelpListItem(int32 EntryPoint, bool K2Node_Event_bIsExpanded, bool CallFunc_IsListItemExpanded_ReturnValue, class UObject* K2Node_Event_ListItemObject)
 {
 	static auto Func = Class->GetFunction("HelpListItem_C", "ExecuteUbergraph_HelpListItem");
 
 	Params::UHelpListItem_C_ExecuteUbergraph_HelpListItem_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_Event_bExpanded = K2Node_Event_bExpanded;
-	Parms.CallFunc_IsItemExpanded_ReturnValue = CallFunc_IsItemExpanded_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
+	Parms.CallFunc_IsListItemExpanded_ReturnValue = CallFunc_IsListItemExpanded_ReturnValue;
+	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 

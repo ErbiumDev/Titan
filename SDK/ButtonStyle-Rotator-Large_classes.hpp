@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Rotator-Large.ButtonStyle-Rotator-Large_C
 class UButtonStyle_Rotator_Large_C : public UCommonButtonStyle
 {

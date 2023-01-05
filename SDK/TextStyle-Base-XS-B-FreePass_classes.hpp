@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Base-XS-B-FreePass.TextStyle-Base-XS-B-FreePass_C
 class UTextStyle_Base_XS_B_FreePass_C : public UTextStyle_BaseParent_C
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x520 - 0x520)
+// 0x0 (0x4E8 - 0x4E8)
 // BlueprintGeneratedClass AthenaMinimapTeamIndicators.AthenaMinimapTeamIndicators_C
 class UAthenaMinimapTeamIndicators_C : public UFortMiniMapTeamIndicators
 {

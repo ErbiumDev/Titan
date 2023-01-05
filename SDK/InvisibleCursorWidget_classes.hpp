@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x208 - 0x208)
+// 0x0 (0x228 - 0x228)
 // WidgetBlueprintGeneratedClass InvisibleCursorWidget.InvisibleCursorWidget_C
 class UInvisibleCursorWidget_C : public UUserWidget
 {

@@ -31,7 +31,7 @@ void UTextRotator_C::Construct()
 
 
 // Function TextRotator.TextRotator_C.ExecuteUbergraph_TextRotator
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

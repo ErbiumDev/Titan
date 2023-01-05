@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0xC58 - 0xC50)
+// 0x8 (0xAD0 - 0xAC8)
 // BlueprintGeneratedClass GA_DefaultPlayer_Death.GA_DefaultPlayer_Death_C
 class UGA_DefaultPlayer_Death_C : public UGAB_GenericDeath_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xC50(0x8)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAC8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass()
 	{

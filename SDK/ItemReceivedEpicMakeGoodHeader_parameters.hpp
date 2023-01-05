@@ -29,11 +29,11 @@ struct UItemReceivedEpicMakeGoodHeader_C_ExecuteUbergraph_ItemReceivedEpicMakeGo
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_406F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_560D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_MakeLiteralText_ReturnValue;              // 0x8(0x18)()
 	bool                                         CallFunc_HasParam_ReturnValue;                     // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x21(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4070[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_560E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_MakeLiteralText_ReturnValue1;             // 0x28(0x18)()
 	class FText                                  CallFunc_FormatTextUsingParams_ReturnValue;        // 0x40(0x18)()
 	class FText                                  CallFunc_FormatTextUsingParams_ReturnValue1;       // 0x58(0x18)()

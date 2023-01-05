@@ -167,7 +167,7 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 
 
 // Function Announce_TutorialConversation.Announce_TutorialConversation_C.ExecuteUbergraph_Announce_TutorialConversation
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_PlayConversation_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -176,7 +176,7 @@ void AAnnounce_TutorialConversation_C::OnClientAnnouncementStop()
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortConversationSentence   K2Node_Event_Sentence1                                           (ConstParm)
 // int32                              K2Node_Event_SentenceIndex1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTutorialHighlightData      CallFunc_Array_Get_Item                                          (HasGetValueTypeHash)
+// struct FTutorialHighlightData      CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NotEqual_NameName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass PlayerCameraMode_DBNO.PlayerCameraMode_DBNO_C
 class UPlayerCameraMode_DBNO_C : public UV3_PlayerCameraModeBase_C
 {

@@ -18,10 +18,10 @@ namespace SDK
 // Function ProfileStatsOverviewSubScreen.ProfileStatsOverviewSubScreen_C.HandleBack
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UProfileStatsOverviewSubScreen_C::HandleBack(bool* Passthrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void UProfileStatsOverviewSubScreen_C::HandleBack(bool* PassThrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
 {
 	static auto Func = Class->GetFunction("ProfileStatsOverviewSubScreen_C", "HandleBack");
 
@@ -30,8 +30,8 @@ void UProfileStatsOverviewSubScreen_C::HandleBack(bool* Passthrough, class UFort
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -52,7 +52,7 @@ void UProfileStatsOverviewSubScreen_C::Construct()
 
 
 // Function ProfileStatsOverviewSubScreen.ProfileStatsOverviewSubScreen_C.ExecuteUbergraph_ProfileStatsOverviewSubScreen
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)

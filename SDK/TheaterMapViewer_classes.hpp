@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x688 - 0x680)
+// 0x8 (0x488 - 0x480)
 // BlueprintGeneratedClass TheaterMapViewer.TheaterMapViewer_C
 class ATheaterMapViewer_C : public AFortTheaterMapViewer
 {
 public:
-	class USceneComponent*                       DefaultSceneRoot;                                  // 0x680(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                       DefaultSceneRoot;                                  // 0x480(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

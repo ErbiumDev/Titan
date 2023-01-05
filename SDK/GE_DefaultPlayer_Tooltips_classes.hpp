@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_DefaultPlayer_Tooltips.GE_DefaultPlayer_Tooltips_C
 class UGE_DefaultPlayer_Tooltips_C : public UGameplayEffect
 {

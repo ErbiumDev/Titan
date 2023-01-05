@@ -48,7 +48,7 @@ void UWebLogin_C::DismissWidget()
 
 
 // Function WebLogin.WebLogin_C.ExecuteUbergraph_WebLogin
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     K2Node_Event_WebWidget                                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

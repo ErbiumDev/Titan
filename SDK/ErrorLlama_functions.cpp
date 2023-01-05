@@ -84,7 +84,7 @@ void UErrorLlama_C::RandomizeColor()
 // Function ErrorLlama.ErrorLlama_C.HandleNormalizedInputDirection
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                   _2DInputVec                                                      (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   _2DInputVec                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UErrorLlama_C::HandleNormalizedInputDirection(const struct FVector2D& _2DInputVec)
 {
@@ -99,36 +99,36 @@ void UErrorLlama_C::HandleNormalizedInputDirection(const struct FVector2D& _2DIn
 
 
 // Function ErrorLlama.ErrorLlama_C.ExecuteUbergraph_ErrorLlama
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable12                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable123                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable1234                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable12345                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable123456                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable1234567                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable12345678                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable123456789                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable6                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable7                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable8                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable9                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              Temp_float_Variable12345678910                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable1234567891011                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable10                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable11                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // float                              K2Node_Event_InDeltaTime                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetMousePositionOnPlatform_ReturnValue                  (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetLocalSize_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetMousePositionOnPlatform_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetLocalSize_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_Divide_Vector2DFloat_ReturnValue                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_LocalToAbsolute_ReturnValue                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_Subtract_Vector2DVector2D_ReturnValue                   (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_Normal2D_ReturnValue                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_Divide_Vector2DFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_LocalToAbsolute_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_Subtract_Vector2DVector2D_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_Normal2D_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_RandomIntegerInRange_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -139,24 +139,24 @@ void UErrorLlama_C::HandleNormalizedInputDirection(const struct FVector2D& _2DIn
 // float                              CallFunc_GetInputAnalogStickState_StickY                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_Multiply_Vector2DFloat_ReturnValue                      (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_Multiply_Vector2DFloat_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FVector2D                   K2Node_CustomEvent_2DInputVec                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   K2Node_CustomEvent_2DInputVec                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_BreakVector2D_X1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_Multiply_Vector2DFloat_ReturnValue1                     (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_RotateAngleAxis_ReturnValue                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_Multiply_Vector2DFloat_ReturnValue1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_RotateAngleAxis_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_X                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Y                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Z                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue1                               (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_Vector2DInterpTo_ReturnValue                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_Vector2DInterpTo_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UErrorLlama_C::ExecuteUbergraph_ErrorLlama(int32 EntryPoint, float Temp_float_Variable, float Temp_float_Variable1, float Temp_float_Variable12, float Temp_float_Variable123, float Temp_float_Variable1234, float Temp_float_Variable12345, float Temp_float_Variable123456, float Temp_float_Variable1234567, float Temp_float_Variable12345678, float Temp_float_Variable123456789, bool Temp_bool_Variable, float Temp_float_Variable12345678910, float Temp_float_Variable1234567891011, class UCommonInputContext* CallFunc_GetContext_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, const struct FLinearColor& K2Node_MakeStruct_LinearColor, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, const struct FVector2D& CallFunc_GetMousePositionOnPlatform_ReturnValue, const struct FVector2D& CallFunc_GetLocalSize_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FVector2D& CallFunc_Divide_Vector2DFloat_ReturnValue, const struct FVector2D& CallFunc_LocalToAbsolute_ReturnValue, const struct FVector2D& CallFunc_Subtract_Vector2DVector2D_ReturnValue, const struct FVector2D& CallFunc_Normal2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_RandomIntegerInRange_ReturnValue, float K2Node_Select_Default, float CallFunc_GetWorldDeltaSeconds_ReturnValue, class APlayerController* CallFunc_GetPlayerController_ReturnValue, int32 Temp_int_Variable, float CallFunc_GetInputAnalogStickState_StickX, float CallFunc_GetInputAnalogStickState_StickY, float CallFunc_Multiply_FloatFloat_ReturnValue, float K2Node_Select1_Default, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FVector2D& K2Node_CustomEvent_2DInputVec, bool K2Node_SwitchEnum_CmpSuccess, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, float CallFunc_Multiply_FloatFloat_ReturnValue1, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue1, const struct FVector& CallFunc_RotateAngleAxis_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue1, const struct FVector2D& CallFunc_Vector2DInterpTo_ReturnValue)
+void UErrorLlama_C::ExecuteUbergraph_ErrorLlama(int32 EntryPoint, float Temp_float_Variable, float Temp_float_Variable1, float Temp_float_Variable2, float Temp_float_Variable3, float Temp_float_Variable4, float Temp_float_Variable5, float Temp_float_Variable6, float Temp_float_Variable7, float Temp_float_Variable8, float Temp_float_Variable9, bool Temp_bool_Variable, float Temp_float_Variable10, float Temp_float_Variable11, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, const struct FLinearColor& K2Node_MakeStruct_LinearColor, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime, const struct FVector2D& CallFunc_GetMousePositionOnPlatform_ReturnValue, const struct FVector2D& CallFunc_GetLocalSize_ReturnValue, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, const struct FVector2D& CallFunc_Divide_Vector2DFloat_ReturnValue, const struct FVector2D& CallFunc_LocalToAbsolute_ReturnValue, const struct FVector2D& CallFunc_Subtract_Vector2DVector2D_ReturnValue, const struct FVector2D& CallFunc_Normal2D_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_RandomIntegerInRange_ReturnValue, float K2Node_Select_Default, float CallFunc_GetWorldDeltaSeconds_ReturnValue, class APlayerController* CallFunc_GetPlayerController_ReturnValue, int32 Temp_int_Variable, float CallFunc_GetInputAnalogStickState_StickX, float CallFunc_GetInputAnalogStickState_StickY, float CallFunc_Multiply_FloatFloat_ReturnValue, float K2Node_Select1_Default, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FVector2D& K2Node_CustomEvent_2DInputVec, bool K2Node_SwitchEnum_CmpSuccess, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, float CallFunc_Multiply_FloatFloat_ReturnValue1, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue1, const struct FVector& CallFunc_RotateAngleAxis_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue1, const struct FVector2D& CallFunc_Vector2DInterpTo_ReturnValue)
 {
 	static auto Func = Class->GetFunction("ErrorLlama_C", "ExecuteUbergraph_ErrorLlama");
 
@@ -164,17 +164,17 @@ void UErrorLlama_C::ExecuteUbergraph_ErrorLlama(int32 EntryPoint, float Temp_flo
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_float_Variable = Temp_float_Variable;
 	Parms.Temp_float_Variable1 = Temp_float_Variable1;
-	Parms.Temp_float_Variable12 = Temp_float_Variable12;
-	Parms.Temp_float_Variable123 = Temp_float_Variable123;
-	Parms.Temp_float_Variable1234 = Temp_float_Variable1234;
-	Parms.Temp_float_Variable12345 = Temp_float_Variable12345;
-	Parms.Temp_float_Variable123456 = Temp_float_Variable123456;
-	Parms.Temp_float_Variable1234567 = Temp_float_Variable1234567;
-	Parms.Temp_float_Variable12345678 = Temp_float_Variable12345678;
-	Parms.Temp_float_Variable123456789 = Temp_float_Variable123456789;
+	Parms.Temp_float_Variable2 = Temp_float_Variable2;
+	Parms.Temp_float_Variable3 = Temp_float_Variable3;
+	Parms.Temp_float_Variable4 = Temp_float_Variable4;
+	Parms.Temp_float_Variable5 = Temp_float_Variable5;
+	Parms.Temp_float_Variable6 = Temp_float_Variable6;
+	Parms.Temp_float_Variable7 = Temp_float_Variable7;
+	Parms.Temp_float_Variable8 = Temp_float_Variable8;
+	Parms.Temp_float_Variable9 = Temp_float_Variable9;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_float_Variable12345678910 = Temp_float_Variable12345678910;
-	Parms.Temp_float_Variable1234567891011 = Temp_float_Variable1234567891011;
+	Parms.Temp_float_Variable10 = Temp_float_Variable10;
+	Parms.Temp_float_Variable11 = Temp_float_Variable11;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_BreakVector2D_X = CallFunc_BreakVector2D_X;
 	Parms.CallFunc_BreakVector2D_Y = CallFunc_BreakVector2D_Y;

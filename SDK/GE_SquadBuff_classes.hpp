@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_SquadBuff.GE_SquadBuff_C
 class UGE_SquadBuff_C : public UGameplayEffect
 {

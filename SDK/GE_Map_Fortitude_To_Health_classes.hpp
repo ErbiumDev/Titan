@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_Map_Fortitude_To_Health.GE_Map_Fortitude_To_Health_C
 class UGE_Map_Fortitude_To_Health_C : public UGameplayEffect
 {

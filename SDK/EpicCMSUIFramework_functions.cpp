@@ -36,29 +36,6 @@ void UEpicCMSTileBase::Launch()
 }
 
 
-// Function EpicCMSUIFramework.EpicCMSTileBase.DynamicHandleIconLoadingStateChanged
-// (Final, Native, Private)
-// Parameters:
-// bool                               bIsLoading                                                       (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UEpicCMSTileBase::DynamicHandleIconLoadingStateChanged(bool bIsLoading)
-{
-	static auto Func = Class->GetFunction("EpicCMSTileBase", "DynamicHandleIconLoadingStateChanged");
-
-	Params::UEpicCMSTileBase_DynamicHandleIconLoadingStateChanged_Params Parms;
-	Parms.bIsLoading = bIsLoading;
-
-	auto Flags = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flags;
-
-}
-
-
 // Function EpicCMSUIFramework.EpicCMSTileCarousel.SetCurrentPageByIndex
 // (Final, Native, Protected, BlueprintCallable)
 // Parameters:

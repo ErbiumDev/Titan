@@ -15,6 +15,186 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function AlterationsWidget.AlterationsWidget_C.Clear
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UAlterationsWidget_C::Clear()
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "Clear");
+
+	Params::UAlterationsWidget_C_Clear_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.ClearAndInitialize
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               IntroAlterations                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAlterationsWidget_C::ClearAndInitialize(bool IntroAlterations)
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "ClearAndInitialize");
+
+	Params::UAlterationsWidget_C_ClearAndInitialize_Params Parms;
+	Parms.IntroAlterations = IntroAlterations;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.Reset
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UAlterationsWidget_C::Reset()
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "Reset");
+
+	Params::UAlterationsWidget_C_Reset_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.CreateAnimations
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               IntroAnims                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               CallFunc_GetButtonAtIndex_ReturnValue                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_GetButtonCount_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAlterationWidgetButton_C*   K2Node_DynamicCast_AsAlteration_Widget_Button                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
+
+void UAlterationsWidget_C::CreateAnimations(bool IntroAnims, int32 Temp_int_Variable, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, int32 CallFunc_GetButtonCount_ReturnValue, class UAlterationWidgetButton_C* K2Node_DynamicCast_AsAlteration_Widget_Button, bool K2Node_DynamicCast_bSuccess, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue)
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "CreateAnimations");
+
+	Params::UAlterationsWidget_C_CreateAnimations_Params Parms;
+	Parms.IntroAnims = IntroAnims;
+	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
+	Parms.CallFunc_GetButtonCount_ReturnValue = CallFunc_GetButtonCount_ReturnValue;
+	Parms.K2Node_DynamicCast_AsAlteration_Widget_Button = K2Node_DynamicCast_AsAlteration_Widget_Button;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
+	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.IntroAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_GetButtonCount_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UCommonButton*               CallFunc_GetButtonAtIndex_ReturnValue                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAlterationWidgetButton_C*   K2Node_DynamicCast_AsAlteration_Widget_Button                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAlterationsWidget_C::IntroAnim(int32 Temp_int_Variable, bool CallFunc_IsValid_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_GetButtonCount_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UAlterationWidgetButton_C* K2Node_DynamicCast_AsAlteration_Widget_Button, bool K2Node_DynamicCast_bSuccess, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "IntroAnim");
+
+	Params::UAlterationsWidget_C_IntroAnim_Params Parms;
+	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.CallFunc_GetButtonCount_ReturnValue = CallFunc_GetButtonCount_ReturnValue;
+	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
+	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
+	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
+	Parms.K2Node_DynamicCast_AsAlteration_Widget_Button = K2Node_DynamicCast_AsAlteration_Widget_Button;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.CenterWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UFortUINavigationManager*    CallFunc_GetUINavigationManager_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               CallFunc_GetButtonAtIndex_ReturnValue                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               CallFunc_GetButtonAtIndex_ReturnValue1                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAlterationsWidget_C::CenterWidget(class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue1)
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "CenterWidget");
+
+	Params::UAlterationsWidget_C_CenterWidget_Params Parms;
+	Parms.CallFunc_GetUINavigationManager_ReturnValue = CallFunc_GetUINavigationManager_ReturnValue;
+	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
+	Parms.CallFunc_GetButtonAtIndex_ReturnValue1 = CallFunc_GetButtonAtIndex_ReturnValue1;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue1 = CallFunc_IsValid_ReturnValue1;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.SetupBorders
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UAlterationsWidget_C::SetupBorders()
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "SetupBorders");
+
+	Params::UAlterationsWidget_C_SetupBorders_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.TriggerModificationAnim
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              ModifiedSlotIndex                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               CallFunc_GetButtonAtIndex_ReturnValue                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAlterationWidgetButton_C*   K2Node_DynamicCast_AsAlteration_Widget_Button                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAlterationsWidget_C::TriggerModificationAnim(int32 ModifiedSlotIndex, class UCommonButton* CallFunc_GetButtonAtIndex_ReturnValue, class UAlterationWidgetButton_C* K2Node_DynamicCast_AsAlteration_Widget_Button, bool K2Node_DynamicCast_bSuccess)
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "TriggerModificationAnim");
+
+	Params::UAlterationsWidget_C_TriggerModificationAnim_Params Parms;
+	Parms.ModifiedSlotIndex = ModifiedSlotIndex;
+	Parms.CallFunc_GetButtonAtIndex_ReturnValue = CallFunc_GetButtonAtIndex_ReturnValue;
+	Parms.K2Node_DynamicCast_AsAlteration_Widget_Button = K2Node_DynamicCast_AsAlteration_Widget_Button;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function AlterationsWidget.AlterationsWidget_C.SetupAlteration
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -104,30 +284,30 @@ void UAlterationsWidget_C::GenerateAlteration(class UFortAlterationInfo* Alterat
 // Parameters:
 // class UCommonUserWidget*           Alteration                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               IsUnlocked                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FMargin                     SpacePadding                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UVerticalBox*                DestinationVerticalBox                                           (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPerkDivider_C*              CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue1                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAlterationWidget_C*         K2Node_DynamicCast_AsAlteration_Widget                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UVerticalBox*                K2Node_Select1_Default                                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAlterationsWidget_C::AddAlterationToVerticalbox(class UCommonUserWidget* Alteration, bool IsUnlocked, class UVerticalBox* DestinationVerticalBox, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, bool Temp_bool_Variable, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UPerkDivider_C* CallFunc_Create_ReturnValue, bool K2Node_Select_Default, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue1, bool Temp_bool_Variable1, class UVerticalBox* K2Node_Select1_Default)
+void UAlterationsWidget_C::AddAlterationToVerticalbox(class UCommonUserWidget* Alteration, bool IsUnlocked, const struct FMargin& SpacePadding, class UVerticalBox* DestinationVerticalBox, bool Temp_bool_Variable, bool K2Node_Select_Default, class UAlterationWidget_C* K2Node_DynamicCast_AsAlteration_Widget, bool K2Node_DynamicCast_bSuccess, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, bool Temp_bool_Variable1, class UVerticalBox* K2Node_Select1_Default)
 {
 	static auto Func = Class->GetFunction("AlterationsWidget_C", "AddAlterationToVerticalbox");
 
 	Params::UAlterationsWidget_C_AddAlterationToVerticalbox_Params Parms;
 	Parms.Alteration = Alteration;
 	Parms.IsUnlocked = IsUnlocked;
+	Parms.SpacePadding = SpacePadding;
 	Parms.DestinationVerticalBox = DestinationVerticalBox;
-	Parms.CallFunc_AddChildToVerticalBox_ReturnValue = CallFunc_AddChildToVerticalBox_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.CallFunc_GetOwningPlayer_ReturnValue = CallFunc_GetOwningPlayer_ReturnValue;
-	Parms.CallFunc_Create_ReturnValue = CallFunc_Create_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.CallFunc_AddChildToVerticalBox_ReturnValue1 = CallFunc_AddChildToVerticalBox_ReturnValue1;
+	Parms.K2Node_DynamicCast_AsAlteration_Widget = K2Node_DynamicCast_AsAlteration_Widget;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_AddChildToVerticalBox_ReturnValue = CallFunc_AddChildToVerticalBox_ReturnValue;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
 
@@ -185,12 +365,14 @@ void UAlterationsWidget_C::Construct()
 // Function AlterationsWidget.AlterationsWidget_C.OnItemChanged
 // (Event, Public, BlueprintEvent)
 // Parameters:
+// bool                               bIntroAlterations                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAlterationsWidget_C::OnItemChanged()
+void UAlterationsWidget_C::OnItemChanged(bool bIntroAlterations)
 {
 	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnItemChanged");
 
 	Params::UAlterationsWidget_C_OnItemChanged_Params Parms;
+	Parms.bIntroAlterations = bIntroAlterations;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -244,19 +426,97 @@ void UAlterationsWidget_C::OnGenerateAlteration(class UFortAlterationInfo* Alter
 }
 
 
+// Function AlterationsWidget.AlterationsWidget_C.OnFocusFirstItem
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UAlterationsWidget_C::OnFocusFirstItem()
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnFocusFirstItem");
+
+	Params::UAlterationsWidget_C_OnFocusFirstItem_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.OnAlterationSlotIndexModifiedBP
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                              ModifiedIndex                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UAlterationsWidget_C::OnAlterationSlotIndexModifiedBP(int32 ModifiedIndex)
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "OnAlterationSlotIndexModifiedBP");
+
+	Params::UAlterationsWidget_C_OnAlterationSlotIndexModifiedBP_Params Parms;
+	Parms.ModifiedIndex = ModifiedIndex;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UAlterationsWidget_C::Destruct()
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "Destruct");
+
+	Params::UAlterationsWidget_C_Destruct_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function AlterationsWidget.AlterationsWidget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               IsDesignTime                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAlterationsWidget_C::PreConstruct(bool IsDesignTime)
+{
+	static auto Func = Class->GetFunction("AlterationsWidget_C", "PreConstruct");
+
+	Params::UAlterationsWidget_C_PreConstruct_Params Parms;
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function AlterationsWidget.AlterationsWidget_C.ExecuteUbergraph_AlterationsWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonUserWidget*           CallFunc_CreateAlterationWidget_ReturnValue                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_bIntroAlterations                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortAlterationInfo*         K2Node_Event_AlterationInfo                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              K2Node_Event_ModifiedIndex                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UCommonUserWidget*           CallFunc_CreateAlterationWidget_ReturnValue1                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonUserWidget*           CallFunc_CreateAlterationWidget_ReturnValue2                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonUserWidget*           CallFunc_CreateAlterationWidget_ReturnValue3                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int32 EntryPoint, class UFortAlterationInfo* K2Node_Event_AlterationInfo)
+void UAlterationsWidget_C::ExecuteUbergraph_AlterationsWidget(int32 EntryPoint, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue, bool K2Node_Event_bIntroAlterations, class UFortAlterationInfo* K2Node_Event_AlterationInfo, int32 K2Node_Event_ModifiedIndex, bool K2Node_Event_IsDesignTime, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue1, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue2, class UCommonUserWidget* CallFunc_CreateAlterationWidget_ReturnValue3)
 {
 	static auto Func = Class->GetFunction("AlterationsWidget_C", "ExecuteUbergraph_AlterationsWidget");
 
 	Params::UAlterationsWidget_C_ExecuteUbergraph_AlterationsWidget_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_CreateAlterationWidget_ReturnValue = CallFunc_CreateAlterationWidget_ReturnValue;
+	Parms.K2Node_Event_bIntroAlterations = K2Node_Event_bIntroAlterations;
 	Parms.K2Node_Event_AlterationInfo = K2Node_Event_AlterationInfo;
+	Parms.K2Node_Event_ModifiedIndex = K2Node_Event_ModifiedIndex;
+	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
+	Parms.CallFunc_CreateAlterationWidget_ReturnValue1 = CallFunc_CreateAlterationWidget_ReturnValue1;
+	Parms.CallFunc_CreateAlterationWidget_ReturnValue2 = CallFunc_CreateAlterationWidget_ReturnValue2;
+	Parms.CallFunc_CreateAlterationWidget_ReturnValue3 = CallFunc_CreateAlterationWidget_ReturnValue3;
 
 	UObject::ProcessEvent(Func, &Parms);
 

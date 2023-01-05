@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Tab-Manage.ButtonStyle-Tab-Manage_C
 class UButtonStyle_Tab_Manage_C : public UCommonButtonStyle
 {

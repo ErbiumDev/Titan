@@ -19,9 +19,9 @@ class UAnimNotify_PlayFX_WeapType_C : public UAnimNotify
 public:
 	class FString                                Socket;                                            // 0x38(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                         Attach;                                            // 0x48(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4C1C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FRotator                              Rotation;                                          // 0x4C(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	struct FVector                               Location;                                          // 0x58(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_FD9[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FRotator                              Rotation;                                          // 0x4C(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	struct FVector                               Location;                                          // 0x58(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

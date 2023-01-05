@@ -33,7 +33,7 @@ void UGA_Default_KilledEnemy_C::K2_ActivateAbilityFromEvent(struct FGameplayEven
 
 
 // Function GA_Default_KilledEnemy.GA_Default_KilledEnemy_C.ExecuteUbergraph_GA_Default_KilledEnemy
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)

@@ -33,7 +33,7 @@ void UAthenaDirectAcquisitonDetails_BattlePassStarDetails_C::SetNumOfBattlePassS
 
 
 // Function AthenaDirectAcquisitonDetails_BattlePassStarDetails.AthenaDirectAcquisitonDetails_BattlePassStarDetails_C.ExecuteUbergraph_AthenaDirectAcquisitonDetails_BattlePassStarDetails
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_CustomEvent_NumOfBattlePassStars                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

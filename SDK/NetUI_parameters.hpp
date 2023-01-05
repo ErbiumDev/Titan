@@ -17,6 +17,20 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x0 (0x0 - 0x0)
+// Function NetUI.ConnectionTimeoutWidget.StopTimeoutUICheck
+struct UConnectionTimeoutWidget_StopTimeoutUICheck_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function NetUI.ConnectionTimeoutWidget.StartTimeoutUICheck
+struct UConnectionTimeoutWidget_StartTimeoutUICheck_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
 // Function NetUI.NetDebugWidget.StopTimer
 struct UNetDebugWidget_StopTimer_Params
 {

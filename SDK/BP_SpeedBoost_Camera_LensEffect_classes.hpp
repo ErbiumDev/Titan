@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3D0 - 0x3D0)
+// 0x0 (0x3F0 - 0x3F0)
 // BlueprintGeneratedClass BP_SpeedBoost_Camera_LensEffect.BP_SpeedBoost_Camera_LensEffect_C
 class ABP_SpeedBoost_Camera_LensEffect_C : public AEmitterCameraLensEffectBase
 {

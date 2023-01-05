@@ -12,19 +12,19 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xA8 (0x2B0 - 0x208)
+// 0xB8 (0x2E0 - 0x228)
 // WidgetBlueprintGeneratedClass ItemInspectEvolutionIngredientsEntry.ItemInspectEvolutionIngredientsEntry_C
 class UItemInspectEvolutionIngredientsEntry_C : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x208(0x8)(Transient, DuplicateTransient)
-	class UImage*                                CheckMarkIcon;                                     // 0x210(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UFortItemIcon*                         ItemIcon;                                          // 0x218(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                      ItemName;                                          // 0x220(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                      QuantityText;                                      // 0x228(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	struct FFortItemQuantityPair                 IngredientItemQuantity;                            // 0x230(0x30)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateColor                           NotHaveColor;                                      // 0x260(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                           HaveColor;                                         // 0x288(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x228(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                CheckMarkIcon;                                     // 0x230(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UFortItemIcon*                         ItemIcon;                                          // 0x238(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                      ItemName;                                          // 0x240(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                      QuantityText;                                      // 0x248(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FFortItemQuantityPair                 IngredientItemQuantity;                            // 0x250(0x40)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateColor                           NotHaveColor;                                      // 0x290(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                           HaveColor;                                         // 0x2B8(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass()
 	{

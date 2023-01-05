@@ -31,16 +31,18 @@ void UHaveInviteSelect_C::OnActivated()
 
 
 // Function HaveInviteSelect.HaveInviteSelect_C.ExecuteUbergraph_HaveInviteSelect
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UHaveInviteSelect_C::ExecuteUbergraph_HaveInviteSelect(int32 EntryPoint)
+void UHaveInviteSelect_C::ExecuteUbergraph_HaveInviteSelect(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("HaveInviteSelect_C", "ExecuteUbergraph_HaveInviteSelect");
 
 	Params::UHaveInviteSelect_C_ExecuteUbergraph_HaveInviteSelect_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

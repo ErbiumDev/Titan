@@ -12,16 +12,17 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xBA (0xB8A - 0xAD0)
+// 0xC1 (0xA0A - 0x949)
 // BlueprintGeneratedClass GAT_GenericTriggeredAbility.GAT_GenericTriggeredAbility_C
 class UGAT_GenericTriggeredAbility_C : public UGAT_TriggeredAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAD0(0x8)(Transient, DuplicateTransient)
-	struct FGameplayEventData                    EventData;                                         // 0xAD8(0xA8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class AFortPlayerPawn*                       FortPlayerPawn;                                    // 0xB80(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         IsAutoCommitted;                                   // 0xB88(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                         IsStaminaLockedOut;                                // 0xB89(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_464F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x950(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FGameplayEventData                    EventData;                                         // 0x958(0xA8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class AFortPlayerPawn*                       FortPlayerPawn;                                    // 0xA00(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         IsAutoCommitted;                                   // 0xA08(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                         IsStaminaLockedOut;                                // 0xA09(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 	static class UClass* StaticClass()
 	{

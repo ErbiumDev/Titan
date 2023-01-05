@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3DB - 0x3DB)
+// 0x0 (0x3F3 - 0x3F3)
 // BlueprintGeneratedClass S_Stream_2W_Straight_05L_a.S_Stream_2W_Straight_05L_a_C
 class AS_Stream_2W_Straight_05L_a_C : public A_WaterMeshBlueprintMaster_C
 {

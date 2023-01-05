@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Base-XXS-Black.TextStyle-Base-XXS-Black_C
 class UTextStyle_Base_XXS_Black_C : public UTextStyle_BaseParent_C
 {

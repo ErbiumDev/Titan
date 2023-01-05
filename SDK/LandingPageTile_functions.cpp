@@ -19,13 +19,17 @@ namespace SDK
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               PlayIntro                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULandingPageTile_C::PlayIntroOrOutro(bool PlayIntro)
+void ULandingPageTile_C::PlayIntroOrOutro(bool PlayIntro, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("LandingPageTile_C", "PlayIntroOrOutro");
 
 	Params::ULandingPageTile_C_PlayIntroOrOutro_Params Parms;
 	Parms.PlayIntro = PlayIntro;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
+	Parms.CallFunc_PlayAnimation_ReturnValue1 = CallFunc_PlayAnimation_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -49,30 +53,30 @@ void ULandingPageTile_C::UpdateTileAvailability(bool Available)
 }
 
 
-// Function LandingPageTile.LandingPageTile_C.OnHovered
+// Function LandingPageTile.LandingPageTile_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void ULandingPageTile_C::OnHovered()
+void ULandingPageTile_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "OnHovered");
+	static auto Func = Class->GetFunction("LandingPageTile_C", "BP_OnHovered");
 
-	Params::ULandingPageTile_C_OnHovered_Params Parms;
+	Params::ULandingPageTile_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function LandingPageTile.LandingPageTile_C.OnUnhovered
+// Function LandingPageTile.LandingPageTile_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void ULandingPageTile_C::OnUnhovered()
+void ULandingPageTile_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("LandingPageTile_C", "OnUnhovered");
+	static auto Func = Class->GetFunction("LandingPageTile_C", "BP_OnUnhovered");
 
-	Params::ULandingPageTile_C_OnUnhovered_Params Parms;
+	Params::ULandingPageTile_C_BP_OnUnhovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -112,18 +116,20 @@ void ULandingPageTile_C::PreConstruct(bool IsDesignTime)
 
 
 // Function LandingPageTile.LandingPageTile_C.ExecuteUbergraph_LandingPageTile
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_Available                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ULandingPageTile_C::ExecuteUbergraph_LandingPageTile(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, bool K2Node_Event_Available, class FText CallFunc_TextToUpper_ReturnValue, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_IsDesignTime)
+void ULandingPageTile_C::ExecuteUbergraph_LandingPageTile(int32 EntryPoint, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue1, bool K2Node_Event_Available, class FText CallFunc_TextToUpper_ReturnValue, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default, bool K2Node_Event_IsDesignTime)
 {
 	static auto Func = Class->GetFunction("LandingPageTile_C", "ExecuteUbergraph_LandingPageTile");
 
@@ -131,6 +137,8 @@ void ULandingPageTile_C::ExecuteUbergraph_LandingPageTile(int32 EntryPoint, bool
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
+	Parms.CallFunc_PlayAnimation_ReturnValue1 = CallFunc_PlayAnimation_ReturnValue1;
 	Parms.K2Node_Event_Available = K2Node_Event_Available;
 	Parms.CallFunc_TextToUpper_ReturnValue = CallFunc_TextToUpper_ReturnValue;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;

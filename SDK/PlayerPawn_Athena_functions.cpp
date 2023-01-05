@@ -15,25 +15,488 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnOpenParachute
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.LockonSearchCompleteTimedOut
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::LockonSearchCompleteTimedOut()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "LockonSearchCompleteTimedOut");
+
+	Params::APlayerPawn_Athena_C_LockonSearchCompleteTimedOut_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnLockOnSearchCompleted
+// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               bConsumeEvent                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsSkydiving_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsBackpackEquipped_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::OnOpenParachute(bool* bConsumeEvent, bool CallFunc_IsSkydiving_ReturnValue, bool CallFunc_IsBackpackEquipped_ReturnValue)
+void APlayerPawn_Athena_C::OnLockOnSearchCompleted(bool* bConsumeEvent, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnOpenParachute");
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnLockOnSearchCompleted");
 
-	Params::APlayerPawn_Athena_C_OnOpenParachute_Params Parms;
-	Parms.CallFunc_IsSkydiving_ReturnValue = CallFunc_IsSkydiving_ReturnValue;
-	Parms.CallFunc_IsBackpackEquipped_ReturnValue = CallFunc_IsBackpackEquipped_ReturnValue;
+	Params::APlayerPawn_Athena_C_OnLockOnSearchCompleted_Params Parms;
+	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 	if (bConsumeEvent != nullptr)
 		*bConsumeEvent = Parms.bConsumeEvent;
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ResetPetMaterials
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::ResetPetMaterials(bool CallFunc_IsValid_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ResetPetMaterials");
+
+	Params::APlayerPawn_Athena_C_ResetPetMaterials_Params Parms;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetPartyInProgress
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               bIsPartyInProgress                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::SetPartyInProgress(bool bIsPartyInProgress)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPartyInProgress");
+
+	Params::APlayerPawn_Athena_C_SetPartyInProgress_Params Parms;
+	Parms.bIsPartyInProgress = bIsPartyInProgress;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetPetHidden
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               NewHidden                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::SetPetHidden(bool NewHidden, bool CallFunc_IsValid_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetPetHidden");
+
+	Params::APlayerPawn_Athena_C_SetPetHidden_Params Parms;
+	Parms.NewHidden = NewHidden;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.CleanUpTeleportationFXLight
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::CleanUpTeleportationFXLight(bool CallFunc_IsValid_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "CleanUpTeleportationFXLight");
+
+	Params::APlayerPawn_Athena_C_CleanUpTeleportationFXLight_Params Parms;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.UpdatePreDissolve
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                              GlowScalar                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*      CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic*    CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_GetNumMaterials_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::UpdatePreDissolve(float GlowScalar, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Variable, class USkeletalMeshComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_GetNumMaterials_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "UpdatePreDissolve");
+
+	Params::APlayerPawn_Athena_C_UpdatePreDissolve_Params Parms;
+	Parms.GlowScalar = GlowScalar;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue = CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_GetNumMaterials_ReturnValue = CallFunc_GetNumMaterials_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
+	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
+	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.RestoreCharacterMats
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              Itr                                                              (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic*    CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*      CallFunc_Array_Get_Item1                                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// TArray<class UMaterialInterface*>  CallFunc_GetMaterials_ReturnValue                                (ZeroConstructor, ReferenceParm)
+// int32                              CallFunc_Array_Length_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue3                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::RestoreCharacterMats(int32 Itr, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Array_Index_Variable1, int32 Temp_int_Loop_Counter_Variable1, int32 CallFunc_Add_IntInt_ReturnValue1, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Add_IntInt_ReturnValue2, int32 CallFunc_Array_Length_ReturnValue, class USkeletalMeshComponent* CallFunc_Array_Get_Item1, bool CallFunc_Less_IntInt_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, int32 CallFunc_Array_Length_ReturnValue1, int32 CallFunc_Array_Length_ReturnValue2, int32 CallFunc_Add_IntInt_ReturnValue3, bool CallFunc_Less_IntInt_ReturnValue1)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "RestoreCharacterMats");
+
+	Params::APlayerPawn_Athena_C_RestoreCharacterMats_Params Parms;
+	Parms.Itr = Itr;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.Temp_int_Array_Index_Variable1 = Temp_int_Array_Index_Variable1;
+	Parms.Temp_int_Loop_Counter_Variable1 = Temp_int_Loop_Counter_Variable1;
+	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Add_IntInt_ReturnValue2 = CallFunc_Add_IntInt_ReturnValue2;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_Array_Get_Item1 = CallFunc_Array_Get_Item1;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_GetMaterials_ReturnValue = CallFunc_GetMaterials_ReturnValue;
+	Parms.CallFunc_Array_Length_ReturnValue1 = CallFunc_Array_Length_ReturnValue1;
+	Parms.CallFunc_Array_Length_ReturnValue2 = CallFunc_Array_Length_ReturnValue2;
+	Parms.CallFunc_Add_IntInt_ReturnValue3 = CallFunc_Add_IntInt_ReturnValue3;
+	Parms.CallFunc_Less_IntInt_ReturnValue1 = CallFunc_Less_IntInt_ReturnValue1;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetupDissolveFX
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USkeletalMeshComponent*      CallFunc_Array_Get_Item                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UMaterialInstanceDynamic*    CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_GetNumMaterials_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::SetupDissolveFX(int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Variable, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, class USkeletalMeshComponent* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue, int32 CallFunc_GetNumMaterials_ReturnValue, int32 CallFunc_Array_Length_ReturnValue1, int32 CallFunc_Subtract_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupDissolveFX");
+
+	Params::APlayerPawn_Athena_C_SetupDissolveFX_Params Parms;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
+	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue = CallFunc_GetMIDForSkeletalMeshComponent_ReturnValue;
+	Parms.CallFunc_GetNumMaterials_ReturnValue = CallFunc_GetNumMaterials_ReturnValue;
+	Parms.CallFunc_Array_Length_ReturnValue1 = CallFunc_Array_Length_ReturnValue1;
+	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
+	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
+	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.UpdateTeleportationPointLight
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector                     NewWorldLoc                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              IntensityScalar                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Lerp_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FHitResult                  CallFunc_K2_SetWorldLocation_SweepHitResult                      (IsPlainOldData, NoDestructor, ContainsInstancedReference)
+
+void APlayerPawn_Athena_C::UpdateTeleportationPointLight(const struct FVector& NewWorldLoc, float IntensityScalar, float CallFunc_Lerp_ReturnValue, bool CallFunc_IsValid_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "UpdateTeleportationPointLight");
+
+	Params::APlayerPawn_Athena_C_UpdateTeleportationPointLight_Params Parms;
+	Parms.NewWorldLoc = NewWorldLoc;
+	Parms.IntensityScalar = IntensityScalar;
+	Parms.CallFunc_Lerp_ReturnValue = CallFunc_Lerp_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_K2_SetWorldLocation_SweepHitResult = CallFunc_K2_SetWorldLocation_SweepHitResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GetDissolveValues
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// Parameters:
+// float                              ZheightNormScalar                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              DissolveGradientDistance                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     WorldDissolveLocation                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                DissolveGradientDirectionColor                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                DissolveGradientBaseLocColor                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_GetSocketLocation_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_GetSocketLocation_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Subtract_VectorVector_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Normal_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Multiply_VectorFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Multiply_VectorFloat_ReturnValue1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Add_VectorVector_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Conv_VectorToLinearColor_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Conv_VectorToLinearColor_ReturnValue1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Multiply_VectorFloat_ReturnValue2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Add_VectorVector_ReturnValue1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Subtract_VectorVector_ReturnValue1                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_VLerp_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::GetDissolveValues(float ZheightNormScalar, float* DissolveGradientDistance, struct FVector* WorldDissolveLocation, struct FLinearColor* DissolveGradientDirectionColor, struct FLinearColor* DissolveGradientBaseLocColor, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue, const struct FVector& CallFunc_GetSocketLocation_ReturnValue1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, const struct FVector& CallFunc_Normal_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue, const struct FLinearColor& CallFunc_Conv_VectorToLinearColor_ReturnValue1, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue2, const struct FVector& CallFunc_Add_VectorVector_ReturnValue1, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue1, const struct FVector& CallFunc_VLerp_ReturnValue, float CallFunc_VSize_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GetDissolveValues");
+
+	Params::APlayerPawn_Athena_C_GetDissolveValues_Params Parms;
+	Parms.ZheightNormScalar = ZheightNormScalar;
+	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
+	Parms.CallFunc_GetSocketLocation_ReturnValue = CallFunc_GetSocketLocation_ReturnValue;
+	Parms.CallFunc_GetSocketLocation_ReturnValue1 = CallFunc_GetSocketLocation_ReturnValue1;
+	Parms.CallFunc_Subtract_VectorVector_ReturnValue = CallFunc_Subtract_VectorVector_ReturnValue;
+	Parms.CallFunc_Normal_ReturnValue = CallFunc_Normal_ReturnValue;
+	Parms.CallFunc_Multiply_VectorFloat_ReturnValue = CallFunc_Multiply_VectorFloat_ReturnValue;
+	Parms.CallFunc_Multiply_VectorFloat_ReturnValue1 = CallFunc_Multiply_VectorFloat_ReturnValue1;
+	Parms.CallFunc_Add_VectorVector_ReturnValue = CallFunc_Add_VectorVector_ReturnValue;
+	Parms.CallFunc_Conv_VectorToLinearColor_ReturnValue = CallFunc_Conv_VectorToLinearColor_ReturnValue;
+	Parms.CallFunc_Conv_VectorToLinearColor_ReturnValue1 = CallFunc_Conv_VectorToLinearColor_ReturnValue1;
+	Parms.CallFunc_Multiply_VectorFloat_ReturnValue2 = CallFunc_Multiply_VectorFloat_ReturnValue2;
+	Parms.CallFunc_Add_VectorVector_ReturnValue1 = CallFunc_Add_VectorVector_ReturnValue1;
+	Parms.CallFunc_Subtract_VectorVector_ReturnValue1 = CallFunc_Subtract_VectorVector_ReturnValue1;
+	Parms.CallFunc_VLerp_ReturnValue = CallFunc_VLerp_ReturnValue;
+	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (DissolveGradientDistance != nullptr)
+		*DissolveGradientDistance = Parms.DissolveGradientDistance;
+
+	if (WorldDissolveLocation != nullptr)
+		*WorldDissolveLocation = Parms.WorldDissolveLocation;
+
+	if (DissolveGradientDirectionColor != nullptr)
+		*DissolveGradientDirectionColor = Parms.DissolveGradientDirectionColor;
+
+	if (DissolveGradientBaseLocColor != nullptr)
+		*DissolveGradientBaseLocColor = Parms.DissolveGradientBaseLocColor;
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.UpdateDissolveFX
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// float                              Scalar_Transition                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Scalar_ZHeight                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Scalar_LightIntensity                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Local_NewBase                                                    (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Local_NewDissDir                                                 (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     Local_NewDissLoc                                                 (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Local_NewDissDist                                                (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetDissolveValues_DissolveGradientDistance              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_GetDissolveValues_WorldDissolveLocation                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_GetDissolveValues_DissolveGradientDirectionColor        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_GetDissolveValues_DissolveGradientBaseLocColor          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UMaterialInstanceDynamic*    CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::UpdateDissolveFX(float Scalar_Transition, float Scalar_ZHeight, float Scalar_LightIntensity, const struct FLinearColor& Local_NewBase, const struct FLinearColor& Local_NewDissDir, const struct FVector& Local_NewDissLoc, float Local_NewDissDist, int32 CallFunc_Array_Length_ReturnValue, float CallFunc_GetDissolveValues_DissolveGradientDistance, const struct FVector& CallFunc_GetDissolveValues_WorldDissolveLocation, const struct FLinearColor& CallFunc_GetDissolveValues_DissolveGradientDirectionColor, const struct FLinearColor& CallFunc_GetDissolveValues_DissolveGradientBaseLocColor, int32 Temp_int_Loop_Counter_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Less_IntInt_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Add_IntInt_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "UpdateDissolveFX");
+
+	Params::APlayerPawn_Athena_C_UpdateDissolveFX_Params Parms;
+	Parms.Scalar_Transition = Scalar_Transition;
+	Parms.Scalar_ZHeight = Scalar_ZHeight;
+	Parms.Scalar_LightIntensity = Scalar_LightIntensity;
+	Parms.Local_NewBase = Local_NewBase;
+	Parms.Local_NewDissDir = Local_NewDissDir;
+	Parms.Local_NewDissLoc = Local_NewDissLoc;
+	Parms.Local_NewDissDist = Local_NewDissDist;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_GetDissolveValues_DissolveGradientDistance = CallFunc_GetDissolveValues_DissolveGradientDistance;
+	Parms.CallFunc_GetDissolveValues_WorldDissolveLocation = CallFunc_GetDissolveValues_WorldDissolveLocation;
+	Parms.CallFunc_GetDissolveValues_DissolveGradientDirectionColor = CallFunc_GetDissolveValues_DissolveGradientDirectionColor;
+	Parms.CallFunc_GetDissolveValues_DissolveGradientBaseLocColor = CallFunc_GetDissolveValues_DissolveGradientBaseLocColor;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SpawnTeleportationLight
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FTransform                  CallFunc_MakeTransform_ReturnValue                               (IsPlainOldData, NoDestructor)
+// class UPointLightComponent*        CallFunc_AddComponent_ReturnValue                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsMobilePlatform_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::SpawnTeleportationLight(bool CallFunc_IsValid_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class UPointLightComponent* CallFunc_AddComponent_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SpawnTeleportationLight");
+
+	Params::APlayerPawn_Athena_C_SpawnTeleportationLight_Params Parms;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_MakeTransform_ReturnValue = CallFunc_MakeTransform_ReturnValue;
+	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
+	Parms.CallFunc_IsMobilePlatform_ReturnValue = CallFunc_IsMobilePlatform_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.FindBounds
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               bGunTrue                                                         (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_GetActorBounds_Origin                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_GetActorBounds_BoxExtent                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_BreakTransform_Location                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                    CallFunc_BreakTransform_Rotation                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_BreakTransform_Scale                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Multiply_VectorVector_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector_X                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector_Y                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector_Z                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform                  CallFunc_MakeTransform_ReturnValue                               (IsPlainOldData, NoDestructor)
+// float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform                  CallFunc_MakeTransform_ReturnValue1                              (IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_BreakTransform_Location1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                    CallFunc_BreakTransform_Rotation1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_BreakTransform_Scale1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::FindBounds(bool bGunTrue, const struct FVector& CallFunc_GetActorBounds_Origin, const struct FVector& CallFunc_GetActorBounds_BoxExtent, const struct FVector& CallFunc_BreakTransform_Location, const struct FRotator& CallFunc_BreakTransform_Rotation, const struct FVector& CallFunc_BreakTransform_Scale, const struct FVector& CallFunc_Multiply_VectorVector_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FTransform& CallFunc_MakeTransform_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue1, const struct FVector& CallFunc_BreakTransform_Location1, const struct FRotator& CallFunc_BreakTransform_Rotation1, const struct FVector& CallFunc_BreakTransform_Scale1, float CallFunc_VSize_ReturnValue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "FindBounds");
+
+	Params::APlayerPawn_Athena_C_FindBounds_Params Parms;
+	Parms.bGunTrue = bGunTrue;
+	Parms.CallFunc_GetActorBounds_Origin = CallFunc_GetActorBounds_Origin;
+	Parms.CallFunc_GetActorBounds_BoxExtent = CallFunc_GetActorBounds_BoxExtent;
+	Parms.CallFunc_BreakTransform_Location = CallFunc_BreakTransform_Location;
+	Parms.CallFunc_BreakTransform_Rotation = CallFunc_BreakTransform_Rotation;
+	Parms.CallFunc_BreakTransform_Scale = CallFunc_BreakTransform_Scale;
+	Parms.CallFunc_Multiply_VectorVector_ReturnValue = CallFunc_Multiply_VectorVector_ReturnValue;
+	Parms.CallFunc_BreakVector_X = CallFunc_BreakVector_X;
+	Parms.CallFunc_BreakVector_Y = CallFunc_BreakVector_Y;
+	Parms.CallFunc_BreakVector_Z = CallFunc_BreakVector_Z;
+	Parms.CallFunc_MakeTransform_ReturnValue = CallFunc_MakeTransform_ReturnValue;
+	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
+	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
+	Parms.CallFunc_MakeTransform_ReturnValue1 = CallFunc_MakeTransform_ReturnValue1;
+	Parms.CallFunc_BreakTransform_Location1 = CallFunc_BreakTransform_Location1;
+	Parms.CallFunc_BreakTransform_Rotation1 = CallFunc_BreakTransform_Rotation1;
+	Parms.CallFunc_BreakTransform_Scale1 = CallFunc_BreakTransform_Scale1;
+	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.QueueTeleportOut
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::QueueTeleportOut()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportOut");
+
+	Params::APlayerPawn_Athena_C_QueueTeleportOut_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.QueueTeleportIn
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::QueueTeleportIn()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "QueueTeleportIn");
+
+	Params::APlayerPawn_Athena_C_QueueTeleportIn_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -45,6 +508,8 @@ void APlayerPawn_Athena_C::OnOpenParachute(bool* bConsumeEvent, bool CallFunc_Is
 // bool                               Out_bConsumeEvent                                                (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Out_bSkipSetInteractDuration                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Out_bSkipStartAnimation                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class EItemInteractionType    Out_ItemInteractionType                                          (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_ActorHasTag_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPlayerPawnAthena*       K2Node_DynamicCast_AsFort_Player_Pawn_Athena                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,12 +517,13 @@ void APlayerPawn_Athena_C::OnOpenParachute(bool* bConsumeEvent, bool CallFunc_Is
 // bool                               CallFunc_HasMatchingGameplayTag_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, bool* Out_bConsumeEvent, bool* Out_bSkipSetInteractDuration, bool* Out_bSkipStartAnimation, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, UInterfaceProperty_ CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, bool* Out_bConsumeEvent, bool* Out_bSkipSetInteractDuration, bool* Out_bSkipStartAnimation, enum class EItemInteractionType* Out_ItemInteractionType, bool CallFunc_ActorHasTag_ReturnValue, class AFortPlayerPawnAthena* K2Node_DynamicCast_AsFort_Player_Pawn_Athena, bool K2Node_DynamicCast_bSuccess, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, UInterfaceProperty_ CallFunc_HasMatchingGameplayTag_self_CastInput, bool CallFunc_HasMatchingGameplayTag_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnStartLongInteract");
 
 	Params::APlayerPawn_Athena_C_OnStartLongInteract_Params Parms;
 	Parms.ReceivingActor = ReceivingActor;
+	Parms.CallFunc_ActorHasTag_ReturnValue = CallFunc_ActorHasTag_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn_Athena = K2Node_DynamicCast_AsFort_Player_Pawn_Athena;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetAbilitySystemComponent_ReturnValue = CallFunc_GetAbilitySystemComponent_ReturnValue;
@@ -76,13 +542,16 @@ void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, boo
 	if (Out_bSkipStartAnimation != nullptr)
 		*Out_bSkipStartAnimation = Parms.Out_bSkipStartAnimation;
 
+	if (Out_ItemInteractionType != nullptr)
+		*Out_ItemInteractionType = Parms.Out_ItemInteractionType;
+
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.InWarmUp
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.InWarmup
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               InWarmUp                                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               InWarmup                                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AGameStateBase*              CallFunc_GetGameState_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AAthena_GameState_C*         K2Node_DynamicCast_AsAthena_Game_State                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -90,11 +559,11 @@ void APlayerPawn_Athena_C::OnStartLongInteract(class AActor* ReceivingActor, boo
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void APlayerPawn_Athena_C::InWarmUp(bool* InWarmUp, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AAthena_GameState_C* K2Node_DynamicCast_AsAthena_Game_State, bool K2Node_DynamicCast_bSuccess, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue)
+void APlayerPawn_Athena_C::InWarmup(bool* InWarmup, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AAthena_GameState_C* K2Node_DynamicCast_AsAthena_Game_State, bool K2Node_DynamicCast_bSuccess, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "InWarmUp");
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "InWarmup");
 
-	Params::APlayerPawn_Athena_C_InWarmUp_Params Parms;
+	Params::APlayerPawn_Athena_C_InWarmup_Params Parms;
 	Parms.CallFunc_GetGameState_ReturnValue = CallFunc_GetGameState_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Game_State = K2Node_DynamicCast_AsAthena_Game_State;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -104,8 +573,8 @@ void APlayerPawn_Athena_C::InWarmUp(bool* InWarmUp, class AGameStateBase* CallFu
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (InWarmUp != nullptr)
-		*InWarmUp = Parms.InWarmUp;
+	if (InWarmup != nullptr)
+		*InWarmup = Parms.InWarmup;
 
 }
 
@@ -130,25 +599,25 @@ void APlayerPawn_Athena_C::StopLoopingAudio(bool CallFunc_IsValid_ReturnValue, b
 
 
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.EnableWaterAudio
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               Is_Entering_Water                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class USoundBase*                  Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USoundBase*                  Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_Add_VectorVector_ReturnValue                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue1                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Add_VectorVector_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_Add_VectorVector_ReturnValue1                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Add_VectorVector_ReturnValue1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class USoundBase*                  K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable123, bool Temp_bool_Variable1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue1, class USoundBase* K2Node_Select_Default, const struct FVector& CallFunc_Add_VectorVector_ReturnValue1, bool CallFunc_IsLocallyControlled_ReturnValue1, class USoundBase* K2Node_Select1_Default)
+void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, bool Temp_bool_Variable, class USoundBase* Temp_object_Variable2, class USoundBase* Temp_object_Variable3, bool Temp_bool_Variable1, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue1, class USoundBase* K2Node_Select_Default, const struct FVector& CallFunc_Add_VectorVector_ReturnValue1, bool CallFunc_IsLocallyControlled_ReturnValue1, class USoundBase* K2Node_Select1_Default)
 {
 	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "EnableWaterAudio");
 
@@ -157,8 +626,8 @@ void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water, class USound
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
 	Parms.CallFunc_IsLocallyControlled_ReturnValue = CallFunc_IsLocallyControlled_ReturnValue;
@@ -174,100 +643,11 @@ void APlayerPawn_Athena_C::EnableWaterAudio(bool Is_Entering_Water, class USound
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.HandleWaterFX
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               CallFunc_LessEqual_FloatFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_LessEqual_FloatFloat_ReturnValue1                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_FloatFloat_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void APlayerPawn_Athena_C::HandleWaterFX(bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue1, bool CallFunc_EqualEqual_FloatFloat_ReturnValue)
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "HandleWaterFX");
-
-	Params::APlayerPawn_Athena_C_HandleWaterFX_Params Parms;
-	Parms.CallFunc_LessEqual_FloatFloat_ReturnValue = CallFunc_LessEqual_FloatFloat_ReturnValue;
-	Parms.CallFunc_LessEqual_FloatFloat_ReturnValue1 = CallFunc_LessEqual_FloatFloat_ReturnValue1;
-	Parms.CallFunc_EqualEqual_FloatFloat_ReturnValue = CallFunc_EqualEqual_FloatFloat_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ApplyParachuteMovementVolumeScale
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetWorldDeltaSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetParachuteMovementVolumeScale_Scale                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_FInterpTo_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APlayerPawn_Athena_C::ApplyParachuteMovementVolumeScale(bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue1, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue, float CallFunc_GetParachuteMovementVolumeScale_Scale, float CallFunc_FInterpTo_ReturnValue)
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ApplyParachuteMovementVolumeScale");
-
-	Params::APlayerPawn_Athena_C_ApplyParachuteMovementVolumeScale_Params Parms;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue1 = CallFunc_IsValid_ReturnValue1;
-	Parms.CallFunc_Multiply_FloatFloat_ReturnValue = CallFunc_Multiply_FloatFloat_ReturnValue;
-	Parms.CallFunc_GetWorldDeltaSeconds_ReturnValue = CallFunc_GetWorldDeltaSeconds_ReturnValue;
-	Parms.CallFunc_GetParachuteMovementVolumeScale_Scale = CallFunc_GetParachuteMovementVolumeScale_Scale;
-	Parms.CallFunc_FInterpTo_ReturnValue = CallFunc_FInterpTo_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GetParachuteMovementVolumeScale
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// float                              Scale                                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsParachuteOpen_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_K2_GetModifiedMaxSpeed_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_FMax_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsActivelySkydiving_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_BreakVector_X                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector_Y                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector_Z                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_FClamp_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APlayerPawn_Athena_C::GetParachuteMovementVolumeScale(float* Scale, bool CallFunc_IsParachuteOpen_ReturnValue, float CallFunc_K2_GetModifiedMaxSpeed_ReturnValue, float CallFunc_FMax_ReturnValue, bool CallFunc_IsActivelySkydiving_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FClamp_ReturnValue)
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GetParachuteMovementVolumeScale");
-
-	Params::APlayerPawn_Athena_C_GetParachuteMovementVolumeScale_Params Parms;
-	Parms.CallFunc_IsParachuteOpen_ReturnValue = CallFunc_IsParachuteOpen_ReturnValue;
-	Parms.CallFunc_K2_GetModifiedMaxSpeed_ReturnValue = CallFunc_K2_GetModifiedMaxSpeed_ReturnValue;
-	Parms.CallFunc_FMax_ReturnValue = CallFunc_FMax_ReturnValue;
-	Parms.CallFunc_IsActivelySkydiving_ReturnValue = CallFunc_IsActivelySkydiving_ReturnValue;
-	Parms.CallFunc_BreakVector_X = CallFunc_BreakVector_X;
-	Parms.CallFunc_BreakVector_Y = CallFunc_BreakVector_Y;
-	Parms.CallFunc_BreakVector_Z = CallFunc_BreakVector_Z;
-	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
-	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
-	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
-	Parms.CallFunc_FClamp_ReturnValue = CallFunc_FClamp_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Scale != nullptr)
-		*Scale = Parms.Scale;
-
-}
-
-
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.GetLocationInCircle_XY
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FVector                     LocationLocalSpace                                               (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     LocationLocalSpace                                               (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RandomFloat_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetPI_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RandomFloatInRange_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -276,11 +656,11 @@ void APlayerPawn_Athena_C::GetParachuteMovementVolumeScale(float* Scale, bool Ca
 // float                              CallFunc_Cos_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Sin_ReturnValue                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Multiply_FloatFloat_ReturnValue12                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_MakeVector_ReturnValue1                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_VLerp_ReturnValue                                       (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Multiply_FloatFloat_ReturnValue2                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_MakeVector_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_VLerp_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalSpace, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_RandomFloat_ReturnValue, float CallFunc_GetPI_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Lerp_ReturnValue, float CallFunc_Cos_ReturnValue, float CallFunc_Sin_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue1, float CallFunc_Multiply_FloatFloat_ReturnValue12, const struct FVector& CallFunc_MakeVector_ReturnValue1, const struct FVector& CallFunc_VLerp_ReturnValue)
+void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalSpace, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_RandomFloat_ReturnValue, float CallFunc_GetPI_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue, float CallFunc_Lerp_ReturnValue, float CallFunc_Cos_ReturnValue, float CallFunc_Sin_ReturnValue, float CallFunc_Multiply_FloatFloat_ReturnValue1, float CallFunc_Multiply_FloatFloat_ReturnValue2, const struct FVector& CallFunc_MakeVector_ReturnValue1, const struct FVector& CallFunc_VLerp_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GetLocationInCircle_XY");
 
@@ -294,7 +674,7 @@ void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalS
 	Parms.CallFunc_Cos_ReturnValue = CallFunc_Cos_ReturnValue;
 	Parms.CallFunc_Sin_ReturnValue = CallFunc_Sin_ReturnValue;
 	Parms.CallFunc_Multiply_FloatFloat_ReturnValue1 = CallFunc_Multiply_FloatFloat_ReturnValue1;
-	Parms.CallFunc_Multiply_FloatFloat_ReturnValue12 = CallFunc_Multiply_FloatFloat_ReturnValue12;
+	Parms.CallFunc_Multiply_FloatFloat_ReturnValue2 = CallFunc_Multiply_FloatFloat_ReturnValue2;
 	Parms.CallFunc_MakeVector_ReturnValue1 = CallFunc_MakeVector_ReturnValue1;
 	Parms.CallFunc_VLerp_ReturnValue = CallFunc_VLerp_ReturnValue;
 
@@ -313,33 +693,33 @@ void APlayerPawn_Athena_C::GetLocationInCircle_XY(struct FVector* LocationLocalS
 // class USoundBase*                  Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USoundBase*                  Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USoundBase*                  Temp_object_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable3                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USoundBase*                  Temp_object_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable4                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USoundBase*                  Temp_object_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable9                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable5                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USoundBase*                  Temp_object_Variable10                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable11                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable6                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class USoundBase*                  Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USoundBase*                  Temp_object_Variable1234                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable123                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USoundBase*                  Temp_object_Variable123456                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234567                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable1234                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USoundBase*                  Temp_object_Variable12345678                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123456789                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable12345                                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USoundBase*                  Temp_object_Variable12345678910                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234567891011                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable123456                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USoundBase*                  Temp_object_Variable123456789101112                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345678910111213                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable13                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class USoundBase*                  K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  K2Node_Select12_Default                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  K2Node_Select123_Default                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  K2Node_Select1234_Default                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  K2Node_Select12345_Default                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  K2Node_Select123456_Default                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  K2Node_Select2_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  K2Node_Select3_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  K2Node_Select4_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  K2Node_Select5_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  K2Node_Select6_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::InitAthenaFoleyAudio(bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, bool Temp_bool_Variable1, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable123, bool Temp_bool_Variable12, class USoundBase* Temp_object_Variable1234, class USoundBase* Temp_object_Variable12345, bool Temp_bool_Variable123, class USoundBase* Temp_object_Variable123456, class USoundBase* Temp_object_Variable1234567, bool Temp_bool_Variable1234, class USoundBase* Temp_object_Variable12345678, class USoundBase* Temp_object_Variable123456789, bool Temp_bool_Variable12345, class USoundBase* Temp_object_Variable12345678910, class USoundBase* Temp_object_Variable1234567891011, bool Temp_bool_Variable123456, class USoundBase* Temp_object_Variable123456789101112, class USoundBase* Temp_object_Variable12345678910111213, bool CallFunc_IsLocallyControlled_ReturnValue, class USoundBase* K2Node_Select_Default, class USoundBase* K2Node_Select1_Default, class USoundBase* K2Node_Select12_Default, class USoundBase* K2Node_Select123_Default, class USoundBase* K2Node_Select1234_Default, class USoundBase* K2Node_Select12345_Default, class USoundBase* K2Node_Select123456_Default)
+void APlayerPawn_Athena_C::InitAthenaFoleyAudio(bool Temp_bool_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, bool Temp_bool_Variable1, class USoundBase* Temp_object_Variable2, class USoundBase* Temp_object_Variable3, bool Temp_bool_Variable2, class USoundBase* Temp_object_Variable4, class USoundBase* Temp_object_Variable5, bool Temp_bool_Variable3, class USoundBase* Temp_object_Variable6, class USoundBase* Temp_object_Variable7, bool Temp_bool_Variable4, class USoundBase* Temp_object_Variable8, class USoundBase* Temp_object_Variable9, bool Temp_bool_Variable5, class USoundBase* Temp_object_Variable10, class USoundBase* Temp_object_Variable11, bool Temp_bool_Variable6, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable13, bool CallFunc_IsLocallyControlled_ReturnValue, class USoundBase* K2Node_Select_Default, class USoundBase* K2Node_Select1_Default, class USoundBase* K2Node_Select2_Default, class USoundBase* K2Node_Select3_Default, class USoundBase* K2Node_Select4_Default, class USoundBase* K2Node_Select5_Default, class USoundBase* K2Node_Select6_Default)
 {
 	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "InitAthenaFoleyAudio");
 
@@ -348,31 +728,31 @@ void APlayerPawn_Athena_C::InitAthenaFoleyAudio(bool Temp_bool_Variable, class U
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
+	Parms.Temp_bool_Variable2 = Temp_bool_Variable2;
+	Parms.Temp_object_Variable4 = Temp_object_Variable4;
+	Parms.Temp_object_Variable5 = Temp_object_Variable5;
+	Parms.Temp_bool_Variable3 = Temp_bool_Variable3;
+	Parms.Temp_object_Variable6 = Temp_object_Variable6;
+	Parms.Temp_object_Variable7 = Temp_object_Variable7;
+	Parms.Temp_bool_Variable4 = Temp_bool_Variable4;
+	Parms.Temp_object_Variable8 = Temp_object_Variable8;
+	Parms.Temp_object_Variable9 = Temp_object_Variable9;
+	Parms.Temp_bool_Variable5 = Temp_bool_Variable5;
+	Parms.Temp_object_Variable10 = Temp_object_Variable10;
+	Parms.Temp_object_Variable11 = Temp_object_Variable11;
+	Parms.Temp_bool_Variable6 = Temp_bool_Variable6;
 	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.Temp_bool_Variable12 = Temp_bool_Variable12;
-	Parms.Temp_object_Variable1234 = Temp_object_Variable1234;
-	Parms.Temp_object_Variable12345 = Temp_object_Variable12345;
-	Parms.Temp_bool_Variable123 = Temp_bool_Variable123;
-	Parms.Temp_object_Variable123456 = Temp_object_Variable123456;
-	Parms.Temp_object_Variable1234567 = Temp_object_Variable1234567;
-	Parms.Temp_bool_Variable1234 = Temp_bool_Variable1234;
-	Parms.Temp_object_Variable12345678 = Temp_object_Variable12345678;
-	Parms.Temp_object_Variable123456789 = Temp_object_Variable123456789;
-	Parms.Temp_bool_Variable12345 = Temp_bool_Variable12345;
-	Parms.Temp_object_Variable12345678910 = Temp_object_Variable12345678910;
-	Parms.Temp_object_Variable1234567891011 = Temp_object_Variable1234567891011;
-	Parms.Temp_bool_Variable123456 = Temp_bool_Variable123456;
-	Parms.Temp_object_Variable123456789101112 = Temp_object_Variable123456789101112;
-	Parms.Temp_object_Variable12345678910111213 = Temp_object_Variable12345678910111213;
+	Parms.Temp_object_Variable13 = Temp_object_Variable13;
 	Parms.CallFunc_IsLocallyControlled_ReturnValue = CallFunc_IsLocallyControlled_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
-	Parms.K2Node_Select12_Default = K2Node_Select12_Default;
-	Parms.K2Node_Select123_Default = K2Node_Select123_Default;
-	Parms.K2Node_Select1234_Default = K2Node_Select1234_Default;
-	Parms.K2Node_Select12345_Default = K2Node_Select12345_Default;
-	Parms.K2Node_Select123456_Default = K2Node_Select123456_Default;
+	Parms.K2Node_Select2_Default = K2Node_Select2_Default;
+	Parms.K2Node_Select3_Default = K2Node_Select3_Default;
+	Parms.K2Node_Select4_Default = K2Node_Select4_Default;
+	Parms.K2Node_Select5_Default = K2Node_Select5_Default;
+	Parms.K2Node_Select6_Default = K2Node_Select6_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -488,19 +868,129 @@ void APlayerPawn_Athena_C::Timeline_0__UpdateFunc()
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.TFX_GlowCharacterMesh__FinishedFunc
+// (BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__FinishedFunc()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__FinishedFunc");
+
+	Params::APlayerPawn_Athena_C_TFX_GlowCharacterMesh__FinishedFunc_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.TFX_GlowCharacterMesh__UpdateFunc
+// (BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::TFX_GlowCharacterMesh__UpdateFunc()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_GlowCharacterMesh__UpdateFunc");
+
+	Params::APlayerPawn_Athena_C_TFX_GlowCharacterMesh__UpdateFunc_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.TFX_ResOutCharacterMesh__FinishedFunc
+// (BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__FinishedFunc()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__FinishedFunc");
+
+	Params::APlayerPawn_Athena_C_TFX_ResOutCharacterMesh__FinishedFunc_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.TFX_ResOutCharacterMesh__UpdateFunc
+// (BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::TFX_ResOutCharacterMesh__UpdateFunc()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "TFX_ResOutCharacterMesh__UpdateFunc");
+
+	Params::APlayerPawn_Athena_C_TFX_ResOutCharacterMesh__UpdateFunc_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnEventEnded_4BF68D6E40D33DFCDB2E6785A77F4B1B
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// enum class EGameplayCueEvent       EventType                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      Parameters                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
+// class FString                      EventName                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// struct FTimespan                   TimeUntilEnd                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   TimeSinceBegin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              TimespanRatio                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+void APlayerPawn_Athena_C::OnEventEnded_4BF68D6E40D33DFCDB2E6785A77F4B1B(const class FString& EventName, const struct FTimespan& TimeUntilEnd, const struct FTimespan& TimeSinceBegin, float TimespanRatio)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEventEnded_4BF68D6E40D33DFCDB2E6785A77F4B1B");
 
-	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params Parms;
-	Parms.EventType = EventType;
-	Parms.Parameters = Parameters;
+	Params::APlayerPawn_Athena_C_OnEventEnded_4BF68D6E40D33DFCDB2E6785A77F4B1B_Params Parms;
+	Parms.EventName = EventName;
+	Parms.TimeUntilEnd = TimeUntilEnd;
+	Parms.TimeSinceBegin = TimeSinceBegin;
+	Parms.TimespanRatio = TimespanRatio;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnEventUpdated_4BF68D6E40D33DFCDB2E6785A77F4B1B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                      EventName                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// struct FTimespan                   TimeUntilEnd                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   TimeSinceBegin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              TimespanRatio                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::OnEventUpdated_4BF68D6E40D33DFCDB2E6785A77F4B1B(const class FString& EventName, const struct FTimespan& TimeUntilEnd, const struct FTimespan& TimeSinceBegin, float TimespanRatio)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEventUpdated_4BF68D6E40D33DFCDB2E6785A77F4B1B");
+
+	Params::APlayerPawn_Athena_C_OnEventUpdated_4BF68D6E40D33DFCDB2E6785A77F4B1B_Params Parms;
+	Parms.EventName = EventName;
+	Parms.TimeUntilEnd = TimeUntilEnd;
+	Parms.TimeSinceBegin = TimeSinceBegin;
+	Parms.TimespanRatio = TimespanRatio;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnEventActive_4BF68D6E40D33DFCDB2E6785A77F4B1B
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FString                      EventName                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, HasGetValueTypeHash)
+// struct FTimespan                   TimeUntilEnd                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   TimeSinceBegin                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              TimespanRatio                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::OnEventActive_4BF68D6E40D33DFCDB2E6785A77F4B1B(const class FString& EventName, const struct FTimespan& TimeUntilEnd, const struct FTimespan& TimeSinceBegin, float TimespanRatio)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnEventActive_4BF68D6E40D33DFCDB2E6785A77F4B1B");
+
+	Params::APlayerPawn_Athena_C_OnEventActive_4BF68D6E40D33DFCDB2E6785A77F4B1B_Params Parms;
+	Parms.EventName = EventName;
+	Parms.TimeUntilEnd = TimeUntilEnd;
+	Parms.TimeSinceBegin = TimeSinceBegin;
+	Parms.TimespanRatio = TimespanRatio;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -573,27 +1063,8 @@ void APlayerPawn_Athena_C::ReceiveDestroyed()
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.OutsideSafeZone
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// enum class EGameplayCueEvent       EventType                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      Parameters                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
-
-void APlayerPawn_Athena_C::GameplayCue_Athena_OutsideSafeZone(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.OutsideSafeZone");
-
-	Params::APlayerPawn_Athena_C_GameplayCue_Athena_OutsideSafeZone_Params Parms;
-	Parms.EventType = EventType;
-	Parms.Parameters = Parameters;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.SafeZoneStatusChanged
-// (Event, Protected, BlueprintEvent)
+// (Event, Public, BlueprintEvent)
 // Parameters:
 
 void APlayerPawn_Athena_C::SafeZoneStatusChanged()
@@ -631,7 +1102,7 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Equipping(enum class EGameplayCueE
 // Parameters:
 // float                              Damage                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTagContainer       DamageTags                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FVector                     Momentum                                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     Momentum                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  HitInfo                                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   InstigatedBy                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      DamageCauser                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -689,21 +1160,6 @@ void APlayerPawn_Athena_C::GameplayCue_Athena_Player_BeingRevivedFromDBNO(enum c
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.AddStormFX
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void APlayerPawn_Athena_C::AddStormFX()
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "AddStormFX");
-
-	Params::APlayerPawn_Athena_C_AddStormFX_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.RemoveStormFX
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -749,17 +1205,19 @@ void APlayerPawn_Athena_C::RandomLightningFlashesRepeat()
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ZapFX
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                              ZapCount                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EGameplayCueEvent       EventType                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      Parameters                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
 
-void APlayerPawn_Athena_C::ZapFX(int32 ZapCount)
+void APlayerPawn_Athena_C::GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
 {
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ZapFX");
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Abilities.Activation.Generic.HarvestBuff.Tier1");
 
-	Params::APlayerPawn_Athena_C_ZapFX_Params Parms;
-	Parms.ZapCount = ZapCount;
+	Params::APlayerPawn_Athena_C_GameplayCue_Abilities_Activation_Generic_HarvestBuff_Tier1_Params Parms;
+	Parms.EventType = EventType;
+	Parms.Parameters = Parameters;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -800,40 +1258,10 @@ void APlayerPawn_Athena_C::UpdateInvulnerableVisuals()
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.Add Storm Audio
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void APlayerPawn_Athena_C::Add_Storm_Audio()
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Add Storm Audio");
-
-	Params::APlayerPawn_Athena_C_Add_Storm_Audio_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.Remove Storm Audio
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void APlayerPawn_Athena_C::Remove_Storm_Audio()
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Remove Storm Audio");
-
-	Params::APlayerPawn_Athena_C_Remove_Storm_Audio_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.Play Lightning Flash Audio
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                     Location                                                         (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     Location                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void APlayerPawn_Athena_C::Play_Lightning_Flash_Audio(const struct FVector& Location)
 {
@@ -856,21 +1284,6 @@ void APlayerPawn_Athena_C::Start_Storm_Audio_Fader()
 	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Start Storm Audio Fader");
 
 	Params::APlayerPawn_Athena_C_Start_Storm_Audio_Fader_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.Update Parachute and Falling Audio
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void APlayerPawn_Athena_C::Update_Parachute_and_Falling_Audio()
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "Update Parachute and Falling Audio");
-
-	Params::APlayerPawn_Athena_C_Update_Parachute_and_Falling_Audio_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -939,23 +1352,6 @@ void APlayerPawn_Athena_C::ReceiveEndPlay(enum class EEndPlayReason EndPlayReaso
 }
 
 
-// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnSignificantTick
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// float                              Significance                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void APlayerPawn_Athena_C::OnSignificantTick(float Significance)
-{
-	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnSignificantTick");
-
-	Params::APlayerPawn_Athena_C_OnSignificantTick_Params Parms;
-	Parms.Significance = Significance;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnLeftReplayRelevancy
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -986,265 +1382,533 @@ void APlayerPawn_Athena_C::OnEnteredReplayRelevancy()
 }
 
 
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnCharacterCustomizationCompleted
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class AFortPlayerPawn*             Pawn                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::OnCharacterCustomizationCompleted(class AFortPlayerPawn* Pawn)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnCharacterCustomizationCompleted");
+
+	Params::APlayerPawn_Athena_C_OnCharacterCustomizationCompleted_Params Parms;
+	Parms.Pawn = Pawn;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.PlayResOut
+// (Net, NetMulticast, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::PlayResOut()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOut");
+
+	Params::APlayerPawn_Athena_C_PlayResOut_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnResInDuringWarmup
+// (BlueprintCosmetic, Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::OnResInDuringWarmup()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnResInDuringWarmup");
+
+	Params::APlayerPawn_Athena_C_OnResInDuringWarmup_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.PlayResInFX
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::PlayResInFX()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResInFX");
+
+	Params::APlayerPawn_Athena_C_PlayResInFX_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.PlayResOutFX
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::PlayResOutFX()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "PlayResOutFX");
+
+	Params::APlayerPawn_Athena_C_PlayResOutFX_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.GameplayCue.Athena.Damage.OutsideSafeZone
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EGameplayCueEvent       EventType                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      Parameters                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ContainsInstancedReference)
+
+void APlayerPawn_Athena_C::GameplayCue_Athena_Damage_OutsideSafeZone(enum class EGameplayCueEvent EventType, const struct FGameplayCueParameters& Parameters)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "GameplayCue.Athena.Damage.OutsideSafeZone");
+
+	Params::APlayerPawn_Athena_C_GameplayCue_Athena_Damage_OutsideSafeZone_Params Parms;
+	Parms.EventType = EventType;
+	Parms.Parameters = Parameters;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.AddStormFX
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::AddStormFX()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "AddStormFX");
+
+	Params::APlayerPawn_Athena_C_AddStormFX_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetSafeZonePhaseAndGameplayCueTag
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              InSafeZonePhase                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               bSpawnGameplayCue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::SetSafeZonePhaseAndGameplayCueTag(int32 InSafeZonePhase, bool bSpawnGameplayCue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZonePhaseAndGameplayCueTag");
+
+	Params::APlayerPawn_Athena_C_SetSafeZonePhaseAndGameplayCueTag_Params Parms;
+	Parms.InSafeZonePhase = InSafeZonePhase;
+	Parms.bSpawnGameplayCue = bSpawnGameplayCue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetSafeZoneTagWhenChanged
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// int32                              NewWhichSafeZoneTag                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag                GameplayTag                                                      (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, HasGetValueTypeHash)
+// bool                               bSpawnGameplayCue                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void APlayerPawn_Athena_C::SetSafeZoneTagWhenChanged(int32 NewWhichSafeZoneTag, const struct FGameplayTag& GameplayTag, bool bSpawnGameplayCue)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetSafeZoneTagWhenChanged");
+
+	Params::APlayerPawn_Athena_C_SetSafeZoneTagWhenChanged_Params Parms;
+	Parms.NewWhichSafeZoneTag = NewWhichSafeZoneTag;
+	Parms.GameplayTag = GameplayTag;
+	Parms.bSpawnGameplayCue = bSpawnGameplayCue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnOutsideSafeZonePhaseChanged
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// int32                              SafeZonePhase                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void APlayerPawn_Athena_C::OnOutsideSafeZonePhaseChanged(int32 SafeZonePhase)
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnOutsideSafeZonePhaseChanged");
+
+	Params::APlayerPawn_Athena_C_OnOutsideSafeZonePhaseChanged_Params Parms;
+	Parms.SafeZonePhase = SafeZonePhase;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.RemoveSafeZoneGameplayCue
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::RemoveSafeZoneGameplayCue()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "RemoveSafeZoneGameplayCue");
+
+	Params::APlayerPawn_Athena_C_RemoveSafeZoneGameplayCue_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.OnReceivedStormSurgeDamage
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::OnReceivedStormSurgeDamage()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "OnReceivedStormSurgeDamage");
+
+	Params::APlayerPawn_Athena_C_OnReceivedStormSurgeDamage_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SetupColdTag
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::SetupColdTag()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SetupColdTag");
+
+	Params::APlayerPawn_Athena_C_SetupColdTag_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.MeleeSwingLeft
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::MeleeSwingLeft()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingLeft");
+
+	Params::APlayerPawn_Athena_C_MeleeSwingLeft_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.MeleeSwingRight
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::MeleeSwingRight()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "MeleeSwingRight");
+
+	Params::APlayerPawn_Athena_C_MeleeSwingRight_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ReTrySetupDissolveFx
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::ReTrySetupDissolveFx()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ReTrySetupDissolveFx");
+
+	Params::APlayerPawn_Athena_C_ReTrySetupDissolveFx_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.FestivusAudioGE
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::FestivusAudioGE()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "FestivusAudioGE");
+
+	Params::APlayerPawn_Athena_C_FestivusAudioGE_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function PlayerPawn_Athena.PlayerPawn_Athena_C.ExecuteUbergraph_PlayerPawn_Athena
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                Temp_struct_Variable                                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable1                                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                Temp_struct_Variable12                                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable123                                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UAnimMontage*                Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_Variable123                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue12                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                  Temp_struct_Variable1234                                         (ConstParm, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UPostProcessComponent*       CallFunc_AddComponent_ReturnValue                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USceneComponent*             CallFunc_K2_GetRootComponent_ReturnValue                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable1234                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_Has_Been_Initd_Variable                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_IsClosed_Variable                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_Has_Been_Initd_Variable1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType12345                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters12345                          (ContainsInstancedReference)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType1234                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters1234                           (ContainsInstancedReference)
 // bool                               K2Node_SwitchEnum1_CmpSuccess                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsInZone_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_NotEqual_ObjectObject_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
+// class FString                      K2Node_CustomEvent_EventName2                                    (ZeroConstructor, HasGetValueTypeHash)
+// struct FTimespan                   K2Node_CustomEvent_TimeUntilEnd2                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   K2Node_CustomEvent_TimeSinceBegin2                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              K2Node_CustomEvent_TimeSpanRatio2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FString                      K2Node_CustomEvent_EventName1                                    (ZeroConstructor, HasGetValueTypeHash)
+// struct FTimespan                   K2Node_CustomEvent_TimeUntilEnd1                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   K2Node_CustomEvent_TimeSinceBegin1                               (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              K2Node_CustomEvent_TimeSpanRatio1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
+// class FString                      K2Node_CustomEvent_EventName                                     (ZeroConstructor, HasGetValueTypeHash)
+// struct FTimespan                   K2Node_CustomEvent_TimeUntilEnd                                  (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   K2Node_CustomEvent_TimeSinceBegin                                (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// float                              K2Node_CustomEvent_TimeSpanRatio                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
+// float                              Temp_float_Variable1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   Temp_struct_Variable                                             (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   Temp_struct_Variable1                                            (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// class FString                      Temp_string_Variable                                             (ZeroConstructor, HasGetValueTypeHash)
+// class UFortAsyncAction_CalendarEventWatcher*CallFunc_WatchCalendarEvent_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType5                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters5                              (ContainsInstancedReference)
+// bool                               K2Node_SwitchEnum2_CmpSuccess                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FGameplayEventData          K2Node_MakeStruct_GameplayEventData                              ()
 // class AController*                 K2Node_Event_NewController                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue12                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_IsClosed_Variable1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue123                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType123                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters123                            (ContainsInstancedReference)
-// bool                               CallFunc_IsValid_ReturnValue1234                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               K2Node_SwitchEnum12_CmpSuccess                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue1                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType12                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters12                             (ContainsInstancedReference)
+// bool                               Temp_bool_IsClosed_Variable                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Has_Been_Initd_Variable                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue3                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType4                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters4                              (ContainsInstancedReference)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              K2Node_Event_Damage                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTagContainer       K2Node_Event_DamageTags                                          (ConstParm)
-// struct FVector                     K2Node_Event_Momentum                                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     K2Node_Event_Momentum                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  K2Node_Event_HitInfo                                             (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
 // class AFortPawn*                   K2Node_Event_InstigatedBy                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_DamageCauser                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEffectContextHandleK2Node_Event_EffectContext                                       ()
-// bool                               CallFunc_IsParachuteForcedOpen_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetWorldDeltaSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_Add_VectorVector_ReturnValue                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsSkydiving_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsParachuteOpen_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_GetVelocity_ReturnValue                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_GetVelocity_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_VSize_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_MapRangeClamped_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_MapRangeClamped_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_MakeVector_ReturnValue1                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor)
-// bool                               Temp_bool_Has_Been_Initd_Variable12                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Has_Been_Initd_Variable1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue1                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsLocallyControlled_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsLocallyControlled_ReturnValue12                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                  CallFunc_K2_GetComponentToWorld_ReturnValue                      (IsPlainOldData, NoDestructor)
-// class AActor*                      CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ABP_VictoryDrone_C*          CallFunc_FinishSpawningActor_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                  CallFunc_GetTransform_ReturnValue                                (IsPlainOldData, NoDestructor)
-// class AActor*                      CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ADuplicateResOutMesh_C*      CallFunc_FinishSpawningActor_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsLocallyControlled_ReturnValue2                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsDBNO_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsLocallyControlled_ReturnValue123                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters1                              (ContainsInstancedReference)
-// class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue12                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class AActor*>              Temp_object_Variable1                                            (ConstParm, ZeroConstructor, ReferenceParm)
-// struct FHitResult                  CallFunc_LineTraceSingle_OutHit                                  (IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// bool                               CallFunc_LineTraceSingle_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue123                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_BreakHitResult_bBlockingHit                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BreakHitResult_bInitialOverlap                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_BreakHitResult_Time                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakHitResult_Distance                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_BreakHitResult_Location                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_BreakHitResult_ImpactPoint                              (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_BreakHitResult_Normal                                   (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_BreakHitResult_ImpactNormal                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPhysicalMaterial*           CallFunc_BreakHitResult_PhysMat                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      CallFunc_BreakHitResult_HitActor                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*         CallFunc_BreakHitResult_HitComponent                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        CallFunc_BreakHitResult_HitBoneName                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_BreakHitResult_HitItem                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_BreakHitResult_FaceIndex                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_BreakHitResult_TraceStart                               (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_BreakHitResult_TraceEnd                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_Subtract_VectorVector_ReturnValue                       (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_VSize_ReturnValue1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_MapRangeClamped_ReturnValue12                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsLocallyControlled_ReturnValue3                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType3                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters3                              (ContainsInstancedReference)
+// bool                               Temp_bool_IsClosed_Variable1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Has_Been_Initd_Variable2                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_RandomFloatInRange_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RandomFloatInRange_ReturnValue1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_FloatFloat_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_RandomFloatInRange_ReturnValue12                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue12345                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue123456                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              K2Node_CustomEvent_ZapCount                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APlayerCameraManager*        CallFunc_GetPlayerCameraManager_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AEmitterCameraLensEffectBase*CallFunc_AddCameraLensEffect_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_GetLocationInCircle_XY_LocationLocalSpace               (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_Add_VectorVector_ReturnValue1                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_Add_VectorVector_ReturnValue12                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_RandomFloatInRange_ReturnValue2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_IsClosed_Variable2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Has_Been_Initd_Variable3                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters2                              (ContainsInstancedReference)
+// bool                               K2Node_SwitchEnum3_CmpSuccess                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USceneComponent*             CallFunc_K2_GetRootComponent_ReturnValue                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_GetLocationInCircle_XY_LocationLocalSpace               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  CallFunc_K2_SetWorldLocation_SweepHitResult                      (IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// float                              CallFunc_Lerp_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTransform                  CallFunc_MakeTransform_ReturnValue                               (IsPlainOldData, NoDestructor)
-// class AActor*                      CallFunc_SpawnPooledFXActor_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ALightningLsystem_C*         K2Node_DynamicCast_AsLightning_Lsystem                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue1234567                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     CallFunc_Add_VectorVector_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RandomFloat_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UMaterialInstanceDynamic*    CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_IsClosed_Variable12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters                               (ContainsInstancedReference)
+// struct FTransform                  Temp_struct_Variable2                                            (ConstParm, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UPostProcessComponent*       CallFunc_AddComponent_ReturnValue                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters1                              (ContainsInstancedReference)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                K2Node_Select1_Default                                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Select12_Default                                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue123                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTransform                  Temp_struct_Variable12345                                        (ConstParm, IsPlainOldData, NoDestructor)
-// class UPointLightComponent*        CallFunc_AddComponent_ReturnValue1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue12345678                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UAudioComponent*             CallFunc_SpawnSound2D_ReturnValue                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     K2Node_CustomEvent_Location                                      (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue1                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_IsClosed_Variable3                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector                     K2Node_CustomEvent_Location                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_X                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Y                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Z                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_X1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Y1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Z1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_MakeVector_ReturnValue12                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_MakeVector_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class APlayerController*           CallFunc_GetLocalViewingPlayerController_ReturnValue             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsSkydiving_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue123456789                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_FInterpTo_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsLocallyControlled_ReturnValue1234                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsFalling_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue12345678910                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue1234567891011                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_GetWorldDeltaSeconds_ReturnValue1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAudioComponent*             CallFunc_SpawnSound2D_ReturnValue1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue123456789101112                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsSkydiving_ReturnValue12                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue12345678910111213                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue1234567891011121314                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsActive_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue1                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UParticleSystemComponent*    CallFunc_SpawnEmitterAtLocation_ReturnValue                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage*                Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsSkydiving_ReturnValue2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Not_PreBool_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FLinearColor                Temp_struct_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue2                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UParticleSystem*             CallFunc_GetContrailParticleSystem_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsMobilePlatform_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_Has_Been_Initd_Variable123                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsMobilePlatform_ReturnValue1                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsLocallyControlled_ReturnValue12345                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FLinearColor                Temp_struct_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsLocallyControlled_ReturnValue4                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsLocallyControlled_ReturnValue5                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsLocallyControlled_ReturnValue123456                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_InWarmup_InWarmUp                                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_InWarmup_InWarmUp1                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable3                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EEndPlayReason          K2Node_Event_EndPlayReason                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_InWarmup_InWarmUp12                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_InWarmup_InWarmUp123                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              K2Node_Event_Significance                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FRotator                    CallFunc_K2_GetComponentRotation_ReturnValue                     (IsPlainOldData, NoDestructor)
-// class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue1234                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue12                   (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_IsClosed_Variable123                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UParticleSystemComponent*    CallFunc_SpawnEmitterAtLocation_ReturnValue1                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FRotator                    CallFunc_K2_GetComponentRotation_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue2                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UParticleSystemComponent*    CallFunc_SpawnEmitterAtLocation_ReturnValue                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInstanceDynamic*    CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_BoolBool_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UAnimMontage*                Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimMontage*                Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimMontage*                K2Node_Select123_Default                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_TimeFromJumpApex_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAnimMontage*                K2Node_Select1234_Default                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_MapRangeClamped_ReturnValue123                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform                  CallFunc_K2_GetComponentToWorld_ReturnValue                      (IsPlainOldData, NoDestructor)
+// class AFortPlayerPawn*             K2Node_CustomEvent_Pawn                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate3                            (ZeroConstructor, NoDestructor)
+// class ABP_VictoryDrone_C*          CallFunc_FinishSpawningActor_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTransform                  CallFunc_K2_GetComponentToWorld_ReturnValue1                     (IsPlainOldData, NoDestructor)
+// class AActor*                      CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABP_VictoryDrone_Athena_C*   CallFunc_FinishSpawningActor_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable4                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FLinearColor                K2Node_Select2_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue2                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UParticleSystemComponent*    CallFunc_SpawnEmitterAtLocation_ReturnValue1                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Lerp_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EGameplayCueEvent       K2Node_GameplayCueEvent_EventType                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      K2Node_GameplayCueEvent_Parameters                               (ContainsInstancedReference)
+// bool                               K2Node_SwitchEnum4_CmpSuccess                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class AGameStateBase*              CallFunc_GetGameState_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AGameStateBase*              CallFunc_GetGameState_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortGameStateAthena*        K2Node_DynamicCast_AsFort_Game_State_Athena                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class AFortGameStateAthena*        K2Node_DynamicCast_AsFort_Game_State_Athena1                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_ByteToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Conv_ByteToInt_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayCueParameters      K2Node_MakeStruct_GameplayCueParameters                          (ContainsInstancedReference)
+// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue1                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              K2Node_CustomEvent_InSafeZonePhase                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_bSpawnGameplayCue1                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FGameplayCueParameters      K2Node_MakeStruct_GameplayCueParameters1                         (ContainsInstancedReference)
+// int32                              K2Node_CustomEvent_NewWhichSafeZoneTag                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag                K2Node_CustomEvent_GameplayTag                                   (NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_CustomEvent_bSpawnGameplayCue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              K2Node_Event_SafeZonePhase                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_NotEqual_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue4                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FTransform                  Temp_struct_Variable7                                            (ConstParm, IsPlainOldData, NoDestructor)
+// class UPointLightComponent*        CallFunc_AddComponent_ReturnValue1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetValueAtLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage*                Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_FloatFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_LessEqual_FloatFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue2                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UParticleSystemComponent*    CallFunc_SpawnEmitterAttached_ReturnValue3                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAbilitySystemComponent*     CallFunc_GetAbilitySystemComponent_ReturnValue                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FActiveGameplayEffectHandle CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue                (NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue3                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UAnimMontage*                Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UAnimMontage*                K2Node_Select3_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAnimMontage*                K2Node_Select4_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_PlayLocalAnimMontage_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_FInterpTo_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& Temp_struct_Variable1, bool Temp_bool_Variable1, const struct FLinearColor& Temp_struct_Variable12, const struct FLinearColor& Temp_struct_Variable123, bool CallFunc_IsValid_ReturnValue, bool Temp_bool_Variable12, class UAnimMontage* Temp_object_Variable, bool CallFunc_IsValid_ReturnValue1, bool Temp_bool_Variable123, bool CallFunc_IsValid_ReturnValue12, float Temp_float_Variable, const struct FTransform& Temp_struct_Variable1234, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UPostProcessComponent* CallFunc_AddComponent_ReturnValue, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, bool Temp_bool_Variable1234, bool Temp_bool_Has_Been_Initd_Variable, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Has_Been_Initd_Variable1, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue1, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType12345, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters12345, bool K2Node_SwitchEnum_CmpSuccess, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType1234, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters1234, bool K2Node_SwitchEnum1_CmpSuccess, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, class AController* K2Node_Event_NewController, bool CallFunc_IsDedicatedServer_ReturnValue12, bool Temp_bool_IsClosed_Variable1, int32 Temp_int_Array_Index_Variable, bool CallFunc_IsValid_ReturnValue123, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType123, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters123, bool CallFunc_IsValid_ReturnValue1234, bool K2Node_SwitchEnum12_CmpSuccess, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue1, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType12, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters12, bool CallFunc_IsLocallyControlled_ReturnValue, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AFortPawn* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, bool CallFunc_IsParachuteForcedOpen_ReturnValue, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, bool CallFunc_IsSkydiving_ReturnValue, bool CallFunc_IsParachuteOpen_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, const struct FVector& CallFunc_GetVelocity_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue1, const struct FVector& CallFunc_MakeVector_ReturnValue1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable12, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue1, bool CallFunc_IsLocallyControlled_ReturnValue1, bool CallFunc_IsLocallyControlled_ReturnValue12, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class ABP_VictoryDrone_C* CallFunc_FinishSpawningActor_ReturnValue, const struct FTransform& CallFunc_GetTransform_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1, class ADuplicateResOutMesh_C* CallFunc_FinishSpawningActor_ReturnValue1, bool CallFunc_IsDBNO_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue123, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType1, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue12, TArray<class AActor*>& Temp_object_Variable1, const struct FHitResult& CallFunc_LineTraceSingle_OutHit, bool CallFunc_LineTraceSingle_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue123, bool CallFunc_BreakHitResult_bBlockingHit, bool CallFunc_BreakHitResult_bInitialOverlap, float CallFunc_BreakHitResult_Time, float CallFunc_BreakHitResult_Distance, const struct FVector& CallFunc_BreakHitResult_Location, const struct FVector& CallFunc_BreakHitResult_ImpactPoint, const struct FVector& CallFunc_BreakHitResult_Normal, const struct FVector& CallFunc_BreakHitResult_ImpactNormal, class UPhysicalMaterial* CallFunc_BreakHitResult_PhysMat, class AActor* CallFunc_BreakHitResult_HitActor, class UPrimitiveComponent* CallFunc_BreakHitResult_HitComponent, class FName CallFunc_BreakHitResult_HitBoneName, int32 CallFunc_BreakHitResult_HitItem, int32 CallFunc_BreakHitResult_FaceIndex, const struct FVector& CallFunc_BreakHitResult_TraceStart, const struct FVector& CallFunc_BreakHitResult_TraceEnd, const struct FVector& CallFunc_Subtract_VectorVector_ReturnValue, float CallFunc_VSize_ReturnValue1, float CallFunc_MapRangeClamped_ReturnValue12, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float K2Node_Select_Default, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue12, bool CallFunc_IsValid_ReturnValue12345, bool CallFunc_IsValid_ReturnValue123456, int32 K2Node_CustomEvent_ZapCount, float CallFunc_Conv_IntToFloat_ReturnValue, class APlayerCameraManager* CallFunc_GetPlayerCameraManager_ReturnValue, class AEmitterCameraLensEffectBase* CallFunc_AddCameraLensEffect_ReturnValue, const struct FVector& CallFunc_GetLocationInCircle_XY_LocationLocalSpace, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_Add_VectorVector_ReturnValue1, const struct FVector& CallFunc_Add_VectorVector_ReturnValue12, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, float CallFunc_Lerp_ReturnValue, const struct FTransform& CallFunc_MakeTransform_ReturnValue, class AActor* CallFunc_SpawnPooledFXActor_ReturnValue, class ALightningLsystem_C* K2Node_DynamicCast_AsLightning_Lsystem, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue1234567, float CallFunc_RandomFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool Temp_bool_IsClosed_Variable12, bool CallFunc_Less_IntInt_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, bool CallFunc_Greater_FloatFloat_ReturnValue1, const struct FLinearColor& K2Node_Select1_Default, const struct FLinearColor& K2Node_Select12_Default, bool CallFunc_IsDedicatedServer_ReturnValue123, const struct FTransform& Temp_struct_Variable12345, class UPointLightComponent* CallFunc_AddComponent_ReturnValue1, bool CallFunc_IsValid_ReturnValue12345678, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue, const struct FVector& K2Node_CustomEvent_Location, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_BreakVector_X1, float CallFunc_BreakVector_Y1, float CallFunc_BreakVector_Z1, const struct FVector& CallFunc_MakeVector_ReturnValue12, float CallFunc_Divide_FloatFloat_ReturnValue1, class APlayerController* CallFunc_GetLocalViewingPlayerController_ReturnValue, bool CallFunc_IsSkydiving_ReturnValue1, bool CallFunc_IsValid_ReturnValue123456789, float CallFunc_FInterpTo_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue1234, bool CallFunc_IsFalling_ReturnValue, bool CallFunc_IsValid_ReturnValue12345678910, bool CallFunc_IsValid_ReturnValue1234567891011, bool CallFunc_BooleanOR_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue1, class UAudioComponent* CallFunc_SpawnSound2D_ReturnValue1, bool CallFunc_IsValid_ReturnValue123456789101112, bool CallFunc_IsSkydiving_ReturnValue12, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsValid_ReturnValue12345678910111213, bool CallFunc_IsValid_ReturnValue1234567891011121314, bool CallFunc_IsActive_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue1, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UParticleSystem* CallFunc_GetContrailParticleSystem_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable123, bool CallFunc_IsMobilePlatform_ReturnValue1, bool CallFunc_IsLocallyControlled_ReturnValue12345, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue123456, bool CallFunc_BooleanAND_ReturnValue1, bool CallFunc_InWarmup_InWarmUp, bool CallFunc_InWarmup_InWarmUp1, enum class EEndPlayReason K2Node_Event_EndPlayReason, bool CallFunc_InWarmup_InWarmUp12, bool CallFunc_InWarmup_InWarmUp123, float K2Node_Event_Significance, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue1234, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue12, bool Temp_bool_IsClosed_Variable123, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue1, bool CallFunc_NotEqual_BoolBool_ReturnValue, class UAnimMontage* Temp_object_Variable12, class UAnimMontage* Temp_object_Variable123, class UAnimMontage* K2Node_Select123_Default, float CallFunc_TimeFromJumpApex_ReturnValue, class UAnimMontage* K2Node_Select1234_Default, float CallFunc_MapRangeClamped_ReturnValue123, float CallFunc_PlayLocalAnimMontage_ReturnValue, float CallFunc_FInterpTo_ReturnValue1)
+void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, bool K2Node_SwitchEnum1_CmpSuccess, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_IsInZone_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsValid_ReturnValue1, bool CallFunc_NotEqual_ObjectObject_ReturnValue, bool Temp_bool_Variable, float Temp_float_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const class FString& K2Node_CustomEvent_EventName2, const struct FTimespan& K2Node_CustomEvent_TimeUntilEnd2, const struct FTimespan& K2Node_CustomEvent_TimeSinceBegin2, float K2Node_CustomEvent_TimeSpanRatio2, const class FString& K2Node_CustomEvent_EventName1, const struct FTimespan& K2Node_CustomEvent_TimeUntilEnd1, const struct FTimespan& K2Node_CustomEvent_TimeSinceBegin1, float K2Node_CustomEvent_TimeSpanRatio1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, const class FString& K2Node_CustomEvent_EventName, const struct FTimespan& K2Node_CustomEvent_TimeUntilEnd, const struct FTimespan& K2Node_CustomEvent_TimeSinceBegin, float K2Node_CustomEvent_TimeSpanRatio, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, float Temp_float_Variable1, const struct FTimespan& Temp_struct_Variable, const struct FTimespan& Temp_struct_Variable1, const class FString& Temp_string_Variable, class UFortAsyncAction_CalendarEventWatcher* CallFunc_WatchCalendarEvent_ReturnValue, bool CallFunc_IsValid_ReturnValue2, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType5, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters5, bool K2Node_SwitchEnum2_CmpSuccess, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, const struct FGameplayEventData& K2Node_MakeStruct_GameplayEventData, class AController* K2Node_Event_NewController, bool Temp_bool_IsClosed_Variable, bool Temp_bool_Variable1, bool CallFunc_HasAuthority_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_IsValid_ReturnValue3, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType4, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters4, bool CallFunc_IsLocallyControlled_ReturnValue, float K2Node_Event_Damage, const struct FGameplayTagContainer& K2Node_Event_DamageTags, const struct FVector& K2Node_Event_Momentum, const struct FHitResult& K2Node_Event_HitInfo, class AFortPawn* K2Node_Event_InstigatedBy, class AActor* K2Node_Event_DamageCauser, const struct FGameplayEffectContextHandle& K2Node_Event_EffectContext, bool CallFunc_IsSkydiving_ReturnValue, bool CallFunc_IsParachuteOpen_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue1, const struct FVector& CallFunc_GetVelocity_ReturnValue, float CallFunc_VSize_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue, const struct FVector& CallFunc_MakeVector_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable1, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue1, bool CallFunc_IsLocallyControlled_ReturnValue1, bool CallFunc_IsLocallyControlled_ReturnValue2, bool CallFunc_IsDBNO_ReturnValue, bool CallFunc_IsLocallyControlled_ReturnValue3, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType3, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters3, bool Temp_bool_IsClosed_Variable1, bool Temp_bool_Has_Been_Initd_Variable2, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue1, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float K2Node_Select_Default, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_RandomFloatInRange_ReturnValue2, bool Temp_bool_IsClosed_Variable2, bool Temp_bool_Has_Been_Initd_Variable3, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType2, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters2, bool K2Node_SwitchEnum3_CmpSuccess, class USceneComponent* CallFunc_K2_GetRootComponent_ReturnValue, const struct FVector& CallFunc_GetLocationInCircle_XY_LocationLocalSpace, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FHitResult& CallFunc_K2_SetWorldLocation_SweepHitResult, const struct FVector& CallFunc_Add_VectorVector_ReturnValue, float CallFunc_RandomFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, int32 CallFunc_Array_Length_ReturnValue, const struct FTransform& Temp_struct_Variable2, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UPostProcessComponent* CallFunc_AddComponent_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType1, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters1, bool CallFunc_Greater_FloatFloat_ReturnValue1, bool Temp_bool_IsClosed_Variable3, const struct FVector& K2Node_CustomEvent_Location, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, float CallFunc_BreakVector_X1, float CallFunc_BreakVector_Y1, float CallFunc_BreakVector_Z1, const struct FVector& CallFunc_MakeVector_ReturnValue1, float CallFunc_Divide_FloatFloat_ReturnValue1, bool CallFunc_IsSkydiving_ReturnValue1, class UAnimMontage* Temp_object_Variable, bool CallFunc_IsSkydiving_ReturnValue2, bool CallFunc_Not_PreBool_ReturnValue1, bool Temp_bool_Variable2, const struct FLinearColor& Temp_struct_Variable3, int32 Temp_int_Variable, bool CallFunc_IsDedicatedServer_ReturnValue2, class UParticleSystem* CallFunc_GetContrailParticleSystem_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue, bool CallFunc_IsMobilePlatform_ReturnValue1, const struct FLinearColor& Temp_struct_Variable4, bool CallFunc_IsLocallyControlled_ReturnValue4, bool CallFunc_IsLocallyControlled_ReturnValue5, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue1, bool Temp_bool_Variable3, enum class EEndPlayReason K2Node_Event_EndPlayReason, const struct FLinearColor& K2Node_Select1_Default, const struct FRotator& CallFunc_K2_GetComponentRotation_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue2, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue1, int32 Temp_int_Array_Index_Variable, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, class UMaterialInstanceDynamic* CallFunc_Array_Get_Item, bool CallFunc_NotEqual_BoolBool_ReturnValue, const struct FLinearColor& Temp_struct_Variable5, const struct FLinearColor& Temp_struct_Variable6, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AFortPlayerPawn* K2Node_CustomEvent_Pawn, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate3, class ABP_VictoryDrone_C* CallFunc_FinishSpawningActor_ReturnValue, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue1, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1, class ABP_VictoryDrone_Athena_C* CallFunc_FinishSpawningActor_ReturnValue1, bool Temp_bool_Variable4, const struct FLinearColor& K2Node_Select2_Default, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue2, class UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue1, float CallFunc_Lerp_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, enum class EGameplayCueEvent K2Node_GameplayCueEvent_EventType, const struct FGameplayCueParameters& K2Node_GameplayCueEvent_Parameters, bool K2Node_SwitchEnum4_CmpSuccess, class AGameStateBase* CallFunc_GetGameState_ReturnValue, class AGameStateBase* CallFunc_GetGameState_ReturnValue1, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena, bool K2Node_DynamicCast_bSuccess, class AFortGameStateAthena* K2Node_DynamicCast_AsFort_Game_State_Athena1, bool K2Node_DynamicCast_bSuccess1, int32 CallFunc_Conv_ByteToInt_ReturnValue, int32 CallFunc_Conv_ByteToInt_ReturnValue1, const struct FGameplayCueParameters& K2Node_MakeStruct_GameplayCueParameters, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue1, int32 K2Node_CustomEvent_InSafeZonePhase, bool K2Node_CustomEvent_bSpawnGameplayCue1, const struct FGameplayCueParameters& K2Node_MakeStruct_GameplayCueParameters1, int32 K2Node_CustomEvent_NewWhichSafeZoneTag, const struct FGameplayTag& K2Node_CustomEvent_GameplayTag, bool K2Node_CustomEvent_bSpawnGameplayCue, int32 K2Node_Event_SafeZonePhase, bool CallFunc_NotEqual_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue4, const struct FTransform& Temp_struct_Variable7, class UPointLightComponent* CallFunc_AddComponent_ReturnValue1, float CallFunc_GetValueAtLevel_ReturnValue, class UAnimMontage* Temp_object_Variable1, bool CallFunc_Less_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue2, class UParticleSystemComponent* CallFunc_SpawnEmitterAttached_ReturnValue3, class UAbilitySystemComponent* CallFunc_GetAbilitySystemComponent_ReturnValue, const struct FActiveGameplayEffectHandle& CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue3, int32 CallFunc_Add_IntInt_ReturnValue1, bool CallFunc_Greater_IntInt_ReturnValue, class UAnimMontage* Temp_object_Variable2, bool CallFunc_BooleanOR_ReturnValue, class UAnimMontage* K2Node_Select3_Default, class UAnimMontage* K2Node_Select4_Default, float CallFunc_PlayLocalAnimMontage_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ExecuteUbergraph_PlayerPawn_Athena");
 
 	Params::APlayerPawn_Athena_C_ExecuteUbergraph_PlayerPawn_Athena_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
+	Parms.K2Node_SwitchEnum1_CmpSuccess = K2Node_SwitchEnum1_CmpSuccess;
+	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
+	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
+	Parms.CallFunc_IsInZone_ReturnValue = CallFunc_IsInZone_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue1 = CallFunc_IsValid_ReturnValue1;
+	Parms.CallFunc_NotEqual_ObjectObject_ReturnValue = CallFunc_NotEqual_ObjectObject_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_float_Variable = Temp_float_Variable;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.K2Node_CustomEvent_EventName2 = K2Node_CustomEvent_EventName2;
+	Parms.K2Node_CustomEvent_TimeUntilEnd2 = K2Node_CustomEvent_TimeUntilEnd2;
+	Parms.K2Node_CustomEvent_TimeSinceBegin2 = K2Node_CustomEvent_TimeSinceBegin2;
+	Parms.K2Node_CustomEvent_TimeSpanRatio2 = K2Node_CustomEvent_TimeSpanRatio2;
+	Parms.K2Node_CustomEvent_EventName1 = K2Node_CustomEvent_EventName1;
+	Parms.K2Node_CustomEvent_TimeUntilEnd1 = K2Node_CustomEvent_TimeUntilEnd1;
+	Parms.K2Node_CustomEvent_TimeSinceBegin1 = K2Node_CustomEvent_TimeSinceBegin1;
+	Parms.K2Node_CustomEvent_TimeSpanRatio1 = K2Node_CustomEvent_TimeSpanRatio1;
+	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
+	Parms.K2Node_CustomEvent_EventName = K2Node_CustomEvent_EventName;
+	Parms.K2Node_CustomEvent_TimeUntilEnd = K2Node_CustomEvent_TimeUntilEnd;
+	Parms.K2Node_CustomEvent_TimeSinceBegin = K2Node_CustomEvent_TimeSinceBegin;
+	Parms.K2Node_CustomEvent_TimeSpanRatio = K2Node_CustomEvent_TimeSpanRatio;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
+	Parms.Temp_float_Variable1 = Temp_float_Variable1;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable1 = Temp_struct_Variable1;
-	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
-	Parms.Temp_struct_Variable12 = Temp_struct_Variable12;
-	Parms.Temp_struct_Variable123 = Temp_struct_Variable123;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.Temp_bool_Variable12 = Temp_bool_Variable12;
-	Parms.Temp_object_Variable = Temp_object_Variable;
-	Parms.CallFunc_IsValid_ReturnValue1 = CallFunc_IsValid_ReturnValue1;
-	Parms.Temp_bool_Variable123 = Temp_bool_Variable123;
-	Parms.CallFunc_IsValid_ReturnValue12 = CallFunc_IsValid_ReturnValue12;
-	Parms.Temp_float_Variable = Temp_float_Variable;
-	Parms.Temp_struct_Variable1234 = Temp_struct_Variable1234;
-	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
-	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
-	Parms.CallFunc_K2_GetRootComponent_ReturnValue = CallFunc_K2_GetRootComponent_ReturnValue;
-	Parms.CallFunc_SpawnSoundAttached_ReturnValue = CallFunc_SpawnSoundAttached_ReturnValue;
-	Parms.Temp_bool_Variable1234 = Temp_bool_Variable1234;
-	Parms.Temp_bool_Has_Been_Initd_Variable = Temp_bool_Has_Been_Initd_Variable;
-	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
-	Parms.Temp_bool_Has_Been_Initd_Variable1 = Temp_bool_Has_Been_Initd_Variable1;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue1 = CallFunc_IsDedicatedServer_ReturnValue1;
-	Parms.K2Node_GameplayCueEvent_EventType12345 = K2Node_GameplayCueEvent_EventType12345;
-	Parms.K2Node_GameplayCueEvent_Parameters12345 = K2Node_GameplayCueEvent_Parameters12345;
-	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
-	Parms.K2Node_GameplayCueEvent_EventType1234 = K2Node_GameplayCueEvent_EventType1234;
-	Parms.K2Node_GameplayCueEvent_Parameters1234 = K2Node_GameplayCueEvent_Parameters1234;
-	Parms.K2Node_SwitchEnum1_CmpSuccess = K2Node_SwitchEnum1_CmpSuccess;
+	Parms.Temp_string_Variable = Temp_string_Variable;
+	Parms.CallFunc_WatchCalendarEvent_ReturnValue = CallFunc_WatchCalendarEvent_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue2 = CallFunc_IsValid_ReturnValue2;
+	Parms.K2Node_GameplayCueEvent_EventType5 = K2Node_GameplayCueEvent_EventType5;
+	Parms.K2Node_GameplayCueEvent_Parameters5 = K2Node_GameplayCueEvent_Parameters5;
+	Parms.K2Node_SwitchEnum2_CmpSuccess = K2Node_SwitchEnum2_CmpSuccess;
 	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
 	Parms.K2Node_MakeStruct_GameplayEventData = K2Node_MakeStruct_GameplayEventData;
 	Parms.K2Node_Event_NewController = K2Node_Event_NewController;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue12 = CallFunc_IsDedicatedServer_ReturnValue12;
-	Parms.Temp_bool_IsClosed_Variable1 = Temp_bool_IsClosed_Variable1;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.CallFunc_IsValid_ReturnValue123 = CallFunc_IsValid_ReturnValue123;
-	Parms.K2Node_GameplayCueEvent_EventType123 = K2Node_GameplayCueEvent_EventType123;
-	Parms.K2Node_GameplayCueEvent_Parameters123 = K2Node_GameplayCueEvent_Parameters123;
-	Parms.CallFunc_IsValid_ReturnValue1234 = CallFunc_IsValid_ReturnValue1234;
-	Parms.K2Node_SwitchEnum12_CmpSuccess = K2Node_SwitchEnum12_CmpSuccess;
-	Parms.CallFunc_SpawnSoundAttached_ReturnValue1 = CallFunc_SpawnSoundAttached_ReturnValue1;
-	Parms.K2Node_GameplayCueEvent_EventType12 = K2Node_GameplayCueEvent_EventType12;
-	Parms.K2Node_GameplayCueEvent_Parameters12 = K2Node_GameplayCueEvent_Parameters12;
+	Parms.Temp_bool_IsClosed_Variable = Temp_bool_IsClosed_Variable;
+	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
+	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
+	Parms.Temp_bool_Has_Been_Initd_Variable = Temp_bool_Has_Been_Initd_Variable;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue3 = CallFunc_IsValid_ReturnValue3;
+	Parms.K2Node_GameplayCueEvent_EventType4 = K2Node_GameplayCueEvent_EventType4;
+	Parms.K2Node_GameplayCueEvent_Parameters4 = K2Node_GameplayCueEvent_Parameters4;
 	Parms.CallFunc_IsLocallyControlled_ReturnValue = CallFunc_IsLocallyControlled_ReturnValue;
 	Parms.K2Node_Event_Damage = K2Node_Event_Damage;
 	Parms.K2Node_Event_DamageTags = K2Node_Event_DamageTags;
@@ -1253,156 +1917,207 @@ void APlayerPawn_Athena_C::ExecuteUbergraph_PlayerPawn_Athena(int32 EntryPoint, 
 	Parms.K2Node_Event_InstigatedBy = K2Node_Event_InstigatedBy;
 	Parms.K2Node_Event_DamageCauser = K2Node_Event_DamageCauser;
 	Parms.K2Node_Event_EffectContext = K2Node_Event_EffectContext;
-	Parms.CallFunc_IsParachuteForcedOpen_ReturnValue = CallFunc_IsParachuteForcedOpen_ReturnValue;
-	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
-	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
-	Parms.CallFunc_GetWorldDeltaSeconds_ReturnValue = CallFunc_GetWorldDeltaSeconds_ReturnValue;
-	Parms.CallFunc_Add_VectorVector_ReturnValue = CallFunc_Add_VectorVector_ReturnValue;
 	Parms.CallFunc_IsSkydiving_ReturnValue = CallFunc_IsSkydiving_ReturnValue;
 	Parms.CallFunc_IsParachuteOpen_ReturnValue = CallFunc_IsParachuteOpen_ReturnValue;
 	Parms.CallFunc_SpawnEmitterAttached_ReturnValue = CallFunc_SpawnEmitterAttached_ReturnValue;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue1 = CallFunc_IsDedicatedServer_ReturnValue1;
 	Parms.CallFunc_GetVelocity_ReturnValue = CallFunc_GetVelocity_ReturnValue;
 	Parms.CallFunc_VSize_ReturnValue = CallFunc_VSize_ReturnValue;
 	Parms.CallFunc_MapRangeClamped_ReturnValue = CallFunc_MapRangeClamped_ReturnValue;
+	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
 	Parms.CallFunc_MapRangeClamped_ReturnValue1 = CallFunc_MapRangeClamped_ReturnValue1;
-	Parms.CallFunc_MakeVector_ReturnValue1 = CallFunc_MakeVector_ReturnValue1;
 	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
-	Parms.Temp_bool_Has_Been_Initd_Variable12 = Temp_bool_Has_Been_Initd_Variable12;
+	Parms.Temp_bool_Has_Been_Initd_Variable1 = Temp_bool_Has_Been_Initd_Variable1;
 	Parms.CallFunc_SpawnEmitterAttached_ReturnValue1 = CallFunc_SpawnEmitterAttached_ReturnValue1;
 	Parms.CallFunc_IsLocallyControlled_ReturnValue1 = CallFunc_IsLocallyControlled_ReturnValue1;
-	Parms.CallFunc_IsLocallyControlled_ReturnValue12 = CallFunc_IsLocallyControlled_ReturnValue12;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_K2_GetComponentToWorld_ReturnValue = CallFunc_K2_GetComponentToWorld_ReturnValue;
-	Parms.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue = CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue;
-	Parms.CallFunc_FinishSpawningActor_ReturnValue = CallFunc_FinishSpawningActor_ReturnValue;
-	Parms.CallFunc_GetTransform_ReturnValue = CallFunc_GetTransform_ReturnValue;
-	Parms.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1 = CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1;
-	Parms.CallFunc_FinishSpawningActor_ReturnValue1 = CallFunc_FinishSpawningActor_ReturnValue1;
+	Parms.CallFunc_IsLocallyControlled_ReturnValue2 = CallFunc_IsLocallyControlled_ReturnValue2;
 	Parms.CallFunc_IsDBNO_ReturnValue = CallFunc_IsDBNO_ReturnValue;
-	Parms.CallFunc_IsLocallyControlled_ReturnValue123 = CallFunc_IsLocallyControlled_ReturnValue123;
-	Parms.K2Node_GameplayCueEvent_EventType1 = K2Node_GameplayCueEvent_EventType1;
-	Parms.K2Node_GameplayCueEvent_Parameters1 = K2Node_GameplayCueEvent_Parameters1;
-	Parms.CallFunc_SpawnEmitterAttached_ReturnValue12 = CallFunc_SpawnEmitterAttached_ReturnValue12;
-	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.CallFunc_LineTraceSingle_OutHit = CallFunc_LineTraceSingle_OutHit;
-	Parms.CallFunc_LineTraceSingle_ReturnValue = CallFunc_LineTraceSingle_ReturnValue;
-	Parms.CallFunc_SpawnEmitterAttached_ReturnValue123 = CallFunc_SpawnEmitterAttached_ReturnValue123;
-	Parms.CallFunc_BreakHitResult_bBlockingHit = CallFunc_BreakHitResult_bBlockingHit;
-	Parms.CallFunc_BreakHitResult_bInitialOverlap = CallFunc_BreakHitResult_bInitialOverlap;
-	Parms.CallFunc_BreakHitResult_Time = CallFunc_BreakHitResult_Time;
-	Parms.CallFunc_BreakHitResult_Distance = CallFunc_BreakHitResult_Distance;
-	Parms.CallFunc_BreakHitResult_Location = CallFunc_BreakHitResult_Location;
-	Parms.CallFunc_BreakHitResult_ImpactPoint = CallFunc_BreakHitResult_ImpactPoint;
-	Parms.CallFunc_BreakHitResult_Normal = CallFunc_BreakHitResult_Normal;
-	Parms.CallFunc_BreakHitResult_ImpactNormal = CallFunc_BreakHitResult_ImpactNormal;
-	Parms.CallFunc_BreakHitResult_PhysMat = CallFunc_BreakHitResult_PhysMat;
-	Parms.CallFunc_BreakHitResult_HitActor = CallFunc_BreakHitResult_HitActor;
-	Parms.CallFunc_BreakHitResult_HitComponent = CallFunc_BreakHitResult_HitComponent;
-	Parms.CallFunc_BreakHitResult_HitBoneName = CallFunc_BreakHitResult_HitBoneName;
-	Parms.CallFunc_BreakHitResult_HitItem = CallFunc_BreakHitResult_HitItem;
-	Parms.CallFunc_BreakHitResult_FaceIndex = CallFunc_BreakHitResult_FaceIndex;
-	Parms.CallFunc_BreakHitResult_TraceStart = CallFunc_BreakHitResult_TraceStart;
-	Parms.CallFunc_BreakHitResult_TraceEnd = CallFunc_BreakHitResult_TraceEnd;
-	Parms.CallFunc_Subtract_VectorVector_ReturnValue = CallFunc_Subtract_VectorVector_ReturnValue;
-	Parms.CallFunc_VSize_ReturnValue1 = CallFunc_VSize_ReturnValue1;
-	Parms.CallFunc_MapRangeClamped_ReturnValue12 = CallFunc_MapRangeClamped_ReturnValue12;
+	Parms.CallFunc_IsLocallyControlled_ReturnValue3 = CallFunc_IsLocallyControlled_ReturnValue3;
+	Parms.K2Node_GameplayCueEvent_EventType3 = K2Node_GameplayCueEvent_EventType3;
+	Parms.K2Node_GameplayCueEvent_Parameters3 = K2Node_GameplayCueEvent_Parameters3;
+	Parms.Temp_bool_IsClosed_Variable1 = Temp_bool_IsClosed_Variable1;
+	Parms.Temp_bool_Has_Been_Initd_Variable2 = Temp_bool_Has_Been_Initd_Variable2;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue1 = CallFunc_RandomFloatInRange_ReturnValue1;
 	Parms.CallFunc_GreaterEqual_FloatFloat_ReturnValue = CallFunc_GreaterEqual_FloatFloat_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
-	Parms.CallFunc_RandomFloatInRange_ReturnValue12 = CallFunc_RandomFloatInRange_ReturnValue12;
-	Parms.CallFunc_IsValid_ReturnValue12345 = CallFunc_IsValid_ReturnValue12345;
-	Parms.CallFunc_IsValid_ReturnValue123456 = CallFunc_IsValid_ReturnValue123456;
-	Parms.K2Node_CustomEvent_ZapCount = K2Node_CustomEvent_ZapCount;
-	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
-	Parms.CallFunc_GetPlayerCameraManager_ReturnValue = CallFunc_GetPlayerCameraManager_ReturnValue;
-	Parms.CallFunc_AddCameraLensEffect_ReturnValue = CallFunc_AddCameraLensEffect_ReturnValue;
+	Parms.CallFunc_RandomFloatInRange_ReturnValue2 = CallFunc_RandomFloatInRange_ReturnValue2;
+	Parms.Temp_bool_IsClosed_Variable2 = Temp_bool_IsClosed_Variable2;
+	Parms.Temp_bool_Has_Been_Initd_Variable3 = Temp_bool_Has_Been_Initd_Variable3;
+	Parms.K2Node_GameplayCueEvent_EventType2 = K2Node_GameplayCueEvent_EventType2;
+	Parms.K2Node_GameplayCueEvent_Parameters2 = K2Node_GameplayCueEvent_Parameters2;
+	Parms.K2Node_SwitchEnum3_CmpSuccess = K2Node_SwitchEnum3_CmpSuccess;
+	Parms.CallFunc_K2_GetRootComponent_ReturnValue = CallFunc_K2_GetRootComponent_ReturnValue;
 	Parms.CallFunc_GetLocationInCircle_XY_LocationLocalSpace = CallFunc_GetLocationInCircle_XY_LocationLocalSpace;
+	Parms.CallFunc_SpawnSoundAttached_ReturnValue = CallFunc_SpawnSoundAttached_ReturnValue;
 	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
-	Parms.CallFunc_Add_VectorVector_ReturnValue1 = CallFunc_Add_VectorVector_ReturnValue1;
-	Parms.CallFunc_Add_VectorVector_ReturnValue12 = CallFunc_Add_VectorVector_ReturnValue12;
 	Parms.CallFunc_K2_SetWorldLocation_SweepHitResult = CallFunc_K2_SetWorldLocation_SweepHitResult;
-	Parms.CallFunc_Lerp_ReturnValue = CallFunc_Lerp_ReturnValue;
-	Parms.CallFunc_MakeTransform_ReturnValue = CallFunc_MakeTransform_ReturnValue;
-	Parms.CallFunc_SpawnPooledFXActor_ReturnValue = CallFunc_SpawnPooledFXActor_ReturnValue;
-	Parms.K2Node_DynamicCast_AsLightning_Lsystem = K2Node_DynamicCast_AsLightning_Lsystem;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_IsValid_ReturnValue1234567 = CallFunc_IsValid_ReturnValue1234567;
+	Parms.CallFunc_Add_VectorVector_ReturnValue = CallFunc_Add_VectorVector_ReturnValue;
 	Parms.CallFunc_RandomFloat_ReturnValue = CallFunc_RandomFloat_ReturnValue;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.Temp_bool_IsClosed_Variable12 = Temp_bool_IsClosed_Variable12;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.K2Node_GameplayCueEvent_EventType = K2Node_GameplayCueEvent_EventType;
-	Parms.K2Node_GameplayCueEvent_Parameters = K2Node_GameplayCueEvent_Parameters;
+	Parms.Temp_struct_Variable2 = Temp_struct_Variable2;
+	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
+	Parms.CallFunc_AddComponent_ReturnValue = CallFunc_AddComponent_ReturnValue;
+	Parms.K2Node_GameplayCueEvent_EventType1 = K2Node_GameplayCueEvent_EventType1;
+	Parms.K2Node_GameplayCueEvent_Parameters1 = K2Node_GameplayCueEvent_Parameters1;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue1 = CallFunc_Greater_FloatFloat_ReturnValue1;
-	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
-	Parms.K2Node_Select12_Default = K2Node_Select12_Default;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue123 = CallFunc_IsDedicatedServer_ReturnValue123;
-	Parms.Temp_struct_Variable12345 = Temp_struct_Variable12345;
-	Parms.CallFunc_AddComponent_ReturnValue1 = CallFunc_AddComponent_ReturnValue1;
-	Parms.CallFunc_IsValid_ReturnValue12345678 = CallFunc_IsValid_ReturnValue12345678;
-	Parms.CallFunc_SpawnSound2D_ReturnValue = CallFunc_SpawnSound2D_ReturnValue;
+	Parms.Temp_bool_IsClosed_Variable3 = Temp_bool_IsClosed_Variable3;
 	Parms.K2Node_CustomEvent_Location = K2Node_CustomEvent_Location;
-	Parms.CallFunc_K2_GetActorLocation_ReturnValue1 = CallFunc_K2_GetActorLocation_ReturnValue1;
+	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
 	Parms.CallFunc_BreakVector_X = CallFunc_BreakVector_X;
 	Parms.CallFunc_BreakVector_Y = CallFunc_BreakVector_Y;
 	Parms.CallFunc_BreakVector_Z = CallFunc_BreakVector_Z;
 	Parms.CallFunc_BreakVector_X1 = CallFunc_BreakVector_X1;
 	Parms.CallFunc_BreakVector_Y1 = CallFunc_BreakVector_Y1;
 	Parms.CallFunc_BreakVector_Z1 = CallFunc_BreakVector_Z1;
-	Parms.CallFunc_MakeVector_ReturnValue12 = CallFunc_MakeVector_ReturnValue12;
+	Parms.CallFunc_MakeVector_ReturnValue1 = CallFunc_MakeVector_ReturnValue1;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue1 = CallFunc_Divide_FloatFloat_ReturnValue1;
-	Parms.CallFunc_GetLocalViewingPlayerController_ReturnValue = CallFunc_GetLocalViewingPlayerController_ReturnValue;
 	Parms.CallFunc_IsSkydiving_ReturnValue1 = CallFunc_IsSkydiving_ReturnValue1;
-	Parms.CallFunc_IsValid_ReturnValue123456789 = CallFunc_IsValid_ReturnValue123456789;
-	Parms.CallFunc_FInterpTo_ReturnValue = CallFunc_FInterpTo_ReturnValue;
-	Parms.CallFunc_IsLocallyControlled_ReturnValue1234 = CallFunc_IsLocallyControlled_ReturnValue1234;
-	Parms.CallFunc_IsFalling_ReturnValue = CallFunc_IsFalling_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue12345678910 = CallFunc_IsValid_ReturnValue12345678910;
-	Parms.CallFunc_IsValid_ReturnValue1234567891011 = CallFunc_IsValid_ReturnValue1234567891011;
-	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
-	Parms.CallFunc_GetWorldDeltaSeconds_ReturnValue1 = CallFunc_GetWorldDeltaSeconds_ReturnValue1;
-	Parms.CallFunc_SpawnSound2D_ReturnValue1 = CallFunc_SpawnSound2D_ReturnValue1;
-	Parms.CallFunc_IsValid_ReturnValue123456789101112 = CallFunc_IsValid_ReturnValue123456789101112;
-	Parms.CallFunc_IsSkydiving_ReturnValue12 = CallFunc_IsSkydiving_ReturnValue12;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue12345678910111213 = CallFunc_IsValid_ReturnValue12345678910111213;
-	Parms.CallFunc_IsValid_ReturnValue1234567891011121314 = CallFunc_IsValid_ReturnValue1234567891011121314;
-	Parms.CallFunc_IsActive_ReturnValue = CallFunc_IsActive_ReturnValue;
-	Parms.CallFunc_K2_GetComponentLocation_ReturnValue1 = CallFunc_K2_GetComponentLocation_ReturnValue1;
-	Parms.CallFunc_SpawnEmitterAtLocation_ReturnValue = CallFunc_SpawnEmitterAtLocation_ReturnValue;
+	Parms.Temp_object_Variable = Temp_object_Variable;
+	Parms.CallFunc_IsSkydiving_ReturnValue2 = CallFunc_IsSkydiving_ReturnValue2;
+	Parms.CallFunc_Not_PreBool_ReturnValue1 = CallFunc_Not_PreBool_ReturnValue1;
+	Parms.Temp_bool_Variable2 = Temp_bool_Variable2;
+	Parms.Temp_struct_Variable3 = Temp_struct_Variable3;
+	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue2 = CallFunc_IsDedicatedServer_ReturnValue2;
 	Parms.CallFunc_GetContrailParticleSystem_ReturnValue = CallFunc_GetContrailParticleSystem_ReturnValue;
 	Parms.CallFunc_IsMobilePlatform_ReturnValue = CallFunc_IsMobilePlatform_ReturnValue;
-	Parms.Temp_bool_Has_Been_Initd_Variable123 = Temp_bool_Has_Been_Initd_Variable123;
 	Parms.CallFunc_IsMobilePlatform_ReturnValue1 = CallFunc_IsMobilePlatform_ReturnValue1;
-	Parms.CallFunc_IsLocallyControlled_ReturnValue12345 = CallFunc_IsLocallyControlled_ReturnValue12345;
+	Parms.Temp_struct_Variable4 = Temp_struct_Variable4;
+	Parms.CallFunc_IsLocallyControlled_ReturnValue4 = CallFunc_IsLocallyControlled_ReturnValue4;
+	Parms.CallFunc_IsLocallyControlled_ReturnValue5 = CallFunc_IsLocallyControlled_ReturnValue5;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
-	Parms.CallFunc_IsLocallyControlled_ReturnValue123456 = CallFunc_IsLocallyControlled_ReturnValue123456;
 	Parms.CallFunc_BooleanAND_ReturnValue1 = CallFunc_BooleanAND_ReturnValue1;
-	Parms.CallFunc_InWarmup_InWarmUp = CallFunc_InWarmup_InWarmUp;
-	Parms.CallFunc_InWarmup_InWarmUp1 = CallFunc_InWarmup_InWarmUp1;
+	Parms.Temp_bool_Variable3 = Temp_bool_Variable3;
 	Parms.K2Node_Event_EndPlayReason = K2Node_Event_EndPlayReason;
-	Parms.CallFunc_InWarmup_InWarmUp12 = CallFunc_InWarmup_InWarmUp12;
-	Parms.CallFunc_InWarmup_InWarmUp123 = CallFunc_InWarmup_InWarmUp123;
-	Parms.K2Node_Event_Significance = K2Node_Event_Significance;
+	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
 	Parms.CallFunc_K2_GetComponentRotation_ReturnValue = CallFunc_K2_GetComponentRotation_ReturnValue;
-	Parms.CallFunc_SpawnEmitterAttached_ReturnValue1234 = CallFunc_SpawnEmitterAttached_ReturnValue1234;
-	Parms.CallFunc_K2_GetComponentLocation_ReturnValue12 = CallFunc_K2_GetComponentLocation_ReturnValue12;
-	Parms.Temp_bool_IsClosed_Variable123 = Temp_bool_IsClosed_Variable123;
-	Parms.CallFunc_SpawnEmitterAtLocation_ReturnValue1 = CallFunc_SpawnEmitterAtLocation_ReturnValue1;
+	Parms.CallFunc_SpawnEmitterAttached_ReturnValue2 = CallFunc_SpawnEmitterAttached_ReturnValue2;
+	Parms.CallFunc_K2_GetComponentLocation_ReturnValue1 = CallFunc_K2_GetComponentLocation_ReturnValue1;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.CallFunc_SpawnEmitterAtLocation_ReturnValue = CallFunc_SpawnEmitterAtLocation_ReturnValue;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_NotEqual_BoolBool_ReturnValue = CallFunc_NotEqual_BoolBool_ReturnValue;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.K2Node_Select123_Default = K2Node_Select123_Default;
-	Parms.CallFunc_TimeFromJumpApex_ReturnValue = CallFunc_TimeFromJumpApex_ReturnValue;
-	Parms.K2Node_Select1234_Default = K2Node_Select1234_Default;
-	Parms.CallFunc_MapRangeClamped_ReturnValue123 = CallFunc_MapRangeClamped_ReturnValue123;
+	Parms.Temp_struct_Variable5 = Temp_struct_Variable5;
+	Parms.Temp_struct_Variable6 = Temp_struct_Variable6;
+	Parms.CallFunc_K2_GetComponentToWorld_ReturnValue = CallFunc_K2_GetComponentToWorld_ReturnValue;
+	Parms.K2Node_CustomEvent_Pawn = K2Node_CustomEvent_Pawn;
+	Parms.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue = CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate3 = K2Node_CreateDelegate_OutputDelegate3;
+	Parms.CallFunc_FinishSpawningActor_ReturnValue = CallFunc_FinishSpawningActor_ReturnValue;
+	Parms.CallFunc_K2_GetComponentToWorld_ReturnValue1 = CallFunc_K2_GetComponentToWorld_ReturnValue1;
+	Parms.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1 = CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue1;
+	Parms.CallFunc_FinishSpawningActor_ReturnValue1 = CallFunc_FinishSpawningActor_ReturnValue1;
+	Parms.Temp_bool_Variable4 = Temp_bool_Variable4;
+	Parms.K2Node_Select2_Default = K2Node_Select2_Default;
+	Parms.CallFunc_K2_GetComponentLocation_ReturnValue2 = CallFunc_K2_GetComponentLocation_ReturnValue2;
+	Parms.CallFunc_SpawnEmitterAtLocation_ReturnValue1 = CallFunc_SpawnEmitterAtLocation_ReturnValue1;
+	Parms.CallFunc_Lerp_ReturnValue = CallFunc_Lerp_ReturnValue;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
+	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
+	Parms.K2Node_GameplayCueEvent_EventType = K2Node_GameplayCueEvent_EventType;
+	Parms.K2Node_GameplayCueEvent_Parameters = K2Node_GameplayCueEvent_Parameters;
+	Parms.K2Node_SwitchEnum4_CmpSuccess = K2Node_SwitchEnum4_CmpSuccess;
+	Parms.CallFunc_GetGameState_ReturnValue = CallFunc_GetGameState_ReturnValue;
+	Parms.CallFunc_GetGameState_ReturnValue1 = CallFunc_GetGameState_ReturnValue1;
+	Parms.K2Node_DynamicCast_AsFort_Game_State_Athena = K2Node_DynamicCast_AsFort_Game_State_Athena;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_DynamicCast_AsFort_Game_State_Athena1 = K2Node_DynamicCast_AsFort_Game_State_Athena1;
+	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
+	Parms.CallFunc_Conv_ByteToInt_ReturnValue = CallFunc_Conv_ByteToInt_ReturnValue;
+	Parms.CallFunc_Conv_ByteToInt_ReturnValue1 = CallFunc_Conv_ByteToInt_ReturnValue1;
+	Parms.K2Node_MakeStruct_GameplayCueParameters = K2Node_MakeStruct_GameplayCueParameters;
+	Parms.CallFunc_SpawnSoundAttached_ReturnValue1 = CallFunc_SpawnSoundAttached_ReturnValue1;
+	Parms.K2Node_CustomEvent_InSafeZonePhase = K2Node_CustomEvent_InSafeZonePhase;
+	Parms.K2Node_CustomEvent_bSpawnGameplayCue1 = K2Node_CustomEvent_bSpawnGameplayCue1;
+	Parms.K2Node_MakeStruct_GameplayCueParameters1 = K2Node_MakeStruct_GameplayCueParameters1;
+	Parms.K2Node_CustomEvent_NewWhichSafeZoneTag = K2Node_CustomEvent_NewWhichSafeZoneTag;
+	Parms.K2Node_CustomEvent_GameplayTag = K2Node_CustomEvent_GameplayTag;
+	Parms.K2Node_CustomEvent_bSpawnGameplayCue = K2Node_CustomEvent_bSpawnGameplayCue;
+	Parms.K2Node_Event_SafeZonePhase = K2Node_Event_SafeZonePhase;
+	Parms.CallFunc_NotEqual_IntInt_ReturnValue = CallFunc_NotEqual_IntInt_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue4 = CallFunc_IsValid_ReturnValue4;
+	Parms.Temp_struct_Variable7 = Temp_struct_Variable7;
+	Parms.CallFunc_AddComponent_ReturnValue1 = CallFunc_AddComponent_ReturnValue1;
+	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
+	Parms.Temp_object_Variable1 = Temp_object_Variable1;
+	Parms.CallFunc_Less_FloatFloat_ReturnValue = CallFunc_Less_FloatFloat_ReturnValue;
+	Parms.CallFunc_LessEqual_FloatFloat_ReturnValue = CallFunc_LessEqual_FloatFloat_ReturnValue;
+	Parms.CallFunc_SpawnSoundAttached_ReturnValue2 = CallFunc_SpawnSoundAttached_ReturnValue2;
+	Parms.CallFunc_SpawnEmitterAttached_ReturnValue3 = CallFunc_SpawnEmitterAttached_ReturnValue3;
+	Parms.CallFunc_GetAbilitySystemComponent_ReturnValue = CallFunc_GetAbilitySystemComponent_ReturnValue;
+	Parms.CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue = CallFunc_BP_ApplyGameplayEffectToSelf_ReturnValue;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue3 = CallFunc_IsDedicatedServer_ReturnValue3;
+	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
+	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
+	Parms.K2Node_Select3_Default = K2Node_Select3_Default;
+	Parms.K2Node_Select4_Default = K2Node_Select4_Default;
 	Parms.CallFunc_PlayLocalAnimMontage_ReturnValue = CallFunc_PlayLocalAnimMontage_ReturnValue;
-	Parms.CallFunc_FInterpTo_ReturnValue1 = CallFunc_FInterpTo_ReturnValue1;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SwingLeft__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::SwingLeft__DelegateSignature()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingLeft__DelegateSignature");
+
+	Params::APlayerPawn_Athena_C_SwingLeft__DelegateSignature_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.SwingRight__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::SwingRight__DelegateSignature()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "SwingRight__DelegateSignature");
+
+	Params::APlayerPawn_Athena_C_SwingRight__DelegateSignature_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ResOut__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::ResOut__DelegateSignature()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ResOut__DelegateSignature");
+
+	Params::APlayerPawn_Athena_C_ResOut__DelegateSignature_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function PlayerPawn_Athena.PlayerPawn_Athena_C.ResIn__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void APlayerPawn_Athena_C::ResIn__DelegateSignature()
+{
+	static auto Func = Class->GetFunction("PlayerPawn_Athena_C", "ResIn__DelegateSignature");
+
+	Params::APlayerPawn_Athena_C_ResIn__DelegateSignature_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 

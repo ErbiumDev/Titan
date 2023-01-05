@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass SetBonus_MaxHealth_High.SetBonus_MaxHealth_High_C
 class USetBonus_MaxHealth_High_C : public UGameplayEffect
 {

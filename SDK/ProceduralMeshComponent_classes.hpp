@@ -28,27 +28,30 @@ public:
 	void GetSectionFromStaticMesh(class UStaticMesh* InMesh, int32 LODIndex, int32 SectionIndex, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents);
 	void GetSectionFromProceduralMesh(class UProceduralMeshComponent* InProcMesh, int32 SectionIndex, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents);
 	void GenerateBoxMesh(const struct FVector& BoxRadius, TArray<struct FVector>* Vertices, TArray<int32>* Triangles, TArray<struct FVector>* Normals, TArray<struct FVector2D>* UVs, TArray<struct FProcMeshTangent>* Tangents);
+	void CreateGridMeshWelded(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, float GridSpacing);
 	void CreateGridMeshTriangles(int32 NumX, int32 NumY, bool bWinding, TArray<int32>* Triangles);
+	void CreateGridMeshSplit(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, TArray<struct FVector2D>* UV1s, float GridSpacing);
 	void CopyProceduralMeshFromStaticMeshComponent(class UStaticMeshComponent* StaticMeshComponent, int32 LODIndex, class UProceduralMeshComponent* ProcMeshComponent, bool bCreateCollision);
 	void ConvertQuadToTriangles(TArray<int32>& Triangles, int32 Vert0, int32 Vert1, int32 Vert2, int32 Vert3);
 	void CalculateTangentsForMesh(TArray<struct FVector>& Vertices, TArray<int32>& Triangles, TArray<struct FVector2D>& UVs, TArray<struct FVector>* Normals, TArray<struct FProcMeshTangent>* Tangents);
 };
 
-// 0x68 (0x6D0 - 0x668)
+// 0x70 (0x610 - 0x5A0)
 // Class ProceduralMeshComponent.ProceduralMeshComponent
 class UProceduralMeshComponent : public UMeshComponent
 {
 public:
-	uint8                                        Pad_2398[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	bool                                         bUseComplexAsSimpleCollision;                      // 0x670(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bUseAsyncCooking;                                  // 0x671(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2399[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UBodySetup*                            ProcMeshBodySetup;                                 // 0x678(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<struct FProcMeshSection>              ProcMeshSections;                                  // 0x680(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	TArray<struct FKConvexElem>                  CollisionConvexElems;                              // 0x690(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	struct FBoxSphereBounds                      LocalBounds;                                       // 0x6A0(0x1C)(IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_239A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class UBodySetup*>                    AsyncBodySetupQueue;                               // 0x6C0(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_2962[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	bool                                         bUseComplexAsSimpleCollision;                      // 0x5A8(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bUseAsyncCooking;                                  // 0x5A9(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2963[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UBodySetup*                            ProcMeshBodySetup;                                 // 0x5B0(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FProcMeshSection>              ProcMeshSections;                                  // 0x5B8(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	TArray<struct FKConvexElem>                  CollisionConvexElems;                              // 0x5C8(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	struct FBoxSphereBounds                      LocalBounds;                                       // 0x5D8(0x1C)(ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_2964[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class UBodySetup*>                    AsyncBodySetupQueue;                               // 0x5F8(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_2965[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

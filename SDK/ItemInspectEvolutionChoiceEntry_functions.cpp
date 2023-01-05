@@ -53,15 +53,15 @@ void UItemInspectEvolutionChoiceEntry_C::SetItemToRepresent(class UFortItem* Ite
 }
 
 
-// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnSelected
+// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UItemInspectEvolutionChoiceEntry_C::OnSelected()
+void UItemInspectEvolutionChoiceEntry_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("ItemInspectEvolutionChoiceEntry_C", "OnSelected");
+	static auto Func = Class->GetFunction("ItemInspectEvolutionChoiceEntry_C", "BP_OnSelected");
 
-	Params::UItemInspectEvolutionChoiceEntry_C_OnSelected_Params Parms;
+	Params::UItemInspectEvolutionChoiceEntry_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -69,7 +69,7 @@ void UItemInspectEvolutionChoiceEntry_C::OnSelected()
 
 
 // Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.ExecuteUbergraph_ItemInspectEvolutionChoiceEntry
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

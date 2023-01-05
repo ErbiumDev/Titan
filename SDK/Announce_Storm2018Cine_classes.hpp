@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3B0 - 0x3B0)
+// 0x0 (0x3C8 - 0x3C8)
 // BlueprintGeneratedClass Announce_Storm2018Cine.Announce_Storm2018Cine_C
 class AAnnounce_Storm2018Cine_C : public AAnnounce_EventCine_C
 {

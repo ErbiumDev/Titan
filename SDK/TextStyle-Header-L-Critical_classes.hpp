@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-L-Critical.TextStyle-Header-L-Critical_C
 class UTextStyle_Header_L_Critical_C : public UTextStyle_Header_L_C
 {

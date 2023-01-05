@@ -12,16 +12,30 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x360 - 0x358)
+// 0x8 (0x270 - 0x268)
 // Class AnimGraphRuntime.AnimCustomInstance
 class UAnimCustomInstance : public UAnimInstance
 {
 public:
-	uint8                                        Pad_249F[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_9E[0x8];                                       // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
 		static class UClass* Clss = UObject::FindClassFast("AnimCustomInstance");
+		return Clss;
+	}
+
+};
+
+// 0x0 (0x270 - 0x270)
+// Class AnimGraphRuntime.AnimSequencerInstance
+class UAnimSequencerInstance : public UAnimCustomInstance
+{
+public:
+
+	static class UClass* StaticClass()
+	{
+		static class UClass* Clss = UObject::FindClassFast("AnimSequencerInstance");
 		return Clss;
 	}
 
@@ -57,20 +71,6 @@ public:
 
 };
 
-// 0x0 (0x360 - 0x360)
-// Class AnimGraphRuntime.AnimSequencerInstance
-class UAnimSequencerInstance : public UAnimCustomInstance
-{
-public:
-
-	static class UClass* StaticClass()
-	{
-		static class UClass* Clss = UObject::FindClassFast("AnimSequencerInstance");
-		return Clss;
-	}
-
-};
-
 // 0x0 (0x28 - 0x28)
 // Class AnimGraphRuntime.KismetAnimationLibrary
 class UKismetAnimationLibrary : public UBlueprintFunctionLibrary
@@ -84,10 +84,14 @@ public:
 	}
 
 	void K2_TwoBoneIK(struct FVector& RootPos, struct FVector& JointPos, struct FVector& EndPos, struct FVector& JointTarget, struct FVector& Effector, struct FVector* OutJointPos, struct FVector* OutEndPos, bool bAllowStretching, float StartStretchRatio, float MaxStretchScale);
+	struct FVector K2_MakePerlinNoiseVectorAndRemap(float X, float Y, float Z, float RangeOutMinX, float RangeOutMaxX, float RangeOutMinY, float RangeOutMaxY, float RangeOutMinZ, float RangeOutMaxZ);
+	float K2_MakePerlinNoiseAndRemap(float Value, float RangeOutMin, float RangeOutMax);
 	struct FTransform K2_LookAt(struct FTransform& CurrentTransform, struct FVector& TargetPosition, const struct FVector& LookAtVector, bool bUseUpVector, const struct FVector& UpVector, float ClampConeInDegree);
+	float K2_DistanceBetweenTwoSocketsAndMapRange(class USkeletalMeshComponent* Component, class FName SocketOrBoneNameA, enum class ERelativeTransformSpace SocketSpaceA, class FName SocketOrBoneNameB, enum class ERelativeTransformSpace SocketSpaceB, bool bRemapRange, float InRangeMin, float InRangeMax, float OutRangeMin, float OutRangeMax);
+	struct FVector K2_DirectionBetweenSockets(class USkeletalMeshComponent* Component, class FName SocketOrBoneNameFrom, class FName SocketOrBoneNameTo);
 };
 
-// 0xE8 (0x110 - 0x28)
+// 0x80 (0xA8 - 0x28)
 // Class AnimGraphRuntime.PlayMontageCallbackProxy
 class UPlayMontageCallbackProxy : public UObject
 {
@@ -97,7 +101,7 @@ public:
 	UMulticastDelegateProperty_                  OnInterrupted;                                     // 0x48(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                  OnNotifyBegin;                                     // 0x58(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 	UMulticastDelegateProperty_                  OnNotifyEnd;                                       // 0x68(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_24A5[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_A8[0x30];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

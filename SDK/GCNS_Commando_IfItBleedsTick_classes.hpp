@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCNS_Commando_IfItBleedsTick.GCNS_Commando_IfItBleedsTick_C
 class UGCNS_Commando_IfItBleedsTick_C : public UFortGameplayCueNotify_Simple
 {

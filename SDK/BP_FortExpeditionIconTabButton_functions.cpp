@@ -308,60 +308,60 @@ void UBP_FortExpeditionIconTabButton_C::Construct()
 }
 
 
-// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnSelected
+// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionIconTabButton_C::OnSelected()
+void UBP_FortExpeditionIconTabButton_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "OnSelected");
+	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "BP_OnSelected");
 
-	Params::UBP_FortExpeditionIconTabButton_C_OnSelected_Params Parms;
+	Params::UBP_FortExpeditionIconTabButton_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnDeselected
+// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionIconTabButton_C::OnDeselected()
+void UBP_FortExpeditionIconTabButton_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "OnDeselected");
+	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "BP_OnDeselected");
 
-	Params::UBP_FortExpeditionIconTabButton_C_OnDeselected_Params Parms;
+	Params::UBP_FortExpeditionIconTabButton_C_BP_OnDeselected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnHovered
+// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionIconTabButton_C::OnHovered()
+void UBP_FortExpeditionIconTabButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "OnHovered");
+	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "BP_OnHovered");
 
-	Params::UBP_FortExpeditionIconTabButton_C_OnHovered_Params Parms;
+	Params::UBP_FortExpeditionIconTabButton_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.OnUnhovered
+// Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionIconTabButton_C::OnUnhovered()
+void UBP_FortExpeditionIconTabButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "OnUnhovered");
+	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "BP_OnUnhovered");
 
-	Params::UBP_FortExpeditionIconTabButton_C_OnUnhovered_Params Parms;
+	Params::UBP_FortExpeditionIconTabButton_C_BP_OnUnhovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -369,7 +369,7 @@ void UBP_FortExpeditionIconTabButton_C::OnUnhovered()
 
 
 // Function BP_FortExpeditionIconTabButton.BP_FortExpeditionIconTabButton_C.ExecuteUbergraph_BP_FortExpeditionIconTabButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
@@ -382,13 +382,13 @@ void UBP_FortExpeditionIconTabButton_C::OnUnhovered()
 // bool                               CallFunc_GetSelected_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetSelected_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor1                                    ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor12                                   ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor123                                  ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor1234                                 ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor12345                                ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor123456                               ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor2                                    ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor3                                    ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor4                                    ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor5                                    ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor6                                    ()
 
-void UBP_FortExpeditionIconTabButton_C::ExecuteUbergraph_BP_FortExpeditionIconTabButton(int32 EntryPoint, const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, bool K2Node_Event_IsDesignTime, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1, const struct FSlateColor& K2Node_MakeStruct_SlateColor1, const struct FSlateColor& K2Node_MakeStruct_SlateColor12, const struct FSlateColor& K2Node_MakeStruct_SlateColor123, const struct FSlateColor& K2Node_MakeStruct_SlateColor1234, const struct FSlateColor& K2Node_MakeStruct_SlateColor12345, const struct FSlateColor& K2Node_MakeStruct_SlateColor123456)
+void UBP_FortExpeditionIconTabButton_C::ExecuteUbergraph_BP_FortExpeditionIconTabButton(int32 EntryPoint, const struct FSlateColor& K2Node_MakeStruct_SlateColor, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, bool K2Node_Event_IsDesignTime, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1, const struct FSlateColor& K2Node_MakeStruct_SlateColor1, const struct FSlateColor& K2Node_MakeStruct_SlateColor2, const struct FSlateColor& K2Node_MakeStruct_SlateColor3, const struct FSlateColor& K2Node_MakeStruct_SlateColor4, const struct FSlateColor& K2Node_MakeStruct_SlateColor5, const struct FSlateColor& K2Node_MakeStruct_SlateColor6)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionIconTabButton_C", "ExecuteUbergraph_BP_FortExpeditionIconTabButton");
 
@@ -404,11 +404,11 @@ void UBP_FortExpeditionIconTabButton_C::ExecuteUbergraph_BP_FortExpeditionIconTa
 	Parms.CallFunc_GetSelected_ReturnValue = CallFunc_GetSelected_ReturnValue;
 	Parms.CallFunc_GetSelected_ReturnValue1 = CallFunc_GetSelected_ReturnValue1;
 	Parms.K2Node_MakeStruct_SlateColor1 = K2Node_MakeStruct_SlateColor1;
-	Parms.K2Node_MakeStruct_SlateColor12 = K2Node_MakeStruct_SlateColor12;
-	Parms.K2Node_MakeStruct_SlateColor123 = K2Node_MakeStruct_SlateColor123;
-	Parms.K2Node_MakeStruct_SlateColor1234 = K2Node_MakeStruct_SlateColor1234;
-	Parms.K2Node_MakeStruct_SlateColor12345 = K2Node_MakeStruct_SlateColor12345;
-	Parms.K2Node_MakeStruct_SlateColor123456 = K2Node_MakeStruct_SlateColor123456;
+	Parms.K2Node_MakeStruct_SlateColor2 = K2Node_MakeStruct_SlateColor2;
+	Parms.K2Node_MakeStruct_SlateColor3 = K2Node_MakeStruct_SlateColor3;
+	Parms.K2Node_MakeStruct_SlateColor4 = K2Node_MakeStruct_SlateColor4;
+	Parms.K2Node_MakeStruct_SlateColor5 = K2Node_MakeStruct_SlateColor5;
+	Parms.K2Node_MakeStruct_SlateColor6 = K2Node_MakeStruct_SlateColor6;
 
 	UObject::ProcessEvent(Func, &Parms);
 

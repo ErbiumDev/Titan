@@ -31,7 +31,7 @@ void UTutorialRichText_C::Construct()
 
 
 // Function TutorialRichText.TutorialRichText_C.ExecuteUbergraph_TutorialRichText
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

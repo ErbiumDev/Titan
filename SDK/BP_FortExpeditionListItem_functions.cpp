@@ -298,7 +298,7 @@ void UBP_FortExpeditionListItem_C::Set_Name(class UFortItem* Item, class FText C
 // class UFortExpeditionItem*         Expedition                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortExpeditionItemDefinition*CallFunc_Get_Expedition_Item_Definition_Item_Def                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_FloatFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTimespan                   CallFunc_FromMinutes_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   CallFunc_FromMinutes_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetTimespanAsText_ReturnValue                           ()
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
@@ -323,34 +323,32 @@ void UBP_FortExpeditionListItem_C::Setup_Base_Item_Data(class UFortExpeditionIte
 }
 
 
-// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                     InData                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             OwningList                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionListItem_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UBP_FortExpeditionListItem_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "SetData");
+	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "OnListItemObjectSet");
 
-	Params::UBP_FortExpeditionListItem_C_SetData_Params Parms;
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Params::UBP_FortExpeditionListItem_C_OnListItemObjectSet_Params Parms;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.OnSelected
+// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionListItem_C::OnSelected()
+void UBP_FortExpeditionListItem_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "OnSelected");
+	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "BP_OnSelected");
 
-	Params::UBP_FortExpeditionListItem_C_OnSelected_Params Parms;
+	Params::UBP_FortExpeditionListItem_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -372,15 +370,15 @@ void UBP_FortExpeditionListItem_C::OnItemChanged()
 }
 
 
-// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.OnDeselected
+// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionListItem_C::OnDeselected()
+void UBP_FortExpeditionListItem_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "OnDeselected");
+	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "BP_OnDeselected");
 
-	Params::UBP_FortExpeditionListItem_C_OnDeselected_Params Parms;
+	Params::UBP_FortExpeditionListItem_C_BP_OnDeselected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -406,15 +404,15 @@ void UBP_FortExpeditionListItem_C::BndEvt__InProgressSwitcher_K2Node_ComponentBo
 }
 
 
-// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.OnHovered
+// Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionListItem_C::OnHovered()
+void UBP_FortExpeditionListItem_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "OnHovered");
+	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "BP_OnHovered");
 
-	Params::UBP_FortExpeditionListItem_C_OnHovered_Params Parms;
+	Params::UBP_FortExpeditionListItem_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -422,42 +420,40 @@ void UBP_FortExpeditionListItem_C::OnHovered()
 
 
 // Function BP_FortExpeditionListItem.BP_FortExpeditionListItem_C.ExecuteUbergraph_BP_FortExpeditionListItem
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_Event_InData                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             K2Node_Event_OwningList                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortExpeditionItem*         K2Node_DynamicCast_AsFort_Expedition_Item                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UWidget*                     K2Node_ComponentBoundEvent_ActiveWidget                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_ComponentBoundEvent_ActiveWidgetIndex                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue12                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionListItem_C::ExecuteUbergraph_BP_FortExpeditionListItem(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, class UObject* K2Node_Event_InData, class UCommonListView* K2Node_Event_OwningList, class UFortExpeditionItem* K2Node_DynamicCast_AsFort_Expedition_Item, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Variable, bool CallFunc_IsValid_ReturnValue1, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue12)
+void UBP_FortExpeditionListItem_C::ExecuteUbergraph_BP_FortExpeditionListItem(int32 EntryPoint, enum class ESlateVisibility Temp_byte_Variable, class UObject* K2Node_Event_ListItemObject, class UFortExpeditionItem* K2Node_DynamicCast_AsFort_Expedition_Item, bool K2Node_DynamicCast_bSuccess, int32 Temp_int_Variable, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue1, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default, bool CallFunc_IsValid_ReturnValue2)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionListItem_C", "ExecuteUbergraph_BP_FortExpeditionListItem");
 
 	Params::UBP_FortExpeditionListItem_C_ExecuteUbergraph_BP_FortExpeditionListItem_Params Parms;
 	Parms.EntryPoint = EntryPoint;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.K2Node_Event_InData = K2Node_Event_InData;
-	Parms.K2Node_Event_OwningList = K2Node_Event_OwningList;
+	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 	Parms.K2Node_DynamicCast_AsFort_Expedition_Item = K2Node_DynamicCast_AsFort_Expedition_Item;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue1 = CallFunc_IsValid_ReturnValue1;
 	Parms.K2Node_ComponentBoundEvent_ActiveWidget = K2Node_ComponentBoundEvent_ActiveWidget;
 	Parms.K2Node_ComponentBoundEvent_ActiveWidgetIndex = K2Node_ComponentBoundEvent_ActiveWidgetIndex;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.CallFunc_IsValid_ReturnValue12 = CallFunc_IsValid_ReturnValue12;
+	Parms.CallFunc_IsValid_ReturnValue2 = CallFunc_IsValid_ReturnValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 

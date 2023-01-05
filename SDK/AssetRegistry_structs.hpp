@@ -26,12 +26,12 @@ public:
 	TArray<class FName>                          PackagePaths;                                      // 0x10(0x10)(BlueprintVisible, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<class FName>                          ObjectPaths;                                       // 0x20(0x10)(BlueprintVisible, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<class FName>                          ClassNames;                                        // 0x30(0x10)(BlueprintVisible, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
-	uint8                                        Pad_257F[0x50];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C0C[0x50];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TSet<class FName>                            RecursiveClassesExclusionSet;                      // 0x90(0x50)(BlueprintVisible, ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	bool                                         bRecursivePaths;                                   // 0xE0(0x1)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bRecursiveClasses;                                 // 0xE1(0x1)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIncludeOnlyOnDiskAssets;                          // 0xE2(0x1)(BlueprintVisible, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2580[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2C0D[0x5];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -39,7 +39,7 @@ public:
 struct FAssetBundleEntry
 {
 public:
-	struct FPrimaryAssetId                       BundleScope;                                       // 0x0(0x10)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FPrimaryAssetId                       BundleScope;                                       // 0x0(0x10)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  BundleName;                                        // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSoftObjectPath>               BundleAssets;                                      // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -62,7 +62,7 @@ public:
 	class FName                                  PackagePath;                                       // 0x10(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  AssetName;                                         // 0x18(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  AssetClass;                                        // 0x20(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2581[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2C0E[0x28];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)

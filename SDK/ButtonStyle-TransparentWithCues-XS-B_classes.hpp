@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-TransparentWithCues-XS-B.ButtonStyle-TransparentWithCues-XS-B_C
 class UButtonStyle_TransparentWithCues_XS_B_C : public UButtonStyle_MediumTransparentNoCues_C
 {

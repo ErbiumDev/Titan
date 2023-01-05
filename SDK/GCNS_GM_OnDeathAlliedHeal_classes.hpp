@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCNS_GM_OnDeathAlliedHeal.GCNS_GM_OnDeathAlliedHeal_C
 class UGCNS_GM_OnDeathAlliedHeal_C : public UFortGameplayCueNotify_Simple
 {

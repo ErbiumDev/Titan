@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x4 (0xB4 - 0xB0)
+// 0x4 (0x84 - 0x80)
 // BlueprintGeneratedClass GC_Teleport_in.GC_Teleport_In_C
 class UGC_Teleport_In_C : public UFortGameplayCueNotify_Simple
 {
 public:
-	float                                        Default_Play_Length;                               // 0xB0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        Default_Play_Length;                               // 0x80(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

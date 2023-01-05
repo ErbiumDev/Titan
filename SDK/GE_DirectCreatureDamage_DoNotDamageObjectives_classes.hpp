@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_DirectCreatureDamage_DoNotDamageObjectives.GE_DirectCreatureDamage_DoNotDamageObjectives_C
 class UGE_DirectCreatureDamage_DoNotDamageObjectives_C : public UGET_DirectCreatureDamage_C
 {

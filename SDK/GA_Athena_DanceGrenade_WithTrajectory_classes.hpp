@@ -12,9 +12,9 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xD28 - 0xD28)
+// 0x0 (0xC31 - 0xC31)
 // BlueprintGeneratedClass GA_Athena_DanceGrenade_WithTrajectory.GA_Athena_DanceGrenade_WithTrajectory_C
-class UGA_Athena_DanceGrenade_WithTrajectory_C : public UGA_Athena_Grenade_WithTrajectory_C
+class UGA_Athena_DanceGrenade_WithTrajectory_C : public UGA_Athena_UtilityGrenade_WithTrajectory_C
 {
 public:
 

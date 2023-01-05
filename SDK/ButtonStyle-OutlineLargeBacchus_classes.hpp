@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-OutlineLargeBacchus.ButtonStyle-OutlineLargeBacchus_C
 class UButtonStyle_OutlineLargeBacchus_C : public UCommonButtonStyle
 {

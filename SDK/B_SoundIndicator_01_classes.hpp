@@ -12,27 +12,31 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x27C (0x68C - 0x410)
+// 0x3E0 (0x830 - 0x450)
 // BlueprintGeneratedClass B_SoundIndicator_01.B_SoundIndicator_01_C
 class AB_SoundIndicator_01_C : public AFortSoundCameraLensEffect
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x410(0x8)(Transient, DuplicateTransient)
-	bool                                         Chest;                                             // 0x418(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                         FootSteps;                                         // 0x419(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                         Gunshot;                                           // 0x41A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	bool                                         Generic;                                           // 0x41B(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3DD1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FRuntimeFloatCurve                    Gunshot_Falloff_Long_Range;                        // 0x420(0x78)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                    Chest_Falloff;                                     // 0x498(0x78)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                    Footsteps_Falloff;                                 // 0x510(0x78)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                    Gunshot_Falloff_Mid_Range;                         // 0x588(0x78)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FRuntimeFloatCurve                    Gunshot_Falloff_Melee;                             // 0x600(0x78)(Edit, BlueprintVisible, DisableEditOnInstance)
-	float                                        OppositeFacingGunshotStrength;                     // 0x678(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        FacingGunshotExponentNear;                         // 0x67C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        ForwardFacingGunshotStrength;                      // 0x680(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        FacingGunshotExponentFar;                          // 0x684(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        DistanceDivisor;                                   // 0x688(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x450(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	bool                                         Chest;                                             // 0x458(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                         FootstepsOrGlider;                                 // 0x459(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                         Gunshot;                                           // 0x45A(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                         Plane;                                             // 0x45B(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	bool                                         Generic;                                           // 0x45C(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_3A07[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FRuntimeFloatCurve                    Gunshot_Falloff_Long_Range;                        // 0x460(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                    Chest_Falloff;                                     // 0x4E8(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                    Footsteps_Falloff;                                 // 0x570(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                    Gunshot_Falloff_Mid_Range;                         // 0x5F8(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                    Gunshot_Falloff_Melee;                             // 0x680(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
+	float                                        OppositeFacingGunshotStrength;                     // 0x708(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        FacingGunshotExponentNear;                         // 0x70C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        ForwardFacingGunshotStrength;                      // 0x710(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        FacingGunshotExponentFar;                          // 0x714(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        DistanceDivisor;                                   // 0x718(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3A08[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FRuntimeFloatCurve                    Glider_Falloff;                                    // 0x720(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FRuntimeFloatCurve                    Plane_Falloff;                                     // 0x7A8(0x88)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass()
 	{
@@ -44,9 +48,9 @@ public:
 	struct FRuntimeFloatCurve GetWeaponCurve(bool Temp_bool_Variable, bool Temp_bool_Variable1, bool CallFunc_Greater_FloatFloat_ReturnValue, bool CallFunc_LessEqual_FloatFloat_ReturnValue, const struct FRuntimeFloatCurve& K2Node_Select_Default, const struct FRuntimeFloatCurve& K2Node_Select1_Default);
 	void UpdateEmitterStates(float CallFunc_CalculateFiringAngle_DotResult);
 	void UserConstructionScript();
-	void OnEffectActivated();
 	void ReceiveBeginPlay();
-	void ExecuteUbergraph_B_SoundIndicator_01(int32 EntryPoint, const struct FRuntimeFloatCurve& CallFunc_GetWeaponCurve_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess);
+	void OnEffectActivated();
+	void ExecuteUbergraph_B_SoundIndicator_01(int32 EntryPoint, bool K2Node_SwitchEnum_CmpSuccess, const struct FRuntimeFloatCurve& CallFunc_GetWeaponCurve_ReturnValue);
 };
 
 }

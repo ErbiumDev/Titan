@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Button-BottomBar-S-Disabled.TextStyle-Button-BottomBar-S-Disabled_C
 class UTextStyle_Button_BottomBar_S_Disabled_C : public UCommonTextStyle
 {

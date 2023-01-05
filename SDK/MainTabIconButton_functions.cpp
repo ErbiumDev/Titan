@@ -15,19 +15,34 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function MainTabIconButton.MainTabIconButton_C.SetBangType
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EFortBangType           NewBangType                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabIconButton_C::SetBangType(enum class EFortBangType NewBangType)
+{
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "SetBangType");
+
+	Params::UMainTabIconButton_C_SetBangType_Params Parms;
+	Parms.NewBangType = NewBangType;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function MainTabIconButton.MainTabIconButton_C.StopTabCallout
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainTabIconButton_C::StopTabCallout(class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1)
+void UMainTabIconButton_C::StopTabCallout(class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MainTabIconButton_C", "StopTabCallout");
 
 	Params::UMainTabIconButton_C_StopTabCallout_Params Parms;
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
-	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue1 = CallFunc_GetCurrentTextStyleClass_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -37,12 +52,14 @@ void UMainTabIconButton_C::StopTabCallout(class UClass* CallFunc_GetCurrentTextS
 // Function MainTabIconButton.MainTabIconButton_C.TabAdded
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainTabIconButton_C::TabAdded()
+void UMainTabIconButton_C::TabAdded(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MainTabIconButton_C", "TabAdded");
 
 	Params::UMainTabIconButton_C_TabAdded_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -67,29 +84,33 @@ void UMainTabIconButton_C::TabDialogClosed()
 // Function MainTabIconButton.MainTabIconButton_C.TabAnimateInFinished
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainTabIconButton_C::TabAnimateInFinished()
+void UMainTabIconButton_C::TabAnimateInFinished(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MainTabIconButton_C", "TabAnimateInFinished");
 
 	Params::UMainTabIconButton_C_TabAnimateInFinished_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function MainTabIconButton.MainTabIconButton_C.SetTutorialNameID
+// Function MainTabIconButton.MainTabIconButton_C.SetWrapperNameIDs
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class FName                        InTutorialNameID                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        InBangNameID                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainTabIconButton_C::SetTutorialNameID(class FName InTutorialNameID)
+void UMainTabIconButton_C::SetWrapperNameIDs(class FName InTutorialNameID, class FName InBangNameID)
 {
-	static auto Func = Class->GetFunction("MainTabIconButton_C", "SetTutorialNameID");
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "SetWrapperNameIDs");
 
-	Params::UMainTabIconButton_C_SetTutorialNameID_Params Parms;
+	Params::UMainTabIconButton_C_SetWrapperNameIDs_Params Parms;
 	Parms.InTutorialNameID = InTutorialNameID;
+	Parms.InBangNameID = InBangNameID;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -233,30 +254,30 @@ void UMainTabIconButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLa
 }
 
 
-// Function MainTabIconButton.MainTabIconButton_C.OnSelected
+// Function MainTabIconButton.MainTabIconButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UMainTabIconButton_C::OnSelected()
+void UMainTabIconButton_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("MainTabIconButton_C", "OnSelected");
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "BP_OnSelected");
 
-	Params::UMainTabIconButton_C_OnSelected_Params Parms;
+	Params::UMainTabIconButton_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function MainTabIconButton.MainTabIconButton_C.OnDeselected
+// Function MainTabIconButton.MainTabIconButton_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UMainTabIconButton_C::OnDeselected()
+void UMainTabIconButton_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("MainTabIconButton_C", "OnDeselected");
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "BP_OnDeselected");
 
-	Params::UMainTabIconButton_C_OnDeselected_Params Parms;
+	Params::UMainTabIconButton_C_BP_OnDeselected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -278,45 +299,30 @@ void UMainTabIconButton_C::Construct()
 }
 
 
-// Function MainTabIconButton.MainTabIconButton_C.OnHovered
+// Function MainTabIconButton.MainTabIconButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UMainTabIconButton_C::OnHovered()
+void UMainTabIconButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("MainTabIconButton_C", "OnHovered");
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "BP_OnHovered");
 
-	Params::UMainTabIconButton_C_OnHovered_Params Parms;
+	Params::UMainTabIconButton_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function MainTabIconButton.MainTabIconButton_C.OnUnhovered
+// Function MainTabIconButton.MainTabIconButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UMainTabIconButton_C::OnUnhovered()
+void UMainTabIconButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("MainTabIconButton_C", "OnUnhovered");
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "BP_OnUnhovered");
 
-	Params::UMainTabIconButton_C_OnUnhovered_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function MainTabIconButton.MainTabIconButton_C.OnCurrentTextStyleChanged
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UMainTabIconButton_C::OnCurrentTextStyleChanged()
-{
-	static auto Func = Class->GetFunction("MainTabIconButton_C", "OnCurrentTextStyleChanged");
-
-	Params::UMainTabIconButton_C_OnCurrentTextStyleChanged_Params Parms;
+	Params::UMainTabIconButton_C_BP_OnUnhovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -368,6 +374,21 @@ void UMainTabIconButton_C::HandleTabDialogCLosed()
 }
 
 
+// Function MainTabIconButton.MainTabIconButton_C.OnCurrentTextStyleChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UMainTabIconButton_C::OnCurrentTextStyleChanged()
+{
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "OnCurrentTextStyleChanged");
+
+	Params::UMainTabIconButton_C_OnCurrentTextStyleChanged_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function MainTabIconButton.MainTabIconButton_C.Handle StopTabCallout
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -383,23 +404,68 @@ void UMainTabIconButton_C::Handle_StopTabCallout()
 }
 
 
+// Function MainTabIconButton.MainTabIconButton_C.BndEvt__ToastWidget_K2Node_ComponentBoundEvent_0_OnFinishedToast__DelegateSignature
+// (BlueprintEvent)
+// Parameters:
+
+void UMainTabIconButton_C::BndEvt__ToastWidget_K2Node_ComponentBoundEvent_0_OnFinishedToast__DelegateSignature()
+{
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "BndEvt__ToastWidget_K2Node_ComponentBoundEvent_0_OnFinishedToast__DelegateSignature");
+
+	Params::UMainTabIconButton_C_BndEvt__ToastWidget_K2Node_ComponentBoundEvent_0_OnFinishedToast__DelegateSignature_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function MainTabIconButton.MainTabIconButton_C.BP_OnDisabled
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UMainTabIconButton_C::BP_OnDisabled()
+{
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "BP_OnDisabled");
+
+	Params::UMainTabIconButton_C_BP_OnDisabled_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function MainTabIconButton.MainTabIconButton_C.BP_OnEnabled
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UMainTabIconButton_C::BP_OnEnabled()
+{
+	static auto Func = Class->GetFunction("MainTabIconButton_C", "BP_OnEnabled");
+
+	Params::UMainTabIconButton_C_BP_OnEnabled_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function MainTabIconButton.MainTabIconButton_C.ExecuteUbergraph_MainTabIconButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
 // class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
-// class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate123                          (ZeroConstructor, NoDestructor)
+// class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate3                            (ZeroConstructor, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFortTabButtonLabelInfo     K2Node_Event_TabLabelInfo                                        (ConstParm)
 // bool                               CallFunc_GetSelected_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetSelected_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabIconButton_C::ExecuteUbergraph_MainTabIconButton(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, bool K2Node_Event_IsDesignTime, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate123, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1)
+void UMainTabIconButton_C::ExecuteUbergraph_MainTabIconButton(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, bool K2Node_Event_IsDesignTime, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate3, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("MainTabIconButton_C", "ExecuteUbergraph_MainTabIconButton");
 
@@ -407,11 +473,11 @@ void UMainTabIconButton_C::ExecuteUbergraph_MainTabIconButton(int32 EntryPoint, 
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
-	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue1 = CallFunc_GetCurrentTextStyleClass_ReturnValue1;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
-	Parms.K2Node_CreateDelegate_OutputDelegate123 = K2Node_CreateDelegate_OutputDelegate123;
+	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue1 = CallFunc_GetCurrentTextStyleClass_ReturnValue1;
+	Parms.K2Node_CreateDelegate_OutputDelegate3 = K2Node_CreateDelegate_OutputDelegate3;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.K2Node_Event_TabLabelInfo = K2Node_Event_TabLabelInfo;
 	Parms.CallFunc_GetSelected_ReturnValue = CallFunc_GetSelected_ReturnValue;

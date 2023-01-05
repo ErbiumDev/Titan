@@ -22,7 +22,7 @@ namespace SDK
 struct FMRMeshConfiguration
 {
 public:
-	uint8                                        Pad_21EB[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2CF5[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

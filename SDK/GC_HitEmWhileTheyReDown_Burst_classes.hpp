@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GC_HitEmWhileTheyReDown_Burst.GC_HitEmWhileTheyReDown_Burst_C
 class UGC_HitEmWhileTheyReDown_Burst_C : public UFortGameplayCueNotify_Simple
 {

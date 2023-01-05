@@ -130,12 +130,14 @@ void URewards_ItemCard_C::SetTransparent()
 // Function Rewards_ItemCard.Rewards_ItemCard_C.PlaySecondaryPopInAnimation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewards_ItemCard_C::PlaySecondaryPopInAnimation()
+void URewards_ItemCard_C::PlaySecondaryPopInAnimation(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("Rewards_ItemCard_C", "PlaySecondaryPopInAnimation");
 
 	Params::URewards_ItemCard_C_PlaySecondaryPopInAnimation_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -145,12 +147,14 @@ void URewards_ItemCard_C::PlaySecondaryPopInAnimation()
 // Function Rewards_ItemCard.Rewards_ItemCard_C.PlayPrimaryPopInAnimation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewards_ItemCard_C::PlayPrimaryPopInAnimation()
+void URewards_ItemCard_C::PlayPrimaryPopInAnimation(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("Rewards_ItemCard_C", "PlayPrimaryPopInAnimation");
 
 	Params::URewards_ItemCard_C_PlayPrimaryPopInAnimation_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -181,10 +185,10 @@ void URewards_ItemCard_C::GetDropShadowDepth(float* DropShadowDepth, float CallF
 
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.InitDropShadow
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               CallFunc_ShouldUseNewItemCards_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -210,13 +214,13 @@ void URewards_ItemCard_C::InitDropShadow(bool CallFunc_ShouldUseNewItemCards_Ret
 
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SetDropShadowSize
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                              Scale                                                            (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_ShouldUseNewItemCards_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Multiply_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -241,11 +245,11 @@ void URewards_ItemCard_C::SetDropShadowSize(float Scale, bool CallFunc_ShouldUse
 
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.SetDropShadowDepth
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                              ShadowDepth                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewards_ItemCard_C::SetDropShadowDepth(float ShadowDepth, float CallFunc_Subtract_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
@@ -298,7 +302,7 @@ void URewards_ItemCard_C::ShowDropShadow(float ShadowDepth)
 // Parameters:
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 
 void URewards_ItemCard_C::StartResizeAnimation(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_GetGameTimeInSeconds_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
@@ -324,8 +328,8 @@ void URewards_ItemCard_C::StartResizeAnimation(UDelegateProperty_ K2Node_CreateD
 // bool                               CallFunc_ShouldUseNewItemCards_ReturnValue1                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue1                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -334,7 +338,7 @@ void URewards_ItemCard_C::StartResizeAnimation(UDelegateProperty_ K2Node_CreateD
 // float                              CallFunc_GetDropShadowDepth_DropShadowDepth                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_LessEqual_FloatFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -374,10 +378,12 @@ void URewards_ItemCard_C::SizeUp(float Duration, float Delay, float DropShadowDe
 
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.TickResizeAnimation
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                              Alpha                                                            (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Ease_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_NotEqual_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -387,18 +393,20 @@ void URewards_ItemCard_C::SizeUp(float Duration, float Delay, float DropShadowDe
 // bool                               CallFunc_EqualEqual_FloatFloat_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_ShouldUseNewItemCards_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Ease_ReturnValue1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_Multiply_Vector2DFloat_ReturnValue                      (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_Multiply_Vector2DFloat_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewards_ItemCard_C::TickResizeAnimation(float Alpha, float CallFunc_GetGameTimeInSeconds_ReturnValue, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue, float CallFunc_Ease_ReturnValue, bool CallFunc_NotEqual_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMin_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, bool CallFunc_ShouldUseNewItemCards_ReturnValue, float CallFunc_Ease_ReturnValue1, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y)
+void URewards_ItemCard_C::TickResizeAnimation(float Alpha, float CallFunc_GetGameTimeInSeconds_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue1, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue, float CallFunc_Ease_ReturnValue, bool CallFunc_NotEqual_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMin_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, bool CallFunc_ShouldUseNewItemCards_ReturnValue, float CallFunc_Ease_ReturnValue1, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue, const struct FVector2D& CallFunc_Multiply_Vector2DFloat_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y)
 {
 	static auto Func = Class->GetFunction("Rewards_ItemCard_C", "TickResizeAnimation");
 
 	Params::URewards_ItemCard_C_TickResizeAnimation_Params Parms;
 	Parms.Alpha = Alpha;
 	Parms.CallFunc_GetGameTimeInSeconds_ReturnValue = CallFunc_GetGameTimeInSeconds_ReturnValue;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue = CallFunc_MakeLiteralByte_ReturnValue;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue1 = CallFunc_MakeLiteralByte_ReturnValue1;
 	Parms.CallFunc_GetCardSize_ReturnValue = CallFunc_GetCardSize_ReturnValue;
 	Parms.CallFunc_Ease_ReturnValue = CallFunc_Ease_ReturnValue;
 	Parms.CallFunc_NotEqual_FloatFloat_ReturnValue = CallFunc_NotEqual_FloatFloat_ReturnValue;
@@ -426,36 +434,36 @@ void URewards_ItemCard_C::TickResizeAnimation(float Alpha, float CallFunc_GetGam
 // float                              DropShadowDepth                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_ShouldUseNewItemCards_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_ShouldUseNewItemCards_ReturnValue1                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_ShouldUseNewItemCards_ReturnValue12                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_ShouldUseNewItemCards_ReturnValue2                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue12                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue2                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue1                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue123                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue12                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_X12                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y12                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue3                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue2                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X2                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y2                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetDropShadowDepth_DropShadowDepth                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
-// bool                               CallFunc_ShouldUseNewItemCards_ReturnValue123                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue123                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_X123                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y123                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_ShouldUseNewItemCards_ReturnValue3                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue3                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X3                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y3                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_LessEqual_FloatFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewards_ItemCard_C::SizeDown(float Duration, float Delay, float DropShadowDepth, bool CallFunc_ShouldUseNewItemCards_ReturnValue, bool CallFunc_ShouldUseNewItemCards_ReturnValue1, bool CallFunc_ShouldUseNewItemCards_ReturnValue12, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue1, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue12, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue1, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue123, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue12, float CallFunc_BreakVector2D_X12, float CallFunc_BreakVector2D_Y12, float CallFunc_GetDropShadowDepth_DropShadowDepth, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_ShouldUseNewItemCards_ReturnValue123, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue123, float CallFunc_BreakVector2D_X123, float CallFunc_BreakVector2D_Y123, float CallFunc_Divide_FloatFloat_ReturnValue1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
+void URewards_ItemCard_C::SizeDown(float Duration, float Delay, float DropShadowDepth, bool CallFunc_ShouldUseNewItemCards_ReturnValue, bool CallFunc_ShouldUseNewItemCards_ReturnValue1, bool CallFunc_ShouldUseNewItemCards_ReturnValue2, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue1, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue2, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue1, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue3, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue2, float CallFunc_BreakVector2D_X2, float CallFunc_BreakVector2D_Y2, float CallFunc_GetDropShadowDepth_DropShadowDepth, float CallFunc_Divide_FloatFloat_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_ShouldUseNewItemCards_ReturnValue3, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue3, float CallFunc_BreakVector2D_X3, float CallFunc_BreakVector2D_Y3, float CallFunc_Divide_FloatFloat_ReturnValue1, bool CallFunc_LessEqual_FloatFloat_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
 	static auto Func = Class->GetFunction("Rewards_ItemCard_C", "SizeDown");
 
@@ -465,29 +473,29 @@ void URewards_ItemCard_C::SizeDown(float Duration, float Delay, float DropShadow
 	Parms.DropShadowDepth = DropShadowDepth;
 	Parms.CallFunc_ShouldUseNewItemCards_ReturnValue = CallFunc_ShouldUseNewItemCards_ReturnValue;
 	Parms.CallFunc_ShouldUseNewItemCards_ReturnValue1 = CallFunc_ShouldUseNewItemCards_ReturnValue1;
-	Parms.CallFunc_ShouldUseNewItemCards_ReturnValue12 = CallFunc_ShouldUseNewItemCards_ReturnValue12;
+	Parms.CallFunc_ShouldUseNewItemCards_ReturnValue2 = CallFunc_ShouldUseNewItemCards_ReturnValue2;
 	Parms.CallFunc_GetCardSize_ReturnValue = CallFunc_GetCardSize_ReturnValue;
 	Parms.CallFunc_GetCardSize_ReturnValue1 = CallFunc_GetCardSize_ReturnValue1;
 	Parms.CallFunc_GetCardDimensions_ReturnValue = CallFunc_GetCardDimensions_ReturnValue;
-	Parms.CallFunc_GetCardSize_ReturnValue12 = CallFunc_GetCardSize_ReturnValue12;
+	Parms.CallFunc_GetCardSize_ReturnValue2 = CallFunc_GetCardSize_ReturnValue2;
 	Parms.CallFunc_BreakVector2D_X = CallFunc_BreakVector2D_X;
 	Parms.CallFunc_BreakVector2D_Y = CallFunc_BreakVector2D_Y;
 	Parms.CallFunc_GetCardDimensions_ReturnValue1 = CallFunc_GetCardDimensions_ReturnValue1;
 	Parms.CallFunc_BreakVector2D_X1 = CallFunc_BreakVector2D_X1;
 	Parms.CallFunc_BreakVector2D_Y1 = CallFunc_BreakVector2D_Y1;
-	Parms.CallFunc_GetCardSize_ReturnValue123 = CallFunc_GetCardSize_ReturnValue123;
-	Parms.CallFunc_GetCardDimensions_ReturnValue12 = CallFunc_GetCardDimensions_ReturnValue12;
-	Parms.CallFunc_BreakVector2D_X12 = CallFunc_BreakVector2D_X12;
-	Parms.CallFunc_BreakVector2D_Y12 = CallFunc_BreakVector2D_Y12;
+	Parms.CallFunc_GetCardSize_ReturnValue3 = CallFunc_GetCardSize_ReturnValue3;
+	Parms.CallFunc_GetCardDimensions_ReturnValue2 = CallFunc_GetCardDimensions_ReturnValue2;
+	Parms.CallFunc_BreakVector2D_X2 = CallFunc_BreakVector2D_X2;
+	Parms.CallFunc_BreakVector2D_Y2 = CallFunc_BreakVector2D_Y2;
 	Parms.CallFunc_GetDropShadowDepth_DropShadowDepth = CallFunc_GetDropShadowDepth_DropShadowDepth;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
-	Parms.CallFunc_ShouldUseNewItemCards_ReturnValue123 = CallFunc_ShouldUseNewItemCards_ReturnValue123;
-	Parms.CallFunc_GetCardDimensions_ReturnValue123 = CallFunc_GetCardDimensions_ReturnValue123;
-	Parms.CallFunc_BreakVector2D_X123 = CallFunc_BreakVector2D_X123;
-	Parms.CallFunc_BreakVector2D_Y123 = CallFunc_BreakVector2D_Y123;
+	Parms.CallFunc_ShouldUseNewItemCards_ReturnValue3 = CallFunc_ShouldUseNewItemCards_ReturnValue3;
+	Parms.CallFunc_GetCardDimensions_ReturnValue3 = CallFunc_GetCardDimensions_ReturnValue3;
+	Parms.CallFunc_BreakVector2D_X3 = CallFunc_BreakVector2D_X3;
+	Parms.CallFunc_BreakVector2D_Y3 = CallFunc_BreakVector2D_Y3;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue1 = CallFunc_Divide_FloatFloat_ReturnValue1;
 	Parms.CallFunc_LessEqual_FloatFloat_ReturnValue = CallFunc_LessEqual_FloatFloat_ReturnValue;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
@@ -500,12 +508,12 @@ void URewards_ItemCard_C::SizeDown(float Duration, float Delay, float DropShadow
 
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.GetCardSize
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FVector2D                   ReturnValue                                                      (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_ShouldUseNewItemCards_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortItemCardSize       CallFunc_GetCardSize_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetCardDimensions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FVector2D URewards_ItemCard_C::GetCardSize(bool CallFunc_ShouldUseNewItemCards_ReturnValue, enum class EFortItemCardSize CallFunc_GetCardSize_ReturnValue, const struct FVector2D& CallFunc_GetCardDimensions_ReturnValue)
 {
@@ -578,27 +586,31 @@ void URewards_ItemCard_C::SetInspectAction(const struct FDataTableRowHandle& K2N
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                              Alpha                                                            (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_FloatFloat_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_FMin_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Ease_ReturnValue1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FWidgetTransform            K2Node_MakeStruct_WidgetTransform                                (NoDestructor)
 
-void URewards_ItemCard_C::TickScaleAnimation(float Alpha, float CallFunc_Ease_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMin_ReturnValue, float CallFunc_Ease_ReturnValue1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform)
+void URewards_ItemCard_C::TickScaleAnimation(float Alpha, uint8 CallFunc_MakeLiteralByte_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue1, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Ease_ReturnValue, float CallFunc_FMin_ReturnValue, float CallFunc_Ease_ReturnValue1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform)
 {
 	static auto Func = Class->GetFunction("Rewards_ItemCard_C", "TickScaleAnimation");
 
 	Params::URewards_ItemCard_C_TickScaleAnimation_Params Parms;
 	Parms.Alpha = Alpha;
-	Parms.CallFunc_Ease_ReturnValue = CallFunc_Ease_ReturnValue;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue = CallFunc_MakeLiteralByte_ReturnValue;
 	Parms.CallFunc_EqualEqual_FloatFloat_ReturnValue = CallFunc_EqualEqual_FloatFloat_ReturnValue;
 	Parms.CallFunc_GetGameTimeInSeconds_ReturnValue = CallFunc_GetGameTimeInSeconds_ReturnValue;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue1 = CallFunc_MakeLiteralByte_ReturnValue1;
 	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
+	Parms.CallFunc_Ease_ReturnValue = CallFunc_Ease_ReturnValue;
 	Parms.CallFunc_FMin_ReturnValue = CallFunc_FMin_ReturnValue;
 	Parms.CallFunc_Ease_ReturnValue1 = CallFunc_Ease_ReturnValue1;
 	Parms.CallFunc_MakeVector2D_ReturnValue = CallFunc_MakeVector2D_ReturnValue;
@@ -618,7 +630,7 @@ void URewards_ItemCard_C::TickScaleAnimation(float Alpha, float CallFunc_Ease_Re
 // float                              CallFunc_GetDropShadowDepth_DropShadowDepth                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -647,7 +659,7 @@ void URewards_ItemCard_C::PlayScaleAnimation(float TargetScale, float Duration, 
 // Parameters:
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 
 void URewards_ItemCard_C::StartSlideAnimation(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_GetGameTimeInSeconds_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
@@ -681,23 +693,23 @@ void URewards_ItemCard_C::EndSlideAnimation()
 // Function Rewards_ItemCard.Rewards_ItemCard_C.PlaySlideAnimation
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                   TargetAlignment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   TargetAlignment                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FAnchors                    TargetAnchors                                                    (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 // float                              TargetScale                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              TargetOffset                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              TargetAngle                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Duration                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              StaggerDelay                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   TargetTranslation                                                (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   TargetTranslation                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsValidTimerHandle_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCanvasPanelSlot*            K2Node_DynamicCast_AsCanvas_Panel_Slot                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FMargin                     CallFunc_GetOffsets_ReturnValue                                  (IsPlainOldData, NoDestructor)
+// struct FMargin                     CallFunc_GetOffsets_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FAnchors                    CallFunc_GetAnchors_ReturnValue                                  (NoDestructor)
-// struct FVector2D                   CallFunc_GetAlignment_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_GetAlignment_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -736,98 +748,120 @@ void URewards_ItemCard_C::PlaySlideAnimation(const struct FVector2D& TargetAlign
 // Parameters:
 // class UCanvasPanelSlot*            CanvasSlot                                                       (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Alpha                                                            (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue2                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue3                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue4                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_X1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y1                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     CallFunc_GetOffsets_ReturnValue                                  (IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_FloatFloat_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Ease_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Ease_ReturnValue1                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue12                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_X12                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y12                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_X123                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y123                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_X1234                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y1234                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_X12345                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y12345                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue123                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue1234                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue12345                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue123456                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue1                               (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue12                              (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue5                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue6                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue7                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FMargin                     CallFunc_GetOffsets_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue8                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_FloatFloat_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                              CallFunc_Ease_ReturnValue2                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue9                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// uint8                              CallFunc_MakeLiteralByte_ReturnValue10                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X2                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y2                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X3                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y3                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X4                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y4                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue3                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue4                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X5                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y5                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue5                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue6                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FAnchors                    K2Node_MakeStruct_Anchors                                        (NoDestructor)
-// float                              CallFunc_Ease_ReturnValue1234567                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     K2Node_MakeStruct_Margin                                         (IsPlainOldData, NoDestructor)
-// float                              CallFunc_Ease_ReturnValue12345678                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue123                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_X123456                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y123456                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue7                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                              CallFunc_Ease_ReturnValue8                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X6                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y6                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue3                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FWidgetTransform            K2Node_MakeStruct_WidgetTransform                                (NoDestructor)
-// float                              CallFunc_BreakVector2D_X1234567                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_BreakVector2D_Y1234567                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_X7                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_BreakVector2D_Y7                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue9                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue123456789                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Ease_ReturnValue10                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Ease_ReturnValue12345678910                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue4                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_FMin_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue1234                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCanvasPanelSlot*            K2Node_DynamicCast_AsCanvas_Panel_Slot                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewards_ItemCard_C::TickSlideAnimation(class UCanvasPanelSlot* CanvasSlot, float Alpha, float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, const struct FMargin& CallFunc_GetOffsets_ReturnValue, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, float CallFunc_Ease_ReturnValue, float CallFunc_Ease_ReturnValue1, float CallFunc_Ease_ReturnValue12, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, float CallFunc_BreakVector2D_X12, float CallFunc_BreakVector2D_Y12, float CallFunc_BreakVector2D_X123, float CallFunc_BreakVector2D_Y123, float CallFunc_BreakVector2D_X1234, float CallFunc_BreakVector2D_Y1234, float CallFunc_BreakVector2D_X12345, float CallFunc_BreakVector2D_Y12345, float CallFunc_Ease_ReturnValue123, float CallFunc_Ease_ReturnValue1234, float CallFunc_Ease_ReturnValue12345, float CallFunc_Ease_ReturnValue123456, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue12, const struct FAnchors& K2Node_MakeStruct_Anchors, float CallFunc_Ease_ReturnValue1234567, const struct FMargin& K2Node_MakeStruct_Margin, float CallFunc_Ease_ReturnValue12345678, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue123, float CallFunc_BreakVector2D_X123456, float CallFunc_BreakVector2D_Y123456, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform, float CallFunc_BreakVector2D_X1234567, float CallFunc_BreakVector2D_Y1234567, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Ease_ReturnValue123456789, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_Ease_ReturnValue12345678910, float CallFunc_FMin_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue1234, class UCanvasPanelSlot* K2Node_DynamicCast_AsCanvas_Panel_Slot, bool K2Node_DynamicCast_bSuccess)
+void URewards_ItemCard_C::TickSlideAnimation(class UCanvasPanelSlot* CanvasSlot, float Alpha, uint8 CallFunc_MakeLiteralByte_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue1, uint8 CallFunc_MakeLiteralByte_ReturnValue2, float CallFunc_GetGameTimeInSeconds_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue3, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, uint8 CallFunc_MakeLiteralByte_ReturnValue4, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, float CallFunc_Ease_ReturnValue, float CallFunc_Ease_ReturnValue1, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue5, uint8 CallFunc_MakeLiteralByte_ReturnValue6, uint8 CallFunc_MakeLiteralByte_ReturnValue7, const struct FMargin& CallFunc_GetOffsets_ReturnValue, uint8 CallFunc_MakeLiteralByte_ReturnValue8, bool CallFunc_EqualEqual_FloatFloat_ReturnValue, float CallFunc_Ease_ReturnValue2, uint8 CallFunc_MakeLiteralByte_ReturnValue9, uint8 CallFunc_MakeLiteralByte_ReturnValue10, float CallFunc_BreakVector2D_X2, float CallFunc_BreakVector2D_Y2, float CallFunc_BreakVector2D_X3, float CallFunc_BreakVector2D_Y3, float CallFunc_BreakVector2D_X4, float CallFunc_BreakVector2D_Y4, float CallFunc_Ease_ReturnValue3, float CallFunc_Ease_ReturnValue4, float CallFunc_BreakVector2D_X5, float CallFunc_BreakVector2D_Y5, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue1, float CallFunc_Ease_ReturnValue5, float CallFunc_Ease_ReturnValue6, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue2, const struct FAnchors& K2Node_MakeStruct_Anchors, float CallFunc_Ease_ReturnValue7, const struct FMargin& K2Node_MakeStruct_Margin, float CallFunc_Ease_ReturnValue8, float CallFunc_BreakVector2D_X6, float CallFunc_BreakVector2D_Y6, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue3, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform, float CallFunc_BreakVector2D_X7, float CallFunc_BreakVector2D_Y7, float CallFunc_Ease_ReturnValue9, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Ease_ReturnValue10, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue4, float CallFunc_FMin_ReturnValue, class UCanvasPanelSlot* K2Node_DynamicCast_AsCanvas_Panel_Slot, bool K2Node_DynamicCast_bSuccess)
 {
 	static auto Func = Class->GetFunction("Rewards_ItemCard_C", "TickSlideAnimation");
 
 	Params::URewards_ItemCard_C_TickSlideAnimation_Params Parms;
 	Parms.CanvasSlot = CanvasSlot;
 	Parms.Alpha = Alpha;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue = CallFunc_MakeLiteralByte_ReturnValue;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue1 = CallFunc_MakeLiteralByte_ReturnValue1;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue2 = CallFunc_MakeLiteralByte_ReturnValue2;
 	Parms.CallFunc_GetGameTimeInSeconds_ReturnValue = CallFunc_GetGameTimeInSeconds_ReturnValue;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue3 = CallFunc_MakeLiteralByte_ReturnValue3;
 	Parms.CallFunc_BreakVector2D_X = CallFunc_BreakVector2D_X;
 	Parms.CallFunc_BreakVector2D_Y = CallFunc_BreakVector2D_Y;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue4 = CallFunc_MakeLiteralByte_ReturnValue4;
 	Parms.CallFunc_BreakVector2D_X1 = CallFunc_BreakVector2D_X1;
 	Parms.CallFunc_BreakVector2D_Y1 = CallFunc_BreakVector2D_Y1;
-	Parms.CallFunc_GetOffsets_ReturnValue = CallFunc_GetOffsets_ReturnValue;
-	Parms.CallFunc_EqualEqual_FloatFloat_ReturnValue = CallFunc_EqualEqual_FloatFloat_ReturnValue;
 	Parms.CallFunc_Ease_ReturnValue = CallFunc_Ease_ReturnValue;
 	Parms.CallFunc_Ease_ReturnValue1 = CallFunc_Ease_ReturnValue1;
-	Parms.CallFunc_Ease_ReturnValue12 = CallFunc_Ease_ReturnValue12;
 	Parms.CallFunc_MakeVector2D_ReturnValue = CallFunc_MakeVector2D_ReturnValue;
-	Parms.CallFunc_BreakVector2D_X12 = CallFunc_BreakVector2D_X12;
-	Parms.CallFunc_BreakVector2D_Y12 = CallFunc_BreakVector2D_Y12;
-	Parms.CallFunc_BreakVector2D_X123 = CallFunc_BreakVector2D_X123;
-	Parms.CallFunc_BreakVector2D_Y123 = CallFunc_BreakVector2D_Y123;
-	Parms.CallFunc_BreakVector2D_X1234 = CallFunc_BreakVector2D_X1234;
-	Parms.CallFunc_BreakVector2D_Y1234 = CallFunc_BreakVector2D_Y1234;
-	Parms.CallFunc_BreakVector2D_X12345 = CallFunc_BreakVector2D_X12345;
-	Parms.CallFunc_BreakVector2D_Y12345 = CallFunc_BreakVector2D_Y12345;
-	Parms.CallFunc_Ease_ReturnValue123 = CallFunc_Ease_ReturnValue123;
-	Parms.CallFunc_Ease_ReturnValue1234 = CallFunc_Ease_ReturnValue1234;
-	Parms.CallFunc_Ease_ReturnValue12345 = CallFunc_Ease_ReturnValue12345;
-	Parms.CallFunc_Ease_ReturnValue123456 = CallFunc_Ease_ReturnValue123456;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue5 = CallFunc_MakeLiteralByte_ReturnValue5;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue6 = CallFunc_MakeLiteralByte_ReturnValue6;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue7 = CallFunc_MakeLiteralByte_ReturnValue7;
+	Parms.CallFunc_GetOffsets_ReturnValue = CallFunc_GetOffsets_ReturnValue;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue8 = CallFunc_MakeLiteralByte_ReturnValue8;
+	Parms.CallFunc_EqualEqual_FloatFloat_ReturnValue = CallFunc_EqualEqual_FloatFloat_ReturnValue;
+	Parms.CallFunc_Ease_ReturnValue2 = CallFunc_Ease_ReturnValue2;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue9 = CallFunc_MakeLiteralByte_ReturnValue9;
+	Parms.CallFunc_MakeLiteralByte_ReturnValue10 = CallFunc_MakeLiteralByte_ReturnValue10;
+	Parms.CallFunc_BreakVector2D_X2 = CallFunc_BreakVector2D_X2;
+	Parms.CallFunc_BreakVector2D_Y2 = CallFunc_BreakVector2D_Y2;
+	Parms.CallFunc_BreakVector2D_X3 = CallFunc_BreakVector2D_X3;
+	Parms.CallFunc_BreakVector2D_Y3 = CallFunc_BreakVector2D_Y3;
+	Parms.CallFunc_BreakVector2D_X4 = CallFunc_BreakVector2D_X4;
+	Parms.CallFunc_BreakVector2D_Y4 = CallFunc_BreakVector2D_Y4;
+	Parms.CallFunc_Ease_ReturnValue3 = CallFunc_Ease_ReturnValue3;
+	Parms.CallFunc_Ease_ReturnValue4 = CallFunc_Ease_ReturnValue4;
+	Parms.CallFunc_BreakVector2D_X5 = CallFunc_BreakVector2D_X5;
+	Parms.CallFunc_BreakVector2D_Y5 = CallFunc_BreakVector2D_Y5;
 	Parms.CallFunc_MakeVector2D_ReturnValue1 = CallFunc_MakeVector2D_ReturnValue1;
-	Parms.CallFunc_MakeVector2D_ReturnValue12 = CallFunc_MakeVector2D_ReturnValue12;
+	Parms.CallFunc_Ease_ReturnValue5 = CallFunc_Ease_ReturnValue5;
+	Parms.CallFunc_Ease_ReturnValue6 = CallFunc_Ease_ReturnValue6;
+	Parms.CallFunc_MakeVector2D_ReturnValue2 = CallFunc_MakeVector2D_ReturnValue2;
 	Parms.K2Node_MakeStruct_Anchors = K2Node_MakeStruct_Anchors;
-	Parms.CallFunc_Ease_ReturnValue1234567 = CallFunc_Ease_ReturnValue1234567;
+	Parms.CallFunc_Ease_ReturnValue7 = CallFunc_Ease_ReturnValue7;
 	Parms.K2Node_MakeStruct_Margin = K2Node_MakeStruct_Margin;
-	Parms.CallFunc_Ease_ReturnValue12345678 = CallFunc_Ease_ReturnValue12345678;
-	Parms.CallFunc_MakeVector2D_ReturnValue123 = CallFunc_MakeVector2D_ReturnValue123;
-	Parms.CallFunc_BreakVector2D_X123456 = CallFunc_BreakVector2D_X123456;
-	Parms.CallFunc_BreakVector2D_Y123456 = CallFunc_BreakVector2D_Y123456;
+	Parms.CallFunc_Ease_ReturnValue8 = CallFunc_Ease_ReturnValue8;
+	Parms.CallFunc_BreakVector2D_X6 = CallFunc_BreakVector2D_X6;
+	Parms.CallFunc_BreakVector2D_Y6 = CallFunc_BreakVector2D_Y6;
+	Parms.CallFunc_MakeVector2D_ReturnValue3 = CallFunc_MakeVector2D_ReturnValue3;
 	Parms.K2Node_MakeStruct_WidgetTransform = K2Node_MakeStruct_WidgetTransform;
-	Parms.CallFunc_BreakVector2D_X1234567 = CallFunc_BreakVector2D_X1234567;
-	Parms.CallFunc_BreakVector2D_Y1234567 = CallFunc_BreakVector2D_Y1234567;
+	Parms.CallFunc_BreakVector2D_X7 = CallFunc_BreakVector2D_X7;
+	Parms.CallFunc_BreakVector2D_Y7 = CallFunc_BreakVector2D_Y7;
+	Parms.CallFunc_Ease_ReturnValue9 = CallFunc_Ease_ReturnValue9;
 	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
-	Parms.CallFunc_Ease_ReturnValue123456789 = CallFunc_Ease_ReturnValue123456789;
+	Parms.CallFunc_Ease_ReturnValue10 = CallFunc_Ease_ReturnValue10;
 	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
-	Parms.CallFunc_Ease_ReturnValue12345678910 = CallFunc_Ease_ReturnValue12345678910;
+	Parms.CallFunc_MakeVector2D_ReturnValue4 = CallFunc_MakeVector2D_ReturnValue4;
 	Parms.CallFunc_FMin_ReturnValue = CallFunc_FMin_ReturnValue;
-	Parms.CallFunc_MakeVector2D_ReturnValue1234 = CallFunc_MakeVector2D_ReturnValue1234;
 	Parms.K2Node_DynamicCast_AsCanvas_Panel_Slot = K2Node_DynamicCast_AsCanvas_Panel_Slot;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 
@@ -924,7 +958,7 @@ void URewards_ItemCard_C::Construct()
 
 
 // Function Rewards_ItemCard.Rewards_ItemCard_C.ExecuteUbergraph_Rewards_ItemCard
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

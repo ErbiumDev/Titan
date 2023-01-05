@@ -22,8 +22,9 @@ namespace SDK
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
 // class UOverlaySlot*                K2Node_DynamicCast_AsOverlay_Slot                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPanelButton_C::UpdateInputActionLayout(const struct FSlateBrush& RimBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, class UOverlaySlot* K2Node_DynamicCast_AsOverlay_Slot, bool K2Node_DynamicCast_bSuccess)
+void UPanelButton_C::UpdateInputActionLayout(const struct FSlateBrush& RimBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, class UOverlaySlot* K2Node_DynamicCast_AsOverlay_Slot, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PanelButton_C", "UpdateInputActionLayout");
 
@@ -32,6 +33,7 @@ void UPanelButton_C::UpdateInputActionLayout(const struct FSlateBrush& RimBrush,
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
 	Parms.K2Node_DynamicCast_AsOverlay_Slot = K2Node_DynamicCast_AsOverlay_Slot;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -75,11 +77,11 @@ void UPanelButton_C::InitializeButton()
 // Function PanelButton.PanelButton_C.UpdateTextAndStyle
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPanelButton_C::UpdateTextAndStyle(class UCommonInputContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
+void UPanelButton_C::UpdateTextAndStyle(class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PanelButton_C", "UpdateTextAndStyle");
 
@@ -191,30 +193,30 @@ void UPanelButton_C::Construct()
 }
 
 
-// Function PanelButton.PanelButton_C.OnHovered
+// Function PanelButton.PanelButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UPanelButton_C::OnHovered()
+void UPanelButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("PanelButton_C", "OnHovered");
+	static auto Func = Class->GetFunction("PanelButton_C", "BP_OnHovered");
 
-	Params::UPanelButton_C_OnHovered_Params Parms;
+	Params::UPanelButton_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function PanelButton.PanelButton_C.OnUnhovered
+// Function PanelButton.PanelButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UPanelButton_C::OnUnhovered()
+void UPanelButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("PanelButton_C", "OnUnhovered");
+	static auto Func = Class->GetFunction("PanelButton_C", "BP_OnUnhovered");
 
-	Params::UPanelButton_C_OnUnhovered_Params Parms;
+	Params::UPanelButton_C_BP_OnUnhovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -222,7 +224,7 @@ void UPanelButton_C::OnUnhovered()
 
 
 // Function PanelButton.PanelButton_C.ExecuteUbergraph_PanelButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

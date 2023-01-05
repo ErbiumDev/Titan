@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xEA0 - 0xEA0)
+// 0x0 (0xD90 - 0xD90)
 // BlueprintGeneratedClass PBWA_BG_Brace.PBWA_BG_Brace_C
 class APBWA_BG_Brace_C : public ABuildingWall
 {

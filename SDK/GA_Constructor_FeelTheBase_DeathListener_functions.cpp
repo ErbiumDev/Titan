@@ -22,9 +22,9 @@ namespace SDK
 // class AB_Constructor_BASE_C*       BaseReference                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_IntInt_ReturnValue12                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_IntInt_ReturnValue2                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UGA_Constructor_FeelTheBase_DeathListener_C::ActivateBaseStacks(int32 StackCount, class AB_Constructor_BASE_C* BaseReference, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue1, bool CallFunc_EqualEqual_IntInt_ReturnValue12)
+void UGA_Constructor_FeelTheBase_DeathListener_C::ActivateBaseStacks(int32 StackCount, class AB_Constructor_BASE_C* BaseReference, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue1, bool CallFunc_EqualEqual_IntInt_ReturnValue2)
 {
 	static auto Func = Class->GetFunction("GA_Constructor_FeelTheBase_DeathListener_C", "ActivateBaseStacks");
 
@@ -33,7 +33,7 @@ void UGA_Constructor_FeelTheBase_DeathListener_C::ActivateBaseStacks(int32 Stack
 	Parms.BaseReference = BaseReference;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue1 = CallFunc_EqualEqual_IntInt_ReturnValue1;
-	Parms.CallFunc_EqualEqual_IntInt_ReturnValue12 = CallFunc_EqualEqual_IntInt_ReturnValue12;
+	Parms.CallFunc_EqualEqual_IntInt_ReturnValue2 = CallFunc_EqualEqual_IntInt_ReturnValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -47,7 +47,7 @@ void UGA_Constructor_FeelTheBase_DeathListener_C::ActivateBaseStacks(int32 Stack
 // bool                               Overflow                                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_X                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Y                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector_Z                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -95,7 +95,7 @@ void UGA_Constructor_FeelTheBase_DeathListener_C::K2_ActivateAbilityFromEvent(st
 
 
 // Function GA_Constructor_FeelTheBase_DeathListener.GA_Constructor_FeelTheBase_DeathListener_C.ExecuteUbergraph_GA_Constructor_FeelTheBase_DeathListener
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEffectContextHandleCallFunc_GetGrantedByEffectContext_ReturnValue                   ()

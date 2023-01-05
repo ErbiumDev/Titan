@@ -17,7 +17,7 @@ namespace SDK
 class UGauntletTestController : public UObject
 {
 public:
-	uint8                                        Pad_2430[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1020[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -46,7 +46,7 @@ public:
 class UGauntletTestControllerErrorTest : public UGauntletTestController
 {
 public:
-	uint8                                        Pad_2431[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1021[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

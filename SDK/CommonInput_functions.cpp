@@ -15,16 +15,40 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function CommonInput.CommonInputContext.SetGamepadInputType
+// Function CommonInput.CommonInputSubsystem.ShouldShowInputKeys
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+bool UCommonInputSubsystem::ShouldShowInputKeys()
+{
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "ShouldShowInputKeys");
+
+	Params::UCommonInputSubsystem_ShouldShowInputKeys_Params Parms;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function CommonInput.CommonInputSubsystem.SetGamepadInputType
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // enum class ECommonGamepadType      InGamepadInputType                                               (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCommonInputContext::SetGamepadInputType(enum class ECommonGamepadType InGamepadInputType)
+void UCommonInputSubsystem::SetGamepadInputType(enum class ECommonGamepadType InGamepadInputType)
 {
-	static auto Func = Class->GetFunction("CommonInputContext", "SetGamepadInputType");
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "SetGamepadInputType");
 
-	Params::UCommonInputContext_SetGamepadInputType_Params Parms;
+	Params::UCommonInputSubsystem_SetGamepadInputType_Params Parms;
 	Parms.InGamepadInputType = InGamepadInputType;
 
 	auto Flags = Func->FunctionFlags;
@@ -38,16 +62,16 @@ void UCommonInputContext::SetGamepadInputType(enum class ECommonGamepadType InGa
 }
 
 
-// Function CommonInput.CommonInputContext.SetCurrentInputType
+// Function CommonInput.CommonInputSubsystem.SetCurrentInputType
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
 // enum class ECommonInputType        NewInputType                                                     (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCommonInputContext::SetCurrentInputType(enum class ECommonInputType NewInputType)
+void UCommonInputSubsystem::SetCurrentInputType(enum class ECommonInputType NewInputType)
 {
-	static auto Func = Class->GetFunction("CommonInputContext", "SetCurrentInputType");
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "SetCurrentInputType");
 
-	Params::UCommonInputContext_SetCurrentInputType_Params Parms;
+	Params::UCommonInputSubsystem_SetCurrentInputType_Params Parms;
 	Parms.NewInputType = NewInputType;
 
 	auto Flags = Func->FunctionFlags;
@@ -61,16 +85,16 @@ void UCommonInputContext::SetCurrentInputType(enum class ECommonInputType NewInp
 }
 
 
-// Function CommonInput.CommonInputContext.IsUsingPointerInput
+// Function CommonInput.CommonInputSubsystem.IsUsingPointerInput
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-bool UCommonInputContext::IsUsingPointerInput()
+bool UCommonInputSubsystem::IsUsingPointerInput()
 {
-	static auto Func = Class->GetFunction("CommonInputContext", "IsUsingPointerInput");
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "IsUsingPointerInput");
 
-	Params::UCommonInputContext_IsUsingPointerInput_Params Parms;
+	Params::UCommonInputSubsystem_IsUsingPointerInput_Params Parms;
 
 	auto Flags = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -85,16 +109,16 @@ bool UCommonInputContext::IsUsingPointerInput()
 }
 
 
-// DelegateFunction CommonInput.CommonInputContext.InputMethodChangedDelegate__DelegateSignature
+// DelegateFunction CommonInput.CommonInputSubsystem.InputMethodChangedDelegate__DelegateSignature
 // (MulticastDelegate, Public, Delegate)
 // Parameters:
 // enum class ECommonInputType        bNewInputType                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UCommonInputContext::InputMethodChangedDelegate__DelegateSignature(enum class ECommonInputType bNewInputType)
+void UCommonInputSubsystem::InputMethodChangedDelegate__DelegateSignature(enum class ECommonInputType bNewInputType)
 {
-	static auto Func = Class->GetFunction("CommonInputContext", "InputMethodChangedDelegate__DelegateSignature");
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "InputMethodChangedDelegate__DelegateSignature");
 
-	Params::UCommonInputContext_InputMethodChangedDelegate__DelegateSignature_Params Parms;
+	Params::UCommonInputSubsystem_InputMethodChangedDelegate__DelegateSignature_Params Parms;
 	Parms.bNewInputType = bNewInputType;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -102,16 +126,16 @@ void UCommonInputContext::InputMethodChangedDelegate__DelegateSignature(enum cla
 }
 
 
-// Function CommonInput.CommonInputContext.GetCurrentInputType
+// Function CommonInput.CommonInputSubsystem.GetDefaultInputType
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // enum class ECommonInputType        ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-enum class ECommonInputType UCommonInputContext::GetCurrentInputType()
+enum class ECommonInputType UCommonInputSubsystem::GetDefaultInputType()
 {
-	static auto Func = Class->GetFunction("CommonInputContext", "GetCurrentInputType");
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "GetDefaultInputType");
 
-	Params::UCommonInputContext_GetCurrentInputType_Params Parms;
+	Params::UCommonInputSubsystem_GetDefaultInputType_Params Parms;
 
 	auto Flags = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -126,16 +150,40 @@ enum class ECommonInputType UCommonInputContext::GetCurrentInputType()
 }
 
 
-// Function CommonInput.CommonInputContext.GetCurrentGamepadType
+// Function CommonInput.CommonInputSubsystem.GetCurrentInputType
+// (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
+// Parameters:
+// enum class ECommonInputType        ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+enum class ECommonInputType UCommonInputSubsystem::GetCurrentInputType()
+{
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentInputType");
+
+	Params::UCommonInputSubsystem_GetCurrentInputType_Params Parms;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function CommonInput.CommonInputSubsystem.GetCurrentGamepadType
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
 // enum class ECommonGamepadType      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-enum class ECommonGamepadType UCommonInputContext::GetCurrentGamepadType()
+enum class ECommonGamepadType UCommonInputSubsystem::GetCurrentGamepadType()
 {
-	static auto Func = Class->GetFunction("CommonInputContext", "GetCurrentGamepadType");
+	static auto Func = Class->GetFunction("CommonInputSubsystem", "GetCurrentGamepadType");
 
-	Params::UCommonInputContext_GetCurrentGamepadType_Params Parms;
+	Params::UCommonInputSubsystem_GetCurrentGamepadType_Params Parms;
 
 	auto Flags = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

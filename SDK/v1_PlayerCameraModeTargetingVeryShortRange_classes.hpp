@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass v1_PlayerCameraModeTargetingVeryShortRange.v1_PlayerCameraModeTargetingVeryShortRange_C
 class UV1_PlayerCameraModeTargetingVeryShortRange_C : public UV1_PlayerCameraModeBase_C
 {

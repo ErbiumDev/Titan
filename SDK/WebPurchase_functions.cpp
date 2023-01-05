@@ -113,7 +113,7 @@ void UWebPurchase_C::OnActivated()
 
 
 // Function WebPurchase.WebPurchase_C.ExecuteUbergraph_WebPurchase
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)

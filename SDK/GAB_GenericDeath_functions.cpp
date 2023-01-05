@@ -56,11 +56,11 @@ void UGAB_GenericDeath_C::GetRandomSectionName(int32 MaxNumberOfSections, class 
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // struct FGameplayEventData          EventHitData                                                     (BlueprintVisible, BlueprintReadOnly, Parm)
-// struct FVector                     CallFunc_GetImpulseData_ImpulseDirection                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_GetImpulseData_ImpulseDirection                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetImpulseData_KnockbackMagnitude                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetImpulseData_KnockbackZAngle                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHitResult                  CallFunc_EffectContextGetHitResult_ReturnValue                   (IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// struct FVector                     CallFunc_Multiply_VectorFloat_ReturnValue                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_Multiply_VectorFloat_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UGAB_GenericDeath_C::InitializeDeathHitDirection(const struct FGameplayEventData& EventHitData, const struct FVector& CallFunc_GetImpulseData_ImpulseDirection, float CallFunc_GetImpulseData_KnockbackMagnitude, float CallFunc_GetImpulseData_KnockbackZAngle, const struct FHitResult& CallFunc_EffectContextGetHitResult_ReturnValue, const struct FVector& CallFunc_Multiply_VectorFloat_ReturnValue)
 {
@@ -189,7 +189,7 @@ void UGAB_GenericDeath_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData&
 
 
 // Function GAB_GenericDeath.GAB_GenericDeath_C.ExecuteUbergraph_GAB_GenericDeath
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
@@ -211,35 +211,35 @@ void UGAB_GenericDeath_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData&
 // bool                               CallFunc_BooleanAND_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_NameName_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue12                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue123                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_NameName_ReturnValue2                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_NameName_ReturnValue3                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
 // class FName                        CallFunc_GetRandomSectionName_SectionName                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_GetRandomSectionName_SectionName1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        CallFunc_GetRandomSectionName_SectionName12                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        CallFunc_GetRandomSectionName_SectionName123                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue1234                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue12345                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue123456                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue1234567                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName                        CallFunc_GetRandomSectionName_SectionName2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        CallFunc_GetRandomSectionName_SectionName3                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_NameName_ReturnValue4                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_NameName_ReturnValue5                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_NameName_ReturnValue6                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_NameName_ReturnValue7                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAbilityTask_PlayMontageAndWait*CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FName                        CallFunc_GetRandomSectionName_SectionName1234                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        CallFunc_GetRandomSectionName_SectionName12345                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        CallFunc_GetRandomSectionName_SectionName123456                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        CallFunc_GetRandomSectionName_SectionName1234567                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
-// class AFortPawn*                   CallFunc_GetActivatingPawn_ReturnValue12                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        CallFunc_GetRandomSectionName_SectionName4                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        CallFunc_GetRandomSectionName_SectionName5                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        CallFunc_GetRandomSectionName_SectionName6                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class FName                        CallFunc_GetRandomSectionName_SectionName7                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
+// class AFortPawn*                   CallFunc_GetActivatingPawn_ReturnValue2                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortAIPawn*                 K2Node_DynamicCast_AsFort_AIPawn                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortDamageZone         CallFunc_GetDamageZone_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate123                          (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate3                            (ZeroConstructor, NoDestructor)
 // class FName                        CallFunc_SetFNameBasedOnHitDirection_NameResult                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_SetFNameBasedOnHitDirection_NameResult1                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UGAB_GenericDeath_C::ExecuteUbergraph_GAB_GenericDeath(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, bool K2Node_Event_bWasCancelled, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue1, const struct FGameplayCueParameters& K2Node_MakeStruct_GameplayCueParameters, bool CallFunc_HasAuthority_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class ABP_VictoryDrone_C* CallFunc_FinishSpawningActor_ReturnValue, UInterfaceProperty_ CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue1, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool CallFunc_EqualEqual_NameName_ReturnValue12, bool CallFunc_EqualEqual_NameName_ReturnValue123, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class FName CallFunc_GetRandomSectionName_SectionName, class FName CallFunc_GetRandomSectionName_SectionName1, class FName CallFunc_GetRandomSectionName_SectionName12, class FName CallFunc_GetRandomSectionName_SectionName123, bool CallFunc_EqualEqual_NameName_ReturnValue1234, bool CallFunc_EqualEqual_NameName_ReturnValue12345, bool CallFunc_EqualEqual_NameName_ReturnValue123456, bool CallFunc_EqualEqual_NameName_ReturnValue1234567, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FName CallFunc_GetRandomSectionName_SectionName1234, class FName CallFunc_GetRandomSectionName_SectionName12345, class FName CallFunc_GetRandomSectionName_SectionName123456, class FName CallFunc_GetRandomSectionName_SectionName1234567, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue12, class AFortAIPawn* K2Node_DynamicCast_AsFort_AIPawn, bool K2Node_DynamicCast_bSuccess1, enum class EFortDamageZone CallFunc_GetDamageZone_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate123, class FName CallFunc_SetFNameBasedOnHitDirection_NameResult, class FName CallFunc_SetFNameBasedOnHitDirection_NameResult1)
+void UGAB_GenericDeath_C::ExecuteUbergraph_GAB_GenericDeath(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue, bool K2Node_Event_bWasCancelled, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue1, const struct FGameplayCueParameters& K2Node_MakeStruct_GameplayCueParameters, bool CallFunc_HasAuthority_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FTransform& CallFunc_K2_GetComponentToWorld_ReturnValue, class AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, class ABP_VictoryDrone_C* CallFunc_FinishSpawningActor_ReturnValue, UInterfaceProperty_ CallFunc_HasAnyMatchingGameplayTags_self_CastInput, bool CallFunc_HasAnyMatchingGameplayTags_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue1, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool CallFunc_EqualEqual_NameName_ReturnValue2, bool CallFunc_EqualEqual_NameName_ReturnValue3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class FName CallFunc_GetRandomSectionName_SectionName, class FName CallFunc_GetRandomSectionName_SectionName1, class FName CallFunc_GetRandomSectionName_SectionName2, class FName CallFunc_GetRandomSectionName_SectionName3, bool CallFunc_EqualEqual_NameName_ReturnValue4, bool CallFunc_EqualEqual_NameName_ReturnValue5, bool CallFunc_EqualEqual_NameName_ReturnValue6, bool CallFunc_EqualEqual_NameName_ReturnValue7, class UAbilityTask_PlayMontageAndWait* CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FName CallFunc_GetRandomSectionName_SectionName4, class FName CallFunc_GetRandomSectionName_SectionName5, class FName CallFunc_GetRandomSectionName_SectionName6, class FName CallFunc_GetRandomSectionName_SectionName7, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, class AFortPawn* CallFunc_GetActivatingPawn_ReturnValue2, class AFortAIPawn* K2Node_DynamicCast_AsFort_AIPawn, bool K2Node_DynamicCast_bSuccess1, enum class EFortDamageZone CallFunc_GetDamageZone_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, const struct FGameplayEventData& K2Node_Event_EventData, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate3, class FName CallFunc_SetFNameBasedOnHitDirection_NameResult, class FName CallFunc_SetFNameBasedOnHitDirection_NameResult1)
 {
 	static auto Func = Class->GetFunction("GAB_GenericDeath_C", "ExecuteUbergraph_GAB_GenericDeath");
 
@@ -264,31 +264,31 @@ void UGAB_GenericDeath_C::ExecuteUbergraph_GAB_GenericDeath(int32 EntryPoint, UD
 	Parms.CallFunc_BooleanAND_ReturnValue1 = CallFunc_BooleanAND_ReturnValue1;
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue1 = CallFunc_EqualEqual_NameName_ReturnValue1;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue12 = CallFunc_EqualEqual_NameName_ReturnValue12;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue123 = CallFunc_EqualEqual_NameName_ReturnValue123;
+	Parms.CallFunc_EqualEqual_NameName_ReturnValue2 = CallFunc_EqualEqual_NameName_ReturnValue2;
+	Parms.CallFunc_EqualEqual_NameName_ReturnValue3 = CallFunc_EqualEqual_NameName_ReturnValue3;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
 	Parms.CallFunc_GetRandomSectionName_SectionName = CallFunc_GetRandomSectionName_SectionName;
 	Parms.CallFunc_GetRandomSectionName_SectionName1 = CallFunc_GetRandomSectionName_SectionName1;
-	Parms.CallFunc_GetRandomSectionName_SectionName12 = CallFunc_GetRandomSectionName_SectionName12;
-	Parms.CallFunc_GetRandomSectionName_SectionName123 = CallFunc_GetRandomSectionName_SectionName123;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue1234 = CallFunc_EqualEqual_NameName_ReturnValue1234;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue12345 = CallFunc_EqualEqual_NameName_ReturnValue12345;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue123456 = CallFunc_EqualEqual_NameName_ReturnValue123456;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue1234567 = CallFunc_EqualEqual_NameName_ReturnValue1234567;
+	Parms.CallFunc_GetRandomSectionName_SectionName2 = CallFunc_GetRandomSectionName_SectionName2;
+	Parms.CallFunc_GetRandomSectionName_SectionName3 = CallFunc_GetRandomSectionName_SectionName3;
+	Parms.CallFunc_EqualEqual_NameName_ReturnValue4 = CallFunc_EqualEqual_NameName_ReturnValue4;
+	Parms.CallFunc_EqualEqual_NameName_ReturnValue5 = CallFunc_EqualEqual_NameName_ReturnValue5;
+	Parms.CallFunc_EqualEqual_NameName_ReturnValue6 = CallFunc_EqualEqual_NameName_ReturnValue6;
+	Parms.CallFunc_EqualEqual_NameName_ReturnValue7 = CallFunc_EqualEqual_NameName_ReturnValue7;
 	Parms.CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue = CallFunc_CreatePlayMontageAndWaitProxy_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_GetRandomSectionName_SectionName1234 = CallFunc_GetRandomSectionName_SectionName1234;
-	Parms.CallFunc_GetRandomSectionName_SectionName12345 = CallFunc_GetRandomSectionName_SectionName12345;
-	Parms.CallFunc_GetRandomSectionName_SectionName123456 = CallFunc_GetRandomSectionName_SectionName123456;
-	Parms.CallFunc_GetRandomSectionName_SectionName1234567 = CallFunc_GetRandomSectionName_SectionName1234567;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
-	Parms.CallFunc_GetActivatingPawn_ReturnValue12 = CallFunc_GetActivatingPawn_ReturnValue12;
+	Parms.CallFunc_GetRandomSectionName_SectionName4 = CallFunc_GetRandomSectionName_SectionName4;
+	Parms.CallFunc_GetRandomSectionName_SectionName5 = CallFunc_GetRandomSectionName_SectionName5;
+	Parms.CallFunc_GetRandomSectionName_SectionName6 = CallFunc_GetRandomSectionName_SectionName6;
+	Parms.CallFunc_GetRandomSectionName_SectionName7 = CallFunc_GetRandomSectionName_SectionName7;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
+	Parms.CallFunc_GetActivatingPawn_ReturnValue2 = CallFunc_GetActivatingPawn_ReturnValue2;
 	Parms.K2Node_DynamicCast_AsFort_AIPawn = K2Node_DynamicCast_AsFort_AIPawn;
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
 	Parms.CallFunc_GetDamageZone_ReturnValue = CallFunc_GetDamageZone_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.K2Node_Event_EventData = K2Node_Event_EventData;
-	Parms.K2Node_CreateDelegate_OutputDelegate123 = K2Node_CreateDelegate_OutputDelegate123;
+	Parms.K2Node_CreateDelegate_OutputDelegate3 = K2Node_CreateDelegate_OutputDelegate3;
 	Parms.CallFunc_SetFNameBasedOnHitDirection_NameResult = CallFunc_SetFNameBasedOnHitDirection_NameResult;
 	Parms.CallFunc_SetFNameBasedOnHitDirection_NameResult1 = CallFunc_SetFNameBasedOnHitDirection_NameResult1;
 

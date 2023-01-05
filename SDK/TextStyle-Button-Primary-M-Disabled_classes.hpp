@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Button-Primary-M-Disabled.TextStyle-Button-Primary-M-Disabled_C
 class UTextStyle_Button_Primary_M_Disabled_C : public UCommonTextStyle
 {

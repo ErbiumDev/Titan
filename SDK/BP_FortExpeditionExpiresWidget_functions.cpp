@@ -16,13 +16,13 @@ namespace SDK
 
 
 // Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.Get Mcp Relative Utc Now
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FDateTime                   UtcNow                                                           (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   UtcNow                                                           (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerController*       K2Node_DynamicCast_AsFort_Player_Controller                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionExpiresWidget_C::Get_Mcp_Relative_Utc_Now(struct FDateTime* UtcNow, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FDateTime& CallFunc_GetMcpRelativeUtcNow_ReturnValue)
 {
@@ -46,8 +46,8 @@ void UBP_FortExpeditionExpiresWidget_C::Get_Mcp_Relative_Utc_Now(struct FDateTim
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortExpeditionItem*         Item                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FDateTime                   CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow                         (NoDestructor, HasGetValueTypeHash)
-// struct FTimespan                   CallFunc_GetRemainingExpeditionExpirationDuration_ReturnValue    (NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   CallFunc_GetRemainingExpeditionExpirationDuration_ReturnValue    (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetTimespanAsText_ReturnValue                           ()
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
@@ -121,7 +121,7 @@ void UBP_FortExpeditionExpiresWidget_C::PreConstruct(bool IsDesignTime)
 
 
 // Function BP_FortExpeditionExpiresWidget.BP_FortExpeditionExpiresWidget_C.ExecuteUbergraph_BP_FortExpeditionExpiresWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortExpeditionItem*         K2Node_Event_InItem                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

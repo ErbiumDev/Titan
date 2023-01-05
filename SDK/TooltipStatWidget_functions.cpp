@@ -20,17 +20,17 @@ namespace SDK
 // Parameters:
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor1                                    ()
-// struct FLinearColor                CallFunc_Get_Theme_Color_Theme_Color                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Get_Buff_Color_Color                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor12                                   ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor123                                  ()
-// struct FLinearColor                CallFunc_Get_Debuff_Color_Color                                  (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Get_Theme_Color_Theme_Color1                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor1234                                 ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor12345                                ()
+// struct FLinearColor                CallFunc_Get_Theme_Color_Theme_Color                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Buff_Color_Color                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor2                                    ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor3                                    ()
+// struct FLinearColor                CallFunc_Get_Debuff_Color_Color                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Theme_Color_Theme_Color1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor4                                    ()
+// struct FSlateColor                 K2Node_MakeStruct_SlateColor5                                    ()
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTooltipStatWidget_C::Init(const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateColor& K2Node_MakeStruct_SlateColor1, const struct FLinearColor& CallFunc_Get_Theme_Color_Theme_Color, const struct FLinearColor& CallFunc_Get_Buff_Color_Color, const struct FSlateColor& K2Node_MakeStruct_SlateColor12, const struct FSlateColor& K2Node_MakeStruct_SlateColor123, const struct FLinearColor& CallFunc_Get_Debuff_Color_Color, const struct FLinearColor& CallFunc_Get_Theme_Color_Theme_Color1, const struct FSlateColor& K2Node_MakeStruct_SlateColor1234, const struct FSlateColor& K2Node_MakeStruct_SlateColor12345, bool K2Node_SwitchEnum_CmpSuccess)
+void UTooltipStatWidget_C::Init(const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateColor& K2Node_MakeStruct_SlateColor1, const struct FLinearColor& CallFunc_Get_Theme_Color_Theme_Color, const struct FLinearColor& CallFunc_Get_Buff_Color_Color, const struct FSlateColor& K2Node_MakeStruct_SlateColor2, const struct FSlateColor& K2Node_MakeStruct_SlateColor3, const struct FLinearColor& CallFunc_Get_Debuff_Color_Color, const struct FLinearColor& CallFunc_Get_Theme_Color_Theme_Color1, const struct FSlateColor& K2Node_MakeStruct_SlateColor4, const struct FSlateColor& K2Node_MakeStruct_SlateColor5, bool K2Node_SwitchEnum_CmpSuccess)
 {
 	static auto Func = Class->GetFunction("TooltipStatWidget_C", "Init");
 
@@ -39,12 +39,12 @@ void UTooltipStatWidget_C::Init(const struct FSlateColor& K2Node_MakeStruct_Slat
 	Parms.K2Node_MakeStruct_SlateColor1 = K2Node_MakeStruct_SlateColor1;
 	Parms.CallFunc_Get_Theme_Color_Theme_Color = CallFunc_Get_Theme_Color_Theme_Color;
 	Parms.CallFunc_Get_Buff_Color_Color = CallFunc_Get_Buff_Color_Color;
-	Parms.K2Node_MakeStruct_SlateColor12 = K2Node_MakeStruct_SlateColor12;
-	Parms.K2Node_MakeStruct_SlateColor123 = K2Node_MakeStruct_SlateColor123;
+	Parms.K2Node_MakeStruct_SlateColor2 = K2Node_MakeStruct_SlateColor2;
+	Parms.K2Node_MakeStruct_SlateColor3 = K2Node_MakeStruct_SlateColor3;
 	Parms.CallFunc_Get_Debuff_Color_Color = CallFunc_Get_Debuff_Color_Color;
 	Parms.CallFunc_Get_Theme_Color_Theme_Color1 = CallFunc_Get_Theme_Color_Theme_Color1;
-	Parms.K2Node_MakeStruct_SlateColor1234 = K2Node_MakeStruct_SlateColor1234;
-	Parms.K2Node_MakeStruct_SlateColor12345 = K2Node_MakeStruct_SlateColor12345;
+	Parms.K2Node_MakeStruct_SlateColor4 = K2Node_MakeStruct_SlateColor4;
+	Parms.K2Node_MakeStruct_SlateColor5 = K2Node_MakeStruct_SlateColor5;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -98,7 +98,7 @@ void UTooltipStatWidget_C::BndEvt__ButtonHover_K2Node_ComponentBoundEvent_1037_O
 
 
 // Function TooltipStatWidget.TooltipStatWidget_C.ExecuteUbergraph_TooltipStatWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

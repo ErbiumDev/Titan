@@ -64,15 +64,15 @@ void UFriendCodeEntry_C::SetUsedDisplayState()
 }
 
 
-// Function FriendCodeEntry.FriendCodeEntry_C.OnClicked
+// Function FriendCodeEntry.FriendCodeEntry_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UFriendCodeEntry_C::OnClicked()
+void UFriendCodeEntry_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("FriendCodeEntry_C", "OnClicked");
+	static auto Func = Class->GetFunction("FriendCodeEntry_C", "BP_OnClicked");
 
-	Params::UFriendCodeEntry_C_OnClicked_Params Parms;
+	Params::UFriendCodeEntry_C_BP_OnClicked_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -80,7 +80,7 @@ void UFriendCodeEntry_C::OnClicked()
 
 
 // Function FriendCodeEntry.FriendCodeEntry_C.ExecuteUbergraph_FriendCodeEntry
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

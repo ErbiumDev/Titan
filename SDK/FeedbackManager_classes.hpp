@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x440 - 0x438)
+// 0x8 (0x470 - 0x468)
 // BlueprintGeneratedClass FeedbackManager.FeedbackManager_C
 class AFeedbackManager_C : public AFortFeedbackManager
 {
 public:
-	class USceneComponent*                       DefaultSceneRoot;                                  // 0x438(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                       DefaultSceneRoot;                                  // 0x468(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

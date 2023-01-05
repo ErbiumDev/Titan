@@ -12,15 +12,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x24 (0xEB0 - 0xE8C)
+// 0x20 (0xDF8 - 0xDD8)
 // BlueprintGeneratedClass B_Assault_LMG_SAW_Athena.B_Assault_LMG_SAW_Athena_C
 class AB_Assault_LMG_SAW_Athena_C : public AB_Assault_Bulletswarm_C
 {
 public:
-	uint8                                        Pad_53E6[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xE90(0x8)(Transient, DuplicateTransient)
-	struct FVector                               LaserScaleUntargeted;                              // 0xE98(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               LaserScaleTargeted;                                // 0xEA4(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xDD8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FVector                               LaserScaleUntargeted;                              // 0xDE0(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               LaserScaleTargeted;                                // 0xDEC(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

@@ -21,10 +21,10 @@ namespace Params
 struct AStoreCamera_Blueprint_C_UserConstructionScript_Params
 {
 public:
-	struct FRotator                              CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0(0xC)(IsPlainOldData, NoDestructor)
-	struct FRotator                              CallFunc_K2_GetComponentRotation_ReturnValue1;     // 0xC(0xC)(IsPlainOldData, NoDestructor)
-	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x18(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x24(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                              CallFunc_K2_GetComponentRotation_ReturnValue;      // 0x0(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FRotator                              CallFunc_K2_GetComponentRotation_ReturnValue1;     // 0xC(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0x18(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue1;     // 0x24(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -116,39 +116,39 @@ public:
 	int32                                        CallFunc_Add_IntInt_ReturnValue;                   // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        Temp_int_Array_Index_Variable;                     // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Lerp_ReturnValue1;                        // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                              CallFunc_RLerp_ReturnValue;                        // 0x18(0xC)(IsPlainOldData, NoDestructor)
-	struct FVector                               CallFunc_VLerp_ReturnValue;                        // 0x24(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FRotator                              CallFunc_RLerp_ReturnValue;                        // 0x18(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FVector                               CallFunc_VLerp_ReturnValue;                        // 0x24(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FHitResult                            CallFunc_K2_SetActorLocationAndRotation_SweepHitResult; // 0x30(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
 	bool                                         CallFunc_K2_SetActorLocationAndRotation_ReturnValue; // 0xB8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_524F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5FE1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        Temp_int_Array_Index_Variable1;                    // 0xBC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_CustomEvent_Enable;                         // 0xC0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5250[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5FE2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AStorePinataMaster_Parent_C*>   CallFunc_GetAllActorsOfClass_OutActors;            // 0xC8(0x10)(ZeroConstructor, ReferenceParm)
 	class AStorePinataMaster_Parent_C*           CallFunc_Array_Get_Item;                           // 0xD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0xE0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_5251[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5FE3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class AStoreCardReveal_Parent_C*>     CallFunc_GetAllActorsOfClass_OutActors1;           // 0xE8(0x10)(ZeroConstructor, ReferenceParm)
 	class AStoreCardReveal_Parent_C*             CallFunc_Array_Get_Item1;                          // 0xF8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Array_Length_ReturnValue1;                // 0x100(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue;                  // 0x104(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x105(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue1;                     // 0x106(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5252[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<class ATVPostProcessBP_C*>            CallFunc_GetAllActorsOfClass_OutActors12;          // 0x108(0x10)(ZeroConstructor, ReferenceParm)
+	uint8                                        Pad_5FE4[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<class ATVPostProcessBP_C*>            CallFunc_GetAllActorsOfClass_OutActors2;           // 0x108(0x10)(ZeroConstructor, ReferenceParm)
 	int32                                        Temp_int_Loop_Counter_Variable1;                   // 0x118(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_Array_Length_ReturnValue12;               // 0x11C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Array_Length_ReturnValue2;                // 0x11C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_Less_IntInt_ReturnValue1;                 // 0x120(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5253[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5FE5[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_Add_IntInt_ReturnValue1;                  // 0x124(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortTimeOfDayManager*                 CallFunc_GetTimeOfDayManagerFromContext_ReturnValue; // 0x128(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        Temp_int_Loop_Counter_Variable12;                  // 0x130(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_Less_IntInt_ReturnValue12;                // 0x134(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_5254[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Add_IntInt_ReturnValue12;                 // 0x138(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        Temp_int_Array_Index_Variable12;                   // 0x13C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ATVPostProcessBP_C*                    CallFunc_Array_Get_Item12;                         // 0x140(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsValid_ReturnValue12;                    // 0x148(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                        Temp_int_Loop_Counter_Variable2;                   // 0x130(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Less_IntInt_ReturnValue2;                 // 0x134(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5FE6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_Add_IntInt_ReturnValue2;                  // 0x138(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        Temp_int_Array_Index_Variable2;                    // 0x13C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ATVPostProcessBP_C*                    CallFunc_Array_Get_Item2;                          // 0x140(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue2;                     // 0x148(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

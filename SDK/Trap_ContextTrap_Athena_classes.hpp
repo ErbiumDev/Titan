@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xEE0 - 0xEE0)
+// 0x0 (0xE20 - 0xE20)
 // BlueprintGeneratedClass Trap_ContextTrap_Athena.Trap_ContextTrap_Athena_C
 class ATrap_ContextTrap_Athena_C : public ABuildingTrap
 {

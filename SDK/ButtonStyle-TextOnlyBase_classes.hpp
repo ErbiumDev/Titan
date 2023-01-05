@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-TextOnlyBase.ButtonStyle-TextOnlyBase_C
 class UButtonStyle_TextOnlyBase_C : public UButtonStyle_Base_C
 {

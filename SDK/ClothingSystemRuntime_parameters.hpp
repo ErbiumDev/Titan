@@ -37,7 +37,7 @@ public:
 struct UClothingSimulationInteractorNv_EnableGravityOverride_Params
 {
 public:
-	struct FVector                               InVector;                                          // 0x0(0xC)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector                               InVector;                                          // 0x0(0xC)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x0 (0x0 - 0x0)

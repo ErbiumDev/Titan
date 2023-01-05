@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-M-Special-Large.TextStyle-Header-M-Special-Large_C
 class UTextStyle_Header_M_Special_Large_C : public UTextStyle_HeaderParent_C
 {

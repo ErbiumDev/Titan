@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xAF0 - 0xAF0)
+// 0x0 (0x968 - 0x968)
 // BlueprintGeneratedClass GA_Trap_WallSpikesMetal.GA_Trap_WallSpikesMetal_C
 class UGA_Trap_WallSpikesMetal_C : public UGA_TrapGeneric_C
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB08 - 0xB08)
+// 0x0 (0x979 - 0x979)
 // BlueprintGeneratedClass GA_Ranged_GenericProjectileExplosive.GA_Ranged_GenericProjectileExplosive_C
 class UGA_Ranged_GenericProjectileExplosive_C : public UGA_Ranged_GenericDamage_C
 {

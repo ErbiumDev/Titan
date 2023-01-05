@@ -54,8 +54,8 @@ void UBasicRatingWidget_C::Get_Current_Rating(float* CurrentNumericValue)
 // Function BasicRatingWidget.BasicRatingWidget_C.Update Border Color
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                Color1                                                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Color2                                                           (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Color1                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Color2                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBasicRatingWidget_C::Update_Border_Color(const struct FLinearColor& Color1, const struct FLinearColor& Color2, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
@@ -136,26 +136,26 @@ void UBasicRatingWidget_C::PreConstruct(bool IsDesignTime)
 
 
 // Function BasicRatingWidget.BasicRatingWidget_C.ExecuteUbergraph_BasicRatingWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortBrushSize          Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   Temp_struct_Variable                                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   Temp_struct_Variable1                                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   Temp_struct_Variable12                                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   Temp_struct_Variable123                                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   Temp_struct_Variable1234                                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   Temp_struct_Variable12345                                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        CallFunc_GetBorderVisibility_Visibility                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   K2Node_Select_Default                                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
 // enum class ESlateVisibility        K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBasicRatingWidget_C::ExecuteUbergraph_BasicRatingWidget(int32 EntryPoint, enum class EFortBrushSize Temp_byte_Variable, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable1, const struct FVector2D& Temp_struct_Variable12, const struct FVector2D& Temp_struct_Variable123, const struct FVector2D& Temp_struct_Variable1234, const struct FVector2D& Temp_struct_Variable12345, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable12, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility CallFunc_GetBorderVisibility_Visibility, const struct FVector2D& K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, enum class ESlateVisibility K2Node_Select1_Default)
+void UBasicRatingWidget_C::ExecuteUbergraph_BasicRatingWidget(int32 EntryPoint, enum class EFortBrushSize Temp_byte_Variable, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable1, const struct FVector2D& Temp_struct_Variable2, const struct FVector2D& Temp_struct_Variable3, const struct FVector2D& Temp_struct_Variable4, const struct FVector2D& Temp_struct_Variable5, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable2, bool K2Node_Event_IsDesignTime, enum class ESlateVisibility CallFunc_GetBorderVisibility_Visibility, const struct FVector2D& K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, enum class ESlateVisibility K2Node_Select1_Default)
 {
 	static auto Func = Class->GetFunction("BasicRatingWidget_C", "ExecuteUbergraph_BasicRatingWidget");
 
@@ -164,13 +164,13 @@ void UBasicRatingWidget_C::ExecuteUbergraph_BasicRatingWidget(int32 EntryPoint, 
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.Temp_struct_Variable1 = Temp_struct_Variable1;
-	Parms.Temp_struct_Variable12 = Temp_struct_Variable12;
-	Parms.Temp_struct_Variable123 = Temp_struct_Variable123;
-	Parms.Temp_struct_Variable1234 = Temp_struct_Variable1234;
-	Parms.Temp_struct_Variable12345 = Temp_struct_Variable12345;
+	Parms.Temp_struct_Variable2 = Temp_struct_Variable2;
+	Parms.Temp_struct_Variable3 = Temp_struct_Variable3;
+	Parms.Temp_struct_Variable4 = Temp_struct_Variable4;
+	Parms.Temp_struct_Variable5 = Temp_struct_Variable5;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 	Parms.CallFunc_GetBorderVisibility_Visibility = CallFunc_GetBorderVisibility_Visibility;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;

@@ -229,171 +229,173 @@ void AB_Constructor_BASE_C::BaseSelfApplyGameplaySpec(const struct FGameplayEffe
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UAbilitySystemComponent*     AbilitySystemComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FString                      CallFunc_Conv_FloatToString_ReturnValue                          (ZeroConstructor, HasGetValueTypeHash)
+// float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_FClamp_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Conv_BoolToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue2                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue2                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue3                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue3                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue4                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue4                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue5                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue5                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue6                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue6                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue7                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue7                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface8_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue8                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue8                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface9_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue9                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue9                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface10_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue10                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue10                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface11_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue11                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue11                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Conv_BoolToInt_ReturnValue12                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue123                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue1234                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12345             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123456            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue12345                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue123456                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue1234567                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue12345678                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue123456789                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue12345678910                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue1234567891011                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue123456789101112               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314(ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue12345678910111213             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415(ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213141516_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213141516(ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue12345678910111213141516       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314151617_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314151617(ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415161718_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415161718(ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314151617     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415161718   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface13_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue13                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue13                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface14_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue14                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue14                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface15_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue15                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue15                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface16_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue16                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue16                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface17_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue17                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue17                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface18_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue18                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Conv_BoolToInt_ReturnValue18                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue3                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue4                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue5                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue6                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue7                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue8                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue9                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue10                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue11                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue123                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue1234                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue12345                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue123456                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue1234567                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue12345678                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue123456789                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue12345678910                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue1234567891011                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue123456789101112                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue12345678910111213                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue1234567891011121314               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue123456789101112131415             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue12345678910111213141516           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue1234567891011121314151617         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue123456789101112131415161718       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_FClamp_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue13                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue14                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue15                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue16                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue17                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue18                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SetBaseVisualGlow(class UAbilitySystemComponent* AbilitySystemComponent, const class FString& CallFunc_Conv_FloatToString_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, int32 CallFunc_Conv_BoolToInt_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12, int32 CallFunc_Conv_BoolToInt_ReturnValue1, int32 CallFunc_Conv_BoolToInt_ReturnValue12, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234, int32 CallFunc_Conv_BoolToInt_ReturnValue123, int32 CallFunc_Conv_BoolToInt_ReturnValue1234, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12345, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123456, int32 CallFunc_Conv_BoolToInt_ReturnValue12345, int32 CallFunc_Conv_BoolToInt_ReturnValue123456, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678, int32 CallFunc_Conv_BoolToInt_ReturnValue1234567, int32 CallFunc_Conv_BoolToInt_ReturnValue12345678, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910, int32 CallFunc_Conv_BoolToInt_ReturnValue123456789, int32 CallFunc_Conv_BoolToInt_ReturnValue12345678910, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112, int32 CallFunc_Conv_BoolToInt_ReturnValue1234567891011, int32 CallFunc_Conv_BoolToInt_ReturnValue123456789101112, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314, int32 CallFunc_Conv_BoolToInt_ReturnValue12345678910111213, int32 CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213141516_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213141516, int32 CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415, int32 CallFunc_Conv_BoolToInt_ReturnValue12345678910111213141516, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314151617_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314151617, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415161718_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415161718, int32 CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314151617, int32 CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415161718, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, int32 CallFunc_Add_IntInt_ReturnValue12, int32 CallFunc_Add_IntInt_ReturnValue123, int32 CallFunc_Add_IntInt_ReturnValue1234, int32 CallFunc_Add_IntInt_ReturnValue12345, int32 CallFunc_Add_IntInt_ReturnValue123456, int32 CallFunc_Add_IntInt_ReturnValue1234567, int32 CallFunc_Add_IntInt_ReturnValue12345678, int32 CallFunc_Add_IntInt_ReturnValue123456789, int32 CallFunc_Add_IntInt_ReturnValue12345678910, int32 CallFunc_Add_IntInt_ReturnValue1234567891011, int32 CallFunc_Add_IntInt_ReturnValue123456789101112, int32 CallFunc_Add_IntInt_ReturnValue12345678910111213, int32 CallFunc_Add_IntInt_ReturnValue1234567891011121314, int32 CallFunc_Add_IntInt_ReturnValue123456789101112131415, int32 CallFunc_Add_IntInt_ReturnValue12345678910111213141516, int32 CallFunc_Add_IntInt_ReturnValue1234567891011121314151617, int32 CallFunc_Add_IntInt_ReturnValue123456789101112131415161718, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_FClamp_ReturnValue)
+void AB_Constructor_BASE_C::SetBaseVisualGlow(class UAbilitySystemComponent* AbilitySystemComponent, int32 Temp_int_Variable, const class FString& CallFunc_Conv_FloatToString_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue, float CallFunc_FClamp_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, int32 CallFunc_Conv_BoolToInt_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, int32 CallFunc_Conv_BoolToInt_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue2, int32 CallFunc_Conv_BoolToInt_ReturnValue2, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue3, int32 CallFunc_Conv_BoolToInt_ReturnValue3, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue4, int32 CallFunc_Conv_BoolToInt_ReturnValue4, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue5, int32 CallFunc_Conv_BoolToInt_ReturnValue5, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue6, int32 CallFunc_Conv_BoolToInt_ReturnValue6, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue7, int32 CallFunc_Conv_BoolToInt_ReturnValue7, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface8_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue8, int32 CallFunc_Conv_BoolToInt_ReturnValue8, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface9_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue9, int32 CallFunc_Conv_BoolToInt_ReturnValue9, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface10_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue10, int32 CallFunc_Conv_BoolToInt_ReturnValue10, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface11_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue11, int32 CallFunc_Conv_BoolToInt_ReturnValue11, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12, int32 CallFunc_Conv_BoolToInt_ReturnValue12, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface13_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue13, int32 CallFunc_Conv_BoolToInt_ReturnValue13, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface14_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue14, int32 CallFunc_Conv_BoolToInt_ReturnValue14, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface15_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue15, int32 CallFunc_Conv_BoolToInt_ReturnValue15, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface16_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue16, int32 CallFunc_Conv_BoolToInt_ReturnValue16, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface17_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue17, int32 CallFunc_Conv_BoolToInt_ReturnValue17, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface18_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue18, int32 CallFunc_Conv_BoolToInt_ReturnValue18, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, int32 CallFunc_Add_IntInt_ReturnValue2, int32 CallFunc_Add_IntInt_ReturnValue3, int32 CallFunc_Add_IntInt_ReturnValue4, int32 CallFunc_Add_IntInt_ReturnValue5, int32 CallFunc_Add_IntInt_ReturnValue6, int32 CallFunc_Add_IntInt_ReturnValue7, int32 CallFunc_Add_IntInt_ReturnValue8, int32 CallFunc_Add_IntInt_ReturnValue9, int32 CallFunc_Add_IntInt_ReturnValue10, int32 CallFunc_Add_IntInt_ReturnValue11, int32 CallFunc_Add_IntInt_ReturnValue12, int32 CallFunc_Add_IntInt_ReturnValue13, int32 CallFunc_Add_IntInt_ReturnValue14, int32 CallFunc_Add_IntInt_ReturnValue15, int32 CallFunc_Add_IntInt_ReturnValue16, int32 CallFunc_Add_IntInt_ReturnValue17, int32 CallFunc_Add_IntInt_ReturnValue18)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "SetBaseVisualGlow");
 
 	Params::AB_Constructor_BASE_C_SetBaseVisualGlow_Params Parms;
 	Parms.AbilitySystemComponent = AbilitySystemComponent;
+	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.CallFunc_Conv_FloatToString_ReturnValue = CallFunc_Conv_FloatToString_ReturnValue;
+	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
+	Parms.CallFunc_FClamp_ReturnValue = CallFunc_FClamp_ReturnValue;
 	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
 	Parms.CallFunc_Conv_BoolToInt_ReturnValue = CallFunc_Conv_BoolToInt_ReturnValue;
 	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput;
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue1 = CallFunc_Conv_BoolToInt_ReturnValue1;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue2 = CallFunc_HasAllMatchingGameplayTags_ReturnValue2;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue2 = CallFunc_Conv_BoolToInt_ReturnValue2;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue3 = CallFunc_HasAllMatchingGameplayTags_ReturnValue3;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue3 = CallFunc_Conv_BoolToInt_ReturnValue3;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue4 = CallFunc_HasAllMatchingGameplayTags_ReturnValue4;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue4 = CallFunc_Conv_BoolToInt_ReturnValue4;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue5 = CallFunc_HasAllMatchingGameplayTags_ReturnValue5;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue5 = CallFunc_Conv_BoolToInt_ReturnValue5;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue6 = CallFunc_HasAllMatchingGameplayTags_ReturnValue6;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue6 = CallFunc_Conv_BoolToInt_ReturnValue6;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue7 = CallFunc_HasAllMatchingGameplayTags_ReturnValue7;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue7 = CallFunc_Conv_BoolToInt_ReturnValue7;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface8_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface8_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue8 = CallFunc_HasAllMatchingGameplayTags_ReturnValue8;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue8 = CallFunc_Conv_BoolToInt_ReturnValue8;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface9_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface9_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue9 = CallFunc_HasAllMatchingGameplayTags_ReturnValue9;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue9 = CallFunc_Conv_BoolToInt_ReturnValue9;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface10_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface10_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue10 = CallFunc_HasAllMatchingGameplayTags_ReturnValue10;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue10 = CallFunc_Conv_BoolToInt_ReturnValue10;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface11_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface11_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue11 = CallFunc_HasAllMatchingGameplayTags_ReturnValue11;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue11 = CallFunc_Conv_BoolToInt_ReturnValue11;
 	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput;
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue1 = CallFunc_Conv_BoolToInt_ReturnValue1;
 	Parms.CallFunc_Conv_BoolToInt_ReturnValue12 = CallFunc_Conv_BoolToInt_ReturnValue12;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue123 = CallFunc_Conv_BoolToInt_ReturnValue123;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue1234 = CallFunc_Conv_BoolToInt_ReturnValue1234;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12345 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12345;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123456 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123456;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue12345 = CallFunc_Conv_BoolToInt_ReturnValue12345;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue123456 = CallFunc_Conv_BoolToInt_ReturnValue123456;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue1234567 = CallFunc_Conv_BoolToInt_ReturnValue1234567;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue12345678 = CallFunc_Conv_BoolToInt_ReturnValue12345678;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue123456789 = CallFunc_Conv_BoolToInt_ReturnValue123456789;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue12345678910 = CallFunc_Conv_BoolToInt_ReturnValue12345678910;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue1234567891011 = CallFunc_Conv_BoolToInt_ReturnValue1234567891011;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue123456789101112 = CallFunc_Conv_BoolToInt_ReturnValue123456789101112;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue12345678910111213 = CallFunc_Conv_BoolToInt_ReturnValue12345678910111213;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314 = CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213141516_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345678910111213141516_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213141516 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12345678910111213141516;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415 = CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue12345678910111213141516 = CallFunc_Conv_BoolToInt_ReturnValue12345678910111213141516;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314151617_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234567891011121314151617_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314151617 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234567891011121314151617;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415161718_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456789101112131415161718_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415161718 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123456789101112131415161718;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314151617 = CallFunc_Conv_BoolToInt_ReturnValue1234567891011121314151617;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415161718 = CallFunc_Conv_BoolToInt_ReturnValue123456789101112131415161718;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface13_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface13_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue13 = CallFunc_HasAllMatchingGameplayTags_ReturnValue13;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue13 = CallFunc_Conv_BoolToInt_ReturnValue13;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface14_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface14_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue14 = CallFunc_HasAllMatchingGameplayTags_ReturnValue14;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue14 = CallFunc_Conv_BoolToInt_ReturnValue14;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface15_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface15_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue15 = CallFunc_HasAllMatchingGameplayTags_ReturnValue15;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue15 = CallFunc_Conv_BoolToInt_ReturnValue15;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface16_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface16_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue16 = CallFunc_HasAllMatchingGameplayTags_ReturnValue16;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue16 = CallFunc_Conv_BoolToInt_ReturnValue16;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface17_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface17_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue17 = CallFunc_HasAllMatchingGameplayTags_ReturnValue17;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue17 = CallFunc_Conv_BoolToInt_ReturnValue17;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface18_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface18_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue18 = CallFunc_HasAllMatchingGameplayTags_ReturnValue18;
+	Parms.CallFunc_Conv_BoolToInt_ReturnValue18 = CallFunc_Conv_BoolToInt_ReturnValue18;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
+	Parms.CallFunc_Add_IntInt_ReturnValue2 = CallFunc_Add_IntInt_ReturnValue2;
+	Parms.CallFunc_Add_IntInt_ReturnValue3 = CallFunc_Add_IntInt_ReturnValue3;
+	Parms.CallFunc_Add_IntInt_ReturnValue4 = CallFunc_Add_IntInt_ReturnValue4;
+	Parms.CallFunc_Add_IntInt_ReturnValue5 = CallFunc_Add_IntInt_ReturnValue5;
+	Parms.CallFunc_Add_IntInt_ReturnValue6 = CallFunc_Add_IntInt_ReturnValue6;
+	Parms.CallFunc_Add_IntInt_ReturnValue7 = CallFunc_Add_IntInt_ReturnValue7;
+	Parms.CallFunc_Add_IntInt_ReturnValue8 = CallFunc_Add_IntInt_ReturnValue8;
+	Parms.CallFunc_Add_IntInt_ReturnValue9 = CallFunc_Add_IntInt_ReturnValue9;
+	Parms.CallFunc_Add_IntInt_ReturnValue10 = CallFunc_Add_IntInt_ReturnValue10;
+	Parms.CallFunc_Add_IntInt_ReturnValue11 = CallFunc_Add_IntInt_ReturnValue11;
 	Parms.CallFunc_Add_IntInt_ReturnValue12 = CallFunc_Add_IntInt_ReturnValue12;
-	Parms.CallFunc_Add_IntInt_ReturnValue123 = CallFunc_Add_IntInt_ReturnValue123;
-	Parms.CallFunc_Add_IntInt_ReturnValue1234 = CallFunc_Add_IntInt_ReturnValue1234;
-	Parms.CallFunc_Add_IntInt_ReturnValue12345 = CallFunc_Add_IntInt_ReturnValue12345;
-	Parms.CallFunc_Add_IntInt_ReturnValue123456 = CallFunc_Add_IntInt_ReturnValue123456;
-	Parms.CallFunc_Add_IntInt_ReturnValue1234567 = CallFunc_Add_IntInt_ReturnValue1234567;
-	Parms.CallFunc_Add_IntInt_ReturnValue12345678 = CallFunc_Add_IntInt_ReturnValue12345678;
-	Parms.CallFunc_Add_IntInt_ReturnValue123456789 = CallFunc_Add_IntInt_ReturnValue123456789;
-	Parms.CallFunc_Add_IntInt_ReturnValue12345678910 = CallFunc_Add_IntInt_ReturnValue12345678910;
-	Parms.CallFunc_Add_IntInt_ReturnValue1234567891011 = CallFunc_Add_IntInt_ReturnValue1234567891011;
-	Parms.CallFunc_Add_IntInt_ReturnValue123456789101112 = CallFunc_Add_IntInt_ReturnValue123456789101112;
-	Parms.CallFunc_Add_IntInt_ReturnValue12345678910111213 = CallFunc_Add_IntInt_ReturnValue12345678910111213;
-	Parms.CallFunc_Add_IntInt_ReturnValue1234567891011121314 = CallFunc_Add_IntInt_ReturnValue1234567891011121314;
-	Parms.CallFunc_Add_IntInt_ReturnValue123456789101112131415 = CallFunc_Add_IntInt_ReturnValue123456789101112131415;
-	Parms.CallFunc_Add_IntInt_ReturnValue12345678910111213141516 = CallFunc_Add_IntInt_ReturnValue12345678910111213141516;
-	Parms.CallFunc_Add_IntInt_ReturnValue1234567891011121314151617 = CallFunc_Add_IntInt_ReturnValue1234567891011121314151617;
-	Parms.CallFunc_Add_IntInt_ReturnValue123456789101112131415161718 = CallFunc_Add_IntInt_ReturnValue123456789101112131415161718;
-	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
-	Parms.CallFunc_FClamp_ReturnValue = CallFunc_FClamp_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue13 = CallFunc_Add_IntInt_ReturnValue13;
+	Parms.CallFunc_Add_IntInt_ReturnValue14 = CallFunc_Add_IntInt_ReturnValue14;
+	Parms.CallFunc_Add_IntInt_ReturnValue15 = CallFunc_Add_IntInt_ReturnValue15;
+	Parms.CallFunc_Add_IntInt_ReturnValue16 = CallFunc_Add_IntInt_ReturnValue16;
+	Parms.CallFunc_Add_IntInt_ReturnValue17 = CallFunc_Add_IntInt_ReturnValue17;
+	Parms.CallFunc_Add_IntInt_ReturnValue18 = CallFunc_Add_IntInt_ReturnValue18;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -405,37 +407,43 @@ void AB_Constructor_BASE_C::SetBaseVisualGlow(class UAbilitySystemComponent* Abi
 // Parameters:
 // struct FGameplayTagContainer       TC_Empty                                                         (Edit, BlueprintVisible)
 // struct FGameplayTagContainer       TC_AbilityDamage                                                 (Edit, BlueprintVisible)
+// UInterfaceProperty_                CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue                            ()
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue1                           ()
 // struct FGameplayEffectSpecHandle   CallFunc_AssignSetByCallerMagnitude_ReturnValue                  ()
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute(ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue2                           ()
 // struct FGameplayEffectSpecHandle   CallFunc_AssignSetByCallerMagnitude_ReturnValue1                 ()
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGameplayEffectSpecHandle   CallFunc_MakeOutgoingSpec_ReturnValue1                           ()
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_Constructor_BASE_C::SetDamageMultiplier(const struct FGameplayTagContainer& TC_Empty, const struct FGameplayTagContainer& TC_AbilityDamage, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignSetByCallerMagnitude_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, bool CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess, float CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_AssignSetByCallerMagnitude_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue1, bool CallFunc_IsValid_ReturnValue)
+void AB_Constructor_BASE_C::SetDamageMultiplier(const struct FGameplayTagContainer& TC_Empty, const struct FGameplayTagContainer& TC_AbilityDamage, UInterfaceProperty_ CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput, bool CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue1, const struct FGameplayEffectSpecHandle& CallFunc_AssignSetByCallerMagnitude_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, bool CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute, float CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue, bool CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess, float CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue, const struct FGameplayEffectSpecHandle& CallFunc_MakeOutgoingSpec_ReturnValue2, const struct FGameplayEffectSpecHandle& CallFunc_AssignSetByCallerMagnitude_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "SetDamageMultiplier");
 
 	Params::AB_Constructor_BASE_C_SetDamageMultiplier_Params Parms;
 	Parms.TC_Empty = TC_Empty;
 	Parms.TC_AbilityDamage = TC_AbilityDamage;
+	Parms.CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput = CallFunc_DoesTagAssetInterfaceHaveTag_TagContainerInterface_CastInput;
+	Parms.CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue = CallFunc_DoesTagAssetInterfaceHaveTag_ReturnValue;
 	Parms.CallFunc_MakeOutgoingSpec_ReturnValue = CallFunc_MakeOutgoingSpec_ReturnValue;
+	Parms.CallFunc_MakeOutgoingSpec_ReturnValue1 = CallFunc_MakeOutgoingSpec_ReturnValue1;
 	Parms.CallFunc_AssignSetByCallerMagnitude_ReturnValue = CallFunc_AssignSetByCallerMagnitude_ReturnValue;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
 	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute = CallFunc_GetFloatAttributeFromAbilitySystemComponent_bSuccessfullyFoundAttribute;
 	Parms.CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue = CallFunc_GetFloatAttributeFromAbilitySystemComponent_ReturnValue;
 	Parms.CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess = CallFunc_EvaluateAttributeValueWithTagsAndBase_bSuccess;
 	Parms.CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue = CallFunc_EvaluateAttributeValueWithTagsAndBase_ReturnValue;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
+	Parms.CallFunc_MakeOutgoingSpec_ReturnValue2 = CallFunc_MakeOutgoingSpec_ReturnValue2;
 	Parms.CallFunc_AssignSetByCallerMagnitude_ReturnValue1 = CallFunc_AssignSetByCallerMagnitude_ReturnValue1;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
-	Parms.CallFunc_MakeOutgoingSpec_ReturnValue1 = CallFunc_MakeOutgoingSpec_ReturnValue1;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -444,9 +452,9 @@ void AB_Constructor_BASE_C::SetDamageMultiplier(const struct FGameplayTagContain
 
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.OnRep_CollectResources
-// (HasDefaults, BlueprintCallable, BlueprintEvent)
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void AB_Constructor_BASE_C::OnRep_CollectResources(const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue)
 {
@@ -471,11 +479,11 @@ void AB_Constructor_BASE_C::OnRep_CollectResources(const struct FVector& CallFun
 // class FString                      InteractionString                                                (Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData1                            (HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData12                           (HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData2                            (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue                                      ()
 
-class FText AB_Constructor_BASE_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, const class FString& MetalText, const class FString& StoneText, const class FString& WoodText, const class FString& InteractionString, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData12, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
+class FText AB_Constructor_BASE_C::BlueprintGetInteractionString(class AFortPawn* InteractingPawn, const class FString& MetalText, const class FString& StoneText, const class FString& WoodText, const class FString& InteractionString, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData2, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "BlueprintGetInteractionString");
 
@@ -487,7 +495,7 @@ class FText AB_Constructor_BASE_C::BlueprintGetInteractionString(class AFortPawn
 	Parms.InteractionString = InteractionString;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.K2Node_MakeStruct_FormatArgumentData1 = K2Node_MakeStruct_FormatArgumentData1;
-	Parms.K2Node_MakeStruct_FormatArgumentData12 = K2Node_MakeStruct_FormatArgumentData12;
+	Parms.K2Node_MakeStruct_FormatArgumentData2 = K2Node_MakeStruct_FormatArgumentData2;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 
@@ -499,14 +507,14 @@ class FText AB_Constructor_BASE_C::BlueprintGetInteractionString(class AFortPawn
 
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.AddResourceToStack
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FStructRecyclingResource    RecyclingResource                                                (BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+// struct FStructRecyclingResource    RecyclingResource                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortWorldItemDefinition*    Stored_Resource                                                  (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              AmountToSpawn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStructRecyclingResource    SetValue                                                         (Parm, OutParm, HasGetValueTypeHash)
+// struct FStructRecyclingResource    SetValue                                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              HopperResourceAmount                                             (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource                        (HasGetValueTypeHash)
+// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -532,17 +540,17 @@ void AB_Constructor_BASE_C::AddResourceToStack(const struct FStructRecyclingReso
 
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.SpawnResourceForRecycling
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortWorldItemDefinition*    ItemDefinition                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              AmountToSpawn                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortResourceType       ResourceType                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStructRecyclingResource    CallFunc_AddResourceToStack_SetValue                             (HasGetValueTypeHash)
-// struct FStructRecyclingResource    CallFunc_AddResourceToStack_SetValue1                            (HasGetValueTypeHash)
-// struct FStructRecyclingResource    CallFunc_AddResourceToStack_SetValue12                           (HasGetValueTypeHash)
+// struct FStructRecyclingResource    CallFunc_AddResourceToStack_SetValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStructRecyclingResource    CallFunc_AddResourceToStack_SetValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FStructRecyclingResource    CallFunc_AddResourceToStack_SetValue2                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SpawnResourceForRecycling(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, enum class EFortResourceType ResourceType, bool K2Node_SwitchEnum_CmpSuccess, const struct FStructRecyclingResource& CallFunc_AddResourceToStack_SetValue, const struct FStructRecyclingResource& CallFunc_AddResourceToStack_SetValue1, const struct FStructRecyclingResource& CallFunc_AddResourceToStack_SetValue12)
+void AB_Constructor_BASE_C::SpawnResourceForRecycling(class UFortWorldItemDefinition* ItemDefinition, int32 AmountToSpawn, enum class EFortResourceType ResourceType, bool K2Node_SwitchEnum_CmpSuccess, const struct FStructRecyclingResource& CallFunc_AddResourceToStack_SetValue, const struct FStructRecyclingResource& CallFunc_AddResourceToStack_SetValue1, const struct FStructRecyclingResource& CallFunc_AddResourceToStack_SetValue2)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "SpawnResourceForRecycling");
 
@@ -553,7 +561,7 @@ void AB_Constructor_BASE_C::SpawnResourceForRecycling(class UFortWorldItemDefini
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 	Parms.CallFunc_AddResourceToStack_SetValue = CallFunc_AddResourceToStack_SetValue;
 	Parms.CallFunc_AddResourceToStack_SetValue1 = CallFunc_AddResourceToStack_SetValue1;
-	Parms.CallFunc_AddResourceToStack_SetValue12 = CallFunc_AddResourceToStack_SetValue12;
+	Parms.CallFunc_AddResourceToStack_SetValue2 = CallFunc_AddResourceToStack_SetValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -567,11 +575,11 @@ void AB_Constructor_BASE_C::SpawnResourceForRecycling(class UFortWorldItemDefini
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_IntInt_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Greater_IntInt_ReturnValue12                            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Greater_IntInt_ReturnValue2                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-bool AB_Constructor_BASE_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue1, bool CallFunc_Greater_IntInt_ReturnValue12, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1)
+bool AB_Constructor_BASE_C::BlueprintCanInteract(class AFortPawn* InteractingPawn, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue1, bool CallFunc_Greater_IntInt_ReturnValue2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "BlueprintCanInteract");
 
@@ -579,7 +587,7 @@ bool AB_Constructor_BASE_C::BlueprintCanInteract(class AFortPawn* InteractingPaw
 	Parms.InteractingPawn = InteractingPawn;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_Greater_IntInt_ReturnValue1 = CallFunc_Greater_IntInt_ReturnValue1;
-	Parms.CallFunc_Greater_IntInt_ReturnValue12 = CallFunc_Greater_IntInt_ReturnValue12;
+	Parms.CallFunc_Greater_IntInt_ReturnValue2 = CallFunc_Greater_IntInt_ReturnValue2;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
 
@@ -639,12 +647,12 @@ void AB_Constructor_BASE_C::RecycleResources(int32 CallFunc_GetResourceAmountsBa
 // int32                              CallFunc_Array_Add_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect12                           (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue12                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect2                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue2                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_Constructor_BASE_C::SetupHostileEffects(class UAbilitySystemComponent* AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* HostileEffects, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect, int32 CallFunc_Array_Add_ReturnValue, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1, int32 CallFunc_Array_Add_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect12, int32 CallFunc_Array_Add_ReturnValue12, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12)
+void AB_Constructor_BASE_C::SetupHostileEffects(class UAbilitySystemComponent* AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* HostileEffects, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect, int32 CallFunc_Array_Add_ReturnValue, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1, int32 CallFunc_Array_Add_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect2, int32 CallFunc_Array_Add_ReturnValue2, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue2)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "SetupHostileEffects");
 
@@ -658,10 +666,10 @@ void AB_Constructor_BASE_C::SetupHostileEffects(class UAbilitySystemComponent* A
 	Parms.CallFunc_Array_Add_ReturnValue1 = CallFunc_Array_Add_ReturnValue1;
 	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput;
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect12 = K2Node_MakeStruct_BASEGameplayEffect12;
-	Parms.CallFunc_Array_Add_ReturnValue12 = CallFunc_Array_Add_ReturnValue12;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect2 = K2Node_MakeStruct_BASEGameplayEffect2;
+	Parms.CallFunc_Array_Add_ReturnValue2 = CallFunc_Array_Add_ReturnValue2;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue2 = CallFunc_HasAllMatchingGameplayTags_ReturnValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -676,65 +684,73 @@ void AB_Constructor_BASE_C::SetupHostileEffects(class UAbilitySystemComponent* A
 // Parameters:
 // class UAbilitySystemComponent*     AbilitySystemComponent                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FBASEGameplayEffect> FriendlyEffects                                                  (Parm, OutParm, ZeroConstructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect                             (NoDestructor)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect1                            (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect12                           (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue12                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect123                          (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue123                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect1234                         (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue1234                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12345             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect12345                        (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue12345                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123456            (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect1                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect2                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue2                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect3                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue3                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect4                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue4                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue3                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue4                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect5                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue5                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue5                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue6                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect6                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue6                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue7                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_Constructor_BASE_C::SetupFriendlyEffects(class UAbilitySystemComponent* AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* FriendlyEffects, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect, int32 CallFunc_Array_Add_ReturnValue, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1, int32 CallFunc_Array_Add_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect12, int32 CallFunc_Array_Add_ReturnValue12, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect123, int32 CallFunc_Array_Add_ReturnValue123, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1234, int32 CallFunc_Array_Add_ReturnValue1234, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12345, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect12345, int32 CallFunc_Array_Add_ReturnValue12345, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123456)
+void AB_Constructor_BASE_C::SetupFriendlyEffects(class UAbilitySystemComponent* AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* FriendlyEffects, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect, int32 CallFunc_Array_Add_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1, int32 CallFunc_Array_Add_ReturnValue1, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect2, int32 CallFunc_Array_Add_ReturnValue2, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue2, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect3, int32 CallFunc_Array_Add_ReturnValue3, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect4, int32 CallFunc_Array_Add_ReturnValue4, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue3, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue4, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect5, int32 CallFunc_Array_Add_ReturnValue5, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue5, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue6, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect6, int32 CallFunc_Array_Add_ReturnValue6, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue7)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "SetupFriendlyEffects");
 
 	Params::AB_Constructor_BASE_C_SetupFriendlyEffects_Params Parms;
 	Parms.AbilitySystemComponent = AbilitySystemComponent;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
 	Parms.K2Node_MakeStruct_BASEGameplayEffect = K2Node_MakeStruct_BASEGameplayEffect;
 	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect1 = K2Node_MakeStruct_BASEGameplayEffect1;
-	Parms.CallFunc_Array_Add_ReturnValue1 = CallFunc_Array_Add_ReturnValue1;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
 	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput;
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect12 = K2Node_MakeStruct_BASEGameplayEffect12;
-	Parms.CallFunc_Array_Add_ReturnValue12 = CallFunc_Array_Add_ReturnValue12;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect123 = K2Node_MakeStruct_BASEGameplayEffect123;
-	Parms.CallFunc_Array_Add_ReturnValue123 = CallFunc_Array_Add_ReturnValue123;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect1234 = K2Node_MakeStruct_BASEGameplayEffect1234;
-	Parms.CallFunc_Array_Add_ReturnValue1234 = CallFunc_Array_Add_ReturnValue1234;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12345 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12345;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect12345 = K2Node_MakeStruct_BASEGameplayEffect12345;
-	Parms.CallFunc_Array_Add_ReturnValue12345 = CallFunc_Array_Add_ReturnValue12345;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123456_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123456 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123456;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect1 = K2Node_MakeStruct_BASEGameplayEffect1;
+	Parms.CallFunc_Array_Add_ReturnValue1 = CallFunc_Array_Add_ReturnValue1;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect2 = K2Node_MakeStruct_BASEGameplayEffect2;
+	Parms.CallFunc_Array_Add_ReturnValue2 = CallFunc_Array_Add_ReturnValue2;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue2 = CallFunc_HasAllMatchingGameplayTags_ReturnValue2;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect3 = K2Node_MakeStruct_BASEGameplayEffect3;
+	Parms.CallFunc_Array_Add_ReturnValue3 = CallFunc_Array_Add_ReturnValue3;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect4 = K2Node_MakeStruct_BASEGameplayEffect4;
+	Parms.CallFunc_Array_Add_ReturnValue4 = CallFunc_Array_Add_ReturnValue4;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue3 = CallFunc_HasAllMatchingGameplayTags_ReturnValue3;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue4 = CallFunc_HasAllMatchingGameplayTags_ReturnValue4;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect5 = K2Node_MakeStruct_BASEGameplayEffect5;
+	Parms.CallFunc_Array_Add_ReturnValue5 = CallFunc_Array_Add_ReturnValue5;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue5 = CallFunc_HasAllMatchingGameplayTags_ReturnValue5;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface6_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue6 = CallFunc_HasAllMatchingGameplayTags_ReturnValue6;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect6 = K2Node_MakeStruct_BASEGameplayEffect6;
+	Parms.CallFunc_Array_Add_ReturnValue6 = CallFunc_Array_Add_ReturnValue6;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface7_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue7 = CallFunc_HasAllMatchingGameplayTags_ReturnValue7;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -757,22 +773,22 @@ void AB_Constructor_BASE_C::SetupFriendlyEffects(class UAbilitySystemComponent* 
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect1                            (NoDestructor)
 // int32                              CallFunc_Array_Add_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect12                           (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue12                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect123                          (NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue123                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect1234                         (NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12345             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Array_Add_ReturnValue1234                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue2                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue3                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect2                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue4                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect3                            (NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue3                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FBASEGameplayEffect         K2Node_MakeStruct_BASEGameplayEffect4                            (NoDestructor)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue5                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue4                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SetupBuildingEffects(class UAbilitySystemComponent* AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* BuildingEffects, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect, int32 CallFunc_Array_Add_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1, int32 CallFunc_Array_Add_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect12, int32 CallFunc_Array_Add_ReturnValue12, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect123, int32 CallFunc_Array_Add_ReturnValue123, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1234, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12345, int32 CallFunc_Array_Add_ReturnValue1234)
+void AB_Constructor_BASE_C::SetupBuildingEffects(class UAbilitySystemComponent* AbilitySystemComponent, TArray<struct FBASEGameplayEffect>* BuildingEffects, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect, int32 CallFunc_Array_Add_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect1, int32 CallFunc_Array_Add_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue2, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue3, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect2, int32 CallFunc_Array_Add_ReturnValue2, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue4, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect3, int32 CallFunc_Array_Add_ReturnValue3, const struct FBASEGameplayEffect& K2Node_MakeStruct_BASEGameplayEffect4, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue5, int32 CallFunc_Array_Add_ReturnValue4)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "SetupBuildingEffects");
 
@@ -786,20 +802,20 @@ void AB_Constructor_BASE_C::SetupBuildingEffects(class UAbilitySystemComponent* 
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1;
 	Parms.K2Node_MakeStruct_BASEGameplayEffect1 = K2Node_MakeStruct_BASEGameplayEffect1;
 	Parms.CallFunc_Array_Add_ReturnValue1 = CallFunc_Array_Add_ReturnValue1;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect12 = K2Node_MakeStruct_BASEGameplayEffect12;
-	Parms.CallFunc_Array_Add_ReturnValue12 = CallFunc_Array_Add_ReturnValue12;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect123 = K2Node_MakeStruct_BASEGameplayEffect123;
-	Parms.CallFunc_Array_Add_ReturnValue123 = CallFunc_Array_Add_ReturnValue123;
-	Parms.K2Node_MakeStruct_BASEGameplayEffect1234 = K2Node_MakeStruct_BASEGameplayEffect1234;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12345_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12345 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12345;
-	Parms.CallFunc_Array_Add_ReturnValue1234 = CallFunc_Array_Add_ReturnValue1234;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue2 = CallFunc_HasAllMatchingGameplayTags_ReturnValue2;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue3 = CallFunc_HasAllMatchingGameplayTags_ReturnValue3;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect2 = K2Node_MakeStruct_BASEGameplayEffect2;
+	Parms.CallFunc_Array_Add_ReturnValue2 = CallFunc_Array_Add_ReturnValue2;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue4 = CallFunc_HasAllMatchingGameplayTags_ReturnValue4;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect3 = K2Node_MakeStruct_BASEGameplayEffect3;
+	Parms.CallFunc_Array_Add_ReturnValue3 = CallFunc_Array_Add_ReturnValue3;
+	Parms.K2Node_MakeStruct_BASEGameplayEffect4 = K2Node_MakeStruct_BASEGameplayEffect4;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface5_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue5 = CallFunc_HasAllMatchingGameplayTags_ReturnValue5;
+	Parms.CallFunc_Array_Add_ReturnValue4 = CallFunc_Array_Add_ReturnValue4;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -849,41 +865,63 @@ void AB_Constructor_BASE_C::Setup_Base_Effect_Array(class UAbilitySystemComponen
 // Parameters:
 // class UAbilitySystemComponent*     Ability_System_Component                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              NodesToAffect                                                    (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                              CallFunc_GetValueAtLevel_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_FTrunc_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetValueAtLevel_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_FTrunc_ReturnValue1                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue12                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue123               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor)
-// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue1234              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Add_IntInt_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue2                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue3                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue4                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue3                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue5                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue6                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue7                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue1                                (NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput(ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAllMatchingGameplayTags_ReturnValue8                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue4                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AB_Constructor_BASE_C::SetupBaseDefaultValues(class UAbilitySystemComponent* Ability_System_Component, int32* NodesToAffect, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue12, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue123, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1234, int32 CallFunc_Add_IntInt_ReturnValue12)
+void AB_Constructor_BASE_C::SetupBaseDefaultValues(class UAbilitySystemComponent* Ability_System_Component, int32* NodesToAffect, float CallFunc_GetValueAtLevel_ReturnValue, int32 CallFunc_FTrunc_ReturnValue, float CallFunc_GetValueAtLevel_ReturnValue1, int32 CallFunc_FTrunc_ReturnValue1, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue1, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue2, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue3, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue4, int32 CallFunc_Add_IntInt_ReturnValue2, int32 CallFunc_Add_IntInt_ReturnValue3, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue5, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue6, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue7, const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue1, UInterfaceProperty_ CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput, bool CallFunc_HasAllMatchingGameplayTags_ReturnValue8, int32 CallFunc_Add_IntInt_ReturnValue4)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "SetupBaseDefaultValues");
 
 	Params::AB_Constructor_BASE_C_SetupBaseDefaultValues_Params Parms;
 	Parms.Ability_System_Component = Ability_System_Component;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
+	Parms.CallFunc_GetValueAtLevel_ReturnValue = CallFunc_GetValueAtLevel_ReturnValue;
+	Parms.CallFunc_FTrunc_ReturnValue = CallFunc_FTrunc_ReturnValue;
+	Parms.CallFunc_GetValueAtLevel_ReturnValue1 = CallFunc_GetValueAtLevel_ReturnValue1;
+	Parms.CallFunc_FTrunc_ReturnValue1 = CallFunc_FTrunc_ReturnValue1;
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue = CallFunc_HasAllMatchingGameplayTags_ReturnValue;
 	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface12_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue12 = CallFunc_HasAllMatchingGameplayTags_ReturnValue12;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface123_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue123 = CallFunc_HasAllMatchingGameplayTags_ReturnValue123;
 	Parms.CallFunc_K2_SetTimer_ReturnValue = CallFunc_K2_SetTimer_ReturnValue;
-	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1234_CastInput;
-	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue1234 = CallFunc_HasAllMatchingGameplayTags_ReturnValue1234;
-	Parms.CallFunc_Add_IntInt_ReturnValue12 = CallFunc_Add_IntInt_ReturnValue12;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue2 = CallFunc_HasAllMatchingGameplayTags_ReturnValue2;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue3 = CallFunc_HasAllMatchingGameplayTags_ReturnValue3;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue4 = CallFunc_HasAllMatchingGameplayTags_ReturnValue4;
+	Parms.CallFunc_Add_IntInt_ReturnValue2 = CallFunc_Add_IntInt_ReturnValue2;
+	Parms.CallFunc_Add_IntInt_ReturnValue3 = CallFunc_Add_IntInt_ReturnValue3;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface1_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue5 = CallFunc_HasAllMatchingGameplayTags_ReturnValue5;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface2_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue6 = CallFunc_HasAllMatchingGameplayTags_ReturnValue6;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface3_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue7 = CallFunc_HasAllMatchingGameplayTags_ReturnValue7;
+	Parms.CallFunc_K2_SetTimer_ReturnValue1 = CallFunc_K2_SetTimer_ReturnValue1;
+	Parms.CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput = CallFunc_HasAllMatchingGameplayTags_TagContainerInterface4_CastInput;
+	Parms.CallFunc_HasAllMatchingGameplayTags_ReturnValue8 = CallFunc_HasAllMatchingGameplayTags_ReturnValue8;
+	Parms.CallFunc_Add_IntInt_ReturnValue4 = CallFunc_Add_IntInt_ReturnValue4;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1227,10 +1265,9 @@ void AB_Constructor_BASE_C::BndEvt__P_FeeltheBase_Chargup_K2Node_ComponentBoundE
 
 
 // Function B_Constructor_BASE.B_Constructor_BASE_C.ExecuteUbergraph_B_Constructor_BASE
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OverlappedComponent1                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_ComponentBoundEvent_OtherActor1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OtherComp1                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1250,6 +1287,8 @@ void AB_Constructor_BASE_C::BndEvt__P_FeeltheBase_Chargup_K2Node_ComponentBoundE
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Subtract_IntInt_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetRealTimeSeconds_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetRealTimeSeconds_ReturnValue1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class ABuildingSMActor*            K2Node_Event_BuildingActor1                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1261,13 +1300,13 @@ void AB_Constructor_BASE_C::BndEvt__P_FeeltheBase_Chargup_K2Node_ComponentBoundE
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AController*                 CallFunc_GetInstigatorController_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerController*       K2Node_DynamicCast_AsFort_Player_Controller                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UInterfaceProperty_                CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource                        (HasGetValueTypeHash)
+// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UInterfaceProperty_                CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource1                       (HasGetValueTypeHash)
-// UInterfaceProperty_                CallFunc_GiveItemToInventoryOwner_InventoryOwner12_CastInput     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource12                      (HasGetValueTypeHash)
+// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                CallFunc_GiveItemToInventoryOwner_InventoryOwner2_CastInput      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FStructRecyclingResource    K2Node_MakeStruct_StructRecyclingResource2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_FTrunc_ReturnValue                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1276,87 +1315,85 @@ void AB_Constructor_BASE_C::BndEvt__P_FeeltheBase_Chargup_K2Node_ComponentBoundE
 // class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Array_Length_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_HasAuthority_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class UMaterialInterface*>  CallFunc_GetMaterials_ReturnValue12                              (ZeroConstructor, ReferenceParm)
-// int32                              CallFunc_Array_Length_ReturnValue12                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasAuthority_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// TArray<class UMaterialInterface*>  CallFunc_GetMaterials_ReturnValue2                               (ZeroConstructor, ReferenceParm)
+// int32                              CallFunc_Array_Length_ReturnValue2                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_FTrunc_ReturnValue1                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInterface*          CallFunc_Array_Get_Item1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RandomFloatInRange_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetRealTimeSeconds_ReturnValue12                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetRealTimeSeconds_ReturnValue2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_RandomFloatInRange_ReturnValue1                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Add_FloatFloat_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_RandomFloatInRange_ReturnValue12                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_RandomFloatInRange_ReturnValue123                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*          CallFunc_Array_Get_Item12                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue1                        (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_RandomFloatInRange_ReturnValue2                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_RandomFloatInRange_ReturnValue3                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInterface*          CallFunc_Array_Get_Item2                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetActorLocation_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMaterialInstanceDynamic*    CallFunc_GetAnimatingMID_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetRealTimeSeconds_ReturnValue123                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetRealTimeSeconds_ReturnValue3                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_SetupBaseDefaultValues_NodesToAffect                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FBASEGameplayEffect> CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects             (ZeroConstructor, ReferenceParm)
 // TArray<struct FBASEGameplayEffect> CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects             (ZeroConstructor, ReferenceParm)
 // TArray<struct FBASEGameplayEffect> CallFunc_Setup_Base_Effect_Array_BASEHostileEffects              (ZeroConstructor, ReferenceParm)
 // class UAbilitySystemComponent*     K2Node_Event_InstigatorAbilitySystemComponent                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
 // int32                              Temp_int_Loop_Counter_Variable1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable12                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Add_IntInt_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue123                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue3                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_LessEqual_IntInt_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAuthority_ReturnValue12                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAuthority_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue1                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UStaticMeshComponent*        CallFunc_Array_Get_Item123                                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ABuildingSMActor*            CallFunc_Array_Get_Item1234                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UStaticMeshComponent*        CallFunc_Array_Get_Item3                                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ABuildingSMActor*            CallFunc_Array_Get_Item4                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UStaticMeshComponent*        CallFunc_GetBuildingMeshComponent_ReturnValue                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue123                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue12                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Array_Index_Variable12                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*          CallFunc_Array_Get_Item12345                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInstanceDynamic*    K2Node_DynamicCast_AsMaterial_Instance_Dynamic                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess123                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Loop_Counter_Variable123                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue123                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Add_IntInt_ReturnValue1234                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Array_Length_ReturnValue3                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue2                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Temp_int_Loop_Counter_Variable3                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue3                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue4                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_K2_IsValidTimerHandle_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Temp_int_Array_Index_Variable2                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UMaterialInterface*          CallFunc_Array_Get_Item5                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UMaterialInstanceDynamic*    K2Node_DynamicCast_AsMaterial_Instance_Dynamic                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess3                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class APlayerPawn_Constructor_C*   K2Node_CustomEvent_ConstructorPawn                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_Stack1                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_CustomEvent_Stack2                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_CustomEvent_Stack3                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Array_Index_Variable123                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*          CallFunc_Array_Get_Item123456                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue1              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Temp_int_Array_Index_Variable3                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMaterialInterface*          CallFunc_Array_Get_Item6                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue1                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue1              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue1                        (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue1                        (NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_ComponentBoundEvent_EventName                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_ComponentBoundEvent_EmitterTime                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_ComponentBoundEvent_ParticleCount                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue1                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue12                   (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue2                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_HasAuthority_ReturnValue123                             (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAuthority_ReturnValue2                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_HasAuthority_ReturnValue3                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_Constructor_BASE_C::ExecuteUbergraph_B_Constructor_BASE(int32 EntryPoint, bool CallFunc_HasAuthority_ReturnValue, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent1, class AActor* K2Node_ComponentBoundEvent_OtherActor1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp1, int32 K2Node_ComponentBoundEvent_OtherBodyIndex1, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn1, bool K2Node_DynamicCast_bSuccess1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, bool K2Node_CustomEvent_LegsUp, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, float CallFunc_GetRealTimeSeconds_ReturnValue, float CallFunc_GetRealTimeSeconds_ReturnValue1, class ABuildingSMActor* K2Node_Event_BuildingActor1, class UStaticMeshComponent* K2Node_Event_EffectMeshComp1, class ABuildingSMActor* K2Node_Event_BuildingActor, class UStaticMeshComponent* K2Node_Event_EffectMeshComp, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, class AFortPawn* K2Node_Event_InteractingPawn, int32 CallFunc_Array_Length_ReturnValue, class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess12, UInterfaceProperty_ CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput, const struct FStructRecyclingResource& K2Node_MakeStruct_StructRecyclingResource, UInterfaceProperty_ CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput, const struct FStructRecyclingResource& K2Node_MakeStruct_StructRecyclingResource1, UInterfaceProperty_ CallFunc_GiveItemToInventoryOwner_InventoryOwner12_CastInput, const struct FStructRecyclingResource& K2Node_MakeStruct_StructRecyclingResource12, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1, int32 CallFunc_FTrunc_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue1, class UMaterialInterface* CallFunc_Array_Get_Item, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, int32 CallFunc_Array_Length_ReturnValue1, bool CallFunc_HasAuthority_ReturnValue1, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue12, int32 CallFunc_Array_Length_ReturnValue12, int32 CallFunc_FTrunc_ReturnValue1, class UMaterialInterface* CallFunc_Array_Get_Item1, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_GetRealTimeSeconds_ReturnValue12, float CallFunc_RandomFloatInRange_ReturnValue1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue1, float CallFunc_RandomFloatInRange_ReturnValue12, float CallFunc_RandomFloatInRange_ReturnValue123, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item12, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, class UMaterialInstanceDynamic* CallFunc_GetAnimatingMID_ReturnValue, float CallFunc_GetRealTimeSeconds_ReturnValue123, int32 CallFunc_SetupBaseDefaultValues_NodesToAffect, TArray<struct FBASEGameplayEffect>& CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects, TArray<struct FBASEGameplayEffect>& CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects, TArray<struct FBASEGameplayEffect>& CallFunc_Setup_Base_Effect_Array_BASEHostileEffects, class UAbilitySystemComponent* K2Node_Event_InstigatorAbilitySystemComponent, int32 Temp_int_Array_Index_Variable1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, int32 Temp_int_Loop_Counter_Variable1, int32 Temp_int_Loop_Counter_Variable12, bool CallFunc_Less_IntInt_ReturnValue1, int32 CallFunc_Add_IntInt_ReturnValue12, int32 CallFunc_Add_IntInt_ReturnValue123, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_HasAuthority_ReturnValue12, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue1, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue1, class UStaticMeshComponent* CallFunc_Array_Get_Item123, class ABuildingSMActor* CallFunc_Array_Get_Item1234, class UStaticMeshComponent* CallFunc_GetBuildingMeshComponent_ReturnValue, int32 CallFunc_Array_Length_ReturnValue123, bool CallFunc_Less_IntInt_ReturnValue12, int32 Temp_int_Array_Index_Variable12, class UMaterialInterface* CallFunc_Array_Get_Item12345, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess123, int32 Temp_int_Loop_Counter_Variable123, bool CallFunc_Less_IntInt_ReturnValue123, int32 CallFunc_Add_IntInt_ReturnValue1234, bool Temp_bool_Variable, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, class APlayerPawn_Constructor_C* K2Node_CustomEvent_ConstructorPawn, bool K2Node_CustomEvent_Stack1, bool K2Node_CustomEvent_Stack2, bool K2Node_CustomEvent_Stack3, int32 Temp_int_Array_Index_Variable123, class UMaterialInterface* CallFunc_Array_Get_Item123456, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue1, class FName K2Node_ComponentBoundEvent_EventName, float K2Node_ComponentBoundEvent_EmitterTime, int32 K2Node_ComponentBoundEvent_ParticleCount, bool CallFunc_EqualEqual_NameName_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue12, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_HasAuthority_ReturnValue123)
+void AB_Constructor_BASE_C::ExecuteUbergraph_B_Constructor_BASE(int32 EntryPoint, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent1, class AActor* K2Node_ComponentBoundEvent_OtherActor1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp1, int32 K2Node_ComponentBoundEvent_OtherBodyIndex1, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPawn* K2Node_DynamicCast_AsFort_Pawn1, bool K2Node_DynamicCast_bSuccess1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, bool K2Node_CustomEvent_LegsUp, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_Subtract_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_GetRealTimeSeconds_ReturnValue, float CallFunc_GetRealTimeSeconds_ReturnValue1, class ABuildingSMActor* K2Node_Event_BuildingActor1, class UStaticMeshComponent* K2Node_Event_EffectMeshComp1, class ABuildingSMActor* K2Node_Event_BuildingActor, class UStaticMeshComponent* K2Node_Event_EffectMeshComp, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue, class AFortPawn* K2Node_Event_InteractingPawn, int32 CallFunc_Array_Length_ReturnValue, class AController* CallFunc_GetInstigatorController_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess2, UInterfaceProperty_ CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput, const struct FStructRecyclingResource& K2Node_MakeStruct_StructRecyclingResource, UInterfaceProperty_ CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput, const struct FStructRecyclingResource& K2Node_MakeStruct_StructRecyclingResource1, UInterfaceProperty_ CallFunc_GiveItemToInventoryOwner_InventoryOwner2_CastInput, const struct FStructRecyclingResource& K2Node_MakeStruct_StructRecyclingResource2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1, int32 CallFunc_FTrunc_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue1, class UMaterialInterface* CallFunc_Array_Get_Item, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, int32 CallFunc_Array_Length_ReturnValue1, bool CallFunc_HasAuthority_ReturnValue, TArray<class UMaterialInterface*>& CallFunc_GetMaterials_ReturnValue2, int32 CallFunc_Array_Length_ReturnValue2, int32 CallFunc_FTrunc_ReturnValue1, class UMaterialInterface* CallFunc_Array_Get_Item1, float CallFunc_RandomFloatInRange_ReturnValue, float CallFunc_GetRealTimeSeconds_ReturnValue2, float CallFunc_RandomFloatInRange_ReturnValue1, float CallFunc_Add_FloatFloat_ReturnValue, float CallFunc_Add_FloatFloat_ReturnValue1, float CallFunc_RandomFloatInRange_ReturnValue2, float CallFunc_RandomFloatInRange_ReturnValue3, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue, class UMaterialInterface* CallFunc_Array_Get_Item2, const struct FVector& CallFunc_K2_GetActorLocation_ReturnValue1, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, class UMaterialInstanceDynamic* CallFunc_GetAnimatingMID_ReturnValue, float CallFunc_GetRealTimeSeconds_ReturnValue3, int32 CallFunc_SetupBaseDefaultValues_NodesToAffect, TArray<struct FBASEGameplayEffect>& CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects, TArray<struct FBASEGameplayEffect>& CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects, TArray<struct FBASEGameplayEffect>& CallFunc_Setup_Base_Effect_Array_BASEHostileEffects, class UAbilitySystemComponent* K2Node_Event_InstigatorAbilitySystemComponent, int32 Temp_int_Array_Index_Variable1, int32 Temp_int_Loop_Counter_Variable1, int32 Temp_int_Loop_Counter_Variable2, bool CallFunc_Less_IntInt_ReturnValue1, int32 CallFunc_Add_IntInt_ReturnValue2, int32 CallFunc_Add_IntInt_ReturnValue3, bool CallFunc_LessEqual_IntInt_ReturnValue, bool CallFunc_HasAuthority_ReturnValue1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue1, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue1, class UStaticMeshComponent* CallFunc_Array_Get_Item3, class ABuildingSMActor* CallFunc_Array_Get_Item4, class UStaticMeshComponent* CallFunc_GetBuildingMeshComponent_ReturnValue, int32 CallFunc_Array_Length_ReturnValue3, bool CallFunc_Less_IntInt_ReturnValue2, int32 Temp_int_Loop_Counter_Variable3, bool CallFunc_Less_IntInt_ReturnValue3, int32 CallFunc_Add_IntInt_ReturnValue4, bool CallFunc_K2_IsValidTimerHandle_ReturnValue, int32 Temp_int_Array_Index_Variable2, bool Temp_bool_Variable, class UMaterialInterface* CallFunc_Array_Get_Item5, bool CallFunc_Not_PreBool_ReturnValue, class UMaterialInstanceDynamic* K2Node_DynamicCast_AsMaterial_Instance_Dynamic, bool K2Node_DynamicCast_bSuccess3, class APlayerPawn_Constructor_C* K2Node_CustomEvent_ConstructorPawn, bool K2Node_CustomEvent_Stack1, bool K2Node_CustomEvent_Stack2, bool K2Node_CustomEvent_Stack3, bool CallFunc_IsDedicatedServer_ReturnValue, int32 Temp_int_Array_Index_Variable3, class UMaterialInterface* CallFunc_Array_Get_Item6, bool CallFunc_EqualEqual_ObjectObject_ReturnValue1, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue1, class FName K2Node_ComponentBoundEvent_EventName, float K2Node_ComponentBoundEvent_EmitterTime, int32 K2Node_ComponentBoundEvent_ParticleCount, bool CallFunc_EqualEqual_NameName_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue1, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue2, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_HasAuthority_ReturnValue2, bool CallFunc_HasAuthority_ReturnValue3)
 {
 	static auto Func = Class->GetFunction("B_Constructor_BASE_C", "ExecuteUbergraph_B_Constructor_BASE");
 
 	Params::AB_Constructor_BASE_C_ExecuteUbergraph_B_Constructor_BASE_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
 	Parms.K2Node_ComponentBoundEvent_OverlappedComponent1 = K2Node_ComponentBoundEvent_OverlappedComponent1;
 	Parms.K2Node_ComponentBoundEvent_OtherActor1 = K2Node_ComponentBoundEvent_OtherActor1;
 	Parms.K2Node_ComponentBoundEvent_OtherComp1 = K2Node_ComponentBoundEvent_OtherComp1;
@@ -1376,6 +1413,8 @@ void AB_Constructor_BASE_C::ExecuteUbergraph_B_Constructor_BASE(int32 EntryPoint
 	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_Subtract_IntInt_ReturnValue = CallFunc_Subtract_IntInt_ReturnValue;
 	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
 	Parms.CallFunc_GetRealTimeSeconds_ReturnValue = CallFunc_GetRealTimeSeconds_ReturnValue;
 	Parms.CallFunc_GetRealTimeSeconds_ReturnValue1 = CallFunc_GetRealTimeSeconds_ReturnValue1;
 	Parms.K2Node_Event_BuildingActor1 = K2Node_Event_BuildingActor1;
@@ -1387,13 +1426,13 @@ void AB_Constructor_BASE_C::ExecuteUbergraph_B_Constructor_BASE(int32 EntryPoint
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_GetInstigatorController_ReturnValue = CallFunc_GetInstigatorController_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Player_Controller = K2Node_DynamicCast_AsFort_Player_Controller;
-	Parms.K2Node_DynamicCast_bSuccess12 = K2Node_DynamicCast_bSuccess12;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
 	Parms.CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput = CallFunc_GiveItemToInventoryOwner_InventoryOwner_CastInput;
 	Parms.K2Node_MakeStruct_StructRecyclingResource = K2Node_MakeStruct_StructRecyclingResource;
 	Parms.CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput = CallFunc_GiveItemToInventoryOwner_InventoryOwner1_CastInput;
 	Parms.K2Node_MakeStruct_StructRecyclingResource1 = K2Node_MakeStruct_StructRecyclingResource1;
-	Parms.CallFunc_GiveItemToInventoryOwner_InventoryOwner12_CastInput = CallFunc_GiveItemToInventoryOwner_InventoryOwner12_CastInput;
-	Parms.K2Node_MakeStruct_StructRecyclingResource12 = K2Node_MakeStruct_StructRecyclingResource12;
+	Parms.CallFunc_GiveItemToInventoryOwner_InventoryOwner2_CastInput = CallFunc_GiveItemToInventoryOwner_InventoryOwner2_CastInput;
+	Parms.K2Node_MakeStruct_StructRecyclingResource2 = K2Node_MakeStruct_StructRecyclingResource2;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
 	Parms.CallFunc_FTrunc_ReturnValue = CallFunc_FTrunc_ReturnValue;
@@ -1402,68 +1441,66 @@ void AB_Constructor_BASE_C::ExecuteUbergraph_B_Constructor_BASE(int32 EntryPoint
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue = CallFunc_EqualEqual_ObjectObject_ReturnValue;
 	Parms.CallFunc_Array_Length_ReturnValue1 = CallFunc_Array_Length_ReturnValue1;
-	Parms.CallFunc_HasAuthority_ReturnValue1 = CallFunc_HasAuthority_ReturnValue1;
-	Parms.CallFunc_GetMaterials_ReturnValue12 = CallFunc_GetMaterials_ReturnValue12;
-	Parms.CallFunc_Array_Length_ReturnValue12 = CallFunc_Array_Length_ReturnValue12;
+	Parms.CallFunc_HasAuthority_ReturnValue = CallFunc_HasAuthority_ReturnValue;
+	Parms.CallFunc_GetMaterials_ReturnValue2 = CallFunc_GetMaterials_ReturnValue2;
+	Parms.CallFunc_Array_Length_ReturnValue2 = CallFunc_Array_Length_ReturnValue2;
 	Parms.CallFunc_FTrunc_ReturnValue1 = CallFunc_FTrunc_ReturnValue1;
 	Parms.CallFunc_Array_Get_Item1 = CallFunc_Array_Get_Item1;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue = CallFunc_RandomFloatInRange_ReturnValue;
-	Parms.CallFunc_GetRealTimeSeconds_ReturnValue12 = CallFunc_GetRealTimeSeconds_ReturnValue12;
+	Parms.CallFunc_GetRealTimeSeconds_ReturnValue2 = CallFunc_GetRealTimeSeconds_ReturnValue2;
 	Parms.CallFunc_RandomFloatInRange_ReturnValue1 = CallFunc_RandomFloatInRange_ReturnValue1;
 	Parms.CallFunc_Add_FloatFloat_ReturnValue = CallFunc_Add_FloatFloat_ReturnValue;
 	Parms.CallFunc_Add_FloatFloat_ReturnValue1 = CallFunc_Add_FloatFloat_ReturnValue1;
-	Parms.CallFunc_RandomFloatInRange_ReturnValue12 = CallFunc_RandomFloatInRange_ReturnValue12;
-	Parms.CallFunc_RandomFloatInRange_ReturnValue123 = CallFunc_RandomFloatInRange_ReturnValue123;
+	Parms.CallFunc_RandomFloatInRange_ReturnValue2 = CallFunc_RandomFloatInRange_ReturnValue2;
+	Parms.CallFunc_RandomFloatInRange_ReturnValue3 = CallFunc_RandomFloatInRange_ReturnValue3;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue = CallFunc_K2_GetActorLocation_ReturnValue;
-	Parms.CallFunc_Array_Get_Item12 = CallFunc_Array_Get_Item12;
+	Parms.CallFunc_Array_Get_Item2 = CallFunc_Array_Get_Item2;
 	Parms.CallFunc_K2_GetActorLocation_ReturnValue1 = CallFunc_K2_GetActorLocation_ReturnValue1;
 	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
 	Parms.CallFunc_GetAnimatingMID_ReturnValue = CallFunc_GetAnimatingMID_ReturnValue;
-	Parms.CallFunc_GetRealTimeSeconds_ReturnValue123 = CallFunc_GetRealTimeSeconds_ReturnValue123;
+	Parms.CallFunc_GetRealTimeSeconds_ReturnValue3 = CallFunc_GetRealTimeSeconds_ReturnValue3;
 	Parms.CallFunc_SetupBaseDefaultValues_NodesToAffect = CallFunc_SetupBaseDefaultValues_NodesToAffect;
 	Parms.CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects = CallFunc_Setup_Base_Effect_Array_BASEBuildingEffects;
 	Parms.CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects = CallFunc_Setup_Base_Effect_Array_BASEFriendlyEffects;
 	Parms.CallFunc_Setup_Base_Effect_Array_BASEHostileEffects = CallFunc_Setup_Base_Effect_Array_BASEHostileEffects;
 	Parms.K2Node_Event_InstigatorAbilitySystemComponent = K2Node_Event_InstigatorAbilitySystemComponent;
 	Parms.Temp_int_Array_Index_Variable1 = Temp_int_Array_Index_Variable1;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
 	Parms.Temp_int_Loop_Counter_Variable1 = Temp_int_Loop_Counter_Variable1;
-	Parms.Temp_int_Loop_Counter_Variable12 = Temp_int_Loop_Counter_Variable12;
+	Parms.Temp_int_Loop_Counter_Variable2 = Temp_int_Loop_Counter_Variable2;
 	Parms.CallFunc_Less_IntInt_ReturnValue1 = CallFunc_Less_IntInt_ReturnValue1;
-	Parms.CallFunc_Add_IntInt_ReturnValue12 = CallFunc_Add_IntInt_ReturnValue12;
-	Parms.CallFunc_Add_IntInt_ReturnValue123 = CallFunc_Add_IntInt_ReturnValue123;
+	Parms.CallFunc_Add_IntInt_ReturnValue2 = CallFunc_Add_IntInt_ReturnValue2;
+	Parms.CallFunc_Add_IntInt_ReturnValue3 = CallFunc_Add_IntInt_ReturnValue3;
 	Parms.CallFunc_LessEqual_IntInt_ReturnValue = CallFunc_LessEqual_IntInt_ReturnValue;
-	Parms.CallFunc_HasAuthority_ReturnValue12 = CallFunc_HasAuthority_ReturnValue12;
+	Parms.CallFunc_HasAuthority_ReturnValue1 = CallFunc_HasAuthority_ReturnValue1;
 	Parms.CallFunc_SpawnSoundAttached_ReturnValue1 = CallFunc_SpawnSoundAttached_ReturnValue1;
 	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
 	Parms.CallFunc_Array_Add_ReturnValue1 = CallFunc_Array_Add_ReturnValue1;
-	Parms.CallFunc_Array_Get_Item123 = CallFunc_Array_Get_Item123;
-	Parms.CallFunc_Array_Get_Item1234 = CallFunc_Array_Get_Item1234;
+	Parms.CallFunc_Array_Get_Item3 = CallFunc_Array_Get_Item3;
+	Parms.CallFunc_Array_Get_Item4 = CallFunc_Array_Get_Item4;
 	Parms.CallFunc_GetBuildingMeshComponent_ReturnValue = CallFunc_GetBuildingMeshComponent_ReturnValue;
-	Parms.CallFunc_Array_Length_ReturnValue123 = CallFunc_Array_Length_ReturnValue123;
-	Parms.CallFunc_Less_IntInt_ReturnValue12 = CallFunc_Less_IntInt_ReturnValue12;
-	Parms.Temp_int_Array_Index_Variable12 = Temp_int_Array_Index_Variable12;
-	Parms.CallFunc_Array_Get_Item12345 = CallFunc_Array_Get_Item12345;
-	Parms.K2Node_DynamicCast_AsMaterial_Instance_Dynamic = K2Node_DynamicCast_AsMaterial_Instance_Dynamic;
-	Parms.K2Node_DynamicCast_bSuccess123 = K2Node_DynamicCast_bSuccess123;
-	Parms.Temp_int_Loop_Counter_Variable123 = Temp_int_Loop_Counter_Variable123;
-	Parms.CallFunc_Less_IntInt_ReturnValue123 = CallFunc_Less_IntInt_ReturnValue123;
-	Parms.CallFunc_Add_IntInt_ReturnValue1234 = CallFunc_Add_IntInt_ReturnValue1234;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_Array_Length_ReturnValue3 = CallFunc_Array_Length_ReturnValue3;
+	Parms.CallFunc_Less_IntInt_ReturnValue2 = CallFunc_Less_IntInt_ReturnValue2;
+	Parms.Temp_int_Loop_Counter_Variable3 = Temp_int_Loop_Counter_Variable3;
+	Parms.CallFunc_Less_IntInt_ReturnValue3 = CallFunc_Less_IntInt_ReturnValue3;
+	Parms.CallFunc_Add_IntInt_ReturnValue4 = CallFunc_Add_IntInt_ReturnValue4;
 	Parms.CallFunc_K2_IsValidTimerHandle_ReturnValue = CallFunc_K2_IsValidTimerHandle_ReturnValue;
+	Parms.Temp_int_Array_Index_Variable2 = Temp_int_Array_Index_Variable2;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_Array_Get_Item5 = CallFunc_Array_Get_Item5;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
+	Parms.K2Node_DynamicCast_AsMaterial_Instance_Dynamic = K2Node_DynamicCast_AsMaterial_Instance_Dynamic;
+	Parms.K2Node_DynamicCast_bSuccess3 = K2Node_DynamicCast_bSuccess3;
 	Parms.K2Node_CustomEvent_ConstructorPawn = K2Node_CustomEvent_ConstructorPawn;
 	Parms.K2Node_CustomEvent_Stack1 = K2Node_CustomEvent_Stack1;
 	Parms.K2Node_CustomEvent_Stack2 = K2Node_CustomEvent_Stack2;
 	Parms.K2Node_CustomEvent_Stack3 = K2Node_CustomEvent_Stack3;
-	Parms.Temp_int_Array_Index_Variable123 = Temp_int_Array_Index_Variable123;
-	Parms.CallFunc_Array_Get_Item123456 = CallFunc_Array_Get_Item123456;
-	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue1 = CallFunc_CreateDynamicMaterialInstance_ReturnValue1;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
+	Parms.Temp_int_Array_Index_Variable3 = Temp_int_Array_Index_Variable3;
+	Parms.CallFunc_Array_Get_Item6 = CallFunc_Array_Get_Item6;
 	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue1 = CallFunc_EqualEqual_ObjectObject_ReturnValue1;
+	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue1 = CallFunc_CreateDynamicMaterialInstance_ReturnValue1;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
 	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue1 = CallFunc_K2_SetTimerDelegate_ReturnValue1;
 	Parms.K2Node_ComponentBoundEvent_EventName = K2Node_ComponentBoundEvent_EventName;
@@ -1472,9 +1509,10 @@ void AB_Constructor_BASE_C::ExecuteUbergraph_B_Constructor_BASE(int32 EntryPoint
 	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
 	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
 	Parms.CallFunc_K2_GetComponentLocation_ReturnValue1 = CallFunc_K2_GetComponentLocation_ReturnValue1;
-	Parms.CallFunc_K2_GetComponentLocation_ReturnValue12 = CallFunc_K2_GetComponentLocation_ReturnValue12;
+	Parms.CallFunc_K2_GetComponentLocation_ReturnValue2 = CallFunc_K2_GetComponentLocation_ReturnValue2;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
-	Parms.CallFunc_HasAuthority_ReturnValue123 = CallFunc_HasAuthority_ReturnValue123;
+	Parms.CallFunc_HasAuthority_ReturnValue2 = CallFunc_HasAuthority_ReturnValue2;
+	Parms.CallFunc_HasAuthority_ReturnValue3 = CallFunc_HasAuthority_ReturnValue3;
 
 	UObject::ProcessEvent(Func, &Parms);
 

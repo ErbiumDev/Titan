@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-L-Horizon-Yellow.TextStyle-Header-L-Horizon-Yellow_C
 class UTextStyle_Header_L_Horizon_Yellow_C : public UTextStyle_HeaderParent_C
 {

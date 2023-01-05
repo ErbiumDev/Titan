@@ -81,7 +81,7 @@ namespace Inventory {
 				}
 			}
 
-			if (Gadget->GetName() == "AGID_CarminePack") {
+			/*if (Gadget->GetName() == "AGID_CarminePack") {
 				static UFortAbilitySet* AbilitySet = UObject::FindObject<UFortAbilitySet>("FortAbilitySet AS_CarminePack.AS_CarminePack");
 				for (int i = 0; i < AbilitySet->GameplayAbilities.Num(); i++) {
 					UGameplayAbility* Ability = AbilitySet->GameplayAbilities[i];
@@ -93,8 +93,8 @@ namespace Inventory {
 				}
 				OldAbilitySet = AbilitySet;
 				
-				GPawn->SetAnimBPOverride(UObject::FindObject<UClass>("AnimBlueprintGeneratedClass Gauntlet_Player_AnimBlueprint.Gauntlet_Player_AnimBlueprint_C"));
-			}
+				GPawn->AnimBPOverride = UObject::FindObject<UClass>("AnimBlueprintGeneratedClass Gauntlet_Player_AnimBlueprint.Gauntlet_Player_AnimBlueprint_C");
+			}*/
 		}
 		//Equip the Item
 		AFortWeapon* WeaponData = GPawn->EquipWeaponDefinition(ItemDef, Weapon->GetItemGuid());
@@ -110,7 +110,7 @@ namespace Inventory {
 		AFortPickupAthena* Pickup = reinterpret_cast<AFortPickupAthena*>(GGameplayStatics->FinishSpawningActor(GGameplayStatics->BeginDeferredActorSpawnFromClass(GEngine->GameViewport->World, AFortPickupAthena::StaticClass(), SpawnTransform, ESpawnActorCollisionHandlingMethod::AlwaysSpawn, GPlayerController), SpawnTransform));
 		Pickup->PrimaryPickupItemEntry = Item->ItemEntry;
 		Pickup->OnRep_PrimaryPickupItemEntry();
-		Pickup->TossPickup(GPawn->K2_GetActorLocation(), GPawn, Pickup->PrimaryPickupItemEntry.Count, true);
+		Pickup->TossPickup(GPawn->K2_GetActorLocation(), GPawn, Pickup->PrimaryPickupItemEntry.Count, true, EFortPickupSourceTypeFlag::Tossed, EFortPickupSpawnSource::Unset);
 	}
 
 	void DropItem(FGuid ItemGuid) {

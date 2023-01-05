@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass v3_PlayerCameraModeTargetingPistol.v3_PlayerCameraModeTargetingPistol_C
 class UV3_PlayerCameraModeTargetingPistol_C : public UV3_PlayerCameraModeRanged_C
 {

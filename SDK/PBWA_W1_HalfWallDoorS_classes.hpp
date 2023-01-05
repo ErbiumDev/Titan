@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xEA0 - 0xEA0)
+// 0x0 (0xD90 - 0xD90)
 // BlueprintGeneratedClass PBWA_W1_HalfWallDoorS.PBWA_W1_HalfWallDoorS_C
 class APBWA_W1_HalfWallDoorS_C : public ABuildingWall
 {

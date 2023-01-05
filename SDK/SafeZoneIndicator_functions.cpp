@@ -79,16 +79,16 @@ void ASafeZoneIndicator_C::HandleInsideOutsideMix()
 // Parameters:
 // class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue1                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue12                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue2                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASafeZoneIndicator_C::InitClosestPointAudio(class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue12)
+void ASafeZoneIndicator_C::InitClosestPointAudio(class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue1, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue2)
 {
 	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "InitClosestPointAudio");
 
 	Params::ASafeZoneIndicator_C_InitClosestPointAudio_Params Parms;
 	Parms.CallFunc_SpawnSoundAttached_ReturnValue = CallFunc_SpawnSoundAttached_ReturnValue;
 	Parms.CallFunc_SpawnSoundAttached_ReturnValue1 = CallFunc_SpawnSoundAttached_ReturnValue1;
-	Parms.CallFunc_SpawnSoundAttached_ReturnValue12 = CallFunc_SpawnSoundAttached_ReturnValue12;
+	Parms.CallFunc_SpawnSoundAttached_ReturnValue2 = CallFunc_SpawnSoundAttached_ReturnValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -108,36 +108,6 @@ void ASafeZoneIndicator_C::UserConstructionScript(bool CallFunc_IsDedicatedServe
 	Params::ASafeZoneIndicator_C_UserConstructionScript_Params Parms;
 	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SafeZoneIndicator.SafeZoneIndicator_C.FadeSafeZoneVisuals__FinishedFunc
-// (BlueprintEvent)
-// Parameters:
-
-void ASafeZoneIndicator_C::FadeSafeZoneVisuals__FinishedFunc()
-{
-	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "FadeSafeZoneVisuals__FinishedFunc");
-
-	Params::ASafeZoneIndicator_C_FadeSafeZoneVisuals__FinishedFunc_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function SafeZoneIndicator.SafeZoneIndicator_C.FadeSafeZoneVisuals__UpdateFunc
-// (BlueprintEvent)
-// Parameters:
-
-void ASafeZoneIndicator_C::FadeSafeZoneVisuals__UpdateFunc()
-{
-	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "FadeSafeZoneVisuals__UpdateFunc");
-
-	Params::ASafeZoneIndicator_C_FadeSafeZoneVisuals__UpdateFunc_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -174,6 +144,36 @@ void ASafeZoneIndicator_C::StormFadeTimeline__UpdateFunc()
 }
 
 
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Pre Damage Audio Ramp__FinishedFunc
+// (BlueprintEvent)
+// Parameters:
+
+void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__FinishedFunc()
+{
+	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__FinishedFunc");
+
+	Params::ASafeZoneIndicator_C_Pre_Damage_Audio_Ramp__FinishedFunc_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Pre Damage Audio Ramp__UpdateFunc
+// (BlueprintEvent)
+// Parameters:
+
+void ASafeZoneIndicator_C::Pre_Damage_Audio_Ramp__UpdateFunc()
+{
+	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "Pre Damage Audio Ramp__UpdateFunc");
+
+	Params::ASafeZoneIndicator_C_Pre_Damage_Audio_Ramp__UpdateFunc_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function SafeZoneIndicator.SafeZoneIndicator_C.OnSafeZoneStateChange
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -193,21 +193,6 @@ void ASafeZoneIndicator_C::OnSafeZoneStateChange(enum class EFortSafeZoneState N
 }
 
 
-// Function SafeZoneIndicator.SafeZoneIndicator_C.Apply Lowpass to Audio
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void ASafeZoneIndicator_C::Apply_Lowpass_to_Audio()
-{
-	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "Apply Lowpass to Audio");
-
-	Params::ASafeZoneIndicator_C_Apply_Lowpass_to_Audio_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function SafeZoneIndicator.SafeZoneIndicator_C.ReceiveTick
 // (Event, Public, BlueprintEvent)
 // Parameters:
@@ -219,6 +204,21 @@ void ASafeZoneIndicator_C::ReceiveTick(float DeltaSeconds)
 
 	Params::ASafeZoneIndicator_C_ReceiveTick_Params Parms;
 	Parms.DeltaSeconds = DeltaSeconds;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Apply Lowpass to Audio
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void ASafeZoneIndicator_C::Apply_Lowpass_to_Audio()
+{
+	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "Apply Lowpass to Audio");
+
+	Params::ASafeZoneIndicator_C_Apply_Lowpass_to_Audio_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -287,8 +287,53 @@ void ASafeZoneIndicator_C::ReceiveDestroyed()
 }
 
 
+// Function SafeZoneIndicator.SafeZoneIndicator_C.OnBeginStartingStateEffectsEvent
+// (Event, Public, BlueprintEvent)
+// Parameters:
+
+void ASafeZoneIndicator_C::OnBeginStartingStateEffectsEvent()
+{
+	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "OnBeginStartingStateEffectsEvent");
+
+	Params::ASafeZoneIndicator_C_OnBeginStartingStateEffectsEvent_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Megastorm Pre Damage Tell
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void ASafeZoneIndicator_C::Megastorm_Pre_Damage_Tell()
+{
+	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "Megastorm Pre Damage Tell");
+
+	Params::ASafeZoneIndicator_C_Megastorm_Pre_Damage_Tell_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.Start Megastorm Audio
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void ASafeZoneIndicator_C::Start_Megastorm_Audio()
+{
+	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "Start Megastorm Audio");
+
+	Params::ASafeZoneIndicator_C_Start_Megastorm_Audio_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function SafeZoneIndicator.SafeZoneIndicator_C.ExecuteUbergraph_SafeZoneIndicator
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -297,16 +342,16 @@ void ASafeZoneIndicator_C::ReceiveDestroyed()
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsPlaying_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue12                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsValid_ReturnValue2                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsPlaying_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
+// bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortSafeZoneState      K2Node_Event_NewState                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bInitial                                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_GetWorldDeltaSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_DeltaSeconds                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_Lerp_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetWorldDeltaSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsDedicatedServer_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_AreAnyListenersWithinRange_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_FInterpTo_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -317,18 +362,33 @@ void ASafeZoneIndicator_C::ReceiveDestroyed()
 // float                              CallFunc_GetServerWorldTimeSeconds_ReturnValue                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetServerWorldTimeSeconds_ReturnValue1                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_MapRangeClamped_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetClockTickingAudioCurveValues_VolumeModValue          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetClockTickingAudioCurveValues_PitchModValue           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AAthena_GameState_C*         CallFunc_GetAthenaGameState_AthenaGS12                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetServerWorldTimeSeconds_ReturnValue12                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_MapRangeUnclamped_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_MapRangeClamped_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetTimeSinceSafeZonesStart_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetMovementAudioCurveValues_CrossfadeValue              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetMovementAudioCurveValues_PitchModValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetTimeSinceSafeZonesStart_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_FloatFloat_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_K2_IsTimerActiveHandle_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Subtract_FloatFloat_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Divide_FloatFloat_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UAudioComponent*             CallFunc_SpawnSoundAttached_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Subtract_FloatFloat_ReturnValue2                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AAthena_GameState_C*         CallFunc_GetAthenaGameState_AthenaGS2                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_Subtract_FloatFloat_ReturnValue3                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetServerWorldTimeSeconds_ReturnValue2                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Greater_FloatFloat_ReturnValue1                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// float                              CallFunc_MapRangeClamped_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_MapRangeClamped_ReturnValue2                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetClockTickingAudioCurveValues_VolumeModValue          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetClockTickingAudioCurveValues_PitchModValue           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_MapRangeUnclamped_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ASafeZoneIndicator_C::ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue1, bool CallFunc_IsPlaying_ReturnValue, bool CallFunc_IsValid_ReturnValue12, bool CallFunc_IsPlaying_ReturnValue1, enum class EFortSafeZoneState K2Node_Event_NewState, bool K2Node_Event_bInitial, bool K2Node_SwitchEnum_CmpSuccess, const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool CallFunc_IsDedicatedServer_ReturnValue, float CallFunc_GetWorldDeltaSeconds_ReturnValue, float K2Node_Event_DeltaSeconds, float CallFunc_Lerp_ReturnValue, bool CallFunc_AreAnyListenersWithinRange_ReturnValue, float K2Node_Select_Default, float CallFunc_FInterpTo_ReturnValue, float CallFunc_GetTimelineLength_ReturnValue, float K2Node_CustomEvent_NewParam, class AAthena_GameState_C* CallFunc_GetAthenaGameState_AthenaGS, class AAthena_GameState_C* CallFunc_GetAthenaGameState_AthenaGS1, float CallFunc_GetServerWorldTimeSeconds_ReturnValue, float CallFunc_GetServerWorldTimeSeconds_ReturnValue1, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_GetClockTickingAudioCurveValues_VolumeModValue, float CallFunc_GetClockTickingAudioCurveValues_PitchModValue, class AAthena_GameState_C* CallFunc_GetAthenaGameState_AthenaGS12, float CallFunc_GetServerWorldTimeSeconds_ReturnValue12, float CallFunc_MapRangeUnclamped_ReturnValue, float CallFunc_MapRangeClamped_ReturnValue1, float CallFunc_GetMovementAudioCurveValues_CrossfadeValue, float CallFunc_GetMovementAudioCurveValues_PitchModValue, float CallFunc_GetTimeSinceSafeZonesStart_ReturnValue, bool CallFunc_Greater_FloatFloat_ReturnValue)
+void ASafeZoneIndicator_C::ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint, bool Temp_bool_Variable, float Temp_float_Variable, float Temp_float_Variable1, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsValid_ReturnValue1, bool CallFunc_IsPlaying_ReturnValue, bool CallFunc_IsValid_ReturnValue2, bool CallFunc_IsPlaying_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable1, enum class EFortSafeZoneState K2Node_Event_NewState, bool K2Node_Event_bInitial, bool K2Node_SwitchEnum_CmpSuccess, float K2Node_Event_DeltaSeconds, float CallFunc_GetWorldDeltaSeconds_ReturnValue, bool CallFunc_IsDedicatedServer_ReturnValue, bool CallFunc_AreAnyListenersWithinRange_ReturnValue, float K2Node_Select_Default, float CallFunc_FInterpTo_ReturnValue, float CallFunc_GetTimelineLength_ReturnValue, float K2Node_CustomEvent_NewParam, class AAthena_GameState_C* CallFunc_GetAthenaGameState_AthenaGS, class AAthena_GameState_C* CallFunc_GetAthenaGameState_AthenaGS1, float CallFunc_GetServerWorldTimeSeconds_ReturnValue, float CallFunc_GetServerWorldTimeSeconds_ReturnValue1, float CallFunc_MapRangeClamped_ReturnValue, float CallFunc_GetTimeSinceSafeZonesStart_ReturnValue, float CallFunc_GetMovementAudioCurveValues_CrossfadeValue, float CallFunc_GetMovementAudioCurveValues_PitchModValue, bool CallFunc_Greater_FloatFloat_ReturnValue, const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool CallFunc_K2_IsTimerActiveHandle_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue1, float CallFunc_Divide_FloatFloat_ReturnValue, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, bool CallFunc_BooleanOR_ReturnValue, class UAudioComponent* CallFunc_SpawnSoundAttached_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue2, class AAthena_GameState_C* CallFunc_GetAthenaGameState_AthenaGS2, float CallFunc_Subtract_FloatFloat_ReturnValue3, float CallFunc_GetServerWorldTimeSeconds_ReturnValue2, bool CallFunc_Greater_FloatFloat_ReturnValue1, float CallFunc_MapRangeClamped_ReturnValue1, float CallFunc_MapRangeClamped_ReturnValue2, float K2Node_Select1_Default, float CallFunc_GetClockTickingAudioCurveValues_VolumeModValue, float CallFunc_GetClockTickingAudioCurveValues_PitchModValue, float CallFunc_MapRangeUnclamped_ReturnValue)
 {
 	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "ExecuteUbergraph_SafeZoneIndicator");
 
@@ -340,16 +400,16 @@ void ASafeZoneIndicator_C::ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint, 
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue1 = CallFunc_IsValid_ReturnValue1;
 	Parms.CallFunc_IsPlaying_ReturnValue = CallFunc_IsPlaying_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue12 = CallFunc_IsValid_ReturnValue12;
+	Parms.CallFunc_IsValid_ReturnValue2 = CallFunc_IsValid_ReturnValue2;
 	Parms.CallFunc_IsPlaying_ReturnValue1 = CallFunc_IsPlaying_ReturnValue1;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
 	Parms.K2Node_Event_NewState = K2Node_Event_NewState;
 	Parms.K2Node_Event_bInitial = K2Node_Event_bInitial;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
-	Parms.K2Node_MakeStruct_LinearColor = K2Node_MakeStruct_LinearColor;
-	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
-	Parms.CallFunc_GetWorldDeltaSeconds_ReturnValue = CallFunc_GetWorldDeltaSeconds_ReturnValue;
 	Parms.K2Node_Event_DeltaSeconds = K2Node_Event_DeltaSeconds;
-	Parms.CallFunc_Lerp_ReturnValue = CallFunc_Lerp_ReturnValue;
+	Parms.CallFunc_GetWorldDeltaSeconds_ReturnValue = CallFunc_GetWorldDeltaSeconds_ReturnValue;
+	Parms.CallFunc_IsDedicatedServer_ReturnValue = CallFunc_IsDedicatedServer_ReturnValue;
 	Parms.CallFunc_AreAnyListenersWithinRange_ReturnValue = CallFunc_AreAnyListenersWithinRange_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.CallFunc_FInterpTo_ReturnValue = CallFunc_FInterpTo_ReturnValue;
@@ -360,16 +420,48 @@ void ASafeZoneIndicator_C::ExecuteUbergraph_SafeZoneIndicator(int32 EntryPoint, 
 	Parms.CallFunc_GetServerWorldTimeSeconds_ReturnValue = CallFunc_GetServerWorldTimeSeconds_ReturnValue;
 	Parms.CallFunc_GetServerWorldTimeSeconds_ReturnValue1 = CallFunc_GetServerWorldTimeSeconds_ReturnValue1;
 	Parms.CallFunc_MapRangeClamped_ReturnValue = CallFunc_MapRangeClamped_ReturnValue;
-	Parms.CallFunc_GetClockTickingAudioCurveValues_VolumeModValue = CallFunc_GetClockTickingAudioCurveValues_VolumeModValue;
-	Parms.CallFunc_GetClockTickingAudioCurveValues_PitchModValue = CallFunc_GetClockTickingAudioCurveValues_PitchModValue;
-	Parms.CallFunc_GetAthenaGameState_AthenaGS12 = CallFunc_GetAthenaGameState_AthenaGS12;
-	Parms.CallFunc_GetServerWorldTimeSeconds_ReturnValue12 = CallFunc_GetServerWorldTimeSeconds_ReturnValue12;
-	Parms.CallFunc_MapRangeUnclamped_ReturnValue = CallFunc_MapRangeUnclamped_ReturnValue;
-	Parms.CallFunc_MapRangeClamped_ReturnValue1 = CallFunc_MapRangeClamped_ReturnValue1;
+	Parms.CallFunc_GetTimeSinceSafeZonesStart_ReturnValue = CallFunc_GetTimeSinceSafeZonesStart_ReturnValue;
 	Parms.CallFunc_GetMovementAudioCurveValues_CrossfadeValue = CallFunc_GetMovementAudioCurveValues_CrossfadeValue;
 	Parms.CallFunc_GetMovementAudioCurveValues_PitchModValue = CallFunc_GetMovementAudioCurveValues_PitchModValue;
-	Parms.CallFunc_GetTimeSinceSafeZonesStart_ReturnValue = CallFunc_GetTimeSinceSafeZonesStart_ReturnValue;
 	Parms.CallFunc_Greater_FloatFloat_ReturnValue = CallFunc_Greater_FloatFloat_ReturnValue;
+	Parms.K2Node_MakeStruct_LinearColor = K2Node_MakeStruct_LinearColor;
+	Parms.CallFunc_K2_IsTimerActiveHandle_ReturnValue = CallFunc_K2_IsTimerActiveHandle_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
+	Parms.CallFunc_Subtract_FloatFloat_ReturnValue = CallFunc_Subtract_FloatFloat_ReturnValue;
+	Parms.CallFunc_Subtract_FloatFloat_ReturnValue1 = CallFunc_Subtract_FloatFloat_ReturnValue1;
+	Parms.CallFunc_Divide_FloatFloat_ReturnValue = CallFunc_Divide_FloatFloat_ReturnValue;
+	Parms.CallFunc_K2_SetTimerDelegate_ReturnValue = CallFunc_K2_SetTimerDelegate_ReturnValue;
+	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
+	Parms.CallFunc_SpawnSoundAttached_ReturnValue = CallFunc_SpawnSoundAttached_ReturnValue;
+	Parms.CallFunc_Subtract_FloatFloat_ReturnValue2 = CallFunc_Subtract_FloatFloat_ReturnValue2;
+	Parms.CallFunc_GetAthenaGameState_AthenaGS2 = CallFunc_GetAthenaGameState_AthenaGS2;
+	Parms.CallFunc_Subtract_FloatFloat_ReturnValue3 = CallFunc_Subtract_FloatFloat_ReturnValue3;
+	Parms.CallFunc_GetServerWorldTimeSeconds_ReturnValue2 = CallFunc_GetServerWorldTimeSeconds_ReturnValue2;
+	Parms.CallFunc_Greater_FloatFloat_ReturnValue1 = CallFunc_Greater_FloatFloat_ReturnValue1;
+	Parms.CallFunc_MapRangeClamped_ReturnValue1 = CallFunc_MapRangeClamped_ReturnValue1;
+	Parms.CallFunc_MapRangeClamped_ReturnValue2 = CallFunc_MapRangeClamped_ReturnValue2;
+	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
+	Parms.CallFunc_GetClockTickingAudioCurveValues_VolumeModValue = CallFunc_GetClockTickingAudioCurveValues_VolumeModValue;
+	Parms.CallFunc_GetClockTickingAudioCurveValues_PitchModValue = CallFunc_GetClockTickingAudioCurveValues_PitchModValue;
+	Parms.CallFunc_MapRangeUnclamped_ReturnValue = CallFunc_MapRangeUnclamped_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function SafeZoneIndicator.SafeZoneIndicator_C.OnSafeZoneStateChangeDispatcher__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// enum class EFortSafeZoneState      SafeZoneState                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void ASafeZoneIndicator_C::OnSafeZoneStateChangeDispatcher__DelegateSignature(enum class EFortSafeZoneState SafeZoneState)
+{
+	static auto Func = Class->GetFunction("SafeZoneIndicator_C", "OnSafeZoneStateChangeDispatcher__DelegateSignature");
+
+	Params::ASafeZoneIndicator_C_OnSafeZoneStateChangeDispatcher__DelegateSignature_Params Parms;
+	Parms.SafeZoneState = SafeZoneState;
 
 	UObject::ProcessEvent(Func, &Parms);
 

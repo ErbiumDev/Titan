@@ -63,7 +63,7 @@ class USocialChatChromeMarginsDataAsset : public UDataAsset
 {
 public:
 	struct FChatChromeMargins                    Style;                                             // 0x30(0x64)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_25C6[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2D55[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -88,12 +88,12 @@ public:
 
 };
 
-// 0x608 (0x638 - 0x30)
+// 0x690 (0x6C0 - 0x30)
 // Class SocialDefaults.SocialChatMarkupStyleDataAsset
 class USocialChatMarkupStyleDataAsset : public UDataAsset
 {
 public:
-	struct FChatMarkupStyle                      Style;                                             // 0x30(0x608)(Edit, NativeAccessSpecifierPublic)
+	struct FChatMarkupStyle                      Style;                                             // 0x30(0x690)(Edit, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass()
 	{
@@ -238,7 +238,7 @@ public:
 
 };
 
-// 0x6760 (0x6790 - 0x30)
+// 0x67E8 (0x6818 - 0x30)
 // Class SocialDefaults.SocialStyleDataAsset
 class USocialStyleDataAsset : public UDataAsset
 {
@@ -261,7 +261,7 @@ public:
 	class USocialScrollBarStyleDataAsset*        ScrollBoxStyle;                                    // 0xA8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USocialChatMarkupStyleDataAsset*       MarkupStyle;                                       // 0xB0(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USocialProfanityDataAsset*             ProfanityDataAsset;                                // 0xB8(0x8)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_25C7[0x66D0];                                  // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2D56[0x6758];                                  // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

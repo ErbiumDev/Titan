@@ -32,6 +32,54 @@ public:
 	struct FPurchaseFlowReceiptParam             RECEIPT;                                           // 0x0(0x30)(Parm, NativeAccessSpecifierPublic)
 };
 
+// 0x28 (0x28 - 0x0)
+// Function PurchaseFlow.PurchaseFlowJSBridge.LaunchValidatedExternalBrowserUrl
+struct UPurchaseFlowJSBridge_LaunchValidatedExternalBrowserUrl_Params
+{
+public:
+	class FString                                AllowedBrowserID;                                  // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                URL;                                               // 0x10(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         ReturnValue;                                       // 0x20(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_1131[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+};
+
+// 0x18 (0x18 - 0x0)
+// Function PurchaseFlow.PurchaseFlowJSBridge.LaunchExternalBrowserUrl
+struct UPurchaseFlowJSBridge_LaunchExternalBrowserUrl_Params
+{
+public:
+	class FString                                URL;                                               // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_1132[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+};
+
+// 0x20 (0x20 - 0x0)
+// Function PurchaseFlow.PurchaseFlowJSBridge.GetExternalBrowserPath
+struct UPurchaseFlowJSBridge_GetExternalBrowserPath_Params
+{
+public:
+	class FString                                BrowserId;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                ReturnValue;                                       // 0x10(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x20 (0x20 - 0x0)
+// Function PurchaseFlow.PurchaseFlowJSBridge.GetExternalBrowserName
+struct UPurchaseFlowJSBridge_GetExternalBrowserName_Params
+{
+public:
+	class FString                                BrowserId;                                         // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                ReturnValue;                                       // 0x10(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x20 (0x20 - 0x0)
+// Function PurchaseFlow.PurchaseFlowJSBridge.GetDefaultExternalBrowserID
+struct UPurchaseFlowJSBridge_GetDefaultExternalBrowserID_Params
+{
+public:
+	class FString                                URL;                                               // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FString                                ReturnValue;                                       // 0x10(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 }
 }
 

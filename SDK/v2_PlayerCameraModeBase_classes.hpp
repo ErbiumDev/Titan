@@ -12,11 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x8 (0xC50 - 0xC48)
 // BlueprintGeneratedClass v2_PlayerCameraModeBase.v2_PlayerCameraModeBase_C
 class UV2_PlayerCameraModeBase_C : public UFortCameraMode_ThirdPerson
 {
 public:
+	uint8                                        Pad_360E[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

@@ -23,8 +23,8 @@ namespace SDK
 // enum class EFortRarity             Rarity                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 OutBrush_Brush_M                                                 (Parm, OutParm)
 // class FText                        OutDisplayName                                                   (Parm, OutParm)
-// struct FLinearColor                OutRarityColor                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                RarityColor                                                      (Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                OutRarityColor                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                RarityColor                                                      (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 TagBrush                                                         (Edit, BlueprintVisible)
 // class FText                        DisplayName                                                      (Edit, BlueprintVisible)
 // struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             ()
@@ -83,12 +83,12 @@ void UBP_FortExpeditionDetailsWidget_C::Get_Bonus_Display_Name_and_Brush(const s
 // int32                              CallFunc_Array_Length_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 CallFunc_Get_Bonus_Display_Name_and_Brush_OutBrush_Brush_M       ()
 // class FText                        CallFunc_Get_Bonus_Display_Name_and_Brush_OutDisplayName         ()
-// struct FLinearColor                CallFunc_Get_Bonus_Display_Name_and_Brush_OutRarityColor         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Bonus_Display_Name_and_Brush_OutRarityColor         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UIconAndNameWidget_C*        CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateChildSize             K2Node_MakeStruct_SlateChildSize                                 (NoDestructor)
-// struct FMargin                     K2Node_MakeStruct_Margin                                         (IsPlainOldData, NoDestructor)
+// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -362,7 +362,7 @@ void UBP_FortExpeditionDetailsWidget_C::Set_Rewards(class UFortExpeditionItemDef
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortExpeditionItemDefinition*Item_Def                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimespan                   CallFunc_FromMinutes_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   CallFunc_FromMinutes_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_FloatFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_GetTimespanAsText_ReturnValue                           ()
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
@@ -614,7 +614,7 @@ void UBP_FortExpeditionDetailsWidget_C::OnAbandonExpeditionCompleted()
 
 
 // Function BP_FortExpeditionDetailsWidget.BP_FortExpeditionDetailsWidget_C.ExecuteUbergraph_BP_FortExpeditionDetailsWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortDialogResult       K2Node_CustomEvent_Result                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

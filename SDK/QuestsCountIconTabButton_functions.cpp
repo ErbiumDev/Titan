@@ -59,51 +59,53 @@ void UQuestsCountIconTabButton_C::Update_Bang_State(bool bBangEnabled, int32 Cou
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                              QuestCount                                                       (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Array_Index_Variable1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortQuestManager*           CallFunc_GetQuestManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UFortQuestCategory*>  CallFunc_GetCurrentQuestsCategories_Categories                   (ZeroConstructor, ReferenceParm)
-// class UFortQuestCategory*          CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Temp_int_Loop_Counter_Variable1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortQuestCategory*          CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Length_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Array_Index_Variable1                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Less_IntInt_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortQuestItem*              CallFunc_Array_Get_Item1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortQuestState         CallFunc_GetQuestState_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Less_IntInt_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Add_IntInt_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuestsCountIconTabButton_C::Update_Text(int32 QuestCount, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, int32 Temp_int_Array_Index_Variable1, int32 Temp_int_Loop_Counter_Variable1, int32 CallFunc_Add_IntInt_ReturnValue1, int32 CallFunc_Add_IntInt_ReturnValue12, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_IsValid_ReturnValue, TArray<class UFortQuestCategory*>& CallFunc_GetCurrentQuestsCategories_Categories, class UFortQuestCategory* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, class UFortQuestItem* CallFunc_Array_Get_Item1, enum class EFortQuestState CallFunc_GetQuestState_ReturnValue, int32 CallFunc_Array_Length_ReturnValue1, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue1)
+void UQuestsCountIconTabButton_C::Update_Text(int32 QuestCount, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, int32 Temp_int_Loop_Counter_Variable, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, TArray<class UFortQuestCategory*>& CallFunc_GetCurrentQuestsCategories_Categories, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_IsValid_ReturnValue, int32 Temp_int_Loop_Counter_Variable1, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue1, int32 Temp_int_Array_Index_Variable, class UFortQuestCategory* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue1, int32 Temp_int_Array_Index_Variable1, bool CallFunc_Less_IntInt_ReturnValue1, class UFortQuestItem* CallFunc_Array_Get_Item1, enum class EFortQuestState CallFunc_GetQuestState_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 Temp_int_Variable, int32 CallFunc_Add_IntInt_ReturnValue2)
 {
 	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "Update Text");
 
 	Params::UQuestsCountIconTabButton_C_Update_Text_Params Parms;
 	Parms.QuestCount = QuestCount;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.Temp_int_Array_Index_Variable1 = Temp_int_Array_Index_Variable1;
-	Parms.Temp_int_Loop_Counter_Variable1 = Temp_int_Loop_Counter_Variable1;
-	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
-	Parms.CallFunc_Add_IntInt_ReturnValue12 = CallFunc_Add_IntInt_ReturnValue12;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
+	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
 	Parms.CallFunc_GetQuestManager_ReturnValue = CallFunc_GetQuestManager_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_GetCurrentQuestsCategories_Categories = CallFunc_GetCurrentQuestsCategories_Categories;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.Temp_int_Loop_Counter_Variable1 = Temp_int_Loop_Counter_Variable1;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue1 = CallFunc_Add_IntInt_ReturnValue1;
+	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_Length_ReturnValue1 = CallFunc_Array_Length_ReturnValue1;
+	Parms.Temp_int_Array_Index_Variable1 = Temp_int_Array_Index_Variable1;
+	Parms.CallFunc_Less_IntInt_ReturnValue1 = CallFunc_Less_IntInt_ReturnValue1;
 	Parms.CallFunc_Array_Get_Item1 = CallFunc_Array_Get_Item1;
 	Parms.CallFunc_GetQuestState_ReturnValue = CallFunc_GetQuestState_ReturnValue;
-	Parms.CallFunc_Array_Length_ReturnValue1 = CallFunc_Array_Length_ReturnValue1;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue1 = CallFunc_Less_IntInt_ReturnValue1;
+	Parms.Temp_int_Variable = Temp_int_Variable;
+	Parms.CallFunc_Add_IntInt_ReturnValue2 = CallFunc_Add_IntInt_ReturnValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -235,30 +237,30 @@ void UQuestsCountIconTabButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo
 }
 
 
-// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnSelected
+// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UQuestsCountIconTabButton_C::OnSelected()
+void UQuestsCountIconTabButton_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnSelected");
+	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnSelected");
 
-	Params::UQuestsCountIconTabButton_C_OnSelected_Params Parms;
+	Params::UQuestsCountIconTabButton_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnDeselected
+// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UQuestsCountIconTabButton_C::OnDeselected()
+void UQuestsCountIconTabButton_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnDeselected");
+	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDeselected");
 
-	Params::UQuestsCountIconTabButton_C_OnDeselected_Params Parms;
+	Params::UQuestsCountIconTabButton_C_BP_OnDeselected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -280,30 +282,30 @@ void UQuestsCountIconTabButton_C::Construct()
 }
 
 
-// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnHovered
+// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UQuestsCountIconTabButton_C::OnHovered()
+void UQuestsCountIconTabButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnHovered");
+	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnHovered");
 
-	Params::UQuestsCountIconTabButton_C_OnHovered_Params Parms;
+	Params::UQuestsCountIconTabButton_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnUnhovered
+// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UQuestsCountIconTabButton_C::OnUnhovered()
+void UQuestsCountIconTabButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnUnhovered");
+	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnUnhovered");
 
-	Params::UQuestsCountIconTabButton_C_OnUnhovered_Params Parms;
+	Params::UQuestsCountIconTabButton_C_BP_OnUnhovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -325,30 +327,30 @@ void UQuestsCountIconTabButton_C::Handle_Quest_Count_Updated()
 }
 
 
-// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnEnabled
+// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.BP_OnEnabled
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UQuestsCountIconTabButton_C::OnEnabled()
+void UQuestsCountIconTabButton_C::BP_OnEnabled()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnEnabled");
+	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnEnabled");
 
-	Params::UQuestsCountIconTabButton_C_OnEnabled_Params Parms;
+	Params::UQuestsCountIconTabButton_C_BP_OnEnabled_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.OnDisabled
+// Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.BP_OnDisabled
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UQuestsCountIconTabButton_C::OnDisabled()
+void UQuestsCountIconTabButton_C::BP_OnDisabled()
 {
-	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "OnDisabled");
+	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "BP_OnDisabled");
 
-	Params::UQuestsCountIconTabButton_C_OnDisabled_Params Parms;
+	Params::UQuestsCountIconTabButton_C_BP_OnDisabled_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -356,7 +358,7 @@ void UQuestsCountIconTabButton_C::OnDisabled()
 
 
 // Function QuestsCountIconTabButton.QuestsCountIconTabButton_C.ExecuteUbergraph_QuestsCountIconTabButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetSelected_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -364,21 +366,21 @@ void UQuestsCountIconTabButton_C::OnDisabled()
 // bool                               CallFunc_EqualEqual_ClassClass_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ClassClass_ReturnValue1                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFortTabButtonLabelInfo     K2Node_Event_TabLabelInfo                                        (ConstParm)
-// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue12                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue123                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue2                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue3                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue1234                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue12345                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue4                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue5                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue123456                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ClassClass_ReturnValue6                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UFortQuestManager*           CallFunc_GetQuestManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int32 EntryPoint, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1, bool CallFunc_EqualEqual_ClassClass_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue1, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_EqualEqual_ClassClass_ReturnValue12, bool CallFunc_EqualEqual_ClassClass_ReturnValue123, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue1234, bool CallFunc_EqualEqual_ClassClass_ReturnValue12345, bool K2Node_Event_IsDesignTime, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue123456, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int32 EntryPoint, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1, bool CallFunc_EqualEqual_ClassClass_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue1, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_EqualEqual_ClassClass_ReturnValue2, bool CallFunc_EqualEqual_ClassClass_ReturnValue3, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue4, bool CallFunc_EqualEqual_ClassClass_ReturnValue5, bool K2Node_Event_IsDesignTime, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, bool CallFunc_EqualEqual_ClassClass_ReturnValue6, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("QuestsCountIconTabButton_C", "ExecuteUbergraph_QuestsCountIconTabButton");
 
@@ -389,14 +391,14 @@ void UQuestsCountIconTabButton_C::ExecuteUbergraph_QuestsCountIconTabButton(int3
 	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue = CallFunc_EqualEqual_ClassClass_ReturnValue;
 	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue1 = CallFunc_EqualEqual_ClassClass_ReturnValue1;
 	Parms.K2Node_Event_TabLabelInfo = K2Node_Event_TabLabelInfo;
-	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue12 = CallFunc_EqualEqual_ClassClass_ReturnValue12;
-	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue123 = CallFunc_EqualEqual_ClassClass_ReturnValue123;
+	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue2 = CallFunc_EqualEqual_ClassClass_ReturnValue2;
+	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue3 = CallFunc_EqualEqual_ClassClass_ReturnValue3;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
-	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue1234 = CallFunc_EqualEqual_ClassClass_ReturnValue1234;
-	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue12345 = CallFunc_EqualEqual_ClassClass_ReturnValue12345;
+	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue4 = CallFunc_EqualEqual_ClassClass_ReturnValue4;
+	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue5 = CallFunc_EqualEqual_ClassClass_ReturnValue5;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
-	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue123456 = CallFunc_EqualEqual_ClassClass_ReturnValue123456;
+	Parms.CallFunc_EqualEqual_ClassClass_ReturnValue6 = CallFunc_EqualEqual_ClassClass_ReturnValue6;
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue1 = CallFunc_GetCurrentTextStyleClass_ReturnValue1;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;

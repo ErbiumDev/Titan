@@ -135,7 +135,7 @@ void UWheeledVehicleMovementComponent::SetHandbrakeInput(bool bNewHandbrake)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToIgnoreMask
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// struct FNavAvoidanceMask           GroupMask                                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FNavAvoidanceMask           GroupMask                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 void UWheeledVehicleMovementComponent::SetGroupsToIgnoreMask(struct FNavAvoidanceMask& GroupMask)
 {
@@ -181,7 +181,7 @@ void UWheeledVehicleMovementComponent::SetGroupsToIgnore(int32 GroupFlags)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetGroupsToAvoidMask
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// struct FNavAvoidanceMask           GroupMask                                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FNavAvoidanceMask           GroupMask                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 void UWheeledVehicleMovementComponent::SetGroupsToAvoidMask(struct FNavAvoidanceMask& GroupMask)
 {
@@ -296,7 +296,7 @@ void UWheeledVehicleMovementComponent::SetBrakeInput(float Brake)
 // Function PhysXVehicles.WheeledVehicleMovementComponent.SetAvoidanceGroupMask
 // (Final, Native, Public, HasOutParams, BlueprintCallable)
 // Parameters:
-// struct FNavAvoidanceMask           GroupMask                                                        (ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FNavAvoidanceMask           GroupMask                                                        (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 
 void UWheeledVehicleMovementComponent::SetAvoidanceGroupMask(struct FNavAvoidanceMask& GroupMask)
 {

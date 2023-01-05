@@ -17,8 +17,9 @@ enum class ECommonGamepadType : uint8
 	XboxOneController              = 0,
 	PS4Controller                  = 1,
 	SwitchController               = 2,
-	Count                          = 3,
-	ECommonGamepadType_MAX         = 4,
+	GenericController              = 3,
+	Count                          = 4,
+	ECommonGamepadType_MAX         = 5,
 };
 
 enum class ECommonInputType : uint8

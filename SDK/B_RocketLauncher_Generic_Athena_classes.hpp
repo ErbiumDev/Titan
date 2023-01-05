@@ -12,14 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x14 (0xEA0 - 0xE8C)
+// 0x10 (0xDE8 - 0xDD8)
 // BlueprintGeneratedClass B_RocketLauncher_Generic_Athena.B_RocketLauncher_Generic_Athena_C
 class AB_RocketLauncher_Generic_Athena_C : public AB_Ranged_Generic_C
 {
 public:
-	uint8                                        Pad_3180[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xE90(0x8)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*              RearMuzzle;                                        // 0xE98(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xDD8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*              RearMuzzle;                                        // 0xDE0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

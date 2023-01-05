@@ -35,7 +35,7 @@ public:
 	class FString                                OfferNamespace;                                    // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                OfferId;                                           // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        Quantity;                                          // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2317[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_1134[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FPurchaseFlowItem>             Items;                                             // 0x28(0x10)(ZeroConstructor, NativeAccessSpecifierPublic)
 };
 

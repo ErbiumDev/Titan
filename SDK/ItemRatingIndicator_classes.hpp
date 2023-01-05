@@ -12,14 +12,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0x590 - 0x578)
+// 0x18 (0x5B0 - 0x598)
 // WidgetBlueprintGeneratedClass ItemRatingIndicator.ItemRatingIndicator_C
 class UItemRatingIndicator_C : public UFortItemRatingIndicator
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x578(0x8)(Transient, DuplicateTransient)
-	class UImage*                                PowerRatingIconImage;                              // 0x580(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UStatNumericTextBlock_C*               PowerRatingText;                                   // 0x588(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x598(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UImage*                                PowerRatingIconImage;                              // 0x5A0(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UStatNumericTextBlock_C*               PowerRatingText;                                   // 0x5A8(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

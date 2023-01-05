@@ -41,7 +41,7 @@ enum class EEpicLeaderboardDataType : uint8
 // STRUCTS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x88 (0x90 - 0x8)
+// 0x58 (0x60 - 0x8)
 // ScriptStruct EpicGameplayStatsRuntime.GameplayStatMetadataTableRow
 struct FGameplayStatMetadataTableRow : public FTableRowBase
 {
@@ -52,12 +52,12 @@ public:
 	enum class EEpicLeaderboardUpdateFunction    Metric;                                            // 0x40(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EEpicLeaderboardDataType          DataType;                                          // 0x41(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bPublish;                                          // 0x42(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_7E[0x1];                                       // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2865[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        WeeklyRefreshInterval;                             // 0x44(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bExportToBackEnd;                                  // 0x48(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowInFrontEnd;                                   // 0x49(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_7F[0x6];                                       // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FGameplayTagReferenceHelper           ReferenceHelper;                                   // 0x50(0x40)(Edit, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2866[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FGameplayTagReferenceHelper           ReferenceHelper;                                   // 0x50(0x10)(Edit, NativeAccessSpecifierPublic)
 };
 
 // 0x8 (0x10 - 0x8)
@@ -82,7 +82,7 @@ public:
 struct FTagTableManagerHelper
 {
 public:
-	uint8                                        Pad_80[0x1];                                       // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2867[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

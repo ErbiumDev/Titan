@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3DB - 0x3DB)
+// 0x0 (0x3F3 - 0x3F3)
 // BlueprintGeneratedClass S_TRV_Water_Shallow_Half_x1.S_TRV_Water_Shallow_Half_x1_C
 class AS_TRV_Water_Shallow_Half_x1_C : public A_WaterMeshBlueprintMaster_C
 {

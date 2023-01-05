@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xE8C - 0xE8C)
+// 0x0 (0xDD8 - 0xDD8)
 // BlueprintGeneratedClass B_Rifle_Sniper_Athena.B_Rifle_Sniper_Athena_C
 class AB_Rifle_Sniper_Athena_C : public AB_Rifle_Generic_C
 {

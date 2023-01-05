@@ -21,12 +21,12 @@ namespace Params
 struct UBP_FortExpeditionReturnsWidget_C_Get_Mcp_Relative_Utc_Now_Params
 {
 public:
-	struct FDateTime                             UtcNow;                                            // 0x0(0x8)(Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                             UtcNow;                                            // 0x0(0x8)(Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AFortPlayerController*                 K2Node_DynamicCast_AsFort_Player_Controller;       // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4435[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDateTime                             CallFunc_GetMcpRelativeUtcNow_ReturnValue;         // 0x20(0x8)(NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4DC6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FDateTime                             CallFunc_GetMcpRelativeUtcNow_ReturnValue;         // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x21 (0x21 - 0x0)
@@ -48,10 +48,10 @@ struct UBP_FortExpeditionReturnsWidget_C_Set_Expedition_Return_Progress_Params
 public:
 	class UFortExpeditionItem*                   Item;                                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortExpeditionItemDefinition*         CallFunc_Get_Expedition_Item_Definition_ItemDef;   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FDateTime                             CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow;          // 0x10(0x8)(NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                             CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow;          // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4436[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FTimespan                             CallFunc_GetRemainingExpeditionDuration_ReturnValue; // 0x20(0x8)(NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4DC7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FTimespan                             CallFunc_GetRemainingExpeditionDuration_ReturnValue; // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetTotalSeconds_ReturnValue;              // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_FCeil_ReturnValue;                        // 0x2C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Conv_IntToFloat_ReturnValue;              // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -66,12 +66,12 @@ struct UBP_FortExpeditionReturnsWidget_C_Set_Expedition_Return_Time_Params
 {
 public:
 	class UFortExpeditionItem*                   Item;                                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FTimespan                             CallFunc_MakeTimespan_ReturnValue;                 // 0x8(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FDateTime                             CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow;          // 0x10(0x8)(NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                             CallFunc_MakeTimespan_ReturnValue;                 // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FDateTime                             CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow;          // 0x10(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsExpeditionCompleted_ReturnValue;        // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4437[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FTimespan                             CallFunc_GetRemainingExpeditionDuration_ReturnValue; // 0x20(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FTimespan                             CallFunc_Add_TimespanTimespan_ReturnValue;         // 0x28(0x8)(NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4DC8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FTimespan                             CallFunc_GetRemainingExpeditionDuration_ReturnValue; // 0x20(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	struct FTimespan                             CallFunc_Add_TimespanTimespan_ReturnValue;         // 0x28(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                  CallFunc_GetTimespanAsText_ReturnValue;            // 0x30(0x18)()
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x48(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x88(0x10)(ZeroConstructor, ReferenceParm)
@@ -123,8 +123,8 @@ struct UBP_FortExpeditionReturnsWidget_C_ExecuteUbergraph_BP_FortExpeditionRetur
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4438[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDateTime                             CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow;          // 0x8(0x8)(NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4DC9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FDateTime                             CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow;          // 0x8(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UFortExpeditionItem*                   K2Node_Event_InItem;                               // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_IsDesignTime;                         // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsExpeditionCompleted_ReturnValue;        // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)

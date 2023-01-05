@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-MediumButton-Disabled.TextStyle-MediumButton-Disabled_C
 class UTextStyle_MediumButton_Disabled_C : public UTextStyle_MediumButton_C
 {

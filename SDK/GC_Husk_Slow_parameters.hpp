@@ -23,9 +23,9 @@ struct AGC_Husk_Slow_C_UserConstructionScript_Params
 public:
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue;            // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4535[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E25[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue1; // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue12; // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue2; // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -63,7 +63,7 @@ struct AGC_Husk_Slow_C_K2_HandleGameplayCue_Params
 public:
 	class AActor*                                MyTarget;                                          // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EGameplayCueEvent                 EventType;                                         // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4536[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E26[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayCueParameters                Parameters;                                        // 0x10(0xB8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 };
 
@@ -105,7 +105,7 @@ public:
 	enum class ETimelineDirection                TimelineDirection;                                 // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x221 (0x221 - 0x0)
+// 0x22A (0x22A - 0x0)
 // Function GC_Husk_Slow.GC_Husk_Slow_C.ExecuteUbergraph_GC_Husk_Slow
 struct AGC_Husk_Slow_C_ExecuteUbergraph_GC_Husk_Slow_Params
 {
@@ -114,49 +114,50 @@ public:
 	float                                        K2Node_Event_DeltaSeconds;                         // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class AActor*                                K2Node_Event_MyTarget;                             // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EGameplayCueEvent                 K2Node_Event_EventType;                            // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4537[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E27[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FGameplayCueParameters                K2Node_Event_Parameters;                           // 0x18(0xB8)(ConstParm, ContainsInstancedReference)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0xD0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4538[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class AFlingerPawn_C*                        K2Node_DynamicCast_AsFlinger_Pawn;                 // 0xD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4E28[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class AFortPawn_Flinger*                     K2Node_DynamicCast_AsFort_Pawn_Flinger;            // 0xD8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0xE0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4539[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class ATakerPawn_C*                          K2Node_DynamicCast_AsTaker_Pawn;                   // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4E29[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class AFortPawn_Taker*                       K2Node_DynamicCast_AsFort_Pawn_Taker;              // 0xE8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess1;                      // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_453A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               CallFunc_MakeVector_ReturnValue;                   // 0xF4(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_MakeVector_ReturnValue1;                  // 0x100(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_453B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4E2A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               CallFunc_MakeVector_ReturnValue;                   // 0xF4(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_MakeVector_ReturnValue1;                  // 0x100(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4E2B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AEnemyPawn_Parent_C*                   K2Node_DynamicCast_AsEnemy_Pawn_Parent;            // 0x110(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess12;                     // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_DynamicCast_bSuccess2;                      // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x119(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_453C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               CallFunc_MakeVector_ReturnValue12;                 // 0x11C(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4E2C[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               CallFunc_MakeVector_ReturnValue2;                  // 0x11C(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue1;                     // 0x128(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue12;                    // 0x129(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_453D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               CallFunc_GetSocketLocation_ReturnValue;            // 0x12C(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_GetSocketLocation_ReturnValue1;           // 0x138(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_Subtract_VectorVector_ReturnValue;        // 0x144(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsValid_ReturnValue2;                     // 0x129(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_4E2D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               CallFunc_GetSocketLocation_ReturnValue;            // 0x12C(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_GetSocketLocation_ReturnValue1;           // 0x138(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_Subtract_VectorVector_ReturnValue;        // 0x144(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UParticleSystemComponent*              CallFunc_SpawnEmitterAttached_ReturnValue;         // 0x150(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_VSize_ReturnValue;                        // 0x158(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FRotator                              CallFunc_FindLookAtRotation_ReturnValue;           // 0x15C(0xC)(IsPlainOldData, NoDestructor)
+	struct FRotator                              CallFunc_FindLookAtRotation_ReturnValue;           // 0x15C(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	float                                        CallFunc_Divide_FloatFloat_ReturnValue;            // 0x168(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_453E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FHitResult                            CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x170(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
-	struct FVector                               CallFunc_MakeVector_ReturnValue123;                // 0x1F8(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_453F[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UParticleSystemComponent*              CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x208(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                K2Node_CustomEvent_TimelineDirection1;             // 0x210(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchEnum1_CmpSuccess;                     // 0x211(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_K2_AttachToComponent_ReturnValue;         // 0x212(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_K2_AttachToComponent_ReturnValue1;        // 0x213(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue123;                   // 0x214(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_SwitchEnum12_CmpSuccess;                    // 0x215(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	enum class ETimelineDirection                K2Node_CustomEvent_TimelineDirection;              // 0x216(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchEnum123_CmpSuccess;                   // 0x217(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	class ASmasherPawn_C*                        K2Node_DynamicCast_AsSmasher_Pawn;                 // 0x218(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess123;                    // 0x220(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FHitResult                            CallFunc_K2_SetWorldLocationAndRotation_SweepHitResult; // 0x16C(0x88)(IsPlainOldData, NoDestructor, ContainsInstancedReference)
+	struct FVector                               CallFunc_MakeVector_ReturnValue3;                  // 0x1F4(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*              CallFunc_SpawnEmitterAttached_ReturnValue1;        // 0x200(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                K2Node_CustomEvent_TimelineDirection1;             // 0x208(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable;                                // 0x209(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_SwitchEnum1_CmpSuccess;                     // 0x20A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_K2_AttachToComponent_ReturnValue;         // 0x20B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_K2_AttachToComponent_ReturnValue1;        // 0x20C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsValid_ReturnValue3;                     // 0x20D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_SwitchEnum2_CmpSuccess;                     // 0x20E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ETimelineDirection                K2Node_CustomEvent_TimelineDirection;              // 0x20F(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchEnum3_CmpSuccess;                     // 0x210(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_4E2E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UInterfaceProperty_                          K2Node_DynamicCast_AsGameplay_Tag_Asset_Interface; // 0x218(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_DynamicCast_bSuccess3;                      // 0x228(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_HasMatchingGameplayTag_ReturnValue;       // 0x229(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

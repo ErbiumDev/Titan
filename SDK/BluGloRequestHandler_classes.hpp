@@ -17,13 +17,13 @@ namespace SDK
 class UBluGloRequestHandler_C : public UEnvQueryInstanceBlueprintWrapper
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x78(0x8)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x78(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	UMulticastDelegateProperty_                  OnBluGloQueryFinished;                             // 0x80(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                        NumBluGloToSpawn;                                  // 0x90(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2D9D[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_62B8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AActor*                                ActorToSpawnFrom;                                  // 0x98(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               LocationToSpawnFrom;                               // 0xA0(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2D9E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               LocationToSpawnFrom;                               // 0xA0(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_62B9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FVector>                       LocationsToSpawnTo;                                // 0xB0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 	static class UClass* StaticClass()

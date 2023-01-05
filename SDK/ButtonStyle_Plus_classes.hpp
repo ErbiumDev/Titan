@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle_Plus.ButtonStyle_Plus_C
 class UButtonStyle_Plus_C : public UButtonStyle_MediumTransparentNoCues_C
 {

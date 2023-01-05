@@ -110,7 +110,7 @@ void UMiniItemCraftingIngredientsDetailWidget_C::Construct()
 
 
 // Function MiniItemCraftingIngredientsDetailWidget.MiniItemCraftingIngredientsDetailWidget_C.ExecuteUbergraph_MiniItemCraftingIngredientsDetailWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFortItemQuantityPair>CallFunc_GetRecipeItemQuantityPairs_Pairs                        (ZeroConstructor, ReferenceParm)

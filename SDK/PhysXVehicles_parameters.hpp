@@ -39,7 +39,7 @@ struct UWheeledVehicleMovementComponent_SetTargetGear_Params
 public:
 	int32                                        GearNum;                                           // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bImmediate;                                        // 0x4(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_22B8[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2910[0x3];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -63,7 +63,7 @@ public:
 struct UWheeledVehicleMovementComponent_SetGroupsToIgnoreMask_Params
 {
 public:
-	struct FNavAvoidanceMask                     GroupMask;                                         // 0x0(0x4)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                     GroupMask;                                         // 0x0(0x4)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -79,7 +79,7 @@ public:
 struct UWheeledVehicleMovementComponent_SetGroupsToAvoidMask_Params
 {
 public:
-	struct FNavAvoidanceMask                     GroupMask;                                         // 0x0(0x4)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                     GroupMask;                                         // 0x0(0x4)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -119,7 +119,7 @@ public:
 struct UWheeledVehicleMovementComponent_SetAvoidanceGroupMask_Params
 {
 public:
-	struct FNavAvoidanceMask                     GroupMask;                                         // 0x0(0x4)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FNavAvoidanceMask                     GroupMask;                                         // 0x0(0x4)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)

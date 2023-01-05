@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xEA0 - 0xEA0)
+// 0x0 (0xD90 - 0xD90)
 // BlueprintGeneratedClass PBWA_BG_RoofWall.PBWA_BG_RoofWall_C
 class APBWA_BG_RoofWall_C : public ABuildingWall
 {

@@ -34,7 +34,7 @@ class UGameplayTagTableManager : public UDataAsset
 {
 public:
 	TArray<struct FManagedGameplayTagDataTableItem> Tables;                                            // 0x30(0x10)(Edit, ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_7D[0x58];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2864[0x58];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

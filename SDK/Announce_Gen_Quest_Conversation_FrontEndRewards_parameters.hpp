@@ -62,10 +62,10 @@ struct AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C_ExecuteUbergraph_Annou
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_42D8[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4339[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortConversationSentence             K2Node_Event_FinishingSentence;                    // 0x8(0xC8)()
 	int32                                        K2Node_Event_FinishingSentenceSentenceIndex;       // 0xD0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_42D9[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_433A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFortConversationSentence             K2Node_Event_Sentence;                             // 0xD8(0xC8)(ConstParm)
 	int32                                        K2Node_Event_SentenceIndex;                        // 0x1A0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

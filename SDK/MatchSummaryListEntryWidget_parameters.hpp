@@ -23,16 +23,16 @@ struct UMatchSummaryListEntryWidget_C_Update_Params
 public:
 	struct FGameplayTag                          CallFunc_MakeLiteralGameplayTag_ReturnValue;       // 0x0(0x8)(NoDestructor, HasGetValueTypeHash)
 	struct FGameplayTag                          CallFunc_MakeLiteralGameplayTag_ReturnValue1;      // 0x8(0x8)(NoDestructor, HasGetValueTypeHash)
-	struct FGameplayTag                          CallFunc_MakeLiteralGameplayTag_ReturnValue12;     // 0x10(0x8)(NoDestructor, HasGetValueTypeHash)
+	struct FGameplayTag                          CallFunc_MakeLiteralGameplayTag_ReturnValue2;      // 0x10(0x8)(NoDestructor, HasGetValueTypeHash)
 	class UAthenaBaseStatView*                   CallFunc_GetBaseStatView_ReturnValue;              // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAthenaMatchStatView*                  K2Node_DynamicCast_AsAthena_Match_Stat_View;       // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_369B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FDateTime                             CallFunc_GetMatchEndTime_ReturnValue;              // 0x30(0x8)(ConstParm, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_515F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FDateTime                             CallFunc_GetMatchEndTime_ReturnValue;              // 0x30(0x8)(ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetStat_ReturnValue;                      // 0x38(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_Round_ReturnValue;                        // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetStat_ReturnValue1;                     // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_369C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5160[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x48(0x40)(HasGetValueTypeHash)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1;             // 0x88(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0xC8(0x10)(ZeroConstructor, ReferenceParm)
@@ -40,8 +40,8 @@ public:
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0xE8(0x18)()
 	class FText                                  CallFunc_Format_ReturnValue1;                      // 0x100(0x18)()
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_369D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        CallFunc_GetStat_ReturnValue12;                    // 0x11C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5161[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_GetStat_ReturnValue2;                     // 0x11C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x0 (0x0 - 0x0)

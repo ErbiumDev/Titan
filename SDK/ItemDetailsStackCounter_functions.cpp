@@ -45,6 +45,7 @@ void UItemDetailsStackCounter_C::Refresh_Visibility(bool Temp_bool_Variable, enu
 // Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.Update Stack Count
 // (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_Truncate_Integer_Value_Formatted_Value                  ()
 // int32                              CallFunc_GetNumInStack_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -52,11 +53,12 @@ void UItemDetailsStackCounter_C::Refresh_Visibility(bool Temp_bool_Variable, enu
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        K2Node_Select_Default                                            ()
 
-void UItemDetailsStackCounter_C::Update_Stack_Count(bool Temp_bool_Variable, class FText CallFunc_Truncate_Integer_Value_Formatted_Value, int32 CallFunc_GetNumInStack_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FText K2Node_Select_Default)
+void UItemDetailsStackCounter_C::Update_Stack_Count(bool CallFunc_GreaterEqual_IntInt_ReturnValue, bool Temp_bool_Variable, class FText CallFunc_Truncate_Integer_Value_Formatted_Value, int32 CallFunc_GetNumInStack_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FText K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("ItemDetailsStackCounter_C", "Update Stack Count");
 
 	Params::UItemDetailsStackCounter_C_Update_Stack_Count_Params Parms;
+	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.CallFunc_Truncate_Integer_Value_Formatted_Value = CallFunc_Truncate_Integer_Value_Formatted_Value;
 	Parms.CallFunc_GetNumInStack_ReturnValue = CallFunc_GetNumInStack_ReturnValue;
@@ -152,8 +154,23 @@ void UItemDetailsStackCounter_C::HandleOnItemChanged(bool bItemChanged, bool bAm
 }
 
 
+// Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.HandleQuantityOverrideChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void UItemDetailsStackCounter_C::HandleQuantityOverrideChanged()
+{
+	static auto Func = Class->GetFunction("ItemDetailsStackCounter_C", "HandleQuantityOverrideChanged");
+
+	Params::UItemDetailsStackCounter_C_HandleQuantityOverrideChanged_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function ItemDetailsStackCounter.ItemDetailsStackCounter_C.ExecuteUbergraph_ItemDetailsStackCounter
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)

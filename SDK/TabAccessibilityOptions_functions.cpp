@@ -16,75 +16,34 @@ namespace SDK
 
 
 // Function TabAccessibilityOptions.TabAccessibilityOptions_C.Initialize Data
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
-// TArray<class FText>                K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class FText                        CallFunc_MakeLiteralText_ReturnValue1                            ()
-// TArray<class FText>                K2Node_MakeArray_Array1                                          (ZeroConstructor, ReferenceParm)
-// TArray<class FText>                K2Node_MakeArray_Array12                                         (ZeroConstructor, ReferenceParm)
+// class UFortItemDefinition*         CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItemDefinition*         CallFunc_Array_Get_Item1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                   CallFunc_CreateTemporaryItemInstanceBP_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                   CallFunc_CreateTemporaryItemInstanceBP_ReturnValue1              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItemDefinition*         CallFunc_Array_Get_Item2                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItemDefinition*         CallFunc_Array_Get_Item3                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                   CallFunc_CreateTemporaryItemInstanceBP_ReturnValue2              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                   CallFunc_CreateTemporaryItemInstanceBP_ReturnValue3              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItemDefinition*         CallFunc_Array_Get_Item4                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortItem*                   CallFunc_CreateTemporaryItemInstanceBP_ReturnValue4              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabAccessibilityOptions_C::Initialize_Data(class FText CallFunc_MakeLiteralText_ReturnValue, TArray<class FText>& K2Node_MakeArray_Array, class FText CallFunc_MakeLiteralText_ReturnValue1, TArray<class FText>& K2Node_MakeArray_Array1, TArray<class FText>& K2Node_MakeArray_Array12)
+void UTabAccessibilityOptions_C::Initialize_Data(class UFortItemDefinition* CallFunc_Array_Get_Item, class UFortItemDefinition* CallFunc_Array_Get_Item1, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue1, class UFortItemDefinition* CallFunc_Array_Get_Item2, class UFortItemDefinition* CallFunc_Array_Get_Item3, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue2, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue3, class UFortItemDefinition* CallFunc_Array_Get_Item4, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue4)
 {
 	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "Initialize Data");
 
 	Params::UTabAccessibilityOptions_C_Initialize_Data_Params Parms;
-	Parms.CallFunc_MakeLiteralText_ReturnValue = CallFunc_MakeLiteralText_ReturnValue;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.CallFunc_MakeLiteralText_ReturnValue1 = CallFunc_MakeLiteralText_ReturnValue1;
-	Parms.K2Node_MakeArray_Array1 = K2Node_MakeArray_Array1;
-	Parms.K2Node_MakeArray_Array12 = K2Node_MakeArray_Array12;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function TabAccessibilityOptions.TabAccessibilityOptions_C.Update Data
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable1                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EColorBlindMode         Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable12                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable123                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable1234                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable12345                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Variable123456                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable1234567                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetIgnoreGamepadInput_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EColorBlindMode         CallFunc_GetColorBlindMode_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              CallFunc_GetColorBlindStrength_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_GetHearingImpairedMode_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              K2Node_Select12_Default                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAccessibilityOptions_C::Update_Data(bool Temp_bool_Variable, int32 Temp_int_Variable, int32 Temp_int_Variable1, enum class EColorBlindMode Temp_byte_Variable, int32 Temp_int_Variable12, int32 Temp_int_Variable123, int32 Temp_int_Variable1234, int32 Temp_int_Variable12345, bool Temp_bool_Variable1, int32 Temp_int_Variable123456, int32 Temp_int_Variable1234567, bool CallFunc_GetIgnoreGamepadInput_ReturnValue, enum class EColorBlindMode CallFunc_GetColorBlindMode_ReturnValue, int32 K2Node_Select_Default, int32 K2Node_Select1_Default, float CallFunc_GetColorBlindStrength_ReturnValue, bool CallFunc_GetHearingImpairedMode_ReturnValue, int32 K2Node_Select12_Default)
-{
-	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "Update Data");
-
-	Params::UTabAccessibilityOptions_C_Update_Data_Params Parms;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_int_Variable = Temp_int_Variable;
-	Parms.Temp_int_Variable1 = Temp_int_Variable1;
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.Temp_int_Variable12 = Temp_int_Variable12;
-	Parms.Temp_int_Variable123 = Temp_int_Variable123;
-	Parms.Temp_int_Variable1234 = Temp_int_Variable1234;
-	Parms.Temp_int_Variable12345 = Temp_int_Variable12345;
-	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
-	Parms.Temp_int_Variable123456 = Temp_int_Variable123456;
-	Parms.Temp_int_Variable1234567 = Temp_int_Variable1234567;
-	Parms.CallFunc_GetIgnoreGamepadInput_ReturnValue = CallFunc_GetIgnoreGamepadInput_ReturnValue;
-	Parms.CallFunc_GetColorBlindMode_ReturnValue = CallFunc_GetColorBlindMode_ReturnValue;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
-	Parms.CallFunc_GetColorBlindStrength_ReturnValue = CallFunc_GetColorBlindStrength_ReturnValue;
-	Parms.CallFunc_GetHearingImpairedMode_ReturnValue = CallFunc_GetHearingImpairedMode_ReturnValue;
-	Parms.K2Node_Select12_Default = K2Node_Select12_Default;
+	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
+	Parms.CallFunc_Array_Get_Item1 = CallFunc_Array_Get_Item1;
+	Parms.CallFunc_CreateTemporaryItemInstanceBP_ReturnValue = CallFunc_CreateTemporaryItemInstanceBP_ReturnValue;
+	Parms.CallFunc_CreateTemporaryItemInstanceBP_ReturnValue1 = CallFunc_CreateTemporaryItemInstanceBP_ReturnValue1;
+	Parms.CallFunc_Array_Get_Item2 = CallFunc_Array_Get_Item2;
+	Parms.CallFunc_Array_Get_Item3 = CallFunc_Array_Get_Item3;
+	Parms.CallFunc_CreateTemporaryItemInstanceBP_ReturnValue2 = CallFunc_CreateTemporaryItemInstanceBP_ReturnValue2;
+	Parms.CallFunc_CreateTemporaryItemInstanceBP_ReturnValue3 = CallFunc_CreateTemporaryItemInstanceBP_ReturnValue3;
+	Parms.CallFunc_Array_Get_Item4 = CallFunc_Array_Get_Item4;
+	Parms.CallFunc_CreateTemporaryItemInstanceBP_ReturnValue4 = CallFunc_CreateTemporaryItemInstanceBP_ReturnValue4;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -136,68 +95,51 @@ void UTabAccessibilityOptions_C::CenterOnTab()
 }
 
 
-// Function TabAccessibilityOptions.TabAccessibilityOptions_C.BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature
+// Function TabAccessibilityOptions.TabAccessibilityOptions_C.BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// float                              Slider_Value                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget*                 Widget                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabAccessibilityOptions_C::BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature(float Slider_Value)
+void UTabAccessibilityOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature(class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature");
+	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature");
 
-	Params::UTabAccessibilityOptions_C_BndEvt__OptionsMenuSlider_K2Node_ComponentBoundEvent_10_SliderChanged__DelegateSignature_Params Parms;
-	Parms.Slider_Value = Slider_Value;
+	Params::UTabAccessibilityOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_4_OnListViewItemWidgetCreated__DelegateSignature_Params Parms;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function TabAccessibilityOptions.TabAccessibilityOptions_C.BndEvt__ColorBlindMode_K2Node_ComponentBoundEvent_11_Selection Changed__DelegateSignature
-// (BlueprintEvent)
+// Function TabAccessibilityOptions.TabAccessibilityOptions_C.Setting Value Changed
+// (BlueprintCallable, BlueprintEvent)
 // Parameters:
-// int32                              Selected_Index                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabAccessibilityOptions_C::BndEvt__ColorBlindMode_K2Node_ComponentBoundEvent_11_Selection_Changed__DelegateSignature(int32 Selected_Index)
+void UTabAccessibilityOptions_C::Setting_Value_Changed()
 {
-	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "BndEvt__ColorBlindMode_K2Node_ComponentBoundEvent_11_Selection Changed__DelegateSignature");
+	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "Setting Value Changed");
 
-	Params::UTabAccessibilityOptions_C_BndEvt__ColorBlindMode_K2Node_ComponentBoundEvent_11_Selection_Changed__DelegateSignature_Params Parms;
-	Parms.Selected_Index = Selected_Index;
+	Params::UTabAccessibilityOptions_C_Setting_Value_Changed_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function TabAccessibilityOptions.TabAccessibilityOptions_C.BndEvt__HearingImpairedMode_K2Node_ComponentBoundEvent_13_Selection Changed__DelegateSignature
+// Function TabAccessibilityOptions.TabAccessibilityOptions_C.BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
-// int32                              Selected_Index                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Item                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget*                 Widget                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UTabAccessibilityOptions_C::BndEvt__HearingImpairedMode_K2Node_ComponentBoundEvent_13_Selection_Changed__DelegateSignature(int32 Selected_Index)
+void UTabAccessibilityOptions_C::BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature(class UObject* Item, class UUserWidget* Widget)
 {
-	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "BndEvt__HearingImpairedMode_K2Node_ComponentBoundEvent_13_Selection Changed__DelegateSignature");
+	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature");
 
-	Params::UTabAccessibilityOptions_C_BndEvt__HearingImpairedMode_K2Node_ComponentBoundEvent_13_Selection_Changed__DelegateSignature_Params Parms;
-	Parms.Selected_Index = Selected_Index;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function TabAccessibilityOptions.TabAccessibilityOptions_C.BndEvt__IgnoreGamepadInput_K2Node_ComponentBoundEvent_5_Selection Changed__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                              Selected_Index                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UTabAccessibilityOptions_C::BndEvt__IgnoreGamepadInput_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature(int32 Selected_Index)
-{
-	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "BndEvt__IgnoreGamepadInput_K2Node_ComponentBoundEvent_5_Selection Changed__DelegateSignature");
-
-	Params::UTabAccessibilityOptions_C_BndEvt__IgnoreGamepadInput_K2Node_ComponentBoundEvent_5_Selection_Changed__DelegateSignature_Params Parms;
-	Parms.Selected_Index = Selected_Index;
+	Params::UTabAccessibilityOptions_C_BndEvt__OptionsListView_K2Node_ComponentBoundEvent_5_OnListViewItemScrolledIntoView__DelegateSignature_Params Parms;
+	Parms.Item = Item;
+	Parms.Widget = Widget;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -205,60 +147,32 @@ void UTabAccessibilityOptions_C::BndEvt__IgnoreGamepadInput_K2Node_ComponentBoun
 
 
 // Function TabAccessibilityOptions.TabAccessibilityOptions_C.ExecuteUbergraph_TabAccessibilityOptions
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EColorBlindMode         Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EColorBlindMode         Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EColorBlindMode         Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EColorBlindMode         Temp_byte_Variable123                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class ESlateVisibility        Temp_byte_Variable1234                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable12345                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class ESlateVisibility        Temp_byte_Variable123456                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable1234567                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              K2Node_ComponentBoundEvent_Slider_Value                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              K2Node_ComponentBoundEvent_Selected_Index12                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              K2Node_ComponentBoundEvent_Selected_Index1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EColorBlindMode         K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Conv_IntToBool_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsHearingImpairedFeatureAvailable_ReturnValue           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_CanIgnoreGamepadInput_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class ESlateVisibility        K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        K2Node_Select12_Default                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              K2Node_ComponentBoundEvent_Selected_Index                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Conv_IntToBool_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                     K2Node_ComponentBoundEvent_Item                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUserWidget*                 K2Node_ComponentBoundEvent_Widget                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortOptionsMenuSetting*     K2Node_DynamicCast_AsFort_Options_Menu_Setting                   (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
+// class UUserWidget*                 K2Node_ComponentBoundEvent_Widget1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortOptionsMenuSetting*     K2Node_DynamicCast_AsFort_Options_Menu_Setting1                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UTabAccessibilityOptions_C::ExecuteUbergraph_TabAccessibilityOptions(int32 EntryPoint, int32 Temp_int_Variable, enum class EColorBlindMode Temp_byte_Variable, enum class EColorBlindMode Temp_byte_Variable1, enum class EColorBlindMode Temp_byte_Variable12, enum class EColorBlindMode Temp_byte_Variable123, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1234, enum class ESlateVisibility Temp_byte_Variable12345, bool Temp_bool_Variable1, enum class ESlateVisibility Temp_byte_Variable123456, enum class ESlateVisibility Temp_byte_Variable1234567, float K2Node_ComponentBoundEvent_Slider_Value, int32 K2Node_ComponentBoundEvent_Selected_Index12, int32 K2Node_ComponentBoundEvent_Selected_Index1, enum class EColorBlindMode K2Node_Select_Default, bool CallFunc_Conv_IntToBool_ReturnValue, bool CallFunc_IsHearingImpairedFeatureAvailable_ReturnValue, bool CallFunc_CanIgnoreGamepadInput_ReturnValue, enum class ESlateVisibility K2Node_Select1_Default, enum class ESlateVisibility K2Node_Select12_Default, int32 K2Node_ComponentBoundEvent_Selected_Index, bool CallFunc_Conv_IntToBool_ReturnValue1)
+void UTabAccessibilityOptions_C::ExecuteUbergraph_TabAccessibilityOptions(int32 EntryPoint, class UObject* K2Node_ComponentBoundEvent_Item, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting, bool K2Node_DynamicCast_bSuccess, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* K2Node_ComponentBoundEvent_Widget1, class UFortOptionsMenuSetting* K2Node_DynamicCast_AsFort_Options_Menu_Setting1, bool K2Node_DynamicCast_bSuccess1)
 {
 	static auto Func = Class->GetFunction("TabAccessibilityOptions_C", "ExecuteUbergraph_TabAccessibilityOptions");
 
 	Params::UTabAccessibilityOptions_C_ExecuteUbergraph_TabAccessibilityOptions_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.Temp_int_Variable = Temp_int_Variable;
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
-	Parms.Temp_byte_Variable123 = Temp_byte_Variable123;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_byte_Variable1234 = Temp_byte_Variable1234;
-	Parms.Temp_byte_Variable12345 = Temp_byte_Variable12345;
-	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
-	Parms.Temp_byte_Variable123456 = Temp_byte_Variable123456;
-	Parms.Temp_byte_Variable1234567 = Temp_byte_Variable1234567;
-	Parms.K2Node_ComponentBoundEvent_Slider_Value = K2Node_ComponentBoundEvent_Slider_Value;
-	Parms.K2Node_ComponentBoundEvent_Selected_Index12 = K2Node_ComponentBoundEvent_Selected_Index12;
-	Parms.K2Node_ComponentBoundEvent_Selected_Index1 = K2Node_ComponentBoundEvent_Selected_Index1;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.CallFunc_Conv_IntToBool_ReturnValue = CallFunc_Conv_IntToBool_ReturnValue;
-	Parms.CallFunc_IsHearingImpairedFeatureAvailable_ReturnValue = CallFunc_IsHearingImpairedFeatureAvailable_ReturnValue;
-	Parms.CallFunc_CanIgnoreGamepadInput_ReturnValue = CallFunc_CanIgnoreGamepadInput_ReturnValue;
-	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
-	Parms.K2Node_Select12_Default = K2Node_Select12_Default;
-	Parms.K2Node_ComponentBoundEvent_Selected_Index = K2Node_ComponentBoundEvent_Selected_Index;
-	Parms.CallFunc_Conv_IntToBool_ReturnValue1 = CallFunc_Conv_IntToBool_ReturnValue1;
+	Parms.K2Node_ComponentBoundEvent_Item = K2Node_ComponentBoundEvent_Item;
+	Parms.K2Node_ComponentBoundEvent_Widget = K2Node_ComponentBoundEvent_Widget;
+	Parms.K2Node_DynamicCast_AsFort_Options_Menu_Setting = K2Node_DynamicCast_AsFort_Options_Menu_Setting;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.K2Node_ComponentBoundEvent_Widget1 = K2Node_ComponentBoundEvent_Widget1;
+	Parms.K2Node_DynamicCast_AsFort_Options_Menu_Setting1 = K2Node_DynamicCast_AsFort_Options_Menu_Setting1;
+	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

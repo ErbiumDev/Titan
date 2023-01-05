@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Button-Outline-Disabled.TextStyle-Button-Outline-Disabled_C
 class UTextStyle_Button_Outline_Disabled_C : public UCommonTextStyle
 {

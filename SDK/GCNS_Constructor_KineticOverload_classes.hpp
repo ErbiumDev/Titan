@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCNS_Constructor_KineticOverload.GCNS_Constructor_KineticOverload_C
 class UGCNS_Constructor_KineticOverload_C : public UFortGameplayCueNotify_Simple
 {

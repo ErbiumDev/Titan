@@ -48,7 +48,7 @@ void AHexmapLevelSettings_Temperate01_C::CustomSettings(bool Visibility)
 
 
 // Function HexmapLevelSettings_Temperate01.HexmapLevelSettings_Temperate01_C.ExecuteUbergraph_HexmapLevelSettings_Temperate01
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_Visibility                                    (ZeroConstructor, IsPlainOldData, NoDestructor)

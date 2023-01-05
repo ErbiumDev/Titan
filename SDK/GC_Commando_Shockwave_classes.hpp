@@ -12,15 +12,15 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0xC8 - 0xB0)
+// 0x18 (0x98 - 0x80)
 // BlueprintGeneratedClass GC_Commando_Shockwave.GC_Commando_Shockwave_C
 class UGC_Commando_Shockwave_C : public UFortGameplayCueNotify_Simple
 {
 public:
-	float                                        ShockwaveRefractionRingHeight;                     // 0xB0(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_465E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UClass*                                ShockwaveCameraShake;                              // 0xB8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UForceFeedbackEffect*                  ShockwaveForceFeedback;                            // 0xC0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        ShockwaveRefractionRingHeight;                     // 0x80(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_2DDA[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UClass*                                ShockwaveCameraShake;                              // 0x88(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UForceFeedbackEffect*                  ShockwaveForceFeedback;                            // 0x90(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

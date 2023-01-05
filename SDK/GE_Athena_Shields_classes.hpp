@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_Athena_Shields.GE_Athena_Shields_C
 class UGE_Athena_Shields_C : public UGameplayEffect
 {

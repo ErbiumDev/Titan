@@ -185,16 +185,22 @@ void URejoinWindow_C::OnTimeoutTimeReached()
 
 
 // Function RejoinWindow.RejoinWindow_C.ExecuteUbergraph_RejoinWindow
-// ()
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FMcpBanInfo                 CallFunc_GetBanInfo_ReturnValue                                  (ConstParm)
+// bool                               CallFunc_IsUserCurrentlyBanned_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URejoinWindow_C::ExecuteUbergraph_RejoinWindow(int32 EntryPoint)
+void URejoinWindow_C::ExecuteUbergraph_RejoinWindow(int32 EntryPoint, class UFortMcpContext* CallFunc_GetContext_ReturnValue, const struct FMcpBanInfo& CallFunc_GetBanInfo_ReturnValue, bool CallFunc_IsUserCurrentlyBanned_ReturnValue)
 {
 	static auto Func = Class->GetFunction("RejoinWindow_C", "ExecuteUbergraph_RejoinWindow");
 
 	Params::URejoinWindow_C_ExecuteUbergraph_RejoinWindow_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
+	Parms.CallFunc_GetBanInfo_ReturnValue = CallFunc_GetBanInfo_ReturnValue;
+	Parms.CallFunc_IsUserCurrentlyBanned_ReturnValue = CallFunc_IsUserCurrentlyBanned_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

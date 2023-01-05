@@ -35,22 +35,24 @@ public:
 	class UFortLeaderboardRowProxyInstance*      NewData;                                           // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnLeaderboardEntryDataSet
-struct ULeaderboardRowWidget_C_OnLeaderboardEntryDataSet_Params
+// 0x8 (0x8 - 0x0)
+// Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnListItemObjectSet
+struct ULeaderboardRowWidget_C_OnListItemObjectSet_Params
 {
 public:
+	class UObject*                               ListItemObject;                                    // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
-// 0x11 (0x11 - 0x0)
+// 0x19 (0x19 - 0x0)
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.ExecuteUbergraph_LeaderboardRowWidget
 struct ULeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_47D5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortLeaderboardRowProxyInstance*      K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance; // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_423A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UObject*                               K2Node_Event_ListItemObject;                       // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortLeaderboardRowProxyInstance*      K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance; // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

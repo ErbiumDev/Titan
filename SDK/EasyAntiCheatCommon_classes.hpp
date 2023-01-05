@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0xF8 - 0xF0)
+// 0x8 (0x100 - 0xF8)
 // Class EasyAntiCheatCommon.EasyAntiCheatNetComponent
 class UEasyAntiCheatNetComponent : public UActorComponent
 {
 public:
-	uint8                                        Pad_2607[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2DDB[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

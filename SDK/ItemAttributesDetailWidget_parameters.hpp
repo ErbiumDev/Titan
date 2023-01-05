@@ -23,10 +23,10 @@ struct UItemAttributesDetailWidget_C_UpdateItemsForWidgets_Params
 public:
 	class UFortTooltipUIContext*                 CallFunc_GetContext_ReturnValue;                   // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4293[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_10BE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortTooltipUIContext*                 CallFunc_GetContext_ReturnValue1;                  // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortTooltipUIContext*                 CallFunc_GetContext_ReturnValue12;                 // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortTooltipUIContext*                 CallFunc_GetContext_ReturnValue2;                  // 0x20(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortTooltipContext*                   CallFunc_SpawnTooltipContextWithSource_ReturnValue; // 0x28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FFortDisplayAttribute>         CallFunc_GetUpgradeStats_ReturnValue;              // 0x30(0x10)(ZeroConstructor, ReferenceParm)
 	TArray<struct FFortDisplayAttribute>         CallFunc_GetTooltipStats_ReturnValue;              // 0x40(0x10)(ZeroConstructor, ReferenceParm)
@@ -88,29 +88,28 @@ public:
 	bool                                         bIngredientsChanged;                               // 0x2(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x58 (0x58 - 0x0)
+// 0x50 (0x50 - 0x0)
 // Function ItemAttributesDetailWidget.ItemAttributesDetailWidget_C.ExecuteUbergraph_ItemAttributesDetailWidget
 struct UItemAttributesDetailWidget_C_ExecuteUbergraph_ItemAttributesDetailWidget_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_4294[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x8(0x10)(ZeroConstructor, NoDestructor)
-	bool                                         K2Node_CustomEvent_bItemChanged1;                  // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_CustomEvent_bAmmoChanged1;                  // 0x19(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_CustomEvent_bIngredientsChanged1;           // 0x1A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4295[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate1;             // 0x20(0x10)(ZeroConstructor, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_CustomEvent_bItemChanged;                   // 0x31(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_CustomEvent_bAmmoChanged;                   // 0x32(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_CustomEvent_bIngredientsChanged;            // 0x33(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue1;                     // 0x34(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue12;                    // 0x35(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsValid_ReturnValue123;                   // 0x36(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4296[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate12;            // 0x38(0x10)(ZeroConstructor, NoDestructor)
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate123;           // 0x48(0x10)(ZeroConstructor, NoDestructor)
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x4(0x10)(ZeroConstructor, NoDestructor)
+	bool                                         K2Node_CustomEvent_bItemChanged1;                  // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_CustomEvent_bAmmoChanged1;                  // 0x15(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_CustomEvent_bIngredientsChanged1;           // 0x16(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_10BF[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate1;             // 0x18(0x10)(ZeroConstructor, NoDestructor)
+	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_CustomEvent_bItemChanged;                   // 0x29(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_CustomEvent_bAmmoChanged;                   // 0x2A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_CustomEvent_bIngredientsChanged;            // 0x2B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsValid_ReturnValue1;                     // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsValid_ReturnValue2;                     // 0x2D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsValid_ReturnValue3;                     // 0x2E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_10C0[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate2;             // 0x30(0x10)(ZeroConstructor, NoDestructor)
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate3;             // 0x40(0x10)(ZeroConstructor, NoDestructor)
 };
 
 }

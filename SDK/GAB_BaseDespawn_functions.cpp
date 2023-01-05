@@ -33,7 +33,7 @@ void UGAB_BaseDespawn_C::K2_ActivateAbilityFromEvent(struct FGameplayEventData& 
 
 
 // Function GAB_BaseDespawn.GAB_BaseDespawn_C.ExecuteUbergraph_GAB_BaseDespawn
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayEventData          K2Node_Event_EventData                                           (ConstParm)

@@ -52,18 +52,20 @@ void APBWA_S1_Solid_C::ReceiveBeginPlay()
 
 
 // Function PBWA_S1_Solid.PBWA_S1_Solid_C.ExecuteUbergraph_PBWA_S1_Solid
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*          Temp_object_Variable                                             (ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FAnimatingMaterialPair      K2Node_MakeStruct_AnimatingMaterialPair                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void APBWA_S1_Solid_C::ExecuteUbergraph_PBWA_S1_Solid(int32 EntryPoint, class UMaterialInterface* Temp_object_Variable)
+void APBWA_S1_Solid_C::ExecuteUbergraph_PBWA_S1_Solid(int32 EntryPoint, const struct FAnimatingMaterialPair& K2Node_MakeStruct_AnimatingMaterialPair, int32 CallFunc_Array_Add_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PBWA_S1_Solid_C", "ExecuteUbergraph_PBWA_S1_Solid");
 
 	Params::APBWA_S1_Solid_C_ExecuteUbergraph_PBWA_S1_Solid_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.Temp_object_Variable = Temp_object_Variable;
+	Parms.K2Node_MakeStruct_AnimatingMaterialPair = K2Node_MakeStruct_AnimatingMaterialPair;
+	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

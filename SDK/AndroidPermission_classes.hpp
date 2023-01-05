@@ -12,13 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x58 (0x80 - 0x28)
+// 0x20 (0x48 - 0x28)
 // Class AndroidPermission.AndroidPermissionCallbackProxy
 class UAndroidPermissionCallbackProxy : public UObject
 {
 public:
 	UMulticastDelegateProperty_                  OnPermissionsGrantedDynamicDelegate;               // 0x28(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                        Pad_220E[0x48];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_10C[0x10];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

@@ -31,7 +31,7 @@ void USmallStatRowWidget_C::OnStatChanged()
 
 
 // Function SmallStatRowWidget.SmallStatRowWidget_C.ExecuteUbergraph_SmallStatRowWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaBaseStatView*         CallFunc_GetBaseStatView_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

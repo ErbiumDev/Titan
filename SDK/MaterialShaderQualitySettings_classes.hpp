@@ -27,13 +27,13 @@ public:
 
 };
 
-// 0x18 (0x40 - 0x28)
+// 0x28 (0x50 - 0x28)
 // Class MaterialShaderQualitySettings.ShaderPlatformQualitySettings
 class UShaderPlatformQualitySettings : public UObject
 {
 public:
-	struct FMaterialQualityOverrides             QualityOverrides;                                  // 0x28(0x7)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_243C[0x11];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	struct FMaterialQualityOverrides             QualityOverrides;                                  // 0x28(0x8)(Edit, Config, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2B8B[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

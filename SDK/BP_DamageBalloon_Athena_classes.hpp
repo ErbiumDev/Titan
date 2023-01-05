@@ -12,19 +12,18 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x38 (0xDE0 - 0xDA8)
+// 0x30 (0xCB8 - 0xC88)
 // BlueprintGeneratedClass BP_DamageBalloon_Athena.BP_DamageBalloon_Athena_C
 class ABP_DamageBalloon_Athena_C : public ABuildingSMActor
 {
 public:
-	uint8                                        Pad_4BCD[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xDB0(0x8)(Transient, DuplicateTransient)
-	class UParticleSystemComponent*              ExplosionParticle;                                 // 0xDB8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UFortHealthBarComponent*               FortHealthBar;                                     // 0xDC0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	bool                                         DestroyBalloon;                                    // 0xDC8(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
-	bool                                         DontPlayDestroyAudio;                              // 0xDC9(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_4BCE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UMulticastDelegateProperty_                  OnBalloonDestroyed;                                // 0xDD0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xC88(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystemComponent*              ExplosionParticle;                                 // 0xC90(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UFortHealthBarComponent*               FortHealthBar;                                     // 0xC98(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	bool                                         DestroyBalloon;                                    // 0xCA0(0x1)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor)
+	bool                                         DontPlayDestroyAudio;                              // 0xCA1(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_4E58[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	UMulticastDelegateProperty_                  OnBalloonDestroyed;                                // 0xCA8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass()
 	{

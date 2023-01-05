@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Base-XL-I-AthenaStat.TextStyle-Base-XL-I-AthenaStat_C
 class UTextStyle_Base_XL_I_AthenaStat_C : public UTextStyle_BaseParent_C
 {

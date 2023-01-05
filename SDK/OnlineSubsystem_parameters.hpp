@@ -23,7 +23,7 @@ struct UTurnBasedMatchInterface_OnMatchReceivedTurn_Params
 public:
 	class FString                                Match;                                             // 0x0(0x10)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bDidBecomeActive;                                  // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E63[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_107B[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)

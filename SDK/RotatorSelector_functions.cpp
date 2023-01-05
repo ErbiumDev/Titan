@@ -15,24 +15,49 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function RotatorSelector.RotatorSelector_C.Update Size
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Function RotatorSelector.RotatorSelector_C.Show Param Name
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FVector2D                   LargeSize                                                        (Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   SmallSize                                                        (Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Show                                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void URotatorSelector_C::Show_Param_Name(bool Show, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default)
+{
+	static auto Func = Class->GetFunction("RotatorSelector_C", "Show Param Name");
+
+	Params::URotatorSelector_C_Show_Param_Name_Params Parms;
+	Parms.Show = Show;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
+	Parms.K2Node_Select_Default = K2Node_Select_Default;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function RotatorSelector.RotatorSelector_C.Update Size
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FVector2D                   LargeSize                                                        (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   SmallSize                                                        (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsMobileGame_ReturnValue1                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsMobileGame_ReturnValue2                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Variable1                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsBROnly_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsBROnly_ReturnValue1                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsBROnly_ReturnValue12                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector2D                   K2Node_Select1_Default                                           (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   K2Node_Select12_Default                                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               Temp_bool_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FVector2D                   K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   K2Node_Select2_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URotatorSelector_C::Update_Size(const struct FVector2D& LargeSize, const struct FVector2D& SmallSize, int32 Temp_int_Variable, bool Temp_bool_Variable, int32 Temp_int_Variable1, bool CallFunc_IsBROnly_ReturnValue, bool Temp_bool_Variable1, bool CallFunc_IsBROnly_ReturnValue1, bool CallFunc_IsBROnly_ReturnValue12, int32 K2Node_Select_Default, bool Temp_bool_Variable12, const struct FVector2D& K2Node_Select1_Default, const struct FVector2D& K2Node_Select12_Default)
+void URotatorSelector_C::Update_Size(const struct FVector2D& LargeSize, const struct FVector2D& SmallSize, int32 Temp_int_Variable, bool Temp_bool_Variable, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue1, bool CallFunc_IsMobileGame_ReturnValue2, int32 Temp_int_Variable1, bool Temp_bool_Variable1, int32 K2Node_Select_Default, bool Temp_bool_Variable2, const struct FVector2D& K2Node_Select1_Default, const struct FVector2D& K2Node_Select2_Default)
 {
 	static auto Func = Class->GetFunction("RotatorSelector_C", "Update Size");
 
@@ -41,15 +66,15 @@ void URotatorSelector_C::Update_Size(const struct FVector2D& LargeSize, const st
 	Parms.SmallSize = SmallSize;
 	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
+	Parms.CallFunc_IsMobileGame_ReturnValue1 = CallFunc_IsMobileGame_ReturnValue1;
+	Parms.CallFunc_IsMobileGame_ReturnValue2 = CallFunc_IsMobileGame_ReturnValue2;
 	Parms.Temp_int_Variable1 = Temp_int_Variable1;
-	Parms.CallFunc_IsBROnly_ReturnValue = CallFunc_IsBROnly_ReturnValue;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
-	Parms.CallFunc_IsBROnly_ReturnValue1 = CallFunc_IsBROnly_ReturnValue1;
-	Parms.CallFunc_IsBROnly_ReturnValue12 = CallFunc_IsBROnly_ReturnValue12;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.Temp_bool_Variable12 = Temp_bool_Variable12;
+	Parms.Temp_bool_Variable2 = Temp_bool_Variable2;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
-	Parms.K2Node_Select12_Default = K2Node_Select12_Default;
+	Parms.K2Node_Select2_Default = K2Node_Select2_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -256,29 +281,50 @@ void URotatorSelector_C::BndEvt__ButtonRight_K2Node_ComponentBoundEvent_15_Commo
 }
 
 
+// Function RotatorSelector.RotatorSelector_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               IsDesignTime                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void URotatorSelector_C::PreConstruct(bool IsDesignTime)
+{
+	static auto Func = Class->GetFunction("RotatorSelector_C", "PreConstruct");
+
+	Params::URotatorSelector_C_PreConstruct_Params Parms;
+	Parms.IsDesignTime = IsDesignTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function RotatorSelector.RotatorSelector_C.ExecuteUbergraph_RotatorSelector
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FPointerEvent               K2Node_Event_MouseEvent1                                         (ConstParm)
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // struct FPointerEvent               K2Node_Event_MouseEvent                                          (ConstParm)
 // int32                              K2Node_ComponentBoundEvent_Value                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URotatorSelector_C::ExecuteUbergraph_RotatorSelector(int32 EntryPoint, const struct FPointerEvent& K2Node_Event_MouseEvent1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, int32 K2Node_ComponentBoundEvent_Value, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UCommonButton* K2Node_ComponentBoundEvent_Button)
+void URotatorSelector_C::ExecuteUbergraph_RotatorSelector(int32 EntryPoint, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FPointerEvent& K2Node_Event_MouseEvent1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, int32 K2Node_ComponentBoundEvent_Value, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_IsDesignTime)
 {
 	static auto Func = Class->GetFunction("RotatorSelector_C", "ExecuteUbergraph_RotatorSelector");
 
 	Params::URotatorSelector_C_ExecuteUbergraph_RotatorSelector_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_MakeVector2D_ReturnValue = CallFunc_MakeVector2D_ReturnValue;
 	Parms.K2Node_Event_MouseEvent1 = K2Node_Event_MouseEvent1;
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
 	Parms.K2Node_Event_MouseEvent = K2Node_Event_MouseEvent;
 	Parms.K2Node_ComponentBoundEvent_Value = K2Node_ComponentBoundEvent_Value;
 	Parms.K2Node_ComponentBoundEvent_Button1 = K2Node_ComponentBoundEvent_Button1;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
+	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 

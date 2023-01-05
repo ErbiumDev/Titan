@@ -16,38 +16,41 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x1F0 (0x1F0 - 0x0)
+// 0x238 (0x238 - 0x0)
 // Function StoreItemCardFront.StoreItemCardFront_C.Get Type Text
 struct UStoreItemCardFront_C_Get_Type_Text_Params
 {
 public:
 	class FText                                  OutText;                                           // 0x0(0x18)(Parm, OutParm)
 	enum class EFortInventoryFilter              Temp_byte_Variable;                                // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52D1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5EEA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  Temp_text_Variable;                                // 0x20(0x18)()
 	class FText                                  Temp_text_Variable1;                               // 0x38(0x18)()
-	class FText                                  Temp_text_Variable12;                              // 0x50(0x18)()
-	class FText                                  Temp_text_Variable123;                             // 0x68(0x18)()
-	class FText                                  Temp_text_Variable1234;                            // 0x80(0x18)()
-	class FText                                  Temp_text_Variable12345;                           // 0x98(0x18)()
-	class FText                                  Temp_text_Variable123456;                          // 0xB0(0x18)()
-	class FText                                  Temp_text_Variable1234567;                         // 0xC8(0x18)()
-	class FText                                  Temp_text_Variable12345678;                        // 0xE0(0x18)()
-	class FText                                  Temp_text_Variable123456789;                       // 0xF8(0x18)()
-	class FText                                  Temp_text_Variable12345678910;                     // 0x110(0x18)()
-	class FText                                  Temp_text_Variable1234567891011;                   // 0x128(0x18)()
-	class FText                                  Temp_text_Variable123456789101112;                 // 0x140(0x18)()
-	class FText                                  Temp_text_Variable12345678910111213;               // 0x158(0x18)()
-	class FText                                  Temp_text_Variable1234567891011121314;             // 0x170(0x18)()
-	class FText                                  Temp_text_Variable123456789101112131415;           // 0x188(0x18)()
-	class FText                                  Temp_text_Variable12345678910111213141516;         // 0x1A0(0x18)()
-	class FText                                  Temp_text_Variable1234567891011121314151617;       // 0x1B8(0x18)()
-	enum class EFortInventoryFilter              CallFunc_GetFilterCategory_ReturnValue;            // 0x1D0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52D2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  K2Node_Select_Default;                             // 0x1D8(0x18)()
+	class FText                                  Temp_text_Variable2;                               // 0x50(0x18)()
+	class FText                                  Temp_text_Variable3;                               // 0x68(0x18)()
+	class FText                                  Temp_text_Variable4;                               // 0x80(0x18)()
+	class FText                                  Temp_text_Variable5;                               // 0x98(0x18)()
+	class FText                                  Temp_text_Variable6;                               // 0xB0(0x18)()
+	class FText                                  Temp_text_Variable7;                               // 0xC8(0x18)()
+	class FText                                  Temp_text_Variable8;                               // 0xE0(0x18)()
+	class FText                                  Temp_text_Variable9;                               // 0xF8(0x18)()
+	class FText                                  Temp_text_Variable10;                              // 0x110(0x18)()
+	class FText                                  Temp_text_Variable11;                              // 0x128(0x18)()
+	class FText                                  Temp_text_Variable12;                              // 0x140(0x18)()
+	class FText                                  Temp_text_Variable13;                              // 0x158(0x18)()
+	class FText                                  Temp_text_Variable14;                              // 0x170(0x18)()
+	class FText                                  Temp_text_Variable15;                              // 0x188(0x18)()
+	class FText                                  Temp_text_Variable16;                              // 0x1A0(0x18)()
+	class FText                                  Temp_text_Variable17;                              // 0x1B8(0x18)()
+	class FText                                  Temp_text_Variable18;                              // 0x1D0(0x18)()
+	class FText                                  Temp_text_Variable19;                              // 0x1E8(0x18)()
+	class FText                                  Temp_text_Variable20;                              // 0x200(0x18)()
+	enum class EFortInventoryFilter              CallFunc_GetFilterCategory_ReturnValue;            // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5EEB[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default;                             // 0x220(0x18)()
 };
 
-// 0x390 (0x390 - 0x0)
+// 0x3D8 (0x3D8 - 0x0)
 // Function StoreItemCardFront.StoreItemCardFront_C.Get Card Name Text
 struct UStoreItemCardFront_C_Get_Card_Name_Text_Params
 {
@@ -55,41 +58,44 @@ public:
 	class FText                                  ReturnValue;                                       // 0x0(0x18)(Parm, OutParm, ReturnParm)
 	class FText                                  Temp_text_Variable;                                // 0x18(0x18)()
 	class FText                                  Temp_text_Variable1;                               // 0x30(0x18)()
-	class FText                                  Temp_text_Variable12;                              // 0x48(0x18)()
-	class FText                                  Temp_text_Variable123;                             // 0x60(0x18)()
-	class FText                                  Temp_text_Variable1234;                            // 0x78(0x18)()
-	class FText                                  Temp_text_Variable12345;                           // 0x90(0x18)()
-	class FText                                  Temp_text_Variable123456;                          // 0xA8(0x18)()
-	class FText                                  Temp_text_Variable1234567;                         // 0xC0(0x18)()
-	class FText                                  Temp_text_Variable12345678;                        // 0xD8(0x18)()
-	class FText                                  Temp_text_Variable123456789;                       // 0xF0(0x18)()
-	class FText                                  Temp_text_Variable12345678910;                     // 0x108(0x18)()
-	class FText                                  Temp_text_Variable1234567891011;                   // 0x120(0x18)()
-	class FText                                  Temp_text_Variable123456789101112;                 // 0x138(0x18)()
-	class FText                                  Temp_text_Variable12345678910111213;               // 0x150(0x18)()
-	class FText                                  Temp_text_Variable1234567891011121314;             // 0x168(0x18)()
-	class FText                                  Temp_text_Variable123456789101112131415;           // 0x180(0x18)()
-	bool                                         Temp_bool_Variable;                                // 0x198(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	enum class EFortInventoryFilter              Temp_byte_Variable;                                // 0x199(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52D3[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_GetEmptyText_ReturnValue;                 // 0x1A0(0x18)()
-	class FText                                  CallFunc_GetTertiaryCategory_ItemCategoryText;     // 0x1B8(0x18)()
-	struct FSlateBrush                           CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x1D0(0x88)()
-	bool                                         CallFunc_GetTertiaryCategory_ReturnValue;          // 0x258(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52D4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x260(0x18)()
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x278(0x40)(HasGetValueTypeHash)
-	enum class EFortInventoryFilter              CallFunc_GetFilterCategory_ReturnValue;            // 0x2B8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52D5[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  CallFunc_GetDisplayName_ReturnValue;               // 0x2C0(0x18)()
-	bool                                         CallFunc_EqualEqual_TextText_ReturnValue;          // 0x2D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52D6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  K2Node_Select_Default;                             // 0x2E0(0x18)()
-	class FText                                  CallFunc_TextTrimPrecedingAndTrailing_ReturnValue; // 0x2F8(0x18)()
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1;             // 0x310(0x40)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x350(0x10)(ZeroConstructor, ReferenceParm)
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x360(0x18)()
-	class FText                                  K2Node_Select1_Default;                            // 0x378(0x18)()
+	class FText                                  Temp_text_Variable2;                               // 0x48(0x18)()
+	class FText                                  Temp_text_Variable3;                               // 0x60(0x18)()
+	class FText                                  Temp_text_Variable4;                               // 0x78(0x18)()
+	class FText                                  Temp_text_Variable5;                               // 0x90(0x18)()
+	class FText                                  Temp_text_Variable6;                               // 0xA8(0x18)()
+	class FText                                  Temp_text_Variable7;                               // 0xC0(0x18)()
+	class FText                                  Temp_text_Variable8;                               // 0xD8(0x18)()
+	class FText                                  Temp_text_Variable9;                               // 0xF0(0x18)()
+	class FText                                  Temp_text_Variable10;                              // 0x108(0x18)()
+	class FText                                  Temp_text_Variable11;                              // 0x120(0x18)()
+	class FText                                  Temp_text_Variable12;                              // 0x138(0x18)()
+	class FText                                  Temp_text_Variable13;                              // 0x150(0x18)()
+	class FText                                  Temp_text_Variable14;                              // 0x168(0x18)()
+	class FText                                  Temp_text_Variable15;                              // 0x180(0x18)()
+	class FText                                  Temp_text_Variable16;                              // 0x198(0x18)()
+	class FText                                  Temp_text_Variable17;                              // 0x1B0(0x18)()
+	class FText                                  Temp_text_Variable18;                              // 0x1C8(0x18)()
+	bool                                         Temp_bool_Variable;                                // 0x1E0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class EFortInventoryFilter              Temp_byte_Variable;                                // 0x1E1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5EEC[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetEmptyText_ReturnValue;                 // 0x1E8(0x18)()
+	class FText                                  CallFunc_GetTertiaryCategory_ItemCategoryText;     // 0x200(0x18)()
+	struct FSlateBrush                           CallFunc_GetTertiaryCategory_ItemCategoryBrush;    // 0x218(0x88)()
+	bool                                         CallFunc_GetTertiaryCategory_ReturnValue;          // 0x2A0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5EED[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_Conv_StringToText_ReturnValue;            // 0x2A8(0x18)()
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x2C0(0x40)(HasGetValueTypeHash)
+	enum class EFortInventoryFilter              CallFunc_GetFilterCategory_ReturnValue;            // 0x300(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5EEE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetDisplayName_ReturnValue;               // 0x308(0x18)()
+	bool                                         CallFunc_EqualEqual_TextText_ReturnValue;          // 0x320(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5EEF[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select_Default;                             // 0x328(0x18)()
+	class FText                                  CallFunc_TextTrimPrecedingAndTrailing_ReturnValue; // 0x340(0x18)()
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1;             // 0x358(0x40)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x398(0x10)(ZeroConstructor, ReferenceParm)
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x3A8(0x18)()
+	class FText                                  K2Node_Select1_Default;                            // 0x3C0(0x18)()
 };
 
 // 0x100 (0x100 - 0x0)
@@ -139,17 +145,17 @@ struct UStoreItemCardFront_C_ExecuteUbergraph_StoreItemCardFront_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52D7[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5EF0[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortStoreContext*                     CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortStoreContext*                     CallFunc_GetContext_ReturnValue1;                  // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class EFortStoreState                   K2Node_CustomEvent_NewStoreState;                  // 0x18(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_52D8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5EF1[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FCard                                 CallFunc_GetCard_ResultOut;                        // 0x20(0x18)(NoDestructor)
 	bool                                         CallFunc_GetCard_ReturnValue;                      // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_52D9[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5EF2[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UObject*                               K2Node_Event_InitObject;                           // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortStoreContext*                     CallFunc_GetContext_ReturnValue12;                 // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortStoreContext*                     CallFunc_GetContext_ReturnValue2;                  // 0x48(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_CardFrontRevealComplete_ReturnValue;      // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 

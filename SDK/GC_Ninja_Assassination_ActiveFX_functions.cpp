@@ -99,6 +99,21 @@ void AGC_Ninja_Assassination_ActiveFX_C::UserConstructionScript()
 }
 
 
+// Function GC_Ninja_Assassination_ActiveFX.GC_Ninja_Assassination_ActiveFX_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+
+void AGC_Ninja_Assassination_ActiveFX_C::ReceiveBeginPlay()
+{
+	static auto Func = Class->GetFunction("GC_Ninja_Assassination_ActiveFX_C", "ReceiveBeginPlay");
+
+	Params::AGC_Ninja_Assassination_ActiveFX_C_ReceiveBeginPlay_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function GC_Ninja_Assassination_ActiveFX.GC_Ninja_Assassination_ActiveFX_C.K2_HandleGameplayCue
 // (Event, Public, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -121,7 +136,7 @@ void AGC_Ninja_Assassination_ActiveFX_C::K2_HandleGameplayCue(class AActor* MyTa
 
 
 // Function GC_Ninja_Assassination_ActiveFX.GC_Ninja_Assassination_ActiveFX_C.ExecuteUbergraph_GC_Ninja_Assassination_ActiveFX
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_MyTarget                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

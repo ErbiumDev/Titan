@@ -103,25 +103,25 @@ void ACheckExpeditionRewardsAction_C::HandleRewardsClaimError(class UFrontEndRew
 
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.Clear
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<class UFortItem*>           K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFortCollectionBookRewards>K2Node_MakeArray_Array1                                          (ZeroConstructor, ReferenceParm)
-// TArray<class UFortExpeditionItem*> K2Node_MakeArray_Array12                                         (ZeroConstructor, ReferenceParm)
-// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array123                                        (ZeroConstructor, ReferenceParm)
-// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array1234                                       (ZeroConstructor, ReferenceParm)
-// struct FFrontEndRewards_Definition K2Node_MakeStruct_FrontEndRewards_Definition                     (HasGetValueTypeHash)
+// TArray<class UFortExpeditionItem*> K2Node_MakeArray_Array2                                          (ZeroConstructor, ReferenceParm)
+// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array3                                          (ZeroConstructor, ReferenceParm)
+// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array4                                          (ZeroConstructor, ReferenceParm)
+// struct FFrontEndRewards_Definition K2Node_MakeStruct_FrontEndRewards_Definition                     (ZeroConstructor, HasGetValueTypeHash)
 
-void ACheckExpeditionRewardsAction_C::Clear(TArray<class UFortItem*>& K2Node_MakeArray_Array, TArray<struct FFortCollectionBookRewards>& K2Node_MakeArray_Array1, TArray<class UFortExpeditionItem*>& K2Node_MakeArray_Array12, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array123, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array1234, const struct FFrontEndRewards_Definition& K2Node_MakeStruct_FrontEndRewards_Definition)
+void ACheckExpeditionRewardsAction_C::Clear(TArray<class UFortItem*>& K2Node_MakeArray_Array, TArray<struct FFortCollectionBookRewards>& K2Node_MakeArray_Array1, TArray<class UFortExpeditionItem*>& K2Node_MakeArray_Array2, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array3, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array4, const struct FFrontEndRewards_Definition& K2Node_MakeStruct_FrontEndRewards_Definition)
 {
 	static auto Func = Class->GetFunction("CheckExpeditionRewardsAction_C", "Clear");
 
 	Params::ACheckExpeditionRewardsAction_C_Clear_Params Parms;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.K2Node_MakeArray_Array1 = K2Node_MakeArray_Array1;
-	Parms.K2Node_MakeArray_Array12 = K2Node_MakeArray_Array12;
-	Parms.K2Node_MakeArray_Array123 = K2Node_MakeArray_Array123;
-	Parms.K2Node_MakeArray_Array1234 = K2Node_MakeArray_Array1234;
+	Parms.K2Node_MakeArray_Array2 = K2Node_MakeArray_Array2;
+	Parms.K2Node_MakeArray_Array3 = K2Node_MakeArray_Array3;
+	Parms.K2Node_MakeArray_Array4 = K2Node_MakeArray_Array4;
 	Parms.K2Node_MakeStruct_FrontEndRewards_Definition = K2Node_MakeStruct_FrontEndRewards_Definition;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -149,12 +149,12 @@ void ACheckExpeditionRewardsAction_C::HandleRewardsClaimed(class UFrontEndReward
 
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.PopulateExpeditionRewards
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<class UFortExpeditionItem*> CompletedExpeditions                                             (Edit, BlueprintVisible, ZeroConstructor)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerController*       CallFunc_Find_First_Valid_Player_Controller_FoundPC1             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -402,7 +402,7 @@ void ACheckExpeditionRewardsAction_C::Handle_Rewards_Running()
 
 
 // Function CheckExpeditionRewardsAction.CheckExpeditionRewardsAction_C.ExecuteUbergraph_CheckExpeditionRewardsAction
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortScriptedActionParams   K2Node_Event_Params                                              (ConstParm, NoDestructor)
@@ -413,7 +413,7 @@ void ACheckExpeditionRewardsAction_C::Handle_Rewards_Running()
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Is_FrontEndRewards_Running_bRunning                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 
 void ACheckExpeditionRewardsAction_C::ExecuteUbergraph_CheckExpeditionRewardsAction(int32 EntryPoint, const struct FFortScriptedActionParams& K2Node_Event_Params, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsPendingLogout_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_Is_FrontEndRewards_Running_bRunning, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {

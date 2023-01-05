@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3D0 - 0x3D0)
+// 0x0 (0x3E8 - 0x3E8)
 // BlueprintGeneratedClass TracerGeneric.TracerGeneric_C
 class ATracerGeneric_C : public AFortTracerBase
 {

@@ -23,14 +23,6 @@ struct UEpicCMSTileBase_Launch_Params
 public:
 };
 
-// 0x1 (0x1 - 0x0)
-// Function EpicCMSUIFramework.EpicCMSTileBase.DynamicHandleIconLoadingStateChanged
-struct UEpicCMSTileBase_DynamicHandleIconLoadingStateChanged_Params
-{
-public:
-	bool                                         bIsLoading;                                        // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // 0x4 (0x4 - 0x0)
 // Function EpicCMSUIFramework.EpicCMSTileCarousel.SetCurrentPageByIndex
 struct UEpicCMSTileCarousel_SetCurrentPageByIndex_Params

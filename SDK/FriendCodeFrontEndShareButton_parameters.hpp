@@ -17,8 +17,8 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x0 (0x0 - 0x0)
-// Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.OnClicked
-struct UFriendCodeFrontEndShareButton_C_OnClicked_Params
+// Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.BP_OnClicked
+struct UFriendCodeFrontEndShareButton_C_BP_OnClicked_Params
 {
 public:
 };

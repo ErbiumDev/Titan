@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x330 - 0x330)
+// 0x0 (0x348 - 0x348)
 // BlueprintGeneratedClass Frontend_SkillTree.Frontend_SkillTree_C
 class AFrontend_SkillTree_C : public AFortLevelScriptActor
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xE8C - 0xE8C)
+// 0x0 (0xDD8 - 0xDD8)
 // BlueprintGeneratedClass B_Shotgun_Generic.B_Shotgun_Generic_C
 class AB_Shotgun_Generic_C : public AB_Ranged_Generic_C
 {

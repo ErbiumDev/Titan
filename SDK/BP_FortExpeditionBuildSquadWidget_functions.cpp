@@ -35,13 +35,13 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Sort_Picker_Action(bool* bPass
 
 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Mcp Relative Utc Now
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FDateTime                   UtcNow                                                           (Parm, OutParm, NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   UtcNow                                                           (Parm, OutParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerController*       K2Node_DynamicCast_AsFort_Player_Controller                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Get_Mcp_Relative_Utc_Now(struct FDateTime* UtcNow, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, const struct FDateTime& CallFunc_GetMcpRelativeUtcNow_ReturnValue)
 {
@@ -67,7 +67,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Get_Mcp_Relative_Utc_Now(struct FDate
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        Temp_text_Variable                                               ()
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -79,7 +79,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Get_Mcp_Relative_Utc_Now(struct FDate
 // class FText                        CallFunc_Format_ReturnValue                                      ()
 // class UUserWidget*                 CallFunc_Create_Basic_Tooltip_Output                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSuccessChanceTooltipWidget(bool Temp_bool_Variable, class FText Temp_text_Variable, class UCommonInputContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, class FText K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output)
+class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSuccessChanceTooltipWidget(bool Temp_bool_Variable, class FText Temp_text_Variable, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_Less_FloatFloat_ReturnValue, class FText K2Node_Select_Default, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "GetSuccessChanceTooltipWidget");
 
@@ -110,7 +110,7 @@ class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSuccessChanceTooltipWidg
 // Parameters:
 // class UWidget*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_Format_ReturnValue                                      ()
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -118,7 +118,7 @@ class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSuccessChanceTooltipWidg
 // class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()
 // class UUserWidget*                 CallFunc_Create_Basic_Tooltip_Output                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSquadRatingTooltipWidget(TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class UCommonInputContext* CallFunc_GetContext_ReturnValue, class FText CallFunc_Format_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output)
+class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSquadRatingTooltipWidget(TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, class FText CallFunc_Format_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class FText CallFunc_MakeLiteralText_ReturnValue, class UUserWidget* CallFunc_Create_Basic_Tooltip_Output)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "GetSquadRatingTooltipWidget");
 
@@ -147,8 +147,8 @@ class UWidget* UBP_FortExpeditionBuildSquadWidget_C::GetSquadRatingTooltipWidget
 // enum class EFortRarity             Rarity                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 OutBrush_Brush_M                                                 (Parm, OutParm)
 // class FText                        OutDisplayName                                                   (Parm, OutParm)
-// struct FLinearColor                OutRarityColor                                                   (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                RarityColor                                                      (Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                OutRarityColor                                                   (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                RarityColor                                                      (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 TagBrush                                                         (Edit, BlueprintVisible)
 // class FText                        DisplayName                                                      (Edit, BlueprintVisible)
 // struct FFortRarityItemData         CallFunc_BPGetRarityData_ReturnValue                             ()
@@ -265,11 +265,11 @@ void UBP_FortExpeditionBuildSquadWidget_C::Determine_Inspect_Item_for_Squad_Slot
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Inspect
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUINavigationManager*    CallFunc_GetUINavigationManager_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Inspect(bool* Passthrough, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Inspect(bool* PassThrough, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Inspect");
 
@@ -279,8 +279,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Inspect(bool* Passthrough, cla
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -305,81 +305,6 @@ int32 UBP_FortExpeditionBuildSquadWidget_C::Get_Selected_Slot__SAFE_(int32 CallF
 }
 
 
-// Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Get Purchase Slot State
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// enum class EInputActionState       ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EInputActionState       Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EInputActionState       Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsSquadSlotLocked_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_GetActiveWidgetIndex_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_IntInt_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue12                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EInputActionState       K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-enum class EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Purchase_Slot_State(bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable1, class UCommonInputContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_IsSquadSlotLocked_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue12, enum class EInputActionState K2Node_Select_Default)
-{
-	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Get Purchase Slot State");
-
-	Params::UBP_FortExpeditionBuildSquadWidget_C_Get_Purchase_Slot_State_Params Parms;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
-	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
-	Parms.CallFunc_IsSquadSlotLocked_ReturnValue = CallFunc_IsSquadSlotLocked_ReturnValue;
-	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
-	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
-	Parms.CallFunc_EqualEqual_IntInt_ReturnValue1 = CallFunc_EqualEqual_IntInt_ReturnValue1;
-	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
-	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
-	Parms.CallFunc_BooleanOR_ReturnValue12 = CallFunc_BooleanOR_ReturnValue12;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Purchase Slot
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UHomeBaseContext*            CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsSquadSlotLocked_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FName                        CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortUINavigationManager*    CallFunc_GetUINavigationManager_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Purchase_Slot(bool* Passthrough, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsSquadSlotLocked_ReturnValue, class FName CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue)
-{
-	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Purchase Slot");
-
-	Params::UBP_FortExpeditionBuildSquadWidget_C_Handle_Purchase_Slot_Params Parms;
-	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
-	Parms.CallFunc_IsSquadSlotLocked_ReturnValue = CallFunc_IsSquadSlotLocked_ReturnValue;
-	Parms.CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue = CallFunc_GetUnlockingHomebaseNodeIdForSquadSlot_ReturnValue;
-	Parms.CallFunc_GetUINavigationManager_ReturnValue = CallFunc_GetUINavigationManager_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
-
-}
-
-
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Buff Arrow Angle for Preview State
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -388,10 +313,10 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Purchase_Slot(bool* Passthroug
 // enum class EFortBuffState          Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              Temp_float_Variable1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                              Temp_float_Variable12                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              Temp_float_Variable2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-float UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Angle_for_Preview_State(enum class EFortBuffState Index, enum class EFortBuffState Temp_byte_Variable, float Temp_float_Variable, float Temp_float_Variable1, float Temp_float_Variable12, float K2Node_Select_Default)
+float UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Angle_for_Preview_State(enum class EFortBuffState Index, enum class EFortBuffState Temp_byte_Variable, float Temp_float_Variable, float Temp_float_Variable1, float Temp_float_Variable2, float K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Determine Buff Arrow Angle for Preview State");
 
@@ -400,7 +325,7 @@ float UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Angle_for_Previ
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_float_Variable = Temp_float_Variable;
 	Parms.Temp_float_Variable1 = Temp_float_Variable1;
-	Parms.Temp_float_Variable12 = Temp_float_Variable12;
+	Parms.Temp_float_Variable2 = Temp_float_Variable2;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -411,13 +336,13 @@ float UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Angle_for_Previ
 
 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Determine Buff Arrow Color for Preview State
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
 // enum class EFortBuffState          Index                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                ReturnValue                                                      (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortBuffState          Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                Temp_struct_Variable                                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                K2Node_Select_Default                                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 struct FLinearColor UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Color_for_Preview_State(enum class EFortBuffState Index, enum class EFortBuffState Temp_byte_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& K2Node_Select_Default)
 {
@@ -437,11 +362,11 @@ struct FLinearColor UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_C
 
 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Chance Buff Arrow for Preview
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // enum class EFortBuffState          Index                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Determine_Buff_Arrow_Angle_for_Preview_State_ReturnValue(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Determine_Buff_Arrow_Color_for_Preview_State_ReturnValue(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Determine_Buff_Arrow_Color_for_Preview_State_ReturnValue(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        CallFunc_Determine_Buff_Arrow_Visiblity_From_Preview_State_ReturnValue(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Chance_Buff_Arrow_for_Preview(enum class EFortBuffState Index, float CallFunc_Determine_Buff_Arrow_Angle_for_Preview_State_ReturnValue, const struct FLinearColor& CallFunc_Determine_Buff_Arrow_Color_for_Preview_State_ReturnValue, enum class ESlateVisibility CallFunc_Determine_Buff_Arrow_Visiblity_From_Preview_State_ReturnValue)
@@ -460,11 +385,11 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Chance_Buff_Arrow_for_Preview(
 
 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Update Rating Buff Arrow for Preview
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // enum class EFortBuffState          Index                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Determine_Buff_Arrow_Angle_for_Preview_State_ReturnValue(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Determine_Buff_Arrow_Color_for_Preview_State_ReturnValue(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Determine_Buff_Arrow_Color_for_Preview_State_ReturnValue(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        CallFunc_Determine_Buff_Arrow_Visiblity_From_Preview_State_ReturnValue(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Update_Rating_Buff_Arrow_for_Preview(enum class EFortBuffState Index, float CallFunc_Determine_Buff_Arrow_Angle_for_Preview_State_ReturnValue, const struct FLinearColor& CallFunc_Determine_Buff_Arrow_Color_for_Preview_State_ReturnValue, enum class ESlateVisibility CallFunc_Determine_Buff_Arrow_Visiblity_From_Preview_State_ReturnValue)
@@ -489,11 +414,11 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Rating_Buff_Arrow_for_Preview(
 // enum class ESlateVisibility        ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortBuffState          Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable123                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable3                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-enum class ESlateVisibility UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Visiblity_From_Preview_State(enum class EFortBuffState Index, enum class EFortBuffState Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable12, enum class ESlateVisibility Temp_byte_Variable123, enum class ESlateVisibility K2Node_Select_Default)
+enum class ESlateVisibility UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff_Arrow_Visiblity_From_Preview_State(enum class EFortBuffState Index, enum class EFortBuffState Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable2, enum class ESlateVisibility Temp_byte_Variable3, enum class ESlateVisibility K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Determine Buff Arrow Visiblity From Preview State");
 
@@ -501,8 +426,8 @@ enum class ESlateVisibility UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff
 	Parms.Index = Index;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
-	Parms.Temp_byte_Variable123 = Temp_byte_Variable123;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
+	Parms.Temp_byte_Variable3 = Temp_byte_Variable3;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -520,10 +445,10 @@ enum class ESlateVisibility UBP_FortExpeditionBuildSquadWidget_C::Determine_Buff
 // enum class EFortBuffState          Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      Temp_class_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      Temp_class_Variable1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      Temp_class_Variable12                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UClass* UBP_FortExpeditionBuildSquadWidget_C::Determine_Text_Style_from_Preview_State(enum class EFortBuffState Index, enum class EFortBuffState Temp_byte_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UClass* Temp_class_Variable12, class UClass* K2Node_Select_Default)
+class UClass* UBP_FortExpeditionBuildSquadWidget_C::Determine_Text_Style_from_Preview_State(enum class EFortBuffState Index, enum class EFortBuffState Temp_byte_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UClass* Temp_class_Variable2, class UClass* K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Determine Text Style from Preview State");
 
@@ -532,7 +457,7 @@ class UClass* UBP_FortExpeditionBuildSquadWidget_C::Determine_Text_Style_from_Pr
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_class_Variable = Temp_class_Variable;
 	Parms.Temp_class_Variable1 = Temp_class_Variable1;
-	Parms.Temp_class_Variable12 = Temp_class_Variable12;
+	Parms.Temp_class_Variable2 = Temp_class_Variable2;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -664,10 +589,10 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_For_Preview(class UFortItem* I
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Back with Squad Clear
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Handle_Back_PassThrough                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* Passthrough, bool CallFunc_Handle_Back_PassThrough)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* PassThrough, bool CallFunc_Handle_Back_PassThrough)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Back with Squad Clear");
 
@@ -676,8 +601,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* Pa
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -690,8 +615,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* Pa
 // enum class EInputActionState       Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EInputActionState       Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EInputActionState       Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EInputActionState       Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortItem*                   CallFunc_GetSelectedItem_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -702,7 +627,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back_with_Squad_Clear(bool* Pa
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EInputActionState       K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-enum class EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Slot_Item_State(bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable1, bool Temp_bool_Variable1, enum class EInputActionState Temp_byte_Variable12, class UCommonInputContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UFortItem* CallFunc_GetSelectedItem_ReturnValue, bool CallFunc_CanItemBeComitted_ReturnValue, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, enum class EInputActionState K2Node_Select_Default, bool CallFunc_BooleanOR_ReturnValue, enum class EInputActionState K2Node_Select1_Default)
+enum class EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Slot_Item_State(bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable1, bool Temp_bool_Variable1, enum class EInputActionState Temp_byte_Variable2, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class UFortItem* CallFunc_GetSelectedItem_ReturnValue, bool CallFunc_CanItemBeComitted_ReturnValue, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, enum class EInputActionState K2Node_Select_Default, bool CallFunc_BooleanOR_ReturnValue, enum class EInputActionState K2Node_Select1_Default)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Get Slot Item State");
 
@@ -711,7 +636,7 @@ enum class EInputActionState UBP_FortExpeditionBuildSquadWidget_C::Get_Slot_Item
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
@@ -762,9 +687,9 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Vehicle_Selected(class FName C
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Open Picker
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Open_Picker(bool* Passthrough)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Open_Picker(bool* PassThrough)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Open Picker");
 
@@ -772,8 +697,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Open_Picker(bool* Passthrough)
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -781,9 +706,9 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Open_Picker(bool* Passthrough)
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Start Expedition
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* Passthrough)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* PassThrough)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Start Expedition");
 
@@ -791,8 +716,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* Passthr
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -803,11 +728,10 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Start_Expedition(bool* Passthr
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EInputActionState       Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EInputActionState       Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EInputActionState       CallFunc_Get_Purchase_Slot_State_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsExpeditionValidToStart_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EInputActionState       K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Picker_Closed(bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable1, enum class EInputActionState CallFunc_Get_Purchase_Slot_State_ReturnValue, bool CallFunc_IsExpeditionValidToStart_ReturnValue, enum class EInputActionState K2Node_Select_Default)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Picker_Closed(bool Temp_bool_Variable, enum class EInputActionState Temp_byte_Variable, enum class EInputActionState Temp_byte_Variable1, bool CallFunc_IsExpeditionValidToStart_ReturnValue, enum class EInputActionState K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Squad Picker Closed");
 
@@ -815,7 +739,6 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Picker_Closed(bool Temp_
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.CallFunc_Get_Purchase_Slot_State_ReturnValue = CallFunc_Get_Purchase_Slot_State_ReturnValue;
 	Parms.CallFunc_IsExpeditionValidToStart_ReturnValue = CallFunc_IsExpeditionValidToStart_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
@@ -831,7 +754,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Picker_Closed(bool Temp_
 // bool                               CallFunc_TryGetSelectedSquadSlotSortTypes_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EInputActionState       CallFunc_Get_Slot_Item_State_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Handle_Squad_Slot_Selected(const struct FSquadSlotSortTypes& CallFunc_TryGetSelectedSquadSlotSortTypes_OutSlotSortTypes, bool CallFunc_TryGetSelectedSquadSlotSortTypes_ReturnValue, enum class EInputActionState CallFunc_Get_Slot_Item_State_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
@@ -871,11 +794,11 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Selected_Item_Committed(class 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Close Picker Action
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortHomebaseUIContext*      CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UFortItem*>           CallFunc_GetItemsInSquad_ReturnValue                             (ZeroConstructor, ReferenceParm)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Close_Picker_Action(bool* Passthrough, class UFortHomebaseUIContext* CallFunc_GetContext_ReturnValue, TArray<class UFortItem*>& CallFunc_GetItemsInSquad_ReturnValue)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Close_Picker_Action(bool* PassThrough, class UFortHomebaseUIContext* CallFunc_GetContext_ReturnValue, TArray<class UFortItem*>& CallFunc_GetItemsInSquad_ReturnValue)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Close Picker Action");
 
@@ -885,8 +808,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Close_Picker_Action(bool* Pass
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -894,10 +817,10 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Close_Picker_Action(bool* Pass
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Slot Item Action
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_TryCommitSelectedItem_ReturnValue                       (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Slot_Item_Action(bool* Passthrough, bool CallFunc_TryCommitSelectedItem_ReturnValue)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Slot_Item_Action(bool* PassThrough, bool CallFunc_TryCommitSelectedItem_ReturnValue)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Slot Item Action");
 
@@ -906,8 +829,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Slot_Item_Action(bool* Passthr
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -938,9 +861,9 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Start_Expedition_Widget_State(
 
 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Expedition Expired
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FDateTime                   CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow                         (NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_Get_Mcp_Relative_Utc_Now_UtcNow                         (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Handle_Back_with_Squad_Clear_PassThrough                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasExpeditionExpired_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1116,11 +1039,11 @@ void UBP_FortExpeditionBuildSquadWidget_C::HACK_SetCursorToSquadSlotSlotted(int3
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Array_Find_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateChildSize             K2Node_MakeStruct_SlateChildSize                                 (NoDestructor)
-// struct FMargin                     K2Node_MakeStruct_Margin                                         (IsPlainOldData, NoDestructor)
+// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 CallFunc_Get_Bonus_Display_Name_and_Brush_OutBrush_Brush_M       ()
 // class FText                        CallFunc_Get_Bonus_Display_Name_and_Brush_OutDisplayName         ()
-// struct FLinearColor                CallFunc_Get_Bonus_Display_Name_and_Brush_OutRarityColor         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Bonus_Display_Name_and_Brush_OutRarityColor         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1236,7 +1159,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Update_Squad_Slot_Pickers(int32 Selec
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetOwningPlayer_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     K2Node_MakeStruct_Margin                                         (IsPlainOldData, NoDestructor)
+// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UItemCountOverCost_C*        CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -1280,7 +1203,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Expedition_Costs(class UFortExped
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UIconAndNameWidget_C*        CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVerticalBoxSlot*            CallFunc_AddChildToVerticalBox_ReturnValue                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FMargin                     K2Node_MakeStruct_Margin                                         (IsPlainOldData, NoDestructor)
+// struct FMargin                     K2Node_MakeStruct_Margin                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
 void UBP_FortExpeditionBuildSquadWidget_C::Set_Requirements(class UFortExpeditionItemDefinition* ItemDef, class UFortTooltipUIContext* CallFunc_GetContext_ReturnValue, const struct FGameplayTagContainer& CallFunc_GetRequiredTags_ReturnValue, TArray<struct FGameplayTag>& CallFunc_BreakGameplayTagContainer_GameplayTags, int32 Temp_int_Array_Index_Variable, int32 CallFunc_Array_Length_ReturnValue, const struct FGameplayTag& CallFunc_Array_Get_Item, const struct FFortTagUIData& CallFunc_GetUIDataForTag_OutData, bool CallFunc_GetUIDataForTag_ReturnValue, int32 Temp_int_Loop_Counter_Variable, bool CallFunc_Less_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, class UIconAndNameWidget_C* CallFunc_Create_ReturnValue, class UVerticalBoxSlot* CallFunc_AddChildToVerticalBox_ReturnValue, const struct FMargin& K2Node_MakeStruct_Margin)
 {
@@ -1387,7 +1310,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Squad_Widgets(bool NewLocalVa
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Change Vehicle
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsValidClass_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1395,7 +1318,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Refresh_Squad_Widgets(bool NewLocalVa
 // class UBP_FortExpeditionPickVehicleWidget_C*K2Node_DynamicCast_AsBP_Fort_Expedition_Pick_Vehicle_Widget      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Change_Vehicle(bool* Passthrough, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, bool CallFunc_IsValidClass_ReturnValue, class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UBP_FortExpeditionPickVehicleWidget_C* K2Node_DynamicCast_AsBP_Fort_Expedition_Pick_Vehicle_Widget, bool K2Node_DynamicCast_bSuccess)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Change_Vehicle(bool* PassThrough, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, bool CallFunc_IsValidClass_ReturnValue, class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UBP_FortExpeditionPickVehicleWidget_C* K2Node_DynamicCast_AsBP_Fort_Expedition_Pick_Vehicle_Widget, bool K2Node_DynamicCast_bSuccess)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Change Vehicle");
 
@@ -1409,8 +1332,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Change_Vehicle(bool* Passthrou
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -1484,7 +1407,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Rarity(class UFortItem* Item, enu
 // Parameters:
 // class UFortExpeditionItemDefinition*ItemDef                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// struct FTimespan                   CallFunc_FromMinutes_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   CallFunc_FromMinutes_ReturnValue                                 (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetTimespanAsText_ReturnValue                           ()
 // class FText                        CallFunc_Format_ReturnValue                                      ()
 
@@ -1616,24 +1539,22 @@ void UBP_FortExpeditionBuildSquadWidget_C::Set_Name(class UFortItem* Item, class
 // Parameters:
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate123                          (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1234                         (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12345                        (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate123456                       (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate3                            (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate4                            (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate5                            (ZeroConstructor, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Setup_Input_Action_Handlers(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate123, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1234, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12345, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate123456)
+void UBP_FortExpeditionBuildSquadWidget_C::Setup_Input_Action_Handlers(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate4, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate5)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Setup Input Action Handlers");
 
 	Params::UBP_FortExpeditionBuildSquadWidget_C_Setup_Input_Action_Handlers_Params Parms;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
-	Parms.K2Node_CreateDelegate_OutputDelegate123 = K2Node_CreateDelegate_OutputDelegate123;
-	Parms.K2Node_CreateDelegate_OutputDelegate1234 = K2Node_CreateDelegate_OutputDelegate1234;
-	Parms.K2Node_CreateDelegate_OutputDelegate12345 = K2Node_CreateDelegate_OutputDelegate12345;
-	Parms.K2Node_CreateDelegate_OutputDelegate123456 = K2Node_CreateDelegate_OutputDelegate123456;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
+	Parms.K2Node_CreateDelegate_OutputDelegate3 = K2Node_CreateDelegate_OutputDelegate3;
+	Parms.K2Node_CreateDelegate_OutputDelegate4 = K2Node_CreateDelegate_OutputDelegate4;
+	Parms.K2Node_CreateDelegate_OutputDelegate5 = K2Node_CreateDelegate_OutputDelegate5;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1643,10 +1564,10 @@ void UBP_FortExpeditionBuildSquadWidget_C::Setup_Input_Action_Handlers(UDelegate
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.Handle Back
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// bool                               Passthrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               PassThrough                                                      (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back(bool* Passthrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back(bool* PassThrough, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "Handle Back");
 
@@ -1655,8 +1576,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::Handle_Back(bool* Passthrough, class 
 
 	UObject::ProcessEvent(Func, &Parms);
 
-	if (Passthrough != nullptr)
-		*Passthrough = Parms.Passthrough;
+	if (PassThrough != nullptr)
+		*PassThrough = Parms.PassThrough;
 
 }
 
@@ -1958,10 +1879,14 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnRequestClosePicker()
 
 
 // Function BP_FortExpeditionBuildSquadWidget.BP_FortExpeditionBuildSquadWidget_C.ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Handle_Close_Picker_Action_PassThrough                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USquadSlotDetailsPanel_C*    K2Node_DynamicCast_AsSquad_Slot_Details_Panel                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FFortDialogExternalLatentActionHandleTemp_struct_Variable                                             (NoDestructor)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FName                        Temp_name_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortDialogResult       Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -1974,12 +1899,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnRequestClosePicker()
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsExpeditionValidToStart_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortItemTileView*           CallFunc_Get_Picker_List_View_PickerTileView                     (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItemTileView*           CallFunc_Get_Picker_List_View_PickerTileView1                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     CallFunc_Get_Selected_Item_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        Temp_name_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_SetSelectedItem_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FFortDialogExternalLatentActionHandleTemp_struct_Variable                                             (NoDestructor)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class APlayerController*           CallFunc_GetPlayerController_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2003,11 +1923,8 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnRequestClosePicker()
 // enum class EInputActionState       CallFunc_Get_Slot_Item_State_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
 // bool                               CallFunc_Handle_Back_PassThrough                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class EInputActionState       CallFunc_Get_Purchase_Slot_State_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EInputActionState       CallFunc_Get_Purchase_Slot_State_ReturnValue1                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class EInputActionState       CallFunc_Get_Purchase_Slot_State_ReturnValue12                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortExpeditionItem*         K2Node_Event_InItem                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonUIContext*            CallFunc_GetContext_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonUISubsystem*          CallFunc_GetContext_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_GetActiveWidgetIndex_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortItem*                   CallFunc_GetSelectedItem_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2016,17 +1933,22 @@ void UBP_FortExpeditionBuildSquadWidget_C::OnRequestClosePicker()
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NotEqual_IntInt_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UBP_ExpeditionSquadSlotsView_C*K2Node_DynamicCast_AsBP_Expedition_Squad_Slots_View              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class USquadSlotItemPicker_C*      K2Node_DynamicCast_AsSquad_Slot_Item_Picker                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USquadSlotItemPicker_C*      K2Node_DynamicCast_AsSquad_Slot_Item_Picker                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Handle_Close_Picker_Action_PassThrough                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionBuildSquadWidget_C::ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget(int32 EntryPoint, bool CallFunc_Handle_Close_Picker_Action_PassThrough, enum class EFortDialogResult Temp_byte_Variable, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class FName K2Node_CustomEvent_SquadId, bool CallFunc_StartExpedition_ReturnValue, class UFortItem* K2Node_ComponentBoundEvent_SelectedItem1, const struct FConfirmationDialogAction& K2Node_MakeStruct_ConfirmationDialogAction, TArray<struct FConfirmationDialogAction>& K2Node_MakeArray_Array, class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI* CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsExpeditionValidToStart_ReturnValue, class UFortItemTileView* CallFunc_Get_Picker_List_View_PickerTileView, class UFortItemTileView* CallFunc_Get_Picker_List_View_PickerTileView1, class UObject* CallFunc_Get_Selected_Item_ReturnValue, class FName Temp_name_Variable, bool CallFunc_SetSelectedItem_ReturnValue, bool Temp_bool_Variable, const struct FFortDialogExternalLatentActionHandle& Temp_struct_Variable, class UCommonButton* K2Node_ComponentBoundEvent_Button, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UInfoWindow_C* CallFunc_Create_ReturnValue, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, bool K2Node_CustomEvent_bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& K2Node_CustomEvent_WaitingDialogHandle, class FText CallFunc_GetText_ReturnValue, class UFortExpeditionItemDefinition* CallFunc_Get_Expedition_Item_Definition_ItemDef, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<class UFortCardPackItemDefinition*>& CallFunc_GetAllRewards_OutRewards, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array1, class UFortItem* K2Node_ComponentBoundEvent_SelectedItem, class FText CallFunc_Format_ReturnValue, int32 K2Node_ComponentBoundEvent_SquadSlotIndex, bool CallFunc_NotEqual_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EInputActionState CallFunc_Get_Slot_Item_State_ReturnValue, bool K2Node_CustomEvent_bUsingGamepad, enum class EInputActionState CallFunc_Get_Slot_Item_State_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, bool CallFunc_Handle_Back_PassThrough, enum class EInputActionState CallFunc_Get_Purchase_Slot_State_ReturnValue, enum class EInputActionState CallFunc_Get_Purchase_Slot_State_ReturnValue1, enum class EInputActionState CallFunc_Get_Purchase_Slot_State_ReturnValue12, class UFortExpeditionItem* K2Node_Event_InItem, class UCommonUIContext* CallFunc_GetContext_ReturnValue1, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UFortItem* CallFunc_GetSelectedItem_ReturnValue, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, bool CallFunc_EqualEqual_IntInt_ReturnValue1, bool CallFunc_NotEqual_IntInt_ReturnValue1, class UBP_ExpeditionSquadSlotsView_C* K2Node_DynamicCast_AsBP_Expedition_Squad_Slots_View, bool K2Node_DynamicCast_bSuccess, class USquadSlotItemPicker_C* K2Node_DynamicCast_AsSquad_Slot_Item_Picker, bool K2Node_DynamicCast_bSuccess1)
+void UBP_FortExpeditionBuildSquadWidget_C::ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget(int32 EntryPoint, class USquadSlotDetailsPanel_C* K2Node_DynamicCast_AsSquad_Slot_Details_Panel, bool K2Node_DynamicCast_bSuccess, const struct FFortDialogExternalLatentActionHandle& Temp_struct_Variable, bool Temp_bool_Variable, class FName Temp_name_Variable, enum class EFortDialogResult Temp_byte_Variable, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess, class FName K2Node_CustomEvent_SquadId, bool CallFunc_StartExpedition_ReturnValue, class UFortItem* K2Node_ComponentBoundEvent_SelectedItem1, const struct FConfirmationDialogAction& K2Node_MakeStruct_ConfirmationDialogAction, TArray<struct FConfirmationDialogAction>& K2Node_MakeArray_Array, class UFortAsyncAction_ShowAdvancedLatentConfirmation_NUI* CallFunc_ShowAdvancedLatentActionConfirmation_ReturnValue, bool CallFunc_IsValid_ReturnValue, bool CallFunc_IsExpeditionValidToStart_ReturnValue, class UFortItemTileView* CallFunc_Get_Picker_List_View_PickerTileView, class UObject* CallFunc_Get_Selected_Item_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class APlayerController* CallFunc_GetPlayerController_ReturnValue, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UInfoWindow_C* CallFunc_Create_ReturnValue, enum class EFortDialogResult K2Node_CustomEvent_Result, class FName K2Node_CustomEvent_ResultName, bool K2Node_CustomEvent_bWaitingForLatentActionCompletion, const struct FFortDialogExternalLatentActionHandle& K2Node_CustomEvent_WaitingDialogHandle, class FText CallFunc_GetText_ReturnValue, class UFortExpeditionItemDefinition* CallFunc_Get_Expedition_Item_Definition_ItemDef, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<class UFortCardPackItemDefinition*>& CallFunc_GetAllRewards_OutRewards, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array1, class UFortItem* K2Node_ComponentBoundEvent_SelectedItem, class FText CallFunc_Format_ReturnValue, int32 K2Node_ComponentBoundEvent_SquadSlotIndex, bool CallFunc_NotEqual_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, enum class EInputActionState CallFunc_Get_Slot_Item_State_ReturnValue, bool K2Node_CustomEvent_bUsingGamepad, enum class EInputActionState CallFunc_Get_Slot_Item_State_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, bool CallFunc_Handle_Back_PassThrough, class UFortExpeditionItem* K2Node_Event_InItem, class UCommonUISubsystem* CallFunc_GetContext_ReturnValue1, int32 CallFunc_GetActiveWidgetIndex_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class UFortItem* CallFunc_GetSelectedItem_ReturnValue, class UWidget* K2Node_ComponentBoundEvent_ActiveWidget, int32 K2Node_ComponentBoundEvent_ActiveWidgetIndex, bool CallFunc_EqualEqual_IntInt_ReturnValue1, bool CallFunc_NotEqual_IntInt_ReturnValue1, class UBP_ExpeditionSquadSlotsView_C* K2Node_DynamicCast_AsBP_Expedition_Squad_Slots_View, bool K2Node_DynamicCast_bSuccess1, class USquadSlotItemPicker_C* K2Node_DynamicCast_AsSquad_Slot_Item_Picker, bool K2Node_DynamicCast_bSuccess2, bool CallFunc_Handle_Close_Picker_Action_PassThrough)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionBuildSquadWidget_C", "ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget");
 
 	Params::UBP_FortExpeditionBuildSquadWidget_C_ExecuteUbergraph_BP_FortExpeditionBuildSquadWidget_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_Handle_Close_Picker_Action_PassThrough = CallFunc_Handle_Close_Picker_Action_PassThrough;
+	Parms.K2Node_DynamicCast_AsSquad_Slot_Details_Panel = K2Node_DynamicCast_AsSquad_Slot_Details_Panel;
+	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.Temp_struct_Variable = Temp_struct_Variable;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.Temp_name_Variable = Temp_name_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
@@ -2039,12 +1961,7 @@ void UBP_FortExpeditionBuildSquadWidget_C::ExecuteUbergraph_BP_FortExpeditionBui
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_IsExpeditionValidToStart_ReturnValue = CallFunc_IsExpeditionValidToStart_ReturnValue;
 	Parms.CallFunc_Get_Picker_List_View_PickerTileView = CallFunc_Get_Picker_List_View_PickerTileView;
-	Parms.CallFunc_Get_Picker_List_View_PickerTileView1 = CallFunc_Get_Picker_List_View_PickerTileView1;
 	Parms.CallFunc_Get_Selected_Item_ReturnValue = CallFunc_Get_Selected_Item_ReturnValue;
-	Parms.Temp_name_Variable = Temp_name_Variable;
-	Parms.CallFunc_SetSelectedItem_ReturnValue = CallFunc_SetSelectedItem_ReturnValue;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_struct_Variable = Temp_struct_Variable;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 	Parms.CallFunc_GetPlayerController_ReturnValue = CallFunc_GetPlayerController_ReturnValue;
 	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
@@ -2068,9 +1985,6 @@ void UBP_FortExpeditionBuildSquadWidget_C::ExecuteUbergraph_BP_FortExpeditionBui
 	Parms.CallFunc_Get_Slot_Item_State_ReturnValue1 = CallFunc_Get_Slot_Item_State_ReturnValue1;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
 	Parms.CallFunc_Handle_Back_PassThrough = CallFunc_Handle_Back_PassThrough;
-	Parms.CallFunc_Get_Purchase_Slot_State_ReturnValue = CallFunc_Get_Purchase_Slot_State_ReturnValue;
-	Parms.CallFunc_Get_Purchase_Slot_State_ReturnValue1 = CallFunc_Get_Purchase_Slot_State_ReturnValue1;
-	Parms.CallFunc_Get_Purchase_Slot_State_ReturnValue12 = CallFunc_Get_Purchase_Slot_State_ReturnValue12;
 	Parms.K2Node_Event_InItem = K2Node_Event_InItem;
 	Parms.CallFunc_GetContext_ReturnValue1 = CallFunc_GetContext_ReturnValue1;
 	Parms.CallFunc_GetActiveWidgetIndex_ReturnValue = CallFunc_GetActiveWidgetIndex_ReturnValue;
@@ -2081,9 +1995,10 @@ void UBP_FortExpeditionBuildSquadWidget_C::ExecuteUbergraph_BP_FortExpeditionBui
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue1 = CallFunc_EqualEqual_IntInt_ReturnValue1;
 	Parms.CallFunc_NotEqual_IntInt_ReturnValue1 = CallFunc_NotEqual_IntInt_ReturnValue1;
 	Parms.K2Node_DynamicCast_AsBP_Expedition_Squad_Slots_View = K2Node_DynamicCast_AsBP_Expedition_Squad_Slots_View;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.K2Node_DynamicCast_AsSquad_Slot_Item_Picker = K2Node_DynamicCast_AsSquad_Slot_Item_Picker;
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
+	Parms.K2Node_DynamicCast_AsSquad_Slot_Item_Picker = K2Node_DynamicCast_AsSquad_Slot_Item_Picker;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
+	Parms.CallFunc_Handle_Close_Picker_Action_PassThrough = CallFunc_Handle_Close_Picker_Action_PassThrough;
 
 	UObject::ProcessEvent(Func, &Parms);
 

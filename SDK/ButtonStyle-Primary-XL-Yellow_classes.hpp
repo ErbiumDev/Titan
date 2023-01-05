@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Primary-XL-Yellow.ButtonStyle-Primary-XL-Yellow_C
 class UButtonStyle_Primary_XL_Yellow_C : public UCommonButtonStyle
 {

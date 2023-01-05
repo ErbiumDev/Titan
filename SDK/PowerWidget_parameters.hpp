@@ -16,6 +16,22 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x0 (0x0 - 0x0)
+// Function PowerWidget.PowerWidget_C.SetToOversizedMode
+struct UPowerWidget_C_SetToOversizedMode_Params
+{
+public:
+};
+
+// 0x30 (0x30 - 0x0)
+// Function PowerWidget.PowerWidget_C.Get_RatingValue-Large
+struct UPowerWidget_C_Get_RatingValue_Large_Params
+{
+public:
+	class FText                                  ReturnValue;                                       // 0x0(0x18)(Parm, OutParm, ReturnParm)
+	class FText                                  CallFunc_GetText_ReturnValue;                      // 0x18(0x18)()
+};
+
 // 0x3 (0x3 - 0x0)
 // Function PowerWidget.PowerWidget_C.Check For Power Change
 struct UPowerWidget_C_Check_For_Power_Change_Params
@@ -26,29 +42,22 @@ public:
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0xC0 (0xC0 - 0x0)
+// 0x70 (0x70 - 0x0)
 // Function PowerWidget.PowerWidget_C.GetPowerRatingTooltipWidget
 struct UPowerWidget_C_GetPowerRatingTooltipWidget_Params
 {
 public:
 	class UWidget*                               ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetModifiedHomebaseRating_Rating;         // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetModifiedHomebaseRating_ProgressFraction; // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetModifiedHomebaseRating_ReturnValue;    // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_316A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonInputContext*                   CallFunc_GetContext_ReturnValue;                   // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_Multiply_FloatFloat_ReturnValue;          // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x24(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_316B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_Round_ReturnValue;                        // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_316C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x30(0x40)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x70(0x10)(ZeroConstructor, ReferenceParm)
-	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x80(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  CallFunc_Format_ReturnValue;                       // 0x88(0x18)()
-	class FText                                  CallFunc_MakeLiteralText_ReturnValue;              // 0xA0(0x18)()
-	class UUserWidget*                           CallFunc_Create_Basic_Tooltip_Output;              // 0xB8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x8(0x10)(ZeroConstructor, ReferenceParm)
+	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue;                   // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                  CallFunc_Format_ReturnValue;                       // 0x20(0x18)()
+	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5564[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class APlayerController*                     CallFunc_GetOwningPlayer_ReturnValue;              // 0x40(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5565[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_MakeLiteralText_ReturnValue;              // 0x50(0x18)()
+	class UUserWidget*                           CallFunc_Create_Basic_Tooltip_Output;              // 0x68(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x2D (0x2D - 0x0)
@@ -57,7 +66,7 @@ struct UPowerWidget_C_PlayerHasTeammates_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_316D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5566[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UFortPartyContext*                     CallFunc_GetContext_ReturnValue;                   // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UFortUITeamInfo*                       CallFunc_GetLocalPlayerTeam_ReturnValue;           // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FUniqueNetIdRepl>              CallFunc_GetTeamMemberIDs_TeamMemberIDs;           // 0x18(0x10)(ZeroConstructor, ReferenceParm)
@@ -74,27 +83,27 @@ public:
 	int32                                        CallFunc_GetHomebaseRating_Rating;                 // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetHomebaseRating_ProgressFraction;       // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetHomebaseRating_ReturnValue;            // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_316E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5567[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_GetModifiedHomebaseRating_Rating;         // 0x14(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetModifiedHomebaseRating_ProgressFraction; // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetModifiedHomebaseRating_ReturnValue;    // 0x1C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_316F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5568[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Conv_BoolToText_ReturnValue;              // 0x20(0x18)()
 	class FText                                  CallFunc_Conv_BoolToText_ReturnValue1;             // 0x38(0x18)()
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x50(0x40)(HasGetValueTypeHash)
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1;             // 0x90(0x40)(HasGetValueTypeHash)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData12;            // 0xD0(0x40)(HasGetValueTypeHash)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData123;           // 0x110(0x40)(HasGetValueTypeHash)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1234;          // 0x150(0x40)(HasGetValueTypeHash)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData12345;         // 0x190(0x40)(HasGetValueTypeHash)
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData2;             // 0xD0(0x40)(HasGetValueTypeHash)
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData3;             // 0x110(0x40)(HasGetValueTypeHash)
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData4;             // 0x150(0x40)(HasGetValueTypeHash)
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData5;             // 0x190(0x40)(HasGetValueTypeHash)
 	int32                                        CallFunc_GetTotalHomebaseRating_Rating;            // 0x1D0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetTotalHomebaseRating_ProgressFraction;  // 0x1D4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetTotalHomebaseRating_ReturnValue;       // 0x1D8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3170[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData123456;        // 0x1E0(0x40)(HasGetValueTypeHash)
-	class FText                                  CallFunc_Conv_BoolToText_ReturnValue12;            // 0x220(0x18)()
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData1234567;       // 0x238(0x40)(HasGetValueTypeHash)
-	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData12345678;      // 0x278(0x40)(HasGetValueTypeHash)
+	uint8                                        Pad_5569[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData6;             // 0x1E0(0x40)(HasGetValueTypeHash)
+	class FText                                  CallFunc_Conv_BoolToText_ReturnValue2;             // 0x220(0x18)()
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData7;             // 0x238(0x40)(HasGetValueTypeHash)
+	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData8;             // 0x278(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x2B8(0x10)(ZeroConstructor, ReferenceParm)
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0x2C8(0x18)()
 	class FString                                CallFunc_Conv_TextToString_ReturnValue;            // 0x2E0(0x10)(ZeroConstructor, HasGetValueTypeHash)
@@ -105,12 +114,12 @@ public:
 struct UPowerWidget_C_SetState_Params
 {
 public:
-	bool                                         Passthrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3171[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	bool                                         PassThrough;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_556A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x8(0x88)()
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush1;                     // 0x90(0x88)()
-	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush12;                    // 0x118(0x88)()
-	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush123;                   // 0x1A0(0x88)()
+	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush2;                     // 0x118(0x88)()
+	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush3;                     // 0x1A0(0x88)()
 	bool                                         CallFunc_PlayerHasTeammates_ReturnValue;           // 0x228(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x229(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -121,33 +130,33 @@ struct UPowerWidget_C_UpdateProgress_Params
 {
 public:
 	bool                                         IsIncreasing;                                      // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3172[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_556B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        NewProgressValue;                                  // 0x4(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        NewRatingValue;                                    // 0x8(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        CallFunc_GetHomebaseRating_Rating;                 // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetHomebaseRating_ProgressFraction;       // 0x10(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetHomebaseRating_ReturnValue;            // 0x14(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3173[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_556C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_GetHomebaseRating_Rating1;                // 0x18(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetHomebaseRating_ProgressFraction1;      // 0x1C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetHomebaseRating_ReturnValue1;           // 0x20(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3174[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_556D[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_GetModifiedHomebaseRating_Rating;         // 0x24(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetModifiedHomebaseRating_ProgressFraction; // 0x28(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetModifiedHomebaseRating_ReturnValue;    // 0x2C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3175[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_556E[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_GetModifiedHomebaseRating_Rating1;        // 0x30(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetModifiedHomebaseRating_ProgressFraction1; // 0x34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetModifiedHomebaseRating_ReturnValue1;   // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3176[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_GetHomebaseRating_Rating12;               // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetHomebaseRating_ProgressFraction12;     // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetHomebaseRating_ReturnValue12;          // 0x44(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3177[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_556F[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	int32                                        CallFunc_GetHomebaseRating_Rating2;                // 0x3C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetHomebaseRating_ProgressFraction2;      // 0x40(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetHomebaseRating_ReturnValue2;           // 0x44(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5570[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Subtract_FloatFloat_ReturnValue;          // 0x48(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        CallFunc_GetModifiedHomebaseRating_Rating12;       // 0x4C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_GetModifiedHomebaseRating_ProgressFraction12; // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetModifiedHomebaseRating_ReturnValue12;  // 0x54(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                        CallFunc_GetModifiedHomebaseRating_Rating2;        // 0x4C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetModifiedHomebaseRating_ProgressFraction2; // 0x50(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetModifiedHomebaseRating_ReturnValue2;   // 0x54(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x55(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_PlayerHasTeammates_ReturnValue;           // 0x56(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -160,34 +169,34 @@ public:
 	int32                                        CallFunc_GetHomebaseRating_Rating;                 // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetHomebaseRating_ProgressFraction;       // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetHomebaseRating_ReturnValue;            // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3178[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5571[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FFormatArgumentData                   K2Node_MakeStruct_FormatArgumentData;              // 0x10(0x40)(HasGetValueTypeHash)
 	TArray<struct FFormatArgumentData>           K2Node_MakeArray_Array;                            // 0x50(0x10)(ZeroConstructor, ReferenceParm)
 	bool                                         CallFunc_Greater_FloatFloat_ReturnValue;           // 0x60(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3179[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5572[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_Format_ReturnValue;                       // 0x68(0x18)()
 	int32                                        CallFunc_GetModifiedHomebaseRating_Rating;         // 0x80(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetModifiedHomebaseRating_ProgressFraction; // 0x84(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetModifiedHomebaseRating_ReturnValue;    // 0x88(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_317A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5573[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        CallFunc_GetHomebaseRating_Rating1;                // 0x8C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_GetHomebaseRating_ProgressFraction1;      // 0x90(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_GetHomebaseRating_ReturnValue1;           // 0x94(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_317B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_5574[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        CallFunc_Conv_IntToFloat_ReturnValue;              // 0x98(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        CallFunc_Conv_IntToFloat_ReturnValue1;             // 0x9C(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_Conv_IntToFloat_ReturnValue12;            // 0xA0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        CallFunc_Conv_IntToFloat_ReturnValue123;           // 0xA4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Conv_IntToFloat_ReturnValue2;             // 0xA0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Conv_IntToFloat_ReturnValue3;             // 0xA4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_PlayerHasTeammates_ReturnValue;           // 0xA8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Greater_FloatFloat_ReturnValue1;          // 0xA9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x1F8 (0x1F8 - 0x0)
+// 0x200 (0x200 - 0x0)
 // Function PowerWidget.PowerWidget_C.OnPlayerInfoChanged
 struct UPowerWidget_C_OnPlayerInfoChanged_Params
 {
 public:
-	struct FFortTeamMemberInfo                   NewInfo;                                           // 0x0(0x1F8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                   NewInfo;                                           // 0x0(0x200)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -205,7 +214,14 @@ struct UPowerWidget_C_Construct_Params
 public:
 };
 
-// 0x298 (0x298 - 0x0)
+// 0x0 (0x0 - 0x0)
+// Function PowerWidget.PowerWidget_C.OnPlayerAttributesChanged
+struct UPowerWidget_C_OnPlayerAttributesChanged_Params
+{
+public:
+};
+
+// 0x2A0 (0x2A0 - 0x0)
 // Function PowerWidget.PowerWidget_C.ExecuteUbergraph_PowerWidget
 struct UPowerWidget_C_ExecuteUbergraph_PowerWidget_Params
 {
@@ -214,17 +230,17 @@ public:
 	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ESlateVisibility                  Temp_byte_Variable1;                               // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_317C[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFortTeamMemberInfo                   K2Node_Event_NewInfo;                              // 0x8(0x1F8)(HasGetValueTypeHash)
-	class UFortPartyContext*                     CallFunc_GetContext_ReturnValue;                   // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_SetState_PassThrough;                     // 0x208(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	enum class EFortPartyMemberDisplayState      CallFunc_GetPartyMemberDisplayState_ReturnValue;   // 0x209(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x20A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         K2Node_Event_IsDesignTime;                         // 0x20B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_SetState_PassThrough1;                    // 0x20C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x20D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_317D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x210(0x88)()
+	uint8                                        Pad_5575[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFortTeamMemberInfo                   K2Node_Event_NewInfo;                              // 0x8(0x200)(HasGetValueTypeHash)
+	class UFortPartyContext*                     CallFunc_GetContext_ReturnValue;                   // 0x208(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_SetState_PassThrough;                     // 0x210(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class EFortPartyMemberDisplayState      CallFunc_GetPartyMemberDisplayState_ReturnValue;   // 0x211(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x212(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         K2Node_Event_IsDesignTime;                         // 0x213(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_SetState_PassThrough1;                    // 0x214(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x215(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5576[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x218(0x88)()
 };
 
 // 0x0 (0x0 - 0x0)

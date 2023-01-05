@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_Constructor_NeuroFeedbackLoopApplied.GE_Constructor_NeuroFeedbackLoopApplied_C
 class UGE_Constructor_NeuroFeedbackLoopApplied_C : public UGameplayEffect
 {

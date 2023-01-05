@@ -25,7 +25,15 @@ public:
 	bool                                         bAnimateOnSelect;                                  // 0x1(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x7 (0x7 - 0x0)
+// 0x18 (0x18 - 0x0)
+// Function GiftingUserItem.GiftingUserItem_C.UpdateMessageText
+struct UGiftingUserItem_C_UpdateMessageText_Params
+{
+public:
+	class FText                                  NewMessage;                                        // 0x0(0x18)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+
+// 0x29 (0x29 - 0x0)
 // Function GiftingUserItem.GiftingUserItem_C.ExecuteUbergraph_GiftingUserItem
 struct UGiftingUserItem_C_ExecuteUbergraph_GiftingUserItem_Params
 {
@@ -34,6 +42,10 @@ public:
 	enum class ESelectionState                   K2Node_Event_NewState;                             // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_Event_bAnimateOnSelect;                     // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_SwitchEnum_CmpSuccess;                      // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_51B9[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UUMGSequencePlayer*                    CallFunc_PlayAnimation_ReturnValue;                // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                  K2Node_Event_NewMessage;                           // 0x10(0x18)(ConstParm)
+	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x28(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

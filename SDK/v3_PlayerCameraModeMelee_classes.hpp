@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass v3_PlayerCameraModeMelee.v3_PlayerCameraModeMelee_C
 class UV3_PlayerCameraModeMelee_C : public UV3_PlayerCameraModeBase_C
 {

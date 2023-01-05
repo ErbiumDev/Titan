@@ -15,33 +15,47 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function RewardsIcon.RewardsIcon_C.OnMouseButtonDown
+// (BlueprintCosmetic, Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// struct FPointerEvent               MouseEvent                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
+// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
+
+struct FEventReply URewardsIcon_C::OnMouseButtonDown(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
+{
+	static auto Func = Class->GetFunction("RewardsIcon_C", "OnMouseButtonDown");
+
+	Params::URewardsIcon_C_OnMouseButtonDown_Params Parms;
+	Parms.MyGeometry = MyGeometry;
+	Parms.MouseEvent = MouseEvent;
+	Parms.CallFunc_Handled_ReturnValue = CallFunc_Handled_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
 // Function RewardsIcon.RewardsIcon_C.PopulateFromItemCacheData
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UFortRewardItemCacheData*    K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TSoftObjectPtr<class UTexture2D>   CallFunc_GetLargePreviewImage_ReturnValue                        (HasGetValueTypeHash)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                     CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture2D*                  K2Node_DynamicCast_AsTexture_2D                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsValid_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewardsIcon_C::PopulateFromItemCacheData(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortRewardItemCacheData* K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data, bool K2Node_DynamicCast_bSuccess, TSoftObjectPtr<class UTexture2D> CallFunc_GetLargePreviewImage_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess1, bool CallFunc_IsValid_ReturnValue1)
+void URewardsIcon_C::PopulateFromItemCacheData(class UFortRewardItemCacheData* K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data, bool K2Node_DynamicCast_bSuccess, TSoftObjectPtr<class UTexture2D> CallFunc_GetLargePreviewImage_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "PopulateFromItemCacheData");
 
 	Params::URewardsIcon_C_PopulateFromItemCacheData_Params Parms;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data = K2Node_DynamicCast_AsFort_Reward_Item_Cache_Data;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetLargePreviewImage_ReturnValue = CallFunc_GetLargePreviewImage_ReturnValue;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue = CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue;
-	Parms.K2Node_DynamicCast_AsTexture_2D = K2Node_DynamicCast_AsTexture_2D;
-	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
-	Parms.CallFunc_IsValid_ReturnValue1 = CallFunc_IsValid_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -51,32 +65,20 @@ void URewardsIcon_C::PopulateFromItemCacheData(UDelegateProperty_ K2Node_CreateD
 // Function RewardsIcon.RewardsIcon_C.PopulateFromGiftBoxData
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortRewardGiftBoxData*      K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortGiftBoxItemDefinition*  CallFunc_GetGiftBoxDefinition_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMaterialInterface*          K2Node_DynamicCast_AsMaterial_Interface                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UTexture2D*                  K2Node_DynamicCast_AsTexture_2D                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UMaterialInstanceDynamic*    CallFunc_CreateDynamicMaterialInstance_ReturnValue1              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValidSoftObjectReference_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewardsIcon_C::PopulateFromGiftBoxData(class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, class UFortRewardGiftBoxData* K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data, bool K2Node_DynamicCast_bSuccess, class UFortGiftBoxItemDefinition* CallFunc_GetGiftBoxDefinition_ReturnValue, class UObject* CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue, class UMaterialInterface* K2Node_DynamicCast_AsMaterial_Interface, bool K2Node_DynamicCast_bSuccess1, class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess12, class UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue1)
+void URewardsIcon_C::PopulateFromGiftBoxData(class UFortRewardGiftBoxData* K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data, bool K2Node_DynamicCast_bSuccess, class UFortGiftBoxItemDefinition* CallFunc_GetGiftBoxDefinition_ReturnValue, bool CallFunc_IsValidSoftObjectReference_ReturnValue)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "PopulateFromGiftBoxData");
 
 	Params::URewardsIcon_C_PopulateFromGiftBoxData_Params Parms;
-	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue = CallFunc_CreateDynamicMaterialInstance_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data = K2Node_DynamicCast_AsFort_Reward_Gift_Box_Data;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.CallFunc_GetGiftBoxDefinition_ReturnValue = CallFunc_GetGiftBoxDefinition_ReturnValue;
-	Parms.CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue = CallFunc_Conv_SoftObjectReferenceToObject_ReturnValue;
-	Parms.K2Node_DynamicCast_AsMaterial_Interface = K2Node_DynamicCast_AsMaterial_Interface;
-	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
-	Parms.K2Node_DynamicCast_AsTexture_2D = K2Node_DynamicCast_AsTexture_2D;
-	Parms.K2Node_DynamicCast_bSuccess12 = K2Node_DynamicCast_bSuccess12;
-	Parms.CallFunc_CreateDynamicMaterialInstance_ReturnValue1 = CallFunc_CreateDynamicMaterialInstance_ReturnValue1;
+	Parms.CallFunc_IsValidSoftObjectReference_ReturnValue = CallFunc_IsValidSoftObjectReference_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -127,16 +129,16 @@ void URewardsIcon_C::PopulateFromMissionAlertRewards(class UFortRewardMissionAle
 // enum class EFrontEndRewardType     Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123456                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234567                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345678                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewardsIcon_C::Play_Show_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable123, class USoundBase* Temp_object_Variable1234, class USoundBase* Temp_object_Variable12345, class USoundBase* Temp_object_Variable123456, class USoundBase* Temp_object_Variable1234567, class USoundBase* Temp_object_Variable12345678, class USoundBase* K2Node_Select_Default)
+void URewardsIcon_C::Play_Show_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable2, class USoundBase* Temp_object_Variable3, class USoundBase* Temp_object_Variable4, class USoundBase* Temp_object_Variable5, class USoundBase* Temp_object_Variable6, class USoundBase* Temp_object_Variable7, class USoundBase* Temp_object_Variable8, class USoundBase* K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "Play Show Animation Sound");
 
@@ -144,13 +146,13 @@ void URewardsIcon_C::Play_Show_Animation_Sound(enum class EFrontEndRewardType Te
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.Temp_object_Variable1234 = Temp_object_Variable1234;
-	Parms.Temp_object_Variable12345 = Temp_object_Variable12345;
-	Parms.Temp_object_Variable123456 = Temp_object_Variable123456;
-	Parms.Temp_object_Variable1234567 = Temp_object_Variable1234567;
-	Parms.Temp_object_Variable12345678 = Temp_object_Variable12345678;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
+	Parms.Temp_object_Variable4 = Temp_object_Variable4;
+	Parms.Temp_object_Variable5 = Temp_object_Variable5;
+	Parms.Temp_object_Variable6 = Temp_object_Variable6;
+	Parms.Temp_object_Variable7 = Temp_object_Variable7;
+	Parms.Temp_object_Variable8 = Temp_object_Variable8;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -164,16 +166,16 @@ void URewardsIcon_C::Play_Show_Animation_Sound(enum class EFrontEndRewardType Te
 // enum class EFrontEndRewardType     Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable123456                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable1234567                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class USoundBase*                  Temp_object_Variable12345678                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class USoundBase*                  Temp_object_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class USoundBase*                  K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewardsIcon_C::Play_Hide_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable12, class USoundBase* Temp_object_Variable123, class USoundBase* Temp_object_Variable1234, class USoundBase* Temp_object_Variable12345, class USoundBase* Temp_object_Variable123456, class USoundBase* Temp_object_Variable1234567, class USoundBase* Temp_object_Variable12345678, class USoundBase* K2Node_Select_Default)
+void URewardsIcon_C::Play_Hide_Animation_Sound(enum class EFrontEndRewardType Temp_byte_Variable, class USoundBase* Temp_object_Variable, class USoundBase* Temp_object_Variable1, class USoundBase* Temp_object_Variable2, class USoundBase* Temp_object_Variable3, class USoundBase* Temp_object_Variable4, class USoundBase* Temp_object_Variable5, class USoundBase* Temp_object_Variable6, class USoundBase* Temp_object_Variable7, class USoundBase* Temp_object_Variable8, class USoundBase* K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "Play Hide Animation Sound");
 
@@ -181,13 +183,13 @@ void URewardsIcon_C::Play_Hide_Animation_Sound(enum class EFrontEndRewardType Te
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.Temp_object_Variable1234 = Temp_object_Variable1234;
-	Parms.Temp_object_Variable12345 = Temp_object_Variable12345;
-	Parms.Temp_object_Variable123456 = Temp_object_Variable123456;
-	Parms.Temp_object_Variable1234567 = Temp_object_Variable1234567;
-	Parms.Temp_object_Variable12345678 = Temp_object_Variable12345678;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
+	Parms.Temp_object_Variable4 = Temp_object_Variable4;
+	Parms.Temp_object_Variable5 = Temp_object_Variable5;
+	Parms.Temp_object_Variable6 = Temp_object_Variable6;
+	Parms.Temp_object_Variable7 = Temp_object_Variable7;
+	Parms.Temp_object_Variable8 = Temp_object_Variable8;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -198,38 +200,16 @@ void URewardsIcon_C::Play_Hide_Animation_Sound(enum class EFrontEndRewardType Te
 // Function RewardsIcon.RewardsIcon_C.PlayShowAnimation
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewardsIcon_C::PlayShowAnimation()
+void URewardsIcon_C::PlayShowAnimation(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "PlayShowAnimation");
 
 	Params::URewardsIcon_C_PlayShowAnimation_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function RewardsIcon.RewardsIcon_C.On_ImageIcon_MouseButtonDown_0
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
-// struct FPointerEvent               MouseEvent                                                       (BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
-// struct FEventReply                 ReturnValue                                                      (Parm, OutParm, ReturnParm)
-// struct FEventReply                 CallFunc_Handled_ReturnValue                                     ()
-
-struct FEventReply URewardsIcon_C::On_ImageIcon_MouseButtonDown_0(const struct FGeometry& MyGeometry, struct FPointerEvent& MouseEvent, const struct FEventReply& CallFunc_Handled_ReturnValue)
-{
-	static auto Func = Class->GetFunction("RewardsIcon_C", "On_ImageIcon_MouseButtonDown_0");
-
-	Params::URewardsIcon_C_On_ImageIcon_MouseButtonDown_0_Params Parms;
-	Parms.MyGeometry = MyGeometry;
-	Parms.MouseEvent = MouseEvent;
-	Parms.CallFunc_Handled_ReturnValue = CallFunc_Handled_ReturnValue;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
 
 }
 
@@ -433,7 +413,7 @@ void URewardsIcon_C::PopulateFromLootLevel(int32 LootLevel, class UTexture2D** T
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // float                              CallFunc_BreakVector2D_X                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_BreakVector2D_Y                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsIcon_C::PlaySlideAnimation(float TargetTranslation, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue, float CallFunc_GetGameTimeInSeconds_ReturnValue)
@@ -454,7 +434,7 @@ void URewardsIcon_C::PlaySlideAnimation(float TargetTranslation, UDelegateProper
 
 
 // Function RewardsIcon.RewardsIcon_C.TickSlideAnimation
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // float                              CallFunc_GetGameTimeInSeconds_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_Subtract_FloatFloat_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -464,7 +444,7 @@ void URewardsIcon_C::PlaySlideAnimation(float TargetTranslation, UDelegateProper
 // float                              CallFunc_FMin_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_FloatFloat_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // float                              CallFunc_Ease_ReturnValue                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void URewardsIcon_C::TickSlideAnimation(float CallFunc_GetGameTimeInSeconds_ReturnValue, float CallFunc_Subtract_FloatFloat_ReturnValue, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, float CallFunc_Divide_FloatFloat_ReturnValue, float CallFunc_FMin_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_Ease_ReturnValue, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue)
 {
@@ -534,23 +514,23 @@ void URewardsIcon_C::HandleHideAnimationFinished()
 
 
 // Function RewardsIcon.RewardsIcon_C.PopulateFromReward
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortRewardNotificationData* InRewardItem                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                TintColor                                                        (Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FLinearColor                TintColor                                                        (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UTexture2D*                  CallFunc_PopulateFromRandomLootLevel_Texture                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewardsIcon_C::PopulateFromReward(class UFortRewardNotificationData* InRewardItem, const struct FLinearColor& TintColor, bool CallFunc_IsValid_ReturnValue, class UTexture2D* CallFunc_PopulateFromRandomLootLevel_Texture, bool K2Node_SwitchEnum_CmpSuccess)
+void URewardsIcon_C::PopulateFromReward(class UFortRewardNotificationData* InRewardItem, const struct FLinearColor& TintColor, class UTexture2D* CallFunc_PopulateFromRandomLootLevel_Texture, bool CallFunc_IsValid_ReturnValue, bool K2Node_SwitchEnum_CmpSuccess)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "PopulateFromReward");
 
 	Params::URewardsIcon_C_PopulateFromReward_Params Parms;
 	Parms.InRewardItem = InRewardItem;
 	Parms.TintColor = TintColor;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_PopulateFromRandomLootLevel_Texture = CallFunc_PopulateFromRandomLootLevel_Texture;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -574,17 +554,19 @@ void URewardsIcon_C::Cleanup()
 
 
 // Function RewardsIcon.RewardsIcon_C.PlayHideAnimation
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsAnimationPlaying_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewardsIcon_C::PlayHideAnimation(const struct FLinearColor& K2Node_MakeStruct_LinearColor, bool CallFunc_IsAnimationPlaying_ReturnValue)
+void URewardsIcon_C::PlayHideAnimation(const struct FLinearColor& K2Node_MakeStruct_LinearColor, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, bool CallFunc_IsAnimationPlaying_ReturnValue)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "PlayHideAnimation");
 
 	Params::URewardsIcon_C_PlayHideAnimation_Params Parms;
 	Parms.K2Node_MakeStruct_LinearColor = K2Node_MakeStruct_LinearColor;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_IsAnimationPlaying_ReturnValue = CallFunc_IsAnimationPlaying_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -641,34 +623,15 @@ void URewardsIcon_C::WhiteFadeOut(float Percent)
 }
 
 
-// Function RewardsIcon.RewardsIcon_C.BndEvt__LoadGuard_K2Node_ComponentBoundEvent_2_OnLoadingStateChanged__DelegateSignature
-// (BlueprintEvent)
+// Function RewardsIcon.RewardsIcon_C.Destruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
-// bool                               bIsLoading                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void URewardsIcon_C::BndEvt__LoadGuard_K2Node_ComponentBoundEvent_2_OnLoadingStateChanged__DelegateSignature(bool bIsLoading)
+void URewardsIcon_C::Destruct()
 {
-	static auto Func = Class->GetFunction("RewardsIcon_C", "BndEvt__LoadGuard_K2Node_ComponentBoundEvent_2_OnLoadingStateChanged__DelegateSignature");
+	static auto Func = Class->GetFunction("RewardsIcon_C", "Destruct");
 
-	Params::URewardsIcon_C_BndEvt__LoadGuard_K2Node_ComponentBoundEvent_2_OnLoadingStateChanged__DelegateSignature_Params Parms;
-	Parms.bIsLoading = bIsLoading;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function RewardsIcon.RewardsIcon_C.OnAssetLoaded
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                     Object                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void URewardsIcon_C::OnAssetLoaded(class UObject* Object)
-{
-	static auto Func = Class->GetFunction("RewardsIcon_C", "OnAssetLoaded");
-
-	Params::URewardsIcon_C_OnAssetLoaded_Params Parms;
-	Parms.Object = Object;
+	Params::URewardsIcon_C_Destruct_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -676,21 +639,16 @@ void URewardsIcon_C::OnAssetLoaded(class UObject* Object)
 
 
 // Function RewardsIcon.RewardsIcon_C.ExecuteUbergraph_RewardsIcon
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_CustomEvent_percent                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_ComponentBoundEvent_bIsLoading                            (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_Conv_BoolToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_CustomEvent_Object                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UTexture*                    K2Node_DynamicCast_AsTexture                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void URewardsIcon_C::ExecuteUbergraph_RewardsIcon(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, bool K2Node_Event_IsDesignTime, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, float K2Node_CustomEvent_percent, bool K2Node_ComponentBoundEvent_bIsLoading, int32 CallFunc_Conv_BoolToInt_ReturnValue, class UObject* K2Node_CustomEvent_Object, class UTexture* K2Node_DynamicCast_AsTexture, bool K2Node_DynamicCast_bSuccess)
+void URewardsIcon_C::ExecuteUbergraph_RewardsIcon(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, bool K2Node_Event_IsDesignTime, float K2Node_CustomEvent_percent, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue)
 {
 	static auto Func = Class->GetFunction("RewardsIcon_C", "ExecuteUbergraph_RewardsIcon");
 
@@ -699,13 +657,8 @@ void URewardsIcon_C::ExecuteUbergraph_RewardsIcon(int32 EntryPoint, UDelegatePro
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
-	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 	Parms.K2Node_CustomEvent_percent = K2Node_CustomEvent_percent;
-	Parms.K2Node_ComponentBoundEvent_bIsLoading = K2Node_ComponentBoundEvent_bIsLoading;
-	Parms.CallFunc_Conv_BoolToInt_ReturnValue = CallFunc_Conv_BoolToInt_ReturnValue;
-	Parms.K2Node_CustomEvent_Object = K2Node_CustomEvent_Object;
-	Parms.K2Node_DynamicCast_AsTexture = K2Node_DynamicCast_AsTexture;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
+	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

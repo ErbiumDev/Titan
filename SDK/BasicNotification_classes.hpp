@@ -12,11 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xA0 - 0xA0)
+// 0x88 (0x128 - 0xA0)
 // BlueprintGeneratedClass BasicNotification.BasicNotification_C
 class UBasicNotification_C : public UFortUINotification
 {
 public:
+	struct FSlateBrush                           Image;                                             // 0xA0(0x88)(Edit, BlueprintVisible, ExposeOnSpawn)
 
 	static class UClass* StaticClass()
 	{
@@ -24,6 +25,7 @@ public:
 		return Clss;
 	}
 
+	class UTexture2D* GetImageOverride(class UTexture2D* K2Node_DynamicCast_AsTexture_2D, bool K2Node_DynamicCast_bSuccess, bool K2Node_SwitchEnum_CmpSuccess);
 };
 
 }

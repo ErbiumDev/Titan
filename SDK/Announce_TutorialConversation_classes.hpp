@@ -12,13 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0x550 - 0x538)
+// 0x18 (0x588 - 0x570)
 // BlueprintGeneratedClass Announce_TutorialConversation.Announce_TutorialConversation_C
 class AAnnounce_TutorialConversation_C : public AFortClientAnnouncement_TutorialConversation
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x538(0x8)(Transient, DuplicateTransient)
-	TArray<struct FTutorialHighlightData>        SentencedIndexedTutorialData;                      // 0x540(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x570(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<struct FTutorialHighlightData>        SentencedIndexedTutorialData;                      // 0x578(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 	static class UClass* StaticClass()
 	{

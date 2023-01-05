@@ -31,7 +31,7 @@ void UInviteEventTitle_C::Construct()
 
 
 // Function InviteEventTitle.InviteEventTitle_C.ExecuteUbergraph_InviteEventTitle
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortRuntimeOptions*         CallFunc_GetRuntimeOptions_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -45,16 +45,16 @@ class UWidget* UPerkWidget_C::CreateToolTipWidget(class FText CallFunc_GetToolti
 // enum class EFortSupportBonusType   Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        Temp_text_Variable                                               ()
 // class FText                        Temp_text_Variable1                                              ()
-// class FText                        Temp_text_Variable12                                             ()
+// class FText                        Temp_text_Variable2                                              ()
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortSupportBonusType   CallFunc_GetSupportBonusType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_Select_Default                                            ()
 // enum class ESlateVisibility        K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetTooltipTitle_ReturnValue                             ()
 
-void UPerkWidget_C::InitializeTextInfo(enum class EFortSupportBonusType Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable1, class FText Temp_text_Variable12, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable12, enum class EFortSupportBonusType CallFunc_GetSupportBonusType_ReturnValue, class FText K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, class FText CallFunc_GetTooltipTitle_ReturnValue)
+void UPerkWidget_C::InitializeTextInfo(enum class EFortSupportBonusType Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable1, class FText Temp_text_Variable2, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable2, enum class EFortSupportBonusType CallFunc_GetSupportBonusType_ReturnValue, class FText K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, class FText CallFunc_GetTooltipTitle_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PerkWidget_C", "InitializeTextInfo");
 
@@ -62,10 +62,10 @@ void UPerkWidget_C::InitializeTextInfo(enum class EFortSupportBonusType Temp_byt
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
 	Parms.Temp_text_Variable1 = Temp_text_Variable1;
-	Parms.Temp_text_Variable12 = Temp_text_Variable12;
+	Parms.Temp_text_Variable2 = Temp_text_Variable2;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
 	Parms.CallFunc_GetSupportBonusType_ReturnValue = CallFunc_GetSupportBonusType_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
@@ -79,8 +79,8 @@ void UPerkWidget_C::InitializeTextInfo(enum class EFortSupportBonusType Temp_byt
 // Function PerkWidget.PerkWidget_C.HighlightBadge
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                CallFunc_GetHighlightColor_Color                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_GetHighlightColor_Color1                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_GetHighlightColor_Color                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_GetHighlightColor_Color1                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
 
 void UPerkWidget_C::HighlightBadge(const struct FLinearColor& CallFunc_GetHighlightColor_Color, const struct FLinearColor& CallFunc_GetHighlightColor_Color1, const struct FSlateColor& K2Node_MakeStruct_SlateColor)
@@ -111,17 +111,17 @@ void UPerkWidget_C::HighlightBadge(const struct FLinearColor& CallFunc_GetHighli
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData1                            (HasGetValueTypeHash)
 // class FText                        CallFunc_GetTierText_ReturnValue                                 ()
 // int32                              CallFunc_GetRequiredLevel_ReturnValue                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData12                           (HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData2                            (HasGetValueTypeHash)
 // class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
-// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData123                          (HasGetValueTypeHash)
+// struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData3                            (HasGetValueTypeHash)
 // class FText                        CallFunc_Format_ReturnValue                                      ()
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array1                                          (ZeroConstructor, ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue1                                     ()
 // class FText                        K2Node_Select_Default                                            ()
 // struct FTooltipStat                K2Node_MakeStruct_TooltipStat                                    (HasGetValueTypeHash)
 
-void UPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat, bool Temp_bool_Variable, enum class EFortItemTier CallFunc_GetPerkTier_ReturnValue, class FText CallFunc_GetTooltipTitle_ReturnValue, bool CallFunc_IsTierPerk_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_GetTooltipTitle_ReturnValue1, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, class FText CallFunc_GetTierText_ReturnValue, int32 CallFunc_GetRequiredLevel_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData12, class FText CallFunc_Conv_IntToText_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData123, class FText CallFunc_Format_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array1, class FText CallFunc_Format_ReturnValue1, class FText K2Node_Select_Default, const struct FTooltipStat& K2Node_MakeStruct_TooltipStat)
+void UPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat, bool Temp_bool_Variable, enum class EFortItemTier CallFunc_GetPerkTier_ReturnValue, class FText CallFunc_GetTooltipTitle_ReturnValue, bool CallFunc_IsTierPerk_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, class FText CallFunc_GetTooltipTitle_ReturnValue1, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, class FText CallFunc_GetTierText_ReturnValue, int32 CallFunc_GetRequiredLevel_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData2, class FText CallFunc_Conv_IntToText_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData3, class FText CallFunc_Format_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array1, class FText CallFunc_Format_ReturnValue1, class FText K2Node_Select_Default, const struct FTooltipStat& K2Node_MakeStruct_TooltipStat)
 {
 	static auto Func = Class->GetFunction("PerkWidget_C", "GetPerkStat");
 
@@ -136,10 +136,10 @@ void UPerkWidget_C::GetPerkStat(struct FTooltipStat* TooltipStat, bool Temp_bool
 	Parms.K2Node_MakeStruct_FormatArgumentData1 = K2Node_MakeStruct_FormatArgumentData1;
 	Parms.CallFunc_GetTierText_ReturnValue = CallFunc_GetTierText_ReturnValue;
 	Parms.CallFunc_GetRequiredLevel_ReturnValue = CallFunc_GetRequiredLevel_ReturnValue;
-	Parms.K2Node_MakeStruct_FormatArgumentData12 = K2Node_MakeStruct_FormatArgumentData12;
+	Parms.K2Node_MakeStruct_FormatArgumentData2 = K2Node_MakeStruct_FormatArgumentData2;
 	Parms.CallFunc_Conv_IntToText_ReturnValue = CallFunc_Conv_IntToText_ReturnValue;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
-	Parms.K2Node_MakeStruct_FormatArgumentData123 = K2Node_MakeStruct_FormatArgumentData123;
+	Parms.K2Node_MakeStruct_FormatArgumentData3 = K2Node_MakeStruct_FormatArgumentData3;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 	Parms.K2Node_MakeArray_Array1 = K2Node_MakeArray_Array1;
 	Parms.CallFunc_Format_ReturnValue1 = CallFunc_Format_ReturnValue1;
@@ -201,13 +201,13 @@ void UPerkWidget_C::SetupBadge(enum class EFortSupportBonusType SupportPerkType,
 // enum class EFortSupportBonusType   Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortSupportBonusType   CallFunc_GetSupportBonusType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPerkWidget_C::InitializeHeroBonusIcon(enum class EFortSupportBonusType SupportPerkType, enum class EFortSupportBonusType Temp_byte_Variable, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable1, class UObject* Temp_object_Variable12, enum class EFortSupportBonusType CallFunc_GetSupportBonusType_ReturnValue, class UObject* K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
+void UPerkWidget_C::InitializeHeroBonusIcon(enum class EFortSupportBonusType SupportPerkType, enum class EFortSupportBonusType Temp_byte_Variable, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable1, class UObject* Temp_object_Variable2, enum class EFortSupportBonusType CallFunc_GetSupportBonusType_ReturnValue, class UObject* K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, bool CallFunc_EqualEqual_ByteByte_ReturnValue)
 {
 	static auto Func = Class->GetFunction("PerkWidget_C", "InitializeHeroBonusIcon");
 
@@ -216,7 +216,7 @@ void UPerkWidget_C::InitializeHeroBonusIcon(enum class EFortSupportBonusType Sup
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
 	Parms.CallFunc_GetSupportBonusType_ReturnValue = CallFunc_GetSupportBonusType_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
@@ -280,14 +280,14 @@ void UPerkWidget_C::ShouldFadePerk(bool* Result, bool CallFunc_IsPerkHighlighted
 
 
 // Function PerkWidget.PerkWidget_C.GetHighlightColor
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor                Color                                                            (Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Color                                                            (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                Temp_struct_Variable                                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Get_Buff_Color_Color                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Buff_Color_Color                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsPerkHighlighted_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                K2Node_Select_Default                                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UPerkWidget_C::GetHighlightColor(struct FLinearColor* Color, bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, const struct FLinearColor& CallFunc_Get_Buff_Color_Color, bool CallFunc_IsPerkHighlighted_ReturnValue, const struct FLinearColor& K2Node_Select_Default)
 {
@@ -315,20 +315,20 @@ void UPerkWidget_C::GetHighlightColor(struct FLinearColor* Color, bool Temp_bool
 // enum class EFortItemTier           Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     Temp_object_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable123                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable1234                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable12345                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable123456                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable1234567                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable12345678                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable123456789                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     Temp_object_Variable12345678910                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable9                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     Temp_object_Variable10                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemTier           CallFunc_GetPerkTier_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
 
-void UPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush, enum class EFortItemTier Temp_byte_Variable, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable1, class UObject* Temp_object_Variable12, class UObject* Temp_object_Variable123, class UObject* Temp_object_Variable1234, class UObject* Temp_object_Variable12345, class UObject* Temp_object_Variable123456, class UObject* Temp_object_Variable1234567, class UObject* Temp_object_Variable12345678, class UObject* Temp_object_Variable123456789, class UObject* Temp_object_Variable12345678910, enum class EFortItemTier CallFunc_GetPerkTier_ReturnValue, class UObject* K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush)
+void UPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush, enum class EFortItemTier Temp_byte_Variable, class UObject* Temp_object_Variable, class UObject* Temp_object_Variable1, class UObject* Temp_object_Variable2, class UObject* Temp_object_Variable3, class UObject* Temp_object_Variable4, class UObject* Temp_object_Variable5, class UObject* Temp_object_Variable6, class UObject* Temp_object_Variable7, class UObject* Temp_object_Variable8, class UObject* Temp_object_Variable9, class UObject* Temp_object_Variable10, enum class EFortItemTier CallFunc_GetPerkTier_ReturnValue, class UObject* K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush)
 {
 	static auto Func = Class->GetFunction("PerkWidget_C", "GetTierAbilityBrush");
 
@@ -336,15 +336,15 @@ void UPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush, enum cla
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_object_Variable = Temp_object_Variable;
 	Parms.Temp_object_Variable1 = Temp_object_Variable1;
-	Parms.Temp_object_Variable12 = Temp_object_Variable12;
-	Parms.Temp_object_Variable123 = Temp_object_Variable123;
-	Parms.Temp_object_Variable1234 = Temp_object_Variable1234;
-	Parms.Temp_object_Variable12345 = Temp_object_Variable12345;
-	Parms.Temp_object_Variable123456 = Temp_object_Variable123456;
-	Parms.Temp_object_Variable1234567 = Temp_object_Variable1234567;
-	Parms.Temp_object_Variable12345678 = Temp_object_Variable12345678;
-	Parms.Temp_object_Variable123456789 = Temp_object_Variable123456789;
-	Parms.Temp_object_Variable12345678910 = Temp_object_Variable12345678910;
+	Parms.Temp_object_Variable2 = Temp_object_Variable2;
+	Parms.Temp_object_Variable3 = Temp_object_Variable3;
+	Parms.Temp_object_Variable4 = Temp_object_Variable4;
+	Parms.Temp_object_Variable5 = Temp_object_Variable5;
+	Parms.Temp_object_Variable6 = Temp_object_Variable6;
+	Parms.Temp_object_Variable7 = Temp_object_Variable7;
+	Parms.Temp_object_Variable8 = Temp_object_Variable8;
+	Parms.Temp_object_Variable9 = Temp_object_Variable9;
+	Parms.Temp_object_Variable10 = Temp_object_Variable10;
 	Parms.CallFunc_GetPerkTier_ReturnValue = CallFunc_GetPerkTier_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
@@ -363,7 +363,7 @@ void UPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush, enum cla
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_GetHighlightColor_Color                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_GetHighlightColor_Color                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
 // bool                               CallFunc_IsPerkHighlighted_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -371,9 +371,9 @@ void UPerkWidget_C::GetTierAbilityBrush(struct FSlateBrush* SlateBrush, enum cla
 // struct FSlateBrush                 CallFunc_GetIcon_Brush                                           ()
 // bool                               CallFunc_GetIcon_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FSlateBrush                 K2Node_Select1_Default                                           ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_NewParam                                    ()
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                ()
 
-void UPerkWidget_C::InitializeAbilityPerk(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, const struct FLinearColor& CallFunc_GetHighlightColor_Color, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, bool CallFunc_IsPerkHighlighted_ReturnValue, bool Temp_bool_Variable1, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateBrush& CallFunc_GetIcon_Brush, bool CallFunc_GetIcon_ReturnValue, const struct FSlateBrush& K2Node_Select1_Default, const struct FSlateBrush& CallFunc_ResizeBrush_NewParam)
+void UPerkWidget_C::InitializeAbilityPerk(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, const struct FLinearColor& CallFunc_GetHighlightColor_Color, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, bool CallFunc_IsPerkHighlighted_ReturnValue, bool Temp_bool_Variable1, enum class ESlateVisibility K2Node_Select_Default, const struct FSlateBrush& CallFunc_GetIcon_Brush, bool CallFunc_GetIcon_ReturnValue, const struct FSlateBrush& K2Node_Select1_Default, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush)
 {
 	static auto Func = Class->GetFunction("PerkWidget_C", "InitializeAbilityPerk");
 
@@ -389,7 +389,7 @@ void UPerkWidget_C::InitializeAbilityPerk(bool Temp_bool_Variable, enum class ES
 	Parms.CallFunc_GetIcon_Brush = CallFunc_GetIcon_Brush;
 	Parms.CallFunc_GetIcon_ReturnValue = CallFunc_GetIcon_ReturnValue;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
-	Parms.CallFunc_ResizeBrush_NewParam = CallFunc_ResizeBrush_NewParam;
+	Parms.CallFunc_ResizeBrush_ResizedBrush = CallFunc_ResizeBrush_ResizedBrush;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -399,15 +399,15 @@ void UPerkWidget_C::InitializeAbilityPerk(bool Temp_bool_Variable, enum class ES
 // Function PerkWidget.PerkWidget_C.InitializeBasicPerk
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FLinearColor                CallFunc_GetHighlightColor_Color                                 (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_GetHighlightColor_Color                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 CallFunc_NoResourceBrush_ReturnValue                             ()
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FSlateBrush                 CallFunc_GetIcon_Brush                                           ()
 // bool                               CallFunc_GetIcon_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FSlateBrush                 K2Node_Select_Default                                            ()
-// struct FSlateBrush                 CallFunc_ResizeBrush_NewParam                                    ()
+// struct FSlateBrush                 CallFunc_ResizeBrush_ResizedBrush                                ()
 
-void UPerkWidget_C::InitializeBasicPerk(const struct FLinearColor& CallFunc_GetHighlightColor_Color, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue, bool Temp_bool_Variable, const struct FSlateBrush& CallFunc_GetIcon_Brush, bool CallFunc_GetIcon_ReturnValue, const struct FSlateBrush& K2Node_Select_Default, const struct FSlateBrush& CallFunc_ResizeBrush_NewParam)
+void UPerkWidget_C::InitializeBasicPerk(const struct FLinearColor& CallFunc_GetHighlightColor_Color, const struct FSlateBrush& CallFunc_NoResourceBrush_ReturnValue, bool Temp_bool_Variable, const struct FSlateBrush& CallFunc_GetIcon_Brush, bool CallFunc_GetIcon_ReturnValue, const struct FSlateBrush& K2Node_Select_Default, const struct FSlateBrush& CallFunc_ResizeBrush_ResizedBrush)
 {
 	static auto Func = Class->GetFunction("PerkWidget_C", "InitializeBasicPerk");
 
@@ -418,7 +418,7 @@ void UPerkWidget_C::InitializeBasicPerk(const struct FLinearColor& CallFunc_GetH
 	Parms.CallFunc_GetIcon_Brush = CallFunc_GetIcon_Brush;
 	Parms.CallFunc_GetIcon_ReturnValue = CallFunc_GetIcon_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.CallFunc_ResizeBrush_NewParam = CallFunc_ResizeBrush_NewParam;
+	Parms.CallFunc_ResizeBrush_ResizedBrush = CallFunc_ResizeBrush_ResizedBrush;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -490,12 +490,12 @@ void UPerkWidget_C::OnTooltipDescriptionReady(TArray<class FText>& DescriptionLi
 
 
 // Function PerkWidget.PerkWidget_C.ExecuteUbergraph_PerkWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
 // bool                               CallFunc_ShouldFadePerk_Result                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                K2Node_MakeStruct_LinearColor                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_HasAbility_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // TArray<class FText>                K2Node_Event_DescriptionList                                     (ConstParm, ZeroConstructor, ReferenceParm)

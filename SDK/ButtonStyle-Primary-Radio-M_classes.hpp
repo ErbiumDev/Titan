@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Primary-Radio-M.ButtonStyle-Primary-Radio-M_C
 class UButtonStyle_Primary_Radio_M_C : public UCommonButtonStyle
 {

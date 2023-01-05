@@ -15,70 +15,16 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.DoesItemHaveChildren
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UOptionsMenuInput_C::DoesItemHaveChildren()
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "DoesItemHaveChildren");
-
-	Params::UOptionsMenuInput_C_DoesItemHaveChildren_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.GetIndentLevel
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UOptionsMenuInput_C::GetIndentLevel()
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "GetIndentLevel");
-
-	Params::UOptionsMenuInput_C_GetIndentLevel_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.IsItemExpanded
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UOptionsMenuInput_C::IsItemExpanded()
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "IsItemExpanded");
-
-	Params::UOptionsMenuInput_C_IsItemExpanded_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.GetData
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function OptionsMenuInput.OptionsMenuInput_C.GetListItemObject
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // class UObject*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UObject* UOptionsMenuInput_C::GetData()
+class UObject* UOptionsMenuInput_C::GetListItemObject()
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "GetData");
+	static auto Func = Class->GetFunction("OptionsMenuInput_C", "GetListItemObject");
 
-	Params::UOptionsMenuInput_C_GetData_Params Parms;
+	Params::UOptionsMenuInput_C_GetListItemObject_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -154,117 +100,17 @@ void UOptionsMenuInput_C::Center_on_Widget(class UFortUINavigationManager* CallF
 }
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.SetIndexInList
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function OptionsMenuInput.OptionsMenuInput_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// int32                              InIndexInList                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenuInput_C::SetIndexInList(int32 InIndexInList)
+void UOptionsMenuInput_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "SetIndexInList");
+	static auto Func = Class->GetFunction("OptionsMenuInput_C", "OnListItemObjectSet");
 
-	Params::UOptionsMenuInput_C_SetIndexInList_Params Parms;
-	Parms.InIndexInList = InIndexInList;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.SetSelected
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               bSelected                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UOptionsMenuInput_C::SetSelected(bool bSelected)
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "SetSelected");
-
-	Params::UOptionsMenuInput_C_SetSelected_Params Parms;
-	Parms.bSelected = bSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.ToggleExpansion
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UOptionsMenuInput_C::ToggleExpansion()
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "ToggleExpansion");
-
-	Params::UOptionsMenuInput_C_ToggleExpansion_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.Reset
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UOptionsMenuInput_C::Reset()
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "Reset");
-
-	Params::UOptionsMenuInput_C_Reset_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*               Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuInput_C::BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
-
-	Params::UOptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature_Params Parms;
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class UCommonButton*               Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuInput_C::BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
-
-	Params::UOptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature_Params Parms;
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                     InData                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             OwningList                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UOptionsMenuInput_C::SetData(class UObject* InData, class UCommonListView* OwningList)
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "SetData");
-
-	Params::UOptionsMenuInput_C_SetData_Params Parms;
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Params::UOptionsMenuInput_C_OnListItemObjectSet_Params Parms;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -324,79 +170,83 @@ void UOptionsMenuInput_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_226_
 }
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.SetExpanded
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// bool                               bExpanded                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UCommonButton*               Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenuInput_C::SetExpanded(bool bExpanded)
+void UOptionsMenuInput_C::BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "SetExpanded");
+	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature");
 
-	Params::UOptionsMenuInput_C_SetExpanded_Params Parms;
-	Parms.bExpanded = bExpanded;
+	Params::UOptionsMenuInput_C_BndEvt__SecondaryInput_K2Node_ComponentBoundEvent_55_CommonButtonClicked__DelegateSignature_Params Parms;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.RegisterOnClicked
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function OptionsMenuInput.OptionsMenuInput_C.BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// UDelegateProperty_                 Callback                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+// class UCommonButton*               Button                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UOptionsMenuInput_C::RegisterOnClicked(UDelegateProperty_& Callback)
+void UOptionsMenuInput_C::BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature(class UCommonButton* Button)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "RegisterOnClicked");
+	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature");
 
-	Params::UOptionsMenuInput_C_RegisterOnClicked_Params Parms;
-	Parms.Callback = Callback;
+	Params::UOptionsMenuInput_C_BndEvt__PrimaryInput_K2Node_ComponentBoundEvent_33_CommonButtonClicked__DelegateSignature_Params Parms;
+	Parms.Button = Button;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.Private_OnExpanderArrowShiftClicked
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function OptionsMenuInput.OptionsMenuInput_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
+// bool                               bIsSelected                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsMenuInput_C::Private_OnExpanderArrowShiftClicked()
+void UOptionsMenuInput_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "Private_OnExpanderArrowShiftClicked");
+	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnItemSelectionChanged");
 
-	Params::UOptionsMenuInput_C_Private_OnExpanderArrowShiftClicked_Params Parms;
+	Params::UOptionsMenuInput_C_BP_OnItemSelectionChanged_Params Parms;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function OptionsMenuInput.OptionsMenuInput_C.OnReleaseToPool
+// Function OptionsMenuInput.OptionsMenuInput_C.BP_OnItemExpansionChanged
+// (Event, Protected, BlueprintEvent)
+// Parameters:
+// bool                               bIsExpanded                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UOptionsMenuInput_C::BP_OnItemExpansionChanged(bool bIsExpanded)
+{
+	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnItemExpansionChanged");
+
+	Params::UOptionsMenuInput_C_BP_OnItemExpansionChanged_Params Parms;
+	Parms.bIsExpanded = bIsExpanded;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function OptionsMenuInput.OptionsMenuInput_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UOptionsMenuInput_C::OnReleaseToPool()
+void UOptionsMenuInput_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "OnReleaseToPool");
+	static auto Func = Class->GetFunction("OptionsMenuInput_C", "BP_OnEntryReleased");
 
-	Params::UOptionsMenuInput_C_OnReleaseToPool_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function OptionsMenuInput.OptionsMenuInput_C.OnAcquireFromPool
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UOptionsMenuInput_C::OnAcquireFromPool()
-{
-	static auto Func = Class->GetFunction("OptionsMenuInput_C", "OnAcquireFromPool");
-
-	Params::UOptionsMenuInput_C_OnAcquireFromPool_Params Parms;
+	Params::UOptionsMenuInput_C_BP_OnEntryReleased_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -404,50 +254,44 @@ void UOptionsMenuInput_C::OnAcquireFromPool()
 
 
 // Function OptionsMenuInput.OptionsMenuInput_C.ExecuteUbergraph_OptionsMenuInput
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*               K2Node_ComponentBoundEvent_Button12                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*               K2Node_ComponentBoundEvent_Button1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_Event_InData                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             K2Node_Event_OwningList                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortOptionsMenuInputData*   K2Node_DynamicCast_AsFort_Options_Menu_Input_Data                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // TArray<struct FFormatArgumentData> K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // class FText                        CallFunc_Format_ReturnValue                                      ()
-// bool                               K2Node_Event_bSelected                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FPointerEvent               K2Node_Event_MouseEvent1                                         (ConstParm)
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // struct FPointerEvent               K2Node_Event_MouseEvent                                          (ConstParm)
-// int32                              K2Node_Event_InIndexInList                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               K2Node_ComponentBoundEvent_Button2                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               K2Node_ComponentBoundEvent_Button1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_bExpanded                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UDelegateProperty_                 K2Node_Event_Callback                                            (ConstParm, ZeroConstructor, NoDestructor)
+// bool                               K2Node_Event_bIsSelected                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_Event_bIsExpanded                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UOptionsMenuInput_C::ExecuteUbergraph_OptionsMenuInput(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button12, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UObject* K2Node_Event_InData, class UCommonListView* K2Node_Event_OwningList, class UFortOptionsMenuInputData* K2Node_DynamicCast_AsFort_Options_Menu_Input_Data, bool K2Node_DynamicCast_bSuccess, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, bool K2Node_Event_bSelected, const struct FPointerEvent& K2Node_Event_MouseEvent1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, int32 K2Node_Event_InIndexInList, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_bExpanded, UDelegateProperty_ K2Node_Event_Callback)
+void UOptionsMenuInput_C::ExecuteUbergraph_OptionsMenuInput(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, class UFortOptionsMenuInputData* K2Node_DynamicCast_AsFort_Options_Menu_Input_Data, bool K2Node_DynamicCast_bSuccess, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_Format_ReturnValue, const struct FPointerEvent& K2Node_Event_MouseEvent1, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent, class UCommonButton* K2Node_ComponentBoundEvent_Button2, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_Event_bIsSelected, bool K2Node_Event_bIsExpanded)
 {
 	static auto Func = Class->GetFunction("OptionsMenuInput_C", "ExecuteUbergraph_OptionsMenuInput");
 
 	Params::UOptionsMenuInput_C_ExecuteUbergraph_OptionsMenuInput_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_ComponentBoundEvent_Button12 = K2Node_ComponentBoundEvent_Button12;
-	Parms.K2Node_ComponentBoundEvent_Button1 = K2Node_ComponentBoundEvent_Button1;
-	Parms.K2Node_Event_InData = K2Node_Event_InData;
-	Parms.K2Node_Event_OwningList = K2Node_Event_OwningList;
+	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 	Parms.K2Node_DynamicCast_AsFort_Options_Menu_Input_Data = K2Node_DynamicCast_AsFort_Options_Menu_Input_Data;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.K2Node_MakeStruct_FormatArgumentData = K2Node_MakeStruct_FormatArgumentData;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
-	Parms.K2Node_Event_bSelected = K2Node_Event_bSelected;
 	Parms.K2Node_Event_MouseEvent1 = K2Node_Event_MouseEvent1;
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
 	Parms.K2Node_Event_MouseEvent = K2Node_Event_MouseEvent;
-	Parms.K2Node_Event_InIndexInList = K2Node_Event_InIndexInList;
+	Parms.K2Node_ComponentBoundEvent_Button2 = K2Node_ComponentBoundEvent_Button2;
+	Parms.K2Node_ComponentBoundEvent_Button1 = K2Node_ComponentBoundEvent_Button1;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
-	Parms.K2Node_Event_bExpanded = K2Node_Event_bExpanded;
-	Parms.K2Node_Event_Callback = K2Node_Event_Callback;
+	Parms.K2Node_Event_bIsSelected = K2Node_Event_bIsSelected;
+	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -12,17 +12,17 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x70 (0x278 - 0x208)
+// 0x70 (0x298 - 0x228)
 // WidgetBlueprintGeneratedClass ItemInspectEvolveRarityIngredientsList.ItemInspectEvolveRarityIngredientsList_C
 class UItemInspectEvolveRarityIngredientsList_C : public UUserWidget
 {
 public:
-	class UVerticalBox*                          IngredientsListBox;                                // 0x208(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<struct FFortItemQuantityPair>         IngredientsList;                                   // 0x210(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
-	struct FSlateColor                           HaveColor;                                         // 0x220(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FSlateColor                           NotHaveColor;                                      // 0x248(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                        HaveQuantity;                                      // 0x270(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                        NeedQuantity;                                      // 0x274(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UVerticalBox*                          IngredientsListBox;                                // 0x228(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<struct FFortItemQuantityPair>         IngredientsList;                                   // 0x230(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
+	struct FSlateColor                           HaveColor;                                         // 0x240(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FSlateColor                           NotHaveColor;                                      // 0x268(0x28)(Edit, BlueprintVisible, DisableEditOnInstance)
+	int32                                        HaveQuantity;                                      // 0x290(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        NeedQuantity;                                      // 0x294(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

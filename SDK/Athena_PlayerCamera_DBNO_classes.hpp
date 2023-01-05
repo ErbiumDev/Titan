@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass Athena_PlayerCamera_DBNO.Athena_PlayerCamera_DBNO_C
 class UAthena_PlayerCamera_DBNO_C : public UAthena_PlayerCameraModeBase_C
 {

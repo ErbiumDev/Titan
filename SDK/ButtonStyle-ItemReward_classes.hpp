@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-ItemReward.ButtonStyle-ItemReward_C
 class UButtonStyle_ItemReward_C : public UCommonButtonStyle
 {

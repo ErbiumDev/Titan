@@ -36,19 +36,17 @@ void USquadSlotItemPickerTileButton_C::UpdateOverlays(TArray<enum class EFortSqu
 }
 
 
-// Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                     InData                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             OwningList                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USquadSlotItemPickerTileButton_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void USquadSlotItemPickerTileButton_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("SquadSlotItemPickerTileButton_C", "SetData");
+	static auto Func = Class->GetFunction("SquadSlotItemPickerTileButton_C", "OnListItemObjectSet");
 
-	Params::USquadSlotItemPickerTileButton_C_SetData_Params Parms;
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Params::USquadSlotItemPickerTileButton_C_OnListItemObjectSet_Params Parms;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -88,29 +86,27 @@ void USquadSlotItemPickerTileButton_C::HandleSlottingRestrictionReasonsChanged()
 
 
 // Function SquadSlotItemPickerTileButton.SquadSlotItemPickerTileButton_C.ExecuteUbergraph_SquadSlotItemPickerTileButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_Event_InData                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             K2Node_Event_OwningList                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FHomebaseSquadSlotId        K2Node_Event_SquadSlotId                                         (ConstParm, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsNullItem_Is_Null_Item                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NotEqual_NameName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UWidget*                     K2Node_Select_Default                                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void USquadSlotItemPickerTileButton_C::ExecuteUbergraph_SquadSlotItemPickerTileButton(int32 EntryPoint, class UObject* K2Node_Event_InData, class UCommonListView* K2Node_Event_OwningList, bool CallFunc_IsValid_ReturnValue, const struct FHomebaseSquadSlotId& K2Node_Event_SquadSlotId, bool Temp_bool_Variable, bool CallFunc_NotEqual_NameName_ReturnValue, class UWidget* K2Node_Select_Default)
+void USquadSlotItemPickerTileButton_C::ExecuteUbergraph_SquadSlotItemPickerTileButton(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, const struct FHomebaseSquadSlotId& K2Node_Event_SquadSlotId, bool CallFunc_IsNullItem_Is_Null_Item, bool CallFunc_NotEqual_NameName_ReturnValue, bool Temp_bool_Variable, class UWidget* K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("SquadSlotItemPickerTileButton_C", "ExecuteUbergraph_SquadSlotItemPickerTileButton");
 
 	Params::USquadSlotItemPickerTileButton_C_ExecuteUbergraph_SquadSlotItemPickerTileButton_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_Event_InData = K2Node_Event_InData;
-	Parms.K2Node_Event_OwningList = K2Node_Event_OwningList;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
+	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 	Parms.K2Node_Event_SquadSlotId = K2Node_Event_SquadSlotId;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
+	Parms.CallFunc_IsNullItem_Is_Null_Item = CallFunc_IsNullItem_Is_Null_Item;
 	Parms.CallFunc_NotEqual_NameName_ReturnValue = CallFunc_NotEqual_NameName_ReturnValue;
+	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);

@@ -31,7 +31,7 @@ void UItemReceivedEpicMakeGoodHeader_C::InitFromGiftBoxItem_BP()
 
 
 // Function ItemReceivedEpicMakeGoodHeader.ItemReceivedEpicMakeGoodHeader_C.ExecuteUbergraph_ItemReceivedEpicMakeGoodHeader
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_MakeLiteralText_ReturnValue                             ()

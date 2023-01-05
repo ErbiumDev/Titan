@@ -12,13 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0x8C0 - 0x8B0)
+// 0x10 (0x890 - 0x880)
 // BlueprintGeneratedClass FrontendCamera_Main.FrontendCamera_Main_C
 class AFrontendCamera_Main_C : public AFortCameraBase
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x8B0(0x8)(Transient, DuplicateTransient)
-	class UCameraComponent*                      LoginCamera_0;                                     // 0x8B8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x880(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCameraComponent*                      LoginCamera_0;                                     // 0x888(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

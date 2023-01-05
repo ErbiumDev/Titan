@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x80 - 0x80)
+// 0x0 (0x50 - 0x50)
 // BlueprintGeneratedClass ThrowingStarTest.ThrowingStarTest_C
 class UThrowingStarTest_C : public UGameplayCueNotify_Static
 {

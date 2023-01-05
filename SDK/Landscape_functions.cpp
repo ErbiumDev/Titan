@@ -19,7 +19,7 @@ namespace SDK
 // (Final, Native, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // class FName                        ParameterName                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FLinearColor                Value                                                            (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FLinearColor                Value                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 void ALandscapeProxy::SetLandscapeMaterialVectorParameterValue(class FName ParameterName, const struct FLinearColor& Value)
 {
@@ -271,6 +271,47 @@ void ALandscapeProxy::ChangeComponentScreenSizeToUseSubSections(float InComponen
 }
 
 
+// Function Landscape.LandscapeBlueprintCustomBrush.Render
+// (Event, Public, BlueprintEvent)
+// Parameters:
+// bool                               InIsHeightmap                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTextureRenderTarget2D*      InCombinedResult                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UTextureRenderTarget2D*      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class UTextureRenderTarget2D* ALandscapeBlueprintCustomBrush::Render(bool InIsHeightmap, class UTextureRenderTarget2D* InCombinedResult)
+{
+	static auto Func = Class->GetFunction("LandscapeBlueprintCustomBrush", "Render");
+
+	Params::ALandscapeBlueprintCustomBrush_Render_Params Parms;
+	Parms.InIsHeightmap = InIsHeightmap;
+	Parms.InCombinedResult = InCombinedResult;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function Landscape.LandscapeBlueprintCustomBrush.Initialize
+// (Event, Public, HasOutParams, HasDefaults, BlueprintEvent)
+// Parameters:
+// struct FIntPoint                   InLandscapeSize                                                  (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FIntPoint                   InLandscapeRenderTargetSize                                      (ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void ALandscapeBlueprintCustomBrush::Initialize(struct FIntPoint& InLandscapeSize, struct FIntPoint& InLandscapeRenderTargetSize)
+{
+	static auto Func = Class->GetFunction("LandscapeBlueprintCustomBrush", "Initialize");
+
+	Params::ALandscapeBlueprintCustomBrush_Initialize_Params Parms;
+	Parms.InLandscapeSize = InLandscapeSize;
+	Parms.InLandscapeRenderTargetSize = InLandscapeRenderTargetSize;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function Landscape.LandscapeComponent.GetMaterialInstanceDynamic
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
@@ -283,6 +324,30 @@ class UMaterialInstanceDynamic* ULandscapeComponent::GetMaterialInstanceDynamic(
 
 	Params::ULandscapeComponent_GetMaterialInstanceDynamic_Params Parms;
 	Parms.InIndex = InIndex;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+	return Parms.ReturnValue;
+
+}
+
+
+// Function Landscape.LandscapeSplinesComponent.GetSplineMeshComponents
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+// TArray<class USplineMeshComponent*>ReturnValue                                                      (ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+
+TArray<class USplineMeshComponent*> ULandscapeSplinesComponent::GetSplineMeshComponents()
+{
+	static auto Func = Class->GetFunction("LandscapeSplinesComponent", "GetSplineMeshComponents");
+
+	Params::ULandscapeSplinesComponent_GetSplineMeshComponents_Params Parms;
 
 	auto Flags = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

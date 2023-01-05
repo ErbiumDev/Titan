@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GET_DirectBallisticDamage.GET_DirectBallisticDamage_C
 class UGET_DirectBallisticDamage_C : public UGET_DirectPhysicalDamage_C
 {

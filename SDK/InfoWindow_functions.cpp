@@ -18,10 +18,10 @@ namespace SDK
 // Function InfoWindow.InfoWindow_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class UCommonUIContext*            CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonUISubsystem*          CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonInputManager*         CallFunc_GetInputManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UInfoWindow_C::Initialize(class UCommonUIContext* CallFunc_GetContext_ReturnValue, class UCommonInputManager* CallFunc_GetInputManager_ReturnValue)
+void UInfoWindow_C::Initialize(class UCommonUISubsystem* CallFunc_GetContext_ReturnValue, class UCommonInputManager* CallFunc_GetInputManager_ReturnValue)
 {
 	static auto Func = Class->GetFunction("InfoWindow_C", "Initialize");
 
@@ -205,10 +205,9 @@ void UInfoWindow_C::Set_Info(class UFortItemDefinition* Entry_Item_Definition)
 
 
 // Function InfoWindow.InfoWindow_C.ExecuteUbergraph_InfoWindow
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // class UUserWidget*                 K2Node_ComponentBoundEvent_Widget                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UInfoEntry_C*                K2Node_DynamicCast_AsInfo_Entry                                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -218,14 +217,14 @@ void UInfoWindow_C::Set_Info(class UFortItemDefinition* Entry_Item_Definition)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     CallFunc_GetItemAt_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetListWidget_ReturnValue                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 
-void UInfoWindow_C::ExecuteUbergraph_InfoWindow(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UInfoEntry_C* K2Node_DynamicCast_AsInfo_Entry, bool K2Node_DynamicCast_bSuccess, class UFortItemDefinition* K2Node_CustomEvent_Entry_Item_Definition, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UObject* CallFunc_GetItemAt_ReturnValue, class UWidget* CallFunc_GetListWidget_ReturnValue)
+void UInfoWindow_C::ExecuteUbergraph_InfoWindow(int32 EntryPoint, class UUserWidget* K2Node_ComponentBoundEvent_Widget, class UInfoEntry_C* K2Node_DynamicCast_AsInfo_Entry, bool K2Node_DynamicCast_bSuccess, class UFortItemDefinition* K2Node_CustomEvent_Entry_Item_Definition, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UObject* CallFunc_GetItemAt_ReturnValue, class UWidget* CallFunc_GetListWidget_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
 {
 	static auto Func = Class->GetFunction("InfoWindow_C", "ExecuteUbergraph_InfoWindow");
 
 	Params::UInfoWindow_C_ExecuteUbergraph_InfoWindow_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_ComponentBoundEvent_Widget = K2Node_ComponentBoundEvent_Widget;
 	Parms.K2Node_DynamicCast_AsInfo_Entry = K2Node_DynamicCast_AsInfo_Entry;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -235,6 +234,22 @@ void UInfoWindow_C::ExecuteUbergraph_InfoWindow(int32 EntryPoint, UDelegatePrope
 	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
 	Parms.CallFunc_GetItemAt_ReturnValue = CallFunc_GetItemAt_ReturnValue;
 	Parms.CallFunc_GetListWidget_ReturnValue = CallFunc_GetListWidget_ReturnValue;
+	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function InfoWindow.InfoWindow_C.OnInfoIndowClosed__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UInfoWindow_C::OnInfoIndowClosed__DelegateSignature()
+{
+	static auto Func = Class->GetFunction("InfoWindow_C", "OnInfoIndowClosed__DelegateSignature");
+
+	Params::UInfoWindow_C_OnInfoIndowClosed__DelegateSignature_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 

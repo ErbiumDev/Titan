@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xEA0 - 0xEA0)
+// 0x0 (0xD90 - 0xD90)
 // BlueprintGeneratedClass PBWA_S1_DoorS.PBWA_S1_DoorS_C
 class APBWA_S1_DoorS_C : public ABuildingWall
 {

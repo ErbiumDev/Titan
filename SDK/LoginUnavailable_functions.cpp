@@ -50,7 +50,7 @@ void ULoginUnavailable_C::OnMessageSet(bool bDisableMessage)
 
 
 // Function LoginUnavailable.LoginUnavailable_C.ExecuteUbergraph_LoginUnavailable
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

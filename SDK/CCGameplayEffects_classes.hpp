@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass CCGameplayEffects.CCGameplayEffects_C
 class UCCGameplayEffects_C : public UGameplayEffect
 {

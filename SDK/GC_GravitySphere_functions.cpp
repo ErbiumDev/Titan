@@ -98,7 +98,7 @@ void AGC_GravitySphere_C::K2_HandleGameplayCue(class AActor* MyTarget, enum clas
 
 
 // Function GC_GravitySphere.GC_GravitySphere_C.ExecuteUbergraph_GC_GravitySphere
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_Event_MyTarget                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -12,13 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0xEB8 - 0xEA0)
+// 0x18 (0xDA8 - 0xD90)
 // BlueprintGeneratedClass PBW_BP_Parent.PBW_BP_Parent_C
 class APBW_BP_Parent_C : public ABuildingWall
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xEA0(0x8)(Transient, DuplicateTransient)
-	TArray<class UStaticMesh*>                   StaticMeshAlternateArray;                          // 0xEA8(0x10)(Edit, BlueprintVisible, ZeroConstructor)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xD90(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	TArray<class UStaticMesh*>                   StaticMeshAlternateArray;                          // 0xD98(0x10)(Edit, BlueprintVisible, ZeroConstructor)
 
 	static class UClass* StaticClass()
 	{

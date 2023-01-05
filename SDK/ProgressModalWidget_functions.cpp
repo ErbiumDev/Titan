@@ -41,57 +41,6 @@ struct FEventReply UProgressModalWidget_C::OnAnalogValueChanged(const struct FGe
 }
 
 
-// Function ProgressModalWidget.ProgressModalWidget_C.SetIcon
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// struct FSlateBrush                 Icon                                                             (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& Icon)
-{
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "SetIcon");
-
-	Params::UProgressModalWidget_C_SetIcon_Params Parms;
-	Parms.Icon = Icon;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ProgressModalWidget.ProgressModalWidget_C.SetDescription
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                        Description                                                      (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UProgressModalWidget_C::SetDescription(class FText Description)
-{
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "SetDescription");
-
-	Params::UProgressModalWidget_C_SetDescription_Params Parms;
-	Parms.Description = Description;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ProgressModalWidget.ProgressModalWidget_C.SetTitle
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FText                        Title                                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UProgressModalWidget_C::SetTitle(class FText Title)
-{
-	static auto Func = Class->GetFunction("ProgressModalWidget_C", "SetTitle");
-
-	Params::UProgressModalWidget_C_SetTitle_Params Parms;
-	Parms.Title = Title;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function ProgressModalWidget.ProgressModalWidget_C.Initialize
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -199,16 +148,70 @@ void UProgressModalWidget_C::Destruct()
 }
 
 
+// Function ProgressModalWidget.ProgressModalWidget_C.SetTitle
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                        InTitle                                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UProgressModalWidget_C::SetTitle(class FText& InTitle)
+{
+	static auto Func = Class->GetFunction("ProgressModalWidget_C", "SetTitle");
+
+	Params::UProgressModalWidget_C_SetTitle_Params Parms;
+	Parms.InTitle = InTitle;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function ProgressModalWidget.ProgressModalWidget_C.SetDescription
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class FText                        InDescription                                                    (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UProgressModalWidget_C::SetDescription(class FText& InDescription)
+{
+	static auto Func = Class->GetFunction("ProgressModalWidget_C", "SetDescription");
+
+	Params::UProgressModalWidget_C_SetDescription_Params Parms;
+	Parms.InDescription = InDescription;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function ProgressModalWidget.ProgressModalWidget_C.SetIcon
+// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// struct FSlateBrush                 InIcon                                                           (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UProgressModalWidget_C::SetIcon(const struct FSlateBrush& InIcon)
+{
+	static auto Func = Class->GetFunction("ProgressModalWidget_C", "SetIcon");
+
+	Params::UProgressModalWidget_C_SetIcon_Params Parms;
+	Parms.InIcon = InIcon;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function ProgressModalWidget.ProgressModalWidget_C.ExecuteUbergraph_ProgressModalWidget
-// ()
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate123                          (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
+// class FText                        K2Node_Event_InTitle                                             (ConstParm)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate3                            (ZeroConstructor, NoDestructor)
+// class FText                        K2Node_Event_InDescription                                       (ConstParm)
+// struct FSlateBrush                 K2Node_Event_InIcon                                              ()
 
-void UProgressModalWidget_C::ExecuteUbergraph_ProgressModalWidget(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate123)
+void UProgressModalWidget_C::ExecuteUbergraph_ProgressModalWidget(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, class FText K2Node_Event_InTitle, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate3, class FText K2Node_Event_InDescription, const struct FSlateBrush& K2Node_Event_InIcon)
 {
 	static auto Func = Class->GetFunction("ProgressModalWidget_C", "ExecuteUbergraph_ProgressModalWidget");
 
@@ -216,8 +219,11 @@ void UProgressModalWidget_C::ExecuteUbergraph_ProgressModalWidget(int32 EntryPoi
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
-	Parms.K2Node_CreateDelegate_OutputDelegate123 = K2Node_CreateDelegate_OutputDelegate123;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
+	Parms.K2Node_Event_InTitle = K2Node_Event_InTitle;
+	Parms.K2Node_CreateDelegate_OutputDelegate3 = K2Node_CreateDelegate_OutputDelegate3;
+	Parms.K2Node_Event_InDescription = K2Node_Event_InDescription;
+	Parms.K2Node_Event_InIcon = K2Node_Event_InIcon;
 
 	UObject::ProcessEvent(Func, &Parms);
 

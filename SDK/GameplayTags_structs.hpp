@@ -38,6 +38,15 @@ enum class EGameplayTagMatchType : uint8
 	EGameplayTagMatchType_MAX      = 2,
 };
 
+enum class EGameplayTagSelectionType : uint8
+{
+	None                           = 0,
+	NonRestrictedOnly              = 1,
+	RestrictedOnly                 = 2,
+	All                            = 3,
+	EGameplayTagSelectionType_MAX  = 4,
+};
+
 enum class EGameplayTagSourceType : uint8
 {
 	Native                         = 0,
@@ -59,7 +68,7 @@ enum class EGameplayTagSourceType : uint8
 struct FGameplayTag
 {
 public:
-	class FName                                  TagName;                                           // 0x0(0x8)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
+	class FName                                  TagName;                                           // 0x0(0x8)(Edit, ZeroConstructor, EditConst, SaveGame, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 };
 
 // 0x20 (0x20 - 0x0)
@@ -67,7 +76,7 @@ public:
 struct FGameplayTagContainer
 {
 public:
-	TArray<struct FGameplayTag>                  GameplayTags;                                      // 0x0(0x10)(BlueprintVisible, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
+	TArray<struct FGameplayTag>                  GameplayTags;                                      // 0x0(0x10)(BlueprintVisible, ZeroConstructor, SaveGame, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FGameplayTag>                  ParentTags;                                        // 0x10(0x10)(ZeroConstructor, Transient, Protected, NativeAccessSpecifierProtected)
 };
 
@@ -77,19 +86,19 @@ struct FGameplayTagQuery
 {
 public:
 	int32                                        TokenStreamVersion;                                // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2268[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C29[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTag>                  TagDictionary;                                     // 0x8(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<uint8>                                QueryTokenStream;                                  // 0x18(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	class FString                                UserDescription;                                   // 0x28(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	class FString                                AutoDescription;                                   // 0x38(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 };
 
-// 0x40 (0x40 - 0x0)
+// 0x10 (0x10 - 0x0)
 // ScriptStruct GameplayTags.GameplayTagReferenceHelper
 struct FGameplayTagReferenceHelper
 {
 public:
-	uint8                                        Pad_2269[0x40];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2C2A[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -97,7 +106,7 @@ public:
 struct FGameplayTagCreationWidgetHelper
 {
 public:
-	uint8                                        Pad_226A[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2C2B[0x1];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x50 (0x50 - 0x0)
@@ -105,7 +114,7 @@ public:
 struct FGameplayTagNode
 {
 public:
-	uint8                                        Pad_226B[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2C2C[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)
@@ -115,7 +124,7 @@ struct FGameplayTagSource
 public:
 	class FName                                  SourceName;                                        // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EGameplayTagSourceType            SourceType;                                        // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_226C[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C2D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UGameplayTagsList*                     SourceTagList;                                     // 0x10(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class URestrictedGameplayTagsList*           SourceRestrictedTagList;                           // 0x18(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -135,7 +144,7 @@ struct FRestrictedGameplayTagTableRow : public FGameplayTagTableRow
 {
 public:
 	bool                                         bAllowNonRestrictedChildren;                       // 0x20(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_226D[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2C2E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x20 (0x20 - 0x0)

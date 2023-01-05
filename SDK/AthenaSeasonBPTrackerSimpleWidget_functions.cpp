@@ -33,7 +33,7 @@ void UAthenaSeasonBPTrackerSimpleWidget_C::OnAccountInfoChanged(struct FFortPubl
 
 
 // Function AthenaSeasonBPTrackerSimpleWidget.AthenaSeasonBPTrackerSimpleWidget_C.ExecuteUbergraph_AthenaSeasonBPTrackerSimpleWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortPublicAccountInfo      K2Node_Event_Result                                              (ConstParm, NoDestructor)

@@ -12,20 +12,20 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x2E0 (0x8F0 - 0x610)
+// 0x320 (0x908 - 0x5E8)
 // BlueprintGeneratedClass AOE_Commando_KeepOutExplosion.AOE_Commando_KeepOutExplosion_C
 class AAOE_Commando_KeepOutExplosion_C : public AFortAreaOfEffectCloud
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x610(0x8)(Transient, DuplicateTransient)
-	class UAudioComponent*                       AOE_Audio_Effect;                                  // 0x618(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class UParticleSystemComponent*              P_Grenade_Linger;                                  // 0x620(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USphereComponent*                      DamageArea;                                        // 0x628(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	class USceneComponent*                       DefaultSceneRoot;                                  // 0x630(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                        Radius;                                            // 0x638(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2E41[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSoundAttenuationSettings             AOE_Sound_Attenuation_Based_On_Radius;             // 0x640(0x2A8)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class USoundBase*                            AOE_Electric_Sound;                                // 0x8E8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x5E8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UAudioComponent*                       AOE_Audio_Effect;                                  // 0x5F0(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class UParticleSystemComponent*              P_Grenade_Linger;                                  // 0x5F8(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USphereComponent*                      DamageArea;                                        // 0x600(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	class USceneComponent*                       DefaultSceneRoot;                                  // 0x608(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                        Radius;                                            // 0x610(0x4)(Edit, BlueprintVisible, Net, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, RepNotify, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_38CF[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSoundAttenuationSettings             AOE_Sound_Attenuation_Based_On_Radius;             // 0x618(0x2E8)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USoundBase*                            AOE_Electric_Sound;                                // 0x900(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

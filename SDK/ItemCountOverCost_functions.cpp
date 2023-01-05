@@ -15,6 +15,27 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function ItemCountOverCost.ItemCountOverCost_C.HasRequired
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               bHasRequired                                                     (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UItemCountOverCost_C::HasRequired(bool* bHasRequired, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
+{
+	static auto Func = Class->GetFunction("ItemCountOverCost_C", "HasRequired");
+
+	Params::UItemCountOverCost_C_HasRequired_Params Parms;
+	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	if (bHasRequired != nullptr)
+		*bHasRequired = Parms.bHasRequired;
+
+}
+
+
 // Function ItemCountOverCost.ItemCountOverCost_C.Calculate Total Item Def in Inventory
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -65,10 +86,10 @@ void UItemCountOverCost_C::Calculate_Total_Item_Def_in_Inventory(class UFortItem
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class ESlateVisibility        Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable123                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FLinearColor                CallFunc_Get_Meets_Criteria_Color_ReturnValue                    (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable3                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Calculate_Total_Item_Def_in_Inventory_Count             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Get_Meets_Criteria_Color_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -77,7 +98,7 @@ void UItemCountOverCost_C::Calculate_Total_Item_Def_in_Inventory(class UFortItem
 // class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
 // float                              CallFunc_Conv_IntToFloat_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemCountOverCost_C::Update(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, bool Temp_bool_Variable1, enum class ESlateVisibility Temp_byte_Variable12, enum class ESlateVisibility Temp_byte_Variable123, const struct FLinearColor& CallFunc_Get_Meets_Criteria_Color_ReturnValue, int32 CallFunc_Calculate_Total_Item_Def_in_Inventory_Count, const struct FSlateColor& K2Node_MakeStruct_SlateColor, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue1)
+void UItemCountOverCost_C::Update(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, bool Temp_bool_Variable1, enum class ESlateVisibility Temp_byte_Variable2, enum class ESlateVisibility Temp_byte_Variable3, int32 CallFunc_Calculate_Total_Item_Def_in_Inventory_Count, const struct FLinearColor& CallFunc_Get_Meets_Criteria_Color_ReturnValue, const struct FSlateColor& K2Node_MakeStruct_SlateColor, enum class ESlateVisibility K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, float CallFunc_Conv_IntToFloat_ReturnValue, bool CallFunc_IsValid_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, float CallFunc_Conv_IntToFloat_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("ItemCountOverCost_C", "Update");
 
@@ -86,10 +107,10 @@ void UItemCountOverCost_C::Update(bool Temp_bool_Variable, enum class ESlateVisi
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
-	Parms.Temp_byte_Variable123 = Temp_byte_Variable123;
-	Parms.CallFunc_Get_Meets_Criteria_Color_ReturnValue = CallFunc_Get_Meets_Criteria_Color_ReturnValue;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
+	Parms.Temp_byte_Variable3 = Temp_byte_Variable3;
 	Parms.CallFunc_Calculate_Total_Item_Def_in_Inventory_Count = CallFunc_Calculate_Total_Item_Def_in_Inventory_Count;
+	Parms.CallFunc_Get_Meets_Criteria_Color_ReturnValue = CallFunc_Get_Meets_Criteria_Color_ReturnValue;
 	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
@@ -104,22 +125,24 @@ void UItemCountOverCost_C::Update(bool Temp_bool_Variable, enum class ESlateVisi
 
 
 // Function ItemCountOverCost.ItemCountOverCost_C.Get Meets Criteria Color
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent, BlueprintPure)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
-// struct FLinearColor                ReturnValue                                                      (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                Temp_struct_Variable                                             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FLinearColor                K2Node_Select_Default                                            (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_HasRequired_bHasRequired                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FLinearColor                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-struct FLinearColor UItemCountOverCost_C::Get_Meets_Criteria_Color(bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, bool CallFunc_Less_IntInt_ReturnValue, const struct FLinearColor& K2Node_Select_Default)
+struct FLinearColor UItemCountOverCost_C::Get_Meets_Criteria_Color(bool Temp_bool_Variable, const struct FLinearColor& Temp_struct_Variable, bool CallFunc_HasRequired_bHasRequired, bool CallFunc_Not_PreBool_ReturnValue, const struct FLinearColor& K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("ItemCountOverCost_C", "Get Meets Criteria Color");
 
 	Params::UItemCountOverCost_C_Get_Meets_Criteria_Color_Params Parms;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_struct_Variable = Temp_struct_Variable;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
+	Parms.CallFunc_HasRequired_bHasRequired = CallFunc_HasRequired_bHasRequired;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -162,7 +185,7 @@ void UItemCountOverCost_C::PreConstruct(bool IsDesignTime)
 
 
 // Function ItemCountOverCost.ItemCountOverCost_C.ExecuteUbergraph_ItemCountOverCost
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)

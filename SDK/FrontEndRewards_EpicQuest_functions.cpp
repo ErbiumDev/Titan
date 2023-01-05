@@ -150,7 +150,7 @@ void UFrontEndRewards_EpicQuest_C::OnPrimaryAction()
 
 
 // Function FrontEndRewards_EpicQuest.FrontEndRewards_EpicQuest_C.ExecuteUbergraph_FrontEndRewards_EpicQuest
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_HandleContinueAction_Committed                          (ZeroConstructor, IsPlainOldData, NoDestructor)

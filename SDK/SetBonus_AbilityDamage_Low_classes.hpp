@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass SetBonus_AbilityDamage_Low.SetBonus_AbilityDamage_Low_C
 class USetBonus_AbilityDamage_Low_C : public UGameplayEffect
 {

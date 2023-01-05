@@ -2,8 +2,8 @@
 #include "Includes.h"
 #include <vector>
 namespace Offsets {
-	inline int32_t GiveAbility  = 0x05394C0;
-	inline int32_t ClearAbility = 0x0524670;
+	inline int32_t GiveAbility  = 0x068ED10;
+	inline int32_t ClearAbility = 0x067A8A0; //Could be wrong
 }
 
 std::vector<std::pair<FGameplayAbilitySpecHandle, UGameplayAbility*>> Specs;

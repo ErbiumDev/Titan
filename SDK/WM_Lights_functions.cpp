@@ -63,7 +63,7 @@ void AWM_Lights_C::WM_Lightcontrol(bool TurnOn)
 
 
 // Function WM_Lights.WM_Lights_C.ExecuteUbergraph_WM_Lights
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_CustomEvent_TurnOn                                        (ZeroConstructor, IsPlainOldData, NoDestructor)

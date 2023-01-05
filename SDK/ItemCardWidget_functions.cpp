@@ -90,15 +90,15 @@ void UItemCardWidget_C::OnFocusLost(const struct FFocusEvent& InFocusEvent)
 }
 
 
-// Function ItemCardWidget.ItemCardWidget_C.OnHovered
+// Function ItemCardWidget.ItemCardWidget_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UItemCardWidget_C::OnHovered()
+void UItemCardWidget_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("ItemCardWidget_C", "OnHovered");
+	static auto Func = Class->GetFunction("ItemCardWidget_C", "BP_OnHovered");
 
-	Params::UItemCardWidget_C_OnHovered_Params Parms;
+	Params::UItemCardWidget_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -121,19 +121,21 @@ void UItemCardWidget_C::Construct()
 
 
 // Function ItemCardWidget.ItemCardWidget_C.ExecuteUbergraph_ItemCardWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_CustomEvent_Idx                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FFocusEvent                 K2Node_Event_InFocusEvent                                        (NoDestructor)
 
-void UItemCardWidget_C::ExecuteUbergraph_ItemCardWidget(int32 EntryPoint, int32 K2Node_CustomEvent_Idx, bool CallFunc_Less_IntInt_ReturnValue, const struct FFocusEvent& K2Node_Event_InFocusEvent)
+void UItemCardWidget_C::ExecuteUbergraph_ItemCardWidget(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 K2Node_CustomEvent_Idx, bool CallFunc_Less_IntInt_ReturnValue, const struct FFocusEvent& K2Node_Event_InFocusEvent)
 {
 	static auto Func = Class->GetFunction("ItemCardWidget_C", "ExecuteUbergraph_ItemCardWidget");
 
 	Params::UItemCardWidget_C_ExecuteUbergraph_ItemCardWidget_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.K2Node_CustomEvent_Idx = K2Node_CustomEvent_Idx;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
 	Parms.K2Node_Event_InFocusEvent = K2Node_Event_InFocusEvent;

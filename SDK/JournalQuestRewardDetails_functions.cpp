@@ -72,59 +72,15 @@ void UJournalQuestRewardDetails_C::UpdateButtonStates()
 }
 
 
-// Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.HandleOnEndSpokenDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UJournalQuestRewardDetails_C::HandleOnEndSpokenDialog()
-{
-	static auto Func = Class->GetFunction("JournalQuestRewardDetails_C", "HandleOnEndSpokenDialog");
-
-	Params::UJournalQuestRewardDetails_C_HandleOnEndSpokenDialog_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.HandleOnBeginSpokenDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UTexture2D*                  Image                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Title                                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText                        Subtitle                                                         (BlueprintVisible, BlueprintReadOnly, Parm)
-// enum class EFortAnnouncementDisplayPreferenceDisplayPreference                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UJournalQuestRewardDetails_C::HandleOnBeginSpokenDialog(class UTexture2D* Image, class FText Title, class FText Subtitle, enum class EFortAnnouncementDisplayPreference DisplayPreference)
-{
-	static auto Func = Class->GetFunction("JournalQuestRewardDetails_C", "HandleOnBeginSpokenDialog");
-
-	Params::UJournalQuestRewardDetails_C_HandleOnBeginSpokenDialog_Params Parms;
-	Parms.Image = Image;
-	Parms.Title = Title;
-	Parms.Subtitle = Subtitle;
-	Parms.DisplayPreference = DisplayPreference;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UJournalQuestRewardDetails_C::Setup(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void UJournalQuestRewardDetails_C::Setup()
 {
 	static auto Func = Class->GetFunction("JournalQuestRewardDetails_C", "Setup");
 
 	Params::UJournalQuestRewardDetails_C_Setup_Params Parms;
-	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
-	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -162,7 +118,7 @@ void UJournalQuestRewardDetails_C::HandleCurrentQuestChangedBP()
 
 
 // Function JournalQuestRewardDetails.JournalQuestRewardDetails_C.ExecuteUbergraph_JournalQuestRewardDetails
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

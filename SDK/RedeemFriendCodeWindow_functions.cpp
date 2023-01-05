@@ -23,13 +23,13 @@ namespace SDK
 // enum class ERedeemCodeFailureReasonTemp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        Temp_text_Variable                                               ()
 // class FText                        Temp_text_Variable1                                              ()
-// class FText                        Temp_text_Variable12                                             ()
-// class FText                        Temp_text_Variable123                                            ()
-// class FText                        Temp_text_Variable1234                                           ()
+// class FText                        Temp_text_Variable2                                              ()
+// class FText                        Temp_text_Variable3                                              ()
+// class FText                        Temp_text_Variable4                                              ()
 // class UFortMcpContext*             CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_Select_Default                                            ()
 
-void URedeemFriendCodeWindow_C::HandleRedeemCodeComplete(bool Success, enum class ERedeemCodeFailureReason FailureReason, enum class ERedeemCodeFailureReason Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable1, class FText Temp_text_Variable12, class FText Temp_text_Variable123, class FText Temp_text_Variable1234, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class FText K2Node_Select_Default)
+void URedeemFriendCodeWindow_C::HandleRedeemCodeComplete(bool Success, enum class ERedeemCodeFailureReason FailureReason, enum class ERedeemCodeFailureReason Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable1, class FText Temp_text_Variable2, class FText Temp_text_Variable3, class FText Temp_text_Variable4, class UFortMcpContext* CallFunc_GetContext_ReturnValue, class FText K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("RedeemFriendCodeWindow_C", "HandleRedeemCodeComplete");
 
@@ -39,9 +39,9 @@ void URedeemFriendCodeWindow_C::HandleRedeemCodeComplete(bool Success, enum clas
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
 	Parms.Temp_text_Variable1 = Temp_text_Variable1;
-	Parms.Temp_text_Variable12 = Temp_text_Variable12;
-	Parms.Temp_text_Variable123 = Temp_text_Variable123;
-	Parms.Temp_text_Variable1234 = Temp_text_Variable1234;
+	Parms.Temp_text_Variable2 = Temp_text_Variable2;
+	Parms.Temp_text_Variable3 = Temp_text_Variable3;
+	Parms.Temp_text_Variable4 = Temp_text_Variable4;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 
@@ -168,7 +168,7 @@ void URedeemFriendCodeWindow_C::BndEvt__FriendCodeEntry_K2Node_ComponentBoundEve
 
 
 // Function RedeemFriendCodeWindow.RedeemFriendCodeWindow_C.ExecuteUbergraph_RedeemFriendCodeWindow
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortUINavigationManager*    CallFunc_GetUINavigationManager_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

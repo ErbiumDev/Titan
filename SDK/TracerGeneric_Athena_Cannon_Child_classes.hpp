@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3D0 - 0x3D0)
+// 0x0 (0x3E8 - 0x3E8)
 // BlueprintGeneratedClass TracerGeneric_Athena_Cannon_Child.TracerGeneric_Athena_Cannon_Child_C
 class ATracerGeneric_Athena_Cannon_Child_C : public ATracerGeneric_Athena_C
 {

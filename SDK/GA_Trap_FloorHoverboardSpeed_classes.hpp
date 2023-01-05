@@ -12,15 +12,15 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0xB08 - 0xAF0)
+// 0x18 (0x980 - 0x968)
 // BlueprintGeneratedClass GA_Trap_FloorHoverboardSpeed.GA_Trap_FloorHoverboardSpeed_C
 class UGA_Trap_FloorHoverboardSpeed_C : public UGA_TrapGeneric_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAF0(0x8)(Transient, DuplicateTransient)
-	float                                        HoverboardBoostVelocityShift;                      // 0xAF8(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3079[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class ATrap_Floor_Hoverboard_Speed_C*        HoverboardSpeedTrap;                               // 0xB00(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x968(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	float                                        HoverboardBoostVelocityShift;                      // 0x970(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3553[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class ATrap_Floor_Hoverboard_Speed_C*        HoverboardSpeedTrap;                               // 0x978(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_TrapArmGeneric.GE_TrapArmGeneric_C
 class UGE_TrapArmGeneric_C : public UGameplayEffect
 {

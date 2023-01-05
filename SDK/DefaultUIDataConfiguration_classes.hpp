@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3220 - 0x3220)
+// 0x0 (0x31F0 - 0x31F0)
 // BlueprintGeneratedClass DefaultUIDataConfiguration.DefaultUIDataConfiguration_C
 class UDefaultUIDataConfiguration_C : public UFortUIDataConfiguration
 {

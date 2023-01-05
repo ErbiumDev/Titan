@@ -60,7 +60,7 @@ void UTopWeaponStatRowEntry_C::OnStatChanged()
 
 
 // Function TopWeaponStatRowEntry.TopWeaponStatRowEntry_C.ExecuteUbergraph_TopWeaponStatRowEntry
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

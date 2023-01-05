@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_HideOnMiniMap.GE_HideOnMiniMap_C
 class UGE_HideOnMiniMap_C : public UGET_TagContainer_C
 {

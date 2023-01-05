@@ -15,6 +15,23 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function GCN_MiniBoss.GCN_MiniBoss_C.SetMiniBossVisibility
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               Visible                                                          (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void AGCN_MiniBoss_C::SetMiniBossVisibility(bool Visible)
+{
+	static auto Func = Class->GetFunction("GCN_MiniBoss_C", "SetMiniBossVisibility");
+
+	Params::AGCN_MiniBoss_C_SetMiniBossVisibility_Params Parms;
+	Parms.Visible = Visible;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function GCN_MiniBoss.GCN_MiniBoss_C.OverwriteElementalParticles
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -75,29 +92,25 @@ void AGCN_MiniBoss_C::OverwriteElementalParticles(class AEnemyPawn_Parent_C* Ene
 
 
 // Function GCN_MiniBoss.GCN_MiniBoss_C.OnActive
-// (Event, Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                      MyTarget                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayCueParameters      Parameters                                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-// TArray<struct FParticleSysParam>   K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // class AEnemyPawn_Parent_C*         K2Node_DynamicCast_AsEnemy_Pawn_Parent                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FVector                     CallFunc_MakeVector_ReturnValue                                  (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UParticleSystemComponent*    CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_K2_AttachToComponent_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-bool AGCN_MiniBoss_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, TArray<struct FParticleSysParam>& K2Node_MakeArray_Array, class AEnemyPawn_Parent_C* K2Node_DynamicCast_AsEnemy_Pawn_Parent, bool K2Node_DynamicCast_bSuccess, const struct FVector& CallFunc_MakeVector_ReturnValue, class UParticleSystemComponent* CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference)
+bool AGCN_MiniBoss_C::OnActive(class AActor* MyTarget, struct FGameplayCueParameters& Parameters, class AEnemyPawn_Parent_C* K2Node_DynamicCast_AsEnemy_Pawn_Parent, bool K2Node_DynamicCast_bSuccess, bool CallFunc_K2_AttachToComponent_ReturnValue)
 {
 	static auto Func = Class->GetFunction("GCN_MiniBoss_C", "OnActive");
 
 	Params::AGCN_MiniBoss_C_OnActive_Params Parms;
 	Parms.MyTarget = MyTarget;
 	Parms.Parameters = Parameters;
-	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.K2Node_DynamicCast_AsEnemy_Pawn_Parent = K2Node_DynamicCast_AsEnemy_Pawn_Parent;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_MakeVector_ReturnValue = CallFunc_MakeVector_ReturnValue;
-	Parms.CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference = CallFunc_SpawnParticleSystemOnCharacterMesh_PSComponentReference;
+	Parms.CallFunc_K2_AttachToComponent_ReturnValue = CallFunc_K2_AttachToComponent_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -124,21 +137,6 @@ bool AGCN_MiniBoss_C::OnRemove(class AActor* MyTarget, struct FGameplayCueParame
 	UObject::ProcessEvent(Func, &Parms);
 
 	return Parms.ReturnValue;
-
-}
-
-
-// Function GCN_MiniBoss.GCN_MiniBoss_C.HideMiniBossGCN
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void AGCN_MiniBoss_C::HideMiniBossGCN()
-{
-	static auto Func = Class->GetFunction("GCN_MiniBoss_C", "HideMiniBossGCN");
-
-	Params::AGCN_MiniBoss_C_HideMiniBossGCN_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -189,7 +187,7 @@ void AGCN_MiniBoss_C::ReceiveBeginPlay()
 
 
 // Function GCN_MiniBoss.GCN_MiniBoss_C.ExecuteUbergraph_GCN_MiniBoss
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

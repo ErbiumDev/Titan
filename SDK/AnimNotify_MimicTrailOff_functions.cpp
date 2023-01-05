@@ -22,10 +22,10 @@ namespace SDK
 // class UAnimSequenceBase*           Animation                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
 // class AActor*                      CallFunc_GetOwner_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AHuskPawn_Mimic_C*           K2Node_DynamicCast_AsHusk_Pawn_Mimic                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UInterfaceProperty_                K2Node_DynamicCast_AsFort_Anim_Notify_Interface_Interface        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-bool UAnimNotify_MimicTrailOff_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, class AHuskPawn_Mimic_C* K2Node_DynamicCast_AsHusk_Pawn_Mimic, bool K2Node_DynamicCast_bSuccess)
+bool UAnimNotify_MimicTrailOff_C::Received_Notify(class USkeletalMeshComponent* MeshComp, class UAnimSequenceBase* Animation, class AActor* CallFunc_GetOwner_ReturnValue, UInterfaceProperty_ K2Node_DynamicCast_AsFort_Anim_Notify_Interface_Interface, bool K2Node_DynamicCast_bSuccess)
 {
 	static auto Func = Class->GetFunction("AnimNotify_MimicTrailOff_C", "Received_Notify");
 
@@ -33,7 +33,7 @@ bool UAnimNotify_MimicTrailOff_C::Received_Notify(class USkeletalMeshComponent* 
 	Parms.MeshComp = MeshComp;
 	Parms.Animation = Animation;
 	Parms.CallFunc_GetOwner_ReturnValue = CallFunc_GetOwner_ReturnValue;
-	Parms.K2Node_DynamicCast_AsHusk_Pawn_Mimic = K2Node_DynamicCast_AsHusk_Pawn_Mimic;
+	Parms.K2Node_DynamicCast_AsFort_Anim_Notify_Interface_Interface = K2Node_DynamicCast_AsFort_Anim_Notify_Interface_Interface;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 
 	UObject::ProcessEvent(Func, &Parms);

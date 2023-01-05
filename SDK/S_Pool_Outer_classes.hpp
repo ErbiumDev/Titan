@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3DB - 0x3DB)
+// 0x0 (0x3F3 - 0x3F3)
 // BlueprintGeneratedClass S_Pool_Outer.S_Pool_Outer_C
 class AS_Pool_Outer_C : public A_WaterMeshBlueprintMaster_C
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x270 - 0x270)
+// 0x0 (0x258 - 0x258)
 // WidgetBlueprintGeneratedClass AccountNotFound.AccountNotFound_C
 class UAccountNotFound_C : public UFortAccountNotFound
 {

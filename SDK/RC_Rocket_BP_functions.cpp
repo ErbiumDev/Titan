@@ -16,7 +16,7 @@ namespace SDK
 
 
 // Function RC_Rocket_BP.RC_Rocket_BP_C.ExecuteUbergraph_RC_Rocket_BP
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

@@ -15,6 +15,21 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function FriendNotification.FriendNotification_C.JoinPartyInvite
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UFriendNotification_C::JoinPartyInvite()
+{
+	static auto Func = Class->GetFunction("FriendNotification_C", "JoinPartyInvite");
+
+	Params::UFriendNotification_C_JoinPartyInvite_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function FriendNotification.FriendNotification_C.ShowFriendInvites
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -44,10 +59,10 @@ void UFriendNotification_C::ShowFriendInvites(class UFortUIManagerWidget_NUI* Ca
 // class UCommonActivatablePanel*     K2Node_DynamicCast_AsCommon_Activatable_Panel                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UPartyFinder_C*              K2Node_DynamicCast_AsParty_Finder                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UFriendNotification_C::ShowPartyInvites(class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UUIManager_C* K2Node_DynamicCast_AsUIManager, bool K2Node_DynamicCast_bSuccess, class UCommonActivatablePanel* K2Node_DynamicCast_AsCommon_Activatable_Panel, bool K2Node_DynamicCast_bSuccess1, class UPartyFinder_C* K2Node_DynamicCast_AsParty_Finder, bool K2Node_DynamicCast_bSuccess12, bool CallFunc_IsValid_ReturnValue)
+void UFriendNotification_C::ShowPartyInvites(class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UUIManager_C* K2Node_DynamicCast_AsUIManager, bool K2Node_DynamicCast_bSuccess, class UCommonActivatablePanel* K2Node_DynamicCast_AsCommon_Activatable_Panel, bool K2Node_DynamicCast_bSuccess1, class UPartyFinder_C* K2Node_DynamicCast_AsParty_Finder, bool K2Node_DynamicCast_bSuccess2, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("FriendNotification_C", "ShowPartyInvites");
 
@@ -59,7 +74,7 @@ void UFriendNotification_C::ShowPartyInvites(class UFortUIManagerWidget_NUI* Cal
 	Parms.K2Node_DynamicCast_AsCommon_Activatable_Panel = K2Node_DynamicCast_AsCommon_Activatable_Panel;
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
 	Parms.K2Node_DynamicCast_AsParty_Finder = K2Node_DynamicCast_AsParty_Finder;
-	Parms.K2Node_DynamicCast_bSuccess12 = K2Node_DynamicCast_bSuccess12;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
 	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -67,36 +82,17 @@ void UFriendNotification_C::ShowPartyInvites(class UFortUIManagerWidget_NUI* Cal
 }
 
 
-// Function FriendNotification.FriendNotification_C.TakeAction
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UFriendNotification_C::TakeAction()
-{
-	static auto Func = Class->GetFunction("FriendNotification_C", "TakeAction");
-
-	Params::UFriendNotification_C_TakeAction_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function FriendNotification.FriendNotification_C.ExecuteUbergraph_FriendNotification
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsTencentBuild_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UFriendNotification_C::ExecuteUbergraph_FriendNotification(int32 EntryPoint, bool K2Node_SwitchEnum_CmpSuccess, bool CallFunc_IsTencentBuild_ReturnValue)
+void UFriendNotification_C::ExecuteUbergraph_FriendNotification(int32 EntryPoint)
 {
 	static auto Func = Class->GetFunction("FriendNotification_C", "ExecuteUbergraph_FriendNotification");
 
 	Params::UFriendNotification_C_ExecuteUbergraph_FriendNotification_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;
-	Parms.CallFunc_IsTencentBuild_ReturnValue = CallFunc_IsTencentBuild_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -50,7 +50,7 @@ void UMicIndicator_C::OnPlayerMuted(bool bIsMuted)
 
 
 // Function MicIndicator.MicIndicator_C.ExecuteUbergraph_MicIndicator
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_SelectInt_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

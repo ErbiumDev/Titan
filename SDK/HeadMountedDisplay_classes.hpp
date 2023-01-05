@@ -24,10 +24,11 @@ public:
 		return Clss;
 	}
 
+	void UpdateExternalTrackingHMDPosition(struct FTransform& ExternalTrackingTransform);
 	void SetWorldToMetersScale(class UObject* WorldContext, float NewScale);
 	void SetTrackingOrigin(enum class EHMDTrackingOrigin Origin);
 	void SetSpectatorScreenTexture(class UTexture* InTexture);
-	void SetSpectatorScreenModeTexturePlusEyeLayout(const struct FVector2D& EyeRectMin, const struct FVector2D& EyeRectMax, const struct FVector2D& TextureRectMin, const struct FVector2D& TextureRectMax, bool bDrawEyeFirst, bool bClearBlack);
+	void SetSpectatorScreenModeTexturePlusEyeLayout(const struct FVector2D& EyeRectMin, const struct FVector2D& EyeRectMax, const struct FVector2D& TextureRectMin, const struct FVector2D& TextureRectMax, bool bDrawEyeFirst, bool bClearBlack, bool bUseAlpha);
 	void SetSpectatorScreenMode(enum class ESpectatorScreenMode Mode);
 	void SetClippingPlanes(float Near, float Far);
 	void ResetOrientationAndPosition(float Yaw, enum class EOrientPositionSelector Options);
@@ -35,6 +36,7 @@ public:
 	bool IsInLowPersistenceMode();
 	bool IsHeadMountedDisplayEnabled();
 	bool IsHeadMountedDisplayConnected();
+	bool IsDeviceTracking(struct FXRDeviceId& XRDeviceId);
 	bool HasValidTrackingPosition();
 	float GetWorldToMetersScale(class UObject* WorldContext);
 	void GetVRFocusState(bool* bUseFocus, bool* bHasFocus);
@@ -53,30 +55,30 @@ public:
 	TArray<struct FXRDeviceId> EnumerateTrackedDevices(class FName SystemId, enum class EXRTrackedDeviceType DeviceType);
 	void EnableLowPersistenceMode(bool bEnable);
 	bool EnableHMD(bool bEnable);
-	class UPrimitiveComponent* AddDeviceVisualizationComponent(class AActor* Target, struct FXRDeviceId& XRDeviceId, bool bManualAttachment, struct FTransform& RelativeTransform);
+	void CalibrateExternalTrackingToHMD(struct FTransform& ExternalTrackingTransform);
 };
 
-// 0xC0 (0x700 - 0x640)
+// 0xC0 (0x630 - 0x570)
 // Class HeadMountedDisplay.MotionControllerComponent
 class UMotionControllerComponent : public UPrimitiveComponent
 {
 public:
-	int32                                        PlayerIndex;                                       // 0x640(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class EControllerHand                   Hand;                                              // 0x644(0x1)(BlueprintVisible, ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_253B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  MotionSource;                                      // 0x648(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        bDisableLowLatencyUpdate : 1;                      // Mask: 0x1, PropSize: 0x10x650(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        BitPad_228 : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
-	uint8                                        Pad_253C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	enum class ETrackingStatus                   CurrentTrackingStatus;                             // 0x654(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bDisplayDeviceModel;                               // 0x655(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_253D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  DisplayModelSource;                                // 0x658(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UStaticMesh*                           CustomDisplayMesh;                                 // 0x660(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TArray<class UMaterialInterface*>            DisplayMeshMaterialOverrides;                      // 0x668(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
-	uint8                                        Pad_253E[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
-	class UPrimitiveComponent*                   DisplayComponent;                                  // 0x6E0(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_253F[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	int32                                        PlayerIndex;                                       // 0x570(0x4)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EControllerHand                   Hand;                                              // 0x574(0x1)(BlueprintVisible, ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2B9B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  MotionSource;                                      // 0x578(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        bDisableLowLatencyUpdate : 1;                      // Mask: 0x1, PropSize: 0x10x580(0x1)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        BitPad_267 : 7;                                    // Fixing Bit-Field Size  [ Dumper-7 ]
+	uint8                                        Pad_2B9C[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	enum class ETrackingStatus                   CurrentTrackingStatus;                             // 0x584(0x1)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	bool                                         bDisplayDeviceModel;                               // 0x585(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2B9D[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  DisplayModelSource;                                // 0x588(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UStaticMesh*                           CustomDisplayMesh;                                 // 0x590(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<class UMaterialInterface*>            DisplayMeshMaterialOverrides;                      // 0x598(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2B9E[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	class UPrimitiveComponent*                   DisplayComponent;                                  // 0x610(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_2B9F[0x18];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -113,8 +115,10 @@ public:
 	bool IsMotionTrackingEnabledForDevice(int32 PlayerIndex, enum class EControllerHand Hand);
 	bool IsMotionTrackingEnabledForComponent(class UMotionControllerComponent* MotionControllerComponent);
 	bool IsMotionTrackedDeviceCountManagementNecessary();
+	bool IsMotionSourceTracking(int32 PlayerIndex, class FName SourceName);
 	int32 GetMotionTrackingEnabledControllerCount();
 	int32 GetMaximumMotionTrackedControllerCount();
+	class FName GetActiveTrackingSystemName();
 	TArray<class FName> EnumerateMotionSources();
 	bool EnableMotionTrackingOfSource(int32 PlayerIndex, class FName SourceName);
 	bool EnableMotionTrackingOfDevice(int32 PlayerIndex, enum class EControllerHand Hand);
@@ -126,20 +130,20 @@ public:
 	void DisableMotionTrackingForComponent(class UMotionControllerComponent* MotionControllerComponent);
 };
 
-// 0x90 (0x180 - 0xF0)
+// 0x90 (0x188 - 0xF8)
 // Class HeadMountedDisplay.VRNotificationsComponent
 class UVRNotificationsComponent : public UActorComponent
 {
 public:
-	UMulticastDelegateProperty_                  HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate; // 0xF0(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  HMDTrackingInitializedDelegate;                    // 0x100(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  HMDRecenteredDelegate;                             // 0x110(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  HMDLostDelegate;                                   // 0x120(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  HMDReconnectedDelegate;                            // 0x130(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  HMDConnectCanceledDelegate;                        // 0x140(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  HMDPutOnHeadDelegate;                              // 0x150(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  HMDRemovedFromHeadDelegate;                        // 0x160(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	UMulticastDelegateProperty_                  VRControllerRecenteredDelegate;                    // 0x170(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate; // 0xF8(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDTrackingInitializedDelegate;                    // 0x108(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDRecenteredDelegate;                             // 0x118(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDLostDelegate;                                   // 0x128(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDReconnectedDelegate;                            // 0x138(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDConnectCanceledDelegate;                        // 0x148(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDPutOnHeadDelegate;                              // 0x158(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  HMDRemovedFromHeadDelegate;                        // 0x168(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  VRControllerRecenteredDelegate;                    // 0x178(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
 
 	static class UClass* StaticClass()
 	{
@@ -147,6 +151,42 @@ public:
 		return Clss;
 	}
 
+};
+
+// 0x0 (0x28 - 0x28)
+// Class HeadMountedDisplay.XRAssetFunctionLibrary
+class UXRAssetFunctionLibrary : public UBlueprintFunctionLibrary
+{
+public:
+
+	static class UClass* StaticClass()
+	{
+		static class UClass* Clss = UObject::FindClassFast("XRAssetFunctionLibrary");
+		return Clss;
+	}
+
+	class UPrimitiveComponent* AddNamedDeviceVisualizationComponentBlocking(class AActor* Target, class FName SystemName, class FName DeviceName, bool bManualAttachment, struct FTransform& RelativeTransform, struct FXRDeviceId* XRDeviceId);
+	class UPrimitiveComponent* AddDeviceVisualizationComponentBlocking(class AActor* Target, struct FXRDeviceId& XRDeviceId, bool bManualAttachment, struct FTransform& RelativeTransform);
+};
+
+// 0x30 (0x60 - 0x30)
+// Class HeadMountedDisplay.AsyncTask_LoadXRDeviceVisComponent
+class UAsyncTask_LoadXRDeviceVisComponent : public UBlueprintAsyncActionBase
+{
+public:
+	UMulticastDelegateProperty_                  OnModelLoaded;                                     // 0x30(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	UMulticastDelegateProperty_                  OnLoadFailure;                                     // 0x40(0x10)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
+	uint8                                        Pad_2BB0[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UPrimitiveComponent*                   SpawnedComponent;                                  // 0x58(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+
+	static class UClass* StaticClass()
+	{
+		static class UClass* Clss = UObject::FindClassFast("AsyncTask_LoadXRDeviceVisComponent");
+		return Clss;
+	}
+
+	class UAsyncTask_LoadXRDeviceVisComponent* AddNamedDeviceVisualizationComponentAsync(class AActor* Target, class FName SystemName, class FName DeviceName, bool bManualAttachment, struct FTransform& RelativeTransform, struct FXRDeviceId* XRDeviceId, class UPrimitiveComponent** NewComponent);
+	class UAsyncTask_LoadXRDeviceVisComponent* AddDeviceVisualizationComponentAsync(class AActor* Target, struct FXRDeviceId& XRDeviceId, bool bManualAttachment, struct FTransform& RelativeTransform, class UPrimitiveComponent** NewComponent);
 };
 
 }

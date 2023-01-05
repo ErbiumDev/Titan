@@ -16,7 +16,7 @@ namespace SDK
 
 
 // Function Crossbow_BP.Crossbow_BP_C.ExecuteUbergraph_Crossbow_BP
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

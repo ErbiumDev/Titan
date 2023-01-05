@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-StarRating-M.ButtonStyle-StarRating-M_C
 class UButtonStyle_StarRating_M_C : public UButtonStyle_Base_C
 {

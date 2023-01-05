@@ -101,7 +101,7 @@ void AAnnounce_Gen_Quest_Conversation_FrontEndRewards_C::OnSentenceStarted(struc
 
 
 // Function Announce_Gen_Quest_Conversation_FrontEndRewards.Announce_Gen_Quest_Conversation_FrontEndRewards_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation_FrontEndRewards
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortConversationSentence   K2Node_Event_FinishingSentence                                   ()

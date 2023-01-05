@@ -19,18 +19,20 @@ namespace SDK
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // int32                              NewValue                                                         (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              Temp_int_Variable                                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GreaterEqual_IntInt_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuestSpinner_C::IncrementPoolIndex(int32* NewValue, int32 CallFunc_Array_Length_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue)
+void UQuestSpinner_C::IncrementPoolIndex(int32* NewValue, int32 Temp_int_Variable, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_GreaterEqual_IntInt_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue)
 {
 	static auto Func = Class->GetFunction("QuestSpinner_C", "IncrementPoolIndex");
 
 	Params::UQuestSpinner_C_IncrementPoolIndex_Params Parms;
+	Parms.Temp_int_Variable = Temp_int_Variable;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 	Parms.CallFunc_GreaterEqual_IntInt_ReturnValue = CallFunc_GreaterEqual_IntInt_ReturnValue;
+	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -43,14 +45,16 @@ void UQuestSpinner_C::IncrementPoolIndex(int32* NewValue, int32 CallFunc_Array_L
 // Function QuestSpinner.QuestSpinner_C.OnSpinDelayTimerComplete
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_IncrementPoolIndex_NewValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortQuestItem*              CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UQuestSpinner_C::OnSpinDelayTimerComplete(int32 CallFunc_IncrementPoolIndex_NewValue, class UFortQuestItem* CallFunc_Array_Get_Item)
+void UQuestSpinner_C::OnSpinDelayTimerComplete(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, int32 CallFunc_IncrementPoolIndex_NewValue, class UFortQuestItem* CallFunc_Array_Get_Item)
 {
 	static auto Func = Class->GetFunction("QuestSpinner_C", "OnSpinDelayTimerComplete");
 
 	Params::UQuestSpinner_C_OnSpinDelayTimerComplete_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.CallFunc_IncrementPoolIndex_NewValue = CallFunc_IncrementPoolIndex_NewValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 
@@ -62,7 +66,7 @@ void UQuestSpinner_C::OnSpinDelayTimerComplete(int32 CallFunc_IncrementPoolIndex
 // Function QuestSpinner.QuestSpinner_C.BeginSpinDelayTimer
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimer_ReturnValue                                 (NoDestructor, HasGetValueTypeHash)
 
 void UQuestSpinner_C::BeginSpinDelayTimer(const struct FTimerHandle& CallFunc_K2_SetTimer_ReturnValue)
 {
@@ -119,7 +123,7 @@ void UQuestSpinner_C::OnSpinComplete()
 
 
 // Function QuestSpinner.QuestSpinner_C.ExecuteUbergraph_QuestSpinner
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FWidgetTransform            K2Node_MakeStruct_WidgetTransform                                (NoDestructor)

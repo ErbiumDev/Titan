@@ -31,7 +31,7 @@ void UGAT_Athena_Bush_C::K2_ActivateAbility()
 
 
 // Function GAT_Athena_Bush.GAT_Athena_Bush_C.ExecuteUbergraph_GAT_Athena_Bush
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayAbilityActorInfo   CallFunc_GetActorInfo_ReturnValue                                (ContainsInstancedReference)

@@ -15,70 +15,16 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function ItemEntry.ItemEntry_C.DoesItemHaveChildren
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UItemEntry_C::DoesItemHaveChildren()
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "DoesItemHaveChildren");
-
-	Params::UItemEntry_C_DoesItemHaveChildren_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.GetIndentLevel
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// int32                              ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-int32 UItemEntry_C::GetIndentLevel()
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "GetIndentLevel");
-
-	Params::UItemEntry_C_GetIndentLevel_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.IsItemExpanded
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
-// Parameters:
-// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-
-bool UItemEntry_C::IsItemExpanded()
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "IsItemExpanded");
-
-	Params::UItemEntry_C_IsItemExpanded_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.GetData
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
+// Function ItemEntry.ItemEntry_C.GetListItemObject
+// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure, Const)
 // Parameters:
 // class UObject*                     ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UObject* UItemEntry_C::GetData()
+class UObject* UItemEntry_C::GetListItemObject()
 {
-	static auto Func = Class->GetFunction("ItemEntry_C", "GetData");
+	static auto Func = Class->GetFunction("ItemEntry_C", "GetListItemObject");
 
-	Params::UItemEntry_C_GetData_Params Parms;
+	Params::UItemEntry_C_GetListItemObject_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -87,162 +33,66 @@ class UObject* UItemEntry_C::GetData()
 }
 
 
-// Function ItemEntry.ItemEntry_C.OnAcquireFromPool
+// Function ItemEntry.ItemEntry_C.BP_OnEntryReleased
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UItemEntry_C::OnAcquireFromPool()
+void UItemEntry_C::BP_OnEntryReleased()
 {
-	static auto Func = Class->GetFunction("ItemEntry_C", "OnAcquireFromPool");
+	static auto Func = Class->GetFunction("ItemEntry_C", "BP_OnEntryReleased");
 
-	Params::UItemEntry_C_OnAcquireFromPool_Params Parms;
+	Params::UItemEntry_C_BP_OnEntryReleased_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function ItemEntry.ItemEntry_C.OnReleaseToPool
+// Function ItemEntry.ItemEntry_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
+// bool                               bIsExpanded                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UItemEntry_C::OnReleaseToPool()
+void UItemEntry_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("ItemEntry_C", "OnReleaseToPool");
+	static auto Func = Class->GetFunction("ItemEntry_C", "BP_OnItemExpansionChanged");
 
-	Params::UItemEntry_C_OnReleaseToPool_Params Parms;
+	Params::UItemEntry_C_BP_OnItemExpansionChanged_Params Parms;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function ItemEntry.ItemEntry_C.Private_OnExpanderArrowShiftClicked
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function ItemEntry.ItemEntry_C.BP_OnItemSelectionChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
+// bool                               bIsSelected                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UItemEntry_C::Private_OnExpanderArrowShiftClicked()
+void UItemEntry_C::BP_OnItemSelectionChanged(bool bIsSelected)
 {
-	static auto Func = Class->GetFunction("ItemEntry_C", "Private_OnExpanderArrowShiftClicked");
+	static auto Func = Class->GetFunction("ItemEntry_C", "BP_OnItemSelectionChanged");
 
-	Params::UItemEntry_C_Private_OnExpanderArrowShiftClicked_Params Parms;
+	Params::UItemEntry_C_BP_OnItemSelectionChanged_Params Parms;
+	Parms.bIsSelected = bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function ItemEntry.ItemEntry_C.RegisterOnClicked
-// (Event, Public, HasOutParams, BlueprintCallable, BlueprintEvent)
+// Function ItemEntry.ItemEntry_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// UDelegateProperty_                 Callback                                                         (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor)
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemEntry_C::RegisterOnClicked(UDelegateProperty_& Callback)
+void UItemEntry_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("ItemEntry_C", "RegisterOnClicked");
+	static auto Func = Class->GetFunction("ItemEntry_C", "OnListItemObjectSet");
 
-	Params::UItemEntry_C_RegisterOnClicked_Params Parms;
-	Parms.Callback = Callback;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.SetExpanded
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               bExpanded                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UItemEntry_C::SetExpanded(bool bExpanded)
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "SetExpanded");
-
-	Params::UItemEntry_C_SetExpanded_Params Parms;
-	Parms.bExpanded = bExpanded;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.SetIndexInList
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// int32                              InIndexInList                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemEntry_C::SetIndexInList(int32 InIndexInList)
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "SetIndexInList");
-
-	Params::UItemEntry_C_SetIndexInList_Params Parms;
-	Parms.InIndexInList = InIndexInList;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.SetSelected
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               bSelected                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UItemEntry_C::SetSelected(bool bSelected)
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "SetSelected");
-
-	Params::UItemEntry_C_SetSelected_Params Parms;
-	Parms.bSelected = bSelected;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.ToggleExpansion
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UItemEntry_C::ToggleExpansion()
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "ToggleExpansion");
-
-	Params::UItemEntry_C_ToggleExpansion_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.Reset
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UItemEntry_C::Reset()
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "Reset");
-
-	Params::UItemEntry_C_Reset_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function ItemEntry.ItemEntry_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UObject*                     InData                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             OwningList                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UItemEntry_C::SetData(class UObject* InData, class UCommonListView* OwningList)
-{
-	static auto Func = Class->GetFunction("ItemEntry_C", "SetData");
-
-	Params::UItemEntry_C_SetData_Params Parms;
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Params::UItemEntry_C_OnListItemObjectSet_Params Parms;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -265,28 +115,22 @@ void UItemEntry_C::Construct()
 
 
 // Function ItemEntry.ItemEntry_C.ExecuteUbergraph_ItemEntry
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UDelegateProperty_                 K2Node_Event_Callback                                            (ConstParm, ZeroConstructor, NoDestructor)
-// bool                               K2Node_Event_bExpanded                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              K2Node_Event_InIndexInList                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_bSelected                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UObject*                     K2Node_Event_InData                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             K2Node_Event_OwningList                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_Event_bIsExpanded                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_Event_bIsSelected                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UItemEntry_C::ExecuteUbergraph_ItemEntry(int32 EntryPoint, UDelegateProperty_ K2Node_Event_Callback, bool K2Node_Event_bExpanded, int32 K2Node_Event_InIndexInList, bool K2Node_Event_bSelected, class UObject* K2Node_Event_InData, class UCommonListView* K2Node_Event_OwningList)
+void UItemEntry_C::ExecuteUbergraph_ItemEntry(int32 EntryPoint, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, class UObject* K2Node_Event_ListItemObject)
 {
 	static auto Func = Class->GetFunction("ItemEntry_C", "ExecuteUbergraph_ItemEntry");
 
 	Params::UItemEntry_C_ExecuteUbergraph_ItemEntry_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_Event_Callback = K2Node_Event_Callback;
-	Parms.K2Node_Event_bExpanded = K2Node_Event_bExpanded;
-	Parms.K2Node_Event_InIndexInList = K2Node_Event_InIndexInList;
-	Parms.K2Node_Event_bSelected = K2Node_Event_bSelected;
-	Parms.K2Node_Event_InData = K2Node_Event_InData;
-	Parms.K2Node_Event_OwningList = K2Node_Event_OwningList;
+	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
+	Parms.K2Node_Event_bIsSelected = K2Node_Event_bIsSelected;
+	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 

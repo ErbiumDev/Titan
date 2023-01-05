@@ -140,7 +140,7 @@ void AB_DtB_FloatingRift_C::BndEvt__KillVolume_K2Node_ComponentBoundEvent_84_Com
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.HandleMissionEvent_NewPlayer
 // (HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// struct FGuid                       InMissionGuid                                                    (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGuid                       InMissionGuid                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTagContainer       ObjectiveHandle                                                  (BlueprintVisible, BlueprintReadOnly, Parm)
 // class UFortMissionEventParams*     Params                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               DO_NOT_USE_THIS_OR_VARIABLES_BELOW                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -225,20 +225,20 @@ void AB_DtB_FloatingRift_C::BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_
 
 
 // Function B_DtB_FloatingRift.B_DtB_FloatingRift_C.ExecuteUbergraph_B_DtB_FloatingRift
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OverlappedComponent123                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      K2Node_ComponentBoundEvent_OtherActor123                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OtherComp123                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              K2Node_ComponentBoundEvent_OtherBodyIndex123                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_ComponentBoundEvent_bFromSweep12                          (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHitResult                  K2Node_ComponentBoundEvent_SweepResult12                         (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OverlappedComponent12                 (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class AActor*                      K2Node_ComponentBoundEvent_OtherActor12                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OtherComp12                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              K2Node_ComponentBoundEvent_OtherBodyIndex12                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     CallFunc_K2_GetComponentLocation_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OverlappedComponent3                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      K2Node_ComponentBoundEvent_OtherActor3                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OtherComp3                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              K2Node_ComponentBoundEvent_OtherBodyIndex3                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_ComponentBoundEvent_bFromSweep2                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FHitResult                  K2Node_ComponentBoundEvent_SweepResult2                          (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
+// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OverlappedComponent2                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AActor*                      K2Node_ComponentBoundEvent_OtherActor2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UPrimitiveComponent*         K2Node_ComponentBoundEvent_OtherComp2                            (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              K2Node_ComponentBoundEvent_OtherBodyIndex2                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn1                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -254,9 +254,9 @@ void AB_DtB_FloatingRift_C::BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_
 // int32                              K2Node_ComponentBoundEvent_OtherBodyIndex1                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_ComponentBoundEvent_bFromSweep1                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FHitResult                  K2Node_ComponentBoundEvent_SweepResult1                          (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn12                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FGuid                       K2Node_HandleMissionEvent_InMissionGuid                          (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn2                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FGuid                       K2Node_HandleMissionEvent_InMissionGuid                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTagContainer       K2Node_HandleMissionEvent_ObjectiveHandle                        ()
 // class UFortMissionEventParams*     K2Node_HandleMissionEvent_Params                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -276,30 +276,30 @@ void AB_DtB_FloatingRift_C::BndEvt__P_DtBRiftCore_K2Node_ComponentBoundEvent_12_
 // int32                              K2Node_ComponentBoundEvent_OtherBodyIndex                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_ComponentBoundEvent_bFromSweep                            (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FHitResult                  K2Node_ComponentBoundEvent_SweepResult                           (ConstParm, IsPlainOldData, NoDestructor, ContainsInstancedReference)
-// class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn123                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess123                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class AFortPlayerPawn*             K2Node_DynamicCast_AsFort_Player_Pawn3                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess3                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FName                        K2Node_ComponentBoundEvent_EventName                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_ComponentBoundEvent_EmitterTime                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              K2Node_ComponentBoundEvent_ParticleCount                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void AB_DtB_FloatingRift_C::ExecuteUbergraph_B_DtB_FloatingRift(int32 EntryPoint, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent123, class AActor* K2Node_ComponentBoundEvent_OtherActor123, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp123, int32 K2Node_ComponentBoundEvent_OtherBodyIndex123, bool K2Node_ComponentBoundEvent_bFromSweep12, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult12, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent12, class AActor* K2Node_ComponentBoundEvent_OtherActor12, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp12, int32 K2Node_ComponentBoundEvent_OtherBodyIndex12, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn1, bool K2Node_DynamicCast_bSuccess1, TArray<class AActor*>& CallFunc_GetOverlappingActors_OverlappingActors, int32 CallFunc_Array_Length_ReturnValue, bool Temp_bool_IsClosed_Variable, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent1, class AActor* K2Node_ComponentBoundEvent_OtherActor1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp1, int32 K2Node_ComponentBoundEvent_OtherBodyIndex1, bool K2Node_ComponentBoundEvent_bFromSweep1, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn12, bool K2Node_DynamicCast_bSuccess12, const struct FGuid& K2Node_HandleMissionEvent_InMissionGuid, const struct FGameplayTagContainer& K2Node_HandleMissionEvent_ObjectiveHandle, class UFortMissionEventParams* K2Node_HandleMissionEvent_Params, bool K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* K2Node_HandleMissionEvent_EventFocus, class UDataAsset* K2Node_HandleMissionEvent_EventContent, class AActor* K2Node_HandleMissionEvent_EventInstigator, int32 K2Node_HandleMissionEvent_GenericInt, float K2Node_HandleMissionEvent_GenericFloat, class FText K2Node_HandleMissionEvent_GenericText, const struct FGameplayTagContainer& K2Node_HandleMissionEvent_GameplayTags, const struct FFortMissionEvent& K2Node_HandleMissionEvent_MissionEvent, bool CallFunc_DoesAnyoneRequireQuest_SomePlayerNeedsTheQuest, bool CallFunc_DoesAnyoneRequireQuest_SomePlayerNeedsTheQuest1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn123, bool K2Node_DynamicCast_bSuccess123, class FName K2Node_ComponentBoundEvent_EventName, float K2Node_ComponentBoundEvent_EmitterTime, int32 K2Node_ComponentBoundEvent_ParticleCount, bool CallFunc_EqualEqual_NameName_ReturnValue)
+void AB_DtB_FloatingRift_C::ExecuteUbergraph_B_DtB_FloatingRift(int32 EntryPoint, const struct FVector& CallFunc_K2_GetComponentLocation_ReturnValue, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent3, class AActor* K2Node_ComponentBoundEvent_OtherActor3, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp3, int32 K2Node_ComponentBoundEvent_OtherBodyIndex3, bool K2Node_ComponentBoundEvent_bFromSweep2, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult2, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent2, class AActor* K2Node_ComponentBoundEvent_OtherActor2, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp2, int32 K2Node_ComponentBoundEvent_OtherBodyIndex2, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn1, bool K2Node_DynamicCast_bSuccess1, TArray<class AActor*>& CallFunc_GetOverlappingActors_OverlappingActors, int32 CallFunc_Array_Length_ReturnValue, bool Temp_bool_IsClosed_Variable, bool CallFunc_EqualEqual_IntInt_ReturnValue, bool Temp_bool_Has_Been_Initd_Variable, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent1, class AActor* K2Node_ComponentBoundEvent_OtherActor1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp1, int32 K2Node_ComponentBoundEvent_OtherBodyIndex1, bool K2Node_ComponentBoundEvent_bFromSweep1, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult1, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn2, bool K2Node_DynamicCast_bSuccess2, const struct FGuid& K2Node_HandleMissionEvent_InMissionGuid, const struct FGameplayTagContainer& K2Node_HandleMissionEvent_ObjectiveHandle, class UFortMissionEventParams* K2Node_HandleMissionEvent_Params, bool K2Node_HandleMissionEvent_DO_NOT_USE_THIS_OR_VARIABLES_BELOW, class UObject* K2Node_HandleMissionEvent_EventFocus, class UDataAsset* K2Node_HandleMissionEvent_EventContent, class AActor* K2Node_HandleMissionEvent_EventInstigator, int32 K2Node_HandleMissionEvent_GenericInt, float K2Node_HandleMissionEvent_GenericFloat, class FText K2Node_HandleMissionEvent_GenericText, const struct FGameplayTagContainer& K2Node_HandleMissionEvent_GameplayTags, const struct FFortMissionEvent& K2Node_HandleMissionEvent_MissionEvent, bool CallFunc_DoesAnyoneRequireQuest_SomePlayerNeedsTheQuest, bool CallFunc_DoesAnyoneRequireQuest_SomePlayerNeedsTheQuest1, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, class AActor* K2Node_ComponentBoundEvent_OtherActor, class UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool K2Node_ComponentBoundEvent_bFromSweep, const struct FHitResult& K2Node_ComponentBoundEvent_SweepResult, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn3, bool K2Node_DynamicCast_bSuccess3, class FName K2Node_ComponentBoundEvent_EventName, float K2Node_ComponentBoundEvent_EmitterTime, int32 K2Node_ComponentBoundEvent_ParticleCount, bool CallFunc_EqualEqual_NameName_ReturnValue)
 {
 	static auto Func = Class->GetFunction("B_DtB_FloatingRift_C", "ExecuteUbergraph_B_DtB_FloatingRift");
 
 	Params::AB_DtB_FloatingRift_C_ExecuteUbergraph_B_DtB_FloatingRift_Params Parms;
 	Parms.EntryPoint = EntryPoint;
 	Parms.CallFunc_K2_GetComponentLocation_ReturnValue = CallFunc_K2_GetComponentLocation_ReturnValue;
-	Parms.K2Node_ComponentBoundEvent_OverlappedComponent123 = K2Node_ComponentBoundEvent_OverlappedComponent123;
-	Parms.K2Node_ComponentBoundEvent_OtherActor123 = K2Node_ComponentBoundEvent_OtherActor123;
-	Parms.K2Node_ComponentBoundEvent_OtherComp123 = K2Node_ComponentBoundEvent_OtherComp123;
-	Parms.K2Node_ComponentBoundEvent_OtherBodyIndex123 = K2Node_ComponentBoundEvent_OtherBodyIndex123;
-	Parms.K2Node_ComponentBoundEvent_bFromSweep12 = K2Node_ComponentBoundEvent_bFromSweep12;
-	Parms.K2Node_ComponentBoundEvent_SweepResult12 = K2Node_ComponentBoundEvent_SweepResult12;
-	Parms.K2Node_ComponentBoundEvent_OverlappedComponent12 = K2Node_ComponentBoundEvent_OverlappedComponent12;
-	Parms.K2Node_ComponentBoundEvent_OtherActor12 = K2Node_ComponentBoundEvent_OtherActor12;
-	Parms.K2Node_ComponentBoundEvent_OtherComp12 = K2Node_ComponentBoundEvent_OtherComp12;
-	Parms.K2Node_ComponentBoundEvent_OtherBodyIndex12 = K2Node_ComponentBoundEvent_OtherBodyIndex12;
+	Parms.K2Node_ComponentBoundEvent_OverlappedComponent3 = K2Node_ComponentBoundEvent_OverlappedComponent3;
+	Parms.K2Node_ComponentBoundEvent_OtherActor3 = K2Node_ComponentBoundEvent_OtherActor3;
+	Parms.K2Node_ComponentBoundEvent_OtherComp3 = K2Node_ComponentBoundEvent_OtherComp3;
+	Parms.K2Node_ComponentBoundEvent_OtherBodyIndex3 = K2Node_ComponentBoundEvent_OtherBodyIndex3;
+	Parms.K2Node_ComponentBoundEvent_bFromSweep2 = K2Node_ComponentBoundEvent_bFromSweep2;
+	Parms.K2Node_ComponentBoundEvent_SweepResult2 = K2Node_ComponentBoundEvent_SweepResult2;
+	Parms.K2Node_ComponentBoundEvent_OverlappedComponent2 = K2Node_ComponentBoundEvent_OverlappedComponent2;
+	Parms.K2Node_ComponentBoundEvent_OtherActor2 = K2Node_ComponentBoundEvent_OtherActor2;
+	Parms.K2Node_ComponentBoundEvent_OtherComp2 = K2Node_ComponentBoundEvent_OtherComp2;
+	Parms.K2Node_ComponentBoundEvent_OtherBodyIndex2 = K2Node_ComponentBoundEvent_OtherBodyIndex2;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn = K2Node_DynamicCast_AsFort_Player_Pawn;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 	Parms.K2Node_DynamicCast_AsFort_Player_Pawn1 = K2Node_DynamicCast_AsFort_Player_Pawn1;
@@ -315,8 +315,8 @@ void AB_DtB_FloatingRift_C::ExecuteUbergraph_B_DtB_FloatingRift(int32 EntryPoint
 	Parms.K2Node_ComponentBoundEvent_OtherBodyIndex1 = K2Node_ComponentBoundEvent_OtherBodyIndex1;
 	Parms.K2Node_ComponentBoundEvent_bFromSweep1 = K2Node_ComponentBoundEvent_bFromSweep1;
 	Parms.K2Node_ComponentBoundEvent_SweepResult1 = K2Node_ComponentBoundEvent_SweepResult1;
-	Parms.K2Node_DynamicCast_AsFort_Player_Pawn12 = K2Node_DynamicCast_AsFort_Player_Pawn12;
-	Parms.K2Node_DynamicCast_bSuccess12 = K2Node_DynamicCast_bSuccess12;
+	Parms.K2Node_DynamicCast_AsFort_Player_Pawn2 = K2Node_DynamicCast_AsFort_Player_Pawn2;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
 	Parms.K2Node_HandleMissionEvent_InMissionGuid = K2Node_HandleMissionEvent_InMissionGuid;
 	Parms.K2Node_HandleMissionEvent_ObjectiveHandle = K2Node_HandleMissionEvent_ObjectiveHandle;
 	Parms.K2Node_HandleMissionEvent_Params = K2Node_HandleMissionEvent_Params;
@@ -337,8 +337,8 @@ void AB_DtB_FloatingRift_C::ExecuteUbergraph_B_DtB_FloatingRift(int32 EntryPoint
 	Parms.K2Node_ComponentBoundEvent_OtherBodyIndex = K2Node_ComponentBoundEvent_OtherBodyIndex;
 	Parms.K2Node_ComponentBoundEvent_bFromSweep = K2Node_ComponentBoundEvent_bFromSweep;
 	Parms.K2Node_ComponentBoundEvent_SweepResult = K2Node_ComponentBoundEvent_SweepResult;
-	Parms.K2Node_DynamicCast_AsFort_Player_Pawn123 = K2Node_DynamicCast_AsFort_Player_Pawn123;
-	Parms.K2Node_DynamicCast_bSuccess123 = K2Node_DynamicCast_bSuccess123;
+	Parms.K2Node_DynamicCast_AsFort_Player_Pawn3 = K2Node_DynamicCast_AsFort_Player_Pawn3;
+	Parms.K2Node_DynamicCast_bSuccess3 = K2Node_DynamicCast_bSuccess3;
 	Parms.K2Node_ComponentBoundEvent_EventName = K2Node_ComponentBoundEvent_EventName;
 	Parms.K2Node_ComponentBoundEvent_EmitterTime = K2Node_ComponentBoundEvent_EmitterTime;
 	Parms.K2Node_ComponentBoundEvent_ParticleCount = K2Node_ComponentBoundEvent_ParticleCount;

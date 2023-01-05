@@ -15,25 +15,36 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.SetTimespanSource
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// UInterfaceProperty_                Value                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UAthenaChallengeTreeEntry_C::SetTimespanSource(UInterfaceProperty_ Value)
+{
+	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "SetTimespanSource");
+
+	Params::UAthenaChallengeTreeEntry_C_SetTimespanSource_Params Parms;
+	Parms.Value = Value;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.GetRewardToShow
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Public, HasOutParams, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortItem*                   ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortChallengeBundleInfo*    CallFunc_GetChallengeBundleInfo_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItem*                   CallFunc_CreateTemporaryItemInstanceBP_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_IsUnlocked_LockedReason                                 ()
-// bool                               CallFunc_IsUnlocked_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortItem*                   CallFunc_GetRewardItem_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-class UFortItem* UAthenaChallengeTreeEntry_C::GetRewardToShow(class UFortChallengeBundleInfo* CallFunc_GetChallengeBundleInfo_ReturnValue, class UFortItem* CallFunc_CreateTemporaryItemInstanceBP_ReturnValue, class FText CallFunc_IsUnlocked_LockedReason, bool CallFunc_IsUnlocked_ReturnValue, class UFortItem* CallFunc_GetRewardItem_ReturnValue)
+class UFortItem* UAthenaChallengeTreeEntry_C::GetRewardToShow(class UFortChallengeBundleInfo* CallFunc_GetChallengeBundleInfo_ReturnValue, class UFortItem* CallFunc_GetRewardItem_ReturnValue)
 {
 	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "GetRewardToShow");
 
 	Params::UAthenaChallengeTreeEntry_C_GetRewardToShow_Params Parms;
 	Parms.CallFunc_GetChallengeBundleInfo_ReturnValue = CallFunc_GetChallengeBundleInfo_ReturnValue;
-	Parms.CallFunc_CreateTemporaryItemInstanceBP_ReturnValue = CallFunc_CreateTemporaryItemInstanceBP_ReturnValue;
-	Parms.CallFunc_IsUnlocked_LockedReason = CallFunc_IsUnlocked_LockedReason;
-	Parms.CallFunc_IsUnlocked_ReturnValue = CallFunc_IsUnlocked_ReturnValue;
 	Parms.CallFunc_GetRewardItem_ReturnValue = CallFunc_GetRewardItem_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -93,15 +104,15 @@ void UAthenaChallengeTreeEntry_C::UpdateReward(class UFortChallengeBundleInfo* C
 // float                              CallFunc_GetAchievedCount_OutAchievedPercent                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetAchievedCount_OutThresholdPercent                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
-// enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class ESlateVisibility        Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable123                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable3                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaChallengeTreeEntry_C::UpdateBundleData(class UFortChallengeBundleInfo* BundleInfo, enum class ESlateVisibility Temp_byte_Variable, int32 CallFunc_HasQuestReward_OutRecievedCount, int32 CallFunc_HasQuestReward_OutTotalCount, bool CallFunc_HasQuestReward_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, class UFortChallengeBundleItemDefinition* CallFunc_GetBundleDefinition_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_GetShortNameNumber_ReturnValue, class FText CallFunc_Format_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_GetShortName_ReturnValue, int32 CallFunc_GetAchievedCount_OutTotalAchievedCount, int32 CallFunc_GetAchievedCount_OutTotalRequiredCount, float CallFunc_GetAchievedCount_OutAchievedPercent, float CallFunc_GetAchievedCount_OutThresholdPercent, class FText CallFunc_TextToUpper_ReturnValue, enum class ESlateVisibility Temp_byte_Variable1, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable12, enum class ESlateVisibility Temp_byte_Variable123, enum class ESlateVisibility K2Node_Select_Default, bool Temp_bool_Variable1, enum class ESlateVisibility K2Node_Select1_Default)
+void UAthenaChallengeTreeEntry_C::UpdateBundleData(class UFortChallengeBundleInfo* BundleInfo, enum class ESlateVisibility Temp_byte_Variable, int32 CallFunc_HasQuestReward_OutRecievedCount, int32 CallFunc_HasQuestReward_OutTotalCount, bool CallFunc_HasQuestReward_ReturnValue, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, class UFortChallengeBundleItemDefinition* CallFunc_GetBundleDefinition_ReturnValue, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, class FText CallFunc_GetShortNameNumber_ReturnValue, class FText CallFunc_Format_ReturnValue, bool CallFunc_TextIsEmpty_ReturnValue, class FText CallFunc_GetShortName_ReturnValue, int32 CallFunc_GetAchievedCount_OutTotalAchievedCount, int32 CallFunc_GetAchievedCount_OutTotalRequiredCount, float CallFunc_GetAchievedCount_OutAchievedPercent, float CallFunc_GetAchievedCount_OutThresholdPercent, class FText CallFunc_TextToUpper_ReturnValue, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable2, enum class ESlateVisibility Temp_byte_Variable3, enum class ESlateVisibility K2Node_Select_Default, bool Temp_bool_Variable1, enum class ESlateVisibility K2Node_Select1_Default)
 {
 	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "UpdateBundleData");
 
@@ -124,10 +135,10 @@ void UAthenaChallengeTreeEntry_C::UpdateBundleData(class UFortChallengeBundleInf
 	Parms.CallFunc_GetAchievedCount_OutAchievedPercent = CallFunc_GetAchievedCount_OutAchievedPercent;
 	Parms.CallFunc_GetAchievedCount_OutThresholdPercent = CallFunc_GetAchievedCount_OutThresholdPercent;
 	Parms.CallFunc_TextToUpper_ReturnValue = CallFunc_TextToUpper_ReturnValue;
-	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
-	Parms.Temp_byte_Variable123 = Temp_byte_Variable123;
+	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
+	Parms.Temp_byte_Variable3 = Temp_byte_Variable3;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
@@ -141,18 +152,17 @@ void UAthenaChallengeTreeEntry_C::UpdateBundleData(class UFortChallengeBundleInf
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFortChallengeBundleInfo*    BundleInfo                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_IsUnlocked_LockedReason                                 ()
+// struct FFortChallengeBundleInfoLockedReasonCallFunc_IsUnlocked_LockedReason                                 ()
 // bool                               CallFunc_IsUnlocked_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsCompleted_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
 // class UAthenaAccountContext*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_ShouldReplaceBattleStarsWithAlternateReward_ReturnValue (ZeroConstructor, IsPlainOldData, NoDestructor)
+// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaChallengeTreeEntry_C::UpdateBundleStyle(class UFortChallengeBundleInfo* BundleInfo, class FText CallFunc_IsUnlocked_LockedReason, bool CallFunc_IsUnlocked_ReturnValue, bool CallFunc_IsCompleted_ReturnValue, class FText CallFunc_TextToUpper_ReturnValue, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, bool CallFunc_ShouldReplaceBattleStarsWithAlternateReward_ReturnValue, enum class ESlateVisibility Temp_byte_Variable1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
+void UAthenaChallengeTreeEntry_C::UpdateBundleStyle(class UFortChallengeBundleInfo* BundleInfo, const struct FFortChallengeBundleInfoLockedReason& CallFunc_IsUnlocked_LockedReason, bool CallFunc_IsUnlocked_ReturnValue, bool CallFunc_IsCompleted_ReturnValue, class UAthenaAccountContext* CallFunc_GetContext_ReturnValue, bool CallFunc_ShouldReplaceBattleStarsWithAlternateReward_ReturnValue, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, bool Temp_bool_Variable, enum class ESlateVisibility K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "UpdateBundleStyle");
 
@@ -161,10 +171,9 @@ void UAthenaChallengeTreeEntry_C::UpdateBundleStyle(class UFortChallengeBundleIn
 	Parms.CallFunc_IsUnlocked_LockedReason = CallFunc_IsUnlocked_LockedReason;
 	Parms.CallFunc_IsUnlocked_ReturnValue = CallFunc_IsUnlocked_ReturnValue;
 	Parms.CallFunc_IsCompleted_ReturnValue = CallFunc_IsCompleted_ReturnValue;
-	Parms.CallFunc_TextToUpper_ReturnValue = CallFunc_TextToUpper_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.CallFunc_ShouldReplaceBattleStarsWithAlternateReward_ReturnValue = CallFunc_ShouldReplaceBattleStarsWithAlternateReward_ReturnValue;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
@@ -229,32 +238,32 @@ void UAthenaChallengeTreeEntry_C::SetupAsChallengeBundle(class UFortChallengeBun
 }
 
 
-// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.ExpansionChanged
+// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
-// bool                               bExpanded                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaChallengeTreeEntry_C::ExpansionChanged(bool bExpanded)
+void UAthenaChallengeTreeEntry_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "ExpansionChanged");
+	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "BP_OnHovered");
 
-	Params::UAthenaChallengeTreeEntry_C_ExpansionChanged_Params Parms;
-	Parms.bExpanded = bExpanded;
+	Params::UAthenaChallengeTreeEntry_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.OnHovered
+// Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.BP_OnItemExpansionChanged
 // (Event, Protected, BlueprintEvent)
 // Parameters:
+// bool                               bIsExpanded                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UAthenaChallengeTreeEntry_C::OnHovered()
+void UAthenaChallengeTreeEntry_C::BP_OnItemExpansionChanged(bool bIsExpanded)
 {
-	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "OnHovered");
+	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "BP_OnItemExpansionChanged");
 
-	Params::UAthenaChallengeTreeEntry_C_OnHovered_Params Parms;
+	Params::UAthenaChallengeTreeEntry_C_BP_OnItemExpansionChanged_Params Parms;
+	Parms.bIsExpanded = bIsExpanded;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -262,35 +271,35 @@ void UAthenaChallengeTreeEntry_C::OnHovered()
 
 
 // Function AthenaChallengeTreeEntry.AthenaChallengeTreeEntry_C.ExecuteUbergraph_AthenaChallengeTreeEntry
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortItem*                   CallFunc_GetRewardToShow_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_Event_bExpanded                                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_Event_bIsExpanded                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Conv_BoolToInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortChallengeBundleInfo*    CallFunc_GetChallengeBundleInfo_ReturnValue                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortChallengeBundleInfo*    K2Node_Event_Bundle                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortChallengeBundleCategoryInfo*K2Node_Event_Schedule                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsItemExpanded_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UFortItem*                   CallFunc_GetRewardToShow_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_IsListItemExpanded_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // int32                              CallFunc_Conv_BoolToInt_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaChallengeTreeEntry_C::ExecuteUbergraph_AthenaChallengeTreeEntry(int32 EntryPoint, class UFortItem* CallFunc_GetRewardToShow_ReturnValue, bool K2Node_Event_bExpanded, int32 CallFunc_Conv_BoolToInt_ReturnValue, class UFortChallengeBundleInfo* CallFunc_GetChallengeBundleInfo_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, class UFortChallengeBundleInfo* K2Node_Event_Bundle, class UFortChallengeBundleCategoryInfo* K2Node_Event_Schedule, bool CallFunc_IsItemExpanded_ReturnValue, int32 CallFunc_Conv_BoolToInt_ReturnValue1)
+void UAthenaChallengeTreeEntry_C::ExecuteUbergraph_AthenaChallengeTreeEntry(int32 EntryPoint, bool K2Node_Event_bIsExpanded, int32 CallFunc_Conv_BoolToInt_ReturnValue, class UFortChallengeBundleInfo* CallFunc_GetChallengeBundleInfo_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue, bool CallFunc_IsValid_ReturnValue, class UFortChallengeBundleInfo* K2Node_Event_Bundle, class UFortChallengeBundleCategoryInfo* K2Node_Event_Schedule, class UFortItem* CallFunc_GetRewardToShow_ReturnValue, bool CallFunc_IsListItemExpanded_ReturnValue, int32 CallFunc_Conv_BoolToInt_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("AthenaChallengeTreeEntry_C", "ExecuteUbergraph_AthenaChallengeTreeEntry");
 
 	Params::UAthenaChallengeTreeEntry_C_ExecuteUbergraph_AthenaChallengeTreeEntry_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetRewardToShow_ReturnValue = CallFunc_GetRewardToShow_ReturnValue;
-	Parms.K2Node_Event_bExpanded = K2Node_Event_bExpanded;
+	Parms.K2Node_Event_bIsExpanded = K2Node_Event_bIsExpanded;
 	Parms.CallFunc_Conv_BoolToInt_ReturnValue = CallFunc_Conv_BoolToInt_ReturnValue;
 	Parms.CallFunc_GetChallengeBundleInfo_ReturnValue = CallFunc_GetChallengeBundleInfo_ReturnValue;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
+	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
 	Parms.K2Node_Event_Bundle = K2Node_Event_Bundle;
 	Parms.K2Node_Event_Schedule = K2Node_Event_Schedule;
-	Parms.CallFunc_IsItemExpanded_ReturnValue = CallFunc_IsItemExpanded_ReturnValue;
+	Parms.CallFunc_GetRewardToShow_ReturnValue = CallFunc_GetRewardToShow_ReturnValue;
+	Parms.CallFunc_IsListItemExpanded_ReturnValue = CallFunc_IsListItemExpanded_ReturnValue;
 	Parms.CallFunc_Conv_BoolToInt_ReturnValue1 = CallFunc_Conv_BoolToInt_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);

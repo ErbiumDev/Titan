@@ -16,6 +16,21 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x0 (0x0 - 0x0)
+// Function Feedback.Feedback_C.ResetCategoryText
+struct UFeedback_C_ResetCategoryText_Params
+{
+public:
+};
+
+// 0x1 (0x1 - 0x0)
+// Function Feedback.Feedback_C.UpdateSendButtonEnabled
+struct UFeedback_C_UpdateSendButtonEnabled_Params
+{
+public:
+	bool                                         CallFunc_CanSendFeedback_ReturnValue;              // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
 // 0x218 (0x218 - 0x0)
 // Function Feedback.Feedback_C.TouchToClose
 struct UFeedback_C_TouchToClose_Params
@@ -27,17 +42,13 @@ public:
 	struct FEventReply                           CallFunc_Handled_ReturnValue;                      // 0x160(0xB8)()
 };
 
-// 0x34 (0x34 - 0x0)
+// 0x30 (0x30 - 0x0)
 // Function Feedback.Feedback_C.SetupAutoFillPlayerFields
 struct UFeedback_C_SetupAutoFillPlayerFields_Params
 {
 public:
 	class FText                                  KillersName;                                       // 0x0(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
 	class FText                                  SpectatingName;                                    // 0x18(0x18)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x31(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_TextIsEmpty_ReturnValue1;                 // 0x32(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_Not_PreBool_ReturnValue1;                 // 0x33(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x19 (0x19 - 0x0)
@@ -56,20 +67,29 @@ struct UFeedback_C_InitializeFeedback_Params
 public:
 };
 
-// 0x3D (0x3D - 0x0)
-// Function Feedback.Feedback_C.IsAllTextNotEmpty
-struct UFeedback_C_IsAllTextNotEmpty_Params
+// 0x5B (0x5B - 0x0)
+// Function Feedback.Feedback_C.CanSendFeedback
+struct UFeedback_C_CanSendFeedback_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_409A[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	bool                                         CallFunc_HasSelectedPlayer_ReturnValue;            // 0x1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_HasSelectedCategory_ReturnValue;          // 0x2(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x3(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DA3[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  CallFunc_GetText_ReturnValue;                      // 0x8(0x18)()
 	class FText                                  CallFunc_GetText_ReturnValue1;                     // 0x20(0x18)()
 	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_TextIsEmpty_ReturnValue1;                 // 0x39(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue;                  // 0x3A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         CallFunc_Not_PreBool_ReturnValue1;                 // 0x3B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_BooleanAND_ReturnValue;                   // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x3C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DA4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetText_ReturnValue2;                     // 0x40(0x18)()
+	bool                                         CallFunc_TextIsEmpty_ReturnValue2;                 // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_Not_PreBool_ReturnValue2;                 // 0x59(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_BooleanAND_ReturnValue1;                  // 0x5A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -86,21 +106,6 @@ struct UFeedback_C_BindDelegates_Params
 public:
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x0(0x10)(ZeroConstructor, NoDestructor)
 	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate1;             // 0x10(0x10)(ZeroConstructor, NoDestructor)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function Feedback.Feedback_C.OnBeginIntro
-struct UFeedback_C_OnBeginIntro_Params
-{
-public:
-};
-
-// 0x8 (0x8 - 0x0)
-// Function Feedback.Feedback_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
-struct UFeedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params
-{
-public:
-	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x8 (0x8 - 0x0)
@@ -140,22 +145,75 @@ struct UFeedback_C_ForceSelect_PopulateName_Spectator_Button_Params
 public:
 };
 
-// 0x9 (0x9 - 0x0)
-// Function Feedback.Feedback_C.BndEvt__PopulateName_Spectator_Button_K2Node_ComponentBoundEvent_629_CommonSelectedStateChanged__DelegateSignature
-struct UFeedback_C_BndEvt__PopulateName_Spectator_Button_K2Node_ComponentBoundEvent_629_CommonSelectedStateChanged__DelegateSignature_Params
+// 0x8 (0x8 - 0x0)
+// Function Feedback.Feedback_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature
+struct UFeedback_C_BndEvt__CancelButton_K2Node_ComponentBoundEvent_0_CommonButtonClicked__DelegateSignature_Params
 {
 public:
 	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Selected;                                          // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x9 (0x9 - 0x0)
-// Function Feedback.Feedback_C.BndEvt__PopulateName_Killer_Button_K2Node_ComponentBoundEvent_664_CommonSelectedStateChanged__DelegateSignature
-struct UFeedback_C_BndEvt__PopulateName_Killer_Button_K2Node_ComponentBoundEvent_664_CommonSelectedStateChanged__DelegateSignature_Params
+// 0x0 (0x0 - 0x0)
+// Function Feedback.Feedback_C.OnBeginIntro
+struct UFeedback_C_OnBeginIntro_Params
+{
+public:
+};
+
+// 0x8 (0x8 - 0x0)
+// Function Feedback.Feedback_C.BndEvt__PlayerReportingCategoryButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature
+struct UFeedback_C_BndEvt__PlayerReportingCategoryButton_K2Node_ComponentBoundEvent_2_CommonButtonClicked__DelegateSignature_Params
 {
 public:
 	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Selected;                                          // 0x8(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+
+// 0x1 (0x1 - 0x0)
+// Function Feedback.Feedback_C.OnFeedbackTypeChanged
+struct UFeedback_C_OnFeedbackTypeChanged_Params
+{
+public:
+	enum class EFortUIGameFeedbackType           FeedBackType;                                      // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// 0x4 (0x4 - 0x0)
+// Function Feedback.Feedback_C.OnReportingCategoryChanged
+struct UFeedback_C_OnReportingCategoryChanged_Params
+{
+public:
+	int32                                        CategoryIndex;                                     // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function Feedback.Feedback_C.BndEvt__PlayerNameButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature
+struct UFeedback_C_BndEvt__PlayerNameButton_K2Node_ComponentBoundEvent_3_CommonButtonClicked__DelegateSignature_Params
+{
+public:
+	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// 0x18 (0x18 - 0x0)
+// Function Feedback.Feedback_C.OnPlayerNameSelectedEvent
+struct UFeedback_C_OnPlayerNameSelectedEvent_Params
+{
+public:
+	class FText                                  Name;                                              // 0x0(0x18)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function Feedback.Feedback_C.BndEvt__PopulateName_Killer_Button_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature
+struct UFeedback_C_BndEvt__PopulateName_Killer_Button_K2Node_ComponentBoundEvent_4_CommonButtonClicked__DelegateSignature_Params
+{
+public:
+	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function Feedback.Feedback_C.BndEvt__PopulateName_Spectator_Button_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature
+struct UFeedback_C_BndEvt__PopulateName_Spectator_Button_K2Node_ComponentBoundEvent_6_CommonButtonClicked__DelegateSignature_Params
+{
+public:
+	class UCommonButton*                         Button;                                            // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -172,34 +230,74 @@ struct UFeedback_C_Construct_Params
 public:
 };
 
-// 0x72 (0x72 - 0x0)
+// 0x1C6 (0x1C6 - 0x0)
 // Function Feedback.Feedback_C.ExecuteUbergraph_Feedback
 struct UFeedback_C_ExecuteUbergraph_Feedback_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         Temp_bool_Variable;                                // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_409B[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button123;              // 0x8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button12;               // 0x10(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                  K2Node_CustomEvent_Text;                           // 0x18(0x18)(ConstParm)
-	bool                                         CallFunc_IsAllTextNotEmpty_ReturnValue;            // 0x30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_IsAllTextNotEmpty_ReturnValue1;           // 0x31(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_409C[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortUINavigationManager*              CallFunc_GetUINavigationManager_ReturnValue;       // 0x38(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetSelected_ReturnValue;                  // 0x40(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_409D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UIconTextButton_C*                     K2Node_Select_Default;                             // 0x48(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_GetSelected_ReturnValue1;                 // 0x50(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_409E[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button1;                // 0x58(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_ComponentBoundEvent_Selected1;              // 0x60(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_GetSelected_ReturnValue12;                // 0x61(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_GetSelected_ReturnValue123;               // 0x62(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_409F[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x68(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_ComponentBoundEvent_Selected;               // 0x70(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_GetSelected_ReturnValue1234;              // 0x71(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DA5[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable;                                // 0x8(0x18)()
+	class FText                                  Temp_text_Variable1;                               // 0x20(0x18)()
+	class FText                                  Temp_text_Variable2;                               // 0x38(0x18)()
+	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue;                   // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESubGame                          CallFunc_GetSubGame_ReturnValue;                   // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable;                                // 0x59(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ESlateVisibility                  Temp_byte_Variable;                                // 0x5A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable1;                               // 0x5B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable1;                               // 0x5C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ESlateVisibility                  Temp_byte_Variable2;                               // 0x5D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable3;                               // 0x5E(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable2;                               // 0x5F(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x60(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DA6[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Temp_text_Variable3;                               // 0x68(0x18)()
+	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable3;                               // 0x81(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	enum class ESlateVisibility                  K2Node_Select1_Default;                            // 0x82(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable4;                               // 0x83(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  Temp_byte_Variable5;                               // 0x84(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5DA7[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button5;                // 0x88(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESlateVisibility                  K2Node_Select2_Default;                            // 0x90(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5DA8[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_CustomEvent_Text;                           // 0x98(0x18)(ConstParm)
+	bool                                         CallFunc_CanSendFeedback_ReturnValue;              // 0xB0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DA9[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortUINavigationManager*              CallFunc_GetUINavigationManager_ReturnValue;       // 0xB8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_GetSelected_ReturnValue;                  // 0xC0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DAA[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button4;                // 0xC8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                  Temp_text_Variable4;                               // 0xD0(0x18)()
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button3;                // 0xE8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class EFortUIGameFeedbackType           K2Node_Event_FeedbackType;                         // 0xF0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESubGame                          Temp_byte_Variable6;                               // 0xF1(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5DAB[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select3_Default;                            // 0xF8(0x18)()
+	int32                                        K2Node_Event_CategoryIndex;                        // 0x110(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5DAC[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  CallFunc_GetDisplayTextForPlayerReportingCategoryBP_ReturnValue; // 0x118(0x18)()
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button2;                // 0x130(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortGlobalUIContext*                  CallFunc_GetContext_ReturnValue1;                  // 0x138(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ESubGame                          CallFunc_GetSubGame_ReturnValue1;                  // 0x140(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_5DAD[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Event_Name;                                 // 0x148(0x18)(ConstParm)
+	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue1;         // 0x160(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_TextIsEmpty_ReturnValue;                  // 0x161(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DAE[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  K2Node_Select4_Default;                            // 0x168(0x18)()
+	bool                                         CallFunc_HasKiller_ReturnValue;                    // 0x180(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_HasSpectateTarget_ReturnValue;            // 0x181(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DAF[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button1;                // 0x188(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x190(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         Temp_bool_Variable4;                               // 0x198(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_5DB0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPlayerNameInfoContainer              CallFunc_GetPlayerNameInfoContainer_ReturnValue;   // 0x1A0(0x18)(ConstParm)
+	class UIconTextButton_C*                     K2Node_Select5_Default;                            // 0x1B8(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_Array_Length_ReturnValue;                 // 0x1C0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x1C4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_BooleanOR_ReturnValue;                    // 0x1C5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Button-Primary-M-FadedDisabled.TextStyle-Button-Primary-M-FadedDisabled_C
 class UTextStyle_Button_Primary_M_FadedDisabled_C : public UCommonTextStyle
 {

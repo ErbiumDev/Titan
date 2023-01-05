@@ -12,19 +12,18 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xC9 (0x2D9 - 0x210)
+// 0xB1 (0x2E1 - 0x230)
 // WidgetBlueprintGeneratedClass ErrorEntry.ErrorEntry_C
 class UErrorEntry_C : public UCommonUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x210(0x8)(Transient, DuplicateTransient)
-	class UIconTextButton_C*                     IconTextButton;                                    // 0x218(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                      MESSAGE;                                           // 0x220(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	uint8                                        Pad_2E5B[0x8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFortErrorInfo                        ErrorInfo;                                         // 0x230(0x80)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class FString                                ErrorUrlBase;                                      // 0x2B0(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	class FText                                  DebugMessage;                                      // 0x2C0(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                         bIsDebugMode;                                      // 0x2D8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x230(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UIconTextButton_C*                     IconTextButton;                                    // 0x238(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                      MESSAGE;                                           // 0x240(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	struct FFortErrorInfo                        ErrorInfo;                                         // 0x248(0x70)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class FString                                ErrorUrlBase;                                      // 0x2B8(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	class FText                                  DebugMessage;                                      // 0x2C8(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                         bIsDebugMode;                                      // 0x2E0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
 
 	static class UClass* StaticClass()
 	{

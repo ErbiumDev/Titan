@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x558 - 0x550)
+// 0x8 (0x590 - 0x588)
 // BlueprintGeneratedClass Announce_NameHomeBase.Announce_NameHomeBase_C
 class AAnnounce_NameHomeBase_C : public AAnnounce_TutorialConversation_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x550(0x8)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x588(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass()
 	{

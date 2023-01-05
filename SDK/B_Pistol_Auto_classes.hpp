@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xE8C - 0xE8C)
+// 0x0 (0xDD8 - 0xDD8)
 // BlueprintGeneratedClass B_Pistol_Auto.B_Pistol_Auto_C
 class AB_Pistol_Auto_C : public AB_Pistol_Generic_C
 {

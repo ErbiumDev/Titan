@@ -34,15 +34,15 @@ public:
 	struct FGameplayCueParameters                Parameters;                                        // 0x8(0xB8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, ContainsInstancedReference)
 	class AActor*                                CallFunc_EffectContextGetEffectCauser_ReturnValue; // 0xC0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_IsValid_ReturnValue;                      // 0xC8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_45E3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_11FE[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AB_DtB_FloatingRift_C*                 K2Node_DynamicCast_AsB_Dt_B_Floating_Rift;         // 0xD0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0xD8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_45E4[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FVector                               CallFunc_K2_GetActorLocation_ReturnValue;          // 0xDC(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0xE8(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0xF4(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               CallFunc_Add_VectorVector_ReturnValue;             // 0x104(0xC)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FLinearColor                          CallFunc_Conv_VectorToLinearColor_ReturnValue1;    // 0x110(0x10)(IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_11FF[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               CallFunc_K2_GetActorLocation_ReturnValue;          // 0xDC(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_K2_GetComponentLocation_ReturnValue;      // 0xE8(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Conv_VectorToLinearColor_ReturnValue;     // 0xF4(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               CallFunc_Add_VectorVector_ReturnValue;             // 0x104(0xC)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FLinearColor                          CallFunc_Conv_VectorToLinearColor_ReturnValue1;    // 0x110(0x10)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x10 (0x10 - 0x0)

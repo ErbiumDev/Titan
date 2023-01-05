@@ -84,7 +84,7 @@ void UTopWeaponStatRow_C::OnStatChanged()
 
 
 // Function TopWeaponStatRow.TopWeaponStatRow_C.ExecuteUbergraph_TopWeaponStatRow
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

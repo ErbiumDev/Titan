@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x330 - 0x330)
+// 0x0 (0x348 - 0x348)
 // BlueprintGeneratedClass FortniteWorldMap.FortniteWorldMap_C
 class AFortniteWorldMap_C : public AFortLevelScriptActor
 {

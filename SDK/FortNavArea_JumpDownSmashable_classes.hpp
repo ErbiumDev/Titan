@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x50 - 0x50)
+// 0x0 (0x58 - 0x58)
 // BlueprintGeneratedClass FortNavArea_JumpDownSmashable.FortNavArea_JumpDownSmashable_C
 class UFortNavArea_JumpDownSmashable_C : public UFortNavArea_SmashableJump
 {

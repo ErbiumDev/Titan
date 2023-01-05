@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Button-BottomBar-S-Selected.TextStyle-Button-BottomBar-S-Selected_C
 class UTextStyle_Button_BottomBar_S_Selected_C : public UCommonTextStyle
 {

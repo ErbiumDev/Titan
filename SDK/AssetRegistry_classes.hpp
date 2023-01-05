@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x9F8 (0xA20 - 0x28)
+// 0x738 (0x760 - 0x28)
 // Class AssetRegistry.AssetRegistryImpl
 class UAssetRegistryImpl : public UObject
 {
 public:
-	uint8                                        Pad_2570[0x9F8];                                   // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2BFB[0x738];                                   // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -66,7 +66,13 @@ public:
 		return Clss;
 	}
 
+	void UseFilterToExcludeAssets(TArray<struct FAssetData>* AssetDataList, struct FARFilter& Filter);
+	void SearchAllAssets(bool bSynchronousSearch);
+	void ScanPathsSynchronous(TArray<class FString>& InPaths, bool bForceRescan);
+	void ScanModifiedAssetFiles(TArray<class FString>& InFilePaths);
+	void ScanFilesSynchronous(TArray<class FString>& InFilePaths, bool bForceRescan);
 	void RunAssetsThroughFilter(TArray<struct FAssetData>* AssetDataList, struct FARFilter& Filter);
+	void PrioritizeSearchPath(const class FString& PathToPrioritize);
 	bool IsLoadingAssets();
 	bool HasAssets(class FName PackagePath, bool bRecursive);
 	void GetSubPaths(const class FString& InBasePath, TArray<class FString>* OutPathList, bool bInRecurse);

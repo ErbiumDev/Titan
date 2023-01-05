@@ -62,7 +62,7 @@ void UAthenaBattlePassTrackerWidget_C::OnAccountInfoChanged(struct FFortPublicAc
 
 
 // Function AthenaBattlePassTrackerWidget.AthenaBattlePassTrackerWidget_C.ExecuteUbergraph_AthenaBattlePassTrackerWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortPublicAccountInfo      K2Node_Event_Result                                              (ConstParm, NoDestructor)

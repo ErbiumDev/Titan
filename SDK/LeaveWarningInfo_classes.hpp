@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x218 - 0x218)
+// 0x0 (0x238 - 0x238)
 // WidgetBlueprintGeneratedClass LeaveWarningInfo.LeaveWarningInfo_C
 class ULeaveWarningInfo_C : public UFortUserWidget
 {

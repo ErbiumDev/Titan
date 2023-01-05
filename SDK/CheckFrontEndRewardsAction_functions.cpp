@@ -117,16 +117,16 @@ void ACheckFrontEndRewardsAction_C::HandleRewardsIgnored(class UFrontEndRewards_
 // enum class EFortStoreState         CallFunc_GetStoreState_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UFortPartyContext*           CallFunc_GetContext_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_BooleanOR_ReturnValue12                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UFortPartyContext*           CallFunc_GetContext_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_BooleanOR_ReturnValue2                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortPartyMemberLocationCallFunc_GetLocalPartyMemberLocation_Location                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetLocalPartyMemberLocation_ReturnValue                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_NotEqual_ByteByte_ReturnValue1                          (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue123                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_BooleanOR_ReturnValue3                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-bool ACheckFrontEndRewardsAction_C::CanShowFrontendRewards(class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, bool CallFunc_IsInLobby_ReturnValue, class UUIManager_C* K2Node_DynamicCast_AsUIManager, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsMatchmakingLocal_ReturnValue, bool CallFunc_IsShowingModalsConfirmationsErrors_ReturnValue, class UFortStoreContext* CallFunc_GetContext_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, enum class EFortStoreState CallFunc_GetStoreState_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1, bool CallFunc_NotEqual_ByteByte_ReturnValue, class UFortPartyContext* CallFunc_GetContext_ReturnValue12, bool CallFunc_BooleanOR_ReturnValue12, enum class EFortPartyMemberLocation CallFunc_GetLocalPartyMemberLocation_Location, bool CallFunc_GetLocalPartyMemberLocation_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue123, bool CallFunc_Not_PreBool_ReturnValue)
+bool ACheckFrontEndRewardsAction_C::CanShowFrontendRewards(class UFortMatchmakingContext* CallFunc_GetContext_ReturnValue, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, bool CallFunc_IsInLobby_ReturnValue, class UUIManager_C* K2Node_DynamicCast_AsUIManager, bool K2Node_DynamicCast_bSuccess, bool CallFunc_IsMatchmakingLocal_ReturnValue, bool CallFunc_IsShowingModalsConfirmationsErrors_ReturnValue, class UFortStoreContext* CallFunc_GetContext_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, enum class EFortStoreState CallFunc_GetStoreState_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1, bool CallFunc_NotEqual_ByteByte_ReturnValue, class UFortPartyContext* CallFunc_GetContext_ReturnValue2, bool CallFunc_BooleanOR_ReturnValue2, enum class EFortPartyMemberLocation CallFunc_GetLocalPartyMemberLocation_Location, bool CallFunc_GetLocalPartyMemberLocation_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanOR_ReturnValue3, bool CallFunc_Not_PreBool_ReturnValue)
 {
 	static auto Func = Class->GetFunction("CheckFrontEndRewardsAction_C", "CanShowFrontendRewards");
 
@@ -143,13 +143,13 @@ bool ACheckFrontEndRewardsAction_C::CanShowFrontendRewards(class UFortMatchmakin
 	Parms.CallFunc_GetStoreState_ReturnValue = CallFunc_GetStoreState_ReturnValue;
 	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
 	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
-	Parms.CallFunc_GetContext_ReturnValue12 = CallFunc_GetContext_ReturnValue12;
-	Parms.CallFunc_BooleanOR_ReturnValue12 = CallFunc_BooleanOR_ReturnValue12;
+	Parms.CallFunc_GetContext_ReturnValue2 = CallFunc_GetContext_ReturnValue2;
+	Parms.CallFunc_BooleanOR_ReturnValue2 = CallFunc_BooleanOR_ReturnValue2;
 	Parms.CallFunc_GetLocalPartyMemberLocation_Location = CallFunc_GetLocalPartyMemberLocation_Location;
 	Parms.CallFunc_GetLocalPartyMemberLocation_ReturnValue = CallFunc_GetLocalPartyMemberLocation_ReturnValue;
 	Parms.CallFunc_NotEqual_ByteByte_ReturnValue1 = CallFunc_NotEqual_ByteByte_ReturnValue1;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
-	Parms.CallFunc_BooleanOR_ReturnValue123 = CallFunc_BooleanOR_ReturnValue123;
+	Parms.CallFunc_BooleanOR_ReturnValue3 = CallFunc_BooleanOR_ReturnValue3;
 	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -209,16 +209,14 @@ void ACheckFrontEndRewardsAction_C::PopulateMissionAlertRewards(class UFortMcpCo
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UFrontEndRewards_Widget_C*   RewardsWidget                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Is_FrontEndRewards_Running_bRunning                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ACheckFrontEndRewardsAction_C::HandleRewardsClaimError(class UFrontEndRewards_Widget_C* RewardsWidget, bool CallFunc_Is_FrontEndRewards_Running_bRunning, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void ACheckFrontEndRewardsAction_C::HandleRewardsClaimError(class UFrontEndRewards_Widget_C* RewardsWidget, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
 {
 	static auto Func = Class->GetFunction("CheckFrontEndRewardsAction_C", "HandleRewardsClaimError");
 
 	Params::ACheckFrontEndRewardsAction_C_HandleRewardsClaimError_Params Parms;
 	Parms.RewardsWidget = RewardsWidget;
-	Parms.CallFunc_Is_FrontEndRewards_Running_bRunning = CallFunc_Is_FrontEndRewards_Running_bRunning;
 	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -227,25 +225,25 @@ void ACheckFrontEndRewardsAction_C::HandleRewardsClaimError(class UFrontEndRewar
 
 
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.Clear
-// (Private, HasDefaults, BlueprintCallable, BlueprintEvent)
+// (Private, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // TArray<class UFortItem*>           K2Node_MakeArray_Array                                           (ZeroConstructor, ReferenceParm)
 // TArray<struct FFortCollectionBookRewards>K2Node_MakeArray_Array1                                          (ZeroConstructor, ReferenceParm)
-// TArray<class UFortExpeditionItem*> K2Node_MakeArray_Array12                                         (ZeroConstructor, ReferenceParm)
-// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array123                                        (ZeroConstructor, ReferenceParm)
-// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array1234                                       (ZeroConstructor, ReferenceParm)
-// struct FFrontEndRewards_Definition K2Node_MakeStruct_FrontEndRewards_Definition                     (HasGetValueTypeHash)
+// TArray<class UFortExpeditionItem*> K2Node_MakeArray_Array2                                          (ZeroConstructor, ReferenceParm)
+// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array3                                          (ZeroConstructor, ReferenceParm)
+// TArray<class UFortQuestItem*>      K2Node_MakeArray_Array4                                          (ZeroConstructor, ReferenceParm)
+// struct FFrontEndRewards_Definition K2Node_MakeStruct_FrontEndRewards_Definition                     (ZeroConstructor, HasGetValueTypeHash)
 
-void ACheckFrontEndRewardsAction_C::Clear(TArray<class UFortItem*>& K2Node_MakeArray_Array, TArray<struct FFortCollectionBookRewards>& K2Node_MakeArray_Array1, TArray<class UFortExpeditionItem*>& K2Node_MakeArray_Array12, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array123, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array1234, const struct FFrontEndRewards_Definition& K2Node_MakeStruct_FrontEndRewards_Definition)
+void ACheckFrontEndRewardsAction_C::Clear(TArray<class UFortItem*>& K2Node_MakeArray_Array, TArray<struct FFortCollectionBookRewards>& K2Node_MakeArray_Array1, TArray<class UFortExpeditionItem*>& K2Node_MakeArray_Array2, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array3, TArray<class UFortQuestItem*>& K2Node_MakeArray_Array4, const struct FFrontEndRewards_Definition& K2Node_MakeStruct_FrontEndRewards_Definition)
 {
 	static auto Func = Class->GetFunction("CheckFrontEndRewardsAction_C", "Clear");
 
 	Params::ACheckFrontEndRewardsAction_C_Clear_Params Parms;
 	Parms.K2Node_MakeArray_Array = K2Node_MakeArray_Array;
 	Parms.K2Node_MakeArray_Array1 = K2Node_MakeArray_Array1;
-	Parms.K2Node_MakeArray_Array12 = K2Node_MakeArray_Array12;
-	Parms.K2Node_MakeArray_Array123 = K2Node_MakeArray_Array123;
-	Parms.K2Node_MakeArray_Array1234 = K2Node_MakeArray_Array1234;
+	Parms.K2Node_MakeArray_Array2 = K2Node_MakeArray_Array2;
+	Parms.K2Node_MakeArray_Array3 = K2Node_MakeArray_Array3;
+	Parms.K2Node_MakeArray_Array4 = K2Node_MakeArray_Array4;
 	Parms.K2Node_MakeStruct_FrontEndRewards_Definition = K2Node_MakeStruct_FrontEndRewards_Definition;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -321,13 +319,13 @@ void ACheckFrontEndRewardsAction_C::PopulateRewards()
 // class UFortFrontEndContext*        CallFunc_GetContext_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsInZone_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UUserWidget*                 CallFunc_GetCachedWidget_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFrontEndRewards_Widget_C*   K2Node_DynamicCast_AsFront_End_Rewards_Widget                    (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ACheckFrontEndRewardsAction_C::OpenFrontEndRewards(class UFrontEndRewards_Widget_C* LocalRewardsWidget, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue1, bool CallFunc_IsInZone_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UFrontEndRewards_Widget_C* K2Node_DynamicCast_AsFront_End_Rewards_Widget, bool K2Node_DynamicCast_bSuccess)
+void ACheckFrontEndRewardsAction_C::OpenFrontEndRewards(class UFrontEndRewards_Widget_C* LocalRewardsWidget, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, class UFortFrontEndContext* CallFunc_GetContext_ReturnValue1, bool CallFunc_IsInZone_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class UUserWidget* CallFunc_GetCachedWidget_ReturnValue, class UFrontEndRewards_Widget_C* K2Node_DynamicCast_AsFront_End_Rewards_Widget, bool K2Node_DynamicCast_bSuccess)
 {
 	static auto Func = Class->GetFunction("CheckFrontEndRewardsAction_C", "OpenFrontEndRewards");
 
@@ -338,7 +336,7 @@ void ACheckFrontEndRewardsAction_C::OpenFrontEndRewards(class UFrontEndRewards_W
 	Parms.CallFunc_GetContext_ReturnValue1 = CallFunc_GetContext_ReturnValue1;
 	Parms.CallFunc_IsInZone_ReturnValue = CallFunc_IsInZone_ReturnValue;
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
 	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
 	Parms.CallFunc_GetCachedWidget_ReturnValue = CallFunc_GetCachedWidget_ReturnValue;
 	Parms.K2Node_DynamicCast_AsFront_End_Rewards_Widget = K2Node_DynamicCast_AsFront_End_Rewards_Widget;
@@ -564,7 +562,7 @@ void ACheckFrontEndRewardsAction_C::Execute(struct FFortScriptedActionParams& Pa
 
 
 // Function CheckFrontEndRewardsAction.CheckFrontEndRewardsAction_C.ExecuteUbergraph_CheckFrontEndRewardsAction
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortScriptedActionParams   K2Node_Event_Params                                              (ConstParm, NoDestructor)

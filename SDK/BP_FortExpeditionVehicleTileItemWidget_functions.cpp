@@ -86,34 +86,32 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::Set_Icon(class FName& SquadId, c
 }
 
 
-// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.SetData
-// (Event, Public, BlueprintCallable, BlueprintEvent)
+// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class UObject*                     InData                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             OwningList                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::SetData(class UObject* InData, class UCommonListView* OwningList)
+void UBP_FortExpeditionVehicleTileItemWidget_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "SetData");
+	static auto Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "OnListItemObjectSet");
 
-	Params::UBP_FortExpeditionVehicleTileItemWidget_C_SetData_Params Parms;
-	Parms.InData = InData;
-	Parms.OwningList = OwningList;
+	Params::UBP_FortExpeditionVehicleTileItemWidget_C_OnListItemObjectSet_Params Parms;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.OnClicked
+// Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::OnClicked()
+void UBP_FortExpeditionVehicleTileItemWidget_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "OnClicked");
+	static auto Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "BP_OnClicked");
 
-	Params::UBP_FortExpeditionVehicleTileItemWidget_C_OnClicked_Params Parms;
+	Params::UBP_FortExpeditionVehicleTileItemWidget_C_BP_OnClicked_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -121,22 +119,20 @@ void UBP_FortExpeditionVehicleTileItemWidget_C::OnClicked()
 
 
 // Function BP_FortExpeditionVehicleTileItemWidget.BP_FortExpeditionVehicleTileItemWidget_C.ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UObject*                     K2Node_Event_InData                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonListView*             K2Node_Event_OwningList                                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UVehicleObject_C*            K2Node_DynamicCast_AsVehicle_Object                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UBP_FortExpeditionVehicleTileItemWidget_C::ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget(int32 EntryPoint, class UObject* K2Node_Event_InData, class UCommonListView* K2Node_Event_OwningList, class UVehicleObject_C* K2Node_DynamicCast_AsVehicle_Object, bool K2Node_DynamicCast_bSuccess)
+void UBP_FortExpeditionVehicleTileItemWidget_C::ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, class UVehicleObject_C* K2Node_DynamicCast_AsVehicle_Object, bool K2Node_DynamicCast_bSuccess)
 {
 	static auto Func = Class->GetFunction("BP_FortExpeditionVehicleTileItemWidget_C", "ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget");
 
 	Params::UBP_FortExpeditionVehicleTileItemWidget_C_ExecuteUbergraph_BP_FortExpeditionVehicleTileItemWidget_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_Event_InData = K2Node_Event_InData;
-	Parms.K2Node_Event_OwningList = K2Node_Event_OwningList;
+	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 	Parms.K2Node_DynamicCast_AsVehicle_Object = K2Node_DynamicCast_AsVehicle_Object;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 

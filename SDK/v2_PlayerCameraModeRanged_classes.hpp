@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass v2_PlayerCameraModeRanged.v2_PlayerCameraModeRanged_C
 class UV2_PlayerCameraModeRanged_C : public UV2_PlayerCameraModeBase_C
 {

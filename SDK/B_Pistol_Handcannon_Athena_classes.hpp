@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xE8C - 0xE8C)
+// 0x0 (0xDD8 - 0xDD8)
 // BlueprintGeneratedClass B_Pistol_Handcannon_Athena.B_Pistol_Handcannon_Athena_C
 class AB_Pistol_Handcannon_Athena_C : public AB_Pistol_Generic_C
 {

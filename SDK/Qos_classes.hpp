@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x68 (0x430 - 0x3C8)
+// 0x38 (0x3E8 - 0x3B0)
 // Class Qos.QosBeaconClient
 class AQosBeaconClient : public AOnlineBeaconClient
 {
 public:
-	uint8                                        Pad_21EC[0x68];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_114B[0x38];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -29,12 +29,12 @@ public:
 	void ClientQosResponse(enum class EQosResponseType Response);
 };
 
-// 0x10 (0x350 - 0x340)
+// 0x10 (0x368 - 0x358)
 // Class Qos.QosBeaconHost
 class AQosBeaconHost : public AOnlineBeaconHostObject
 {
 public:
-	uint8                                        Pad_21ED[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_114C[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -44,19 +44,17 @@ public:
 
 };
 
-// 0xF8 (0x120 - 0x28)
+// 0x58 (0x80 - 0x28)
 // Class Qos.QosEvaluator
 class UQosEvaluator : public UObject
 {
 public:
-	struct FQosSearchPass                        CurrentSearchPass;                                 // 0x28(0x8)(NoDestructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21EE[0xA8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        ControllerId;                                      // 0xD8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                         bInProgress;                                       // 0xDC(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                         bCancelOperation;                                  // 0xDD(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21EF[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FQosRegionInfo>                Datacenters;                                       // 0xE0(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21F0[0x30];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_114D[0x20];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	bool                                         bInProgress;                                       // 0x48(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                         bCancelOperation;                                  // 0x49(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_114E[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<struct FDatacenterQosInstance>        Datacenters;                                       // 0x50(0x10)(ZeroConstructor, Transient, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_114F[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -66,27 +64,25 @@ public:
 
 };
 
-// 0x80 (0xA8 - 0x28)
+// 0x98 (0xC0 - 0x28)
 // Class Qos.QosRegionManager
 class UQosRegionManager : public UObject
 {
 public:
-	bool                                         bUseOldQosServers;                                 // 0x28(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21F1[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        NumTestsPerRegion;                                 // 0x2C(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	float                                        PingTimeout;                                       // 0x30(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21F2[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FQosDatacenterInfo>            Datacenters;                                       // 0x38(0x10)(ZeroConstructor, Config, NativeAccessSpecifierPrivate)
-	struct FDateTime                             LastCheckTimestamp;                                // 0x48(0x8)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	class UQosEvaluator*                         Evaluator;                                         // 0x50(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	enum class EQosCompletionResult              QosEvalResult;                                     // 0x58(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21F3[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TArray<struct FQosRegionInfo>                RegionOptions;                                     // 0x60(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	class FString                                ForceRegionId;                                     // 0x70(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	bool                                         bRegionForcedViaCommandline;                       // 0x80(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21F4[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FString                                SelectedRegionId;                                  // 0x88(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_21F5[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	int32                                        NumTestsPerRegion;                                 // 0x28(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	float                                        PingTimeout;                                       // 0x2C(0x4)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	TArray<struct FQosRegionInfo>                RegionDefinitions;                                 // 0x30(0x10)(ZeroConstructor, Config, NativeAccessSpecifierPrivate)
+	TArray<struct FQosDatacenterInfo>            DatacenterDefinitions;                             // 0x40(0x10)(ZeroConstructor, Config, NativeAccessSpecifierPrivate)
+	struct FDateTime                             LastCheckTimestamp;                                // 0x50(0x8)(ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	class UQosEvaluator*                         Evaluator;                                         // 0x58(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	enum class EQosCompletionResult              QosEvalResult;                                     // 0x60(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_1150[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TArray<struct FRegionQosInstance>            RegionOptions;                                     // 0x68(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
+	class FString                                ForceRegionId;                                     // 0x78(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	bool                                         bRegionForcedViaCommandline;                       // 0x88(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_1151[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FString                                SelectedRegionId;                                  // 0x90(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_1152[0x20];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

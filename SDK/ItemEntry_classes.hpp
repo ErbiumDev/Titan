@@ -12,14 +12,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x20 (0x820 - 0x800)
+// 0x20 (0xB48 - 0xB28)
 // WidgetBlueprintGeneratedClass ItemEntry.ItemEntry_C
 class UItemEntry_C : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x800(0x8)(Transient, DuplicateTransient)
-	class UCommonTextBlock*                      Name;                                              // 0x808(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	UMulticastDelegateProperty_                  Entry_Selected;                                    // 0x810(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xB28(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UCommonTextBlock*                      Name;                                              // 0xB30(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	UMulticastDelegateProperty_                  Entry_Selected;                                    // 0xB38(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 	static class UClass* StaticClass()
 	{
@@ -27,22 +27,13 @@ public:
 		return Clss;
 	}
 
-	int32 DoesItemHaveChildren();
-	int32 GetIndentLevel();
-	bool IsItemExpanded();
-	class UObject* GetData();
-	void OnAcquireFromPool();
-	void OnReleaseToPool();
-	void Private_OnExpanderArrowShiftClicked();
-	void RegisterOnClicked(UDelegateProperty_& Callback);
-	void SetExpanded(bool bExpanded);
-	void SetIndexInList(int32 InIndexInList);
-	void SetSelected(bool bSelected);
-	void ToggleExpansion();
-	void Reset();
-	void SetData(class UObject* InData, class UCommonListView* OwningList);
+	class UObject* GetListItemObject();
+	void BP_OnEntryReleased();
+	void BP_OnItemExpansionChanged(bool bIsExpanded);
+	void BP_OnItemSelectionChanged(bool bIsSelected);
+	void OnListItemObjectSet(class UObject* ListItemObject);
 	void Construct();
-	void ExecuteUbergraph_ItemEntry(int32 EntryPoint, UDelegateProperty_ K2Node_Event_Callback, bool K2Node_Event_bExpanded, int32 K2Node_Event_InIndexInList, bool K2Node_Event_bSelected, class UObject* K2Node_Event_InData, class UCommonListView* K2Node_Event_OwningList);
+	void ExecuteUbergraph_ItemEntry(int32 EntryPoint, bool K2Node_Event_bIsExpanded, bool K2Node_Event_bIsSelected, class UObject* K2Node_Event_ListItemObject);
 	void Entry_Selected__DelegateSignature(class UFortItemDefinition* Items_Definition);
 };
 

@@ -16,7 +16,7 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x119 (0x119 - 0x0)
+// 0x11A (0x11A - 0x0)
 // Function PanelButton.PanelButton_C.UpdateInputActionLayout
 struct UPanelButton_C_UpdateInputActionLayout_Params
 {
@@ -25,6 +25,7 @@ public:
 	struct FSlateBrush                           K2Node_MakeStruct_SlateBrush;                      // 0x88(0x88)()
 	class UOverlaySlot*                          K2Node_DynamicCast_AsOverlay_Slot;                 // 0x110(0x8)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x118(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsValid_ReturnValue;                      // 0x119(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x20 (0x20 - 0x0)
@@ -33,7 +34,7 @@ struct UPanelButton_C_UpdateStyle_Params
 {
 public:
 	bool                                         bUsingGamepad;                                     // 0x0(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_42F2[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_45D0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  ActionText;                                        // 0x8(0x18)(Edit, BlueprintVisible)
 };
 
@@ -49,7 +50,7 @@ public:
 struct UPanelButton_C_UpdateTextAndStyle_Params
 {
 public:
-	class UCommonInputContext*                   CallFunc_GetContext_ReturnValue;                   // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UCommonInputSubsystem*                 CallFunc_GetContext_ReturnValue;                   // 0x0(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	enum class ECommonInputType                  CallFunc_GetCurrentInputType_ReturnValue;          // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
@@ -101,15 +102,15 @@ public:
 };
 
 // 0x0 (0x0 - 0x0)
-// Function PanelButton.PanelButton_C.OnHovered
-struct UPanelButton_C_OnHovered_Params
+// Function PanelButton.PanelButton_C.BP_OnHovered
+struct UPanelButton_C_BP_OnHovered_Params
 {
 public:
 };
 
 // 0x0 (0x0 - 0x0)
-// Function PanelButton.PanelButton_C.OnUnhovered
-struct UPanelButton_C_OnUnhovered_Params
+// Function PanelButton.PanelButton_C.BP_OnUnhovered
+struct UPanelButton_C_BP_OnUnhovered_Params
 {
 public:
 };
@@ -127,7 +128,7 @@ public:
 	bool                                         Temp_bool_Variable;                                // 0x8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_ComponentBoundEvent_bUsingGamepad;          // 0x9(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	enum class ESlateVisibility                  K2Node_Select_Default;                             // 0xA(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_42F3[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_45D1[0x5];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FDataTableRowHandle                   K2Node_Event_NewTriggeredAction;                   // 0x10(0x10)(ConstParm, NoDestructor)
 	float                                        K2Node_Event_HeldPercent;                          // 0x20(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

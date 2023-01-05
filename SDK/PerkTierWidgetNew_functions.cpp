@@ -20,16 +20,18 @@ namespace SDK
 // Parameters:
 // bool                               bIncludeName                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               bIncludeDescription                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               bUseLegacyFixedSizeIcons                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortBrushSize          IconSize                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortUIPerkTier             FortPerkTier                                                     (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
 
-void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName, bool bIncludeDescription, enum class EFortBrushSize IconSize, const struct FFortUIPerkTier& FortPerkTier)
+void UPerkTierWidgetNew_C::InitializeSettings(bool bIncludeName, bool bIncludeDescription, bool bUseLegacyFixedSizeIcons, enum class EFortBrushSize IconSize, const struct FFortUIPerkTier& FortPerkTier)
 {
 	static auto Func = Class->GetFunction("PerkTierWidgetNew_C", "InitializeSettings");
 
 	Params::UPerkTierWidgetNew_C_InitializeSettings_Params Parms;
 	Parms.bIncludeName = bIncludeName;
 	Parms.bIncludeDescription = bIncludeDescription;
+	Parms.bUseLegacyFixedSizeIcons = bUseLegacyFixedSizeIcons;
 	Parms.IconSize = IconSize;
 	Parms.FortPerkTier = FortPerkTier;
 
@@ -73,7 +75,7 @@ void UPerkTierWidgetNew_C::OnGeneratePerk(const struct FFortUIPerk& Perk, class 
 
 
 // Function PerkTierWidgetNew.PerkTierWidgetNew_C.ExecuteUbergraph_PerkTierWidgetNew
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UPerkDivider_C*              CallFunc_Create_ReturnValue                                      (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

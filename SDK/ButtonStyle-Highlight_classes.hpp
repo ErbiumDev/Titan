@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Highlight.ButtonStyle-Highlight_C
 class UButtonStyle_Highlight_C : public UButtonStyle_MediumTransparentNoCues_C
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x50 - 0x50)
+// 0x0 (0x58 - 0x58)
 // BlueprintGeneratedClass FortMetaNavWallAreaDef.FortMetaNavWallAreaDef_C
 class UFortMetaNavWallAreaDef_C : public UFortMetaNavArea_Wall
 {

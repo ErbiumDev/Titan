@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xAF0 - 0xAF0)
+// 0x0 (0x968 - 0x968)
 // BlueprintGeneratedClass GA_Trap_CeilingSpikes.GA_Trap_CeilingSpikes_C
 class UGA_Trap_CeilingSpikes_C : public UGA_TrapGeneric_C
 {

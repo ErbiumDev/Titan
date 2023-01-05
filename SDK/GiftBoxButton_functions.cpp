@@ -48,17 +48,21 @@ void UGiftBoxButton_C::PlayGiftSelectedAnimation(bool bIsSelected)
 
 
 // Function GiftBoxButton.GiftBoxButton_C.ExecuteUbergraph_GiftBoxButton
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_bIsSelected                                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UGiftBoxButton_C::ExecuteUbergraph_GiftBoxButton(int32 EntryPoint, bool K2Node_Event_bIsSelected)
+void UGiftBoxButton_C::ExecuteUbergraph_GiftBoxButton(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue1, bool K2Node_Event_bIsSelected)
 {
 	static auto Func = Class->GetFunction("GiftBoxButton_C", "ExecuteUbergraph_GiftBoxButton");
 
 	Params::UGiftBoxButton_C_ExecuteUbergraph_GiftBoxButton_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
+	Parms.CallFunc_PlayAnimation_ReturnValue1 = CallFunc_PlayAnimation_ReturnValue1;
 	Parms.K2Node_Event_bIsSelected = K2Node_Event_bIsSelected;
 
 	UObject::ProcessEvent(Func, &Parms);

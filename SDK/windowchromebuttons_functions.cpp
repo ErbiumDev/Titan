@@ -52,22 +52,26 @@ void UWindowchromebuttons_C::OnMouseLeave(struct FPointerEvent& MouseEvent)
 
 
 // Function windowchromebuttons.windowchromebuttons_C.ExecuteUbergraph_windowchromebuttons
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
 // struct FPointerEvent               K2Node_Event_MouseEvent1                                         (ConstParm)
 // struct FPointerEvent               K2Node_Event_MouseEvent                                          (ConstParm)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue1                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWindowchromebuttons_C::ExecuteUbergraph_windowchromebuttons(int32 EntryPoint, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent1, const struct FPointerEvent& K2Node_Event_MouseEvent)
+void UWindowchromebuttons_C::ExecuteUbergraph_windowchromebuttons(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, const struct FGeometry& K2Node_Event_MyGeometry, const struct FPointerEvent& K2Node_Event_MouseEvent1, const struct FPointerEvent& K2Node_Event_MouseEvent, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("windowchromebuttons_C", "ExecuteUbergraph_windowchromebuttons");
 
 	Params::UWindowchromebuttons_C_ExecuteUbergraph_windowchromebuttons_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
 	Parms.K2Node_Event_MouseEvent1 = K2Node_Event_MouseEvent1;
 	Parms.K2Node_Event_MouseEvent = K2Node_Event_MouseEvent;
+	Parms.CallFunc_PlayAnimation_ReturnValue1 = CallFunc_PlayAnimation_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
 

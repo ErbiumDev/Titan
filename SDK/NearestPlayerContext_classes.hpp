@@ -17,12 +17,12 @@ namespace SDK
 class UNearestPlayerContext_C : public UEnvQueryContext_BlueprintBase
 {
 public:
-	struct FVector                               QuerierLocation;                                   // 0x30(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               GoalActorLocation;                                 // 0x3C(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               QuerierLocation;                                   // 0x30(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector                               GoalActorLocation;                                 // 0x3C(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        DistanceBetweenQuerierAndGoal;                     // 0x48(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                        FinalHuntingRadiusToUse;                           // 0x4C(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector                               FinalHuntingRadiusLocationToUse;                   // 0x50(0xC)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_2C16[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FVector                               FinalHuntingRadiusLocationToUse;                   // 0x50(0xC)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_3D7A[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class AFortAIPawn*                           Querier;                                           // 0x60(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         Debug;                                             // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 

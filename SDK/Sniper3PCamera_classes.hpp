@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0x138 - 0x138)
 // BlueprintGeneratedClass Sniper3PCamera.Sniper3PCamera_C
 class USniper3PCamera_C : public UFort3PCam_Default
 {

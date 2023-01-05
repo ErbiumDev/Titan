@@ -72,14 +72,13 @@ enum class ETrackingStatus : uint8
 // STRUCTS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // ScriptStruct HeadMountedDisplay.XRDeviceId
 struct FXRDeviceId
 {
 public:
 	class FName                                  SystemName;                                        // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        DeviceID;                                          // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_254A[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

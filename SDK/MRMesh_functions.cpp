@@ -151,9 +151,8 @@ void UMeshReconstructorBase::DisconnectMRMesh()
 // (Native, Public)
 // Parameters:
 // class UMRMeshComponent*            Mesh                                                             (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FMRMeshConfiguration        ReturnValue                                                      (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 
-struct FMRMeshConfiguration UMeshReconstructorBase::ConnectMRMesh(class UMRMeshComponent* Mesh)
+void UMeshReconstructorBase::ConnectMRMesh(class UMRMeshComponent* Mesh)
 {
 	static auto Func = Class->GetFunction("MeshReconstructorBase", "ConnectMRMesh");
 
@@ -168,21 +167,19 @@ struct FMRMeshConfiguration UMeshReconstructorBase::ConnectMRMesh(class UMRMeshC
 
 	Func->FunctionFlags = Flags;
 
-	return Parms.ReturnValue;
-
 }
 
 
-// Function MRMesh.MRMeshComponent.GetReconstructor
+// Function MRMesh.MRMeshComponent.IsConnected
 // (Final, Native, Public, BlueprintCallable, BlueprintPure, Const)
 // Parameters:
-// class UMeshReconstructorBase*      ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-class UMeshReconstructorBase* UMRMeshComponent::GetReconstructor()
+bool UMRMeshComponent::IsConnected()
 {
-	static auto Func = Class->GetFunction("MRMeshComponent", "GetReconstructor");
+	static auto Func = Class->GetFunction("MRMeshComponent", "IsConnected");
 
-	Params::UMRMeshComponent_GetReconstructor_Params Parms;
+	Params::UMRMeshComponent_IsConnected_Params Parms;
 
 	auto Flags = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;
@@ -197,17 +194,36 @@ class UMeshReconstructorBase* UMRMeshComponent::GetReconstructor()
 }
 
 
-// Function MRMesh.MRMeshComponent.ConnectReconstructor
+// Function MRMesh.MRMeshComponent.ForceNavMeshUpdate
 // (Final, Native, Public, BlueprintCallable)
 // Parameters:
-// class UMeshReconstructorBase*      Reconstructor                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
-void UMRMeshComponent::ConnectReconstructor(class UMeshReconstructorBase* Reconstructor)
+void UMRMeshComponent::ForceNavMeshUpdate()
 {
-	static auto Func = Class->GetFunction("MRMeshComponent", "ConnectReconstructor");
+	static auto Func = Class->GetFunction("MRMeshComponent", "ForceNavMeshUpdate");
 
-	Params::UMRMeshComponent_ConnectReconstructor_Params Parms;
-	Parms.Reconstructor = Reconstructor;
+	Params::UMRMeshComponent_ForceNavMeshUpdate_Params Parms;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+}
+
+
+// Function MRMesh.MRMeshComponent.Clear
+// (Final, Native, Public, BlueprintCallable)
+// Parameters:
+
+void UMRMeshComponent::Clear()
+{
+	static auto Func = Class->GetFunction("MRMeshComponent", "Clear");
+
+	Params::UMRMeshComponent_Clear_Params Parms;
 
 	auto Flags = Func->FunctionFlags;
 	Func->FunctionFlags |= 0x400;

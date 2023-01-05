@@ -12,13 +12,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xD0 (0xF8 - 0x28)
+// 0x118 (0x140 - 0x28)
 // Class SignificanceManager.SignificanceManager
 class USignificanceManager : public UObject
 {
 public:
-	uint8                                        Pad_F63[0xB8];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSoftClassPath                        SignificanceManagerClassName;                      // 0xE0(0x18)(Edit, Config, GlobalConfig, NoClear, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_49[0xD8];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSoftClassPath                        SignificanceManagerClassName;                      // 0x100(0x18)(Edit, ZeroConstructor, Config, GlobalConfig, NoClear, NativeAccessSpecifierPrivate)
+	uint8                                        Pad_4A[0x28];                                      // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

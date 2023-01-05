@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x420 - 0x420)
+// 0x0 (0x348 - 0x348)
 // WidgetBlueprintGeneratedClass MOTD.MOTD_C
 class UMOTD_C : public UFortMOTDWidget
 {

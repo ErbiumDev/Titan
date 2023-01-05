@@ -17,7 +17,7 @@ namespace SDK
 class UFontBulkData : public UObject
 {
 public:
-	uint8                                        Pad_FF8[0x98];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_11C4[0x98];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -89,7 +89,7 @@ public:
 class USlateWidgetStyleContainerBase : public UObject
 {
 public:
-	uint8                                        Pad_FF9[0x8];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_11C5[0x8];                                     // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{

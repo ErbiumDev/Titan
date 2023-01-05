@@ -102,21 +102,6 @@ void UExpeditionSquadSlotPopupMenu_C::OnBeginIntro()
 }
 
 
-// Function ExpeditionSquadSlotPopupMenu.ExpeditionSquadSlotPopupMenu_C.BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-
-void UExpeditionSquadSlotPopupMenu_C::BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature()
-{
-	static auto Func = Class->GetFunction("ExpeditionSquadSlotPopupMenu_C", "BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature");
-
-	Params::UExpeditionSquadSlotPopupMenu_C_BndEvt__FadeIn_K2Node_ComponentBoundEvent_0_OnWidgetAnimationPlaybackStatusChanged__DelegateSignature_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function ExpeditionSquadSlotPopupMenu.ExpeditionSquadSlotPopupMenu_C.BndEvt__CancelButton_K2Node_ComponentBoundEvent_273_CommonButtonClicked__DelegateSignature
 // (BlueprintEvent)
 // Parameters:
@@ -196,11 +181,26 @@ void UExpeditionSquadSlotPopupMenu_C::Initialize()
 }
 
 
+// Function ExpeditionSquadSlotPopupMenu.ExpeditionSquadSlotPopupMenu_C.WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0
+// (BlueprintEvent)
+// Parameters:
+
+void UExpeditionSquadSlotPopupMenu_C::WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0()
+{
+	static auto Func = Class->GetFunction("ExpeditionSquadSlotPopupMenu_C", "WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0");
+
+	Params::UExpeditionSquadSlotPopupMenu_C_WidgetAnimationEvt_FadeIn_K2Node_WidgetAnimationEvent_0_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function ExpeditionSquadSlotPopupMenu.ExpeditionSquadSlotPopupMenu_C.ExecuteUbergraph_ExpeditionSquadSlotPopupMenu
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonButton*               K2Node_ComponentBoundEvent_Button12                              (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonButton*               K2Node_ComponentBoundEvent_Button2                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_SwitchEnum_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -212,13 +212,13 @@ void UExpeditionSquadSlotPopupMenu_C::Initialize()
 // class UFortItem*                   CallFunc_GetItemInSlot_Item1                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UWidget*                     CallFunc_GetChildAt_ReturnValue                                  (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UExpeditionSquadSlotPopupMenu_C::ExecuteUbergraph_ExpeditionSquadSlotPopupMenu(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button12, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_SwitchEnum_CmpSuccess, class UFortSquadSlotSelectorButton* CallFunc_GetHostButton_ReturnValue, class UFortItem* CallFunc_GetItemInSlot_Item, bool CallFunc_IsValid_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue1, class UFortItem* CallFunc_GetItemInSlot_Item1, class UWidget* CallFunc_GetChildAt_ReturnValue)
+void UExpeditionSquadSlotPopupMenu_C::ExecuteUbergraph_ExpeditionSquadSlotPopupMenu(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button2, class UCommonButton* K2Node_ComponentBoundEvent_Button1, class UCommonButton* K2Node_ComponentBoundEvent_Button, bool K2Node_SwitchEnum_CmpSuccess, class UFortSquadSlotSelectorButton* CallFunc_GetHostButton_ReturnValue, class UFortItem* CallFunc_GetItemInSlot_Item, bool CallFunc_IsValid_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue, class UFortUINavigationManager* CallFunc_GetUINavigationManager_ReturnValue1, class UFortItem* CallFunc_GetItemInSlot_Item1, class UWidget* CallFunc_GetChildAt_ReturnValue)
 {
 	static auto Func = Class->GetFunction("ExpeditionSquadSlotPopupMenu_C", "ExecuteUbergraph_ExpeditionSquadSlotPopupMenu");
 
 	Params::UExpeditionSquadSlotPopupMenu_C_ExecuteUbergraph_ExpeditionSquadSlotPopupMenu_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.K2Node_ComponentBoundEvent_Button12 = K2Node_ComponentBoundEvent_Button12;
+	Parms.K2Node_ComponentBoundEvent_Button2 = K2Node_ComponentBoundEvent_Button2;
 	Parms.K2Node_ComponentBoundEvent_Button1 = K2Node_ComponentBoundEvent_Button1;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 	Parms.K2Node_SwitchEnum_CmpSuccess = K2Node_SwitchEnum_CmpSuccess;

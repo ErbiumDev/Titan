@@ -15,6 +15,23 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function EmergencyNoticeWidget.EmergencyNoticeWidget_C.Show Notice
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UEmergencyNoticeWidget_C::Show_Notice(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
+{
+	static auto Func = Class->GetFunction("EmergencyNoticeWidget_C", "Show Notice");
+
+	Params::UEmergencyNoticeWidget_C_Show_Notice_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function EmergencyNoticeWidget.EmergencyNoticeWidget_C.ShowNotice
 // (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
@@ -50,13 +67,14 @@ void UEmergencyNoticeWidget_C::HideNotice()
 
 
 // Function EmergencyNoticeWidget.EmergencyNoticeWidget_C.ExecuteUbergraph_EmergencyNoticeWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_Event_Title                                               (ConstParm)
 // class FText                        K2Node_Event_Body                                                (ConstParm)
+// class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
 
-void UEmergencyNoticeWidget_C::ExecuteUbergraph_EmergencyNoticeWidget(int32 EntryPoint, class FText K2Node_Event_Title, class FText K2Node_Event_Body)
+void UEmergencyNoticeWidget_C::ExecuteUbergraph_EmergencyNoticeWidget(int32 EntryPoint, class FText K2Node_Event_Title, class FText K2Node_Event_Body, class FText CallFunc_TextToUpper_ReturnValue)
 {
 	static auto Func = Class->GetFunction("EmergencyNoticeWidget_C", "ExecuteUbergraph_EmergencyNoticeWidget");
 
@@ -64,6 +82,7 @@ void UEmergencyNoticeWidget_C::ExecuteUbergraph_EmergencyNoticeWidget(int32 Entr
 	Parms.EntryPoint = EntryPoint;
 	Parms.K2Node_Event_Title = K2Node_Event_Title;
 	Parms.K2Node_Event_Body = K2Node_Event_Body;
+	Parms.CallFunc_TextToUpper_ReturnValue = CallFunc_TextToUpper_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Icon_Transparent.ButtonStyle-Icon_Transparent_C
 class UButtonStyle_Icon_Transparent_C : public UCommonButtonStyle
 {

@@ -24,11 +24,11 @@ namespace SDK
 // int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<struct FLinearColor>        K2Node_MakeArray_Array1                                          (ZeroConstructor, ReferenceParm)
-// struct FLinearColor                CallFunc_Array_Get_Item1                                         (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FLinearColor                CallFunc_Array_Get_Item1                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonNumericType      Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonNumericType      Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class FName>                K2Node_MakeArray_Array12                                         (ZeroConstructor, ReferenceParm)
-// class FName                        CallFunc_Array_Get_Item12                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class FName>                K2Node_MakeArray_Array2                                          (ZeroConstructor, ReferenceParm)
+// class FName                        CallFunc_Array_Get_Item2                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateChildSize             K2Node_MakeStruct_SlateChildSize                                 (NoDestructor)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -39,7 +39,7 @@ namespace SDK
 // class UVerticalBoxSlot*            K2Node_DynamicCast_AsVertical_Box_Slot                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UPieChartStatWidget_C::AddStat(struct FStatGroupData& StatGroupData, int32 Index, TArray<class FName>& K2Node_MakeArray_Array, int32 CallFunc_Add_IntInt_ReturnValue, class FName CallFunc_Array_Get_Item, TArray<struct FLinearColor>& K2Node_MakeArray_Array1, const struct FLinearColor& CallFunc_Array_Get_Item1, enum class ECommonNumericType Temp_byte_Variable, enum class ECommonNumericType Temp_byte_Variable1, TArray<class FName>& K2Node_MakeArray_Array12, class FName CallFunc_Array_Get_Item12, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool Temp_bool_Variable, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UPieChartRowWidget_C* CallFunc_Create_ReturnValue, enum class ECommonNumericType K2Node_Select_Default, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UVerticalBoxSlot* K2Node_DynamicCast_AsVertical_Box_Slot, bool K2Node_DynamicCast_bSuccess)
+void UPieChartStatWidget_C::AddStat(struct FStatGroupData& StatGroupData, int32 Index, TArray<class FName>& K2Node_MakeArray_Array, int32 CallFunc_Add_IntInt_ReturnValue, class FName CallFunc_Array_Get_Item, TArray<struct FLinearColor>& K2Node_MakeArray_Array1, const struct FLinearColor& CallFunc_Array_Get_Item1, enum class ECommonNumericType Temp_byte_Variable, enum class ECommonNumericType Temp_byte_Variable1, TArray<class FName>& K2Node_MakeArray_Array2, class FName CallFunc_Array_Get_Item2, const struct FSlateChildSize& K2Node_MakeStruct_SlateChildSize, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, bool Temp_bool_Variable, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, class UPieChartRowWidget_C* CallFunc_Create_ReturnValue, enum class ECommonNumericType K2Node_Select_Default, class UPanelSlot* CallFunc_AddChild_ReturnValue, class UVerticalBoxSlot* K2Node_DynamicCast_AsVertical_Box_Slot, bool K2Node_DynamicCast_bSuccess)
 {
 	static auto Func = Class->GetFunction("PieChartStatWidget_C", "AddStat");
 
@@ -53,8 +53,8 @@ void UPieChartStatWidget_C::AddStat(struct FStatGroupData& StatGroupData, int32 
 	Parms.CallFunc_Array_Get_Item1 = CallFunc_Array_Get_Item1;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.K2Node_MakeArray_Array12 = K2Node_MakeArray_Array12;
-	Parms.CallFunc_Array_Get_Item12 = CallFunc_Array_Get_Item12;
+	Parms.K2Node_MakeArray_Array2 = K2Node_MakeArray_Array2;
+	Parms.CallFunc_Array_Get_Item2 = CallFunc_Array_Get_Item2;
 	Parms.K2Node_MakeStruct_SlateChildSize = K2Node_MakeStruct_SlateChildSize;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
@@ -86,7 +86,7 @@ void UPieChartStatWidget_C::OnStatChanged()
 
 
 // Function PieChartStatWidget.PieChartStatWidget_C.ExecuteUbergraph_PieChartStatWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

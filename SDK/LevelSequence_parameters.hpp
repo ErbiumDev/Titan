@@ -16,12 +16,28 @@ namespace Params
 // PARAMETERS
 //---------------------------------------------------------------------------------------------------------------------
 
+// 0x18 (0x18 - 0x0)
+// Function LevelSequence.LevelSequenceBurnInOptions.SetBurnIn
+struct ULevelSequenceBurnInOptions_SetBurnIn_Params
+{
+public:
+	struct FSoftClassPath                        InBurnInClass;                                     // 0x0(0x18)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+
 // 0x8 (0x8 - 0x0)
 // Function LevelSequence.LevelSequenceActor.SetSequence
 struct ALevelSequenceActor_SetSequence_Params
 {
 public:
 	class ULevelSequence*                        InSequence;                                        // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
+// Function LevelSequence.LevelSequenceActor.SetReplicatePlayback
+struct ALevelSequenceActor_SetReplicatePlayback_Params
+{
+public:
+	bool                                         ReplicatePlayback;                                 // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -40,7 +56,7 @@ public:
 	struct FMovieSceneObjectBindingID            Binding;                                           // 0x0(0x18)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class AActor*>                        Actors;                                            // 0x18(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                         bAllowBindingsFromAsset;                           // 0x28(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_23EC[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1070[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x0 - 0x0)
@@ -67,15 +83,35 @@ public:
 	class AActor*                                Actor;                                             // 0x18(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x10 (0x10 - 0x0)
+// 0x0 (0x0 - 0x0)
+// DelegateFunction LevelSequence.LevelSequenceActor.OnLevelSequenceLoaded__DelegateSignature
+struct ALevelSequenceActor_OnLevelSequenceLoaded__DelegateSignature_Params
+{
+public:
+};
+
+// 0x8 (0x8 - 0x0)
+// Function LevelSequence.LevelSequenceActor.LoadSequence
+struct ALevelSequenceActor_LoadSequence_Params
+{
+public:
+	class ULevelSequence*                        ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function LevelSequence.LevelSequenceActor.GetSequencePlayer
+struct ALevelSequenceActor_GetSequencePlayer_Params
+{
+public:
+	class ULevelSequencePlayer*                  ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
 // Function LevelSequence.LevelSequenceActor.GetSequence
 struct ALevelSequenceActor_GetSequence_Params
 {
 public:
-	bool                                         bLoad;                                             // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bInitializePlayer;                                 // 0x1(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_23ED[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class ULevelSequence*                        ReturnValue;                                       // 0x8(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequence*                        ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x28 (0x28 - 0x0)
@@ -86,7 +122,7 @@ public:
 	struct FMovieSceneObjectBindingID            Binding;                                           // 0x0(0x18)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class AActor*                                Actor;                                             // 0x18(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAllowBindingsFromAsset;                           // 0x20(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_23EE[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1071[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -105,16 +141,23 @@ public:
 	TSubclassOf<class ULevelSequenceBurnInInitSettings> ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x50 (0x50 - 0x0)
+// 0x0 (0x0 - 0x0)
+// Function LevelSequence.LevelSequenceDirector.OnCreated
+struct ULevelSequenceDirector_OnCreated_Params
+{
+public:
+};
+
+// 0x30 (0x30 - 0x0)
 // Function LevelSequence.LevelSequencePlayer.CreateLevelSequencePlayer
 struct ULevelSequencePlayer_CreateLevelSequencePlayer_Params
 {
 public:
 	class UObject*                               WorldContextObject;                                // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class ULevelSequence*                        LevelSequence;                                     // 0x8(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FMovieSceneSequencePlaybackSettings   Settings;                                          // 0x10(0x30)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	class ALevelSequenceActor*                   OutActor;                                          // 0x40(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class ULevelSequencePlayer*                  ReturnValue;                                       // 0x48(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMovieSceneSequencePlaybackSettings   Settings;                                          // 0x10(0x10)(Parm, NoDestructor, NativeAccessSpecifierPublic)
+	class ALevelSequenceActor*                   OutActor;                                          // 0x20(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class ULevelSequencePlayer*                  ReturnValue;                                       // 0x28(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 }

@@ -50,7 +50,7 @@ void AAnnounce_Gen_Quest_Conversation_C::OnConversationFinished(const struct FFo
 
 
 // Function Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C.ExecuteUbergraph_Announce_Gen_Quest_Conversation
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortConversationSentence   K2Node_Event_FinishingSentence                                   ()

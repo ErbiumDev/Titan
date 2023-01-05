@@ -45,21 +45,21 @@ public:
 	bool                                         CallFunc_EqualEqual_KeyKey_ReturnValue;            // 0x230(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
-// 0x223 (0x223 - 0x0)
+// 0x22B (0x22B - 0x0)
 // Function LobbyPlayerPadGadgets.LobbyPlayerPadGadgets_C.Refresh
 struct ULobbyPlayerPadGadgets_C_Refresh_Params
 {
 public:
-	struct FFortTeamMemberInfo                   TeamMemberInfo;                                    // 0x0(0x1F8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	class UFortItem*                             CallFunc_Array_Get_Item;                           // 0x1F8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortItem*                             CallFunc_Array_Get_Item1;                          // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UFortWorldItem*                        K2Node_DynamicCast_AsFort_World_Item;              // 0x208(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x210(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_511D[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UFortWorldItem*                        K2Node_DynamicCast_AsFort_World_Item1;             // 0x218(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         K2Node_DynamicCast_bSuccess1;                      // 0x220(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_Array_IsValidIndex_ReturnValue;           // 0x221(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                         CallFunc_Array_IsValidIndex_ReturnValue1;          // 0x222(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortTeamMemberInfo                   TeamMemberInfo;                                    // 0x0(0x200)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	class UFortItem*                             CallFunc_Array_Get_Item;                           // 0x200(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortItem*                             CallFunc_Array_Get_Item1;                          // 0x208(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UFortWorldItem*                        K2Node_DynamicCast_AsFort_World_Item;              // 0x210(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_DynamicCast_bSuccess;                       // 0x218(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_4C7B[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UFortWorldItem*                        K2Node_DynamicCast_AsFort_World_Item1;             // 0x220(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         K2Node_DynamicCast_bSuccess1;                      // 0x228(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_Array_IsValidIndex_ReturnValue;           // 0x229(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_Array_IsValidIndex_ReturnValue1;          // 0x22A(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0xA8 (0xA8 - 0x0)
@@ -86,7 +86,7 @@ struct ULobbyPlayerPadGadgets_C_ExecuteUbergraph_LobbyPlayerPadGadgets_Params
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FGeometry                             K2Node_Event_MyGeometry;                           // 0x4(0x38)(IsPlainOldData, NoDestructor)
-	uint8                                        Pad_511E[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4C7C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	struct FPointerEvent                         K2Node_Event_MouseEvent1;                          // 0x40(0x70)(ConstParm)
 	struct FPointerEvent                         K2Node_Event_MouseEvent;                           // 0xB0(0x70)(ConstParm)
 };

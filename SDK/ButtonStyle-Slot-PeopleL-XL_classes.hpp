@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Slot-PeopleL-XL.ButtonStyle-Slot-PeopleL-XL_C
 class UButtonStyle_Slot_PeopleL_XL_C : public UCommonButtonStyle
 {

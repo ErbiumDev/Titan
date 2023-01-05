@@ -143,17 +143,19 @@ void UFriendCodeList_C::BndEvt__both_K2Node_ComponentBoundEvent_54_OnButtonClick
 
 
 // Function FriendCodeList.FriendCodeList_C.ExecuteUbergraph_FriendCodeList
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UFriendCodeList_C::ExecuteUbergraph_FriendCodeList(int32 EntryPoint, class UCommonButton* K2Node_ComponentBoundEvent_Button)
+void UFriendCodeList_C::ExecuteUbergraph_FriendCodeList(int32 EntryPoint, class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue, class UCommonButton* K2Node_ComponentBoundEvent_Button)
 {
 	static auto Func = Class->GetFunction("FriendCodeList_C", "ExecuteUbergraph_FriendCodeList");
 
 	Params::UFriendCodeList_C_ExecuteUbergraph_FriendCodeList_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 	Parms.K2Node_ComponentBoundEvent_Button = K2Node_ComponentBoundEvent_Button;
 
 	UObject::ProcessEvent(Func, &Parms);

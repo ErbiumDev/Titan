@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCN_Twinblast.GCN_Twinblast_C
 class UGCN_Twinblast_C : public UFortGameplayCueNotify_Simple
 {

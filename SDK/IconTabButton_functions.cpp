@@ -15,6 +15,37 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function IconTabButton.IconTabButton_C.Play Hover Sound
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               CallFunc_GetSelected_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue                           ()
+// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FText                        CallFunc_Conv_StringToText_ReturnValue1                          ()
+// bool                               CallFunc_EqualEqual_TextText_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_TextText_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UIconTabButton_C::Play_Hover_Sound(bool CallFunc_GetSelected_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, class FText CallFunc_Conv_StringToText_ReturnValue1, bool CallFunc_EqualEqual_TextText_ReturnValue, bool CallFunc_EqualEqual_TextText_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
+{
+	static auto Func = Class->GetFunction("IconTabButton_C", "Play Hover Sound");
+
+	Params::UIconTabButton_C_Play_Hover_Sound_Params Parms;
+	Parms.CallFunc_GetSelected_ReturnValue = CallFunc_GetSelected_ReturnValue;
+	Parms.CallFunc_Conv_StringToText_ReturnValue = CallFunc_Conv_StringToText_ReturnValue;
+	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
+	Parms.CallFunc_Conv_StringToText_ReturnValue1 = CallFunc_Conv_StringToText_ReturnValue1;
+	Parms.CallFunc_EqualEqual_TextText_ReturnValue = CallFunc_EqualEqual_TextText_ReturnValue;
+	Parms.CallFunc_EqualEqual_TextText_ReturnValue1 = CallFunc_EqualEqual_TextText_ReturnValue1;
+	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
+	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function IconTabButton.IconTabButton_C.SetChangeIconColorWhenSelected
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -46,16 +77,18 @@ void UIconTabButton_C::SetChangeIconColorWhenSelected(bool ChangeColorWhenSelect
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                               bBangEnabled                                                     (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              Count                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_GetIsEnabled_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UIconTabButton_C::Update_Bang_State(bool bBangEnabled, bool CallFunc_GetIsEnabled_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue1)
+void UIconTabButton_C::Update_Bang_State(bool bBangEnabled, int32 Count, bool CallFunc_GetIsEnabled_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("IconTabButton_C", "Update Bang State");
 
 	Params::UIconTabButton_C_Update_Bang_State_Params Parms;
 	Parms.bBangEnabled = bBangEnabled;
+	Parms.Count = Count;
 	Parms.CallFunc_GetIsEnabled_ReturnValue = CallFunc_GetIsEnabled_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue1 = CallFunc_BooleanAND_ReturnValue1;
@@ -175,30 +208,30 @@ void UIconTabButton_C::SetTabLabelInfo(struct FFortTabButtonLabelInfo& TabLabelI
 }
 
 
-// Function IconTabButton.IconTabButton_C.OnSelected
+// Function IconTabButton.IconTabButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UIconTabButton_C::OnSelected()
+void UIconTabButton_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("IconTabButton_C", "OnSelected");
+	static auto Func = Class->GetFunction("IconTabButton_C", "BP_OnSelected");
 
-	Params::UIconTabButton_C_OnSelected_Params Parms;
+	Params::UIconTabButton_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function IconTabButton.IconTabButton_C.OnDeselected
+// Function IconTabButton.IconTabButton_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UIconTabButton_C::OnDeselected()
+void UIconTabButton_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("IconTabButton_C", "OnDeselected");
+	static auto Func = Class->GetFunction("IconTabButton_C", "BP_OnDeselected");
 
-	Params::UIconTabButton_C_OnDeselected_Params Parms;
+	Params::UIconTabButton_C_BP_OnDeselected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -220,60 +253,60 @@ void UIconTabButton_C::Construct()
 }
 
 
-// Function IconTabButton.IconTabButton_C.OnHovered
+// Function IconTabButton.IconTabButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UIconTabButton_C::OnHovered()
+void UIconTabButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("IconTabButton_C", "OnHovered");
+	static auto Func = Class->GetFunction("IconTabButton_C", "BP_OnHovered");
 
-	Params::UIconTabButton_C_OnHovered_Params Parms;
+	Params::UIconTabButton_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function IconTabButton.IconTabButton_C.OnUnhovered
+// Function IconTabButton.IconTabButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UIconTabButton_C::OnUnhovered()
+void UIconTabButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("IconTabButton_C", "OnUnhovered");
+	static auto Func = Class->GetFunction("IconTabButton_C", "BP_OnUnhovered");
 
-	Params::UIconTabButton_C_OnUnhovered_Params Parms;
+	Params::UIconTabButton_C_BP_OnUnhovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function IconTabButton.IconTabButton_C.OnEnabled
+// Function IconTabButton.IconTabButton_C.BP_OnEnabled
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UIconTabButton_C::OnEnabled()
+void UIconTabButton_C::BP_OnEnabled()
 {
-	static auto Func = Class->GetFunction("IconTabButton_C", "OnEnabled");
+	static auto Func = Class->GetFunction("IconTabButton_C", "BP_OnEnabled");
 
-	Params::UIconTabButton_C_OnEnabled_Params Parms;
+	Params::UIconTabButton_C_BP_OnEnabled_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function IconTabButton.IconTabButton_C.OnDisabled
+// Function IconTabButton.IconTabButton_C.BP_OnDisabled
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UIconTabButton_C::OnDisabled()
+void UIconTabButton_C::BP_OnDisabled()
 {
-	static auto Func = Class->GetFunction("IconTabButton_C", "OnDisabled");
+	static auto Func = Class->GetFunction("IconTabButton_C", "BP_OnDisabled");
 
-	Params::UIconTabButton_C_OnDisabled_Params Parms;
+	Params::UIconTabButton_C_BP_OnDisabled_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -296,44 +329,44 @@ void UIconTabButton_C::OnCurrentTextStyleChanged()
 
 
 // Function IconTabButton.IconTabButton_C.ExecuteUbergraph_IconTabButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue1                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortTabButtonLabelInfo     K2Node_Event_TabLabelInfo                                        (ConstParm)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetSelected_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_GetSelected_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_IsBROnly_ReturnValue                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush1                                    ()
+// enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_NotEqual_ByteByte_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_IsMobileGame_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UIconTabButton_C::ExecuteUbergraph_IconTabButton(int32 EntryPoint, class UCommonInputContext* CallFunc_GetContext_ReturnValue, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool K2Node_Event_IsDesignTime, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1, bool CallFunc_IsBROnly_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush1)
+void UIconTabButton_C::ExecuteUbergraph_IconTabButton(int32 EntryPoint, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue, bool K2Node_Event_IsDesignTime, class UClass* CallFunc_GetCurrentTextStyleClass_ReturnValue1, const struct FFortTabButtonLabelInfo& K2Node_Event_TabLabelInfo, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_GetSelected_ReturnValue, bool CallFunc_GetSelected_ReturnValue1, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush1, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool CallFunc_NotEqual_ByteByte_ReturnValue, bool CallFunc_IsMobileGame_ReturnValue, bool CallFunc_BooleanAND_ReturnValue)
 {
 	static auto Func = Class->GetFunction("IconTabButton_C", "ExecuteUbergraph_IconTabButton");
 
 	Params::UIconTabButton_C_ExecuteUbergraph_IconTabButton_Params Parms;
 	Parms.EntryPoint = EntryPoint;
-	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue = CallFunc_GetCurrentTextStyleClass_ReturnValue;
-	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
-	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;
 	Parms.CallFunc_GetCurrentTextStyleClass_ReturnValue1 = CallFunc_GetCurrentTextStyleClass_ReturnValue1;
 	Parms.K2Node_Event_TabLabelInfo = K2Node_Event_TabLabelInfo;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.CallFunc_GetSelected_ReturnValue = CallFunc_GetSelected_ReturnValue;
 	Parms.CallFunc_GetSelected_ReturnValue1 = CallFunc_GetSelected_ReturnValue1;
-	Parms.CallFunc_IsBROnly_ReturnValue = CallFunc_IsBROnly_ReturnValue;
-	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
+	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.K2Node_MakeStruct_SlateBrush1 = K2Node_MakeStruct_SlateBrush1;
+	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
+	Parms.CallFunc_NotEqual_ByteByte_ReturnValue = CallFunc_NotEqual_ByteByte_ReturnValue;
+	Parms.CallFunc_IsMobileGame_ReturnValue = CallFunc_IsMobileGame_ReturnValue;
+	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

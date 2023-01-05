@@ -15,6 +15,27 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
+// (Final, Net, NetReliable, Native, Event, Private, NetClient)
+// Parameters:
+
+void AOnlineBeaconClient::ClientOnConnected()
+{
+	static auto Func = Class->GetFunction("OnlineBeaconClient", "ClientOnConnected");
+
+	Params::AOnlineBeaconClient_ClientOnConnected_Params Parms;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+}
+
+
 // Function OnlineSubsystemUtils.AchievementBlueprintLibrary.GetCachedAchievementProgress
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -741,27 +762,6 @@ class ULogoutCallbackProxy* ULogoutCallbackProxy::Logout(class UObject* WorldCon
 	Func->FunctionFlags = Flags;
 
 	return Parms.ReturnValue;
-
-}
-
-
-// Function OnlineSubsystemUtils.OnlineBeaconClient.ClientOnConnected
-// (Final, Net, NetReliable, Native, Event, Private, NetClient)
-// Parameters:
-
-void AOnlineBeaconClient::ClientOnConnected()
-{
-	static auto Func = Class->GetFunction("OnlineBeaconClient", "ClientOnConnected");
-
-	Params::AOnlineBeaconClient_ClientOnConnected_Params Parms;
-
-	auto Flags = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flags;
 
 }
 

@@ -22,19 +22,27 @@ class TUObjectArray
 {
 public:
 
+	enum
+	{
+		ElementsPerChunk = 0x10000,
+	};
+
 	struct FUObjectItem
 	{
 		class UObject* Object;
 		uint8 Pad[0x10];
 	};
 
-	FUObjectItem* Objects;
+	FUObjectItem** Objects;
+	uint8 Pad_0[0x08];
 	int32 MaxElements;
 	int32 NumElements;
+	int32 MaxChunks;
+	int32 NumChunks;
 
 	// Call InitGObjects() before using these functions
 
-	inline int Num() const
+	inline int32 Num() const
 	{
 		return NumElements;
 	}
@@ -44,7 +52,10 @@ public:
 		if (Index < 0 || Index > NumElements)
 			return nullptr;
 
-		return Objects[Index].Object;
+		const int32 ChunkIndex = Index / ElementsPerChunk;
+		const int32 InChunkIdx = Index % ElementsPerChunk;
+
+		return Objects[ChunkIndex][InChunkIdx].Object;
 	}
 };
 
@@ -55,14 +66,14 @@ public:
 	T* Data;
 	int32 NumElements;
 	int32 MaxElements;
-	
+
 	TArray() = default;
 
 	inline TArray(int32 Size)
 		:NumElements(0), MaxElements(Size), Data(reinterpret_cast<T*>(malloc(sizeof(T) * Size)))
 	{
 	}
-	
+
 	inline void Add(T InputData)
 	{
 		Data = (T*)realloc(Data, sizeof(T) * (NumElements + 1));
@@ -264,7 +275,7 @@ public:
 	uint8 IdkTheRest[0x8];
 
 	inline std::string ToString() {
-		static auto FText2Name = reinterpret_cast<FString*(*)(const FText*)>(uintptr_t(GetModuleHandle(0)) + Offsets::FTextToString);
+		static auto FText2Name = reinterpret_cast<FString * (*)(const FText*)>(uintptr_t(GetModuleHandle(0)) + Offsets::FTextToString);
 		return FText2Name(this)->ToString();
 	}
 };

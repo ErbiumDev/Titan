@@ -20,11 +20,11 @@ namespace SDK
 // Parameters:
 // struct FGameplayTag                CallFunc_MakeLiteralGameplayTag_ReturnValue                      (NoDestructor, HasGetValueTypeHash)
 // struct FGameplayTag                CallFunc_MakeLiteralGameplayTag_ReturnValue1                     (NoDestructor, HasGetValueTypeHash)
-// struct FGameplayTag                CallFunc_MakeLiteralGameplayTag_ReturnValue12                    (NoDestructor, HasGetValueTypeHash)
+// struct FGameplayTag                CallFunc_MakeLiteralGameplayTag_ReturnValue2                     (NoDestructor, HasGetValueTypeHash)
 // class UAthenaBaseStatView*         CallFunc_GetBaseStatView_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UAthenaMatchStatView*        K2Node_DynamicCast_AsAthena_Match_Stat_View                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FDateTime                   CallFunc_GetMatchEndTime_ReturnValue                             (ConstParm, NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_GetMatchEndTime_ReturnValue                             (ConstParm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetStat_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Round_ReturnValue                                       (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              CallFunc_GetStat_ReturnValue1                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -35,16 +35,16 @@ namespace SDK
 // class FText                        CallFunc_Format_ReturnValue                                      ()
 // class FText                        CallFunc_Format_ReturnValue1                                     ()
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
-// float                              CallFunc_GetStat_ReturnValue12                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                              CallFunc_GetStat_ReturnValue2                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMatchSummaryListEntryWidget_C::Update(const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue12, class UAthenaBaseStatView* CallFunc_GetBaseStatView_ReturnValue, class UAthenaMatchStatView* K2Node_DynamicCast_AsAthena_Match_Stat_View, bool K2Node_DynamicCast_bSuccess, const struct FDateTime& CallFunc_GetMatchEndTime_ReturnValue, float CallFunc_GetStat_ReturnValue, int32 CallFunc_Round_ReturnValue, float CallFunc_GetStat_ReturnValue1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue1, bool CallFunc_EqualEqual_IntInt_ReturnValue, float CallFunc_GetStat_ReturnValue12)
+void UMatchSummaryListEntryWidget_C::Update(const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue1, const struct FGameplayTag& CallFunc_MakeLiteralGameplayTag_ReturnValue2, class UAthenaBaseStatView* CallFunc_GetBaseStatView_ReturnValue, class UAthenaMatchStatView* K2Node_DynamicCast_AsAthena_Match_Stat_View, bool K2Node_DynamicCast_bSuccess, const struct FDateTime& CallFunc_GetMatchEndTime_ReturnValue, float CallFunc_GetStat_ReturnValue, int32 CallFunc_Round_ReturnValue, float CallFunc_GetStat_ReturnValue1, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData, const struct FFormatArgumentData& K2Node_MakeStruct_FormatArgumentData1, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array, TArray<struct FFormatArgumentData>& K2Node_MakeArray_Array1, class FText CallFunc_Format_ReturnValue, class FText CallFunc_Format_ReturnValue1, bool CallFunc_EqualEqual_IntInt_ReturnValue, float CallFunc_GetStat_ReturnValue2)
 {
 	static auto Func = Class->GetFunction("MatchSummaryListEntryWidget_C", "Update");
 
 	Params::UMatchSummaryListEntryWidget_C_Update_Params Parms;
 	Parms.CallFunc_MakeLiteralGameplayTag_ReturnValue = CallFunc_MakeLiteralGameplayTag_ReturnValue;
 	Parms.CallFunc_MakeLiteralGameplayTag_ReturnValue1 = CallFunc_MakeLiteralGameplayTag_ReturnValue1;
-	Parms.CallFunc_MakeLiteralGameplayTag_ReturnValue12 = CallFunc_MakeLiteralGameplayTag_ReturnValue12;
+	Parms.CallFunc_MakeLiteralGameplayTag_ReturnValue2 = CallFunc_MakeLiteralGameplayTag_ReturnValue2;
 	Parms.CallFunc_GetBaseStatView_ReturnValue = CallFunc_GetBaseStatView_ReturnValue;
 	Parms.K2Node_DynamicCast_AsAthena_Match_Stat_View = K2Node_DynamicCast_AsAthena_Match_Stat_View;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
@@ -59,7 +59,7 @@ void UMatchSummaryListEntryWidget_C::Update(const struct FGameplayTag& CallFunc_
 	Parms.CallFunc_Format_ReturnValue = CallFunc_Format_ReturnValue;
 	Parms.CallFunc_Format_ReturnValue1 = CallFunc_Format_ReturnValue1;
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
-	Parms.CallFunc_GetStat_ReturnValue12 = CallFunc_GetStat_ReturnValue12;
+	Parms.CallFunc_GetStat_ReturnValue2 = CallFunc_GetStat_ReturnValue2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -82,7 +82,7 @@ void UMatchSummaryListEntryWidget_C::OnStatChanged()
 
 
 // Function MatchSummaryListEntryWidget.MatchSummaryListEntryWidget_C.ExecuteUbergraph_MatchSummaryListEntryWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

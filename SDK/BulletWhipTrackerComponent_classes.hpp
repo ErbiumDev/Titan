@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x140 - 0x140)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass BulletWhipTrackerComponent.BulletWhipTrackerComponent_C
 class UBulletWhipTrackerComponent_C : public UBulletWhipTrackerComponentBase
 {

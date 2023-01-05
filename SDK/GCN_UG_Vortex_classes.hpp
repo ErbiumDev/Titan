@@ -12,23 +12,23 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x40 (0x480 - 0x440)
+// 0x40 (0x468 - 0x428)
 // BlueprintGeneratedClass GCN_UG_Vortex.GCN_UG_Vortex_C
 class AGCN_UG_Vortex_C : public AFortGameplayCueNotify_Looping
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x440(0x8)(Transient, DuplicateTransient)
-	class UDecalComponent*                       Decal;                                             // 0x448(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
-	float                                        Timeline_0_Fadein_75866BE446FADE6DDBA68D8D8FA84BF7; // 0x450(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	enum class ETimelineDirection                Timeline_0__Direction_75866BE446FADE6DDBA68D8D8FA84BF7; // 0x454(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D2[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UTimelineComponent*                    Timeline_0;                                        // 0x458(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        OpacMult;                                          // 0x460(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class UMaterialInstanceDynamic*              Decal_MID;                                         // 0x468(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                        EmissiveMult;                                      // 0x470(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_45D4[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class USoundBase*                            Vortex_Powerup_Sound;                              // 0x478(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x428(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UDecalComponent*                       Decal;                                             // 0x430(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NonTransactional, NoDestructor, HasGetValueTypeHash)
+	float                                        Timeline_0_Fadein_75866BE446FADE6DDBA68D8D8FA84BF7; // 0x438(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	enum class ETimelineDirection                Timeline_0__Direction_75866BE446FADE6DDBA68D8D8FA84BF7; // 0x43C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_103A[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTimelineComponent*                    Timeline_0;                                        // 0x440(0x8)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        OpacMult;                                          // 0x448(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_103B[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UMaterialInstanceDynamic*              Decal_MID;                                         // 0x450(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        EmissiveMult;                                      // 0x458(0x4)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_103C[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class USoundBase*                            Vortex_Powerup_Sound;                              // 0x460(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

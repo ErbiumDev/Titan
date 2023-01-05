@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-Tab-AngledStats.ButtonStyle-Tab-AngledStats_C
 class UButtonStyle_Tab_AngledStats_C : public UCommonButtonStyle
 {

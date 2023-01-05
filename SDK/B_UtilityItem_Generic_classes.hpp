@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xAC8 - 0xAC8)
+// 0x0 (0x980 - 0x980)
 // BlueprintGeneratedClass B_UtilityItem_Generic.B_UtilityItem_Generic_C
 class AB_UtilityItem_Generic_C : public AFortWeapon
 {

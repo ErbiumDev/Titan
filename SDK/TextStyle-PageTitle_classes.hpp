@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-PageTitle.TextStyle-PageTitle_C
 class UTextStyle_PageTitle_C : public UTextStyle_Base_C
 {

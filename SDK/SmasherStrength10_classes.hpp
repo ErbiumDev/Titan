@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x60 - 0x60)
+// 0x0 (0x68 - 0x68)
 // BlueprintGeneratedClass SmasherStrength10.SmasherStrength10_C
 class USmasherStrength10_C : public UFortNavAreaAutomatic
 {

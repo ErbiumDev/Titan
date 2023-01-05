@@ -22,25 +22,24 @@ namespace SDK
 // enum class EFortQuestType          Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        Temp_text_Variable                                               ()
 // class FText                        Temp_text_Variable1                                              ()
+// class FText                        Temp_text_Variable2                                              ()
+// class FText                        Temp_text_Variable3                                              ()
+// class FText                        Temp_text_Variable4                                              ()
+// class FText                        Temp_text_Variable5                                              ()
+// class FText                        Temp_text_Variable6                                              ()
+// class FText                        Temp_text_Variable7                                              ()
+// class FText                        Temp_text_Variable8                                              ()
+// class FText                        Temp_text_Variable9                                              ()
+// class FText                        Temp_text_Variable10                                             ()
+// class FText                        Temp_text_Variable11                                             ()
 // class FText                        Temp_text_Variable12                                             ()
-// class FText                        Temp_text_Variable123                                            ()
-// class FText                        Temp_text_Variable1234                                           ()
-// class FText                        Temp_text_Variable12345                                          ()
-// class FText                        Temp_text_Variable123456                                         ()
-// class FText                        Temp_text_Variable1234567                                        ()
-// class FText                        Temp_text_Variable12345678                                       ()
-// class FText                        Temp_text_Variable123456789                                      ()
-// class FText                        Temp_text_Variable12345678910                                    ()
-// class FText                        Temp_text_Variable1234567891011                                  ()
-// class FText                        Temp_text_Variable123456789101112                                ()
-// class FText                        Temp_text_Variable12345678910111213                              ()
-// class FText                        Temp_text_Variable1234567891011121314                            ()
-// class FText                        Temp_text_Variable123456789101112131415                          ()
+// class FText                        Temp_text_Variable13                                             ()
+// class FText                        Temp_text_Variable14                                             ()
 // class UFortQuestItemDefinition*    CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortQuestType          CallFunc_GetQuestType_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FText                        K2Node_Select_Default                                            ()
 
-class FText UJournalQuestDetails_C::Get_Streaming_Attached_Quest_Name(enum class EFortQuestType Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable1, class FText Temp_text_Variable12, class FText Temp_text_Variable123, class FText Temp_text_Variable1234, class FText Temp_text_Variable12345, class FText Temp_text_Variable123456, class FText Temp_text_Variable1234567, class FText Temp_text_Variable12345678, class FText Temp_text_Variable123456789, class FText Temp_text_Variable12345678910, class FText Temp_text_Variable1234567891011, class FText Temp_text_Variable123456789101112, class FText Temp_text_Variable12345678910111213, class FText Temp_text_Variable1234567891011121314, class FText Temp_text_Variable123456789101112131415, class UFortQuestItemDefinition* CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition, enum class EFortQuestType CallFunc_GetQuestType_ReturnValue, class FText K2Node_Select_Default)
+class FText UJournalQuestDetails_C::Get_Streaming_Attached_Quest_Name(enum class EFortQuestType Temp_byte_Variable, class FText Temp_text_Variable, class FText Temp_text_Variable1, class FText Temp_text_Variable2, class FText Temp_text_Variable3, class FText Temp_text_Variable4, class FText Temp_text_Variable5, class FText Temp_text_Variable6, class FText Temp_text_Variable7, class FText Temp_text_Variable8, class FText Temp_text_Variable9, class FText Temp_text_Variable10, class FText Temp_text_Variable11, class FText Temp_text_Variable12, class FText Temp_text_Variable13, class FText Temp_text_Variable14, class UFortQuestItemDefinition* CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition, enum class EFortQuestType CallFunc_GetQuestType_ReturnValue, class FText K2Node_Select_Default)
 {
 	static auto Func = Class->GetFunction("JournalQuestDetails_C", "Get Streaming Attached Quest Name");
 
@@ -48,20 +47,19 @@ class FText UJournalQuestDetails_C::Get_Streaming_Attached_Quest_Name(enum class
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_text_Variable = Temp_text_Variable;
 	Parms.Temp_text_Variable1 = Temp_text_Variable1;
+	Parms.Temp_text_Variable2 = Temp_text_Variable2;
+	Parms.Temp_text_Variable3 = Temp_text_Variable3;
+	Parms.Temp_text_Variable4 = Temp_text_Variable4;
+	Parms.Temp_text_Variable5 = Temp_text_Variable5;
+	Parms.Temp_text_Variable6 = Temp_text_Variable6;
+	Parms.Temp_text_Variable7 = Temp_text_Variable7;
+	Parms.Temp_text_Variable8 = Temp_text_Variable8;
+	Parms.Temp_text_Variable9 = Temp_text_Variable9;
+	Parms.Temp_text_Variable10 = Temp_text_Variable10;
+	Parms.Temp_text_Variable11 = Temp_text_Variable11;
 	Parms.Temp_text_Variable12 = Temp_text_Variable12;
-	Parms.Temp_text_Variable123 = Temp_text_Variable123;
-	Parms.Temp_text_Variable1234 = Temp_text_Variable1234;
-	Parms.Temp_text_Variable12345 = Temp_text_Variable12345;
-	Parms.Temp_text_Variable123456 = Temp_text_Variable123456;
-	Parms.Temp_text_Variable1234567 = Temp_text_Variable1234567;
-	Parms.Temp_text_Variable12345678 = Temp_text_Variable12345678;
-	Parms.Temp_text_Variable123456789 = Temp_text_Variable123456789;
-	Parms.Temp_text_Variable12345678910 = Temp_text_Variable12345678910;
-	Parms.Temp_text_Variable1234567891011 = Temp_text_Variable1234567891011;
-	Parms.Temp_text_Variable123456789101112 = Temp_text_Variable123456789101112;
-	Parms.Temp_text_Variable12345678910111213 = Temp_text_Variable12345678910111213;
-	Parms.Temp_text_Variable1234567891011121314 = Temp_text_Variable1234567891011121314;
-	Parms.Temp_text_Variable123456789101112131415 = Temp_text_Variable123456789101112131415;
+	Parms.Temp_text_Variable13 = Temp_text_Variable13;
+	Parms.Temp_text_Variable14 = Temp_text_Variable14;
 	Parms.CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition = CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition;
 	Parms.CallFunc_GetQuestType_ReturnValue = CallFunc_GetQuestType_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
@@ -81,11 +79,11 @@ class FText UJournalQuestDetails_C::Get_Streaming_Attached_Quest_Name(enum class
 // enum class EFortQuestType          CallFunc_GetQuestType_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue12                       (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue2                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UJournalQuestDetails_C::Is_Streaming_Quest(bool* bStreamingQuest, class UFortQuestItemDefinition* CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition, enum class EFortQuestType CallFunc_GetQuestType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue1, bool CallFunc_EqualEqual_ByteByte_ReturnValue12, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1)
+void UJournalQuestDetails_C::Is_Streaming_Quest(bool* bStreamingQuest, class UFortQuestItemDefinition* CallFunc_Get_Quest_Item_Def_AsFort_Quest_Item_Definition, enum class EFortQuestType CallFunc_GetQuestType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue1, bool CallFunc_EqualEqual_ByteByte_ReturnValue2, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("JournalQuestDetails_C", "Is Streaming Quest");
 
@@ -94,7 +92,7 @@ void UJournalQuestDetails_C::Is_Streaming_Quest(bool* bStreamingQuest, class UFo
 	Parms.CallFunc_GetQuestType_ReturnValue = CallFunc_GetQuestType_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue1 = CallFunc_EqualEqual_ByteByte_ReturnValue1;
-	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue12 = CallFunc_EqualEqual_ByteByte_ReturnValue12;
+	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue2 = CallFunc_EqualEqual_ByteByte_ReturnValue2;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
 	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
 
@@ -248,42 +246,38 @@ void UJournalQuestDetails_C::StopConversation(bool CallFunc_IsValid_ReturnValue)
 // Parameters:
 // class UFortQuestItem*              QuestToAbandon                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               QuestAbandoned_                                                  (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortQuestState         CallFunc_GetQuestState_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortQuestManager*           CallFunc_GetQuestManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              CallFunc_GetRemainingDailyQuestRerolls_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortQuestItemDefinition*    CallFunc_GetQuestDefinitionBP_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EFortQuestType          CallFunc_GetQuestType_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue12                       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue123                      (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UFortQuestManager*           CallFunc_GetQuestManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_EqualEqual_ByteByte_ReturnValue2                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// int32                              CallFunc_GetRemainingDailyQuestRerolls_ReturnValue               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_BooleanAND_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UJournalQuestDetails_C::AbandonQuest(class UFortQuestItem* QuestToAbandon, bool* QuestAbandoned_, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, enum class EFortQuestState CallFunc_GetQuestState_ReturnValue, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, int32 CallFunc_GetRemainingDailyQuestRerolls_ReturnValue, class UFortQuestItemDefinition* CallFunc_GetQuestDefinitionBP_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, enum class EFortQuestType CallFunc_GetQuestType_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue1, bool CallFunc_EqualEqual_ByteByte_ReturnValue12, bool CallFunc_EqualEqual_ByteByte_ReturnValue123, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_BooleanOR_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_BooleanAND_ReturnValue1)
+void UJournalQuestDetails_C::AbandonQuest(class UFortQuestItem* QuestToAbandon, bool* QuestAbandoned_, enum class EFortQuestState CallFunc_GetQuestState_ReturnValue, class UFortQuestItemDefinition* CallFunc_GetQuestDefinitionBP_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue, enum class EFortQuestType CallFunc_GetQuestType_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue1, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, bool CallFunc_EqualEqual_ByteByte_ReturnValue2, bool CallFunc_BooleanOR_ReturnValue, int32 CallFunc_GetRemainingDailyQuestRerolls_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("JournalQuestDetails_C", "AbandonQuest");
 
 	Params::UJournalQuestDetails_C_AbandonQuest_Params Parms;
 	Parms.QuestToAbandon = QuestToAbandon;
-	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetQuestState_ReturnValue = CallFunc_GetQuestState_ReturnValue;
-	Parms.CallFunc_GetQuestManager_ReturnValue = CallFunc_GetQuestManager_ReturnValue;
-	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
-	Parms.CallFunc_GetRemainingDailyQuestRerolls_ReturnValue = CallFunc_GetRemainingDailyQuestRerolls_ReturnValue;
 	Parms.CallFunc_GetQuestDefinitionBP_ReturnValue = CallFunc_GetQuestDefinitionBP_ReturnValue;
-	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
+	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue = CallFunc_EqualEqual_ByteByte_ReturnValue;
 	Parms.CallFunc_GetQuestType_ReturnValue = CallFunc_GetQuestType_ReturnValue;
+	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue1 = CallFunc_EqualEqual_ByteByte_ReturnValue1;
-	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue12 = CallFunc_EqualEqual_ByteByte_ReturnValue12;
-	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue123 = CallFunc_EqualEqual_ByteByte_ReturnValue123;
+	Parms.CallFunc_GetQuestManager_ReturnValue = CallFunc_GetQuestManager_ReturnValue;
+	Parms.CallFunc_EqualEqual_ByteByte_ReturnValue2 = CallFunc_EqualEqual_ByteByte_ReturnValue2;
 	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
-	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
+	Parms.CallFunc_GetRemainingDailyQuestRerolls_ReturnValue = CallFunc_GetRemainingDailyQuestRerolls_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
+	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_BooleanAND_ReturnValue1 = CallFunc_BooleanAND_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -298,41 +292,39 @@ void UJournalQuestDetails_C::AbandonQuest(class UFortQuestItem* QuestToAbandon, 
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// TArray<class UFortQuestObjectiveInfo*>CallFunc_GetFutureObjectives_FutureObjectives                    (ZeroConstructor, ReferenceParm)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UFortQuestObjectiveInfo*>CallFunc_GetFutureObjectives_FutureObjectives                    (ZeroConstructor, ReferenceParm)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
+// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_GetDescription_ReturnValue                              ()
 // struct FSlateBrush                 CallFunc_GetItemSmallPreviewImageBrush_ReturnValue               ()
 // class UFortQuestItemDefinition*    CallFunc_GetQuestDefinitionBP_ReturnValue                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class UFortQuestObjectiveInfo*>CallFunc_GetVisibleObjectives_VisibleObjectives                  (ZeroConstructor, ReferenceParm)
+// class FText                        CallFunc_GetDisplayName_ReturnValue                              ()
 // enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// TArray<class UFortQuestObjectiveInfo*>CallFunc_GetVisibleObjectives_VisibleObjectives                  (ZeroConstructor, ReferenceParm)
 
-void UJournalQuestDetails_C::UpdatePanelInfo(enum class ESlateVisibility Temp_byte_Variable, TArray<class UFortQuestObjectiveInfo*>& CallFunc_GetFutureObjectives_FutureObjectives, enum class ESlateVisibility Temp_byte_Variable1, int32 CallFunc_Array_Length_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_Greater_IntInt_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, class FText CallFunc_GetDescription_ReturnValue, const struct FSlateBrush& CallFunc_GetItemSmallPreviewImageBrush_ReturnValue, class UFortQuestItemDefinition* CallFunc_GetQuestDefinitionBP_ReturnValue, class FText CallFunc_GetDisplayName_ReturnValue, bool Temp_bool_Variable, TArray<class UFortQuestObjectiveInfo*>& CallFunc_GetVisibleObjectives_VisibleObjectives, enum class ESlateVisibility K2Node_Select_Default)
+void UJournalQuestDetails_C::UpdatePanelInfo(enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, TArray<class UFortQuestObjectiveInfo*>& CallFunc_GetFutureObjectives_FutureObjectives, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 CallFunc_Array_Length_ReturnValue, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class FText CallFunc_GetDescription_ReturnValue, const struct FSlateBrush& CallFunc_GetItemSmallPreviewImageBrush_ReturnValue, class UFortQuestItemDefinition* CallFunc_GetQuestDefinitionBP_ReturnValue, bool Temp_bool_Variable, class FText CallFunc_GetDisplayName_ReturnValue, enum class ESlateVisibility K2Node_Select_Default, TArray<class UFortQuestObjectiveInfo*>& CallFunc_GetVisibleObjectives_VisibleObjectives)
 {
 	static auto Func = Class->GetFunction("JournalQuestDetails_C", "UpdatePanelInfo");
 
 	Params::UJournalQuestDetails_C_UpdatePanelInfo_Params Parms;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.CallFunc_GetFutureObjectives_FutureObjectives = CallFunc_GetFutureObjectives_FutureObjectives;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
+	Parms.CallFunc_GetFutureObjectives_FutureObjectives = CallFunc_GetFutureObjectives_FutureObjectives;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
-	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
+	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
+	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 	Parms.CallFunc_GetDescription_ReturnValue = CallFunc_GetDescription_ReturnValue;
 	Parms.CallFunc_GetItemSmallPreviewImageBrush_ReturnValue = CallFunc_GetItemSmallPreviewImageBrush_ReturnValue;
 	Parms.CallFunc_GetQuestDefinitionBP_ReturnValue = CallFunc_GetQuestDefinitionBP_ReturnValue;
-	Parms.CallFunc_GetDisplayName_ReturnValue = CallFunc_GetDisplayName_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.CallFunc_GetVisibleObjectives_VisibleObjectives = CallFunc_GetVisibleObjectives_VisibleObjectives;
+	Parms.CallFunc_GetDisplayName_ReturnValue = CallFunc_GetDisplayName_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
+	Parms.CallFunc_GetVisibleObjectives_VisibleObjectives = CallFunc_GetVisibleObjectives_VisibleObjectives;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -398,43 +390,18 @@ void UJournalQuestDetails_C::HandleOnEndSpokenDialog(const class FString& Temp_s
 }
 
 
-// Function JournalQuestDetails.JournalQuestDetails_C.HandleOnBeginSpokenDialog
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class UTexture2D*                  Image                                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FText                        Title                                                            (BlueprintVisible, BlueprintReadOnly, Parm)
-// class FText                        Subtitle                                                         (BlueprintVisible, BlueprintReadOnly, Parm)
-// enum class EFortAnnouncementDisplayPreferenceDisplayPreference                                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UJournalQuestDetails_C::HandleOnBeginSpokenDialog(class UTexture2D* Image, class FText Title, class FText Subtitle, enum class EFortAnnouncementDisplayPreference DisplayPreference)
-{
-	static auto Func = Class->GetFunction("JournalQuestDetails_C", "HandleOnBeginSpokenDialog");
-
-	Params::UJournalQuestDetails_C_HandleOnBeginSpokenDialog_Params Parms;
-	Parms.Image = Image;
-	Parms.Title = Title;
-	Parms.Subtitle = Subtitle;
-	Parms.DisplayPreference = DisplayPreference;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function JournalQuestDetails.JournalQuestDetails_C.Setup
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
 // class UFortUIManagerWidget_NUI*    CallFunc_GetUIManagerWidget_ReturnValue                          (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UJournalQuestDetails_C::Setup(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
+void UJournalQuestDetails_C::Setup(UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, class UFortUIManagerWidget_NUI* CallFunc_GetUIManagerWidget_ReturnValue)
 {
 	static auto Func = Class->GetFunction("JournalQuestDetails_C", "Setup");
 
 	Params::UJournalQuestDetails_C_Setup_Params Parms;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
-	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
 	Parms.CallFunc_GetUIManagerWidget_ReturnValue = CallFunc_GetUIManagerWidget_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -473,7 +440,7 @@ void UJournalQuestDetails_C::HandleCurrentQuestChangedBP()
 
 
 // Function JournalQuestDetails.JournalQuestDetails_C.ExecuteUbergraph_JournalQuestDetails
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

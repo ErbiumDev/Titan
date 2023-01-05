@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_Athena_Medkit_Heal.GE_Athena_Medkit_Heal_C
 class UGE_Athena_Medkit_Heal_C : public UGameplayEffect
 {

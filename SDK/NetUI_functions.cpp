@@ -15,6 +15,48 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function NetUI.ConnectionTimeoutWidget.StopTimeoutUICheck
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+
+void UConnectionTimeoutWidget::StopTimeoutUICheck()
+{
+	static auto Func = Class->GetFunction("ConnectionTimeoutWidget", "StopTimeoutUICheck");
+
+	Params::UConnectionTimeoutWidget_StopTimeoutUICheck_Params Parms;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+}
+
+
+// Function NetUI.ConnectionTimeoutWidget.StartTimeoutUICheck
+// (Final, Native, Protected, BlueprintCallable)
+// Parameters:
+
+void UConnectionTimeoutWidget::StartTimeoutUICheck()
+{
+	static auto Func = Class->GetFunction("ConnectionTimeoutWidget", "StartTimeoutUICheck");
+
+	Params::UConnectionTimeoutWidget_StartTimeoutUICheck_Params Parms;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+}
+
+
 // Function NetUI.NetDebugWidget.StopTimer
 // (Final, Native, Protected, BlueprintCallable)
 // Parameters:

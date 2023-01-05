@@ -12,13 +12,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0xAE0 - 0xAD0)
+// 0x17 (0x960 - 0x949)
 // BlueprintGeneratedClass GAT_DanceGrenade.GAT_DanceGrenade_C
 class UGAT_DanceGrenade_C : public UGAT_TriggeredAbility_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAD0(0x8)(Transient, DuplicateTransient)
-	class AFortPlayerPawn*                       PlayerPawn;                                        // 0xAD8(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_4405[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x950(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class AFortPlayerPawn*                       PlayerPawn;                                        // 0x958(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{
@@ -27,7 +28,7 @@ public:
 	}
 
 	void K2_ActivateAbility();
-	void ExecuteUbergraph_GAT_DanceGrenade(int32 EntryPoint, const struct FGameplayAbilityActorInfo& CallFunc_GetActorInfo_ReturnValue, class AFortPlayerPawn* K2Node_DynamicCast_AsFort_Player_Pawn, bool K2Node_DynamicCast_bSuccess, const struct FGameplayAbilityTargetDataHandle& CallFunc_AbilityTargetDataFromActor_ReturnValue, bool CallFunc_K2_CommitAbility_ReturnValue, TArray<struct FActiveGameplayEffectHandle>& CallFunc_BP_ApplyGameplayEffectToTarget_ReturnValue);
+	void ExecuteUbergraph_GAT_DanceGrenade(int32 EntryPoint);
 };
 
 }

@@ -79,7 +79,7 @@ class UEditableGameplayTagQuery : public UObject
 {
 public:
 	class FString                                UserDescription;                                   // 0x28(0x10)(Edit, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2262[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C23[0x10];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	class UEditableGameplayTagQueryExpression*   RootExpression;                                    // 0x48(0x8)(Edit, ExportObject, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, PersistentInstance, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FGameplayTagQuery                     TagQueryExportText_Helper;                         // 0x50(0x48)(NativeAccessSpecifierPrivate)
 
@@ -200,12 +200,12 @@ public:
 class UGameplayTagsManager : public UObject
 {
 public:
-	uint8                                        Pad_2263[0x80];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C24[0x80];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTagSource>            TagSources;                                        // 0xA8(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2264[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C25[0x68];                                    // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<class UDataTable*>                    RestrictedGameplayTagTables;                       // 0x120(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
 	TArray<class UDataTable*>                    GameplayTagTables;                                 // 0x130(0x10)(ZeroConstructor, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_2265[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_2C26[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 
 	static class UClass* StaticClass()
 	{
@@ -254,10 +254,10 @@ class UGameplayTagsSettings : public UGameplayTagsList
 public:
 	bool                                         ImportTagsFromConfig;                              // 0x48(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         WarnOnInvalidTags;                                 // 0x49(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2266[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C27[0x6];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FGameplayTagCategoryRemap>     CategoryRemapping;                                 // 0x50(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	bool                                         FastReplication;                                   // 0x60(0x1)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2267[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_2C28[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	TArray<struct FSoftObjectPath>               GameplayTagTableList;                              // 0x68(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	TArray<struct FGameplayTagRedirect>          GameplayTagRedirects;                              // 0x78(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	TArray<class FName>                          CommonlyReplicatedTags;                            // 0x88(0x10)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)

@@ -23,13 +23,13 @@ struct UAthenaLobbyPlayerPanel_C_Cancel_Params
 public:
 };
 
-// 0x1F9 (0x1F9 - 0x0)
+// 0x201 (0x201 - 0x0)
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.OnTeamMemberStateChanged
 struct UAthenaLobbyPlayerPanel_C_OnTeamMemberStateChanged_Params
 {
 public:
-	struct FFortTeamMemberInfo                   TeamMemberInfo;                                    // 0x0(0x1F8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
-	bool                                         CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x1F8(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	struct FFortTeamMemberInfo                   TeamMemberInfo;                                    // 0x0(0x200)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	bool                                         CallFunc_AreUniqueIDsIdentical_ReturnValue;        // 0x200(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 // 0x20 (0x20 - 0x0)
@@ -58,12 +58,12 @@ struct UAthenaLobbyPlayerPanel_C_Refresh_Params
 public:
 };
 
-// 0x1F8 (0x1F8 - 0x0)
+// 0x200 (0x200 - 0x0)
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.SetTeamMemberInfo
 struct UAthenaLobbyPlayerPanel_C_SetTeamMemberInfo_Params
 {
 public:
-	struct FFortTeamMemberInfo                   TeamMemberInfo;                                    // 0x0(0x1F8)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
+	struct FFortTeamMemberInfo                   TeamMemberInfo;                                    // 0x0(0x200)(BlueprintVisible, BlueprintReadOnly, Parm, HasGetValueTypeHash)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -80,14 +80,13 @@ struct UAthenaLobbyPlayerPanel_C_Construct_Params
 public:
 };
 
-// 0x18 (0x18 - 0x0)
+// 0x14 (0x14 - 0x0)
 // Function AthenaLobbyPlayerPanel.AthenaLobbyPlayerPanel_C.ExecuteUbergraph_AthenaLobbyPlayerPanel
 struct UAthenaLobbyPlayerPanel_C_ExecuteUbergraph_AthenaLobbyPlayerPanel_Params
 {
 public:
 	int32                                        EntryPoint;                                        // 0x0(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                        Pad_3377[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x8(0x10)(ZeroConstructor, NoDestructor)
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x4(0x10)(ZeroConstructor, NoDestructor)
 };
 
 // 0x0 (0x0 - 0x0)

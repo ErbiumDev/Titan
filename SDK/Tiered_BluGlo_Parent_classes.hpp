@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x4 (0xF10 - 0xF0C)
+// 0x8 (0xDF0 - 0xDE8)
 // BlueprintGeneratedClass Tiered_BluGlo_Parent.Tiered_BluGlo_Parent_C
 class ATiered_BluGlo_Parent_C : public ABuildingContainer
 {
 public:
-	uint8                                        Pad_2619[0x4];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xDE8(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass()
 	{
@@ -25,6 +25,9 @@ public:
 		return Clss;
 	}
 
+	void UserConstructionScript();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_Tiered_BluGlo_Parent(int32 EntryPoint, bool CallFunc_IsValid_ReturnValue);
 };
 
 }

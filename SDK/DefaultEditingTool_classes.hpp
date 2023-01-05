@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xAF8 - 0xAF8)
+// 0x0 (0x9B0 - 0x9B0)
 // BlueprintGeneratedClass DefaultEditingTool.DefaultEditingTool_C
 class ADefaultEditingTool_C : public AFortWeap_EditingTool
 {

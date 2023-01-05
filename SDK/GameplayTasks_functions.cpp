@@ -195,8 +195,8 @@ class UGameplayTask_ClaimResource* UGameplayTask_ClaimResource::ClaimResource(UI
 // (Final, Native, Static, Public, HasDefaults, BlueprintCallable)
 // Parameters:
 // UInterfaceProperty_                TaskOwner                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
-// struct FVector                     SpawnLocation                                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FRotator                    SpawnRotation                                                    (Parm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+// struct FVector                     SpawnLocation                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FRotator                    SpawnRotation                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 // TSubclassOf<class AActor>          Class                                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                               bSpawnOnlyOnAuthority                                            (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UGameplayTask_SpawnActor*    ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)

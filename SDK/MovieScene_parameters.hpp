@@ -26,17 +26,26 @@ public:
 };
 
 // 0x0 (0x0 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.StopAtCurrentTime
+struct UMovieSceneSequencePlayer_StopAtCurrentTime_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.Stop
 struct UMovieSceneSequencePlayer_Stop_Params
 {
 public:
 };
 
-// 0x0 (0x0 - 0x0)
-// Function MovieScene.MovieSceneSequencePlayer.StartPlayingNextTick
-struct UMovieSceneSequencePlayer_StartPlayingNextTick_Params
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.SetTimeRange
+struct UMovieSceneSequencePlayer_SetTimeRange_Params
 {
 public:
+	float                                        StartTime;                                         // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                        Duration;                                          // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -64,6 +73,23 @@ public:
 	float                                        NewPlaybackPosition;                               // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.SetFrameRate
+struct UMovieSceneSequencePlayer_SetFrameRate_Params
+{
+public:
+	struct FFrameRate                            FrameRate;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.SetFrameRange
+struct UMovieSceneSequencePlayer_SetFrameRange_Params
+{
+public:
+	int32                                        StartFrame;                                        // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                        Duration;                                          // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // 0x1 (0x1 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts
 struct UMovieSceneSequencePlayer_SetDisableCameraCuts_Params
@@ -72,11 +98,61 @@ public:
 	bool                                         bInDisableCameraCuts;                              // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// 0x4 (0x4 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.ScrubToSeconds
+struct UMovieSceneSequencePlayer_ScrubToSeconds_Params
+{
+public:
+	float                                        TimeInSeconds;                                     // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.ScrubToFrame
+struct UMovieSceneSequencePlayer_ScrubToFrame_Params
+{
+public:
+	struct FFrameTime                            NewPosition;                                       // 0x0(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // 0x0 (0x0 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.Scrub
 struct UMovieSceneSequencePlayer_Scrub_Params
 {
 public:
+};
+
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.RPC_OnStopEvent
+struct UMovieSceneSequencePlayer_RPC_OnStopEvent_Params
+{
+public:
+	struct FFrameTime                            StoppedTime;                                       // 0x0(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0xC (0xC - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.RPC_ExplicitServerUpdateEvent
+struct UMovieSceneSequencePlayer_RPC_ExplicitServerUpdateEvent_Params
+{
+public:
+	enum class EUpdatePositionMethod             Method;                                            // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_F73[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFrameTime                            RelevantTime;                                      // 0x4(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x4 (0x4 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.PlayToSeconds
+struct UMovieSceneSequencePlayer_PlayToSeconds_Params
+{
+public:
+	float                                        TimeInSeconds;                                     // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.PlayToFrame
+struct UMovieSceneSequencePlayer_PlayToFrame_Params
+{
+public:
+	struct FFrameTime                            NewPosition;                                       // 0x0(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -109,11 +185,35 @@ public:
 };
 
 // 0x4 (0x4 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.JumpToSeconds
+struct UMovieSceneSequencePlayer_JumpToSeconds_Params
+{
+public:
+	float                                        TimeInSeconds;                                     // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x4 (0x4 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.JumpToPosition
 struct UMovieSceneSequencePlayer_JumpToPosition_Params
 {
 public:
 	float                                        NewPlaybackPosition;                               // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.JumpToFrame
+struct UMovieSceneSequencePlayer_JumpToFrame_Params
+{
+public:
+	struct FFrameTime                            NewPosition;                                       // 0x0(0x8)(Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.IsReversed
+struct UMovieSceneSequencePlayer_IsReversed_Params
+{
+public:
+	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
@@ -137,6 +237,14 @@ public:
 struct UMovieSceneSequencePlayer_GoToEndAndStop_Params
 {
 public:
+};
+
+// 0x10 (0x10 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.GetStartTime
+struct UMovieSceneSequencePlayer_GetStartTime_Params
+{
+public:
+	struct FQualifiedFrameTime                   ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -171,6 +279,15 @@ public:
 	float                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// 0x18 (0x18 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.GetObjectBindings
+struct UMovieSceneSequencePlayer_GetObjectBindings_Params
+{
+public:
+	class UObject*                               InObject;                                          // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	TArray<struct FMovieSceneObjectBindingID>    ReturnValue;                                       // 0x8(0x10)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
+};
+
 // 0x4 (0x4 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.GetLength
 struct UMovieSceneSequencePlayer_GetLength_Params
@@ -179,12 +296,52 @@ public:
 	float                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// 0x8 (0x8 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.GetFrameRate
+struct UMovieSceneSequencePlayer_GetFrameRate_Params
+{
+public:
+	struct FFrameRate                            ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x4 (0x4 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.GetFrameDuration
+struct UMovieSceneSequencePlayer_GetFrameDuration_Params
+{
+public:
+	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x10 (0x10 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.GetEndTime
+struct UMovieSceneSequencePlayer_GetEndTime_Params
+{
+public:
+	struct FQualifiedFrameTime                   ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x10 (0x10 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.GetDuration
+struct UMovieSceneSequencePlayer_GetDuration_Params
+{
+public:
+	struct FQualifiedFrameTime                   ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // 0x1 (0x1 - 0x0)
 // Function MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts
 struct UMovieSceneSequencePlayer_GetDisableCameraCuts_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x10 (0x10 - 0x0)
+// Function MovieScene.MovieSceneSequencePlayer.GetCurrentTime
+struct UMovieSceneSequencePlayer_GetCurrentTime_Params
+{
+public:
+	struct FQualifiedFrameTime                   ReturnValue;                                       // 0x0(0x10)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x28 (0x28 - 0x0)

@@ -19,8 +19,8 @@ namespace SDK
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
 // class UProceduralMeshComponent*    InProcMesh                                                       (Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                     PlanePosition                                                    (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FVector                     PlaneNormal                                                      (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     PlanePosition                                                    (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     PlaneNormal                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // bool                               bCreateOtherHalf                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // class UProceduralMeshComponent*    OutOtherHalfProcMesh                                             (Parm, OutParm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // enum class EProcMeshSliceCapOption CapOption                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -147,7 +147,7 @@ void UKismetProceduralMeshLibrary::GetSectionFromProceduralMesh(class UProcedura
 // Function ProceduralMeshComponent.KismetProceduralMeshLibrary.GenerateBoxMesh
 // (Final, Native, Static, Public, HasOutParams, HasDefaults, BlueprintCallable)
 // Parameters:
-// struct FVector                     BoxRadius                                                        (Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FVector                     BoxRadius                                                        (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 // TArray<struct FVector>             Vertices                                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // TArray<int32>                      Triangles                                                        (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 // TArray<struct FVector>             Normals                                                          (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
@@ -187,6 +187,45 @@ void UKismetProceduralMeshLibrary::GenerateBoxMesh(const struct FVector& BoxRadi
 }
 
 
+// Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshWelded
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                              NumX                                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              NumY                                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<int32>                      Triangles                                                        (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FVector>             Vertices                                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FVector2D>           UVs                                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// float                              GridSpacing                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKismetProceduralMeshLibrary::CreateGridMeshWelded(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, float GridSpacing)
+{
+	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshWelded");
+
+	Params::UKismetProceduralMeshLibrary_CreateGridMeshWelded_Params Parms;
+	Parms.NumX = NumX;
+	Parms.NumY = NumY;
+	Parms.GridSpacing = GridSpacing;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+	if (Triangles != nullptr)
+		*Triangles = Parms.Triangles;
+
+	if (Vertices != nullptr)
+		*Vertices = Parms.Vertices;
+
+	if (UVs != nullptr)
+		*UVs = Parms.UVs;
+
+}
+
+
 // Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshTriangles
 // (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
 // Parameters:
@@ -214,6 +253,49 @@ void UKismetProceduralMeshLibrary::CreateGridMeshTriangles(int32 NumX, int32 Num
 
 	if (Triangles != nullptr)
 		*Triangles = Parms.Triangles;
+
+}
+
+
+// Function ProceduralMeshComponent.KismetProceduralMeshLibrary.CreateGridMeshSplit
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable)
+// Parameters:
+// int32                              NumX                                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// int32                              NumY                                                             (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// TArray<int32>                      Triangles                                                        (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FVector>             Vertices                                                         (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FVector2D>           UVs                                                              (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// TArray<struct FVector2D>           UV1s                                                             (Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
+// float                              GridSpacing                                                      (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UKismetProceduralMeshLibrary::CreateGridMeshSplit(int32 NumX, int32 NumY, TArray<int32>* Triangles, TArray<struct FVector>* Vertices, TArray<struct FVector2D>* UVs, TArray<struct FVector2D>* UV1s, float GridSpacing)
+{
+	static auto Func = Class->GetFunction("KismetProceduralMeshLibrary", "CreateGridMeshSplit");
+
+	Params::UKismetProceduralMeshLibrary_CreateGridMeshSplit_Params Parms;
+	Parms.NumX = NumX;
+	Parms.NumY = NumY;
+	Parms.GridSpacing = GridSpacing;
+
+	auto Flags = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+
+	UObject::ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flags;
+
+	if (Triangles != nullptr)
+		*Triangles = Parms.Triangles;
+
+	if (Vertices != nullptr)
+		*Vertices = Parms.Vertices;
+
+	if (UVs != nullptr)
+		*UVs = Parms.UVs;
+
+	if (UV1s != nullptr)
+		*UV1s = Parms.UV1s;
 
 }
 

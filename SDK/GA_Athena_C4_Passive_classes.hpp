@@ -12,14 +12,14 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x18 (0xAD8 - 0xAC0)
+// 0x18 (0x950 - 0x938)
 // BlueprintGeneratedClass GA_Athena_C4_Passive.GA_Athena_C4_Passive_C
 class UGA_Athena_C4_Passive_C : public UFortGameplayAbility
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xAC0(0x8)(Transient, DuplicateTransient)
-	struct FGameplayTag                          TrackGroupTag;                                     // 0xAC8(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class UFortWorldItemDefinition*              C4ItemDef;                                         // 0xAD0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x938(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FGameplayTag                          TrackGroupTag;                                     // 0x940(0x8)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class UFortWorldItemDefinition*              C4ItemDef;                                         // 0x948(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

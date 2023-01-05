@@ -50,7 +50,7 @@ void UTutorialWindow_C::BndEvt__IconTextButton_K2Node_ComponentBoundEvent_0_Comm
 
 
 // Function TutorialWindow.TutorialWindow_C.ExecuteUbergraph_TutorialWindow
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button                                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

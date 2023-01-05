@@ -71,7 +71,7 @@ void UBluGloRequestHandler_C::EQSQueryFinished(class UEnvQueryInstanceBlueprintW
 // Parameters:
 // int32                              NumBluGloToSpawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      ActorToSpawnFrom                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     LocationToSpawnFromIfActorInvalid                                (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     LocationToSpawnFromIfActorInvalid                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int32 NumBluGloToSpawn, class AActor* ActorToSpawnFrom, const struct FVector& LocationToSpawnFromIfActorInvalid)
 {
@@ -88,7 +88,7 @@ void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int32 NumBluGloToSp
 
 
 // Function BluGloRequestHandler.BluGloRequestHandler_C.ExecuteUbergraph_BluGloRequestHandler
-// (HasDefaults)
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEnvQueryInstanceBlueprintWrapper*K2Node_CustomEvent_QueryInstance                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -96,7 +96,7 @@ void UBluGloRequestHandler_C::InitializeBluGloRequestHandler(int32 NumBluGloToSp
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // int32                              K2Node_CustomEvent_NumBluGloToSpawn                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class AActor*                      K2Node_CustomEvent_ActorToSpawnFrom                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     K2Node_CustomEvent_LocationToSpawnFromIfActorInvalid             (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     K2Node_CustomEvent_LocationToSpawnFromIfActorInvalid             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 void UBluGloRequestHandler_C::ExecuteUbergraph_BluGloRequestHandler(int32 EntryPoint, class UEnvQueryInstanceBlueprintWrapper* K2Node_CustomEvent_QueryInstance, enum class EEnvQueryStatus K2Node_CustomEvent_QueryStatus, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, int32 K2Node_CustomEvent_NumBluGloToSpawn, class AActor* K2Node_CustomEvent_ActorToSpawnFrom, const struct FVector& K2Node_CustomEvent_LocationToSpawnFromIfActorInvalid)
 {
@@ -120,7 +120,7 @@ void UBluGloRequestHandler_C::ExecuteUbergraph_BluGloRequestHandler(int32 EntryP
 // (Public, Delegate, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class AActor*                      ActorToSpawnFrom                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector                     LocationToSpawnFromIfActorInvalid                                (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector                     LocationToSpawnFromIfActorInvalid                                (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EEnvQueryStatus         QueryStatus                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UEnvQueryInstanceBlueprintWrapper*QueryInstance                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              NumBluGloToSpawn                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

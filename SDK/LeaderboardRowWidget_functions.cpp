@@ -55,15 +55,17 @@ void ULeaderboardRowWidget_C::SetDataDirect(class UFortLeaderboardRowProxyInstan
 }
 
 
-// Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnLeaderboardEntryDataSet
-// (Event, Public, BlueprintEvent)
+// Function LeaderboardRowWidget.LeaderboardRowWidget_C.OnListItemObjectSet
+// (Event, Protected, BlueprintEvent)
 // Parameters:
+// class UObject*                     ListItemObject                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void ULeaderboardRowWidget_C::OnLeaderboardEntryDataSet()
+void ULeaderboardRowWidget_C::OnListItemObjectSet(class UObject* ListItemObject)
 {
-	static auto Func = Class->GetFunction("LeaderboardRowWidget_C", "OnLeaderboardEntryDataSet");
+	static auto Func = Class->GetFunction("LeaderboardRowWidget_C", "OnListItemObjectSet");
 
-	Params::ULeaderboardRowWidget_C_OnLeaderboardEntryDataSet_Params Parms;
+	Params::ULeaderboardRowWidget_C_OnListItemObjectSet_Params Parms;
+	Parms.ListItemObject = ListItemObject;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -71,18 +73,20 @@ void ULeaderboardRowWidget_C::OnLeaderboardEntryDataSet()
 
 
 // Function LeaderboardRowWidget.LeaderboardRowWidget_C.ExecuteUbergraph_LeaderboardRowWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UObject*                     K2Node_Event_ListItemObject                                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortLeaderboardRowProxyInstance*K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void ULeaderboardRowWidget_C::ExecuteUbergraph_LeaderboardRowWidget(int32 EntryPoint, class UFortLeaderboardRowProxyInstance* K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance, bool K2Node_DynamicCast_bSuccess)
+void ULeaderboardRowWidget_C::ExecuteUbergraph_LeaderboardRowWidget(int32 EntryPoint, class UObject* K2Node_Event_ListItemObject, class UFortLeaderboardRowProxyInstance* K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance, bool K2Node_DynamicCast_bSuccess)
 {
 	static auto Func = Class->GetFunction("LeaderboardRowWidget_C", "ExecuteUbergraph_LeaderboardRowWidget");
 
 	Params::ULeaderboardRowWidget_C_ExecuteUbergraph_LeaderboardRowWidget_Params Parms;
 	Parms.EntryPoint = EntryPoint;
+	Parms.K2Node_Event_ListItemObject = K2Node_Event_ListItemObject;
 	Parms.K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance = K2Node_DynamicCast_AsFort_Leaderboard_Row_Proxy_Instance;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
 

@@ -47,8 +47,8 @@ void UBP_QuestExpiresWidget_C::GetFortPC(class AFortPlayerController** AsFort_Pl
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_DoesQuestExpire_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class AFortPlayerController*       CallFunc_GetFortPC_AsFort_Player_Controller                      (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (NoDestructor, HasGetValueTypeHash)
-// struct FTimespan                   CallFunc_GetRemainingExpirationDuration_ReturnValue              (NoDestructor, HasGetValueTypeHash)
+// struct FDateTime                   CallFunc_GetMcpRelativeUtcNow_ReturnValue                        (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+// struct FTimespan                   CallFunc_GetRemainingExpirationDuration_ReturnValue              (ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 // class FText                        CallFunc_GetTimespanAsText_ReturnValue                           ()
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData                             (HasGetValueTypeHash)
 // struct FFormatArgumentData         K2Node_MakeStruct_FormatArgumentData1                            (HasGetValueTypeHash)
@@ -133,7 +133,7 @@ void UBP_QuestExpiresWidget_C::OnQuestExpirationUpdated()
 
 
 // Function BP_QuestExpiresWidget.BP_QuestExpiresWidget_C.ExecuteUbergraph_BP_QuestExpiresWidget
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

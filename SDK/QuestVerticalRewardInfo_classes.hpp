@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x298 - 0x298)
+// 0x0 (0x2B8 - 0x2B8)
 // WidgetBlueprintGeneratedClass QuestVerticalRewardInfo.QuestVerticalRewardInfo_C
 class UQuestVerticalRewardInfo_C : public UFortRewardInfoWidget
 {

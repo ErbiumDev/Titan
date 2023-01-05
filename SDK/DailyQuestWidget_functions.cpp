@@ -18,12 +18,14 @@ namespace SDK
 // Function DailyQuestWidget.DailyQuestWidget_C.Entrance Anim
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UDailyQuestWidget_C::Entrance_Anim()
+void UDailyQuestWidget_C::Entrance_Anim(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("DailyQuestWidget_C", "Entrance Anim");
 
 	Params::UDailyQuestWidget_C_Entrance_Anim_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -33,12 +35,14 @@ void UDailyQuestWidget_C::Entrance_Anim()
 // Function DailyQuestWidget.DailyQuestWidget_C.Collect Anim
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
+// class UUMGSequencePlayer*          CallFunc_PlayAnimation_ReturnValue                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UDailyQuestWidget_C::Collect_Anim()
+void UDailyQuestWidget_C::Collect_Anim(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue)
 {
 	static auto Func = Class->GetFunction("DailyQuestWidget_C", "Collect Anim");
 
 	Params::UDailyQuestWidget_C_Collect_Anim_Params Parms;
+	Parms.CallFunc_PlayAnimation_ReturnValue = CallFunc_PlayAnimation_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
 

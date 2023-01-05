@@ -22,7 +22,7 @@ namespace SDK
 struct FVivoxMuteList
 {
 public:
-	uint8                                        Pad_2B23[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_348C[0x50];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 }

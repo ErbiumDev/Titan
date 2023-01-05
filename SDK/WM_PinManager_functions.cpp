@@ -78,7 +78,7 @@ void AWM_PinManager_C::ReceiveBeginPlay()
 
 
 // Function WM_PinManager.WM_PinManager_C.ExecuteUbergraph_WM_PinManager
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

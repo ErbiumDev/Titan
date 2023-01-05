@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x3DB - 0x3DB)
+// 0x0 (0x3F3 - 0x3F3)
 // BlueprintGeneratedClass S_Water_Shallow_4x4.S_Water_Shallow_4x4_C
 class AS_Water_Shallow_4x4_C : public A_WaterMeshBlueprintMaster_C
 {

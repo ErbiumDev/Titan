@@ -21,13 +21,11 @@ namespace SDK
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class EStretch                Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EStretch                Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMediaPlayer*                CallFunc_GetMediaPlayer_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EStretch                K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_SetLooping_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UMaterialInstanceDynamic*    CallFunc_GetDynamicMaterial_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMediaTexture*               CallFunc_GetMediaTexture_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMovieWidget_C::SetDelayedContentValues(bool Temp_bool_Variable, enum class EStretch Temp_byte_Variable, enum class EStretch Temp_byte_Variable1, class UMediaPlayer* CallFunc_GetMediaPlayer_ReturnValue, enum class EStretch K2Node_Select_Default, bool CallFunc_SetLooping_ReturnValue, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMediaTexture* CallFunc_GetMediaTexture_ReturnValue)
+void UMovieWidget_C::SetDelayedContentValues(bool Temp_bool_Variable, enum class EStretch Temp_byte_Variable, enum class EStretch Temp_byte_Variable1, enum class EStretch K2Node_Select_Default, class UMaterialInstanceDynamic* CallFunc_GetDynamicMaterial_ReturnValue, class UMediaTexture* CallFunc_GetMediaTexture_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MovieWidget_C", "SetDelayedContentValues");
 
@@ -35,9 +33,7 @@ void UMovieWidget_C::SetDelayedContentValues(bool Temp_bool_Variable, enum class
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.CallFunc_GetMediaPlayer_ReturnValue = CallFunc_GetMediaPlayer_ReturnValue;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.CallFunc_SetLooping_ReturnValue = CallFunc_SetLooping_ReturnValue;
 	Parms.CallFunc_GetDynamicMaterial_ReturnValue = CallFunc_GetDynamicMaterial_ReturnValue;
 	Parms.CallFunc_GetMediaTexture_ReturnValue = CallFunc_GetMediaTexture_ReturnValue;
 
@@ -79,22 +75,32 @@ void UMovieWidget_C::StopPlaying()
 
 
 // Function MovieWidget.MovieWidget_C.Init
-// (Public, BlueprintCallable, BlueprintEvent)
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // class UMediaSource*                InMediaSource                                                    (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UObject*                     InMediaSoundWave                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              AudioTrack                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FMediaPlayerTrackOptions    K2Node_MakeStruct_MediaPlayerTrackOptions                        (NoDestructor)
 // bool                               CallFunc_HasPlayerForSource_ReturnValue                          (ZeroConstructor, IsPlainOldData, NoDestructor)
+// struct FMediaPlayerOptions         K2Node_MakeStruct_MediaPlayerOptions                             (NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
+// bool                               CallFunc_SetMediaSource_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_SetMediaSource_ReturnValue1                             (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMovieWidget_C::Init(class UMediaSource* InMediaSource, class UObject* InMediaSoundWave, bool CallFunc_HasPlayerForSource_ReturnValue, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate)
+void UMovieWidget_C::Init(class UMediaSource* InMediaSource, class UObject* InMediaSoundWave, int32 AudioTrack, const struct FMediaPlayerTrackOptions& K2Node_MakeStruct_MediaPlayerTrackOptions, bool CallFunc_HasPlayerForSource_ReturnValue, const struct FMediaPlayerOptions& K2Node_MakeStruct_MediaPlayerOptions, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_SetMediaSource_ReturnValue, bool CallFunc_SetMediaSource_ReturnValue1)
 {
 	static auto Func = Class->GetFunction("MovieWidget_C", "Init");
 
 	Params::UMovieWidget_C_Init_Params Parms;
 	Parms.InMediaSource = InMediaSource;
 	Parms.InMediaSoundWave = InMediaSoundWave;
+	Parms.AudioTrack = AudioTrack;
+	Parms.K2Node_MakeStruct_MediaPlayerTrackOptions = K2Node_MakeStruct_MediaPlayerTrackOptions;
 	Parms.CallFunc_HasPlayerForSource_ReturnValue = CallFunc_HasPlayerForSource_ReturnValue;
+	Parms.K2Node_MakeStruct_MediaPlayerOptions = K2Node_MakeStruct_MediaPlayerOptions;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
+	Parms.CallFunc_SetMediaSource_ReturnValue = CallFunc_SetMediaSource_ReturnValue;
+	Parms.CallFunc_SetMediaSource_ReturnValue1 = CallFunc_SetMediaSource_ReturnValue1;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -151,13 +157,13 @@ void UMovieWidget_C::OnMediaLoaded()
 
 
 // Function MovieWidget.MovieWidget_C.ExecuteUbergraph_MovieWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // float                              K2Node_Event_NewWidth                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // float                              K2Node_Event_NewHeight                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
 
 void UMovieWidget_C::ExecuteUbergraph_MovieWidget(int32 EntryPoint, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, float K2Node_Event_NewWidth, float K2Node_Event_NewHeight, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush)
@@ -171,6 +177,21 @@ void UMovieWidget_C::ExecuteUbergraph_MovieWidget(int32 EntryPoint, UDelegatePro
 	Parms.K2Node_Event_NewHeight = K2Node_Event_NewHeight;
 	Parms.CallFunc_MakeVector2D_ReturnValue = CallFunc_MakeVector2D_ReturnValue;
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function MovieWidget.MovieWidget_C.OnMediaFailedToOpen__DelegateSignature
+// (Public, Delegate, BlueprintCallable, BlueprintEvent)
+// Parameters:
+
+void UMovieWidget_C::OnMediaFailedToOpen__DelegateSignature()
+{
+	static auto Func = Class->GetFunction("MovieWidget_C", "OnMediaFailedToOpen__DelegateSignature");
+
+	Params::UMovieWidget_C_OnMediaFailedToOpen__DelegateSignature_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 

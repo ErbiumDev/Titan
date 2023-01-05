@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Header-M-40pc.TextStyle-Header-M-40pc_C
 class UTextStyle_Header_M_40pc_C : public UTextStyle_HeaderParent_C
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0x138 - 0x138)
 // BlueprintGeneratedClass Ranged3PCamera.Ranged3PCamera_C
 class URanged3PCamera_C : public UFort3PCam_Default
 {

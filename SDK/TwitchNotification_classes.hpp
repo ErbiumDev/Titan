@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xA8 - 0xA8)
+// 0x0 (0xD8 - 0xD8)
 // BlueprintGeneratedClass TwitchNotification.TwitchNotification_C
 class UTwitchNotification_C : public UFortUIFriendNotification
 {

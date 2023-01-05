@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB20 - 0xB20)
+// 0x0 (0x9E0 - 0x9E0)
 // BlueprintGeneratedClass TrapTool_ContextTrap_Athena.TrapTool_ContextTrap_Athena_C
 class ATrapTool_ContextTrap_Athena_C : public AFortDecoTool_ContextTrap
 {

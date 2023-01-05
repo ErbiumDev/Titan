@@ -12,9 +12,9 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_Impulse.GE_Impulse_C
-class UGE_Impulse_C : public UGET_DirectBallisticDamage_C
+class UGE_Impulse_C : public UGameplayEffect
 {
 public:
 

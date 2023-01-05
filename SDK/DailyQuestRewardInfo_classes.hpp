@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x298 - 0x298)
+// 0x0 (0x2B8 - 0x2B8)
 // WidgetBlueprintGeneratedClass DailyQuestRewardInfo.DailyQuestRewardInfo_C
 class UDailyQuestRewardInfo_C : public UFortRewardInfoWidget
 {

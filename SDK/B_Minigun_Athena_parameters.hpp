@@ -17,27 +17,24 @@ namespace Params
 //---------------------------------------------------------------------------------------------------------------------
 
 // 0x10 (0x10 - 0x0)
+// Function B_Minigun_Athena.B_Minigun_Athena_C.CurrentScalarValue
+struct AB_Minigun_Athena_C_CurrentScalarValue_Params
+{
+public:
+	float                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetOverheatingMaxValue_ReturnValue;       // 0x4(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_GetCurrentOverheatValue_ReturnValue;      // 0x8(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Divide_FloatFloat_ReturnValue;            // 0xC(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+
+// 0x10 (0x10 - 0x0)
 // Function B_Minigun_Athena.B_Minigun_Athena_C.UserConstructionScript
 struct AB_Minigun_Athena_C_UserConstructionScript_Params
 {
 public:
 	bool                                         CallFunc_IsDedicatedServer_ReturnValue;            // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3F60[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_66E0[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class UMaterialInstanceDynamic*              CallFunc_CreateDynamicMaterialInstance_ReturnValue; // 0x8(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_Minigun_Athena.B_Minigun_Athena_C.BarrelGlow__FinishedFunc
-struct AB_Minigun_Athena_C_BarrelGlow__FinishedFunc_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_Minigun_Athena.B_Minigun_Athena_C.BarrelGlow__UpdateFunc
-struct AB_Minigun_Athena_C_BarrelGlow__UpdateFunc_Params
-{
-public:
 };
 
 // 0x0 (0x0 - 0x0)
@@ -77,27 +74,13 @@ struct AB_Minigun_Athena_C_OnChargeDown_Params
 public:
 };
 
-// 0xB28 (0xB28 - 0x0)
+// 0x560 (0x560 - 0x0)
 // Function B_Minigun_Athena.B_Minigun_Athena_C.OnInitCosmeticAlterations
 struct AB_Minigun_Athena_C_OnInitCosmeticAlterations_Params
 {
 public:
-	struct FFortCosmeticModification             CosmeticMod;                                       // 0x0(0xB20)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class UMaterialInstanceDynamic*              DynamicMaterialInstance;                           // 0xB20(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_Minigun_Athena.B_Minigun_Athena_C.MakeBarrelGlow
-struct AB_Minigun_Athena_C_MakeBarrelGlow_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function B_Minigun_Athena.B_Minigun_Athena_C.StopBarrelGlow
-struct AB_Minigun_Athena_C_StopBarrelGlow_Params
-{
-public:
+	struct FFortCosmeticModification             CosmeticMod;                                       // 0x0(0x558)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class UMaterialInstanceDynamic*              DynamicMaterialInstance;                           // 0x558(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -128,7 +111,28 @@ struct AB_Minigun_Athena_C_OnWeaponAttached_Params
 public:
 };
 
-// 0xB39 (0xB39 - 0x0)
+// 0x0 (0x0 - 0x0)
+// Function B_Minigun_Athena.B_Minigun_Athena_C.OnStartOverheated
+struct AB_Minigun_Athena_C_OnStartOverheated_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function B_Minigun_Athena.B_Minigun_Athena_C.BarrelOverheatFXandSound
+struct AB_Minigun_Athena_C_BarrelOverheatFXandSound_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function B_Minigun_Athena.B_Minigun_Athena_C.K2_OnUnEquip
+struct AB_Minigun_Athena_C_K2_OnUnEquip_Params
+{
+public:
+};
+
+// 0x59A (0x59A - 0x0)
 // Function B_Minigun_Athena.B_Minigun_Athena_C.ExecuteUbergraph_B_Minigun_Athena
 struct AB_Minigun_Athena_C_ExecuteUbergraph_B_Minigun_Athena_Params
 {
@@ -137,13 +141,21 @@ public:
 	bool                                         CallFunc_IsDedicatedServer_ReturnValue;            // 0x4(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_bPersistentFire;                      // 0x5(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	bool                                         K2Node_Event_bSecondaryFire;                       // 0x6(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3F61[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FFortCosmeticModification             K2Node_Event_CosmeticMod;                          // 0x8(0xB20)()
-	class UMaterialInstanceDynamic*              K2Node_Event_DynamicMaterialInstance;              // 0xB28(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsDedicatedServer_ReturnValue1;           // 0xB30(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_3F62[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	int32                                        CallFunc_GetLocalMagazineAmmoCount_ReturnValue;    // 0xB34(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                         CallFunc_IsDedicatedServer_ReturnValue12;          // 0xB38(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_66E1[0x1];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FFortCosmeticModification             K2Node_Event_CosmeticMod;                          // 0x8(0x558)()
+	class UMaterialInstanceDynamic*              K2Node_Event_DynamicMaterialInstance;              // 0x560(0x8)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                        CallFunc_GetLocalMagazineAmmoCount_ReturnValue;    // 0x568(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_IsDedicatedServer_ReturnValue1;           // 0x56C(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsDedicatedServer_ReturnValue2;           // 0x56D(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                        Pad_66E2[0x2];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	float                                        CallFunc_CurrentScalarValue_ReturnValue;           // 0x570(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                        CallFunc_Lerp_ReturnValue;                         // 0x574(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	UDelegateProperty_                           K2Node_CreateDelegate_OutputDelegate;              // 0x578(0x10)(ZeroConstructor, NoDestructor)
+	float                                        CallFunc_CurrentScalarValue_ReturnValue1;          // 0x588(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                        Pad_66E3[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FTimerHandle                          CallFunc_K2_SetTimerDelegate_ReturnValue;          // 0x590(0x8)(NoDestructor, HasGetValueTypeHash)
+	bool                                         CallFunc_Greater_FloatFloat_ReturnValue;           // 0x598(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                         CallFunc_IsPlaying_ReturnValue;                    // 0x599(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 
 }

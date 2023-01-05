@@ -12,19 +12,19 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xD1 (0x8D1 - 0x800)
+// 0xD1 (0xBF9 - 0xB28)
 // WidgetBlueprintGeneratedClass GamepadKeyButton.GamepadKeyButton_C
 class UGamepadKeyButton_C : public UCommonButton
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x800(0x8)(Transient, DuplicateTransient)
-	class UKeybindWidget_C*                      BoundKey;                                          // 0x808(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UBorder*                               ContentBorder;                                     // 0x810(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class FText                                  ButtonText;                                        // 0x818(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	struct FSlateBrush                           IconBrush;                                         // 0x830(0x88)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class UClass*                                ControllerInputStyle;                              // 0x8B8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	struct FDataTableRowHandle                   ButtonClickAction;                                 // 0x8C0(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
-	enum class EHorizontalAlignment              ContentAlignment;                                  // 0x8D0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xB28(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UKeybindWidget_C*                      BoundKey;                                          // 0xB30(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UBorder*                               ContentBorder;                                     // 0xB38(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class FText                                  ButtonText;                                        // 0xB40(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	struct FSlateBrush                           IconBrush;                                         // 0xB58(0x88)(Edit, BlueprintVisible, ExposeOnSpawn)
+	class UClass*                                ControllerInputStyle;                              // 0xBE0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FDataTableRowHandle                   ButtonClickAction;                                 // 0xBE8(0x10)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor)
+	enum class EHorizontalAlignment              ContentAlignment;                                  // 0xBF8(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

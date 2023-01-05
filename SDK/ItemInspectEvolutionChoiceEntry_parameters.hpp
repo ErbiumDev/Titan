@@ -31,13 +31,13 @@ public:
 	class UFortItem*                             Item;                                              // 0x0(0x8)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                        RecipeIndex;                                       // 0x8(0x4)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                         EnabledChoice;                                     // 0xC(0x1)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                        Pad_42F6[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_4DB9[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
 	class FText                                  DisableReasonText;                                 // 0x10(0x18)(Edit, BlueprintVisible)
 };
 
 // 0x0 (0x0 - 0x0)
-// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.OnSelected
-struct UItemInspectEvolutionChoiceEntry_C_OnSelected_Params
+// Function ItemInspectEvolutionChoiceEntry.ItemInspectEvolutionChoiceEntry_C.BP_OnSelected
+struct UItemInspectEvolutionChoiceEntry_C_BP_OnSelected_Params
 {
 public:
 };

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_Constructor_CardioFeedbackLoopApplied.GE_Constructor_CardioFeedbackLoopApplied_C
 class UGE_Constructor_CardioFeedbackLoopApplied_C : public UGameplayEffect
 {

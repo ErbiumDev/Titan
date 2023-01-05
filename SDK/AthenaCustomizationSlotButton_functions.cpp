@@ -15,106 +15,61 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.ShouldShowEmptyImage
-// (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
-// Parameters:
-// enum class ESlateVisibility        ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class ESlateVisibility        Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// enum class ESlateVisibility        K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-enum class ESlateVisibility UAthenaCustomizationSlotButton_C::ShouldShowEmptyImage(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, bool CallFunc_IsValid_ReturnValue, enum class ESlateVisibility K2Node_Select_Default)
-{
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "ShouldShowEmptyImage");
-
-	Params::UAthenaCustomizationSlotButton_C_ShouldShowEmptyImage_Params Parms;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_byte_Variable = Temp_byte_Variable;
-	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.CallFunc_IsValid_ReturnValue = CallFunc_IsValid_ReturnValue;
-	Parms.K2Node_Select_Default = K2Node_Select_Default;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.UpdateTypeIconOffset
+// Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.SetCardSizeAndSlotImage
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// float                              VerticalOffset                                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FVector2D                   CallFunc_MakeVector2D_ReturnValue                                (IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FWidgetTransform            K2Node_MakeStruct_WidgetTransform                                (NoDestructor)
-
-void UAthenaCustomizationSlotButton_C::UpdateTypeIconOffset(float VerticalOffset, const struct FVector2D& CallFunc_MakeVector2D_ReturnValue, const struct FWidgetTransform& K2Node_MakeStruct_WidgetTransform)
-{
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "UpdateTypeIconOffset");
-
-	Params::UAthenaCustomizationSlotButton_C_UpdateTypeIconOffset_Params Parms;
-	Parms.VerticalOffset = VerticalOffset;
-	Parms.CallFunc_MakeVector2D_ReturnValue = CallFunc_MakeVector2D_ReturnValue;
-	Parms.K2Node_MakeStruct_WidgetTransform = K2Node_MakeStruct_WidgetTransform;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.Update SubType Icon Glow
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// bool                               GlowIcon                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor                                     ()
-// struct FSlateColor                 K2Node_MakeStruct_SlateColor1                                    ()
-// struct FSlateColor                 K2Node_Select_Default                                            ()
+// enum class EFortItemCardSize       CardSize                                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateBrush                 SlotImage                                                        (BlueprintVisible, BlueprintReadOnly, Parm)
+// struct FVector2D                   Temp_struct_Variable                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable1                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable2                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable3                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable4                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortItemCardSize       Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable5                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable6                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable7                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable8                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable9                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable10                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable11                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortItemCardSize       Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FSlateBrush                 K2Node_MakeStruct_SlateBrush                                     ()
+// struct FVector2D                   Temp_struct_Variable12                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   Temp_struct_Variable13                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class EFortItemCardSize       Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FVector2D                   K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FSlateBrush                 K2Node_Select2_Default                                           (ConstParm)
 
-void UAthenaCustomizationSlotButton_C::Update_SubType_Icon_Glow(bool GlowIcon, bool Temp_bool_Variable, const struct FSlateColor& K2Node_MakeStruct_SlateColor, const struct FSlateColor& K2Node_MakeStruct_SlateColor1, const struct FSlateColor& K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush)
+void UAthenaCustomizationSlotButton_C::SetCardSizeAndSlotImage(enum class EFortItemCardSize CardSize, const struct FSlateBrush& SlotImage, const struct FVector2D& Temp_struct_Variable, const struct FVector2D& Temp_struct_Variable1, const struct FVector2D& Temp_struct_Variable2, const struct FVector2D& Temp_struct_Variable3, const struct FVector2D& Temp_struct_Variable4, enum class EFortItemCardSize Temp_byte_Variable, const struct FVector2D& Temp_struct_Variable5, const struct FVector2D& Temp_struct_Variable6, const struct FVector2D& Temp_struct_Variable7, const struct FVector2D& Temp_struct_Variable8, const struct FVector2D& Temp_struct_Variable9, const struct FVector2D& Temp_struct_Variable10, const struct FVector2D& Temp_struct_Variable11, enum class EFortItemCardSize Temp_byte_Variable1, const struct FVector2D& K2Node_Select_Default, const struct FSlateBrush& K2Node_MakeStruct_SlateBrush, const struct FVector2D& Temp_struct_Variable12, const struct FVector2D& Temp_struct_Variable13, enum class EFortItemCardSize Temp_byte_Variable2, const struct FVector2D& K2Node_Select1_Default, const struct FSlateBrush& K2Node_Select2_Default)
 {
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "Update SubType Icon Glow");
+	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "SetCardSizeAndSlotImage");
 
-	Params::UAthenaCustomizationSlotButton_C_Update_SubType_Icon_Glow_Params Parms;
-	Parms.GlowIcon = GlowIcon;
-	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.K2Node_MakeStruct_SlateColor = K2Node_MakeStruct_SlateColor;
-	Parms.K2Node_MakeStruct_SlateColor1 = K2Node_MakeStruct_SlateColor1;
+	Params::UAthenaCustomizationSlotButton_C_SetCardSizeAndSlotImage_Params Parms;
+	Parms.CardSize = CardSize;
+	Parms.SlotImage = SlotImage;
+	Parms.Temp_struct_Variable = Temp_struct_Variable;
+	Parms.Temp_struct_Variable1 = Temp_struct_Variable1;
+	Parms.Temp_struct_Variable2 = Temp_struct_Variable2;
+	Parms.Temp_struct_Variable3 = Temp_struct_Variable3;
+	Parms.Temp_struct_Variable4 = Temp_struct_Variable4;
+	Parms.Temp_byte_Variable = Temp_byte_Variable;
+	Parms.Temp_struct_Variable5 = Temp_struct_Variable5;
+	Parms.Temp_struct_Variable6 = Temp_struct_Variable6;
+	Parms.Temp_struct_Variable7 = Temp_struct_Variable7;
+	Parms.Temp_struct_Variable8 = Temp_struct_Variable8;
+	Parms.Temp_struct_Variable9 = Temp_struct_Variable9;
+	Parms.Temp_struct_Variable10 = Temp_struct_Variable10;
+	Parms.Temp_struct_Variable11 = Temp_struct_Variable11;
+	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
 	Parms.K2Node_MakeStruct_SlateBrush = K2Node_MakeStruct_SlateBrush;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.Update SubType Icon Image
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-
-void UAthenaCustomizationSlotButton_C::Update_SubType_Icon_Image()
-{
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "Update SubType Icon Image");
-
-	Params::UAthenaCustomizationSlotButton_C_Update_SubType_Icon_Image_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
-// Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UAthenaCustomizationSlotButton_C::Construct()
-{
-	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "Construct");
-
-	Params::UAthenaCustomizationSlotButton_C_Construct_Params Parms;
+	Parms.Temp_struct_Variable12 = Temp_struct_Variable12;
+	Parms.Temp_struct_Variable13 = Temp_struct_Variable13;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
+	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
+	Parms.K2Node_Select2_Default = K2Node_Select2_Default;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -138,8 +93,23 @@ void UAthenaCustomizationSlotButton_C::PreConstruct(bool IsDesignTime)
 }
 
 
+// Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UAthenaCustomizationSlotButton_C::Construct()
+{
+	static auto Func = Class->GetFunction("AthenaCustomizationSlotButton_C", "Construct");
+
+	Params::UAthenaCustomizationSlotButton_C_Construct_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function AthenaCustomizationSlotButton.AthenaCustomizationSlotButton_C.ExecuteUbergraph_AthenaCustomizationSlotButton
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)

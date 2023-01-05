@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xC30 - 0xC30)
+// 0x0 (0xAA0 - 0xAA0)
 // BlueprintGeneratedClass DefaultBuildingTool.DefaultBuildingTool_C
 class ADefaultBuildingTool_C : public AFortWeap_BuildingTool
 {

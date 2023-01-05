@@ -123,30 +123,30 @@ void UAthenaLeaderboardTabButton_C::SetTabLabelInfo(struct FFortTabButtonLabelIn
 }
 
 
-// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnSelected
+// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UAthenaLeaderboardTabButton_C::OnSelected()
+void UAthenaLeaderboardTabButton_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "OnSelected");
+	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "BP_OnSelected");
 
-	Params::UAthenaLeaderboardTabButton_C_OnSelected_Params Parms;
+	Params::UAthenaLeaderboardTabButton_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnDeselected
+// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.BP_OnDeselected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UAthenaLeaderboardTabButton_C::OnDeselected()
+void UAthenaLeaderboardTabButton_C::BP_OnDeselected()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "OnDeselected");
+	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "BP_OnDeselected");
 
-	Params::UAthenaLeaderboardTabButton_C_OnDeselected_Params Parms;
+	Params::UAthenaLeaderboardTabButton_C_BP_OnDeselected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -168,30 +168,30 @@ void UAthenaLeaderboardTabButton_C::Construct()
 }
 
 
-// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnHovered
+// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.BP_OnHovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UAthenaLeaderboardTabButton_C::OnHovered()
+void UAthenaLeaderboardTabButton_C::BP_OnHovered()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "OnHovered");
+	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "BP_OnHovered");
 
-	Params::UAthenaLeaderboardTabButton_C_OnHovered_Params Parms;
+	Params::UAthenaLeaderboardTabButton_C_BP_OnHovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
 }
 
 
-// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.OnUnhovered
+// Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.BP_OnUnhovered
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UAthenaLeaderboardTabButton_C::OnUnhovered()
+void UAthenaLeaderboardTabButton_C::BP_OnUnhovered()
 {
-	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "OnUnhovered");
+	static auto Func = Class->GetFunction("AthenaLeaderboardTabButton_C", "BP_OnUnhovered");
 
-	Params::UAthenaLeaderboardTabButton_C_OnUnhovered_Params Parms;
+	Params::UAthenaLeaderboardTabButton_C_BP_OnUnhovered_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -199,7 +199,7 @@ void UAthenaLeaderboardTabButton_C::OnUnhovered()
 
 
 // Function AthenaLeaderboardTabButton.AthenaLeaderboardTabButton_C.ExecuteUbergraph_AthenaLeaderboardTabButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      CallFunc_GetCurrentTextStyleClass_ReturnValue                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

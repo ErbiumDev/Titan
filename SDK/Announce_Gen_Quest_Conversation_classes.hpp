@@ -12,12 +12,12 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x8 (0x3E0 - 0x3D8)
+// 0x8 (0x418 - 0x410)
 // BlueprintGeneratedClass Announce_Gen_Quest_Conversation.Announce_Gen_Quest_Conversation_C
 class AAnnounce_Gen_Quest_Conversation_C : public AFortClientAnnouncement_Conversation
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x3D8(0x8)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x410(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 
 	static class UClass* StaticClass()
 	{

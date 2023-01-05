@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB8 - 0xB8)
+// 0x0 (0x148 - 0x148)
 // BlueprintGeneratedClass TextStyle-Base-ToolTip-Body.TextStyle-Base-ToolTip-Body_C
 class UTextStyle_Base_ToolTip_Body_C : public UTextStyle_Base_S_B_Blue_C
 {

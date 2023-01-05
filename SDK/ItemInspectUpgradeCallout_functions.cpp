@@ -15,6 +15,23 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
+// Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.SetButtonsEnabled
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// bool                               bIsEnabled                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+
+void UItemInspectUpgradeCallout_C::SetButtonsEnabled(bool bIsEnabled)
+{
+	static auto Func = Class->GetFunction("ItemInspectUpgradeCallout_C", "SetButtonsEnabled");
+
+	Params::UItemInspectUpgradeCallout_C_SetButtonsEnabled_Params Parms;
+	Parms.bIsEnabled = bIsEnabled;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.IsEvolutionReady
 // (Public, HasOutParams, BlueprintCallable, BlueprintEvent, BlueprintPure)
 // Parameters:
@@ -279,7 +296,7 @@ void UItemInspectUpgradeCallout_C::Construct()
 
 
 // Function ItemInspectUpgradeCallout.ItemInspectUpgradeCallout_C.ExecuteUbergraph_ItemInspectUpgradeCallout
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_ComponentBoundEvent_Button1                               (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

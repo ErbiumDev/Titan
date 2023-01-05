@@ -72,6 +72,14 @@ public:
 	bool                                         bInConsumePointerInput;                            // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// 0x70 (0x70 - 0x0)
+// Function CommonUI.CommonUserWidget.OnTouchLeave
+struct UCommonUserWidget_OnTouchLeave_Params
+{
+public:
+	struct FPointerEvent                         TouchEvent;                                        // 0x0(0x70)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
+};
+
 // 0x38 (0x38 - 0x0)
 // Function CommonUI.CommonActivatablePanel.SetInputActionHandlerWithProgressPopupMenu
 struct UCommonActivatablePanel_SetInputActionHandlerWithProgressPopupMenu_Params
@@ -120,8 +128,9 @@ public:
 	class UDataTable*                            DataTable;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  RowName;                                           // 0x8(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInputActionState                 State;                                             // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E70[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           DisabledCommitEvent;                               // 0x18(0x10)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_E69[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           DisabledCommitEvent;                               // 0x14(0x10)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_E6A[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -131,8 +140,9 @@ struct UCommonActivatablePanel_SetActionHandlerStateFromHandleWithDisabledCommit
 public:
 	struct FDataTableRowHandle                   InputActionRow;                                    // 0x0(0x10)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	enum class EInputActionState                 State;                                             // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E71[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	UDelegateProperty_                           DisabledCommitEvent;                               // 0x18(0x10)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_E6B[0x3];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	UDelegateProperty_                           DisabledCommitEvent;                               // 0x14(0x10)(Parm, ZeroConstructor, NoDestructor, NativeAccessSpecifierPublic)
+	uint8                                        Pad_E6C[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -142,7 +152,7 @@ struct UCommonActivatablePanel_SetActionHandlerStateFromHandle_Params
 public:
 	struct FDataTableRowHandle                   InputActionRow;                                    // 0x0(0x10)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	enum class EInputActionState                 State;                                             // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E72[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E6D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -150,10 +160,10 @@ public:
 struct UCommonActivatablePanel_SetActionHandlerState_Params
 {
 public:
-	class UDataTable*                            DataTable;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UDataTable*                            DataTable;                                         // 0x0(0x8)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                  RowName;                                           // 0x8(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class EInputActionState                 State;                                             // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E73[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E6E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -174,6 +184,13 @@ public:
 // 0x0 (0x0 - 0x0)
 // Function CommonUI.CommonActivatablePanel.PopPanel
 struct UCommonActivatablePanel_PopPanel_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonActivatablePanel.OnRemovedFromActivationStack
+struct UCommonActivatablePanel_OnRemovedFromActivationStack_Params
 {
 public:
 };
@@ -208,6 +225,13 @@ public:
 };
 
 // 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonActivatablePanel.OnAddedToActivationStack
+struct UCommonActivatablePanel_OnAddedToActivationStack_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
 // Function CommonUI.CommonActivatablePanel.OnActivated
 struct UCommonActivatablePanel_OnActivated_Params
 {
@@ -217,6 +241,14 @@ public:
 // 0x1 (0x1 - 0x0)
 // Function CommonUI.CommonActivatablePanel.IsIntroed
 struct UCommonActivatablePanel_IsIntroed_Params
+{
+public:
+	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
+// Function CommonUI.CommonActivatablePanel.IsInActivationStack
+struct UCommonActivatablePanel_IsInActivationStack_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -237,7 +269,7 @@ struct UCommonActivatablePanel_HasInputActionHandler_Params
 public:
 	struct FDataTableRowHandle                   InputActionRow;                                    // 0x0(0x10)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E74[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E6F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -247,7 +279,7 @@ struct UCommonActivatablePanel_GetInputActions_Params
 public:
 	TArray<struct FCommonInputActionHandlerData> InputActionDataRows;                               // 0x0(0x10)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E75[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E70[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x0 - 0x0)
@@ -456,7 +488,7 @@ public:
 struct UCommonButtonStyle_GetCustomPadding_Params
 {
 public:
-	struct FMargin                               OutCustomPadding;                                  // 0x0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                               OutCustomPadding;                                  // 0x0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -464,7 +496,22 @@ public:
 struct UCommonButtonStyle_GetButtonPadding_Params
 {
 public:
-	struct FMargin                               OutButtonPadding;                                  // 0x0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                               OutButtonPadding;                                  // 0x0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.StopDoubleClickPropagation
+struct UCommonButton_StopDoubleClickPropagation_Params
+{
+public:
+};
+
+// 0x10 (0x10 - 0x0)
+// Function CommonUI.CommonButton.SetTriggeringInputAction
+struct UCommonButton_SetTriggeringInputAction_Params
+{
+public:
+	struct FDataTableRowHandle                   InputActionRow;                                    // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x18 (0x18 - 0x0)
@@ -474,6 +521,14 @@ struct UCommonButton_SetTriggeredInputAction_Params
 public:
 	struct FDataTableRowHandle                   InputActionRow;                                    // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	class UCommonActivatablePanel*               OldPanel;                                          // 0x10(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
+// Function CommonUI.CommonButton.SetTouchMethod
+struct UCommonButton_SetTouchMethod_Params
+{
+public:
+	enum class EButtonTouchMethod                InTouchMethod;                                     // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x8 (0x8 - 0x0)
@@ -500,6 +555,14 @@ public:
 	bool                                         bInSelected;                                       // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bAllowSound;                                       // 0x1(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bBroadcast;                                        // 0x2(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
+// Function CommonUI.CommonButton.SetPressMethod
+struct UCommonButton_SetPressMethod_Params
+{
+public:
+	enum class EButtonPressMethod                InPressMethod;                                     // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x8 (0x8 - 0x0)
@@ -544,6 +607,14 @@ public:
 	bool                                         bInIsInteractionEnabled;                           // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// 0x1 (0x1 - 0x0)
+// Function CommonUI.CommonButton.SetIsInteractableWhenSelected
+struct UCommonButton_SetIsInteractableWhenSelected_Params
+{
+public:
+	bool                                         bInInteractableWhenSelected;                       // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // 0x90 (0x90 - 0x0)
 // Function CommonUI.CommonButton.SetInputActionProgressMaterial
 struct UCommonButton_SetInputActionProgressMaterial_Params
@@ -561,26 +632,12 @@ public:
 	enum class EButtonClickMethod                InClickMethod;                                     // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnUnhovered
-struct UCommonButton_OnUnhovered_Params
-{
-public:
-};
-
 // 0x10 (0x10 - 0x0)
 // Function CommonUI.CommonButton.OnTriggeredInputActionChanged
 struct UCommonButton_OnTriggeredInputActionChanged_Params
 {
 public:
 	struct FDataTableRowHandle                   NewTriggeredAction;                                // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnSelected
-struct UCommonButton_OnSelected_Params
-{
-public:
 };
 
 // 0x1 (0x1 - 0x0)
@@ -592,50 +649,8 @@ public:
 };
 
 // 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnHovered
-struct UCommonButton_OnHovered_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnEnabled
-struct UCommonButton_OnEnabled_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnDoubleClicked
-struct UCommonButton_OnDoubleClicked_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnDisabled
-struct UCommonButton_OnDisabled_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnDeselected
-struct UCommonButton_OnDeselected_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
 // Function CommonUI.CommonButton.OnCurrentTextStyleChanged
 struct UCommonButton_OnCurrentTextStyleChanged_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.OnClicked
-struct UCommonButton_OnClicked_Params
 {
 public:
 };
@@ -687,14 +702,6 @@ public:
 };
 
 // 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonButton.IsHovered
-struct UCommonButton_IsHovered_Params
-{
-public:
-	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x1 (0x1 - 0x0)
 // Function CommonUI.CommonButton.HandleTriggeringActionCommited
 struct UCommonButton_HandleTriggeringActionCommited_Params
 {
@@ -719,13 +726,6 @@ public:
 // 0x0 (0x0 - 0x0)
 // Function CommonUI.CommonButton.HandleButtonPressed
 struct UCommonButton_HandleButtonPressed_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonButton.HandleButtonDoubleClicked
-struct UCommonButton_HandleButtonDoubleClicked_Params
 {
 public:
 };
@@ -776,7 +776,7 @@ struct UCommonButton_GetInputAction_Params
 public:
 	struct FDataTableRowHandle                   InputActionRow;                                    // 0x0(0x10)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E7E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E7A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -800,7 +800,7 @@ public:
 struct UCommonButton_GetCurrentCustomPadding_Params
 {
 public:
-	struct FMargin                               OutCustomPadding;                                  // 0x0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                               OutCustomPadding;                                  // 0x0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -808,7 +808,7 @@ public:
 struct UCommonButton_GetCurrentButtonPadding_Params
 {
 public:
-	struct FMargin                               OutButtonPadding;                                  // 0x0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                               OutButtonPadding;                                  // 0x0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x18 (0x18 - 0x0)
@@ -822,6 +822,62 @@ public:
 // 0x0 (0x0 - 0x0)
 // Function CommonUI.CommonButton.ClearSelection
 struct UCommonButton_ClearSelection_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnUnhovered
+struct UCommonButton_BP_OnUnhovered_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnSelected
+struct UCommonButton_BP_OnSelected_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnHovered
+struct UCommonButton_BP_OnHovered_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnEnabled
+struct UCommonButton_BP_OnEnabled_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnDoubleClicked
+struct UCommonButton_BP_OnDoubleClicked_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnDisabled
+struct UCommonButton_BP_OnDisabled_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnDeselected
+struct UCommonButton_BP_OnDeselected_Params
+{
+public:
+};
+
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonButton.BP_OnClicked
+struct UCommonButton_BP_OnClicked_Params
 {
 public:
 };
@@ -888,7 +944,7 @@ struct UCommonButtonGroup_OnSelectionStateChanged_Params
 public:
 	class UCommonButton*                         BaseButton;                                        // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIsSelected;                                       // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E83[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E82[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -939,13 +995,29 @@ public:
 	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
+// 0x4 (0x4 - 0x0)
+// Function CommonUI.CommonButtonGroup.GetHoveredButtonIndex
+struct UCommonButtonGroup_GetHoveredButtonIndex_Params
+{
+public:
+	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x4 (0x4 - 0x0)
+// Function CommonUI.CommonButtonGroup.GetButtonCount
+struct UCommonButtonGroup_GetButtonCount_Params
+{
+public:
+	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
 // 0x10 (0x10 - 0x0)
 // Function CommonUI.CommonButtonGroup.GetButtonAtIndex
 struct UCommonButtonGroup_GetButtonAtIndex_Params
 {
 public:
 	int32                                        Index;                                             // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E84[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_E83[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         ReturnValue;                                       // 0x8(0x8)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -956,7 +1028,7 @@ struct UCommonButtonGroup_FindButtonIndex_Params
 public:
 	class UCommonButton*                         ButtonToFind;                                      // 0x0(0x8)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ReturnValue;                                       // 0x8(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E85[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E84[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x0 - 0x0)
@@ -990,15 +1062,6 @@ public:
 	TSubclassOf<class UCommonTextScrollStyle>    InScrollStyle;                                     // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonTextBlock.SetProperties
-struct UCommonTextBlock_SetProperties_Params
-{
-public:
-	TSubclassOf<class UCommonTextStyle>          InStyle;                                           // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	TSubclassOf<class UCommonTextScrollStyle>    InScrollStyle;                                     // 0x8(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
 // 0x0 (0x0 - 0x0)
 // Function CommonUI.CommonTextBlock.ResetScrollState
 struct UCommonTextBlock_ResetScrollState_Params
@@ -1011,7 +1074,7 @@ public:
 struct UCommonDateTimeTextBlock_SetTimespanValue_Params
 {
 public:
-	struct FTimespan                             InTimespan;                                        // 0x0(0x8)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FTimespan                             InTimespan;                                        // 0x0(0x8)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -1019,9 +1082,9 @@ public:
 struct UCommonDateTimeTextBlock_SetDateTimeValue_Params
 {
 public:
-	struct FDateTime                             InDateTime;                                        // 0x0(0x8)(ConstParm, Parm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FDateTime                             InDateTime;                                        // 0x0(0x8)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bShowAsCountdown;                                  // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E88[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E87[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x18 (0x18 - 0x0)
@@ -1037,47 +1100,7 @@ public:
 struct UCommonDateTimeTextBlock_GetDateTime_Params
 {
 public:
-	struct FDateTime                             ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonDynamicEntryBox.SetEntrySpacing
-struct UCommonDynamicEntryBox_SetEntrySpacing_Params
-{
-public:
-	struct FVector2D                             InEntrySpacing;                                    // 0x0(0x8)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonDynamicEntryBox.Reset
-struct UCommonDynamicEntryBox_Reset_Params
-{
-public:
-	bool                                         bDeleteWidgets;                                    // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonDynamicEntryBox.RemoveEntry
-struct UCommonDynamicEntryBox_RemoveEntry_Params
-{
-public:
-	class UUserWidget*                           EntryWidget;                                       // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonDynamicEntryBox.GetNumEntries
-struct UCommonDynamicEntryBox_GetNumEntries_Params
-{
-public:
-	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonDynamicEntryBox.GetAllEntries
-struct UCommonDynamicEntryBox_GetAllEntries_Params
-{
-public:
-	TArray<class UUserWidget*>                   ReturnValue;                                       // 0x0(0x10)(ConstParm, ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
+	struct FDateTime                             ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x0 (0x0 - 0x0)
@@ -1096,7 +1119,7 @@ public:
 	UDelegateProperty_                           CompleteEvent;                                     // 0x10(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	UDelegateProperty_                           ProgressEvent;                                     // 0x20(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x30(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E8E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E8A[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x38 (0x38 - 0x0)
@@ -1108,7 +1131,7 @@ public:
 	UDelegateProperty_                           CompleteEvent;                                     // 0x10(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	UDelegateProperty_                           ProgressEvent;                                     // 0x20(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x30(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E8F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E8B[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x4 (0x4 - 0x0)
@@ -1134,7 +1157,7 @@ public:
 	class UCommonActivatablePanel*               ActivatablePanel;                                  // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIntroPanel;                                       // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bOutroPanelBelow;                                  // 0x9(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E90[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E8C[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -1152,7 +1175,7 @@ struct UCommonInputManager_IsPanelOnStack_Params
 public:
 	class UCommonActivatablePanel*               InPanel;                                           // 0x0(0x8)(ConstParm, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E91[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E8D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1161,6 +1184,14 @@ struct UCommonInputManager_IsInputSuspended_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function CommonUI.CommonInputManager.GetTopPanel
+struct UCommonInputManager_GetTopPanel_Params
+{
+public:
+	class UCommonActivatablePanel*               ReturnValue;                                       // 0x0(0x8)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -1178,7 +1209,7 @@ struct UCommonInputManager_GetAvailableInputActions_Params
 public:
 	TArray<struct FCommonInputActionHandlerData> AvailableInputActions;                             // 0x0(0x10)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E92[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E8E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1190,11 +1221,12 @@ public:
 	struct FCommonInputActionHandlerData         Data;                                              // 0x8(0x20)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonLazyImage.ShowDefaultImage
-struct UCommonLazyImage_ShowDefaultImage_Params
+// 0x8 (0x8 - 0x0)
+// Function CommonUI.CommonLazyImage.SetMaterialTextureParamName
+struct UCommonLazyImage_SetMaterialTextureParamName_Params
 {
 public:
+	class FName                                  TextureParamName;                                  // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x30 (0x30 - 0x0)
@@ -1204,7 +1236,7 @@ struct UCommonLazyImage_SetBrushFromLazyTexture_Params
 public:
 	TSoftObjectPtr<class UTexture2D>             LazyTexture;                                       // 0x0(0x28)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bMatchSize;                                        // 0x28(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E97[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E93[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x28 (0x28 - 0x0)
@@ -1222,7 +1254,7 @@ struct UCommonLazyImage_SetBrushFromLazyDisplayAsset_Params
 public:
 	TSoftObjectPtr<class UObject>                LazyObject;                                        // 0x0(0x28)(ConstParm, Parm, OutParm, ReferenceParm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bMatchTextureSize;                                 // 0x28(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E98[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E94[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1233,326 +1265,44 @@ public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonLazyImage.ForwardLoadingStateChanged
-struct UCommonLazyImage_ForwardLoadingStateChanged_Params
+// 0x28 (0x28 - 0x0)
+// Function CommonUI.CommonLazyWidget.SetLazyContent
+struct UCommonLazyWidget_SetLazyContent_Params
 {
 public:
-	bool                                         bIsLoading;                                        // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonPoolableWidgetInterface.OnReleaseToPool
-struct UCommonPoolableWidgetInterface_OnReleaseToPool_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonPoolableWidgetInterface.OnAcquireFromPool
-struct UCommonPoolableWidgetInterface_OnAcquireFromPool_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonListItem.ToggleExpansion
-struct UCommonListItem_ToggleExpansion_Params
-{
-public:
+	TSoftClassPtr<class UUserWidget>             SoftWidget;                                        // 0x0(0x28)(ConstParm, Parm, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonListItem.SetSelected
-struct UCommonListItem_SetSelected_Params
-{
-public:
-	bool                                         bSelected;                                         // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonListItem.SetIndexInList
-struct UCommonListItem_SetIndexInList_Params
-{
-public:
-	int32                                        InIndexInList;                                     // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonListItem.SetExpanded
-struct UCommonListItem_SetExpanded_Params
-{
-public:
-	bool                                         bExpanded;                                         // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListItem.RegisterOnClicked
-struct UCommonListItem_RegisterOnClicked_Params
-{
-public:
-	UDelegateProperty_                           Callback;                                          // 0x0(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonListItem.Private_OnExpanderArrowShiftClicked
-struct UCommonListItem_Private_OnExpanderArrowShiftClicked_Params
-{
-public:
-};
-
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonListItem.IsItemExpanded
-struct UCommonListItem_IsItemExpanded_Params
+// Function CommonUI.CommonLazyWidget.IsLoading
+struct UCommonLazyWidget_IsLoading_Params
 {
 public:
 	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonListItem.GetIndentLevel
-struct UCommonListItem_GetIndentLevel_Params
+// 0x1 (0x1 - 0x0)
+// Function CommonUI.LoadGuardSlot.SetVerticalAlignment
+struct ULoadGuardSlot_SetVerticalAlignment_Params
 {
 public:
-	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EVerticalAlignment                InVerticalAlignment;                               // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonListItem.DoesItemHaveChildren
-struct UCommonListItem_DoesItemHaveChildren_Params
+// 0x10 (0x10 - 0x0)
+// Function CommonUI.LoadGuardSlot.SetPadding
+struct ULoadGuardSlot_SetPadding_Params
 {
 public:
-	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                               InPadding;                                         // 0x0(0x10)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonListView.SetSimulateDoubleClickOnSelectedItemClick
-struct UCommonListView_SetSimulateDoubleClickOnSelectedItemClick_Params
+// Function CommonUI.LoadGuardSlot.SetHorizontalAlignment
+struct ULoadGuardSlot_SetHorizontalAlignment_Params
 {
 public:
-	bool                                         bInSimulateDoubleClick;                            // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonListView.SetSelectionMode
-struct UCommonListView_SetSelectionMode_Params
-{
-public:
-	enum class ESelectionMode                    SelectionMode;                                     // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.SetSelectedItem
-struct UCommonListView_SetSelectedItem_Params
-{
-public:
-	class UObject*                               Item;                                              // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bWaitIfPendingRefresh;                             // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         ReturnValue;                                       // 0x9(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E9A[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.SetSelectedIndex
-struct UCommonListView_SetSelectedIndex_Params
-{
-public:
-	int32                                        Index;                                             // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         ReturnValue;                                       // 0x4(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E9B[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.SetItemSelection
-struct UCommonListView_SetItemSelection_Params
-{
-public:
-	class UObject*                               Item;                                              // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bSelected;                                         // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E9C[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonListView.SetItemHeight
-struct UCommonListView_SetItemHeight_Params
-{
-public:
-	float                                        NewHeight;                                         // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.SetDesiredItemPadding
-struct UCommonListView_SetDesiredItemPadding_Params
-{
-public:
-	struct FMargin                               DesiredPadding;                                    // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.SetDataProvider
-struct UCommonListView_SetDataProvider_Params
-{
-public:
-	TArray<class UObject*>                       InDataProvider;                                    // 0x0(0x10)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.ScrollIntoView
-struct UCommonListView_ScrollIntoView_Params
-{
-public:
-	class UObject*                               Item;                                              // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         NavigateOnScrollIntoView;                          // 0x8(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E9D[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonListView.IsRefreshPending
-struct UCommonListView_IsRefreshPending_Params
-{
-public:
-	bool                                         ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.IsItemVisible
-struct UCommonListView_IsItemVisible_Params
-{
-public:
-	class UObject*                               Item;                                              // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E9E[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonListView.GetSelectionModeBP
-struct UCommonListView_GetSelectionModeBP_Params
-{
-public:
-	enum class ESelectionMode                    ReturnValue;                                       // 0x0(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x18 (0x18 - 0x0)
-// Function CommonUI.CommonListView.GetSelectedItems
-struct UCommonListView_GetSelectedItems_Params
-{
-public:
-	TArray<class UObject*>                       Items;                                             // 0x0(0x10)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
-	bool                                         ReturnValue;                                       // 0x10(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_E9F[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.GetSelectedItem
-struct UCommonListView_GetSelectedItem_Params
-{
-public:
-	class UObject*                               ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonListView.GetNumItemsSelected
-struct UCommonListView_GetNumItemsSelected_Params
-{
-public:
-	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonListView.GetNumItems
-struct UCommonListView_GetNumItems_Params
-{
-public:
-	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.GetItemAt
-struct UCommonListView_GetItemAt_Params
-{
-public:
-	int32                                        Index;                                             // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EA0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	class UObject*                               ReturnValue;                                       // 0x8(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonListView.GetIndexForItem
-struct UCommonListView_GetIndexForItem_Params
-{
-public:
-	class UObject*                               Item;                                              // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                        ReturnValue;                                       // 0x8(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EA1[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.DynamicHandleItemUnhoveredCommonButton
-struct UCommonListView_DynamicHandleItemUnhoveredCommonButton_Params
-{
-public:
-	class UCommonButton*                         Button;                                            // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.DynamicHandleItemHoveredCommonButton
-struct UCommonListView_DynamicHandleItemHoveredCommonButton_Params
-{
-public:
-	class UCommonButton*                         Button;                                            // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.DynamicHandleItemDoubleClickedCommonButton
-struct UCommonListView_DynamicHandleItemDoubleClickedCommonButton_Params
-{
-public:
-	class UCommonButton*                         Button;                                            // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.DynamicHandleItemClickedUserWidget
-struct UCommonListView_DynamicHandleItemClickedUserWidget_Params
-{
-public:
-	class UUserWidget*                           Widget;                                            // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.DynamicHandleItemClickedCommonButton
-struct UCommonListView_DynamicHandleItemClickedCommonButton_Params
-{
-public:
-	class UCommonButton*                         Button;                                            // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonListView.ClearSelection
-struct UCommonListView_ClearSelection_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonListView.Clear
-struct UCommonListView_Clear_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonListView.CancelScrollIntoView
-struct UCommonListView_CancelScrollIntoView_Params
-{
-public:
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonListView.AddItem
-struct UCommonListView_AddItem_Params
-{
-public:
-	class UObject*                               Item;                                              // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class EHorizontalAlignment              InHorizontalAlignment;                             // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x18 (0x18 - 0x0)
@@ -1627,7 +1377,7 @@ struct UCommonNumericTextBlock_OnInterpolationEnded__DelegateSignature_Params
 public:
 	class UCommonNumericTextBlock*               NumericTextBlock;                                  // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         HadCompleted;                                      // 0x8(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EA8[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_E9C[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1657,28 +1407,18 @@ public:
 	float                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonObjectListItem.SetData
-struct UCommonObjectListItem_SetData_Params
+// 0x0 (0x0 - 0x0)
+// Function CommonUI.CommonPoolableWidgetInterface.OnReleaseToPool
+struct UCommonPoolableWidgetInterface_OnReleaseToPool_Params
 {
 public:
-	class UObject*                               InData;                                            // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	class UCommonListView*                       OwningList;                                        // 0x8(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonObjectListItem.Reset
-struct UCommonObjectListItem_Reset_Params
+// Function CommonUI.CommonPoolableWidgetInterface.OnAcquireFromPool
+struct UCommonPoolableWidgetInterface_OnAcquireFromPool_Params
 {
 public:
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonObjectListItem.GetData
-struct UCommonObjectListItem_GetData_Params
-{
-public:
-	class UObject*                               ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x8 (0x8 - 0x0)
@@ -1780,34 +1520,34 @@ public:
 	int32                                        ReturnValue;                                       // 0x0(0x4)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // Function CommonUI.CommonTabListWidget.SetTabVisibility
 struct UCommonTabListWidget_SetTabVisibility_Params
 {
 public:
 	class FName                                  TabNameID;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	enum class ESlateVisibility                  NewVisibility;                                     // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB0[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EA3[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // Function CommonUI.CommonTabListWidget.SetTabInteractionEnabled
 struct UCommonTabListWidget_SetTabInteractionEnabled_Params
 {
 public:
 	class FName                                  TabNameID;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnable;                                           // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB1[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EA4[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // Function CommonUI.CommonTabListWidget.SetTabEnabled
 struct UCommonTabListWidget_SetTabEnabled_Params
 {
 public:
 	class FName                                  TabNameID;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bEnable;                                           // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB2[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EA5[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1826,7 +1566,7 @@ public:
 	class UCommonWidgetSwitcher*                 CommonSwitcher;                                    // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // Function CommonUI.CommonTabListWidget.SelectTabByID
 struct UCommonTabListWidget_SelectTabByID_Params
 {
@@ -1834,17 +1574,17 @@ public:
 	class FName                                  TabNameID;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bSuppressClickFeedback;                            // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x9(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB3[0x6];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EA6[0x2];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // Function CommonUI.CommonTabListWidget.RemoveTab
 struct UCommonTabListWidget_RemoveTab_Params
 {
 public:
 	class FName                                  TabNameID;                                         // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x8(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB4[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EA7[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x0 - 0x0)
@@ -1863,7 +1603,7 @@ public:
 	TSubclassOf<class UCommonButton>             ButtonWidgetType;                                  // 0x8(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidget*                               ContentWidget;                                     // 0x10(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         ReturnValue;                                       // 0x18(0x1)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB5[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EA8[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x8 (0x8 - 0x0)
@@ -1917,7 +1657,7 @@ struct UCommonTabListWidget_HandleTabButtonSelected_Params
 public:
 	class UCommonButton*                         SelectedTabButton;                                 // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        ButtonIndex;                                       // 0x8(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB6[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EA9[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -1950,14 +1690,13 @@ public:
 	bool                                         bPassThrough;                                      // 0x0(0x1)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // Function CommonUI.CommonTabListWidget.GetTabIdAtIndex
 struct UCommonTabListWidget_GetTabIdAtIndex_Params
 {
 public:
 	int32                                        Index;                                             // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EB7[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  ReturnValue;                                       // 0x8(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class FName                                  ReturnValue;                                       // 0x4(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -2010,12 +1749,20 @@ public:
 	class FText                                  Reason;                                            // 0x8(0x18)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
+// 0x88 (0x88 - 0x0)
+// Function CommonUI.CommonTextStyle.GetStrikeBrush
+struct UCommonTextStyle_GetStrikeBrush_Params
+{
+public:
+	struct FSlateBrush                           OutStrikeBrush;                                    // 0x0(0x88)(Parm, OutParm, NativeAccessSpecifierPublic)
+};
+
 // 0x8 (0x8 - 0x0)
 // Function CommonUI.CommonTextStyle.GetShadowOffset
 struct UCommonTextStyle_GetShadowOffset_Params
 {
 public:
-	struct FVector2D                             OutShadowOffset;                                   // 0x0(0x8)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FVector2D                             OutShadowOffset;                                   // 0x0(0x8)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -2023,7 +1770,7 @@ public:
 struct UCommonTextStyle_GetShadowColor_Params
 {
 public:
-	struct FLinearColor                          OutColor;                                          // 0x0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FLinearColor                          OutColor;                                          // 0x0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x10 (0x10 - 0x0)
@@ -2031,7 +1778,7 @@ public:
 struct UCommonTextStyle_GetMargin_Params
 {
 public:
-	struct FMargin                               OutMargin;                                         // 0x0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FMargin                               OutMargin;                                         // 0x0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -2055,94 +1802,7 @@ public:
 struct UCommonTextStyle_GetColor_Params
 {
 public:
-	struct FLinearColor                          OutColor;                                          // 0x0(0x10)(Parm, OutParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x4 (0x4 - 0x0)
-// Function CommonUI.CommonTileView.SetItemWidth
-struct UCommonTileView_SetItemWidth_Params
-{
-public:
-	float                                        NewWidth;                                          // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonTreeView.SetSelection
-struct UCommonTreeView_SetSelection_Params
-{
-public:
-	class UObject*                               InItem;                                            // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         bScrollFromTop;                                    // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EBE[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x10 (0x10 - 0x0)
-// Function CommonUI.CommonTreeView.SetItemExpansion
-struct UCommonTreeView_SetItemExpansion_Params
-{
-public:
-	class UObject*                               Item;                                              // 0x0(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	bool                                         InShouldExpandItem;                                // 0x8(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EBF[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
-};
-
-// 0x1 (0x1 - 0x0)
-// Function CommonUI.CommonTreeView.SetAllExpansion
-struct UCommonTreeView_SetAllExpansion_Params
-{
-public:
-	bool                                         InShouldExpandItem;                                // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonTreeView.RequestRefresh
-struct UCommonTreeView_RequestRefresh_Params
-{
-public:
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonTreeView.DynamicHandleItemClickedCommonButton
-struct UCommonTreeView_DynamicHandleItemClickedCommonButton_Params
-{
-public:
-	class UCommonButton*                         Button;                                            // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x1 (0x1 - 0x0)
-// DelegateFunction CommonUI.CommonUIContext.InputSuspensionChanged__DelegateSignature
-struct UCommonUIContext_InputSuspensionChanged__DelegateSignature_Params
-{
-public:
-	bool                                         bInputSuspended;                                   // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x1 (0x1 - 0x0)
-// DelegateFunction CommonUI.CommonUIContext.InputMethodChangedDelegate__DelegateSignature
-struct UCommonUIContext_InputMethodChangedDelegate__DelegateSignature_Params
-{
-public:
-	bool                                         bUsingGamepad;                                     // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonUIContext.GetInputManager
-struct UCommonUIContext_GetInputManager_Params
-{
-public:
-	class UCommonInputManager*                   ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0xA0 (0xA0 - 0x0)
-// Function CommonUI.CommonUIContext.GetInputActionButtonIcon
-struct UCommonUIContext_GetInputActionButtonIcon_Params
-{
-public:
-	struct FDataTableRowHandle                   InputActionRowHandle;                              // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
-	enum class ECommonInputType                  InputType;                                         // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class ECommonGamepadType                GamepadType;                                       // 0x11(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EC1[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSlateBrush                           ReturnValue;                                       // 0x18(0x88)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
+	struct FLinearColor                          OutColor;                                          // 0x0(0x10)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x18 (0x18 - 0x0)
@@ -2153,6 +1813,42 @@ public:
 	class UWidget*                               StartingWidget;                                    // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSubclassOf<class UWidget>                   Type;                                              // 0x8(0x8)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidget*                               ReturnValue;                                       // 0x10(0x8)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
+// DelegateFunction CommonUI.CommonUISubsystem.InputSuspensionChanged__DelegateSignature
+struct UCommonUISubsystem_InputSuspensionChanged__DelegateSignature_Params
+{
+public:
+	bool                                         bInputSuspended;                                   // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x1 (0x1 - 0x0)
+// DelegateFunction CommonUI.CommonUISubsystem.InputMethodChangedDelegate__DelegateSignature
+struct UCommonUISubsystem_InputMethodChangedDelegate__DelegateSignature_Params
+{
+public:
+	bool                                         bUsingGamepad;                                     // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x8 (0x8 - 0x0)
+// Function CommonUI.CommonUISubsystem.GetInputManager
+struct UCommonUISubsystem_GetInputManager_Params
+{
+public:
+	class UCommonInputManager*                   ReturnValue;                                       // 0x0(0x8)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0xA0 (0xA0 - 0x0)
+// Function CommonUI.CommonUISubsystem.GetInputActionButtonIcon
+struct UCommonUISubsystem_GetInputActionButtonIcon_Params
+{
+public:
+	struct FDataTableRowHandle                   InputActionRowHandle;                              // 0x0(0x10)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
+	enum class ECommonInputType                  InputType;                                         // 0x10(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class ECommonGamepadType                GamepadType;                                       // 0x11(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_EB4[0x6];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateBrush                           ReturnValue;                                       // 0x18(0x88)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 
 // 0x4 (0x4 - 0x0)
@@ -2191,7 +1887,7 @@ struct UCommonWidgetCarousel_GetWidgetAtIndex_Params
 {
 public:
 	int32                                        Index;                                             // 0x0(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EC6[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EB8[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UWidget*                               ReturnValue;                                       // 0x8(0x8)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
@@ -2219,14 +1915,39 @@ public:
 };
 
 // 0x8 (0x8 - 0x0)
-// Function CommonUI.CommonWidgetSwitcher.SetTransitionParams
-struct UCommonWidgetSwitcher_SetTransitionParams_Params
+// Function CommonUI.CommonWidgetCarouselNavBar.SetLinkedCarousel
+struct UCommonWidgetCarouselNavBar_SetLinkedCarousel_Params
 {
 public:
-	enum class ECommonSwitcherTransition         NewTransitionType;                                 // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	enum class ETransitionCurve                  NewTransitionCurveType;                            // 0x1(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_EC9[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
-	float                                        NewTransitionDuration;                             // 0x4(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	class UCommonWidgetCarousel*                 CommonCarousel;                                    // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+
+// 0x10 (0x10 - 0x0)
+// Function CommonUI.CommonWidgetCarouselNavBar.HandlePageChanged
+struct UCommonWidgetCarouselNavBar_HandlePageChanged_Params
+{
+public:
+	class UCommonWidgetCarousel*                 CommonCarousel;                                    // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                        PageIndex;                                         // 0x8(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_EBB[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+};
+
+// 0x10 (0x10 - 0x0)
+// Function CommonUI.CommonWidgetCarouselNavBar.HandleButtonClicked
+struct UCommonWidgetCarouselNavBar_HandleButtonClicked_Params
+{
+public:
+	class UCommonButton*                         AssociatedButton;                                  // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                        ButtonIndex;                                       // 0x8(0x4)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_EBC[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+};
+
+// 0x1 (0x1 - 0x0)
+// Function CommonUI.CommonWidgetSwitcher.SetDisableTransitionAnimation
+struct UCommonWidgetSwitcher_SetDisableTransitionAnimation_Params
+{
+public:
+	bool                                         bDisableAnimation;                                 // 0x0(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x8 (0x8 - 0x0)
@@ -2236,7 +1957,7 @@ struct UCommonWidgetSwitcher_SetActiveWidgetIndex_Advanced_Params
 public:
 	int32                                        Index;                                             // 0x0(0x4)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         AttemptActivationChange;                           // 0x4(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ECA[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EBE[0x3];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x10 (0x10 - 0x0)
@@ -2246,7 +1967,7 @@ struct UCommonWidgetSwitcher_SetActiveWidget_Advanced_Params
 public:
 	class UWidget*                               Widget;                                            // 0x0(0x8)(Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         AttemptActivationChange;                           // 0x8(0x1)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ECB[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EBF[0x7];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x1 (0x1 - 0x0)
@@ -2309,20 +2030,6 @@ struct UCommonWidgetStack_PopWidget_Params
 {
 public:
 	class UWidget*                               ReturnValue;                                       // 0x0(0x8)(ExportObject, Parm, OutParm, ZeroConstructor, ReturnParm, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonWidgetStack.DeactivateWidget
-struct UCommonWidgetStack_DeactivateWidget_Params
-{
-public:
-};
-
-// 0x0 (0x0 - 0x0)
-// Function CommonUI.CommonWidgetStack.ActivateWidget
-struct UCommonWidgetStack_ActivateWidget_Params
-{
-public:
 };
 
 }

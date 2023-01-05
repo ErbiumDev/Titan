@@ -74,12 +74,12 @@ public:
 	class FText                                  KickReason;                                        // 0x0(0x18)(ConstParm, Parm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 
-// 0x18 (0x18 - 0x0)
+// 0x14 (0x14 - 0x0)
 // Function Lobby.LobbyBeaconClient.ClientSetInviteFlags
 struct ALobbyBeaconClient_ClientSetInviteFlags_Params
 {
 public:
-	struct FJoinabilitySettings                  Settings;                                          // 0x0(0x18)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FJoinabilitySettings                  Settings;                                          // 0x0(0x14)(ConstParm, Parm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x28 (0x28 - 0x0)
@@ -106,7 +106,7 @@ struct ALobbyBeaconClient_ClientLoginComplete_Params
 public:
 	struct FUniqueNetIdRepl                      InUniqueId;                                        // 0x0(0x28)(ConstParm, Parm, ReferenceParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bWasSuccessful;                                    // 0x28(0x1)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_22D6[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_119E[0x7];                                     // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x0 (0x0 - 0x0)

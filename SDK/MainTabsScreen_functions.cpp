@@ -119,11 +119,11 @@ void UMainTabsScreen_C::CheckDisplayCriteria(enum class EStoreOfferCosts InCusto
 // enum class EStoreOfferCosts        CustomStoreOfferCost                                             (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue1                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue12                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue123                  (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue2                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_EqualEqual_ObjectObject_ReturnValue3                    (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, enum class EStoreOfferCosts* OutCustomStoreOfferCost, enum class EStoreOfferCosts CustomStoreOfferCost, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue12, bool CallFunc_EqualEqual_ObjectObject_ReturnValue123, bool CallFunc_Greater_IntInt_ReturnValue)
+void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InCardPackOffer, enum class EStoreOfferCosts* OutCustomStoreOfferCost, enum class EStoreOfferCosts CustomStoreOfferCost, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_EqualEqual_ObjectObject_ReturnValue1, bool CallFunc_EqualEqual_ObjectObject_ReturnValue2, bool CallFunc_EqualEqual_ObjectObject_ReturnValue3, bool CallFunc_Greater_IntInt_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "GetCustomStoreOfferCost");
 
@@ -132,8 +132,8 @@ void UMainTabsScreen_C::GetCustomStoreOfferCost(const struct FCardPackOffer& InC
 	Parms.CustomStoreOfferCost = CustomStoreOfferCost;
 	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue = CallFunc_EqualEqual_ObjectObject_ReturnValue;
 	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue1 = CallFunc_EqualEqual_ObjectObject_ReturnValue1;
-	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue12 = CallFunc_EqualEqual_ObjectObject_ReturnValue12;
-	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue123 = CallFunc_EqualEqual_ObjectObject_ReturnValue123;
+	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue2 = CallFunc_EqualEqual_ObjectObject_ReturnValue2;
+	Parms.CallFunc_EqualEqual_ObjectObject_ReturnValue3 = CallFunc_EqualEqual_ObjectObject_ReturnValue3;
 	Parms.CallFunc_Greater_IntInt_ReturnValue = CallFunc_Greater_IntInt_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -215,12 +215,12 @@ void UMainTabsScreen_C::CheckHighestPriorityOffer(TArray<struct FCardPackOffer>&
 // int32                              CallFunc_Array_Add_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Add_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortStoreContext*           CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Add_ReturnValue12                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                              CallFunc_Array_Add_ReturnValue2                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FCardPackOffer              CallFunc_Array_Get_Item                                          ()
 // bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers, const struct FCardPackOffer& TempOffer, const TArray<struct FCardPackOffer>& UpgradeOffers, const TArray<struct FCardPackOffer>& SharedDisplayOffers, const TArray<struct FCardPackOffer>& StandardOffers, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FCardPackOffer& CallFunc_CheckHighestPriorityOffer_outPriorityOffer, bool CallFunc_CheckHighestPriorityOffer_FoundOffer, const struct FCardPackOffer& CallFunc_CheckHighestPriorityOffer_outPriorityOffer1, bool CallFunc_CheckHighestPriorityOffer_FoundOffer1, bool CallFunc_GetMetaBoolOnOffer_ReturnValue, bool CallFunc_GetMetaBoolOnOffer_ReturnValue1, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue1, class UFortStoreContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Array_Add_ReturnValue12, int32 CallFunc_Array_Length_ReturnValue, const struct FCardPackOffer& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
+void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers, const struct FCardPackOffer& TempOffer, const TArray<struct FCardPackOffer>& UpgradeOffers, const TArray<struct FCardPackOffer>& SharedDisplayOffers, const TArray<struct FCardPackOffer>& StandardOffers, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FCardPackOffer& CallFunc_CheckHighestPriorityOffer_outPriorityOffer, bool CallFunc_CheckHighestPriorityOffer_FoundOffer, const struct FCardPackOffer& CallFunc_CheckHighestPriorityOffer_outPriorityOffer1, bool CallFunc_CheckHighestPriorityOffer_FoundOffer1, bool CallFunc_GetMetaBoolOnOffer_ReturnValue, bool CallFunc_GetMetaBoolOnOffer_ReturnValue1, int32 CallFunc_Array_Add_ReturnValue, int32 CallFunc_Array_Add_ReturnValue1, class UFortStoreContext* CallFunc_GetContext_ReturnValue, int32 CallFunc_Array_Add_ReturnValue2, int32 CallFunc_Array_Length_ReturnValue, const struct FCardPackOffer& CallFunc_Array_Get_Item, bool CallFunc_Less_IntInt_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "Get Valid Offers");
 
@@ -241,7 +241,7 @@ void UMainTabsScreen_C::Get_Valid_Offers(TArray<struct FCardPackOffer>* Offers, 
 	Parms.CallFunc_Array_Add_ReturnValue = CallFunc_Array_Add_ReturnValue;
 	Parms.CallFunc_Array_Add_ReturnValue1 = CallFunc_Array_Add_ReturnValue1;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
-	Parms.CallFunc_Array_Add_ReturnValue12 = CallFunc_Array_Add_ReturnValue12;
+	Parms.CallFunc_Array_Add_ReturnValue2 = CallFunc_Array_Add_ReturnValue2;
 	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
 	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
@@ -340,7 +340,7 @@ void UMainTabsScreen_C::Handle_Unclaimed_Resources_Updated(bool CallFunc_Determi
 // Parameters:
 // bool                               Enable                                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
-// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor)
+// struct FTimerHandle                CallFunc_K2_SetTimerDelegate_ReturnValue                         (NoDestructor, HasGetValueTypeHash)
 
 void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, const struct FTimerHandle& CallFunc_K2_SetTimerDelegate_ReturnValue)
 {
@@ -371,7 +371,7 @@ void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable, UDelegatePr
 // float                              CallFunc_Conv_IntToFloat_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UHomeBaseContext*            CallFunc_GetContext_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortItemQuantityPair       CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate         ()
-// class UFortMcpContext*             CallFunc_GetContext_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortMcpContext*             CallFunc_GetContext_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // TArray<class UFortCollectedResourceItem*>CallFunc_GetAllResourceCollectors_ResourceCollectorsOwned        (ZeroConstructor, ReferenceParm)
 // float                              CallFunc_Conv_IntToFloat_ReturnValue1                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortCollectedResourceItem*  CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -379,7 +379,7 @@ void UMainTabsScreen_C::Toggle_Unclaimed_Research_Timer(bool Enable, UDelegatePr
 // bool                               CallFunc_Greater_IntInt_ReturnValue                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_IsValid_ReturnValue                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result, float UnclaimedResearchMax, float UnclaimedResearch, class UFortCollectedResourceItem* LocalResource, float CallFunc_Divide_FloatFloat_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_GetResourceCollectorRateInfo_RatePerSecond, int32 CallFunc_GetResourceCollectorRateInfo_MaxCapacity, float CallFunc_Conv_IntToFloat_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue1, const struct FFortItemQuantityPair& CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate, class UFortMcpContext* CallFunc_GetContext_ReturnValue12, TArray<class UFortCollectedResourceItem*>& CallFunc_GetAllResourceCollectors_ResourceCollectorsOwned, float CallFunc_Conv_IntToFloat_ReturnValue1, class UFortCollectedResourceItem* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue)
+void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result, float UnclaimedResearchMax, float UnclaimedResearch, class UFortCollectedResourceItem* LocalResource, float CallFunc_Divide_FloatFloat_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, bool CallFunc_GreaterEqual_FloatFloat_ReturnValue, float CallFunc_GetResourceCollectorRateInfo_RatePerSecond, int32 CallFunc_GetResourceCollectorRateInfo_MaxCapacity, float CallFunc_Conv_IntToFloat_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue1, const struct FFortItemQuantityPair& CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate, class UFortMcpContext* CallFunc_GetContext_ReturnValue2, TArray<class UFortCollectedResourceItem*>& CallFunc_GetAllResourceCollectors_ResourceCollectorsOwned, float CallFunc_Conv_IntToFloat_ReturnValue1, class UFortCollectedResourceItem* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, bool CallFunc_IsValid_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "Determine Unclaimed Resources at Threshold");
 
@@ -395,7 +395,7 @@ void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result,
 	Parms.CallFunc_Conv_IntToFloat_ReturnValue = CallFunc_Conv_IntToFloat_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue1 = CallFunc_GetContext_ReturnValue1;
 	Parms.CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate = CallFunc_GetResourceCollectorRewardsEstimate_OutEstimate;
-	Parms.CallFunc_GetContext_ReturnValue12 = CallFunc_GetContext_ReturnValue12;
+	Parms.CallFunc_GetContext_ReturnValue2 = CallFunc_GetContext_ReturnValue2;
 	Parms.CallFunc_GetAllResourceCollectors_ResourceCollectorsOwned = CallFunc_GetAllResourceCollectors_ResourceCollectorsOwned;
 	Parms.CallFunc_Conv_IntToFloat_ReturnValue1 = CallFunc_Conv_IntToFloat_ReturnValue1;
 	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
@@ -407,129 +407,6 @@ void UMainTabsScreen_C::Determine_Unclaimed_Resources_at_Threshold(bool* Result,
 
 	if (Result != nullptr)
 		*Result = Parms.Result;
-
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Are Any Nodes Available For Purchase
-// (Public, HasOutParams, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                        NodePageId                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               ReturnValue                                                      (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor)
-// bool                               NodeAvailable                                                    (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UHomeBaseContext*            CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               Temp_bool_True_if_break_was_hit_Variable                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// struct FHomebaseNodePage           CallFunc_TryGetHomebaseNodePageData_OutHomebaseNodePage          ()
-// bool                               CallFunc_TryGetHomebaseNodePageData_ReturnValue                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FName                        CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// struct FHomebaseNodeState          CallFunc_TryGetHomebaseNodeState_OutNodeState                    (NoDestructor)
-// bool                               CallFunc_TryGetHomebaseNodeState_ReturnValue                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Not_PreBool_ReturnValue1                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanAND_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanAND_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanAND_ReturnValue123                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanAND_ReturnValue1234                              (ZeroConstructor, IsPlainOldData, NoDestructor)
-
-bool UMainTabsScreen_C::Are_Any_Nodes_Available_For_Purchase(class FName NodePageId, bool NodeAvailable, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, bool Temp_bool_True_if_break_was_hit_Variable, int32 Temp_int_Array_Index_Variable, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, const struct FHomebaseNodePage& CallFunc_TryGetHomebaseNodePageData_OutHomebaseNodePage, bool CallFunc_TryGetHomebaseNodePageData_ReturnValue, class FName CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, const struct FHomebaseNodeState& CallFunc_TryGetHomebaseNodeState_OutNodeState, bool CallFunc_TryGetHomebaseNodeState_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue12, bool CallFunc_BooleanAND_ReturnValue123, bool CallFunc_BooleanAND_ReturnValue1234)
-{
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Are Any Nodes Available For Purchase");
-
-	Params::UMainTabsScreen_C_Are_Any_Nodes_Available_For_Purchase_Params Parms;
-	Parms.NodePageId = NodePageId;
-	Parms.NodeAvailable = NodeAvailable;
-	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
-	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_TryGetHomebaseNodePageData_OutHomebaseNodePage = CallFunc_TryGetHomebaseNodePageData_OutHomebaseNodePage;
-	Parms.CallFunc_TryGetHomebaseNodePageData_ReturnValue = CallFunc_TryGetHomebaseNodePageData_ReturnValue;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.CallFunc_TryGetHomebaseNodeState_OutNodeState = CallFunc_TryGetHomebaseNodeState_OutNodeState;
-	Parms.CallFunc_TryGetHomebaseNodeState_ReturnValue = CallFunc_TryGetHomebaseNodeState_ReturnValue;
-	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
-	Parms.CallFunc_Not_PreBool_ReturnValue1 = CallFunc_Not_PreBool_ReturnValue1;
-	Parms.CallFunc_BooleanAND_ReturnValue1 = CallFunc_BooleanAND_ReturnValue1;
-	Parms.CallFunc_BooleanAND_ReturnValue12 = CallFunc_BooleanAND_ReturnValue12;
-	Parms.CallFunc_BooleanAND_ReturnValue123 = CallFunc_BooleanAND_ReturnValue123;
-	Parms.CallFunc_BooleanAND_ReturnValue1234 = CallFunc_BooleanAND_ReturnValue1234;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-	return Parms.ReturnValue;
-
-}
-
-
-// Function MainTabsScreen.MainTabsScreen_C.Update Skills Tab Button Bang
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                        Tab                                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              NumPoints                                                        (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class FName                        CurrentTabId                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               SkillPointsUnseen                                                (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               Temp_bool_True_if_break_was_hit_Variable                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Not_PreBool_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// int32                              Temp_int_Array_Index_Variable                                    (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              Temp_int_Loop_Counter_Variable                                   (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Add_IntInt_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// TArray<class FName>                CallFunc_GetHomebaseNodePageNames_NodePages                      (ZeroConstructor, ReferenceParm)
-// class FName                        CallFunc_Array_Get_Item                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// int32                              CallFunc_Array_Length_ReturnValue                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_Are_Any_Nodes_Available_For_Purchase_ReturnValue        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Less_IntInt_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanAND_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UHorizontalTabList_C*        K2Node_DynamicCast_AsHorizontal_Tab_List                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UCommonButton*               CallFunc_Get_Tab_From_Id_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UMainTabsScreen_C::Update_Skills_Tab_Button_Bang(class FName Tab, int32 NumPoints, class FName CurrentTabId, bool SkillPointsUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, int32 Temp_int_Array_Index_Variable, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result, TArray<class FName>& CallFunc_GetHomebaseNodePageNames_NodePages, class FName CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, bool CallFunc_Are_Any_Nodes_Available_For_Purchase_ReturnValue, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess1)
-{
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Skills Tab Button Bang");
-
-	Params::UMainTabsScreen_C_Update_Skills_Tab_Button_Bang_Params Parms;
-	Parms.Tab = Tab;
-	Parms.NumPoints = NumPoints;
-	Parms.CurrentTabId = CurrentTabId;
-	Parms.SkillPointsUnseen = SkillPointsUnseen;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue1 = CallFunc_EqualEqual_NameName_ReturnValue1;
-	Parms.Temp_bool_True_if_break_was_hit_Variable = Temp_bool_True_if_break_was_hit_Variable;
-	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
-	Parms.CallFunc_Not_PreBool_ReturnValue = CallFunc_Not_PreBool_ReturnValue;
-	Parms.Temp_int_Array_Index_Variable = Temp_int_Array_Index_Variable;
-	Parms.Temp_int_Loop_Counter_Variable = Temp_int_Loop_Counter_Variable;
-	Parms.CallFunc_Add_IntInt_ReturnValue = CallFunc_Add_IntInt_ReturnValue;
-	Parms.CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result = CallFunc_Determine_Unclaimed_Resources_at_Threshold_Result;
-	Parms.CallFunc_GetHomebaseNodePageNames_NodePages = CallFunc_GetHomebaseNodePageNames_NodePages;
-	Parms.CallFunc_Array_Get_Item = CallFunc_Array_Get_Item;
-	Parms.CallFunc_Array_Length_ReturnValue = CallFunc_Array_Length_ReturnValue;
-	Parms.CallFunc_Are_Any_Nodes_Available_For_Purchase_ReturnValue = CallFunc_Are_Any_Nodes_Available_For_Purchase_ReturnValue;
-	Parms.CallFunc_Less_IntInt_ReturnValue = CallFunc_Less_IntInt_ReturnValue;
-	Parms.CallFunc_BooleanAND_ReturnValue = CallFunc_BooleanAND_ReturnValue;
-	Parms.K2Node_DynamicCast_AsHorizontal_Tab_List = K2Node_DynamicCast_AsHorizontal_Tab_List;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_Get_Tab_From_Id_ReturnValue = CallFunc_Get_Tab_From_Id_ReturnValue;
-	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button = K2Node_DynamicCast_AsMain_Tab_Icon_Button;
-	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
-
-	UObject::ProcessEvent(Func, &Parms);
 
 }
 
@@ -565,9 +442,9 @@ void UMainTabsScreen_C::Update_Skills_Tab_Button_Bang(class FName Tab, int32 Num
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               CallFunc_Get_Tab_From_Id_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, bool ShowBang, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, int32 Temp_int_Array_Index_Variable, bool CallFunc_BooleanOR_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Determine_If_Any_non_MTX_offers_are_purchasable_ShowBang, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<class UFortAccountItem*>& CallFunc_GetAccountItemsByType_Items, class UFortAccountItem* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UFortCardPackItem* K2Node_DynamicCast_AsFort_Card_Pack_Item, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_CanStoreOpen_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue1, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess1, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess12)
+void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, bool ShowBang, bool Temp_bool_True_if_break_was_hit_Variable, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, int32 Temp_int_Array_Index_Variable, bool CallFunc_BooleanOR_ReturnValue, int32 Temp_int_Loop_Counter_Variable, int32 CallFunc_Add_IntInt_ReturnValue, bool CallFunc_Determine_If_Any_non_MTX_offers_are_purchasable_ShowBang, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, TArray<class UFortAccountItem*>& CallFunc_GetAccountItemsByType_Items, class UFortAccountItem* CallFunc_Array_Get_Item, int32 CallFunc_Array_Length_ReturnValue, class UFortCardPackItem* K2Node_DynamicCast_AsFort_Card_Pack_Item, bool K2Node_DynamicCast_bSuccess, bool CallFunc_Less_IntInt_ReturnValue, bool CallFunc_CanStoreOpen_ReturnValue, bool CallFunc_BooleanAND_ReturnValue, bool CallFunc_HasBeenSeenLocally_ReturnValue, bool CallFunc_Not_PreBool_ReturnValue1, bool CallFunc_BooleanAND_ReturnValue1, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess1, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess2)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Store Tab Button Bang");
 
@@ -600,7 +477,7 @@ void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab, class FNam
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
 	Parms.CallFunc_Get_Tab_From_Id_ReturnValue = CallFunc_Get_Tab_From_Id_ReturnValue;
 	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button = K2Node_DynamicCast_AsMain_Tab_Icon_Button;
-	Parms.K2Node_DynamicCast_bSuccess12 = K2Node_DynamicCast_bSuccess12;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -617,18 +494,18 @@ void UMainTabsScreen_C::Update_Store_Tab_Button_Bang(class FName Tab, class FNam
 // bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue         (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UFortInventoryContext*       CallFunc_GetContext_ReturnValue1                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue123                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12       (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue1234                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue12345                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1234     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12345    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue123456                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123456   (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue3                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue2        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue3        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue4                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue5                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue4        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue5        (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UFortInventoryContext*       CallFunc_GetContext_ReturnValue6                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue6        (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen, bool CallFunc_IsFrontendStorageEnabled_ReturnValue, bool CallFunc_IsWIFEEnabled_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue1, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1, class UFortInventoryContext* CallFunc_GetContext_ReturnValue12, class UFortInventoryContext* CallFunc_GetContext_ReturnValue123, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123, class UFortInventoryContext* CallFunc_GetContext_ReturnValue1234, class UFortInventoryContext* CallFunc_GetContext_ReturnValue12345, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1234, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12345, class UFortInventoryContext* CallFunc_GetContext_ReturnValue123456, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123456)
+void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen, bool CallFunc_IsFrontendStorageEnabled_ReturnValue, bool CallFunc_IsWIFEEnabled_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue, class UFortInventoryContext* CallFunc_GetContext_ReturnValue1, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1, class UFortInventoryContext* CallFunc_GetContext_ReturnValue2, class UFortInventoryContext* CallFunc_GetContext_ReturnValue3, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue2, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue3, class UFortInventoryContext* CallFunc_GetContext_ReturnValue4, class UFortInventoryContext* CallFunc_GetContext_ReturnValue5, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue4, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue5, class UFortInventoryContext* CallFunc_GetContext_ReturnValue6, bool CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue6)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "Are Any Inventory Items Unseen");
 
@@ -639,16 +516,16 @@ void UMainTabsScreen_C::Are_Any_Inventory_Items_Unseen(bool* Unseen, bool CallFu
 	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue;
 	Parms.CallFunc_GetContext_ReturnValue1 = CallFunc_GetContext_ReturnValue1;
 	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1;
-	Parms.CallFunc_GetContext_ReturnValue12 = CallFunc_GetContext_ReturnValue12;
-	Parms.CallFunc_GetContext_ReturnValue123 = CallFunc_GetContext_ReturnValue123;
-	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12;
-	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123;
-	Parms.CallFunc_GetContext_ReturnValue1234 = CallFunc_GetContext_ReturnValue1234;
-	Parms.CallFunc_GetContext_ReturnValue12345 = CallFunc_GetContext_ReturnValue12345;
-	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1234 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue1234;
-	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12345 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue12345;
-	Parms.CallFunc_GetContext_ReturnValue123456 = CallFunc_GetContext_ReturnValue123456;
-	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123456 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue123456;
+	Parms.CallFunc_GetContext_ReturnValue2 = CallFunc_GetContext_ReturnValue2;
+	Parms.CallFunc_GetContext_ReturnValue3 = CallFunc_GetContext_ReturnValue3;
+	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue2 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue2;
+	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue3 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue3;
+	Parms.CallFunc_GetContext_ReturnValue4 = CallFunc_GetContext_ReturnValue4;
+	Parms.CallFunc_GetContext_ReturnValue5 = CallFunc_GetContext_ReturnValue5;
+	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue4 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue4;
+	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue5 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue5;
+	Parms.CallFunc_GetContext_ReturnValue6 = CallFunc_GetContext_ReturnValue6;
+	Parms.CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue6 = CallFunc_AreAnyItemsUnseenForInventoryFilter_ReturnValue6;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -773,51 +650,6 @@ void UMainTabsScreen_C::Get_Item_from_Transform_Seen_State(class UFortAccountIte
 }
 
 
-// Function MainTabsScreen.MainTabsScreen_C.Update Armory Tab Button Bang
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class FName                        Tab                                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               InventoryUnseen                                                  (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-// class FName                        CurrentTabId                                                     (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               TransformKeyUnseen                                               (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue1                        (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue                                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Are_Any_Inventory_Items_Unseen_Unseen                   (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_Are_Any_Transform_Keys_Unseen_Unseen                    (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UHorizontalTabList_C*        K2Node_DynamicCast_AsHorizontal_Tab_List                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UCommonButton*               CallFunc_Get_Tab_From_Id_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UMainTabsScreen_C::Update_Armory_Tab_Button_Bang(class FName Tab, bool InventoryUnseen, class FName CurrentTabId, bool TransformKeyUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, bool CallFunc_Are_Any_Inventory_Items_Unseen_Unseen, bool CallFunc_Are_Any_Transform_Keys_Unseen_Unseen, bool CallFunc_BooleanOR_ReturnValue1, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess1)
-{
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Armory Tab Button Bang");
-
-	Params::UMainTabsScreen_C_Update_Armory_Tab_Button_Bang_Params Parms;
-	Parms.Tab = Tab;
-	Parms.InventoryUnseen = InventoryUnseen;
-	Parms.CurrentTabId = CurrentTabId;
-	Parms.TransformKeyUnseen = TransformKeyUnseen;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue1 = CallFunc_EqualEqual_NameName_ReturnValue1;
-	Parms.CallFunc_BooleanOR_ReturnValue = CallFunc_BooleanOR_ReturnValue;
-	Parms.CallFunc_Are_Any_Inventory_Items_Unseen_Unseen = CallFunc_Are_Any_Inventory_Items_Unseen_Unseen;
-	Parms.CallFunc_Are_Any_Transform_Keys_Unseen_Unseen = CallFunc_Are_Any_Transform_Keys_Unseen_Unseen;
-	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
-	Parms.K2Node_DynamicCast_AsHorizontal_Tab_List = K2Node_DynamicCast_AsHorizontal_Tab_List;
-	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.CallFunc_Get_Tab_From_Id_ReturnValue = CallFunc_Get_Tab_From_Id_ReturnValue;
-	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button = K2Node_DynamicCast_AsMain_Tab_Icon_Button;
-	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function MainTabsScreen.MainTabsScreen_C.Update Quest Tab Button Bang
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -914,9 +746,9 @@ void UMainTabsScreen_C::Update_Tab_Button_Bangs(class FName InTab)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               CallFunc_Get_Tab_From_Id_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, class AFortPlayerController* FortPC, bool CombatSquadUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess1, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess12)
+void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, class AFortPlayerController* FortPC, bool CombatSquadUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess1, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess2)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Hero Tab Button Bang");
 
@@ -936,7 +768,7 @@ void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab, class FName
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
 	Parms.CallFunc_Get_Tab_From_Id_ReturnValue = CallFunc_Get_Tab_From_Id_ReturnValue;
 	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button = K2Node_DynamicCast_AsMain_Tab_Icon_Button;
-	Parms.K2Node_DynamicCast_bSuccess12 = K2Node_DynamicCast_bSuccess12;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -966,12 +798,12 @@ void UMainTabsScreen_C::Update_Hero_Tab_Button_Bang(class FName Tab, class FName
 // bool                               CallFunc_BooleanOR_ReturnValue1                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UHorizontalTabList_C*        K2Node_DynamicCast_AsHorizontal_Tab_List                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
-// bool                               CallFunc_BooleanOR_ReturnValue12                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               CallFunc_BooleanOR_ReturnValue2                                  (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UCommonButton*               CallFunc_Get_Tab_From_Id_ReturnValue                             (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               K2Node_DynamicCast_bSuccess12                                    (ZeroConstructor, IsPlainOldData, NoDestructor)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, class FName EmptyTabId, bool ExpeditionSquadUnseen, class AFortPlayerController* FortPC, bool DefenderSquadUnseen, bool AttributeSquadUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, int32 CallFunc_TotalUnseenExpeditionsForTab_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanOR_ReturnValue1, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess1, bool CallFunc_BooleanOR_ReturnValue12, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess12)
+void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab, class FName CurrentTabId, class FName EmptyTabId, bool ExpeditionSquadUnseen, class AFortPlayerController* FortPC, bool DefenderSquadUnseen, bool AttributeSquadUnseen, bool CallFunc_EqualEqual_NameName_ReturnValue, bool CallFunc_EqualEqual_NameName_ReturnValue1, bool CallFunc_BooleanOR_ReturnValue, int32 CallFunc_TotalUnseenExpeditionsForTab_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue, bool CallFunc_Greater_IntInt_ReturnValue, class APlayerController* CallFunc_GetOwningPlayer_ReturnValue, bool CallFunc_AreAnyHomebaseNodeItemsUnseenForSquadType_ReturnValue1, class AFortPlayerController* K2Node_DynamicCast_AsFort_Player_Controller, bool K2Node_DynamicCast_bSuccess, bool CallFunc_BooleanOR_ReturnValue1, class UHorizontalTabList_C* K2Node_DynamicCast_AsHorizontal_Tab_List, bool K2Node_DynamicCast_bSuccess1, bool CallFunc_BooleanOR_ReturnValue2, class UCommonButton* CallFunc_Get_Tab_From_Id_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess2)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "Update Squad Tab Button Bang");
 
@@ -996,10 +828,10 @@ void UMainTabsScreen_C::Update_Squad_Tab_Button_Bang(class FName Tab, class FNam
 	Parms.CallFunc_BooleanOR_ReturnValue1 = CallFunc_BooleanOR_ReturnValue1;
 	Parms.K2Node_DynamicCast_AsHorizontal_Tab_List = K2Node_DynamicCast_AsHorizontal_Tab_List;
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
-	Parms.CallFunc_BooleanOR_ReturnValue12 = CallFunc_BooleanOR_ReturnValue12;
+	Parms.CallFunc_BooleanOR_ReturnValue2 = CallFunc_BooleanOR_ReturnValue2;
 	Parms.CallFunc_Get_Tab_From_Id_ReturnValue = CallFunc_Get_Tab_From_Id_ReturnValue;
 	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button = K2Node_DynamicCast_AsMain_Tab_Icon_Button;
-	Parms.K2Node_DynamicCast_bSuccess12 = K2Node_DynamicCast_bSuccess12;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1034,14 +866,20 @@ void UMainTabsScreen_C::HandleTabSelected(class FName TabName, class UFortFrontE
 // class UCommonButton*               TabButton                                                        (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               LocalTab                                                         (Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        LocalTabId                                                       (Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                               CallFunc_EqualEqual_NameName_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class FString                      CallFunc_BuildString_Name_ReturnValue                            (ZeroConstructor, HasGetValueTypeHash)
+// class FName                        CallFunc_Conv_StringToName_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_SwitchName_CmpSuccess                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button                        (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess                                      (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UQuestsCountIconTabButton_C* K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button1                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_DynamicCast_bSuccess1                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UMainTabIconButton_C*        K2Node_DynamicCast_AsMain_Tab_Icon_Button2                       (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess2                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
+// class UQuestsCountIconTabButton_C* K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button                (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                               K2Node_DynamicCast_bSuccess3                                     (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_TextToUpper_ReturnValue                                 ()
 
-void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton* TabButton, class UCommonButton* LocalTab, class FName LocalTabId, bool CallFunc_EqualEqual_NameName_ReturnValue, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess, class UQuestsCountIconTabButton_C* K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button, bool K2Node_DynamicCast_bSuccess1, class FText CallFunc_TextToUpper_ReturnValue)
+void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton* TabButton, class UCommonButton* LocalTab, class FName LocalTabId, const class FString& CallFunc_BuildString_Name_ReturnValue, class FName CallFunc_Conv_StringToName_ReturnValue, bool K2Node_SwitchName_CmpSuccess, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button, bool K2Node_DynamicCast_bSuccess, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button1, bool K2Node_DynamicCast_bSuccess1, class UMainTabIconButton_C* K2Node_DynamicCast_AsMain_Tab_Icon_Button2, bool K2Node_DynamicCast_bSuccess2, class UQuestsCountIconTabButton_C* K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button, bool K2Node_DynamicCast_bSuccess3, class FText CallFunc_TextToUpper_ReturnValue)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleTabCreated");
 
@@ -1050,11 +888,17 @@ void UMainTabsScreen_C::HandleTabCreated(class FName TabId, class UCommonButton*
 	Parms.TabButton = TabButton;
 	Parms.LocalTab = LocalTab;
 	Parms.LocalTabId = LocalTabId;
-	Parms.CallFunc_EqualEqual_NameName_ReturnValue = CallFunc_EqualEqual_NameName_ReturnValue;
+	Parms.CallFunc_BuildString_Name_ReturnValue = CallFunc_BuildString_Name_ReturnValue;
+	Parms.CallFunc_Conv_StringToName_ReturnValue = CallFunc_Conv_StringToName_ReturnValue;
+	Parms.K2Node_SwitchName_CmpSuccess = K2Node_SwitchName_CmpSuccess;
 	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button = K2Node_DynamicCast_AsMain_Tab_Icon_Button;
 	Parms.K2Node_DynamicCast_bSuccess = K2Node_DynamicCast_bSuccess;
-	Parms.K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button = K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button;
+	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button1 = K2Node_DynamicCast_AsMain_Tab_Icon_Button1;
 	Parms.K2Node_DynamicCast_bSuccess1 = K2Node_DynamicCast_bSuccess1;
+	Parms.K2Node_DynamicCast_AsMain_Tab_Icon_Button2 = K2Node_DynamicCast_AsMain_Tab_Icon_Button2;
+	Parms.K2Node_DynamicCast_bSuccess2 = K2Node_DynamicCast_bSuccess2;
+	Parms.K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button = K2Node_DynamicCast_AsQuests_Count_Icon_Tab_Button;
+	Parms.K2Node_DynamicCast_bSuccess3 = K2Node_DynamicCast_bSuccess3;
 	Parms.CallFunc_TextToUpper_ReturnValue = CallFunc_TextToUpper_ReturnValue;
 
 	UObject::ProcessEvent(Func, &Parms);
@@ -1096,21 +940,6 @@ void UMainTabsScreen_C::CustomEvent(class FName TabId, class UCommonButton* TabB
 }
 
 
-// Function MainTabsScreen.MainTabsScreen_C.Construct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-
-void UMainTabsScreen_C::Construct()
-{
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "Construct");
-
-	Params::UMainTabsScreen_C_Construct_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function MainTabsScreen.MainTabsScreen_C.OnHomebaseInventoryUpdated
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -1126,21 +955,6 @@ void UMainTabsScreen_C::OnHomebaseInventoryUpdated()
 }
 
 
-// Function MainTabsScreen.MainTabsScreen_C.HandleRefreshSkillTreeNodePage
-// (Event, Protected, BlueprintEvent)
-// Parameters:
-
-void UMainTabsScreen_C::HandleRefreshSkillTreeNodePage()
-{
-	static auto Func = Class->GetFunction("MainTabsScreen_C", "HandleRefreshSkillTreeNodePage");
-
-	Params::UMainTabsScreen_C_HandleRefreshSkillTreeNodePage_Params Parms;
-
-	UObject::ProcessEvent(Func, &Parms);
-
-}
-
-
 // Function MainTabsScreen.MainTabsScreen_C.Destruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -1150,6 +964,21 @@ void UMainTabsScreen_C::Destruct()
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "Destruct");
 
 	Params::UMainTabsScreen_C_Destruct_Params Parms;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
+// Function MainTabsScreen.MainTabsScreen_C.Construct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+
+void UMainTabsScreen_C::Construct()
+{
+	static auto Func = Class->GetFunction("MainTabsScreen_C", "Construct");
+
+	Params::UMainTabsScreen_C_Construct_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -1224,8 +1053,27 @@ void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommo
 }
 
 
+// Function MainTabsScreen.MainTabsScreen_C.Tick
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// struct FGeometry                   MyGeometry                                                       (BlueprintVisible, BlueprintReadOnly, Parm, IsPlainOldData, NoDestructor)
+// float                              InDeltaTime                                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UMainTabsScreen_C::Tick(const struct FGeometry& MyGeometry, float InDeltaTime)
+{
+	static auto Func = Class->GetFunction("MainTabsScreen_C", "Tick");
+
+	Params::UMainTabsScreen_C_Tick_Params Parms;
+	Parms.MyGeometry = MyGeometry;
+	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+
+}
+
+
 // Function MainTabsScreen.MainTabsScreen_C.ExecuteUbergraph_MainTabsScreen
-// ()
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_ComponentBoundEvent_TabId                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1237,15 +1085,17 @@ void UMainTabsScreen_C::HandleMainTabCreated(class FName TabNameID, class UCommo
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate1                            (ZeroConstructor, NoDestructor)
 // class UFortQuestManager*           CallFunc_GetQuestManager_ReturnValue                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UFortQuestItem*              K2Node_CustomEvent_Quest                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue12                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UFortGlobalUIContext*        CallFunc_GetContext_ReturnValue2                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsMobileApp_ReturnValue                                 (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UHomeBaseContext*            CallFunc_GetContext_ReturnValue123                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate12                           (ZeroConstructor, NoDestructor)
-// class FName                        K2Node_Event_TabNameId1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UHomeBaseContext*            CallFunc_GetContext_ReturnValue3                                 (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate2                            (ZeroConstructor, NoDestructor)
+// class FName                        K2Node_Event_TabNameID1                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class FName                        K2Node_Event_TabNameID                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_Event_TabButton                                           (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// struct FGeometry                   K2Node_Event_MyGeometry                                          (IsPlainOldData, NoDestructor)
+// float                              K2Node_Event_InDeltaTime                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint, class FName K2Node_ComponentBoundEvent_TabId, class UCommonButton* K2Node_ComponentBoundEvent_TabButton, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_RemoveTab_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, class UFortQuestItem* K2Node_CustomEvent_Quest, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue12, bool CallFunc_IsMobileApp_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue123, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate12, class FName K2Node_Event_TabNameId1, class FName K2Node_Event_TabNameID, class UCommonButton* K2Node_Event_TabButton)
+void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint, class FName K2Node_ComponentBoundEvent_TabId, class UCommonButton* K2Node_ComponentBoundEvent_TabButton, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool CallFunc_RemoveTab_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue1, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate1, class UFortQuestManager* CallFunc_GetQuestManager_ReturnValue, class UFortQuestItem* K2Node_CustomEvent_Quest, class UFortGlobalUIContext* CallFunc_GetContext_ReturnValue2, bool CallFunc_IsMobileApp_ReturnValue, class UHomeBaseContext* CallFunc_GetContext_ReturnValue3, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate2, class FName K2Node_Event_TabNameID1, class FName K2Node_Event_TabNameID, class UCommonButton* K2Node_Event_TabButton, const struct FGeometry& K2Node_Event_MyGeometry, float K2Node_Event_InDeltaTime)
 {
 	static auto Func = Class->GetFunction("MainTabsScreen_C", "ExecuteUbergraph_MainTabsScreen");
 
@@ -1260,13 +1110,15 @@ void UMainTabsScreen_C::ExecuteUbergraph_MainTabsScreen(int32 EntryPoint, class 
 	Parms.K2Node_CreateDelegate_OutputDelegate1 = K2Node_CreateDelegate_OutputDelegate1;
 	Parms.CallFunc_GetQuestManager_ReturnValue = CallFunc_GetQuestManager_ReturnValue;
 	Parms.K2Node_CustomEvent_Quest = K2Node_CustomEvent_Quest;
-	Parms.CallFunc_GetContext_ReturnValue12 = CallFunc_GetContext_ReturnValue12;
+	Parms.CallFunc_GetContext_ReturnValue2 = CallFunc_GetContext_ReturnValue2;
 	Parms.CallFunc_IsMobileApp_ReturnValue = CallFunc_IsMobileApp_ReturnValue;
-	Parms.CallFunc_GetContext_ReturnValue123 = CallFunc_GetContext_ReturnValue123;
-	Parms.K2Node_CreateDelegate_OutputDelegate12 = K2Node_CreateDelegate_OutputDelegate12;
-	Parms.K2Node_Event_TabNameId1 = K2Node_Event_TabNameId1;
+	Parms.CallFunc_GetContext_ReturnValue3 = CallFunc_GetContext_ReturnValue3;
+	Parms.K2Node_CreateDelegate_OutputDelegate2 = K2Node_CreateDelegate_OutputDelegate2;
+	Parms.K2Node_Event_TabNameID1 = K2Node_Event_TabNameID1;
 	Parms.K2Node_Event_TabNameID = K2Node_Event_TabNameID;
 	Parms.K2Node_Event_TabButton = K2Node_Event_TabButton;
+	Parms.K2Node_Event_MyGeometry = K2Node_Event_MyGeometry;
+	Parms.K2Node_Event_InDeltaTime = K2Node_Event_InDeltaTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 

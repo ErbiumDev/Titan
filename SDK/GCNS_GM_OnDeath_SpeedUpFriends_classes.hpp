@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCNS_GM_OnDeath_SpeedUpFriends.GCNS_GM_OnDeath_SpeedUpFriends_C
 class UGCNS_GM_OnDeath_SpeedUpFriends_C : public UFortGameplayCueNotify_Simple
 {

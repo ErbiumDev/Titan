@@ -19,7 +19,10 @@ enum class EExternalAccountType : uint8
 	Google                         = 2,
 	Epic_PSN                       = 3,
 	Epic_XBL                       = 4,
-	EExternalAccountType_MAX       = 5,
+	Epic_Erebus                    = 5,
+	Epic_Facebook                  = 6,
+	Epic_Google                    = 7,
+	EExternalAccountType_MAX       = 8,
 };
 
 enum class ECreateAccountResult : uint8
@@ -63,15 +66,17 @@ enum class ELoginResult : uint8
 	GenericError                   = 24,
 	RejoinCheckFailure             = 25,
 	ConnectionFailed               = 26,
-	ExternalAuth_AddedAuthAssociation = 27,
-	ExternalAuth_ConnectionTimeout = 28,
-	ExternalAuth_AuthFailure       = 29,
-	ExternalAuth_AssociationFailure = 30,
-	ExternalAuth_MissingAuthAssociation = 31,
-	FailedToCreateParty            = 32,
-	ProfileQueryFailed             = 33,
-	ClientSettingsDownloadFailed   = 34,
-	ELoginResult_MAX               = 35,
+	NetworkConnectionUnavailable   = 27,
+	ExternalAuth_AddedAuthAssociation = 28,
+	ExternalAuth_ConnectionTimeout = 29,
+	ExternalAuth_AuthFailure       = 30,
+	ExternalAuth_AssociationFailure = 31,
+	ExternalAuth_MissingAuthAssociation = 32,
+	FailedToCreateParty            = 33,
+	ProfileQueryFailed             = 34,
+	QueryKeychainFailed            = 35,
+	ClientSettingsDownloadFailed   = 36,
+	ELoginResult_MAX               = 37,
 };
 
 enum class EConsoleAuthLinkState : uint8
@@ -82,7 +87,9 @@ enum class EConsoleAuthLinkState : uint8
 	ThisEpicAccountLinked          = 3,
 	OtherEpicAccountLinked         = 4,
 	NoEpicAccountLinked            = 5,
-	EConsoleAuthLinkState_MAX      = 6,
+	PrimaryIdNotLinked             = 6,
+	SecondaryIdNotLinked           = 7,
+	EConsoleAuthLinkState_MAX      = 8,
 };
 
 
@@ -90,14 +97,14 @@ enum class EConsoleAuthLinkState : uint8
 // STRUCTS
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x10 (0x10 - 0x0)
+// 0xC (0xC - 0x0)
 // ScriptStruct Account.ExternalAccountServiceConfig
 struct FExternalAccountServiceConfig
 {
 public:
 	enum class EExternalAccountType              Type;                                              // 0x0(0x1)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_241F[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FName                                  ExternalServiceName;                               // 0x8(0x8)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_1053[0x3];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FName                                  ExternalServiceName;                               // 0x4(0x8)(ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 
 // 0x30 (0x30 - 0x0)
@@ -117,7 +124,7 @@ struct FGiftMessage
 public:
 	class FString                                GiftCode;                                          // 0x0(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                SenderName;                                        // 0x10(0x10)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_2420[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_1054[0x10];                                    // Fixing Size Of Struct [ Dumper-7 ]
 };
 
 // 0x40 (0x40 - 0x0)
@@ -151,7 +158,7 @@ public:
 	class FText                                  UnexpectedError;                                   // 0x120(0x18)(Edit, NativeAccessSpecifierPublic)
 };
 
-// 0x930 (0x930 - 0x0)
+// 0x978 (0x978 - 0x0)
 // ScriptStruct Account.OnlineAccountTexts
 struct FOnlineAccountTexts
 {
@@ -182,66 +189,69 @@ public:
 	class FText                                  FailedLoginNoRealId;                               // 0x228(0x18)(Edit, NativeAccessSpecifierPublic)
 	class FText                                  FailedLoginLockoutMsg;                             // 0x240(0x18)(Edit, NativeAccessSpecifierPublic)
 	class FText                                  FailedLoginRequiresMFA;                            // 0x258(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedInvalidMFA;                                  // 0x270(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedLoginMsg;                                    // 0x288(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedLoginMsg_InvalidRefreshToken;                // 0x2A0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedLoginTencent_UnableToSignIn;                 // 0x2B8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedLoginTencent_NotSignedInToWeGame;            // 0x2D0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedLoginTencent_FailedToInitializeWeGame;       // 0x2E8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedLoginTencent_WeGameSystemOffline;            // 0x300(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FailedStartLogin;                                  // 0x318(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FounderChatExitedText;                             // 0x330(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  FounderChatJoinedText;                             // 0x348(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  GameDisplayName;                                   // 0x360(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  GeneralLoginFailure;                               // 0x378(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  GlobalChatExitedText;                              // 0x390(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  GlobalChatJoinedText;                              // 0x3A8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  HeadlessAccountFailed;                             // 0x3C0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  InMatchShutdownTimeWarningText;                    // 0x3D8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  InvalidUser;                                       // 0x3F0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoggedOutofMCP;                                    // 0x408(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  DisconnectedFromMCP;                               // 0x420(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoggedOutReturnedToTitle;                          // 0x438(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoggedOutSwitchedProfile;                          // 0x450(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoggingIn;                                         // 0x468(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoggingInConsoleAuth;                              // 0x480(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoggingOut;                                        // 0x498(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoginConsole;                                      // 0x4B0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoginFailure;                                      // 0x4C8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  Logout_Unlink;                                     // 0x4E0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LogoutCompleted;                                   // 0x4F8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LostConnection;                                    // 0x510(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  MCPTimeout;                                        // 0x528(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LightswitchCheckNetworkFailureMsg;                 // 0x540(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  NoPlayEntitlement;                                 // 0x558(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  NoServerAccess;                                    // 0x570(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  PlayAccessRevoked;                                 // 0x588(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  PremiumAccountName_Default;                        // 0x5A0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  PremiumAccountName_PS4;                            // 0x5B8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  PremiumAccountName_Switch;                         // 0x5D0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  PremiumAccountName_XboxOne;                        // 0x5E8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  RedeemOfflinePurchases;                            // 0x600(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  ServiceDowntime;                                   // 0x618(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  SignInCompleting;                                  // 0x630(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  SignIntoConsoleServices;                           // 0x648(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  TokenExpired;                                      // 0x660(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  UnableToConnect;                                   // 0x678(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  UnableToJoinWaitingRoomLoginQueue;                 // 0x690(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  UnexpectedConsoleAuthFailure;                      // 0x6A8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  UnlinkConsoleFailed;                               // 0x6C0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  UserLoginFailed;                                   // 0x6D8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  WaitingRoom;                                       // 0x6F0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  WaitingRoomError;                                  // 0x708(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  WaitingRoomFailure;                                // 0x720(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  WaitingRoomWaiting;                                // 0x738(0x18)(Edit, NativeAccessSpecifierPublic)
-	struct FOnlineAccountTexts_FailedLoginConsole FailedLoginConsole;                                // 0x750(0x138)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  LoggingInExternalAuth;                             // 0x888(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  CreateDeviceAuth;                                  // 0x8A0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  ExtAuthCanceled;                                   // 0x8B8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  ExtAuthFailure;                                    // 0x8D0(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  ExtAuthAssociationFailure;                         // 0x8E8(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  ExtAuthTimeout;                                    // 0x900(0x18)(Edit, NativeAccessSpecifierPublic)
-	class FText                                  ExtAuthMissingAuthAssociation;                     // 0x918(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedLoginRequiresAuthAppMFA;                     // 0x270(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedInvalidMFA;                                  // 0x288(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedLoginMsg;                                    // 0x2A0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedLoginMsg_InvalidRefreshToken;                // 0x2B8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedLoginTencent_UnableToSignIn;                 // 0x2D0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedLoginTencent_NotSignedInToWeGame;            // 0x2E8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedLoginTencent_FailedToInitializeWeGame;       // 0x300(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedLoginTencent_WeGameSystemOffline;            // 0x318(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FailedStartLogin;                                  // 0x330(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FounderChatExitedText;                             // 0x348(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  FounderChatJoinedText;                             // 0x360(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  GameDisplayName;                                   // 0x378(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  GeneralLoginFailure;                               // 0x390(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  GlobalChatExitedText;                              // 0x3A8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  GlobalChatJoinedText;                              // 0x3C0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  HeadlessAccountFailed;                             // 0x3D8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  InMatchShutdownTimeWarningText;                    // 0x3F0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  InvalidUser;                                       // 0x408(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoggedOutofMCP;                                    // 0x420(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  DisconnectedFromMCP;                               // 0x438(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoggedOutReturnedToTitle;                          // 0x450(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoggedOutSwitchedProfile;                          // 0x468(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoggingIn;                                         // 0x480(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoggingInConsoleAuth;                              // 0x498(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoggingOut;                                        // 0x4B0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoginConsole;                                      // 0x4C8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoginFailure;                                      // 0x4E0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  Logout_Unlink;                                     // 0x4F8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LogoutCompleted;                                   // 0x510(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LostConnection;                                    // 0x528(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  MCPTimeout;                                        // 0x540(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LightswitchCheckNetworkFailureMsg;                 // 0x558(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  NetworkConnectionUnavailable;                      // 0x570(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  NoPlayEntitlement;                                 // 0x588(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  NoServerAccess;                                    // 0x5A0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  PlayAccessRevoked;                                 // 0x5B8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  PremiumAccountName_Default;                        // 0x5D0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  PremiumAccountName_PS4;                            // 0x5E8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  PremiumAccountName_Switch;                         // 0x600(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  PremiumAccountName_XboxOne;                        // 0x618(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  RedeemOfflinePurchases;                            // 0x630(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  ServiceDowntime;                                   // 0x648(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  SignInCompleting;                                  // 0x660(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  SignIntoConsoleServices;                           // 0x678(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  TokenExpired;                                      // 0x690(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  UnableToConnect;                                   // 0x6A8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  UnableToJoinWaitingRoomLoginQueue;                 // 0x6C0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  UnexpectedConsoleAuthFailure;                      // 0x6D8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  UnlinkConsoleFailed;                               // 0x6F0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  UserLoginFailed;                                   // 0x708(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  WaitingRoom;                                       // 0x720(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  WaitingRoomError;                                  // 0x738(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  WaitingRoomFailure;                                // 0x750(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  WaitingRoomWaiting;                                // 0x768(0x18)(Edit, NativeAccessSpecifierPublic)
+	struct FOnlineAccountTexts_FailedLoginConsole FailedLoginConsole;                                // 0x780(0x138)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  LoggingInExternalAuth;                             // 0x8B8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  CreateDeviceAuth;                                  // 0x8D0(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  ExtAuthCanceled;                                   // 0x8E8(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  ExtAuthFailure;                                    // 0x900(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  ExtAuthAssociationFailure;                         // 0x918(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  ExtAuthTimeout;                                    // 0x930(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  ExtAuthMissingAuthAssociation;                     // 0x948(0x18)(Edit, NativeAccessSpecifierPublic)
+	class FText                                  UnableToQueryReceipts;                             // 0x960(0x18)(Edit, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 
 }

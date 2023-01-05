@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x128 - 0x128)
+// 0x0 (0xC50 - 0xC50)
 // BlueprintGeneratedClass Athena_PlayerCameraModeTargetingScope.Athena_PlayerCameraModeTargetingScope_C
 class UAthena_PlayerCameraModeTargetingScope_C : public UAthena_PlayerCameraModeSniper_C
 {

@@ -122,7 +122,7 @@ void UGamepadKeyButton_C::BndEvt__InputActionWidget_K2Node_ComponentBoundEvent_2
 
 
 // Function GamepadKeyButton.GamepadKeyButton_C.ExecuteUbergraph_GamepadKeyButton
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // struct FFortTabButtonLabelInfo     K2Node_Event_TabLabelInfo                                        (ConstParm)

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xB0 - 0xB0)
+// 0x0 (0x80 - 0x80)
 // BlueprintGeneratedClass GCNS_GM_KnockbackAOE.GCNS_GM_KnockbackAOE_C
 class UGCNS_GM_KnockbackAOE_C : public UFortGameplayCueNotify_Simple
 {

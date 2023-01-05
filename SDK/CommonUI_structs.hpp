@@ -21,15 +21,6 @@ enum class ECommonNumericType : uint8
 	ECommonNumericType_MAX         = 4,
 };
 
-enum class EDynamicBoxType : uint8
-{
-	Horizontal                     = 0,
-	Vertical                       = 1,
-	Wrap                           = 2,
-	Overlay                        = 3,
-	EDynamicBoxType_MAX            = 4,
-};
-
 enum class EOperation : uint8
 {
 	Intro                          = 0,
@@ -40,18 +31,6 @@ enum class EOperation : uint8
 	EOperation_MAX                 = 5,
 };
 
-enum class EItemAlignment : uint8
-{
-	EvenlyDistributed              = 0,
-	EvenlySize                     = 1,
-	EvenlyWide                     = 2,
-	LeftAligned                    = 3,
-	RightAligned                   = 4,
-	CenterAligned                  = 5,
-	Fill                           = 6,
-	EItemAlignment_MAX             = 7,
-};
-
 enum class ECommonPlatformType : uint8
 {
 	PC                             = 0,
@@ -60,8 +39,9 @@ enum class ECommonPlatformType : uint8
 	XBox                           = 3,
 	IOS                            = 4,
 	Android                        = 5,
-	Count                          = 6,
-	ECommonPlatformType_MAX        = 7,
+	Erebus                         = 6,
+	Count                          = 7,
+	ECommonPlatformType_MAX        = 8,
 };
 
 enum class EInputActionState : uint8
@@ -106,7 +86,7 @@ struct FCommonNumberFormattingOptions
 public:
 	enum class ERoundingMode                     RoundingMode;                                      // 0x0(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         UseGrouping;                                       // 0x1(0x1)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ECF[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EC3[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	int32                                        MinimumIntegralDigits;                             // 0x4(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MaximumIntegralDigits;                             // 0x8(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                        MinimumFractionalDigits;                           // 0xC(0x4)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -119,7 +99,7 @@ struct FCommonRegisteredTabInfo
 {
 public:
 	int32                                        TabIndex;                                          // 0x0(0x4)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ED0[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EC4[0x4];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonButton*                         TabButton;                                         // 0x8(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UWidget*                               ContentInstance;                                   // 0x10(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -131,7 +111,17 @@ struct FCommonInputActionHandlerData
 public:
 	struct FDataTableRowHandle                   InputActionRow;                                    // 0x0(0x10)(Edit, BlueprintVisible, BlueprintReadOnly, NoDestructor, NativeAccessSpecifierPublic)
 	enum class EInputActionState                 State;                                             // 0x10(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                        Pad_ED1[0xF];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EC5[0xF];                                      // Fixing Size Of Struct [ Dumper-7 ]
+};
+
+// 0x20 (0x20 - 0x0)
+// ScriptStruct CommonUI.CommonButtonStyleOptionalSlateSound
+struct FCommonButtonStyleOptionalSlateSound
+{
+public:
+	bool                                         bHasSound;                                         // 0x0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_EC6[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSlateSound                           Sound;                                             // 0x8(0x18)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
 
 // 0x18 (0x18 - 0x0)
@@ -140,32 +130,48 @@ struct FOperation
 {
 public:
 	enum class EOperation                        Operation;                                         // 0x0(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ED2[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_EC7[0x7];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	class UCommonActivatablePanel*               Panel;                                             // 0x8(0x8)(ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bIntroPanel;                                       // 0x10(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bActivatePanel;                                    // 0x11(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bOutroPanelBelow;                                  // 0x12(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ED3[0x5];                                      // Fixing Size Of Struct [ Dumper-7 ]
+	uint8                                        Pad_EC8[0x5];                                      // Fixing Size Of Struct [ Dumper-7 ]
 };
 
-// 0x2A8 (0x2A8 - 0x0)
+// 0x70 (0x70 - 0x0)
+// ScriptStruct CommonUI.SoftSlateBrush
+struct FSoftSlateBrush
+{
+public:
+	struct FVector2D                             ImageSize;                                         // 0x0(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FMargin                               Margin;                                            // 0x8(0x10)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
+	struct FSlateColor                           TintColor;                                         // 0x18(0x28)(Edit, BlueprintVisible, NativeAccessSpecifierPublic)
+	TSoftObjectPtr<class UObject>                ResourceObject;                                    // 0x40(0x28)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class ESlateBrushDrawType               DrawAs;                                            // 0x68(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class ESlateBrushTileType               Tiling;                                            // 0x69(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class ESlateBrushMirrorType             Mirroring;                                         // 0x6A(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	enum class ESlateBrushImageType              ImageType;                                         // 0x6B(0x1)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                        Pad_EC9[0x4];                                      // Fixing Size Of Struct [ Dumper-7 ]
+};
+
+// 0x2A0 (0x2A0 - 0x0)
 // ScriptStruct CommonUI.CommonInputKeyDisplayData
 struct FCommonInputKeyDisplayData
 {
 public:
-	struct FSlateBrush                           KeyboardSpecificBrush;                             // 0x0(0x88)(Edit, NativeAccessSpecifierPublic)
-	struct FSlateBrush                           GamepadSpecificBrushes;                            // 0x88(0x88)(Edit, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ED4[0x110];                                    // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FSlateBrush                           TouchSpecificBrush;                                // 0x220(0x88)(Edit, NativeAccessSpecifierPublic)
+	struct FSoftSlateBrush                       KeyboardBrush;                                     // 0x0(0x70)(Edit, NativeAccessSpecifierPublic)
+	struct FSoftSlateBrush                       GamepadBrushes;                                    // 0x70(0x70)(Edit, NativeAccessSpecifierPublic)
+	uint8                                        Pad_ECA[0x150];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FSoftSlateBrush                       TouchBrush;                                        // 0x230(0x70)(Edit, NativeAccessSpecifierPublic)
 };
 
-// 0x2C0 (0x2C0 - 0x0)
+// 0x2B8 (0x2B8 - 0x0)
 // ScriptStruct CommonUI.CommonInputKeyDisplayConfiguration
 struct FCommonInputKeyDisplayConfiguration
 {
 public:
 	struct FKey                                  Key;                                               // 0x0(0x18)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FCommonInputKeyDisplayData            Value;                                             // 0x18(0x2A8)(Edit, NativeAccessSpecifierPublic)
+	struct FCommonInputKeyDisplayData            Value;                                             // 0x18(0x2A0)(Edit, NativeAccessSpecifierPublic)
 };
 
 // 0xA8 (0xA8 - 0x0)
@@ -176,12 +182,12 @@ public:
 	struct FKey                                  Key;                                               // 0x0(0x18)(Edit, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	enum class EInputActionState                 OverrrideState;                                    // 0x18(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                         bActionRequiresHold;                               // 0x19(0x1)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                        Pad_ED5[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
+	uint8                                        Pad_ECB[0x2];                                      // Fixing Size After Last Property  [ Dumper-7 ]
 	float                                        HoldTime;                                          // 0x1C(0x4)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSlateBrush                           OverrideBrush;                                     // 0x20(0x88)(Edit, NativeAccessSpecifierPublic)
 };
 
-// 0x378 (0x380 - 0x8)
+// 0x420 (0x428 - 0x8)
 // ScriptStruct CommonUI.CommonInputActionData
 struct FCommonInputActionData : public FTableRowBase
 {
@@ -190,8 +196,8 @@ public:
 	class FText                                  HoldDisplayName;                                   // 0x20(0x18)(Edit, BlueprintVisible, BlueprintReadOnly, NativeAccessSpecifierPublic)
 	struct FCommonInputTypeInfo                  KeyboardInputTypeInfo;                             // 0x38(0xA8)(Edit, Protected, NativeAccessSpecifierProtected)
 	struct FCommonInputTypeInfo                  GamepadInputTypeInfos;                             // 0xE0(0xA8)(Edit, Protected, NativeAccessSpecifierProtected)
-	uint8                                        Pad_ED6[0x150];                                    // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FCommonInputTypeInfo                  TouchInputTypeInfo;                                // 0x2D8(0xA8)(Edit, Protected, NativeAccessSpecifierProtected)
+	uint8                                        Pad_ECC[0x1F8];                                    // Fixing Size After Last Property  [ Dumper-7 ]
+	struct FCommonInputTypeInfo                  TouchInputTypeInfo;                                // 0x380(0xA8)(Edit, Protected, NativeAccessSpecifierProtected)
 };
 
 }

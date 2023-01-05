@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xEA0 - 0xEA0)
+// 0x0 (0xD90 - 0xD90)
 // BlueprintGeneratedClass PBWA_S1_QuarterWallS.PBWA_S1_QuarterWallS_C
 class APBWA_S1_QuarterWallS_C : public ABuildingWall
 {

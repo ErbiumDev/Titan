@@ -101,7 +101,7 @@ void UInputReflector_C::OnButtonAdded(class UCommonButton* AddedButton, struct F
 
 
 // Function InputReflector.InputReflector_C.ExecuteUbergraph_InputReflector
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UCommonButton*               K2Node_Event_AddedButton                                         (ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

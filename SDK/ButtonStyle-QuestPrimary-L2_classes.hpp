@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle-QuestPrimary-L2.ButtonStyle-QuestPrimary-L2_C
 class UButtonStyle_QuestPrimary_L2_C : public UCommonButtonStyle
 {

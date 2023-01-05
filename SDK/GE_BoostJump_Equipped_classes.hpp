@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x670 - 0x670)
+// 0x0 (0x5F0 - 0x5F0)
 // BlueprintGeneratedClass GE_BoostJump_Equipped.GE_BoostJump_Equipped_C
 class UGE_BoostJump_Equipped_C : public UGameplayEffect
 {

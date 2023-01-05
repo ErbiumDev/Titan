@@ -17,7 +17,7 @@ namespace SDK
 class UUseableWeaponsObject_C : public UObject
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x28(0x8)(Transient, DuplicateTransient)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x28(0x8)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<TSoftClassPtr<class AStoreWeaponMaster_BP_C>> UseableWeaponsArray;                               // 0x30(0x10)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance)
 
 	static class UClass* StaticClass()

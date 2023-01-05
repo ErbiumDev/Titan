@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xA48 - 0xA48)
+// 0x0 (0x1189 - 0x1189)
 // AnimBlueprintGeneratedClass F_MED_HIS_Ramirez_Head_01_AnimBP_Child.F_MED_HIS_Ramirez_Head_01_AnimBP_Child_C
 class UF_MED_HIS_Ramirez_Head_01_AnimBP_Child_C : public UFortnite_Base_Head_Export_Skeleton_AnimBP_C
 {

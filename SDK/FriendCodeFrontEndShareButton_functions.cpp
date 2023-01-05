@@ -15,15 +15,15 @@ namespace SDK
 //---------------------------------------------------------------------------------------------------------------------
 
 
-// Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.OnClicked
+// Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.BP_OnClicked
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UFriendCodeFrontEndShareButton_C::OnClicked()
+void UFriendCodeFrontEndShareButton_C::BP_OnClicked()
 {
-	static auto Func = Class->GetFunction("FriendCodeFrontEndShareButton_C", "OnClicked");
+	static auto Func = Class->GetFunction("FriendCodeFrontEndShareButton_C", "BP_OnClicked");
 
-	Params::UFriendCodeFrontEndShareButton_C_OnClicked_Params Parms;
+	Params::UFriendCodeFrontEndShareButton_C_BP_OnClicked_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -46,7 +46,7 @@ void UFriendCodeFrontEndShareButton_C::Construct()
 
 
 // Function FriendCodeFrontEndShareButton.FriendCodeFrontEndShareButton_C.ExecuteUbergraph_FriendCodeFrontEndShareButton
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

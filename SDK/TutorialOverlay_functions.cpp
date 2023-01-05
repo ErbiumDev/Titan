@@ -31,7 +31,7 @@ void UTutorialOverlay_C::Construct()
 
 
 // Function TutorialOverlay.TutorialOverlay_C.ExecuteUbergraph_TutorialOverlay
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

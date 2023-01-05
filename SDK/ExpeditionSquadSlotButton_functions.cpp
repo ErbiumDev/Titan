@@ -103,15 +103,15 @@ void UExpeditionSquadSlotButton_C::HandlePostDifferentSquadSlotSetBP()
 }
 
 
-// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.OnSelected
+// Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.BP_OnSelected
 // (Event, Protected, BlueprintEvent)
 // Parameters:
 
-void UExpeditionSquadSlotButton_C::OnSelected()
+void UExpeditionSquadSlotButton_C::BP_OnSelected()
 {
-	static auto Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "OnSelected");
+	static auto Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "BP_OnSelected");
 
-	Params::UExpeditionSquadSlotButton_C_OnSelected_Params Parms;
+	Params::UExpeditionSquadSlotButton_C_BP_OnSelected_Params Parms;
 
 	UObject::ProcessEvent(Func, &Parms);
 
@@ -183,22 +183,22 @@ void UExpeditionSquadSlotButton_C::Open_Squad_Slot(int32 SquadSlotIndex)
 
 
 // Function ExpeditionSquadSlotButton.ExpeditionSquadSlotButton_C.ExecuteUbergraph_ExpeditionSquadSlotButton
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class EFortItemCardSize       Temp_byte_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      Temp_class_Variable                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      Temp_class_Variable1                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      Temp_class_Variable12                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      Temp_class_Variable123                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      Temp_class_Variable1234                                          (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      Temp_class_Variable12345                                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      Temp_class_Variable123456                                        (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable4                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable5                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable6                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // UDelegateProperty_                 K2Node_CreateDelegate_OutputDelegate                             (ZeroConstructor, NoDestructor)
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
 // enum class ESlateVisibility        Temp_byte_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// enum class ESlateVisibility        Temp_byte_Variable12                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UCommonInputContext*         CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// enum class ESlateVisibility        Temp_byte_Variable2                                              (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UCommonInputSubsystem*       CallFunc_GetContext_ReturnValue                                  (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // enum class ECommonInputType        CallFunc_GetCurrentInputType_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_IsDesignTime                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
 // bool                               CallFunc_EqualEqual_ByteByte_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -212,7 +212,7 @@ void UExpeditionSquadSlotButton_C::Open_Squad_Slot(int32 SquadSlotIndex)
 // int32                              K2Node_CustomEvent_SquadSlotIndex                                (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               CallFunc_IsSquadSlotLockedBP_ReturnValue                         (ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UExpeditionSquadSlotButton_C::ExecuteUbergraph_ExpeditionSquadSlotButton(int32 EntryPoint, enum class EFortItemCardSize Temp_byte_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UClass* Temp_class_Variable12, class UClass* Temp_class_Variable123, class UClass* Temp_class_Variable1234, class UClass* Temp_class_Variable12345, class UClass* Temp_class_Variable123456, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable12, class UCommonInputContext* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool K2Node_Event_IsDesignTime, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue1, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue1, bool K2Node_ComponentBoundEvent_bIsOpen, class UClass* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, int32 K2Node_CustomEvent_SquadSlotIndex, bool CallFunc_IsSquadSlotLockedBP_ReturnValue)
+void UExpeditionSquadSlotButton_C::ExecuteUbergraph_ExpeditionSquadSlotButton(int32 EntryPoint, enum class EFortItemCardSize Temp_byte_Variable, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UClass* Temp_class_Variable2, class UClass* Temp_class_Variable3, class UClass* Temp_class_Variable4, class UClass* Temp_class_Variable5, class UClass* Temp_class_Variable6, UDelegateProperty_ K2Node_CreateDelegate_OutputDelegate, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility Temp_byte_Variable2, class UCommonInputSubsystem* CallFunc_GetContext_ReturnValue, enum class ECommonInputType CallFunc_GetCurrentInputType_ReturnValue, bool K2Node_Event_IsDesignTime, bool CallFunc_EqualEqual_ByteByte_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue, class ULocalPlayer* CallFunc_GetOwningLocalPlayer_ReturnValue1, class UFortItem* CallFunc_GetItemInSquadSlotBP_ReturnValue1, bool K2Node_ComponentBoundEvent_bIsOpen, class UClass* K2Node_Select_Default, enum class ESlateVisibility K2Node_Select1_Default, int32 K2Node_CustomEvent_SquadSlotIndex, bool CallFunc_IsSquadSlotLockedBP_ReturnValue)
 {
 	static auto Func = Class->GetFunction("ExpeditionSquadSlotButton_C", "ExecuteUbergraph_ExpeditionSquadSlotButton");
 
@@ -221,15 +221,15 @@ void UExpeditionSquadSlotButton_C::ExecuteUbergraph_ExpeditionSquadSlotButton(in
 	Parms.Temp_byte_Variable = Temp_byte_Variable;
 	Parms.Temp_class_Variable = Temp_class_Variable;
 	Parms.Temp_class_Variable1 = Temp_class_Variable1;
-	Parms.Temp_class_Variable12 = Temp_class_Variable12;
-	Parms.Temp_class_Variable123 = Temp_class_Variable123;
-	Parms.Temp_class_Variable1234 = Temp_class_Variable1234;
-	Parms.Temp_class_Variable12345 = Temp_class_Variable12345;
-	Parms.Temp_class_Variable123456 = Temp_class_Variable123456;
+	Parms.Temp_class_Variable2 = Temp_class_Variable2;
+	Parms.Temp_class_Variable3 = Temp_class_Variable3;
+	Parms.Temp_class_Variable4 = Temp_class_Variable4;
+	Parms.Temp_class_Variable5 = Temp_class_Variable5;
+	Parms.Temp_class_Variable6 = Temp_class_Variable6;
 	Parms.K2Node_CreateDelegate_OutputDelegate = K2Node_CreateDelegate_OutputDelegate;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
 	Parms.Temp_byte_Variable1 = Temp_byte_Variable1;
-	Parms.Temp_byte_Variable12 = Temp_byte_Variable12;
+	Parms.Temp_byte_Variable2 = Temp_byte_Variable2;
 	Parms.CallFunc_GetContext_ReturnValue = CallFunc_GetContext_ReturnValue;
 	Parms.CallFunc_GetCurrentInputType_ReturnValue = CallFunc_GetCurrentInputType_ReturnValue;
 	Parms.K2Node_Event_IsDesignTime = K2Node_Event_IsDesignTime;

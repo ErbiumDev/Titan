@@ -59,7 +59,7 @@ void USubtitles_C::Construct()
 
 
 // Function Subtitles.Subtitles_C.ExecuteUbergraph_Subtitles
-// ()
+// (Final, UbergraphFunction)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

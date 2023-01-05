@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xE8C - 0xE8C)
+// 0x0 (0xDE0 - 0xDE0)
 // BlueprintGeneratedClass B_Pistol_AutoHeavy_Athena_Supp_Child.B_Pistol_AutoHeavy_Athena_Supp_Child_C
 class AB_Pistol_AutoHeavy_Athena_Supp_Child_C : public AB_Pistol_AutoHeavy_Athena_C
 {

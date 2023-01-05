@@ -12,13 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x28 (0xC30 - 0xC08)
+// 0x28 (0xA90 - 0xA68)
 // BlueprintGeneratedClass GA_Ninja_SwordHitsHeal.GA_Ninja_SwordHitsHeal_C
 class UGA_Ninja_SwordHitsHeal_C : public UGA_Ninja_Tactical_MeleeHitsHeal_C
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xC08(0x8)(Transient, DuplicateTransient)
-	struct FGameplayTagContainer                 TC_RequiredTags;                                   // 0xC10(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0xA68(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	struct FGameplayTagContainer                 TC_RequiredTags;                                   // 0xA70(0x20)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 	static class UClass* StaticClass()
 	{

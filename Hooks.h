@@ -14,7 +14,7 @@ namespace Hooks {
 			if (FuncName == "ReadyToStartMatch" && bInGame == false) {
 				bInGame = true;
 				Dump();
-				AAthena_GameMode_C* GameMode = (AAthena_GameMode_C*)Obj;
+				AFortGameModeAthena* GameMode = (AFortGameModeAthena*)Obj;
 				AAthena_GameState_C* GameState = (AAthena_GameState_C*)GameMode->GameState;
 				Player::UpdatePlayerController();
 				Game::CreateCheatManager();
@@ -30,9 +30,9 @@ namespace Hooks {
 				Player::ShowSkin();
 				LOG("Set Skin!");
 				UFortPlaylistAthena* Playlist = UObject::FindObject<UFortPlaylistAthena>("FortPlaylistAthena Playlist_Playground.Playlist_Playground");
-				GameState->CurrentPlaylistData = Playlist;
+				GameState->CurrentPlaylistInfo.BasePlaylist = Playlist;
 				GameState->CurrentPlaylistId = Playlist->PlaylistId;
-				GameState->OnRep_CurrentPlaylistData();
+				GameState->OnRep_CurrentPlaylistInfo();
 				GameState->OnRep_CurrentPlaylistId();
 				LOG("Playlist Set!");
 				GameState->GamePhase = EAthenaGamePhase::Aircraft;
@@ -78,7 +78,7 @@ namespace Hooks {
 			}
 
 			//Sprays
-			if (FuncName == "ServerPlaySprayItem") {
+			/*if (FuncName == "ServerPlaySprayItem") {
 				AFortPlayerControllerAthena* PlayerController = (AFortPlayerControllerAthena*)Obj;
 				AFortPlayerPawnAthena* Pawn = (AFortPlayerPawnAthena*)PlayerController->Pawn;
 				Params::AFortPlayerController_ServerPlaySprayItem_Params* CurrentParams = (Params::AFortPlayerController_ServerPlaySprayItem_Params*)Params;
@@ -100,7 +100,7 @@ namespace Hooks {
 						}
 					}
 				}
-			}
+			}*/
 
 			//Emotes
 			if (FuncName == "ServerPlayEmoteItem") {

@@ -14,7 +14,7 @@ namespace SDK
 
 // 0x0 (0x28 - 0x28)
 // Class BlueprintContext.BlueprintContextBase
-class UBlueprintContextBase : public UObject
+class UBlueprintContextBase : public USubsystem
 {
 public:
 
@@ -38,7 +38,7 @@ public:
 		return Clss;
 	}
 
-	class UBlueprintContextBase* GetContext(class UObject* ContextObject, TSubclassOf<class UBlueprintContextBase> Class);
+	class USubsystem* GetContext(class UObject* ContextObject, TSubclassOf<class USubsystem> Class);
 };
 
 }

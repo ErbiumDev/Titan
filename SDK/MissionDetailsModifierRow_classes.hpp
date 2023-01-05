@@ -12,27 +12,29 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0xB0 (0x2B8 - 0x208)
+// 0xB8 (0x2E0 - 0x228)
 // WidgetBlueprintGeneratedClass MissionDetailsModifierRow.MissionDetailsModifierRow_C
 class UMissionDetailsModifierRow_C : public UUserWidget
 {
 public:
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x208(0x8)(Transient, DuplicateTransient)
-	class UWidgetAnimation*                      Intro;                                             // 0x210(0x8)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonLazyImage*                      ImageModifier;                                     // 0x218(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USizeBox*                              SizeBoxIcon;                                       // 0x220(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                      TextModifierDescription;                           // 0x228(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCommonTextBlock*                      TextModifierName;                                  // 0x230(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UClass*                                NameTextStyle;                                     // 0x238(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class UClass*                                DescriptionTextStyle;                              // 0x240(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	class FText                                  Name;                                              // 0x248(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	class UTexture2D*                            Icon;                                              // 0x260(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	bool                                         ShowDescription;                                   // 0x268(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_4026[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	class FText                                  Description;                                       // 0x270(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
-	bool                                         bUseSmallIcon;                                     // 0x288(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
-	uint8                                        Pad_4027[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	TSoftObjectPtr<class UTexture2D>             IconAssetID;                                       // 0x290(0x28)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x228(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UWidgetAnimation*                      Intro;                                             // 0x230(0x8)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UCommonLazyImage*                      ImageModifier;                                     // 0x238(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USizeBox*                              SizeBoxIcon;                                       // 0x240(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                      TextModifierDescription;                           // 0x248(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCommonTextBlock*                      TextModifierName;                                  // 0x250(0x8)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UClass*                                NameTextStyle;                                     // 0x258(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class UClass*                                DescriptionTextStyle;                              // 0x260(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	class FText                                  Name;                                              // 0x268(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                         ShowName;                                          // 0x280(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                        Pad_4431[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class FText                                  Description;                                       // 0x288(0x18)(Edit, BlueprintVisible, ExposeOnSpawn)
+	bool                                         ShowDescription;                                   // 0x2A0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                        Pad_4432[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	class UTexture2D*                            Icon;                                              // 0x2A8(0x8)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
+	bool                                         bUseSmallIcon;                                     // 0x2B0(0x1)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn)
+	uint8                                        Pad_4433[0x7];                                     // Fixing Size After Last Property  [ Dumper-7 ]
+	TSoftObjectPtr<class UTexture2D>             IconAssetID;                                       // 0x2B8(0x28)(Edit, BlueprintVisible, ExposeOnSpawn, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{
@@ -40,9 +42,26 @@ public:
 		return Clss;
 	}
 
+	void SetData(class FText In_Name, bool In_Show_Name, class UClass* In_Name_Text_Style, class FText In_Description, bool In_Show_Description, class UClass* In_Desc_Text_Style, class UTexture2D* In_Icon, bool In_Use_Small_Icon, TSoftObjectPtr<class UTexture2D> In_Icon_Asset);
+	void SetIconAsset(TSoftObjectPtr<class UTexture2D> In_Icon, bool CallFunc_NotEqual_SoftObjectReference_ReturnValue);
+	void SetIcon(class UTexture2D* In_Icon, bool CallFunc_NotEqual_ObjectObject_ReturnValue);
+	void SetUseSmallIcon(bool In_Use, bool CallFunc_NotEqual_BoolBool_ReturnValue);
+	void UpdateDescriptionTextStyle();
+	void SetDescriptionTextStyle(class UClass* In_Style, bool CallFunc_NotEqual_ClassClass_ReturnValue);
+	void UpdateShowDescription(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default);
+	void SetShowDescription(bool In_Show, bool CallFunc_NotEqual_BoolBool_ReturnValue);
+	void SetDescription(class FText In_Description, bool CallFunc_NotEqual_TextText_ReturnValue);
+	void UpdateNameTextStyle();
+	void UpdateShowName(bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default);
+	void SetNameTextStyle(class UClass* In_Style, bool CallFunc_NotEqual_ClassClass_ReturnValue);
+	void SetShowName(bool In_Show, bool CallFunc_NotEqual_BoolBool_ReturnValue);
+	void SetName(class FText In_Name, bool CallFunc_NotEqual_TextText_ReturnValue);
+	void UpdateIcon(const struct FVector2D& Normal_Size, const struct FVector2D& Small_Size, bool Temp_bool_Variable, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, bool Temp_bool_Variable1, float K2Node_Select_Default, float K2Node_Select1_Default);
+	void UpdateDescription();
+	void UpdateName();
 	void Show_Label(bool ShowLabel, bool Temp_bool_Variable, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, enum class ESlateVisibility K2Node_Select_Default);
-	void PlayIntroAnimation();
-	void Init(class FText ModifierName, class FText ModifierDescription, class UTexture2D* ModifierIcon, class UClass* TextStyle, bool Show_Description, bool UseSmallIcon, const struct FVector2D& NormalSize, const struct FVector2D& SmallSize, bool Temp_bool_Variable, bool Temp_bool_Variable1, enum class ESlateVisibility Temp_byte_Variable, enum class ESlateVisibility Temp_byte_Variable1, bool Temp_bool_Variable12, float CallFunc_BreakVector2D_X, float CallFunc_BreakVector2D_Y, float CallFunc_BreakVector2D_X1, float CallFunc_BreakVector2D_Y1, float K2Node_Select_Default, float K2Node_Select1_Default, enum class ESlateVisibility K2Node_Select12_Default);
+	void PlayIntroAnimation(class UUMGSequencePlayer* CallFunc_PlayAnimation_ReturnValue);
+	void Update(const struct FVector2D& NormalSize);
 	void Construct();
 	void ExecuteUbergraph_MissionDetailsModifierRow(int32 EntryPoint);
 };

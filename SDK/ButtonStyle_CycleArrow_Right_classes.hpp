@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0x4F0 - 0x4F0)
+// 0x0 (0x570 - 0x570)
 // BlueprintGeneratedClass ButtonStyle_CycleArrow_Right.ButtonStyle_CycleArrow_Right_C
 class UButtonStyle_CycleArrow_Right_C : public UButtonStyle_MediumTransparentNoCues_C
 {

@@ -12,7 +12,7 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x0 (0xDC0 - 0xDC0)
+// 0x0 (0xC98 - 0xC98)
 // BlueprintGeneratedClass PBWA_BG_StairR.PBWA_BG_StairR_C
 class APBWA_BG_StairR_C : public ABuildingStairs
 {

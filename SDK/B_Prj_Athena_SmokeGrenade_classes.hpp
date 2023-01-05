@@ -12,14 +12,13 @@ namespace SDK
 // CLASSES
 //---------------------------------------------------------------------------------------------------------------------
 
-// 0x14 (0x8C8 - 0x8B4)
+// 0x10 (0x828 - 0x818)
 // BlueprintGeneratedClass B_Prj_Athena_SmokeGrenade.B_Prj_Athena_SmokeGrenade_C
 class AB_Prj_Athena_SmokeGrenade_C : public AB_Prj_Athena_Grenade_Base_C
 {
 public:
-	uint8                                        Pad_48B1[0x4];                                     // Fixing Size After Last Property  [ Dumper-7 ]
-	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x8B8(0x8)(Transient, DuplicateTransient)
-	class UParticleSystem*                       P_SmokeGrenadeExplosion;                           // 0x8C0(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FPointerToUberGraphFrame              UberGraphFrame;                                    // 0x818(0x8)(ZeroConstructor, Transient, DuplicateTransient)
+	class UParticleSystem*                       P_SmokeGrenadeExplosion;                           // 0x820(0x8)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 	static class UClass* StaticClass()
 	{

@@ -50,7 +50,7 @@ void UAthenaSeasonLevelHeaderWidget_C::OnLockedStatusChanged(bool FreeUnlocked, 
 
 
 // Function AthenaSeasonLevelHeaderWidget.AthenaSeasonLevelHeaderWidget_C.ExecuteUbergraph_AthenaSeasonLevelHeaderWidget
-// (HasDefaults)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                              EntryPoint                                                       (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               K2Node_Event_FreeUnlocked                                        (ZeroConstructor, IsPlainOldData, NoDestructor)
@@ -66,13 +66,13 @@ void UAthenaSeasonLevelHeaderWidget_C::OnLockedStatusChanged(bool FreeUnlocked, 
 // bool                               CallFunc_EqualEqual_IntInt_ReturnValue                           (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class FText                        CallFunc_Conv_IntToText_ReturnValue                              ()
 // bool                               Temp_bool_Variable                                               (ZeroConstructor, IsPlainOldData, NoDestructor)
-// class UClass*                      Temp_class_Variable12                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable2                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // class UClass*                      K2Node_Select_Default                                            (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class UClass*                      Temp_class_Variable123                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class UClass*                      Temp_class_Variable3                                             (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 // bool                               Temp_bool_Variable1                                              (ZeroConstructor, IsPlainOldData, NoDestructor)
 // class UClass*                      K2Node_Select1_Default                                           (ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UAthenaSeasonLevelHeaderWidget_C::ExecuteUbergraph_AthenaSeasonLevelHeaderWidget(int32 EntryPoint, bool K2Node_Event_FreeUnlocked, bool K2Node_Event_PaidUnlocked, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UFortMcpContext* CallFunc_GetContext_ReturnValue, const struct FFortPrivateAccountInfo& CallFunc_GetLocalAccountInfo_Result, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue, bool CallFunc_IsFreeUnlocked_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_GetLevel_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, bool Temp_bool_Variable, class UClass* Temp_class_Variable12, class UClass* K2Node_Select_Default, class UClass* Temp_class_Variable123, bool Temp_bool_Variable1, class UClass* K2Node_Select1_Default)
+void UAthenaSeasonLevelHeaderWidget_C::ExecuteUbergraph_AthenaSeasonLevelHeaderWidget(int32 EntryPoint, bool K2Node_Event_FreeUnlocked, bool K2Node_Event_PaidUnlocked, class UClass* Temp_class_Variable, class UClass* Temp_class_Variable1, class UFortMcpContext* CallFunc_GetContext_ReturnValue, const struct FFortPrivateAccountInfo& CallFunc_GetLocalAccountInfo_Result, class UFortSeasonPassLevelInfo* CallFunc_GetLevelInfo_ReturnValue, bool CallFunc_IsFreeUnlocked_ReturnValue, int32 CallFunc_Add_IntInt_ReturnValue, int32 CallFunc_GetLevel_ReturnValue, bool CallFunc_EqualEqual_IntInt_ReturnValue, class FText CallFunc_Conv_IntToText_ReturnValue, bool Temp_bool_Variable, class UClass* Temp_class_Variable2, class UClass* K2Node_Select_Default, class UClass* Temp_class_Variable3, bool Temp_bool_Variable1, class UClass* K2Node_Select1_Default)
 {
 	static auto Func = Class->GetFunction("AthenaSeasonLevelHeaderWidget_C", "ExecuteUbergraph_AthenaSeasonLevelHeaderWidget");
 
@@ -91,9 +91,9 @@ void UAthenaSeasonLevelHeaderWidget_C::ExecuteUbergraph_AthenaSeasonLevelHeaderW
 	Parms.CallFunc_EqualEqual_IntInt_ReturnValue = CallFunc_EqualEqual_IntInt_ReturnValue;
 	Parms.CallFunc_Conv_IntToText_ReturnValue = CallFunc_Conv_IntToText_ReturnValue;
 	Parms.Temp_bool_Variable = Temp_bool_Variable;
-	Parms.Temp_class_Variable12 = Temp_class_Variable12;
+	Parms.Temp_class_Variable2 = Temp_class_Variable2;
 	Parms.K2Node_Select_Default = K2Node_Select_Default;
-	Parms.Temp_class_Variable123 = Temp_class_Variable123;
+	Parms.Temp_class_Variable3 = Temp_class_Variable3;
 	Parms.Temp_bool_Variable1 = Temp_bool_Variable1;
 	Parms.K2Node_Select1_Default = K2Node_Select1_Default;
 
