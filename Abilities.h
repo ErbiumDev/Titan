@@ -6,10 +6,20 @@ namespace Offsets {
 	inline int32_t ClearAbility = 0x067A8A0; //Could be wrong
 }
 
-std::vector<std::pair<FGameplayAbilitySpecHandle, UGameplayAbility*>> Specs;
-std::vector<std::pair<FActiveGameplayEffectHandle, UGameplayEffect*>> Effects;
-
 namespace Abilities {
+	FGameplayAbilitySpec* FindAbilitySpecFromClass(UGameplayAbility* AbilityClass) {
+		for (size_t i = 0; i < GPawn->AbilitySystemComponent->ActivatableAbilities.Items.Num(); i++)
+		{
+			FGameplayAbilitySpec& Spec = GPawn->AbilitySystemComponent->ActivatableAbilities.Items[i];
+
+			if (Spec.Ability->Class == (UClass*)AbilityClass)
+			{
+				return &Spec;
+			}
+		}
+		return nullptr;
+	}
+
 	void GrantAbility(UGameplayAbility* AbilityClass) {
 		//Make the Gameplay Ability Spec
 		FGameplayAbilitySpec Spec = FGameplayAbilitySpec{};
@@ -21,31 +31,42 @@ namespace Abilities {
 		Spec.Level = 1;
 		Spec.MostRecentArrayReplicationKey = Spec.ReplicationID = Spec.ReplicationKey = Spec.InputID = -1;
 		static auto GiveAbility = reinterpret_cast<FGameplayAbilitySpecHandle(*)(UAbilitySystemComponent*, const FGameplayAbilitySpecHandle*, FGameplayAbilitySpec)>(uintptr_t(GetModuleHandle(0)) + Offsets::GiveAbility);
-		Specs.push_back(std::make_pair(GiveAbility(GPawn->AbilitySystemComponent, &Handle, Spec), AbilityClass));
+		GiveAbility(GPawn->AbilitySystemComponent, &Handle, Spec);
+	}
+
+	void GrantAbilityAndActivateOnce(UGameplayAbility* AbilityClass, UObject* SrcObj = nullptr) {
+		GrantAbility(AbilityClass);
+		FGameplayAbilitySpec* Spec = FindAbilitySpecFromClass(AbilityClass);
+		if (Spec) {
+			Spec->SourceObject = SrcObj;
+			Spec->RemoveAfterActivation = true;
+
+			GPawn->AbilitySystemComponent->ClientTryActivateAbility(Spec->Handle);
+		}
 	}
 
 	void RemoveAbility(UGameplayAbility* AbilityClass) {
 		static auto ClearAbility = reinterpret_cast<void(*)(UAbilitySystemComponent*, const FGameplayAbilitySpecHandle*)>(uintptr_t(GetModuleHandle(0)) + Offsets::ClearAbility);
-		for (int i = 0; i < Specs.size(); i++) {
-			if (Specs[i].second == AbilityClass) {
-				ClearAbility(GPawn->AbilitySystemComponent, &Specs[i].first);
-				Specs.erase(Specs.begin() + i);
-				break;
-			}
+		FGameplayAbilitySpec* Spec = FindAbilitySpecFromClass(AbilityClass);
+		if (Spec != nullptr) {
+			ClearAbility(GPawn->AbilitySystemComponent, &Spec->Handle);
 		}
 	}
 
 	void GrantEffect(TSubclassOf<UGameplayEffect> EffectClass, float Level = 1.0f) {
-		Effects.push_back(std::make_pair(GPawn->AbilitySystemComponent->BP_ApplyGameplayEffectToSelf(EffectClass, Level, {}), (UGameplayEffect*)EffectClass.Get()));
+		GPawn->AbilitySystemComponent->BP_ApplyGameplayEffectToSelf(EffectClass, Level, {});
 	}
 
 	void RemoveEffect(UGameplayEffect* EffectClass) {
-		for (int i = 0; i < Effects.size(); i++) {
-			if (Effects[i].second == EffectClass) {
-				GPawn->AbilitySystemComponent->RemoveActiveGameplayEffect(Effects[i].first, -1);
-				Effects.erase(Effects.begin() + i);
-				break;
-			}
-		}
+		/*FGameplayEffectQuery Q = FGameplayEffectQuery();
+		Q.EffectDefinition.operator=((UClass*)EffectClass);
+		auto Handles = GPawn->AbilitySystemComponent->GetActiveEffects(Q);
+		if (Handles.Data && Handles.Num() > 0) {
+			FActiveGameplayEffectHandle Handle = Handles[0];
+			GPawn->AbilitySystemComponent->RemoveActiveGameplayEffect(Handle, -1);
+		}*/
+
+		//New and Faster
+		GPawn->AbilitySystemComponent->RemoveActiveGameplayEffectBySourceEffect((UClass*)EffectClass, GPawn->AbilitySystemComponent, -1);
 	}
 }

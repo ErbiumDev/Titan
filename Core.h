@@ -10,7 +10,7 @@ namespace Core {
 		LOG("ImageBase: " + std::to_string(__int64(GetModuleHandle(0))));
 		Hooks::Init();
 		BaseTransform.Scale3D = { 1,1,1 };
-		GEngine = UObject::FindObjectFast<UFortEngine>("FortEngine_0");
+		GEngine = *reinterpret_cast<UFortEngine**>(uintptr_t(GetModuleHandle(0)) + Offsets::GEngine);
 		GGameplayStatics = UObject::FindObjectFast<UGameplayStatics>("Default__GameplayStatics");
 		Player::UpdatePlayerController();
 		LOG("Basic Setup Complete!");

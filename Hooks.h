@@ -41,10 +41,11 @@ namespace Hooks {
 				//GameMode->StartMatch(); (Crashes: Fix is in Reboot but it's not needed so we're good)
 				Inventory::SetupInventory();
 				LOG("Inventory Setup!");
+				UObject::FindObject<ABuildingFoundation>("LF_Athena_POI_50x50_C Athena_POI_Foundations.Athena_POI_Foundations.PersistentLevel.PleasentParkFestivus")->DynamicFoundationType = EDynamicFoundationType::Static;
+				UObject::FindObject<ABuildingFoundation>("LF_Athena_POI_25x25_C Athena_POI_Foundations.Athena_POI_Foundations.PersistentLevel.LF_Athena_POI_25x36")->DynamicFoundationType = EDynamicFoundationType::Static;
+				LOG("Fixed Missing POIs!");
 				GPlayerController->CheatManager->DestroyAll(AFortHLODSMActor::StaticClass());
 				LOG("Destroyed LODS!");
-				reinterpret_cast<UObject* (*)(UClass * ObjectClass, UObject * InOuter, const TCHAR * InName, const TCHAR * Filename, uint32_t LoadFlags, UObject * Sandbox, bool bAllowObjectReconciliation)>(uintptr_t(GetModuleHandle(0)) + Offsets::StaticLoadObject)(UFortAbilitySet::StaticClass(), nullptr, L"/Game/Athena/Items/Gameplay/BackPacks/CarminePack/AS_CarminePack.AS_CarminePack", nullptr, 0, nullptr, false);
-				LOG("Loaded CarminePack!");
 			}
 			
 			if (FuncName == "ServerLoadingScreenDropped" && bLSDropped == false) {
@@ -104,26 +105,12 @@ namespace Hooks {
 
 			//Emotes
 			if (FuncName == "ServerPlayEmoteItem") {
-				AFortPlayerControllerAthena* PlayerController = (AFortPlayerControllerAthena*)Obj;
-				AFortPlayerPawnAthena* Pawn = (AFortPlayerPawnAthena*)PlayerController->Pawn;
 				Params::AFortPlayerController_ServerPlayEmoteItem_Params* CurrentParams = (Params::AFortPlayerController_ServerPlayEmoteItem_Params*)Params;
 
-				if (Pawn != nullptr)
+				if (CurrentParams->EmoteAsset != nullptr)
 				{
 					static UGameplayAbility* EmoteAbility = UObject::FindObject<UGameplayAbility>("BlueprintGeneratedClass GAB_Emote_Generic.GAB_Emote_Generic_C");
-					Abilities::GrantAbility(EmoteAbility);
-					for (size_t i = 0; i < Pawn->AbilitySystemComponent->ActivatableAbilities.Items.Num(); i++)
-					{
-						FGameplayAbilitySpec& Spec = Pawn->AbilitySystemComponent->ActivatableAbilities.Items[i];
-
-						if (Spec.Ability->Class == (UClass*)EmoteAbility)
-						{
-							Spec.SourceObject = CurrentParams->EmoteAsset;
-							Spec.RemoveAfterActivation = true;
-
-							Pawn->AbilitySystemComponent->ClientTryActivateAbility(Spec.Handle);
-						}
-					}
+					Abilities::GrantAbilityAndActivateOnce(EmoteAbility, CurrentParams->EmoteAsset);
 				}
 			}
 

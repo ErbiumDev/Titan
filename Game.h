@@ -19,7 +19,7 @@ namespace Player {
 
 	void ShowSkin() {
 		AFortPlayerStateAthena* PlayerState = (AFortPlayerStateAthena*)GPlayerController->PlayerState;
-		UFortHero* Hero = GPlayerController->StrongMyHero;
+		UFortHero* Hero = UObject::FindObjectinclude<UFortHero>("FortHero Transient.FortHero");
 		for (int i = 0; i < Hero->CharacterParts.Num(); i++) {
 			UCustomCharacterPart* Part = Hero->CharacterParts[i];
 			GPawn->ServerChoosePart(Part->CharacterPartType, Part);
